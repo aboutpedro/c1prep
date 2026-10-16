@@ -47,6 +47,7 @@
     const idx = currentIndex();
     [...picker.children].forEach((b, i) => b.setAttribute("aria-selected", i === idx ? "true" : "false"));
     root.innerHTML = "";
+    root.classList.remove("set-enter"); void root.offsetWidth; root.classList.add("set-enter");
     build(SETS[idx], root);
   }
 
@@ -120,8 +121,8 @@
               const ok = EX.type === "mc-cloze"
                 ? input.value === String(g.answer)
                 : g.answers.some((a) => norm(a) === norm(input.value));
-              input.classList.toggle("ok", ok);
-              input.classList.toggle("bad", !ok);
+              input.classList.remove("ok", "bad"); void input.offsetWidth;
+              input.classList.add(ok ? "ok" : "bad");
               note.ok = ok;
               return ok;
             },
@@ -318,12 +319,15 @@
       items.forEach((it) => { if (it.check()) right++; });
       drawNotes();
       score.textContent = "Score: " + right * pts + " / " + items.length * pts;
+      score.classList.remove("bump", "perfect"); void score.offsetWidth; score.classList.add("bump");
+      if (right === items.length) { score.classList.add("perfect"); if (window.c1Confetti) window.c1Confetti(); }
     });
     bShow.addEventListener("click", () => { items.forEach((it) => it.reveal()); drawNotes(); if (notesBox) notesBox.scrollIntoView({ behavior: "smooth", block: "start" }); });
     bReset.addEventListener("click", () => {
       items.forEach((it) => it.reset());
       if (notesBox) notesBox.hidden = true;
       score.textContent = "";
+      score.classList.remove("bump", "perfect");
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
