@@ -48,11 +48,14 @@
     [...picker.children].forEach((b, i) => b.setAttribute("aria-selected", i === idx ? "true" : "false"));
     root.innerHTML = "";
     root.classList.remove("set-enter"); void root.offsetWidth; root.classList.add("set-enter");
-    build(SETS[idx], root);
+    build(SETS[idx], root, idx);
   }
 
   /* ---------- one set ---------- */
-  function build(EX, root) {
+  function build(EX, root, setIndex) {
+    const startedAt = Date.now();
+    let revealed = false;
+    let lastSig = null;
     const items = [];       // {check(): bool, reveal(), reset()}
     const notes = [];       // {n, answer, explain, state} for the explanations panel
     let notesBox = null;
@@ -117,6 +120,10 @@
           const right = EX.type === "mc-cloze" ? LETTERS[g.answer] + " " + g.options[g.answer] : g.answers.join(" / ");
           const note = addNote(n, right, g.explain);
           items.push({
+            info() {
+              const given = EX.type === "mc-cloze" ? (input.value === "" ? "" : LETTERS[+input.value] + " " + g.options[+input.value]) : input.value.trim();
+              return { n, given, correct: right };
+            },
             check() {
               const ok = EX.type === "mc-cloze"
                 ? input.value === String(g.answer)
@@ -158,6 +165,7 @@
         q.appendChild(ex);
         card.appendChild(q);
         items.push({
+          info() { return { n, given: input.value.trim(), correct: it.answers[0] }; },
           check() {
             const v = norm(input.value);
             const ok = it.answers.some((a) => norm(a) === v);
@@ -206,6 +214,10 @@
         q.appendChild(ex);
         card.appendChild(q);
         items.push({
+          info() {
+            const sel = q.querySelector("input:checked");
+            return { n, given: sel ? LETTERS[+sel.value] + " " + qq.options[+sel.value] : "", correct: LETTERS[qq.answer] + " " + qq.options[qq.answer] };
+          },
           check() {
             const sel = q.querySelector("input:checked");
             const v = sel ? Number(sel.value) : -1;
@@ -239,6 +251,7 @@
         card.appendChild(row);
         const note = addNote(n, qq.answer, qq.explain);
         items.push({
+          info() { return { n, given: sel.value, correct: qq.answer }; },
           check() {
             const ok = sel.value === qq.answer;
             sel.classList.toggle("ok", ok); sel.classList.toggle("bad", !ok);
@@ -275,6 +288,7 @@
         const ans = EX.answers[n];
         const note = addNote(n, ans, EX.explain && EX.explain[n]);
         items.push({
+          info() { return { n, given: sel.value, correct: ans }; },
           check() {
             const ok = sel.value === ans;
             sel.classList.toggle("ok", ok); sel.classList.toggle("bad", !ok);
@@ -315,14 +329,32 @@
 
     const pts = EX.pointsEach || 1;
     bCheck.addEventListener("click", () => {
+      if (window.c1RequireName && !window.c1RequireName(() => bCheck.click())) return;
       let right = 0;
-      items.forEach((it) => { if (it.check()) right++; });
+      const mistakes = [];
+      items.forEach((it) => { if (it.check()) right++; else mistakes.push(it.info()); });
       drawNotes();
       score.textContent = "Score: " + right * pts + " / " + items.length * pts;
       score.classList.remove("bump", "perfect"); void score.offsetWidth; score.classList.add("bump");
       if (right === items.length) { score.classList.add("perfect"); if (window.c1Confetti) window.c1Confetti(); }
+      const sig = right + "|" + JSON.stringify(mistakes.map((m) => m.given));
+      if (window.c1Log && sig !== lastSig) {
+        lastSig = sig;
+        const key = "c1-attempt:" + location.pathname + ":" + setIndex;
+        let attempt = 1;
+        try { attempt = (+sessionStorage.getItem(key) || 0) + 1; sessionStorage.setItem(key, attempt); } catch (e) {}
+        const h1 = document.querySelector("h1");
+        window.c1Log({
+          part: (document.querySelector(".kicker") ? document.querySelector(".kicker").textContent.replace(/^.*·\s*/, "") + " · " : "") + (h1 ? h1.textContent : ""),
+          set: setIndex + 1,
+          title: EX.textTitle || "",
+          score: right * pts, max: items.length * pts,
+          mistakes, attempt, revealed,
+          seconds: Math.round((Date.now() - startedAt) / 1000)
+        });
+      }
     });
-    bShow.addEventListener("click", () => { items.forEach((it) => it.reveal()); drawNotes(); if (notesBox) notesBox.scrollIntoView({ behavior: "smooth", block: "start" }); });
+    bShow.addEventListener("click", () => { revealed = true; items.forEach((it) => it.reveal()); drawNotes(); if (notesBox) notesBox.scrollIntoView({ behavior: "smooth", block: "start" }); });
     bReset.addEventListener("click", () => {
       items.forEach((it) => it.reset());
       if (notesBox) notesBox.hidden = true;
