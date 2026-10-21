@@ -140,7 +140,7 @@ Recently, international teams have [22] the task of drilling deeper still, in se
     20: { stem: "HOSPITABLE", answers: ["inhospitable"], explain: "An adjective before 'conditions'. Antarctica is harsh and difficult to live in, so a negative prefix is needed: in- + hospitable." },
     21: { stem: "CONTAMINATE", answers: ["contamination"], explain: "A noun after 'the slightest': contaminate → contamination." },
     22: { stem: "TAKE", answers: ["undertaken"], explain: "A past participle after 'have' (present perfect): under + take → undertaken = begun a large or difficult task." },
-    23: { stem: "DEFINE", answers: ["definitive"], explain: "An adjective before 'answer' = final and certain. Careful: 'definite' is also an adjective, but 'a definitive answer' is the usual collocation for something that settles a question." },
+    23: { stem: "DEFINE", answers: ["definitive", "definite"], explain: "An adjective before 'answer' = final and certain. 'A definite answer' (clear and certain) is also accepted, but 'definitive' is the better choice for something that finally settles a question." },
     24: { stem: "FREQUENT", answers: ["frequency"], explain: "A noun after 'the' and before 'of': frequent → frequency = how often something happens." }
   }
 },

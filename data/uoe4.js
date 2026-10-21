@@ -189,7 +189,7 @@ window.SETS = [
       explain: "'Be bound to + infinitive' = be certain to. The problem is the subject, so the passive infinitive is needed (to be solved)." },
     { first: "I can't decide whether to leave my job or not.", key: "MINDS",
       before: "I'm", after: "to leave my job.",
-      answers: ["in two minds about whether","in two minds as to whether"],
+      answers: ["in two minds about whether","in two minds as to whether", "in two minds whether", "in two minds over whether"],
       explain: "'Be in two minds about/as to whether…' = be unable to decide. Note the plural: minds." },
     { first: "We only realised the cake was still in the oven after the guests had left.", key: "DID",
       before: "Only after the guests had left", after: "the cake was still in the oven.",
@@ -363,10 +363,10 @@ window.SETS = [
 {
   type: "kwt", startAt: 25, pointsEach: 2,
   items: [
-    { first: "You should have started revising for your exams by now.", key: "TIME",
-      before: "It's", after: "revising for your exams.",
-      answers: ["high time you started", "about time you started", "high time you began", "about time you began", "time you started", "time you began"],
-      explain: "'It's (high/about) time + subject + past simple' says that something should already be happening. The verb is past in form but present in meaning." },
+    { first: "Scientists say the species is very close to extinction.", key: "VERGE",
+      before: "Scientists say the species is", after: ".",
+      answers: ["on the verge of extinction", "on the very verge of extinction", "on the verge of dying out", "on the verge of becoming extinct"],
+      explain: "'Be on the verge of + noun/-ing' = be very close to (something happening)." },
     { first: "It doesn't matter how hard you try – you'll never please everyone.", key: "HOWEVER",
       before: "You'll never please everyone,", after: ".",
       answers: ["however hard you try", "however much you try", "however hard you may try"],
@@ -453,10 +453,10 @@ window.SETS = [
 {
   type: "kwt", startAt: 25, pointsEach: 2,
   items: [
-    { first: "Most critics consider the novel to be her finest work.", key: "REGARDED",
-      before: "The novel", after: "her finest work.",
-      answers: ["is widely regarded as", "is generally regarded as", "is regarded as", "is regarded by most critics as"],
-      explain: "Passive of 'regard something as': 'is (widely) regarded as' = most people consider it." },
+    { first: "It isn't surprising that she's exhausted after such a long journey.", key: "WONDER",
+      before: "It's", after: "exhausted after such a long journey.",
+      answers: ["no wonder she's", "no wonder she is", "no wonder that she's", "no wonder that she is", "little wonder she's", "little wonder she is", "little wonder that she's", "little wonder that she is", "small wonder she's", "small wonder she is", "small wonder that she's", "small wonder that she is"],
+      explain: "'It's no wonder (that)…' = it isn't surprising that… 'Little wonder' and 'small wonder' are more formal versions." },
     { first: "Although I admire his talent, I find him difficult to work with.", key: "MUCH",
       before: "", after: "his talent, I find him difficult to work with.",
       answers: ["Much as I admire"],

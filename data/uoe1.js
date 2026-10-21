@@ -283,8 +283,8 @@ Indeed, owners say the games tend to [6] out people's true characters. Natural l
       explain: "'Play to someone's strengths' = make the best use of what they are good at." },
     6: { options: ["bring","take","give","set"], answer: 0,
       explain: "'Bring out' = reveal or make a quality noticeable. 'Take out', 'give out' and 'set out' have unrelated meanings." },
-    7: { options: ["forth","head","fore","foreground"], answer: 2,
-      explain: "Fixed phrase: 'come to the fore' = become noticeable or important. 'Come forth' takes no 'the', and the others don't form this expression." },
+    7: { options: ["forth","head","fore","fold"], answer: 2,
+      explain: "Fixed phrase: 'come to the fore' = become noticeable or important. 'Come forth' takes no 'the', and 'head' and 'fold' don't form this expression ('come to a head' = reach a crisis; 'return to the fold' = rejoin a group)." },
     8: { options: ["gripped","fixed","caught","hooked"], answer: 3,
       explain: "'Be/become hooked on something' = very keen on it, wanting more. None of the others is followed by 'on' with this meaning." }
   }

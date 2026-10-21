@@ -155,7 +155,7 @@ For a long time, however, it remained beyond the [11] of ordinary people. It was
     0: { answers: ["or"] },
     9: { answers: ["form", "kind", "type", "sort"], explain: "'A form of currency' = a kind of money. 'Form', 'kind', 'type' and 'sort' all work before 'of' here." },
     10: { answers: ["When", "Once", "After", "As"], explain: "A time linker introducing a clause: when/once/after it reached Europe." },
-    11: { answers: ["reach"], explain: "'Beyond the reach of someone' = too expensive or difficult for them to get." },
+    11: { answers: ["reach", "means"], explain: "'Beyond the reach of someone' = too expensive or difficult for them to get. 'Beyond the means of' (too expensive for) is also correct." },
     12: { answers: ["until", "till"], explain: "'It was not until X that…' = it only happened at X (a cleft sentence)." },
     13: { answers: ["What"], explain: "'What' = the thing that. The clause 'What is less well known' is the subject of 'is'." },
     14: { answers: ["so"], explain: "'So + adjective/adverb + that' introduces a result (so little that…). 'Such' would need a noun." },
