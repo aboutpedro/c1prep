@@ -143,5 +143,140 @@ None of this means that we should get [6] of our phones altogether. But it may b
     8: { options: ["struck", "hit", "came", "dawned"], answer: 2,
          explain: "'An idea comes to someone'. 'Struck' and 'hit' take a direct object (it struck them), and 'dawned' needs 'on'." }
   }
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "Night trains are back",
+  text: `After decades [0] decline, sleeper trains are [1] a comeback across Europe. Rail companies have [2] on growing concern about the environmental impact of flying by launching new routes. Passengers can fall asleep in one capital and wake up in another, which does [3] with the need for a hotel.
+
+Such comfort, however, [4] at a price, and many routes barely break [5]. Nevertheless, demand [6] no sign of slowing down, with several new lines in the [7]. For many travellers, the journey has become an integral [8] of the holiday itself.`,
+  gaps: {
+    0: { options: ["of","in","from","for"], answer: 0 },
+    1: { options: ["having","doing","making","taking"], answer: 2,
+      explain: "'Make a comeback' = become popular again." },
+    2: { options: ["profited","gained","capitalised","benefited"], answer: 2,
+      explain: "'Capitalise on something' = use it to your advantage. 'Profit', 'gain' and 'benefit' would need 'from'." },
+    3: { options: ["off","away","out","down"], answer: 1,
+      explain: "'Do away with' = get rid of, remove the need for." },
+    4: { options: ["goes","arrives","comes","runs"], answer: 2,
+      explain: "Fixed phrase: 'come at a price' = have a cost or a disadvantage." },
+    5: { options: ["level","even","equal","flat"], answer: 1,
+      explain: "'Break even' = make neither a profit nor a loss." },
+    6: { options: ["puts","shows","makes","offers"], answer: 1,
+      explain: "Fixed phrase: 'show no sign of (doing) something'." },
+    7: { options: ["tunnel","channel","pipe","pipeline"], answer: 3,
+      explain: "'In the pipeline' = being planned or developed." },
+    8: { options: ["piece","share","portion","part"], answer: 3,
+      explain: "Collocation: 'an integral part of something'." }
+  }
+},
+/* ---------------- Set 7 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "Dear diary",
+  text: `People have [0] diaries for centuries, partly to keep [1] of daily events and partly to help them [2] sense of difficult experiences. Research suggests that expressive writing can even [3] stress levels.
+
+Some diarists write with one eye on [4], hoping their words will one day [5] the light of day. Others guard their privacy [6]. Samuel Pepys wrote in a form of shorthand that was not [7] until long after his death. Today his diary [8] a vivid picture of life in seventeenth-century London.`,
+  gaps: {
+    0: { options: ["kept","held","had","made"], answer: 0 },
+    1: { options: ["trace","track","record","note"], answer: 1,
+      explain: "'Keep track of' = stay informed about. 'Record' and 'note' would need 'a' (keep a record of)." },
+    2: { options: ["take","get","make","find"], answer: 2,
+      explain: "Fixed phrase: 'make sense of' = understand." },
+    3: { options: ["fall","drop","sink","lower"], answer: 3,
+      explain: "A verb that takes an object is needed (writing lowers stress levels). 'Fall' and 'sink' take no object, and 'drop' isn't used with levels like this." },
+    4: { options: ["posterity","descendants","heritage","history"], answer: 0,
+      explain: "'With one eye on posterity' = thinking about how future generations will see you." },
+    5: { options: ["meet","reach","find","see"], answer: 3,
+      explain: "Idiom: 'see the light of day' = be made public." },
+    6: { options: ["wildly","fiercely","strongly","roughly"], answer: 1,
+      explain: "Collocation: 'fiercely guard/protect something'." },
+    7: { options: ["explained","interpreted","deciphered","solved"], answer: 2,
+      explain: "'Decipher' = work out the meaning of writing that is hard to read or in code." },
+    8: { options: ["draws","makes","sketches","paints"], answer: 3,
+      explain: "Fixed phrase: 'paint a vivid picture of something'." }
+  }
+},
+/* ---------------- Set 8 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "Going it alone",
+  text: `Starting a business [0] a lot of courage. Many people dream of being their own [1], but few are prepared for the [2] hours involved. Most new businesses take several years to [3] a profit, and many [4] under within the first two years.
+
+Experts advise doing thorough market research to [5] whether there is genuine demand, and keeping [6] costs as low as possible. It also pays to [7] on the expertise of others. Above all, entrepreneurs need to be able to bounce [8] from setbacks.`,
+  gaps: {
+    0: { options: ["takes","makes","does","gives"], answer: 0 },
+    1: { options: ["chief","head","boss","master"], answer: 2,
+      explain: "Fixed phrase: 'be your own boss' = work for yourself." },
+    2: { options: ["lengthy","long","tall","wide"], answer: 1,
+      explain: "Collocation: 'long hours'. 'Lengthy' describes processes or documents, not working hours." },
+    3: { options: ["do","bring","give","turn"], answer: 3,
+      explain: "'Turn a profit' = make a profit." },
+    4: { options: ["fall","come","go","get"], answer: 2,
+      explain: "'Go under' = fail, go bankrupt." },
+    5: { options: ["install","settle","establish","found"], answer: 2,
+      explain: "'Establish whether…' = find out for certain." },
+    6: { options: ["upkeep","outgoing","overall","overhead"], answer: 3,
+      explain: "'Overhead costs' = the regular costs of running a business, such as rent." },
+    7: { options: ["draw","pull","lean","drag"], answer: 0,
+      explain: "'Draw on' = make use of (knowledge, experience, expertise)." },
+    8: { options: ["off","back","up","over"], answer: 1,
+      explain: "'Bounce back' = recover quickly." }
+  }
+},
+/* ---------------- Set 9 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "Saving endangered languages",
+  text: `Of the 7,000 [0] so languages spoken today, many are at [1] of dying out. When the last [2] speaker of a language dies, a unique way of seeing the world is lost [3]. Linguists are [4] against time to record as many as possible.
+
+Technology has [5] new forms of preservation possible, and some communities have [6] a remarkable revival. Hebrew, which had not been spoken as an everyday language for centuries, is the most [7] example. Its success shows that decline can be [8].`,
+  gaps: {
+    0: { options: ["or","and","to","by"], answer: 0 },
+    1: { options: ["danger","threat","risk","peril"], answer: 2,
+      explain: "Fixed phrase: 'at risk of (doing) something'. We say 'in danger of' and 'in peril', not 'at'." },
+    2: { options: ["natural","original","native","home"], answer: 2,
+      explain: "Collocation: 'native speaker'." },
+    3: { options: ["always","ever","eternally","forever"], answer: 3,
+      explain: "'Lost forever' = lost permanently. 'Always' and 'ever' can't end the clause like this." },
+    4: { options: ["racing","running","hurrying","rushing"], answer: 0,
+      explain: "Idiom: 'race against time' = try to do something before it is too late." },
+    5: { options: ["made","done","let","got"], answer: 0,
+      explain: "Pattern: 'make + object + adjective' (made new forms possible)." },
+    6: { options: ["passed","suffered","undergone","sustained"], answer: 2,
+      explain: "'Undergo a revival/change' = experience it. 'Suffer' and 'sustain' go with damage or losses." },
+    7: { options: ["hitting","striking","beating","knocking"], answer: 1,
+      explain: "'A striking example' = one that is very noticeable." },
+    8: { options: ["returned","reverted","retreated","reversed"], answer: 3,
+      explain: "'Reverse a decline/trend' = change its direction. The other verbs can't take 'decline' as an object." }
+  }
+},
+/* ---------------- Set 10 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "Locked in for fun",
+  text: `In [0] last decade, escape rooms have [1] off in a big way. Players are locked in a themed room and must solve a series of puzzles [2] a set time. The format [3] to a wide range of people, and companies often use it for team-[4], since success depends on a willingness to [5] ideas.
+
+Under pressure, natural leaders tend to [6] to the surface, while others reveal a [7] talent for lateral thinking. Whether they escape or not, most players are [8] by the experience and quickly book another game.`,
+  gaps: {
+    0: { options: ["the","a","that","one"], answer: 0 },
+    1: { options: ["set","got","taken","come"], answer: 2,
+      explain: "'Take off' = suddenly become popular or successful." },
+    2: { options: ["inside","by","under","within"], answer: 3,
+      explain: "'Within a set time' = before the time limit runs out." },
+    3: { options: ["attracts","appeals","pleases","draws"], answer: 1,
+      explain: "'Appeal to someone'. 'Attract', 'please' and 'draw' take a direct object without 'to'." },
+    4: { options: ["building","making","forming","growing"], answer: 0,
+      explain: "Fixed compound: 'team-building'." },
+    5: { options: ["split","divide","share","part"], answer: 2,
+      explain: "Collocation: 'share ideas'." },
+    6: { options: ["raise","lift","arise","rise"], answer: 3,
+      explain: "'Rise to the surface' = emerge. 'Raise' and 'lift' need an object, and 'arise' isn't used with 'to the surface'." },
+    7: { options: ["covered","hidden","buried","veiled"], answer: 1,
+      explain: "Collocation: 'a hidden talent'." },
+    8: { options: ["hooked","caught","grabbed","held"], answer: 0,
+      explain: "'Be hooked' = become very keen on something." }
+  }
 }
 ];
