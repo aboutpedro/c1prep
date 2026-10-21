@@ -182,8 +182,8 @@ My old colleagues sometimes ask whether I miss having a desk. I tell them I stil
     B: "On my first training dive in a flooded quarry, I could not see my own hand in front of my mask. I was supposed to locate a metal frame on the bottom and tighten a series of bolts by touch alone. It took me forty minutes. My instructor, watching on a monitor above, told me afterwards that a qualified diver would have done it in five.",
     C: "Still, I have never once wished myself back in the office. When I surface at the end of a long day, cold and tired, I feel that I have actually done something – something that, in its small way, keeps the world working.",
     D: "The change was not as sudden as it sounds. I had been a keen recreational diver since my teens, and for years I had half-joked to friends that I would one day turn my hobby into a career. What finally pushed me was redundancy. When my company announced job cuts, I volunteered, took the payment and used most of it to pay for a commercial diving course.",
-    E: "Commercial diving has a long history. In the nineteenth century, divers in copper helmets and canvas suits were used to salvage cargo from shipwrecks and to build the foundations of bridges, often at great risk to their lives.",
-    F: "And things do go wrong. Halfway through the course, my air supply was cut off during an exercise – deliberately, as it turned out, to see how I would react. I switched to my emergency supply, signalled to the surface and began to ascend exactly as I had been taught. Only later did I notice that my hands were still shaking an hour afterwards.",
+    E: "Most of my fellow trainees had come from the offshore oil industry, where they had worked as engineers or welders. For them, the course was simply the next step in a career they had already begun, and several had jobs waiting for them before it had even finished.",
+    F: "And things do go wrong. Halfway through the course, my air supply was cut off during an exercise – deliberately, as it turned out, to see how I would react. I switched to my emergency supply, signalled to the surface and began to ascend exactly as I had been taught. It was only an hour later, back on dry land, that I noticed my hands were still shaking.",
     G: "The work is varied, which suits me. One week I might be checking the foundations of a road bridge for signs of erosion; the next, clearing debris from a water intake or helping to install new mooring posts. No two sites are quite the same."
   },
   answers: { "41": "D", "42": "B", "43": "F", "44": "A", "45": "G", "46": "C" },
@@ -195,7 +195,7 @@ My old colleagues sometimes ask whether I miss having a desk. I tell them I stil
     "45": "G describes the inspection work mentioned just before ('The work is varied'). The next paragraph then turns to the 'downsides'.",
     "46": "'Still' in C answers the downsides and risks described before the gap, and the final paragraph continues the comparison with office life."
   },
-  extra: { label: "E", explain: "E gives general history of commercial diving and doesn't link to the writer's personal story before or after any gap." }
+  extra: { label: "E", explain: "E is about the other trainees, so it might seem to fit near gap 44, but it doesn't follow on from the people who failed, and the next paragraph ('Finding work proved easier than I had feared') needs A, where the writer passes. E also gives no reason for the writer's fear about finding work." }
 },
 /* ---------------- Set 5 ---------------- */
 {
@@ -279,7 +279,7 @@ Not everything has gone smoothly. Some neighbours have complained about parked c
     A: "'He taught me more than any book could have done,' Clarke says. 'How to prune, when to plant, which varieties would have been available in the 1880s. He even tracked down cuttings of some of the old roses that appear on the original plan.'",
     B: "Curious, Clarke began to research the history of the house. In the local archive, she discovered that its first owner had been a keen amateur gardener who had won prizes for his roses. Among his papers was a hand-drawn plan of the garden, showing every bed and path as they had been laid out more than a century earlier.",
     C: "Yet she has no regrets. 'Every time I walk round it, I think about the man who made it in the first place,' she says. 'I like to think he'd be pleased that someone finally took the trouble to bring it back.'",
-    D: "Victorian gardeners were often influenced by the fashion for plants collected abroad by explorers, and many gardens of the period featured exotic species from Asia and South America.",
+    D: "Her son, now twelve, has shown little interest in the garden since. 'He says he's done his bit,' Clarke laughs. 'He found the stone, and as far as he's concerned, that's enough.'",
     E: "'I honestly thought we'd just pave over most of it,' she admits. 'The house needed a new roof, new wiring, everything. A garden was a luxury we couldn't afford to think about.'",
     F: "She now opens the garden to the public on a handful of weekends each year, with the money raised going to a local hospice. Last year, more than eight hundred people visited.",
     G: "Progress was slow. Clearing the brambles alone took most of the first summer, and the work uncovered problems she had not anticipated: drains blocked with roots, walls on the point of collapse, and soil so poor that almost nothing would grow in it."
@@ -293,6 +293,6 @@ Not everything has gone smoothly. Some neighbours have complained about parked c
     "45": "The paragraph before mentions people who wanted to see the garden; F says she now opens it to the public. 'Open days' after the gap refers back to this.",
     "46": "'Yet she has no regrets' in C answers the problems described just before the gap."
   },
-  extra: { label: "D", explain: "D gives general background on Victorian gardens and doesn't link to Hannah Clarke's story before or after any gap." }
+  extra: { label: "D", explain: "D might seem to work as an ending at gap 46, but it doesn't respond to the complaints and the time the garden takes, which C does with 'Yet she has no regrets'. Nothing elsewhere in the article leads back to her son." }
 }
 ];
