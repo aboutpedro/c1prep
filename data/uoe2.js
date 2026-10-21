@@ -104,16 +104,16 @@ There is also the ritual. Taking the record out of its sleeve and lowering the n
 {
   type: "open-cloze",
   textTitle: "The penny universities",
-  text: `In seventeenth-century London, coffee houses were far more [0] places to drink coffee. [9] the price of a single penny, customers could sit for hours, read the latest newspapers and join in heated debates. Indeed, they became known [10] 'penny universities', since the conversation was often as educational as anything taught in a lecture hall.
+  text: `In seventeenth-century London, coffee houses were far more [0] places to drink coffee. [9] the price of a single penny, customers could sit for hours, read the latest newspapers and join in heated debates with complete strangers. Indeed, they became known [10] 'penny universities', since the conversation was often as educational as anything taught in a lecture hall.
 
-Not everyone approved, [11]. In 1675, King Charles II tried to close them down, fearing they were breeding grounds for political unrest. The order caused [12] an outcry that it was withdrawn within days. [13] was the influence of these establishments that several major institutions, including the insurance market Lloyd's of London, began life in one.
+Not everyone approved [11] them, however. In 1675, King Charles II tried to close them down, fearing they were breeding grounds for political unrest. The order caused [12] an outcry that it was withdrawn within days. [13] was the influence of these establishments that several major institutions, including the insurance market Lloyd's of London, began life in one.
 
-Today, it is easy to forget [14] radical the coffee house once was. Yet the idea of a public space [15] strangers could meet and exchange ideas is one that has never really gone [16] of fashion.`,
+Today, it is easy to forget [14] radical the coffee house once was. Yet the idea of a public space [15] strangers can meet and exchange ideas as equals is one that has never really gone [16] of fashion.`,
   gaps: {
     0: { answers: ["than"] },
     9: { answers: ["For"], explain: "'For the price of' = by paying that amount." },
     10: { answers: ["as"], explain: "'Be known as' = be called." },
-    11: { answers: ["however","though"], explain: "A contrast linker at the end of a clause, after a comma." },
+    11: { answers: ["of"], explain: "'Approve of something/someone' = think it is good or acceptable. 'However' at the end of the sentence already gives the contrast." },
     12: { answers: ["such"], explain: "'Such + a/an + noun + that' introduces a result (such an outcry that…)." },
     13: { answers: ["Such"], explain: "Inversion for emphasis: 'Such was the influence of X that…' = X was so influential that…" },
     14: { answers: ["how"], explain: "'How + adjective' in an indirect question (how radical it was)." },
@@ -125,55 +125,57 @@ Today, it is easy to forget [14] radical the coffee house once was. Yet the idea
 {
   type: "open-cloze",
   textTitle: "The science of sleep",
-  text: `[0] most of history, sleep was regarded as little [9] than a period of rest. Scientists now know that, [10] from being inactive, the brain is extremely busy while we sleep, sorting memories and clearing away waste products.
+  text: `[0] most of history, sleep was regarded as little [9] than a period of rest. Scientists now know that, [10] from being inactive, the brain is extremely busy while we sleep, sorting memories and clearing away waste products that build up during the day.
 
-[11] its importance, millions of people regularly get less sleep than they need. Part of the problem is that the effects build up gradually, so many of us fail to notice them [12] it is too late. Studies suggest that someone [13] has been awake for twenty hours performs about as badly on tests as a person who has had several alcoholic drinks.
+[11] its importance, millions of people regularly get less sleep than they need. Part of the problem is that the effects accumulate gradually, so many of us do not notice them [12] it is too late. Studies suggest that after twenty hours without sleep, people perform no [13] on tests of reaction time than someone who has had several alcoholic drinks.
 
-Experts recommend avoiding screens late at night, [14] the light they give off can trick the brain into thinking it is still daytime. They also advise going to bed at the same time every night, [15] at weekends. As one researcher put it, there is no point [16] trying to catch up on lost sleep all at once.`,
+Experts recommend avoiding screens late at night, [14] the light they give off can trick the brain into thinking it is still daytime. They also advise going to bed at the same time every night, [15] at weekends. Lost sleep, they warn, cannot simply be made [16] for with a long lie-in on Sunday morning.`,
   gaps: {
-    0: { answers: ["For"] },
+    0: { answers: ["For", "Throughout"] },
     9: { answers: ["more"], explain: "'Little more than' = hardly anything except." },
     10: { answers: ["far"], explain: "'Far from being X' = not X at all; in fact the opposite." },
-    11: { answers: ["Despite"], explain: "'Despite + noun phrase'. 'In spite' would need 'of'." },
-    12: { answers: ["until","till"], explain: "'Not… until' = only at that time." },
-    13: { answers: ["who","that"], explain: "A defining relative pronoun for a person." },
-    14: { answers: ["as","since","because"], explain: "A linker giving the reason." },
+    11: { answers: ["Despite", "Notwithstanding"], explain: "'Despite + noun phrase'. 'In spite' would need 'of'." },
+    12: { answers: ["until", "till"], explain: "'Not… until' = only at that time (and not before)." },
+    13: { answers: ["better"], explain: "'No better than' = just as badly as. The comparative is needed because of 'than'." },
+    14: { answers: ["as", "since", "because"], explain: "A linker giving the reason." },
     15: { answers: ["even"], explain: "'Even at weekends' = including weekends, which is surprising." },
-    16: { answers: ["in"], explain: "'There's no point in + -ing' = it isn't worth doing." }
+    16: { answers: ["up"], explain: "'Make up for something' = compensate for it. Here it is passive: 'be made up for'." }
   }
 },
 /* ---------------- Set 8 ---------------- */
 {
   type: "open-cloze",
   textTitle: "Food of the gods",
-  text: `Chocolate has [0] enjoyed for [9] least 3,000 years. The ancient peoples of Central America drank it as a bitter liquid, often mixed [10] chilli. Cacao beans were so valuable that they were even used [11] a form of currency. When chocolate reached Europe in the sixteenth century, sugar was added to make it more appealing [12] European tastes.
+  text: `Chocolate has been enjoyed in one way [0] another for at least 3,000 years. The ancient peoples of Central America drank it as a bitter, frothy liquid, often flavoured with chilli, and cacao beans were considered so valuable that they were used as a [9] of currency. [10] chocolate first reached Europe in the sixteenth century, sugar was added to make it more appealing to European tastes, and it soon became a fashionable drink among the aristocracy.
 
-For a long time, only the wealthy could afford it. It was not until the nineteenth century, when new machinery was developed, that chocolate became available to [13] wider public. Since [14], it has become one of the most popular foods in the world. However, [15] is less well known is that much of the world's cacao is grown by farmers who earn very little. Some consumers now choose fair-trade brands, [16] they are often more expensive.`,
+For a long time, however, it remained beyond the [11] of ordinary people. It was not [12] the nineteenth century, when new machinery made mass production possible, that chocolate became affordable for the majority. Since then, it has become one of the most popular foods in the world.
+
+[13] is less well known is the price paid by those who grow it. Much of the world's cacao comes from small farms in West Africa, where many farmers earn [14] little that they live in poverty. Some consumers now choose fair-trade brands, [15] they are often more expensive, in the belief that every purchase makes [16] difference, however small.`,
   gaps: {
-    0: { answers: ["been"] },
-    9: { answers: ["at"], explain: "Fixed phrase: 'at least'." },
-    10: { answers: ["with"], explain: "'Mix X with Y'." },
-    11: { answers: ["as"], explain: "'Use something as' = use it for that purpose." },
-    12: { answers: ["to"], explain: "'Appealing to someone'." },
-    13: { answers: ["a"], explain: "'A wider public': 'public' is a singular noun here, so it needs an article." },
-    14: { answers: ["then"], explain: "'Since then' = from that time until now." },
-    15: { answers: ["what"], explain: "'What' = the thing that, introducing a clause that acts as the subject." },
-    16: { answers: ["although","though"], explain: "A contrast linker. 'Even though' would need two words." }
+    0: { answers: ["or"] },
+    9: { answers: ["form", "kind", "type", "sort"], explain: "'A form of currency' = a kind of money. 'Form', 'kind', 'type' and 'sort' all work before 'of' here." },
+    10: { answers: ["When", "Once", "After", "As"], explain: "A time linker introducing a clause: when/once/after it reached Europe." },
+    11: { answers: ["reach"], explain: "'Beyond the reach of someone' = too expensive or difficult for them to get." },
+    12: { answers: ["until", "till"], explain: "'It was not until X that…' = it only happened at X (a cleft sentence)." },
+    13: { answers: ["What"], explain: "'What' = the thing that. The clause 'What is less well known' is the subject of 'is'." },
+    14: { answers: ["so"], explain: "'So + adjective/adverb + that' introduces a result (so little that…). 'Such' would need a noun." },
+    15: { answers: ["although", "though", "while", "whilst"], explain: "A contrast linker. 'Even though' would need two words." },
+    16: { answers: ["a", "some"], explain: "'Make a difference' = have an effect. 'However small' refers back to this difference." }
   }
 },
 /* ---------------- Set 9 ---------------- */
 {
   type: "open-cloze",
   textTitle: "Is listening the same as reading?",
-  text: `Audiobooks have been around [0] decades, but only recently have they become truly popular. Sales have risen sharply, [9] to smartphones and streaming services that make listening easier than ever. Many listeners say they would never have finished [10] many books if they had had to read them on paper.
+  text: `Audiobooks have been around [0] decades, but only recently have they become truly popular. Sales have risen sharply, [9] largely to smartphones and streaming services that make listening easier than ever. Many listeners admit that, [10] it not been for audiobooks, they would never have finished some of the books they now count among their favourites.
 
 Some traditionalists argue that listening to a book is not the same [11] reading it. Research, however, suggests that the difference is smaller [12] many people assume. In one study, people who listened to a text understood it just as well as [13] who read it. What matters most, it seems, is [14] closely we pay attention, not the format we choose.
 
 That said, audiobooks are often enjoyed while doing something else, [15] as driving or cooking. If our minds wander, we may take in far less than we think. As [16] as we stay focused, though, there is no reason to feel guilty about pressing play.`,
   gaps: {
     0: { answers: ["for"] },
-    9: { answers: ["thanks","due","owing"], explain: "'Thanks to / due to / owing to' = because of." },
-    10: { answers: ["so"], explain: "'So many + plural noun' (so many books)." },
+    9: { answers: ["thanks", "due", "owing"], explain: "'Thanks to / due to / owing to' = because of. 'Largely' doesn't change the pattern." },
+    10: { answers: ["had"], explain: "Inverted third conditional: 'had it not been for X' = if it hadn't been for X." },
     11: { answers: ["as"], explain: "'The same as'." },
     12: { answers: ["than"], explain: "Comparative + 'than'." },
     13: { answers: ["those"], explain: "'Those who' = the people who." },
@@ -186,18 +188,20 @@ That said, audiobooks are often enjoyed while doing something else, [15] as driv
 {
   type: "open-cloze",
   textTitle: "Never too old to play",
-  text: `Many adults believe it is [0] late to learn an instrument, but research suggests otherwise. [9] it is true that children often pick up new skills quickly, adults have advantages of their own. For one thing, they tend to be better [10] organising their practice. They also understand [11] they want to achieve, which keeps them motivated.
+  text: `Many adults believe it is [0] late to learn a musical instrument, but research suggests otherwise. [9] it is true that children tend to pick up new skills quickly, adults have advantages of their own. For one thing, they are usually better [10] organising their practice. For [11], they generally have a clearer idea of [12] they want to achieve, which helps to keep them motivated when progress is slow.
 
-The biggest obstacle is usually time. [12] matter how busy you are, though, most teachers agree that short, regular sessions are better than long, occasional [13]. Learners should not expect progress overnight, [14]. It can take months to play even simple pieces well. Yet [15] who persevere often say it is one of the most rewarding things they have [16] done.`,
+The biggest obstacle is usually time. [13] matter how busy you are, though, most teachers agree that short, regular sessions are far more effective than long, occasional [14]. Fifteen minutes a day, it seems, is worth more than two hours at the weekend.
+
+Learners should not expect results overnight. It can take months to play even simple pieces well, and many give up long before they reach that point. Yet those [15] persevere often describe it as one of the most rewarding things they have [16] done.`,
   gaps: {
     0: { answers: ["too"] },
-    9: { answers: ["While","Whilst","Although","Though"], explain: "A contrast linker at the start of a sentence." },
+    9: { answers: ["While", "Whilst", "Although", "Though"], explain: "A contrast linker at the start of a sentence." },
     10: { answers: ["at"], explain: "'Good / better at + -ing'." },
-    11: { answers: ["what"], explain: "'What' = the thing(s) that." },
-    12: { answers: ["No"], explain: "'No matter how + adjective' = however busy you are." },
-    13: { answers: ["ones"], explain: "A pronoun replacing a plural noun (sessions)." },
-    14: { answers: ["however","though"], explain: "A contrast linker at the end of a clause, after a comma." },
-    15: { answers: ["those"], explain: "'Those who' = the people who." },
+    11: { answers: ["another"], explain: "'For one thing… For another…' introduces a second reason." },
+    12: { answers: ["what"], explain: "'What' = the thing(s) that, as the object of 'achieve'." },
+    13: { answers: ["No"], explain: "'No matter how + adjective' = however busy you are." },
+    14: { answers: ["ones"], explain: "A pronoun replacing a plural noun (sessions)." },
+    15: { answers: ["who", "that"], explain: "A defining relative pronoun for people, as the subject of 'persevere'." },
     16: { answers: ["ever"], explain: "Superlative + present perfect + 'ever' (the most rewarding thing they have ever done)." }
   }
 }
