@@ -103,115 +103,131 @@ Wild swimming also carries [21] risks. Cold water can cause a sudden shock to th
 /* ---------------- Set 6 ---------------- */
 {
   type: "word-form",
-  textTitle: "Learning online",
-  text: `The [0] of fast, affordable internet has changed education. Online courses have grown [17] in popularity over the past decade. Their main appeal lies in their [18]: learners can study whenever and wherever they like. However, some critics question the [19] of qualifications earned entirely online, while others point to the high [20] rate, as many learners never finish their courses.
+  textTitle: "The myth of multitasking",
+  text: `Many of us take pride in our ability to juggle several things at once: answering emails during meetings, say, or scrolling through messages while cooking dinner. Yet a [0] body of research suggests that true multitasking is largely an illusion. The brain does not handle demanding tasks [17]; rather, it switches rapidly from one to another, and every switch carries a small cost in time and accuracy.
 
-Without a teacher present, students can find it hard to stay [21], and feelings of [22] are common among those who study alone. Still, for people in remote areas, online learning is often [23]. It has made education more [24] than ever before.`,
+Taken individually, these costs may seem [18], but over a working day they add up to a considerable loss. Indeed, constant task-switching has been identified as a hidden source of [19] in many workplaces. Worse still, the people who multitask most heavily tend to [20] their abilities: on tests of attention they perform worse than occasional multitaskers, while believing themselves to be better.
+
+None of this means we should abandon our phones altogether. But experts recommend reducing [21] by switching off notifications, resisting the [22] urge to check every message the moment it arrives, and learning to [23] tasks according to their importance. Trying to do everything at once, they warn, is usually [24]: in the end, less gets done, and less of it is done well.`,
   gaps: {
-    0: { stem: "ARRIVE", answers: ["arrival"] },
-    17: { stem: "DRAMA", answers: ["dramatically"], explain: "An adverb modifying the verb 'grown': drama → dramatic → dramatically." },
-    18: { stem: "FLEXIBLE", answers: ["flexibility"], explain: "A noun after the possessive 'their'." },
-    19: { stem: "CREDIBLE", answers: ["credibility"], explain: "A noun after 'the' and before 'of'." },
-    20: { stem: "DROP", answers: ["dropout","drop-out"], explain: "A compound noun used before 'rate': the dropout rate = the proportion of people who don't finish." },
-    21: { stem: "FOCUS", answers: ["focused","focussed"], explain: "'Stay + adjective' = remain concentrated." },
-    22: { stem: "LONELY", answers: ["loneliness"], explain: "A noun after 'of'; the y changes to i." },
-    23: { stem: "VALUE", answers: ["invaluable"], explain: "'Invaluable' = extremely useful. Careful: it does not mean 'without value' – that would be 'valueless'." },
-    24: { stem: "ACCESS", answers: ["accessible"], explain: "An adjective after 'more': easy to reach or obtain." }
+    0: { stem: "GROW", answers: ["growing"] },
+    17: { stem: "SIMULTANEOUS", answers: ["simultaneously"], explain: "An adverb modifying 'handle' = at the same time. The semicolon and 'rather, it switches…' show the contrast." },
+    18: { stem: "SIGNIFICANCE", answers: ["insignificant"], explain: "An adjective after 'seem'. 'Taken individually… but… a considerable loss' needs a negative meaning: in- + significant. Note the change from the noun ending -ance to the adjective ending -ant." },
+    19: { stem: "EFFICIENT", answers: ["inefficiency", "inefficiencies"], explain: "A noun after 'a hidden source of'. The meaning is negative (time is being lost): in- + efficient → inefficiency (two changes: prefix and suffix)." },
+    20: { stem: "ESTIMATE", answers: ["overestimate"], explain: "A verb after 'tend to'. They think they are better than they are, so the prefix over- is needed (not under-)." },
+    21: { stem: "DISTRACT", answers: ["distractions", "distraction"], explain: "A noun as the object of 'reducing': distract → distraction(s)." },
+    22: { stem: "COMPEL", answers: ["compulsive"], explain: "An adjective before 'urge' = impossible to control. Watch the spelling change: compel → compulsion → compulsive. ('Compelling' means very interesting or convincing, which doesn't fit.)" },
+    23: { stem: "PRIOR", answers: ["prioritise", "prioritize"], explain: "A verb after 'learning to': prior → priority → prioritise = decide which is most important and deal with it first." },
+    24: { stem: "FRUIT", answers: ["fruitless", "unfruitful"], explain: "An adjective after 'is'. The colon explains that the effort achieves little: fruit + -less = producing no useful result." }
   }
 },
 /* ---------------- Set 7 ---------------- */
 {
   type: "word-form",
-  textTitle: "Why we love to be scared",
-  text: `Horror is one of the most [0] genres in cinema, and horror films remain [17] popular, despite the fear they cause. Psychologists say the [18] of danger is enjoyable because we know it isn't real, and viewers often report a sense of [19] once the film is over. For some, watching with friends adds to the [20].
+  textTitle: "Reading the past in ice",
+  text: `Deep beneath the surface of Antarctica lies one of the most [0] archives on Earth. As snow builds up year after year, it is compressed into ice, trapping tiny bubbles of air in the process. By drilling down through kilometres of ice and analysing these bubbles, scientists can [17] the make-up of the atmosphere as it was hundreds of thousands of years ago.
 
-Others find such films deeply [21] and avoid them altogether, and children's [22] to frightening images is a frequent concern for parents. Reactions to fear vary [23] from one person to another. What is [24] is that the genre shows no sign of declining.`,
+The records obtained in this way are [18] in their detail. They reveal a close relationship between carbon dioxide levels and global temperatures, and show that today's concentrations are higher than at any point in the past 800,000 years – a finding with [19] implications.
+
+The work itself is anything but glamorous. Drilling teams spend months at a time in [20] conditions, and the cores must be handled with extreme care, since even the slightest [21] can render a sample worthless.
+
+Recently, international teams have [22] the task of drilling deeper still, in search of ice more than a million years old. Their hope is that it will provide a [23] answer to one of climate science's great puzzles: why, around a million years ago, the [24] of ice ages suddenly changed.`,
   gaps: {
-    0: { stem: "PROFIT", answers: ["profitable"] },
-    17: { stem: "SURPRISE", answers: ["surprisingly"], explain: "An adverb modifying the adjective 'popular'." },
-    18: { stem: "PERCEIVE", answers: ["perception"], explain: "A noun after 'the'. Note the spelling change: perceive → perception." },
-    19: { stem: "RELIEVE", answers: ["relief"], explain: "A noun after 'a sense of'." },
-    20: { stem: "ENJOY", answers: ["enjoyment"], explain: "A noun after 'the'." },
-    21: { stem: "SETTLE", answers: ["unsettling"], explain: "A negative prefix + -ing adjective = disturbing, making you feel uneasy." },
-    22: { stem: "EXPOSE", answers: ["exposure"], explain: "A noun: 'exposure to something'." },
-    23: { stem: "CONSIDER", answers: ["considerably"], explain: "An adverb modifying 'vary' = a lot. Not 'considerately', which means kindly." },
-    24: { stem: "DENY", answers: ["undeniable"], explain: "A negative prefix + -able adjective after 'is' = certainly true." }
+    0: { stem: "VALUE", answers: ["valuable"] },
+    17: { stem: "CREATE", answers: ["recreate", "re-create"], explain: "A verb after 'can'. Scientists build up a picture of something that no longer exists: re- + create." },
+    18: { stem: "PARALLEL", answers: ["unparalleled"], explain: "An adjective after 'are' = better than any other. Two changes: the prefix un- and the -ed ending (note the double l)." },
+    19: { stem: "REACH", answers: ["far-reaching", "far reaching"], explain: "A compound adjective before 'implications': far + reaching = having a great effect on many things." },
+    20: { stem: "HOSPITABLE", answers: ["inhospitable"], explain: "An adjective before 'conditions'. Antarctica is harsh and difficult to live in, so a negative prefix is needed: in- + hospitable." },
+    21: { stem: "CONTAMINATE", answers: ["contamination"], explain: "A noun after 'the slightest': contaminate → contamination." },
+    22: { stem: "TAKE", answers: ["undertaken"], explain: "A past participle after 'have' (present perfect): under + take → undertaken = begun a large or difficult task." },
+    23: { stem: "DEFINE", answers: ["definitive"], explain: "An adjective before 'answer' = final and certain. Careful: 'definite' is also an adjective, but 'a definitive answer' is the usual collocation for something that settles a question." },
+    24: { stem: "FREQUENT", answers: ["frequency"], explain: "A noun after 'the' and before 'of': frequent → frequency = how often something happens." }
   }
 },
 /* ---------------- Set 8 ---------------- */
 {
   type: "word-form",
-  textTitle: "The oldest living things",
-  text: `Trees can live for an [0] long time. Bristlecone pines are among the most [17] living things on Earth: some specimens are thought to be over 4,000 years old, a truly [18] age. Their [19] is partly due to the harsh conditions in which they grow. Slow growth produces dense wood that is highly [20] to insects and disease, and scientists study their rings to make [21] about past climates.
+  textTitle: "Why we buy what we don't need",
+  text: `Most of us have, at some point, come home with something we neither needed nor particularly wanted. Such purchases are rarely [0]. [17] the most effective technique retailers use is to create an impression of [18]: a countdown clock on a website or a sign announcing that only three items remain can make a product seem far more desirable than it really is.
 
-However, rising temperatures pose a [22] threat to their survival, and some experts fear the damage may already be [23]. Conservation efforts are therefore [24] important.`,
+Discounts can be just as [19]. Shoppers who believe they are getting a bargain frequently [20], and 'buy one, get one free' offers are particularly good at tempting people to stock up on things they will never use.
+
+Once the purchase has been made, a different process begins. Rather than admit to a mistake, many buyers look for a [21] for what they have done, convincing themselves that the item was a sound [22] or that they would have regretted not buying it.
+
+Psychologists warn that this cycle of [23] and regret is not only damaging to our finances but environmentally [24]. The next time a 'limited offer' catches your eye, it may be worth asking whether you would still want the item at full price.`,
   gaps: {
-    0: { stem: "ORDINARY", answers: ["extraordinarily"] },
-    17: { stem: "REMARK", answers: ["remarkable"], explain: "An adjective after 'the most'." },
-    18: { stem: "STAGGER", answers: ["staggering"], explain: "An -ing adjective = astonishing." },
-    19: { stem: "LONG", answers: ["longevity"], explain: "An irregular noun = long life." },
-    20: { stem: "RESIST", answers: ["resistant"], explain: "An adjective: 'resistant to something'." },
-    21: { stem: "DEDUCE", answers: ["deductions"], explain: "A plural noun after 'make': make a deduction = reach a conclusion from evidence." },
-    22: { stem: "GROW", answers: ["growing"], explain: "An -ing adjective = increasing." },
-    23: { stem: "REVERSE", answers: ["irreversible"], explain: "The negative prefix ir- (before r) + -ible = impossible to undo." },
-    24: { stem: "CRITIC", answers: ["critically"], explain: "An adverb modifying 'important' = extremely." }
+    0: { stem: "ACCIDENT", answers: ["accidental"] },
+    17: { stem: "ARGUE", answers: ["Arguably"], explain: "A sentence adverb before a superlative = it can be argued that. Note that the e of argue disappears: argue → arguable → arguably." },
+    18: { stem: "SCARCE", answers: ["scarcity", "scarceness"], explain: "A noun after 'an impression of'. The examples (only three items remain) show that the idea is shortage: scarce → scarcity." },
+    19: { stem: "PERSUADE", answers: ["persuasive"], explain: "An adjective after 'just as'. Note the spelling change: persuade → persuasion → persuasive." },
+    20: { stem: "SPEND", answers: ["overspend"], explain: "A verb after the adverb 'frequently'. The context (spending more than intended) needs the prefix over-." },
+    21: { stem: "JUSTIFY", answers: ["justification"], explain: "A noun after 'a': justify → justification = a reason that makes something seem acceptable." },
+    22: { stem: "INVEST", answers: ["investment"], explain: "A noun after 'a sound' (= sensible): invest → investment." },
+    23: { stem: "ACQUIRE", answers: ["acquisition", "acquisitions"], explain: "A noun after 'this cycle of', parallel to 'regret'. Note the spelling change: acquire → acquisition." },
+    24: { stem: "SUSTAIN", answers: ["unsustainable"], explain: "An adjective parallel to 'damaging'. The warning needs a negative: un- + sustain + -able." }
   }
 },
 /* ---------------- Set 9 ---------------- */
 {
   type: "word-form",
-  textTitle: "Is the open-plan office working?",
-  text: `The [0] of the modern office has changed dramatically. Open-plan offices were introduced to encourage [17] between colleagues, but in practice many workers find them [18]. Constant noise can lead to a [19] in concentration, and some employees feel that their [20] is constantly being invaded. Research even shows that face-to-face interaction may fall [21] in such spaces.
+  textTitle: "Losing the dark",
+  text: `For most of human history, a clear night revealed thousands of stars. Today, an [0] eighty per cent of the world's population lives under skies polluted by artificial light, and for more than a third of humanity the Milky Way is now [17]. Much of this light is [18]: poorly designed street lamps and floodlights send it sideways and upwards, where it serves no purpose at all.
 
-Staff often wear headphones as a sign of their [22] to be disturbed. Companies are now looking for [23] to the traditional layout, and quiet zones and private booths are seen by many as a [24] improvement.`,
+The [19] extend far beyond astronomy. Artificial light can [20] migrating birds, drawing them towards brightly lit buildings, and it lures newly hatched turtles away from the sea. In humans, exposure to bright light at night has been linked to the [21] of melatonin, a hormone that helps to regulate sleep.
+
+[22], light pollution is among the easiest forms of pollution to tackle. Fitting lamps that point downwards, choosing warmer colours and reducing the [23] of lighting in the early hours can all make a noticeable difference, often at little cost. And unlike so much environmental damage, the harm is not permanent: when the lights go down, the [24] of the night sky can be almost immediate.`,
   gaps: {
-    0: { stem: "APPEAR", answers: ["appearance"] },
-    17: { stem: "COLLABORATE", answers: ["collaboration"], explain: "A noun as the object of 'encourage'." },
-    18: { stem: "DISTRACT", answers: ["distracting"], explain: "An -ing adjective describing the offices (not the workers, who would be 'distracted')." },
-    19: { stem: "REDUCE", answers: ["reduction"], explain: "A noun after 'a': a reduction in something." },
-    20: { stem: "PRIVATE", answers: ["privacy"], explain: "A noun after the possessive 'their'." },
-    21: { stem: "SIGNIFY", answers: ["significantly"], explain: "An adverb modifying 'fall' = by a large amount." },
-    22: { stem: "WILLING", answers: ["unwillingness"], explain: "Negative prefix + noun. The context means they do not want to be disturbed." },
-    23: { stem: "ALTERNATE", answers: ["alternatives"], explain: "A plural noun: an alternative to something." },
-    24: { stem: "CONSIDER", answers: ["considerable"], explain: "An adjective before the noun 'improvement'." }
+    0: { stem: "ASTONISH", answers: ["astonishing"] },
+    17: { stem: "VISIBLE", answers: ["invisible"], explain: "An adjective after 'is'. The point is that people can no longer see the Milky Way: in- + visible." },
+    18: { stem: "WASTE", answers: ["wasteful", "wasted"], explain: "An adjective after 'is'. The light 'serves no purpose', so it is wasteful (or simply wasted)." },
+    19: { stem: "CONSEQUENT", answers: ["consequences"], explain: "A plural noun, because the verb is 'extend' (not 'extends'): consequent → consequence → consequences." },
+    20: { stem: "ORIENT", answers: ["disorient", "disorientate"], explain: "A verb after 'can'. Birds lose their sense of direction: dis- + orient(ate) = confuse." },
+    21: { stem: "SUPPRESS", answers: ["suppression"], explain: "A noun after 'the' and before 'of': suppress → suppression = stopping something from being produced." },
+    22: { stem: "FORTUNE", answers: ["Fortunately"], explain: "A sentence adverb that introduces good news after the problems in the previous paragraph: fortune → fortunate → fortunately." },
+    23: { stem: "INTENSE", answers: ["intensity"], explain: "A noun after 'the' and before 'of': intense → intensity = strength." },
+    24: { stem: "RECOVER", answers: ["recovery"], explain: "A noun as the subject of 'can be': recover → recovery." }
   }
 },
 /* ---------------- Set 10 ---------------- */
 {
   type: "word-form",
-  textTitle: "Volunteering abroad",
-  text: `Travel has long been seen as an [0] part of growing up. Short-term volunteering abroad has become [17] popular among young people, many of whom see it as a chance to make a [18] contribution. Critics, however, question its [19]. Volunteers often lack the [20] needed for skilled work, and in some cases they may even take jobs from local people, which is clearly [21].
+  textTitle: "The comeback of repair",
+  text: `Not so long ago, a broken toaster or a cracked phone screen would be taken to a local repair shop. Today, we are more likely to throw it away and buy a new one. Our [0] culture is partly a matter of habit, but campaigners argue that it is also the result of planned [17]: the practice of designing products to fail, or to become outdated, sooner than they need to.
 
-Organisers insist that their projects are carried out [22], and travellers are advised to research programmes [23] before signing up. Done well, though, volunteering can be a deeply [24] experience.`,
+Many [18] also make repairs difficult. Batteries are glued in place, spare parts are [19] to independent repair shops, and special tools are needed to open even simple devices. In response, [20] in several countries have introduced 'right to repair' rules, which aim to [21] the life of everyday products by requiring companies to supply parts and instructions.
+
+Industry groups remain [22], arguing that amateur repairs could raise [23] concerns, particularly where batteries are involved. Yet the movement has gained momentum, helped by volunteer-run 'repair cafés', and there are signs of a [24] change in attitudes, especially among younger consumers.`,
   gaps: {
-    0: { stem: "ESSENCE", answers: ["essential"] },
-    17: { stem: "IMMENSE", answers: ["immensely"], explain: "An adverb modifying 'popular' = extremely." },
-    18: { stem: "MEAN", answers: ["meaningful"], explain: "An adjective before 'contribution' = important, valuable." },
-    19: { stem: "EFFECT", answers: ["effectiveness"], explain: "A noun after the possessive 'its'." },
-    20: { stem: "QUALIFY", answers: ["qualifications"], explain: "A plural noun after 'the'." },
-    21: { stem: "DESIRE", answers: ["undesirable"], explain: "Negative prefix + -able adjective = not wanted." },
-    22: { stem: "RESPONSIBLE", answers: ["responsibly"], explain: "An adverb modifying 'carried out'." },
-    23: { stem: "THOROUGH", answers: ["thoroughly"], explain: "An adverb modifying 'research' = carefully and completely." },
-    24: { stem: "REWARD", answers: ["rewarding"], explain: "An -ing adjective = satisfying." }
+    0: { stem: "DISPOSE", answers: ["disposable"] },
+    17: { stem: "OBSOLETE", answers: ["obsolescence"], explain: "A noun after the adjective 'planned': obsolete → obsolescence. 'Planned obsolescence' is a fixed expression explained by the rest of the sentence." },
+    18: { stem: "MANUFACTURE", answers: ["manufacturers"], explain: "A plural noun for people or companies after 'Many': manufacture → manufacturers." },
+    19: { stem: "ACCESS", answers: ["inaccessible"], explain: "An adjective after 'are'. The context (repairs are difficult) needs a negative: in- + access + -ible." },
+    20: { stem: "LAW", answers: ["lawmakers", "law-makers", "law makers"], explain: "A compound noun for people, as the subject of 'have introduced': law + maker(s)." },
+    21: { stem: "LONG", answers: ["lengthen", "prolong"], explain: "A verb after 'aim to'. Note the vowel change: long → length → lengthen = make longer. ('Prolong' is also correct.)" },
+    22: { stem: "SCEPTIC", answers: ["sceptical", "skeptical"], explain: "An adjective after 'remain' = doubtful: sceptic → sceptical." },
+    23: { stem: "SAFE", answers: ["safety"], explain: "A noun used before another noun: 'safety concerns'. Note: safe → safety (not 'safeness')." },
+    24: { stem: "WIDE", answers: ["widespread"], explain: "A compound adjective before 'change' = happening among many people: wide + spread." }
   }
 },
 /* ---------------- Set 11 ---------------- */
 {
   type: "word-form",
-  textTitle: "The secret life of octopuses",
-  text: `Octopuses have long been objects of [0]. They are widely regarded as the most [17] invertebrates, and they have shown an [18] ability to solve puzzles. In laboratories, some have even made [19] escapes from their tanks.
+  textTitle: "Can we trust our memories?",
+  text: `Most of us assume that our memories, while far from complete, are at least broadly [0]. Research over the past fifty years has shown this assumption to be surprisingly fragile. Even events we recall [17], such as where we were when we heard a piece of major news, turn out to contain significant [18]. What is more, the [19] with which we remember an event appears to have little to do with whether we have remembered it correctly.
 
-Their skin can change colour almost [20], which makes them masters of [21]. Their [22] is surprisingly short, often only a year or two, and researchers remain [23] by how such complex behaviour evolved. Some scientists now argue that octopuses deserve legal [24] from harm.`,
+Part of the reason is that memories are not stored like files on a computer. Each time we bring an event to mind, we rebuild it, and in the process it can be [20] altered by what we have learned since. In experiments, people have proved highly [21]: a carefully worded question can lead them to 'remember' details that were never there.
+
+The implications are serious. Eyewitness [22] has played a part in a large number of [23] convictions later overturned by DNA evidence, and police forces in many countries have changed the way they interview witnesses as a result. Memory, it seems, is less a faithful record of the past than a continual [24] of it.`,
   gaps: {
-    0: { stem: "CURIOUS", answers: ["curiosity"] },
-    17: { stem: "INTELLIGENCE", answers: ["intelligent"], explain: "An adjective after 'the most'." },
-    18: { stem: "EXCEPTION", answers: ["exceptional"], explain: "An adjective before 'ability' = unusually good." },
-    19: { stem: "DARE", answers: ["daring"], explain: "An -ing adjective = bold and risky." },
-    20: { stem: "INSTANT", answers: ["instantly","instantaneously"], explain: "An adverb modifying 'change'." },
-    21: { stem: "GUISE", answers: ["disguise"], explain: "A noun after 'of': masters of disguise." },
-    22: { stem: "LIFE", answers: ["lifespan","life span","life-span"], explain: "A compound noun = how long something lives." },
-    23: { stem: "FASCINATE", answers: ["fascinated"], explain: "An -ed adjective describes how people feel (fascinating describes the thing)." },
-    24: { stem: "PROTECT", answers: ["protection"], explain: "A noun after the adjective 'legal'." }
+    0: { stem: "RELY", answers: ["reliable"] },
+    17: { stem: "VIVID", answers: ["vividly"], explain: "An adverb modifying 'recall' = clearly and in detail." },
+    18: { stem: "ACCURATE", answers: ["inaccuracies", "inaccuracy"], explain: "A noun after 'significant'. 'Even' signals that the memories are wrong: in- + accurate → inaccuracy, usually plural here (inaccuracies)." },
+    19: { stem: "CERTAIN", answers: ["certainty"], explain: "A noun after 'the' = how sure we feel: certain → certainty." },
+    20: { stem: "SUBTLE", answers: ["subtly"], explain: "An adverb modifying 'altered' = in a small way that is hard to notice. Watch the spelling: subtle → subtly (no e)." },
+    21: { stem: "SUGGEST", answers: ["suggestible"], explain: "An adjective after 'highly' = easily influenced by what others suggest: suggest + -ible. The second half of the sentence explains it." },
+    22: { stem: "TESTIFY", answers: ["testimony"], explain: "A noun after 'Eyewitness': testify → testimony = a formal statement of what someone saw." },
+    23: { stem: "WRONG", answers: ["wrongful"], explain: "An adjective before 'convictions' = unfair or illegal. 'Wrongful conviction' is a fixed legal collocation." },
+    24: { stem: "CONSTRUCT", answers: ["reconstruction"], explain: "A noun after 'a continual'. It echoes 'we rebuild it' in the second paragraph: re- + construct + -ion." }
   }
 }
 ];
