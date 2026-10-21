@@ -288,5 +288,152 @@ Indeed, owners say the games tend to [6] out people's true characters. Natural l
     8: { options: ["gripped","fixed","caught","hooked"], answer: 3,
       explain: "'Be/become hooked on something' = very keen on it, wanting more. None of the others is followed by 'on' with this meaning." }
   }
+},
+/* ---------------- Set 11 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "Taxing sugar",
+  text: `When the UK introduced a levy on sugary soft drinks in 2018, critics [0] it as an example of the 'nanny state' telling people what to eat. Several years on, the results have [1] many of the sceptics. Rather than simply passing the cost on to consumers, most manufacturers went back to the drawing [2] and cut the amount of sugar in their products so as to avoid the tax altogether.
+
+The effect has been nothing [3] of remarkable. The amount of sugar sold in soft drinks fell by around a third within a few years, and some studies have linked the levy to a drop in obesity among older primary school children. Supporters argue that this shows how a well-designed tax can achieve results without [4] to an outright ban.
+
+Not everyone is convinced, however. Opponents point out that such taxes are [5]: they take a larger share of the income of poorer households, who spend proportionally more on food and drink. Others argue that soft drinks account for only a [6] of the sugar people consume, so targeting them alone is unlikely to make much of a [7] in obesity rates. Even so, dozens of countries have now followed [8].`,
+  gaps: {
+    0: { options: ["dismissed", "discarded", "disregarded", "dispelled"], answer: 0 },
+    1: { options: ["stilled", "silenced", "muffled", "deafened"], answer: 1,
+         explain: "Collocation: 'silence the critics/sceptics' = make them stop complaining by proving them wrong." },
+    2: { options: ["table", "desk", "board", "page"], answer: 2,
+         explain: "Idiom: 'go back to the drawing board' = start planning again from the beginning." },
+    3: { options: ["short", "less", "far", "near"], answer: 0,
+         explain: "Fixed phrase: 'nothing short of + adjective/noun' = completely, truly. 'Nothing less than' would need 'than'." },
+    4: { options: ["retreating", "relapsing", "reverting", "resorting"], answer: 3,
+         explain: "'Resort to something' = use it because nothing else works. 'Revert to' means go back to a previous state, and there was no ban before." },
+    5: { options: ["recessive", "regressive", "repressive", "receding"], answer: 1,
+         explain: "A 'regressive' tax takes a larger share of income from poorer people. 'Repressive' = controlling people by force; 'recessive' is a term from genetics." },
+    6: { options: ["fraction", "fragment", "splinter", "crumb"], answer: 0,
+         explain: "'A (small) fraction of something' = a small part of a total amount. 'Fragment', 'splinter' and 'crumb' are physical pieces." },
+    7: { options: ["mark", "scratch", "hole", "dent"], answer: 3,
+         explain: "Idiom: 'make a dent in something' = reduce it a little." },
+    8: { options: ["course", "path", "suit", "lead"], answer: 2,
+         explain: "Idiom: 'follow suit' = do the same as someone else. 'Lead' would need a possessive (followed its lead)." }
+  }
+},
+/* ---------------- Set 12 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "Stage fright",
+  text: `Even the most experienced performers are not [0] to stage fright. Famous singers, actors and musicians have admitted to feeling physically sick before going on stage, and some have [1] up public appearances altogether as a result. For the rest of us, the prospect of giving a speech at a wedding or a presentation at work can be enough to bring us out in a cold [2].
+
+The symptoms are familiar: a racing heart, trembling hands and a mind that suddenly goes [3]. These are the effects of adrenaline, the hormone the body releases when it senses danger. In evolutionary terms, the response made sense, since being stared at by a group could [4] trouble. In a conference room, however, it is rather less helpful.
+
+Psychologists suggest a number of ways to keep nerves in [5]. Thorough preparation helps, as does rehearsing in front of a friend. Interestingly, some research suggests that people perform better if they tell themselves they are excited rather than trying to calm down, since the two feelings have a great [6] in common physically. Above all, experts say, it is worth remembering that audiences are generally on the speaker's [7], and are far less likely to notice small mistakes than the speaker [8] to believe.`,
+  gaps: {
+    0: { options: ["immune", "exempt", "resistant", "safe"], answer: 0 },
+    1: { options: ["taken", "given", "set", "put"], answer: 1,
+         explain: "'Give up something' = stop doing it. 'Take up' = start, 'set up' = establish, and 'put up' = build or tolerate (put up with)." },
+    2: { options: ["shiver", "fever", "sweat", "chill"], answer: 2,
+         explain: "Idiom: 'bring someone out in a cold sweat' = make them very frightened or nervous." },
+    3: { options: ["blank", "empty", "bare", "clear"], answer: 0,
+         explain: "Collocation: 'your mind goes blank' = you suddenly can't remember or think of anything." },
+    4: { options: ["write", "read", "sign", "spell"], answer: 3,
+         explain: "Idiom: 'spell trouble/danger' = be a sign that something bad will happen." },
+    5: { options: ["check", "store", "stock", "order"], answer: 0,
+         explain: "'Keep something in check' = keep it under control." },
+    6: { options: ["lot", "amount", "deal", "number"], answer: 2,
+         explain: "Fixed phrase: 'have a great deal in common' = be very similar." },
+    7: { options: ["part", "side", "team", "end"], answer: 1,
+         explain: "Idiom: 'be on someone's side' = support them." },
+    8: { options: ["inclines", "leans", "bends", "tends"], answer: 3,
+         explain: "'Tend to do something' = usually do it. 'Incline' would need 'is inclined to'." }
+  }
+},
+/* ---------------- Set 13 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "The power of belief",
+  text: `Doctors have long [0] that some patients improve after taking pills that contain nothing but sugar. This phenomenon, known as the placebo effect, was once dismissed as little more than a [1] of the imagination. Over the past few decades, however, researchers have built up a convincing case that it has a genuine biological [2].
+
+When people expect a treatment to work, their brains can release natural painkillers, and their symptoms may [3] as a result. The effect is particularly strong for conditions such as pain and nausea, in which the mind plays a significant part. Curiously, the [4] of the treatment matters too: injections tend to outperform pills, and two tablets work better than one.
+
+Perhaps the most surprising finding is that placebos can work even when patients know [5] well that they are taking one. In several trials, people who were openly given sugar pills still reported feeling better. Researchers are careful not to [6] the significance of these results, since placebos cannot shrink tumours or cure infections. Nevertheless, the findings have [7] doctors to think harder about the way they talk to patients, since a few reassuring words may [8] a real difference.`,
+  gaps: {
+    0: { options: ["known", "learnt", "found", "seen"], answer: 0 },
+    1: { options: ["fragment", "figment", "segment", "pigment"], answer: 1,
+         explain: "Fixed phrase: 'a figment of the imagination' = something that seems real but isn't." },
+    2: { options: ["footing", "base", "basis", "ground"], answer: 2,
+         explain: "'Basis' = the underlying cause or foundation (a biological basis). 'Base' is a physical bottom part or a centre of operations." },
+    3: { options: ["soothe", "calm", "relieve", "ease"], answer: 3,
+         explain: "'Ease' can be used without an object (the pain eased). 'Soothe', 'calm' and 'relieve' need an object (relieve the symptoms)." },
+    4: { options: ["form", "figure", "frame", "mould"], answer: 0,
+         explain: "'Form' = type or kind: the form a treatment takes (injection, pill)." },
+    5: { options: ["whole", "total", "full", "entire"], answer: 2,
+         explain: "Fixed phrase: 'know full well' = know perfectly well." },
+    6: { options: ["overdo", "overstate", "overact", "overtake"], answer: 1,
+         explain: "'Overstate' = make something seem more important than it really is." },
+    7: { options: ["prompted", "made", "let", "had"], answer: 0,
+         explain: "'Prompt someone to do something'. 'Made', 'let' and 'had' are followed by an infinitive without 'to'." },
+    8: { options: ["do", "have", "take", "make"], answer: 3,
+         explain: "Collocation: 'make a difference'." }
+  }
+},
+/* ---------------- Set 14 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "The first artists",
+  text: `In 1994, three cave explorers in southern France squeezed through a narrow passage and found themselves [0] to face with some of the oldest paintings ever discovered. The walls of the Chauvet Cave are covered with horses, lions and rhinoceroses, drawn with such skill that some experts initially [1] doubt on claims that they could be more than 30,000 years old.
+
+The discovery turned long-held assumptions [2] their head. It had generally been taken for [3] that early artistic efforts would be crude, with sophistication developing only gradually. Chauvet suggested otherwise: its artists used shading and perspective, and even scraped the rock smooth to make their colours [4] out.
+
+Since then, further discoveries have pushed the date [5] even further. Hand stencils in Indonesia and Spain have been dated to over 40,000 years ago, and some researchers argue that the oldest examples may be the work of Neanderthals rather than modern humans, a claim that remains [6] contested.
+
+To protect the paintings, Chauvet was sealed off from the public almost immediately. Visitors must [7] for a full-scale replica nearby, which reproduces the cave in remarkable detail. Most leave impressed, though few would claim that it holds a [8] to the real thing.`,
+  gaps: {
+    0: { options: ["face", "eye", "head", "front"], answer: 0 },
+    1: { options: ["put", "laid", "cast", "set"], answer: 2,
+         explain: "'Cast doubt on something' = make people less sure that it is true." },
+    2: { options: ["over", "off", "on", "under"], answer: 2,
+         explain: "Idiom: 'turn something on its head' = make people think about it in a completely new way." },
+    3: { options: ["given", "read", "accepted", "granted"], answer: 3,
+         explain: "'Take (it) for granted that…' = assume without question. 'Take as read' uses 'as', not 'for'." },
+    4: { options: ["show", "look", "pick", "stand"], answer: 3,
+         explain: "'Stand out' = be easy to see or notice." },
+    5: { options: ["behind", "back", "down", "away"], answer: 1,
+         explain: "'Push a date back' = make it earlier (here, further into the past)." },
+    6: { options: ["hotly", "warmly", "heatedly", "burningly"], answer: 0,
+         explain: "Collocation: 'hotly contested/debated' = argued about with strong feelings. 'Heatedly' goes with verbs like 'argue'." },
+    7: { options: ["settle", "content", "satisfy", "accept"], answer: 0,
+         explain: "'Settle for something' = accept it although it is not what you really wanted. 'Content' would need 'themselves with'." },
+    8: { options: ["torch", "candle", "light", "lamp"], answer: 1,
+         explain: "Idiom: 'not hold a candle to something' = be much less good than it. It is normally used in negative contexts (few would claim…)." }
+  }
+},
+/* ---------------- Set 15 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "Mapping the deep",
+  text: `It is often said that we know more about the surface of Mars than about the bottom of our own oceans. The claim may be something of an [0], but it contains more than a grain of truth. Until recently, only around a fifth of the seabed had been mapped in any detail, despite the fact that the oceans [1] up more than 70 per cent of the planet's surface.
+
+The difficulty lies in the nature of water itself. Satellites, which have [2] it possible to map Mars and the Moon with great precision, cannot see through it. Instead, ships must criss-cross the oceans using sonar, a slow and costly process. Mapping the entire seabed in this way would take a single vessel hundreds of years, which goes a long way towards [3] for the slow progress.
+
+An international project launched in 2017 has set its [4] on completing the map by 2030. Governments, companies and research institutions are being asked to work hand in [5], sharing data they already hold, and even fishing boats and private yachts can [6] their bit. The benefits are expected to be [7]-reaching, from safer navigation to a better understanding of ocean currents and climate. Not least, scientists hope to shed [8] on ecosystems that no human eye has ever seen.`,
+  gaps: {
+    0: { options: ["exaggeration", "excess", "enlargement", "inflation"], answer: 0 },
+    1: { options: ["build", "make", "set", "put"], answer: 1,
+         explain: "'Make up' = form a particular proportion of something." },
+    2: { options: ["made", "let", "caused", "allowed"], answer: 0,
+         explain: "Pattern: 'make it possible to do something'. 'Let', 'cause' and 'allow' are not followed by 'it + adjective'." },
+    3: { options: ["explaining", "justifying", "excusing", "accounting"], answer: 3,
+         explain: "'Account for something' = explain it. 'Explain', 'justify' and 'excuse' take a direct object, not 'for'." },
+    4: { options: ["sights", "eyes", "views", "aims"], answer: 0,
+         explain: "Idiom: 'set your sights on something' = decide to achieve it." },
+    5: { options: ["sleeve", "mitt", "pocket", "glove"], answer: 3,
+         explain: "Idiom: 'work hand in glove (with someone)' = work very closely together." },
+    6: { options: ["make", "play", "do", "take"], answer: 2,
+         explain: "Fixed phrase: 'do your bit' = do your share of the work." },
+    7: { options: ["far", "deep", "high", "distant"], answer: 0,
+         explain: "Compound adjective: 'far-reaching' = having a great effect on many things." },
+    8: { options: ["lamp", "beam", "glow", "light"], answer: 3,
+         explain: "Fixed phrase: 'shed light on something' = help to explain it." }
+  }
 }
 ];

@@ -229,5 +229,117 @@ The implications are serious. Eyewitness [22] has played a part in a large numbe
     23: { stem: "WRONG", answers: ["wrongful"], explain: "An adjective before 'convictions' = unfair or illegal. 'Wrongful conviction' is a fixed legal collocation." },
     24: { stem: "CONSTRUCT", answers: ["reconstruction"], explain: "A noun after 'a continual'. It echoes 'we rebuild it' in the second paragraph: re- + construct + -ion." }
   }
+},
+/* ---------------- Set 12 ---------------- */
+{
+  type: "word-form",
+  textTitle: "Built to last",
+  text: `Many Roman structures have survived for two thousand years, a [0] feat given that modern concrete often begins to crumble within decades. For a long time, the secret of their [17] puzzled engineers. Recent research suggests that the answer lies partly in the use of volcanic ash and partly in a [18] unexpected ingredient: small lumps of lime that were once assumed to be a sign of [19] mixing.
+
+These lumps, it turns out, give the concrete a [20] ability to repair itself. When cracks form and water seeps in, the lime dissolves and then hardens again, sealing the gap before it can widen. Some harbour walls built by the Romans have even grown [21] stronger after centuries of exposure to seawater.
+
+Engineers are now exploring whether similar techniques could be [22] for modern construction. The potential benefits are considerable. Cement production is responsible for around eight per cent of global carbon emissions, so a material that lasts longer and needs less [23] could make a real difference. Whether it can be produced cheaply enough to be commercially [24] remains to be seen.`,
+  gaps: {
+    0: { stem: "NOTE", answers: ["notable"] },
+    17: { stem: "DURABLE", answers: ["durability"], explain: "A noun after the possessive 'their': durable → durability = the ability to last." },
+    18: { stem: "GENUINE", answers: ["genuinely"], explain: "An adverb modifying the adjective 'unexpected': genuine → genuinely." },
+    19: { stem: "CARE", answers: ["careless"], explain: "An adjective before 'mixing'. The lumps were thought to show poor work: care + -less." },
+    20: { stem: "MIRACLE", answers: ["miraculous"], explain: "An adjective before 'ability' = so remarkable it seems impossible: miracle → miraculous." },
+    21: { stem: "MEASURE", answers: ["measurably"], explain: "An adverb modifying 'stronger' = by an amount that can be measured: measure → measurable → measurably." },
+    22: { stem: "ADAPT", answers: ["adapted"], explain: "A past participle in a passive structure (could be adapted for) = changed to suit a new purpose." },
+    23: { stem: "MAINTAIN", answers: ["maintenance"], explain: "A noun after 'needs less'. Note the spelling change: maintain → maintenance." },
+    24: { stem: "SUCCEED", answers: ["successful"], explain: "An adjective after 'commercially': succeed → success → successful." }
+  }
+},
+/* ---------------- Set 13 ---------------- */
+{
+  type: "word-form",
+  textTitle: "Less is more",
+  text: `In recent years, a growing number of people have embraced the idea that owning fewer things can make life more [0]. Books and television programmes promising to transform cluttered homes into calm, orderly spaces have attracted a huge [17]. Their message is simple: get rid of anything that is neither useful nor a source of genuine [18].
+
+Supporters claim that the benefits extend well beyond tidiness. A home free of [19] possessions, they argue, is easier to clean, cheaper to run and less [20] to live in. Some psychologists agree, pointing to studies that link cluttered surroundings with higher levels of anxiety.
+
+Critics, however, detect a certain [21] in the movement. It is easy, they point out, for people with money to throw things away, [22] that they can always buy them again. For those on low incomes, keeping things 'just in case' is often a perfectly [23] response to financial insecurity. There is also something faintly ironic about a trend that has given rise to a whole industry of storage boxes, organisers and [24] advice.`,
+  gaps: {
+    0: { stem: "SATISFY", answers: ["satisfying"] },
+    17: { stem: "FOLLOW", answers: ["following"], explain: "A noun after 'a huge': a following = a group of supporters or fans." },
+    18: { stem: "ENJOY", answers: ["enjoyment"], explain: "A noun after 'a source of genuine': enjoy → enjoyment." },
+    19: { stem: "WANT", answers: ["unwanted"], explain: "An adjective before 'possessions'. The context needs a negative: un- + want + -ed." },
+    20: { stem: "STRESS", answers: ["stressful"], explain: "An adjective after 'less': stress → stressful." },
+    21: { stem: "HYPOCRITE", answers: ["hypocrisy"], explain: "A noun after 'a certain' = claiming to have values you don't really practise: hypocrite → hypocrisy." },
+    22: { stem: "KNOW", answers: ["knowing"], explain: "A participle introducing a reason = because they know: 'knowing that they can always buy them again'." },
+    23: { stem: "REASON", answers: ["reasonable", "reasoned"], explain: "An adjective after 'a perfectly': reason → reasonable = sensible." },
+    24: { stem: "PROFESSION", answers: ["professional"], explain: "An adjective before 'advice' = given by experts who are paid for it." }
+  }
+},
+/* ---------------- Set 14 ---------------- */
+{
+  type: "word-form",
+  textTitle: "No laughing matter",
+  text: `We tend to think of laughter as a [0] response to jokes, but researchers have found that this is rarely the case. In one study of everyday conversations, fewer than a fifth of laughs followed anything [17] resembling a joke. Instead, laughter seems to serve mainly as a social signal, showing [18] and helping people to bond.
+
+Tellingly, we are around thirty times more likely to laugh when we are with others than when we are alone. Speakers also laugh more than their listeners, often to soften a potentially [19] remark or to show that they do not wish to be taken too seriously. Laughter, in other words, is less about humour than about [20].
+
+It is also highly [21]. Hearing others laugh makes us more likely to laugh ourselves, which is why television comedies have long used recorded laughter, despite widespread [22] of the practice among critics.
+
+There may even be health benefits. Laughing releases endorphins, which can increase our [23] of pain, and some hospitals now employ clowns to help children cope with [24] medical procedures.`,
+  gaps: {
+    0: { stem: "NATURE", answers: ["natural"] },
+    17: { stem: "REMOTE", answers: ["remotely"], explain: "An adverb modifying 'resembling': 'anything remotely like…' = anything even slightly like." },
+    18: { stem: "FRIEND", answers: ["friendliness"], explain: "A noun as the object of 'showing': friend → friendly → friendliness (y changes to i)." },
+    19: { stem: "HURT", answers: ["hurtful"], explain: "An adjective before 'remark' = unkind, likely to upset someone: hurt + -ful." },
+    20: { stem: "CONNECT", answers: ["connection", "connecting"], explain: "A noun after 'about': connect → connection = a relationship with other people." },
+    21: { stem: "CONTAGION", answers: ["contagious"], explain: "An adjective after 'highly' = easily spread from person to person: contagion → contagious." },
+    22: { stem: "APPROVE", answers: ["disapproval"], explain: "A negative noun after 'widespread', followed by 'of': dis- + approve + -al." },
+    23: { stem: "TOLERATE", answers: ["tolerance"], explain: "A noun after 'our', followed by 'of': tolerate → tolerance = the ability to bear something." },
+    24: { stem: "PLEASANT", answers: ["unpleasant"], explain: "A negative adjective before 'medical procedures': un- + pleasant." }
+  }
+},
+/* ---------------- Set 15 ---------------- */
+{
+  type: "word-form",
+  textTitle: "Meat without animals",
+  text: `Cultivated meat, grown from animal cells in large steel tanks, has been [0] as a solution to some of the biggest problems facing the food industry. Its supporters argue that it could provide meat without the need for [17] farming, cutting greenhouse gas emissions and sparing billions of animals from slaughter.
+
+The technology is real, but scaling it up has proved [18] difficult. The first cultivated burger, unveiled in 2013, cost more than a quarter of a million dollars to produce. Prices have fallen [19] since then, yet cultivated meat remains far more expensive than its conventional [20].
+
+There are other hurdles, too. Growing cells requires a [21] supply of nutrients, and some critics question whether the process will prove as [22] as claimed once the energy needed to run the factories is taken into account. Consumers, meanwhile, are divided. Some are enthusiastic, while others express [23] at the idea of eating meat produced in a laboratory.
+
+Nevertheless, a handful of countries have already granted [24] for cultivated chicken to be sold, and investors continue to pour money into the sector.`,
+  gaps: {
+    0: { stem: "HAIL", answers: ["hailed"] },
+    17: { stem: "INDUSTRY", answers: ["industrial"], explain: "An adjective before 'farming': industry → industrial = done by large businesses using factory methods." },
+    18: { stem: "NOTORIOUS", answers: ["notoriously"], explain: "An adverb modifying 'difficult' = well known for being difficult." },
+    19: { stem: "SUBSTANCE", answers: ["substantially"], explain: "An adverb modifying 'fallen' = by a large amount: substance → substantial → substantially." },
+    20: { stem: "COUNTER", answers: ["counterpart", "counterparts"], explain: "A noun after 'its conventional' = the equivalent thing of a different kind: counter + part." },
+    21: { stem: "CONTINUE", answers: ["continuous", "continual"], explain: "An adjective before 'supply' = never stopping: continue → continuous." },
+    22: { stem: "BENEFIT", answers: ["beneficial"], explain: "An adjective after 'as': benefit → beneficial = good, helpful." },
+    23: { stem: "GUST", answers: ["disgust"], explain: "A noun after 'express': dis- + gust = a strong feeling of dislike." },
+    24: { stem: "PERMIT", answers: ["permission"], explain: "A noun after 'granted': permit → permission (note the spelling change)." }
+  }
+}
+,
+/* ---------------- Set 16 ---------------- */
+{
+  type: "word-form",
+  textTitle: "The true cost of fast fashion",
+  text: `Over the past two decades, the clothing industry has been transformed by fast fashion: cheap, [0] garments produced at great speed in response to the latest trends. Shoppers now buy far more clothes than their parents did, yet wear each item [17] fewer times before throwing it away.
+
+The environmental [18] of this model are severe. Producing textiles uses vast quantities of water, and synthetic fabrics shed tiny plastic fibres every time they are washed. Much of what is discarded ends up in landfill or is shipped abroad, where it can overwhelm local markets. Campaigners have also drawn attention to the [19] working conditions in many of the factories that supply major brands.
+
+In response, some companies have begun to promote [20] collections made from recycled materials, but critics dismiss many of these efforts as [21], arguing that a few 'green' ranges do little to offset the sheer [22] of clothing produced. Real change, they argue, will require consumers to buy fewer, better-made garments and keep them for longer.
+
+There are signs that this is beginning to happen. Buying second-hand clothes has become far more [23] acceptable, and online resale platforms have grown [24] in recent years.`,
+  gaps: {
+    0: { stem: "FASHION", answers: ["fashionable"] },
+    17: { stem: "CONSIDER", answers: ["considerably"], explain: "An adverb modifying 'fewer' = much: consider → considerable → considerably." },
+    18: { stem: "IMPLICATE", answers: ["implications"], explain: "A plural noun (the verb is 'are'): implicate → implication → implications = possible effects." },
+    19: { stem: "EXPLOIT", answers: ["exploitative"], explain: "An adjective before 'working conditions' = treating workers unfairly for profit: exploit → exploitative." },
+    20: { stem: "ETHIC", answers: ["ethical"], explain: "An adjective before 'collections' = produced in a morally acceptable way: ethic → ethical." },
+    21: { stem: "TOKEN", answers: ["tokenism"], explain: "A noun after 'dismiss as' = doing something small only to appear to be doing the right thing: token + -ism." },
+    22: { stem: "ABUNDANT", answers: ["abundance"], explain: "A noun after 'the sheer': abundant → abundance = a very large quantity." },
+    23: { stem: "SOCIAL", answers: ["socially"], explain: "An adverb modifying 'acceptable': social → socially." },
+    24: { stem: "SPECTACLE", answers: ["spectacularly"], explain: "An adverb modifying 'grown' = very greatly: spectacle → spectacular → spectacularly." }
+  }
 }
 ];

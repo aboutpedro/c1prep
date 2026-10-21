@@ -204,5 +204,110 @@ Learners should not expect results overnight. It can take months to play even si
     15: { answers: ["who", "that"], explain: "A defining relative pronoun for people, as the subject of 'persevere'." },
     16: { answers: ["ever"], explain: "Superlative + present perfect + 'ever' (the most rewarding thing they have ever done)." }
   }
+},
+/* ---------------- Set 11 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "The humble umbrella",
+  text: `The umbrella is [0] familiar an object that we rarely stop to think about it. Yet it has a surprisingly long history. Parasols were used in ancient Egypt and China [9] than three thousand years ago, though for most of that time they served to keep off the sun rather [10] the rain.
+
+In eighteenth-century London, a man [11] carried an umbrella was likely to be mocked in the street. Umbrellas were seen as a feminine accessory, and coachmen, [12] livelihood depended on people paying to keep dry, were said to shout insults at anyone using one. It was [13] until the traveller Jonas Hanway had carried one through the city for some thirty years that attitudes began to change.
+
+Today, around a billion umbrellas are sold worldwide every year, [14] of which are thrown away within months. Designers have tried countless improvements, [15] the basic shape has hardly changed in centuries. As one inventor admitted, it is hard to improve on something [16] works so well already.`,
+  gaps: {
+    0: { answers: ["so"] },
+    9: { answers: ["more"], explain: "'More than + number' = over." },
+    10: { answers: ["than"], explain: "'Rather than' = instead of." },
+    11: { answers: ["who", "that"], explain: "A defining relative pronoun for a person, as the subject of 'carried'." },
+    12: { answers: ["whose"], explain: "'Whose' shows possession: the coachmen's livelihood." },
+    13: { answers: ["not"], explain: "'It was not until… that…' = only after that did something happen." },
+    14: { answers: ["many", "most", "some", "half"], explain: "Quantifier + 'of which' refers back to the umbrellas: many of which = and many of them." },
+    15: { answers: ["but", "yet", "although", "though", "while", "whilst"], explain: "A contrast linker: many improvements have been tried, but the shape is the same." },
+    16: { answers: ["that", "which"], explain: "A relative pronoun for a thing, as the subject of 'works'." }
+  }
+},
+/* ---------------- Set 12 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "Why do we yawn?",
+  text: `Few behaviours are as mysterious as the yawn. We do it when we are tired, when we are bored and, oddly, when we see [0] else doing it. Yawning begins before birth and is found in almost every vertebrate, [9] suggests that it must serve some useful purpose. Exactly [10] that purpose is, however, remains a matter of debate.
+
+The most popular explanation, that we yawn to take in more oxygen, has [11] largely abandoned. When volunteers were given air rich in oxygen, they yawned [12] more nor less than usual. A more recent theory holds that yawning helps to cool the brain. In support [13] this idea, researchers have found that people yawn less often in very hot weather, when breathing in warm air would do little to bring their temperature down.
+
+Contagious yawning is [14] puzzle altogether. Some studies suggest that people who score highly on tests of empathy are more susceptible to it, although the evidence is far from consistent. Whatever the explanation, you may well have caught [15] yawning at least once while reading this article. If [16], you are in good company.`,
+  gaps: {
+    0: { answers: ["someone"] },
+    9: { answers: ["which"], explain: "After a comma, 'which' refers back to the whole previous clause." },
+    10: { answers: ["what"], explain: "'What' introduces a noun clause that is the subject: 'Exactly what that purpose is… remains a matter of debate'." },
+    11: { answers: ["been"], explain: "Present perfect passive: 'has been abandoned'." },
+    12: { answers: ["neither"], explain: "'Neither… nor' = not one and not the other." },
+    13: { answers: ["of"], explain: "Fixed phrase: 'in support of (an idea)'." },
+    14: { answers: ["another"], explain: "'Another puzzle altogether' = a completely different puzzle." },
+    15: { answers: ["yourself"], explain: "'Catch yourself doing something' = suddenly notice that you are doing it." },
+    16: { answers: ["so"], explain: "'If so' = if that is true." }
+  }
+},
+/* ---------------- Set 13 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "The invention of the weekend",
+  text: `It is easy to assume that the weekend has always existed, but in [0] it is a relatively modern invention. For most of history, people worked six days a week, with Sunday set [9] for rest and worship. In nineteenth-century Britain, many factory workers took matters into their [10] hands by failing to turn up on Mondays, a habit so widespread that it became known as 'Saint Monday'.
+
+Employers, [11] than fight a losing battle, gradually began to offer Saturday afternoons off in exchange [12] reliable attendance during the rest of the week. The full two-day weekend arrived later still. In the United States, Henry Ford was [13] of the first major employers to adopt it, in 1926, arguing that workers with more free time would spend more money on consumer goods, [14] as cars.
+
+Today, some campaigners argue that it is time to go further. Trials of a four-day week have produced encouraging results, although critics question [15] the model could work in every industry. [16] the outcome of that debate, the weekend is a useful reminder that working patterns we take for granted were once considered radical.`,
+  gaps: {
+    0: { answers: ["fact"] },
+    9: { answers: ["aside", "apart"], explain: "'Set aside / set apart' = keep for a particular purpose." },
+    10: { answers: ["own"], explain: "Idiom: 'take matters into your own hands' = deal with a problem yourself." },
+    11: { answers: ["rather"], explain: "'Rather than + infinitive' = instead of." },
+    12: { answers: ["for"], explain: "'In exchange for something'." },
+    13: { answers: ["one"], explain: "'One of the first + plural noun'." },
+    14: { answers: ["such"], explain: "'Such as' introduces an example." },
+    15: { answers: ["whether", "if"], explain: "'Question whether/if…' = doubt that something is true." },
+    16: { answers: ["Whatever"], explain: "'Whatever + noun phrase' = no matter what (the outcome) is." }
+  }
+},
+/* ---------------- Set 14 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "Back to the table",
+  text: `[0] the rise of video games and smartphones, board games are enjoying something of a golden age. Sales have grown steadily for over a decade, and board game cafés, [9] customers pay a small fee to play from a library of hundreds of titles, have opened in cities around the world.
+
+Part of the appeal lies in the very thing that once made board games seem old-fashioned: they require people to sit around a table together. After a long day in front of a screen, many people are looking [10] a way to spend time with friends that does not involve yet [11] device. There is also the sheer variety on [12]. Modern games range from quick card games that can be learned in minutes to elaborate strategy games that take [13] much as six hours to complete.
+
+Designers have played their part too. Whereas traditional games often relied heavily [14] luck, many recent ones reward careful planning and cooperation. In some, players work together against the game itself, [15] means that nobody has to go home feeling like a loser. It is perhaps no surprise, [16], that so many adults who had not played since childhood are rediscovering the pleasure of rolling the dice.`,
+  gaps: {
+    0: { answers: ["Despite"] },
+    9: { answers: ["where"], explain: "A relative adverb for a place: cafés where customers pay. 'In which' would also fit, but needs two words." },
+    10: { answers: ["for"], explain: "'Look for' = try to find." },
+    11: { answers: ["another"], explain: "'Yet another' = one more, often with a sense of annoyance." },
+    12: { answers: ["offer"], explain: "'On offer' = available." },
+    13: { answers: ["as"], explain: "'As much as + amount' emphasises how large the amount is." },
+    14: { answers: ["on"], explain: "'Rely on something'." },
+    15: { answers: ["which"], explain: "After a comma, 'which' refers back to the whole previous idea." },
+    16: { answers: ["then", "therefore", "thus"], explain: "A linker showing a conclusion: given all this, it is no surprise." }
+  }
+},
+/* ---------------- Set 15 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "Haven't I been here before?",
+  text: `Most of us know the feeling: we walk into a room for the first time and are suddenly [0] by the conviction that we have been there before. Around two-thirds of people say they have experienced déjà vu at [9] once, and it appears to be most common in young adults, becoming less frequent [10] we get older.
+
+For a long time, the phenomenon was considered too fleeting to study. It is, after all, impossible to predict [11] it will strike. That has not stopped researchers [12] finding ingenious ways of producing something similar in the laboratory. In one experiment, volunteers were shown scenes [13] layout closely resembled that of places they had seen earlier but could not remember. Many reported a strong sense of familiarity, [14] they could not explain where it came from.
+
+This suggests that déjà vu may occur when a situation feels familiar without our [15] able to recall why. Some researchers go further, arguing that it reflects the brain checking its own memory for errors. If [16] is the case, the strange sensation may actually be a sign that our memory is working well.`,
+  gaps: {
+    0: { answers: ["struck"] },
+    9: { answers: ["least"], explain: "Fixed phrase: 'at least once'." },
+    10: { answers: ["as"], explain: "'As' = while, at the same time as (as we get older)." },
+    11: { answers: ["when"], explain: "'When' introduces an indirect question about time." },
+    12: { answers: ["from"], explain: "'Stop someone (from) doing something'. Here the gap needs 'from'." },
+    13: { answers: ["whose"], explain: "'Whose' shows possession: the scenes' layout." },
+    14: { answers: ["although", "though", "but", "yet"], explain: "A contrast linker: they felt familiarity, but couldn't explain it." },
+    15: { answers: ["being"], explain: "'Without + possessive + -ing': without our being able = without us being able." },
+    16: { answers: ["this", "that", "such"], explain: "'If this/that is the case' = if that is true. 'If such is the case' is more formal." }
+  }
 }
 ];
