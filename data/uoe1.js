@@ -148,135 +148,145 @@ None of this means that we should get [6] of our phones altogether. But it may b
 {
   type: "mc-cloze",
   textTitle: "Night trains are back",
-  text: `After decades [0] decline, sleeper trains are [1] a comeback across Europe. Rail companies have [2] on growing concern about the environmental impact of flying by launching new routes. Passengers can fall asleep in one capital and wake up in another, which does [3] with the need for a hotel.
+  text: `After decades of [0], sleeper trains are staging a remarkable comeback across Europe. Rail operators, quick to [1] on growing unease about the environmental cost of flying, have launched a string of new routes linking major cities. The appeal is easy to understand: passengers can fall asleep in one capital and wake up in another, which [2] away with the need for a hotel and saves a day of travel.
 
-Such comfort, however, [4] at a price, and many routes barely break [5]. Nevertheless, demand [6] no sign of slowing down, with several new lines in the [7]. For many travellers, the journey has become an integral [8] of the holiday itself.`,
+Running a night train, however, is a costly business. Carriages spend all day standing idle, each compartment can [3] only a handful of passengers, and the charges for using the tracks can be high. Profit margins are wafer-[4], and many routes barely break [5]; some have survived only thanks to government support.
+
+Demand, nonetheless, [6] no sign of slowing down. Several new lines are in the [7], and on popular routes tickets are often snapped up months in advance. For enthusiasts, the journey is very much part and [8] of the experience: the gentle rocking of the carriage, the changing landscape at dawn and the simple pleasure of arriving refreshed.`,
   gaps: {
-    0: { options: ["of","in","from","for"], answer: 0 },
-    1: { options: ["having","doing","making","taking"], answer: 2,
-      explain: "'Make a comeback' = become popular again." },
-    2: { options: ["profited","gained","capitalised","benefited"], answer: 2,
-      explain: "'Capitalise on something' = use it to your advantage. 'Profit', 'gain' and 'benefit' would need 'from'." },
-    3: { options: ["off","away","out","down"], answer: 1,
-      explain: "'Do away with' = get rid of, remove the need for." },
-    4: { options: ["goes","arrives","comes","runs"], answer: 2,
-      explain: "Fixed phrase: 'come at a price' = have a cost or a disadvantage." },
-    5: { options: ["level","even","equal","flat"], answer: 1,
+    0: { options: ["drop","decline","decay","descent"], answer: 1 },
+    1: { options: ["cash","benefit","capitalise","profit"], answer: 2,
+      explain: "'Capitalise on something' = use it to your advantage. 'Cash' would need 'in on', and 'profit' and 'benefit' are followed by 'from'." },
+    2: { options: ["gets","takes","does","puts"], answer: 2,
+      explain: "'Do away with' = get rid of, remove the need for. 'Get away with' = escape punishment; 'put away' and 'take away' aren't followed by 'with'." },
+    3: { options: ["sleep","stay","settle","rest"], answer: 0,
+      explain: "'Sleep' can be transitive = provide beds for (a compartment that sleeps four). 'Rest', 'stay' and 'settle' can't take passengers as an object in this way." },
+    4: { options: ["narrow","thin","slim","fine"], answer: 1,
+      explain: "Fixed compound: 'wafer-thin' = extremely thin. We can say 'slim/narrow margins', but only 'thin' combines with 'wafer'." },
+    5: { options: ["equal","even","square","level"], answer: 1,
       explain: "'Break even' = make neither a profit nor a loss." },
-    6: { options: ["puts","shows","makes","offers"], answer: 1,
+    6: { options: ["shows","makes","keeps","holds"], answer: 0,
       explain: "Fixed phrase: 'show no sign of (doing) something'." },
-    7: { options: ["tunnel","channel","pipe","pipeline"], answer: 3,
+    7: { options: ["pipeline","channel","tunnel","funnel"], answer: 0,
       explain: "'In the pipeline' = being planned or developed." },
-    8: { options: ["piece","share","portion","part"], answer: 3,
-      explain: "Collocation: 'an integral part of something'." }
+    8: { options: ["portion","packet","parcel","package"], answer: 2,
+      explain: "Fixed phrase: 'part and parcel of something' = an essential part of it." }
   }
 },
 /* ---------------- Set 7 ---------------- */
 {
   type: "mc-cloze",
   textTitle: "Dear diary",
-  text: `People have [0] diaries for centuries, partly to keep [1] of daily events and partly to help them [2] sense of difficult experiences. Research suggests that expressive writing can even [3] stress levels.
+  text: `People have [0] diaries for centuries, sometimes simply to keep [1] of daily events, but often to help them come to [2] with difficult experiences. Psychologists have found that this second kind of writing can bring real benefits. In a series of studies, people who wrote about troubling events for fifteen minutes a day over just a few days made fewer visits to the doctor in the months that followed, although researchers are careful not to [3] too much into such findings.
 
-Some diarists write with one eye on [4], hoping their words will one day [5] the light of day. Others guard their privacy [6]. Samuel Pepys wrote in a form of shorthand that was not [7] until long after his death. Today his diary [8] a vivid picture of life in seventeenth-century London.`,
+Not all diarists write purely for themselves, of course. Some write with one eye firmly on [4], hoping their words will one day see the light of [5]. Others go to great [6] to keep their thoughts private. Samuel Pepys, whose diary is one of the best-known records of seventeenth-century London, wrote in a form of shorthand that was not [7] until more than a century after his death.
+
+Today his diary is valued precisely because he never intended it to be read. Its frankness [8] a vivid picture of everyday life at the time, from the Great Fire to the price of a good dinner.`,
   gaps: {
-    0: { options: ["kept","held","had","made"], answer: 0 },
-    1: { options: ["trace","track","record","note"], answer: 1,
-      explain: "'Keep track of' = stay informed about. 'Record' and 'note' would need 'a' (keep a record of)." },
-    2: { options: ["take","get","make","find"], answer: 2,
-      explain: "Fixed phrase: 'make sense of' = understand." },
-    3: { options: ["fall","drop","sink","lower"], answer: 3,
-      explain: "A verb that takes an object is needed (writing lowers stress levels). 'Fall' and 'sink' take no object, and 'drop' isn't used with levels like this." },
-    4: { options: ["posterity","descendants","heritage","history"], answer: 0,
-      explain: "'With one eye on posterity' = thinking about how future generations will see you." },
-    5: { options: ["meet","reach","find","see"], answer: 3,
+    0: { options: ["had","made","held","kept"], answer: 3 },
+    1: { options: ["trace","hold","sight","track"], answer: 3,
+      explain: "'Keep track of' = keep a record of or stay informed about. 'Keep sight of' and 'keep hold of' have different meanings (keep something in view / not let go of it), and 'keep trace of' doesn't exist." },
+    2: { options: ["conclusions","settlement","rest","terms"], answer: 3,
+      explain: "'Come to terms with something' = gradually accept something painful. 'Come to rest' = stop moving; 'come to a conclusion/settlement' would need 'a' and doesn't take 'with' in this sense." },
+    3: { options: ["put","read","take","see"], answer: 1,
+      explain: "'Read too much into something' = believe it means more than it does. The other verbs don't form this phrase." },
+    4: { options: ["posterity","heritage","descendants","ancestry"], answer: 0,
+      explain: "'With one eye on posterity' = thinking about how future generations will see you. 'Descendants' would need 'their', and heritage and ancestry look to the past, not the future." },
+    5: { options: ["day","dawn","daylight","morning"], answer: 0,
       explain: "Idiom: 'see the light of day' = be made public." },
-    6: { options: ["wildly","fiercely","strongly","roughly"], answer: 1,
-      explain: "Collocation: 'fiercely guard/protect something'." },
-    7: { options: ["explained","interpreted","deciphered","solved"], answer: 2,
-      explain: "'Decipher' = work out the meaning of writing that is hard to read or in code." },
-    8: { options: ["draws","makes","sketches","paints"], answer: 3,
-      explain: "Fixed phrase: 'paint a vivid picture of something'." }
+    6: { options: ["depths","distances","lengths","heights"], answer: 2,
+      explain: "Fixed phrase: 'go to great lengths (to do something)' = make a great effort." },
+    7: { options: ["explained","deciphered","resolved","clarified"], answer: 1,
+      explain: "'Decipher' = work out the meaning of writing that is in code or hard to read. The others don't collocate with a form of writing." },
+    8: { options: ["draws","designs","paints","sketches"], answer: 2,
+      explain: "Collocation: 'paint a vivid picture of something' = describe it in a way that brings it to life." }
   }
 },
 /* ---------------- Set 8 ---------------- */
 {
   type: "mc-cloze",
   textTitle: "Going it alone",
-  text: `Starting a business [0] a lot of courage. Many people dream of being their own [1], but few are prepared for the [2] hours involved. Most new businesses take several years to [3] a profit, and many [4] under within the first two years.
+  text: `Starting a business [0] a great deal of courage. Plenty of people dream of being their own boss, but few are fully prepared for what it [1]: long hours, financial uncertainty and the constant pressure of being responsible for everything. Most new businesses take several years to turn a [2], and a significant proportion go [3] within their first two years.
 
-Experts advise doing thorough market research to [5] whether there is genuine demand, and keeping [6] costs as low as possible. It also pays to [7] on the expertise of others. Above all, entrepreneurs need to be able to bounce [8] from setbacks.`,
+So what separates those that succeed from those that fail? According to many experts, thorough market research is essential, since it allows would-be entrepreneurs to [4] whether there is genuine demand for what they intend to sell. Keeping costs to a bare [5] in the early stages is equally important, as is resisting the temptation to expand too quickly.
+
+It also pays to [6] on the expertise of others. Mentors who have been through the process themselves can help newcomers avoid [7] mistakes. Above all, though, successful founders seem to share one quality: the ability to bounce [8] from setbacks rather than be defeated by them.`,
   gaps: {
-    0: { options: ["takes","makes","does","gives"], answer: 0 },
-    1: { options: ["chief","head","boss","master"], answer: 2,
-      explain: "Fixed phrase: 'be your own boss' = work for yourself." },
-    2: { options: ["lengthy","long","tall","wide"], answer: 1,
-      explain: "Collocation: 'long hours'. 'Lengthy' describes processes or documents, not working hours." },
-    3: { options: ["do","bring","give","turn"], answer: 3,
-      explain: "'Turn a profit' = make a profit." },
-    4: { options: ["fall","come","go","get"], answer: 2,
-      explain: "'Go under' = fail, go bankrupt." },
-    5: { options: ["install","settle","establish","found"], answer: 2,
-      explain: "'Establish whether…' = find out for certain." },
-    6: { options: ["upkeep","outgoing","overall","overhead"], answer: 3,
-      explain: "'Overhead costs' = the regular costs of running a business, such as rent." },
-    7: { options: ["draw","pull","lean","drag"], answer: 0,
-      explain: "'Draw on' = make use of (knowledge, experience, expertise)." },
-    8: { options: ["off","back","up","over"], answer: 1,
-      explain: "'Bounce back' = recover quickly." }
+    0: { options: ["does","gives","takes","makes"], answer: 2 },
+    1: { options: ["results","consists","amounts","entails"], answer: 3,
+      explain: "'Entail' = involve as a necessary part, and it takes a direct object. 'Consist' needs 'of', 'result' needs 'in', and 'amount' needs 'to'." },
+    2: { options: ["surplus","benefit","gain","profit"], answer: 3,
+      explain: "Fixed phrase: 'turn a profit' = make a profit." },
+    3: { options: ["under","over","off","out"], answer: 0,
+      explain: "'Go under' = fail, go bankrupt. 'Go off' = explode or go bad; 'go out' = leave or stop burning." },
+    4: { options: ["settle","install","assure","establish"], answer: 3,
+      explain: "'Establish whether…' = find out for certain. 'Settle' and 'assure' aren't followed by 'whether', and 'install' is for equipment." },
+    5: { options: ["base","minimum","limit","margin"], answer: 1,
+      explain: "Fixed phrase: 'keep something to a (bare) minimum'." },
+    6: { options: ["pull","draw","pick","take"], answer: 1,
+      explain: "'Draw on' = make use of (knowledge, experience, expertise). 'Pick on' = treat unfairly, and 'take on' = employ or accept a task." },
+    7: { options: ["costly","pricey","dear","valuable"], answer: 0,
+      explain: "Collocation: 'a costly mistake' = one that causes a lot of loss or harm. 'Pricey' and 'dear' describe things you buy, and 'valuable' would mean the opposite." },
+    8: { options: ["off","up","back","over"], answer: 2,
+      explain: "'Bounce back (from something)' = recover quickly." }
   }
 },
 /* ---------------- Set 9 ---------------- */
 {
   type: "mc-cloze",
   textTitle: "Saving endangered languages",
-  text: `Of the 7,000 [0] so languages spoken today, many are at [1] of dying out. When the last [2] speaker of a language dies, a unique way of seeing the world is lost [3]. Linguists are [4] against time to record as many as possible.
+  text: `Of the roughly 7,000 languages spoken in the world today, as many as half are at [0] of disappearing by the end of the century. When the last native speaker of a language dies, a unique way of seeing the world is lost for [1], along with songs, stories and knowledge of local plants and animals that may never have been written down.
 
-Technology has [5] new forms of preservation possible, and some communities have [6] a remarkable revival. Hebrew, which had not been spoken as an everyday language for centuries, is the most [7] example. Its success shows that decline can be [8].`,
+Linguists are [2] against time to record as many of these languages as possible. Their task is far from easy. Many speakers are elderly and live in remote areas, and some are understandably [3] of outsiders. Even when recordings are made, they do little to [4] a language's survival unless children continue to learn it at home.
+
+There are, however, grounds for optimism. Technology has [5] new forms of preservation possible, from online dictionaries to language-learning apps, and some languages have [6] remarkable revivals. Hebrew, which for centuries was used mainly in religious and scholarly contexts, is perhaps the most [7] example. Its success shows that, given enough commitment, the [8] can be turned.`,
   gaps: {
-    0: { options: ["or","and","to","by"], answer: 0 },
-    1: { options: ["danger","threat","risk","peril"], answer: 2,
-      explain: "Fixed phrase: 'at risk of (doing) something'. We say 'in danger of' and 'in peril', not 'at'." },
-    2: { options: ["natural","original","native","home"], answer: 2,
-      explain: "Collocation: 'native speaker'." },
-    3: { options: ["always","ever","eternally","forever"], answer: 3,
-      explain: "'Lost forever' = lost permanently. 'Always' and 'ever' can't end the clause like this." },
-    4: { options: ["racing","running","hurrying","rushing"], answer: 0,
+    0: { options: ["danger","threat","risk","peril"], answer: 2 },
+    1: { options: ["all","good","sure","once"], answer: 1,
+      explain: "'For good' = permanently. 'For once' = on this occasion only, 'for sure' = certainly, and 'for all' doesn't end a clause like this." },
+    2: { options: ["running","rushing","hurrying","racing"], answer: 3,
       explain: "Idiom: 'race against time' = try to do something before it is too late." },
-    5: { options: ["made","done","let","got"], answer: 0,
-      explain: "Pattern: 'make + object + adjective' (made new forms possible)." },
-    6: { options: ["passed","suffered","undergone","sustained"], answer: 2,
-      explain: "'Undergo a revival/change' = experience it. 'Suffer' and 'sustain' go with damage or losses." },
-    7: { options: ["hitting","striking","beating","knocking"], answer: 1,
-      explain: "'A striking example' = one that is very noticeable." },
-    8: { options: ["returned","reverted","retreated","reversed"], answer: 3,
-      explain: "'Reverse a decline/trend' = change its direction. The other verbs can't take 'decline' as an object." }
+    3: { options: ["resistant","doubtful","reserved","wary"], answer: 3,
+      explain: "'Wary of someone' = careful because you don't trust them. 'Doubtful' is used about facts or outcomes rather than people, 'resistant' takes 'to', and 'reserved' isn't followed by 'of'." },
+    4: { options: ["reassure","insure","assure","ensure"], answer: 3,
+      explain: "'Ensure' = make certain that something happens. 'Assure' and 'reassure' are about removing someone's doubts, and 'insure' is about financial protection." },
+    5: { options: ["made","done","let","caused"], answer: 0,
+      explain: "Pattern: 'make + object + adjective' (made new forms possible). 'Cause' would need 'to be' (caused new forms to be possible), and 'let' and 'do' don't fit the pattern." },
+    6: { options: ["suffered","sustained","undergone","passed"], answer: 2,
+      explain: "'Undergo a revival/change' = experience it. 'Suffer' and 'sustain' go with damage or losses, and 'pass' doesn't take 'revival' as an object." },
+    7: { options: ["striking","hitting","beating","knocking"], answer: 0,
+      explain: "'A striking example' = one that is very noticeable or impressive." },
+    8: { options: ["stream","tide","current","flow"], answer: 1,
+      explain: "Idiom: 'turn the tide' = reverse the direction in which a situation is developing." }
   }
 },
 /* ---------------- Set 10 ---------------- */
 {
   type: "mc-cloze",
   textTitle: "Locked in for fun",
-  text: `In [0] last decade, escape rooms have [1] off in a big way. Players are locked in a themed room and must solve a series of puzzles [2] a set time. The format [3] to a wide range of people, and companies often use it for team-[4], since success depends on a willingness to [5] ideas.
+  text: `Over the past decade, escape rooms have [0] off in a big way. The concept is simple: a group of players is locked in a themed room and must solve a series of puzzles against the [1], usually within an hour, in order to get out. Clues may be hidden in books, behind paintings or inside locked boxes, and players must often [2] together seemingly unrelated pieces of information.
 
-Under pressure, natural leaders tend to [6] to the surface, while others reveal a [7] talent for lateral thinking. Whether they escape or not, most players are [8] by the experience and quickly book another game.`,
+The format [3] to a remarkably wide range of people, from families to groups of friends, and companies increasingly use it for team-building. Success depends not so [4] on individual brilliance as on a willingness to share ideas and [5] to the strengths of others, which makes it a revealing way of seeing how colleagues work together under pressure.
+
+Indeed, owners say the games tend to [6] out people's true characters. Natural leaders quickly come to the [7], while quieter members of the group sometimes reveal an unexpected talent for lateral thinking. Whether they escape or not, most players leave [8] on the experience, and many book another game before they have even left the building.`,
   gaps: {
-    0: { options: ["the","a","that","one"], answer: 0 },
-    1: { options: ["set","got","taken","come"], answer: 2,
-      explain: "'Take off' = suddenly become popular or successful." },
-    2: { options: ["inside","by","under","within"], answer: 3,
-      explain: "'Within a set time' = before the time limit runs out." },
-    3: { options: ["attracts","appeals","pleases","draws"], answer: 1,
+    0: { options: ["set","taken","come","got"], answer: 1 },
+    1: { options: ["dial","watch","clock","hour"], answer: 2,
+      explain: "Fixed phrase: 'against the clock' = trying to finish before a time limit." },
+    2: { options: ["sort","piece","bit","part"], answer: 1,
+      explain: "'Piece together' = form a complete picture from separate parts." },
+    3: { options: ["attracts","appeals","draws","pleases"], answer: 1,
       explain: "'Appeal to someone'. 'Attract', 'please' and 'draw' take a direct object without 'to'." },
-    4: { options: ["building","making","forming","growing"], answer: 0,
-      explain: "Fixed compound: 'team-building'." },
-    5: { options: ["split","divide","share","part"], answer: 2,
-      explain: "Collocation: 'share ideas'." },
-    6: { options: ["raise","lift","arise","rise"], answer: 3,
-      explain: "'Rise to the surface' = emerge. 'Raise' and 'lift' need an object, and 'arise' isn't used with 'to the surface'." },
-    7: { options: ["covered","hidden","buried","veiled"], answer: 1,
-      explain: "Collocation: 'a hidden talent'." },
-    8: { options: ["hooked","caught","grabbed","held"], answer: 0,
-      explain: "'Be hooked' = become very keen on something." }
+    4: { options: ["long","well","far","much"], answer: 3,
+      explain: "Pattern: 'not so much X as Y' = Y is more important than X." },
+    5: { options: ["play","act","work","perform"], answer: 0,
+      explain: "'Play to someone's strengths' = make the best use of what they are good at." },
+    6: { options: ["bring","take","give","set"], answer: 0,
+      explain: "'Bring out' = reveal or make a quality noticeable. 'Take out', 'give out' and 'set out' have unrelated meanings." },
+    7: { options: ["forth","head","fore","foreground"], answer: 2,
+      explain: "Fixed phrase: 'come to the fore' = become noticeable or important. 'Come forth' takes no 'the', and the others don't form this expression." },
+    8: { options: ["gripped","fixed","caught","hooked"], answer: 3,
+      explain: "'Be/become hooked on something' = very keen on it, wanting more. None of the others is followed by 'on' with this meaning." }
   }
 }
 ];
