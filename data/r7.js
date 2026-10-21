@@ -145,5 +145,154 @@ Hale is seventy-one now, and his newspaper has begun quietly asking about a succ
     46: "'And if he can't?' responds directly to 'As long as I can still surprise people'."
   },
   extra: { label: "F", explain: "A general history of crosswords. It doesn't connect to Hale's story at any gap: for example, 'Undeterred' after gap 42 needs a reason to be discouraged, and F gives none." }
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "gapped", pointsEach: 2,
+  intro: "You are going to read an article by a man who changed career to become a commercial diver. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (41–46). There is one extra paragraph which you do not need to use.",
+  textTitle: "Learning to dive for a living",
+  textSub: "One writer swapped his office for the bottom of the harbour",
+  text: `Three years ago, I was working in an office in Manchester, writing reports that I suspected nobody read. Today I spend most of my working hours at the bottom of harbours and rivers, inspecting bridges, repairing pipelines and, occasionally, retrieving things people have dropped.
+
+[[41]]
+
+It was, by some distance, the hardest thing I have ever done. Recreational diving had taught me to be comfortable underwater, but almost nothing else I needed. Commercial divers work in near-total darkness, often in cold, fast-flowing water, wearing heavy equipment and carrying tools.
+
+[[42]]
+
+That gap closed more quickly than I expected. Over the following weeks, I learned to work by feel, to keep my breathing slow and steady and, perhaps most importantly, to stay calm when things went wrong.
+
+[[43]]
+
+Not everyone on the course made it to the end. Of the twelve people who started, eight qualified. Two left after the first week, having decided the work was not for them, and two failed the final assessment.
+
+[[44]]
+
+Finding work proved easier than I had feared. There is a shortage of qualified divers, and within a month I had joined a small company that carries out inspections for local councils and port authorities.
+
+[[45]]
+
+There are downsides, of course. The hours are irregular, the weather is often miserable, and the physical demands mean that few divers continue working into their fifties. I am also more aware than ever of the risks, which no amount of training can entirely remove.
+
+[[46]]
+
+My old colleagues sometimes ask whether I miss having a desk. I tell them I still have one – it just happens to be twenty metres underwater.`,
+  paragraphs: {
+    A: "I was not at all certain I would be among those who passed. The final test involved a series of tasks at a depth of twenty metres, each timed and assessed by an examiner. I remember almost nothing about it except surfacing and seeing my instructor give a small, unsmiling nod.",
+    B: "On my first training dive in a flooded quarry, I could not see my own hand in front of my mask. I was supposed to locate a metal frame on the bottom and tighten a series of bolts by touch alone. It took me forty minutes. My instructor, watching on a monitor above, told me afterwards that a qualified diver would have done it in five.",
+    C: "Still, I have never once wished myself back in the office. When I surface at the end of a long day, cold and tired, I feel that I have actually done something – something that, in its small way, keeps the world working.",
+    D: "The change was not as sudden as it sounds. I had been a keen recreational diver since my teens, and for years I had half-joked to friends that I would one day turn my hobby into a career. What finally pushed me was redundancy. When my company announced job cuts, I volunteered, took the payment and used most of it to pay for a commercial diving course.",
+    E: "Commercial diving has a long history. In the nineteenth century, divers in copper helmets and canvas suits were used to salvage cargo from shipwrecks and to build the foundations of bridges, often at great risk to their lives.",
+    F: "And things do go wrong. Halfway through the course, my air supply was cut off during an exercise – deliberately, as it turned out, to see how I would react. I switched to my emergency supply, signalled to the surface and began to ascend exactly as I had been taught. Only later did I notice that my hands were still shaking an hour afterwards.",
+    G: "The work is varied, which suits me. One week I might be checking the foundations of a road bridge for signs of erosion; the next, clearing debris from a water intake or helping to install new mooring posts. No two sites are quite the same."
+  },
+  answers: { "41": "D", "42": "B", "43": "F", "44": "A", "45": "G", "46": "C" },
+  explain: {
+    "41": "D explains how the change came about and ends with the diving course. 'It was… the hardest thing I have ever done' after the gap refers to that course.",
+    "42": "B describes taking forty minutes for a task a qualified diver would do in five. 'That gap' after the gap refers to this difference.",
+    "43": "The paragraph before ends 'to stay calm when things went wrong'; F begins 'And things do go wrong'.",
+    "44": "The paragraph before says two people 'failed the final assessment'; A begins 'I was not at all certain I would be among those who passed'.",
+    "45": "G describes the inspection work mentioned just before ('The work is varied'). The next paragraph then turns to the 'downsides'.",
+    "46": "'Still' in C answers the downsides and risks described before the gap, and the final paragraph continues the comparison with office life."
+  },
+  extra: { label: "E", explain: "E gives general history of commercial diving and doesn't link to the writer's personal story before or after any gap." }
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "gapped", pointsEach: 2,
+  intro: "You are going to read an article about a new approach to planting trees in cities. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (41–46). There is one extra paragraph which you do not need to use.",
+  textTitle: "Why cities are planting tiny forests",
+  textSub: "Small, dense woodlands are springing up in some unlikely places",
+  text: `On a former car park in the north of the city, a forest is growing. It is not a large forest – it covers roughly the area of a tennis court – but it is dense, noisy with birds and, remarkably, less than four years old.
+
+[[41]]
+
+His approach differs from traditional tree planting in several important ways. Rather than spacing young trees widely apart, these plantings pack them closely together, often three or more to a square metre. Only native species are used, and dozens of different kinds may be planted on a single site.
+
+[[42]]
+
+Supporters make bold claims for the results. Tiny forests, they say, grow many times faster than ordinary plantations, attract far more wildlife and absorb more carbon per square metre.
+
+[[43]]
+
+Even the sceptics, however, tend to agree that tiny forests have value of a different kind. Their real strength, many argue, lies less in their ecological impact than in what they do for the people who live around them.
+
+[[44]]
+
+This sense of ownership may also help the forests survive. Urban green spaces are often vandalised or neglected, but organisers report that sites planted by the community are treated with noticeably more respect.
+
+[[45]]
+
+The challenge now is to ensure that enthusiasm does not outrun understanding. Several research projects are under way to monitor tiny forests over the long term and compare them with other kinds of planting.
+
+[[46]]`,
+  paragraphs: {
+    A: "Not all scientists are convinced. Some point out that many of the most impressive figures come from organisations that promote the method, rather than from independent research. Others note that dense planting can lead to high death rates among young trees, and that long-term data on how these forests develop is still scarce.",
+    B: "There are practical advantages, too. Because tiny forests need so little space, they can be squeezed into gaps that would otherwise be overlooked: the corner of a school playground, a strip of land beside a motorway, the edge of a sports field. In densely built cities, where land is expensive, this matters enormously.",
+    C: "The site is one of hundreds of so-called 'tiny forests' that have sprung up in towns and cities around the world over the past decade. Most are based on a method developed in the 1970s by the Japanese botanist Akira Miyawaki, who argued that small plots of land could be turned into thriving woodland far more quickly than conventional planting allowed.",
+    D: "Ironically, the trees were paid for with money raised by the company that once ran the car park, which now advertises its support for the project on its website.",
+    E: "At the car park site, local residents did almost all of the planting themselves, over a single weekend. Children from the nearby primary school now visit every month to measure the trees and record the insects they find. 'Before, nobody round here talked to each other,' says one neighbour. 'Now we have something in common.'",
+    F: "The idea is that, crowded together, the young trees compete fiercely for light and grow upwards rapidly. As weaker plants die back, they enrich the soil, and within a few years the plot begins to resemble a natural forest in miniature, with several distinct layers of vegetation.",
+    G: "Whatever they conclude, the forest on the old car park seems unlikely to disappear. On a warm afternoon, the air beneath its canopy is noticeably cooler than on the surrounding streets, and the only sound is birdsong."
+  },
+  answers: { "41": "C", "42": "F", "43": "A", "44": "E", "45": "B", "46": "G" },
+  explain: {
+    "41": "C introduces Akira Miyawaki, so 'His approach' after the gap makes sense.",
+    "42": "The paragraph before describes trees packed 'closely together'; F explains why: 'crowded together, the young trees compete fiercely for light'.",
+    "43": "After the 'bold claims', A begins 'Not all scientists are convinced'. 'Even the sceptics' after the gap refers back to these scientists.",
+    "44": "The paragraph before mentions 'what they do for the people who live around them'; E gives the example of residents planting the site. 'This sense of ownership' follows on from it.",
+    "45": "'There are practical advantages, too' in B adds another benefit after the point about survival.",
+    "46": "'Whatever they conclude' in G refers to the research projects mentioned just before the gap."
+  },
+  extra: { label: "D", explain: "Nothing else in the article mentions the company that ran the car park, so D doesn't link to any gap." }
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "gapped", pointsEach: 2,
+  intro: "You are going to read an article about a woman who restored an old garden. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (41–46). There is one extra paragraph which you do not need to use.",
+  textTitle: "The garden that came back to life",
+  textSub: "How a buried stone led one homeowner to rebuild a Victorian garden",
+  text: `When Hannah Clarke bought a run-down Victorian house on the edge of a small Welsh town, the garden was the last thing on her mind. It was buried under brambles, the paths had disappeared, and a collapsed greenhouse leaned against the back wall.
+
+[[41]]
+
+It was her young son who changed her mind. Digging in a corner one afternoon, he unearthed a small stone tablet engraved with a name and a date: 'Sweet Briar, 1889'.
+
+[[42]]
+
+The plan transformed what had seemed an impossible task into a project with a clear goal. Over the next three years, working mainly at weekends, Clarke set about restoring the garden to its original design.
+
+[[43]]
+
+Help arrived from an unexpected source. A retired nurseryman who lived nearby had been watching her efforts from the lane, and one day he offered his advice. He ended up visiting every week for two years.
+
+[[44]]
+
+By the fourth summer, the garden was recognisably the one shown on the plan. Word of the restoration began to spread, and Clarke started receiving requests from people who wanted to see it.
+
+[[45]]
+
+Not everything has gone smoothly. Some neighbours have complained about parked cars blocking the lane on open days, and Clarke admits that the garden takes far more of her time than she ever intended.
+
+[[46]]`,
+  paragraphs: {
+    A: "'He taught me more than any book could have done,' Clarke says. 'How to prune, when to plant, which varieties would have been available in the 1880s. He even tracked down cuttings of some of the old roses that appear on the original plan.'",
+    B: "Curious, Clarke began to research the history of the house. In the local archive, she discovered that its first owner had been a keen amateur gardener who had won prizes for his roses. Among his papers was a hand-drawn plan of the garden, showing every bed and path as they had been laid out more than a century earlier.",
+    C: "Yet she has no regrets. 'Every time I walk round it, I think about the man who made it in the first place,' she says. 'I like to think he'd be pleased that someone finally took the trouble to bring it back.'",
+    D: "Victorian gardeners were often influenced by the fashion for plants collected abroad by explorers, and many gardens of the period featured exotic species from Asia and South America.",
+    E: "'I honestly thought we'd just pave over most of it,' she admits. 'The house needed a new roof, new wiring, everything. A garden was a luxury we couldn't afford to think about.'",
+    F: "She now opens the garden to the public on a handful of weekends each year, with the money raised going to a local hospice. Last year, more than eight hundred people visited.",
+    G: "Progress was slow. Clearing the brambles alone took most of the first summer, and the work uncovered problems she had not anticipated: drains blocked with roots, walls on the point of collapse, and soil so poor that almost nothing would grow in it."
+  },
+  answers: { "41": "E", "42": "B", "43": "G", "44": "A", "45": "F", "46": "C" },
+  explain: {
+    "41": "E explains why the garden was 'the last thing on her mind' (she planned to pave over it). The next paragraph says her son 'changed her mind'.",
+    "42": "The tablet makes her curious, and B introduces 'a hand-drawn plan'. 'The plan' after the gap refers back to it.",
+    "43": "After 'Clarke set about restoring the garden', G begins 'Progress was slow'. 'Help arrived' after the gap answers these problems.",
+    "44": "'He taught me' in A refers to the nurseryman who visited every week.",
+    "45": "The paragraph before mentions people who wanted to see the garden; F says she now opens it to the public. 'Open days' after the gap refers back to this.",
+    "46": "'Yet she has no regrets' in C answers the problems described just before the gap."
+  },
+  extra: { label: "D", explain: "D gives general background on Victorian gardens and doesn't link to Hannah Clarke's story before or after any gap." }
 }
 ];
