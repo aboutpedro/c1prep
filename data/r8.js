@@ -73,5 +73,107 @@ window.SETS = [
     { q: "enjoys competing against much younger people?", answer: "D", explain: "'Most of my opponents are in their twenties. Beating one of them now and then gives me more satisfaction than I'd like to admit.'" },
     { q: "found that working towards a particular goal helped them?", answer: "B", explain: "'Having a date to aim for kept me disciplined.'" }
   ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "matching", startAt: 47, pointsEach: 1,
+  intro: "You are going to read an article in which four young chefs talk about their careers. For questions 47–56, choose from the people (A–D). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Marco: from the sink to the stove", text: `I didn't go to catering college. At sixteen, I walked into a restaurant in Bologna and asked for a job, and the owner put me at the sink. For eight months I washed pans and watched. The head chef was a terrifying man who shouted at everyone, me included, but he never let a single plate leave the kitchen unless it was perfect. That obsession with standards is the most valuable thing I've ever learned. I've worked in several kitchens since then, always cooking with whatever is in season. One day I'd like a small place of my own, but I'm not ready yet – I still have too much to learn.` },
+    { label: "B", title: "Priya: lawyer to street-food cook", text: `Five years ago I was a lawyer earning a very comfortable salary, and I was miserable. When I told my parents I was leaving to cook street food, they thought I'd lost my mind. My father didn't speak to me for weeks. I started with a second-hand van and a menu of six dishes from my grandmother's recipes. What really made the difference was Instagram: people would post photos of the food, and the queues just got longer. Now I have two vans and a permanent stall, and my parents are my biggest fans – my mother even helps out at weekends.` },
+    { label: "C", title: "Jonas: fine dining to hospital kitchen", text: `I spent ten years in high-end restaurants, working sixteen-hour days, and by the end I had constant back pain and couldn't sleep. My doctor told me bluntly that if I carried on, I'd be in real trouble. So I took a job running a hospital kitchen. People assume it's a step down, but honestly, I think fine dining gets far more praise than it deserves. Making something beautiful with unlimited ingredients isn't that hard. Producing three hundred nutritious, tasty meals a day on a tiny budget, for people who are ill and often have no appetite – that takes real skill.` },
+    { label: "D", title: "Ama: restaurant owner to teacher", text: `I ran a restaurant for years, but these days I mostly teach. I didn't expect to enjoy it, but watching someone master a technique for the first time gives me a thrill that cooking for customers never quite did. I've also written a cookbook. Four publishers rejected it before the fifth said yes, and every rejection made it better. That's what I tell my students: burn the sauce, ruin the bread, and then work out why. Nobody becomes a good cook without making a lot of mistakes.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "gave up a well-paid profession?", answer: "B",
+      explain: "'I was a lawyer earning a very comfortable salary.'" },
+    { q: "says a demanding boss taught them an important lesson?", answer: "A",
+      explain: "The head chef 'shouted at everyone', but his 'obsession with standards is the most valuable thing I've ever learned'." },
+    { q: "believes a particular type of cooking is overrated?", answer: "C",
+      explain: "'Fine dining gets far more praise than it deserves.'" },
+    { q: "had their work turned down several times before succeeding?", answer: "D",
+      explain: "'Four publishers rejected it before the fifth said yes.'" },
+    { q: "mentions that family members changed their attitude?", answer: "B",
+      explain: "Her parents 'thought I'd lost my mind', but now they are her 'biggest fans'." },
+    { q: "left a job because of its effect on their health?", answer: "C",
+      explain: "He had 'constant back pain and couldn't sleep', and his doctor warned him. Priya left law because she was miserable, not for health reasons." },
+    { q: "finds passing on skills more satisfying than cooking for customers?", answer: "D",
+      explain: "Teaching 'gives me a thrill that cooking for customers never quite did'." },
+    { q: "started at the lowest level in a kitchen?", answer: "A",
+      explain: "'The owner put me at the sink. For eight months I washed pans.'" },
+    { q: "puts their success partly down to online promotion?", answer: "B",
+      explain: "'What really made the difference was Instagram.'" },
+    { q: "has an ambition they have not yet achieved?", answer: "A",
+      explain: "'One day I'd like a small place of my own, but I'm not ready yet.'" }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "matching", startAt: 47, pointsEach: 1,
+  intro: "You are going to read an article in which four people describe living without a car. For questions 47–56, choose from the people (A–D). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Daniel: city cyclist", text: `When I moved to the city for work, I realised my car spent most of its life parked outside my flat, costing me money. So I sold it and bought a decent bike. I'm probably several thousand pounds a year better off. I won't pretend it's always pleasant – cycling home in the dark in January, in the rain, takes some determination. When I started, there was nowhere at work to get changed, so I put together a proposal for showers and secure bike storage. Management agreed, and now about a third of the staff cycle in.` },
+    { label: "B", title: "Rosa: village life without wheels", text: `Everyone told me it was impossible to live in a village without a car, and they were half right. There are two buses a day, so every trip has to be planned like a military operation. What I miss most is being able to just get up and go somewhere on a whim. On the other hand, I joined a car-sharing scheme run by people in the village, and as a result I know my neighbours far better than I ever did before. We give each other lifts, and there's always someone to talk to.` },
+    { label: "C", title: "Tom: a family on a cargo bike", text: `With two small children, people assumed we'd be lost without a car. My wife's parents were convinced it was a phase that would last a few months. Instead, we bought a cargo bike, which the kids adore – they ride in the front box and wave at everyone. For our summer holiday we rent a car for a week, which works out far cheaper than owning one. The surprise has been the effect on my health: I've lost nearly ten kilos and I sleep much better than before.` },
+    { label: "D", title: "Mei: never learned to drive", text: `I'm forty-two and I've never had a driving licence, let alone a car. I grew up in a big city where nobody needed one, and somehow I never got round to learning. What bothers me is people's reactions. They look at me as though I'm being deliberately awkward or making some kind of statement. Actually, I just like trains. I spend about an hour commuting each way, and I use it to answer emails or read. I get through a book a week.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "has never owned a car?", answer: "D",
+      explain: "'I've never had a driving licence, let alone a car.'" },
+    { q: "says the change has made them fitter?", answer: "C",
+      explain: "'I've lost nearly ten kilos and I sleep much better than before.'" },
+    { q: "misses being able to travel spontaneously?", answer: "B",
+      explain: "'What I miss most is being able to just get up and go somewhere on a whim.'" },
+    { q: "persuaded an organisation to make a change?", answer: "A",
+      explain: "He 'put together a proposal for showers and secure bike storage. Management agreed.'" },
+    { q: "feels that other people judge their choice?", answer: "D",
+      explain: "'They look at me as though I'm being deliberately awkward or making some kind of statement.'" },
+    { q: "occasionally hires a vehicle?", answer: "C",
+      explain: "'For our summer holiday we rent a car for a week.'" },
+    { q: "says the change has brought them closer to people in their community?", answer: "B",
+      explain: "Through car-sharing, 'I know my neighbours far better than I ever did before'." },
+    { q: "mentions that a certain time of year makes things harder?", answer: "A",
+      explain: "'Cycling home in the dark in January, in the rain, takes some determination.'" },
+    { q: "says relatives doubted the decision would last?", answer: "C",
+      explain: "'My wife's parents were convinced it was a phase that would last a few months.'" },
+    { q: "makes productive use of travel time?", answer: "D",
+      explain: "'I use it to answer emails or read.'" }
+  ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "matching", startAt: 47, pointsEach: 1,
+  intro: "You are going to read an article in which four adults describe going back into education. For questions 47–56, choose from the people (A–D). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Grace: shop manager to student nurse", text: `I managed a clothes shop for fifteen years before deciding to train as a nurse at forty. My biggest fear was that I'd be the old woman at the back who couldn't keep up with all the twenty-year-olds. In fact, the opposite happened: because I'd dealt with difficult customers and staff for years, the younger students kept coming to me for advice on everything from placements to arguments with flatmates. The hardest part has been money. Giving up a salary to live on a student loan, with a mortgage to pay, has meant some very lean months.` },
+    { label: "B", title: "Kofi: an accountant studying history", text: `My master's in history won't change my career one bit – I'm an accountant and I'll stay one. I'm doing it simply because I love the subject. It's online and part-time, so I study late at night once the children are in bed. The one thing I feel is missing is the chance to argue about ideas with other students face to face; online forums aren't quite the same. But the written feedback from my tutor has been extraordinary. She picks up on things I'd never have noticed myself.` },
+    { label: "C", title: "Laura: apprentice electrician", text: `At school I was always in trouble. I couldn't sit still, I hated exams, and I left at sixteen convinced I wasn't clever. At thirty-five I started an apprenticeship as an electrician, and it's been a revelation. Learning by doing suits me completely. I was the only woman in my year, which led to a few awkward moments early on, but the others soon got used to me. Being paid while I train has made it all possible.` },
+    { label: "D", title: "Sam: philosophy at fifty-five", text: `When I was made redundant at fifty-five, I had a choice: look for another job like the one I'd lost, or do something I'd always wanted to do. My wife and children pushed me to choose the second, so I enrolled on a philosophy degree. The first term was humbling. I hadn't written an essay in nearly forty years, and my first few came back covered in red ink. But it's been worth every struggle. I genuinely think about everything differently now – politics, work, even my own family.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "was surprised to be seen as a source of guidance by other students?", answer: "A",
+      explain: "She feared being left behind, but 'the younger students kept coming to me for advice'." },
+    { q: "is studying purely for personal satisfaction?", answer: "B",
+      explain: "'It won't change my career one bit… I'm doing it simply because I love the subject.'" },
+    { q: "had a negative experience of education when younger?", answer: "C",
+      explain: "'At school I was always in trouble… I hated exams.'" },
+    { q: "was the only person of their kind in their group?", answer: "C",
+      explain: "'I was the only woman in my year.'" },
+    { q: "returned to study after losing their job?", answer: "D",
+      explain: "'When I was made redundant at fifty-five…'" },
+    { q: "mentions difficulty with a particular kind of writing?", answer: "D",
+      explain: "'I hadn't written an essay in nearly forty years, and my first few came back covered in red ink.'" },
+    { q: "describes a period of financial hardship?", answer: "A",
+      explain: "Living on a student loan with a mortgage 'has meant some very lean months'. Laura mentions money, but only to say that being paid made it possible." },
+    { q: "regrets the lack of in-person discussion?", answer: "B",
+      explain: "'The one thing I feel is missing is the chance to argue about ideas with other students face to face.'" },
+    { q: "values the comments of a teacher?", answer: "B",
+      explain: "'The written feedback from my tutor has been extraordinary.'" },
+    { q: "says studying has changed the way they see the world?", answer: "D",
+      explain: "'I genuinely think about everything differently now.'" }
+  ]
 }
 ];
