@@ -31,7 +31,7 @@ None of this means city dwellers should give [6] on bees altogether. Experts sug
 /* ---------------- Set 2 ---------------- */
 {
   type: "mc-cloze",
-  textTitle: "Judging a book by its cover",
+  textTitle: "First impressions",
   text: `Psychologists have long been [0] by how quickly we form judgements about other people. Research suggests that it takes as little as a tenth of a second to [1] an opinion of a stranger's trustworthiness, and that these snap judgements are remarkably [2] to change. [3] of the reason, scientists believe, is that our ancestors needed to decide in an instant whether someone posed a threat.
 
 Unfortunately, first impressions are not always accurate, and they can give [4] to unfair assumptions based on appearance. A person who happens to look tired or nervous may be [5] as less competent than they really are.

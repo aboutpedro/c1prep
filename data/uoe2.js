@@ -17,7 +17,7 @@ One technique that many find useful is to commit to working on a task for just f
     13: { answers: ["why"], explain: "'This explains why + clause' gives the reason." },
     14: { answers: ["on"], explain: "'Carry on' = continue." },
     15: { answers: ["who", "that"], explain: "A defining relative pronoun for people, as the subject of 'forgave'." },
-    16: { answers: ["even", "still"], explain: "'Even/still' + comparative intensifies it: even more unpleasant." }
+    16: { answers: ["even", "still", "much", "far"], explain: "'Even/still/much/far' + comparative intensifies it: even more unpleasant." }
   }
 },
 /* ---------------- Set 2 ---------------- */

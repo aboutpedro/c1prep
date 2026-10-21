@@ -83,10 +83,10 @@ window.SETS = [
       before: "On", after: "this door.",
       answers: ["no account must you open", "no account should you open", "no account are you to open"],
       explain: "'On no account' at the start of a sentence = never. It is followed by inversion (must you open)." },
-    { first: "Martin regrets selling his house.", key: "ONLY",
+    { first: "It's a pity Martin sold his house.", key: "ONLY",
       before: "If", after: "his house.",
       answers: ["only Martin had not sold", "only Martin hadn't sold"],
-      explain: "'If only + past perfect' expresses regret about the past. You need the name, because there's no subject in the given words." }
+      explain: "'If only + past perfect' expresses regret about the past, like 'It's a pity…'. You need the name, because there's no subject in the given words." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
@@ -101,7 +101,7 @@ window.SETS = [
       before: "It was", after: "I fell asleep.",
       answers: ["such a boring film that", "such a boring film"],
       explain: "'Such + a + adjective + noun (+ that)' has the same meaning as 'so + adjective (+ that)'." },
-    { first: "I wasn't allowed to go to the party by my parents.", key: "LET",
+    { first: "I wasn't allowed to go to the party.", key: "LET",
       before: "My parents", after: "to the party.",
       answers: ["would not let me go", "wouldn't let me go", "did not let me go", "didn't let me go"],
       explain: "'Let + object + bare infinitive' (no 'to'): let me go." },
@@ -357,6 +357,126 @@ window.SETS = [
       before: "I'd", after: "go out tonight.",
       answers: ["sooner stay at home than","sooner stay home than","sooner stay in than"],
       explain: "'Would sooner + bare infinitive + than' = would prefer to. Like 'would rather', it is followed by the infinitive without 'to'." }
+  ]
+},
+/* ---------------- Set 13 ---------------- */
+{
+  type: "kwt", startAt: 25, pointsEach: 2,
+  items: [
+    { first: "You should have started revising for your exams by now.", key: "TIME",
+      before: "It's", after: "revising for your exams.",
+      answers: ["high time you started", "about time you started", "high time you began", "about time you began", "time you started", "time you began"],
+      explain: "'It's (high/about) time + subject + past simple' says that something should already be happening. The verb is past in form but present in meaning." },
+    { first: "It doesn't matter how hard you try – you'll never please everyone.", key: "HOWEVER",
+      before: "You'll never please everyone,", after: ".",
+      answers: ["however hard you try", "however much you try", "however hard you may try"],
+      explain: "'However + adjective/adverb + clause' = no matter how." },
+    { first: "The concert was cancelled with very little warning.", key: "NOTICE",
+      before: "The concert was cancelled", after: ".",
+      answers: ["at very short notice", "at short notice", "at extremely short notice"],
+      explain: "'At short notice' = with little warning. Note the preposition 'at', and that 'little warning' becomes 'short notice'." },
+    { first: "I didn't think of asking the shop for a discount.", key: "OCCURRED",
+      before: "It", after: "to ask the shop for a discount.",
+      answers: ["never occurred to me"],
+      explain: "'It (never) occurred to me to do something' = I didn't think of doing it. The key word must stay as 'occurred', so 'didn't occur' isn't possible." },
+    { first: "The local team were far less skilled than the champions.", key: "MATCH",
+      before: "The local team were", after: "the champions.",
+      answers: ["no match for", "simply no match for", "no match at all for", "certainly no match for"],
+      explain: "'Be no match for someone' = be much weaker or less skilled than them." },
+    { first: "The council refused permission because the building was too tall.", key: "GROUNDS",
+      before: "The council refused permission", after: "the building was too tall.",
+      answers: ["on the grounds that"],
+      explain: "'On the grounds that + clause' = because (formal)." }
+  ]
+},
+/* ---------------- Set 14 ---------------- */
+{
+  type: "kwt", startAt: 25, pointsEach: 2,
+  items: [
+    { first: "It's very unlikely that the factory will reopen.", key: "LIKELIHOOD",
+      before: "There is", after: "the factory will reopen.",
+      answers: ["little likelihood that", "very little likelihood that", "not much likelihood that", "hardly any likelihood that", "no likelihood that"],
+      explain: "'There is little likelihood that…' = it is unlikely that… The adjective 'unlikely' becomes the noun 'likelihood'." },
+    { first: "The government's new housing policy has been strongly criticised.", key: "CRITICISM",
+      before: "The government's new housing policy has", after: ".",
+      answers: ["come in for strong criticism", "come in for heavy criticism", "come in for fierce criticism", "come in for severe criticism", "attracted strong criticism", "received strong criticism", "faced strong criticism", "drawn strong criticism"],
+      explain: "'Come in for criticism' = be criticised. The adverb 'strongly' becomes an adjective (strong, heavy) before the noun." },
+    { first: "He always remembers to thank the cleaning staff personally.", key: "POINT",
+      before: "He always", after: "the cleaning staff personally.",
+      answers: ["makes a point of thanking"],
+      explain: "'Make a point of + -ing' = make sure you do something because you think it is important." },
+    { first: "The company's directors were blamed for the accident.", key: "HELD",
+      before: "The company's directors", after: "the accident.",
+      answers: ["were held responsible for", "were held accountable for", "were held to blame for"],
+      explain: "'Be held responsible for something' = be blamed for it. The passive is needed because the directors are the subject." },
+    { first: "As he got older, he became increasingly stubborn.", key: "MORE",
+      before: "The older he got,", after: "he became.",
+      answers: ["the more stubborn"],
+      explain: "'The + comparative…, the + comparative' shows that two things change together." },
+    { first: "It took me a while to learn how to use the new software.", key: "HANG",
+      before: "It took me a while to", after: "the new software.",
+      answers: ["get the hang of", "get the hang of using"],
+      explain: "'Get the hang of something' = learn how to do or use it (informal)." }
+  ]
+},
+/* ---------------- Set 15 ---------------- */
+{
+  type: "kwt", startAt: 25, pointsEach: 2,
+  items: [
+    { first: "The factory increased its profits but harmed the local environment.", key: "EXPENSE",
+      before: "The factory increased its profits", after: "the local environment.",
+      answers: ["at the expense of"],
+      explain: "'At the expense of something' = while causing harm or loss to it." },
+    { first: "Do you mind if I open the window?", key: "OBJECT",
+      before: "Do you", after: "the window?",
+      answers: ["object to my opening", "object to me opening", "object if I open"],
+      explain: "'Object to + -ing': 'to' is a preposition here, so it is followed by -ing, not the infinitive." },
+    { first: "Nobody but the driver was responsible for the accident.", key: "BLAME",
+      before: "The driver", after: "for the accident.",
+      answers: ["was solely to blame", "alone was to blame", "was entirely to blame", "was wholly to blame", "was the only one to blame"],
+      explain: "'Be to blame (for something)' = be responsible for something bad. 'Solely/entirely' expresses 'nobody but'." },
+    { first: "Mark would never betray a friend.", key: "LAST",
+      before: "Mark", after: "a friend.",
+      answers: ["is the last person to betray", "would be the last to betray", "is the last man to betray"],
+      explain: "'Be the last person to do something' = be the least likely person to do it." },
+    { first: "'You stole my bike!' Jack said to his neighbour.", key: "ACCUSED",
+      before: "Jack", after: "his bike.",
+      answers: ["accused his neighbour of stealing", "accused his neighbor of stealing", "accused his neighbour of having stolen", "accused his neighbor of having stolen"],
+      explain: "'Accuse someone of + -ing' (or 'of having + past participle'). Note that 'my bike' becomes 'his bike' in reported speech." },
+    { first: "He didn't say sorry at all for being late.", key: "APOLOGY",
+      before: "He", after: "for being late.",
+      answers: ["made no apology", "offered no apology", "didn't make any apology", "did not make any apology", "didn't offer any apology", "did not offer any apology", "didn't make an apology", "did not make an apology"],
+      explain: "'Make/offer an apology' = say sorry. 'No' or 'not… any' expresses 'not at all'." }
+  ]
+},
+/* ---------------- Set 16 ---------------- */
+{
+  type: "kwt", startAt: 25, pointsEach: 2,
+  items: [
+    { first: "Most critics consider the novel to be her finest work.", key: "REGARDED",
+      before: "The novel", after: "her finest work.",
+      answers: ["is widely regarded as", "is generally regarded as", "is regarded as", "is regarded by most critics as"],
+      explain: "Passive of 'regard something as': 'is (widely) regarded as' = most people consider it." },
+    { first: "Although I admire his talent, I find him difficult to work with.", key: "MUCH",
+      before: "", after: "his talent, I find him difficult to work with.",
+      answers: ["Much as I admire"],
+      explain: "'Much as + clause' = although (used with verbs of feeling like admire, like, respect)." },
+    { first: "I don't think you should expect the company to change its policy.", key: "BREATH",
+      before: "If I were you, I", after: "for the company to change its policy.",
+      answers: ["wouldn't hold my breath", "would not hold my breath", "wouldn't hold my breath waiting", "would not hold my breath waiting"],
+      explain: "'I wouldn't hold my breath' = I don't think it will happen soon (informal)." },
+    { first: "Sales have fallen because of the economic crisis.", key: "DOWN",
+      before: "The fall in sales", after: "the economic crisis.",
+      answers: ["is down to", "is largely down to", "can be put down to", "is mainly down to", "is put down to"],
+      explain: "'Be down to' = be caused by. 'Put something down to' = say it is caused by." },
+    { first: "The manager promised to give us a pay rise, and she did.", key: "WORD",
+      before: "The manager", after: "and gave us a pay rise.",
+      answers: ["kept her word", "was as good as her word"],
+      explain: "'Keep your word' / 'be as good as your word' = do what you promised." },
+    { first: "I saw the lighthouse for a moment just before the fog came down.", key: "SIGHT",
+      before: "I", after: "the lighthouse just before the fog came down.",
+      answers: ["caught sight of", "briefly caught sight of"],
+      explain: "'Catch sight of something' = see it suddenly or for a moment." }
   ]
 }
 ];
