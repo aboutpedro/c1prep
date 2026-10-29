@@ -294,5 +294,152 @@ Not everything has gone smoothly. Some neighbours have complained about parked c
     "46": "'Yet she has no regrets' in C answers the problems described just before the gap."
   },
   extra: { label: "D", explain: "D is tempting at 45 because people want to see the garden, but it contradicts the next paragraph, which mentions cars blocking the lane 'on open days'. For the same reason it can't come at 46." }
+},
+/* ---------------- Set 7 ---------------- */
+{
+  type: "gapped", pointsEach: 2,
+  intro: "You are going to read an article about a film archivist who reconstructed a silent film. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (41–46). There is one extra paragraph which you do not need to use.",
+  textTitle: "Piecing together a lost film",
+  textSub: "An archivist spent eight years reassembling a silent drama from fragments scattered across three continents",
+  text: `For almost a century, The Lantern Keeper was assumed to have vanished entirely. Made in 1924 by a small studio that went bankrupt the following year, the silent drama had been screened in a handful of cinemas, praised by one or two critics and then forgotten. Like the majority of films from the silent era, it was believed to have been lost forever.
+
+[[41]]
+
+Eleven minutes was a start, but the original had run to nearly ninety. Okonkwo began writing to archives around the world, describing the scenes she had and asking whether anyone held anything similar. For a long time, the replies were uniformly negative.
+
+[[42]]
+
+This raised a problem that would occupy her for years. Films of the period were often re-edited for foreign markets, with scenes cut, shortened or rearranged to suit local tastes and censors. There was no guarantee that the order of either version reflected what the director had intended.
+
+[[43]]
+
+Further fragments turned up gradually: six minutes in a private collection in Melbourne, a few seconds embedded in a 1950s documentary about early cinema. By 2021, she had assembled about seventy minutes of the original.
+
+[[44]]
+
+'It would have been easy to make the film look complete,' she says. 'But that would have been a kind of lie. The audience deserves to know which parts are original and which parts are my best guess.'
+
+[[45]]
+
+The reconstructed film was finally shown last spring, accompanied by a live orchestra playing a score composed for the occasion. Many in the audience, Okonkwo recalls, were surprised less by the story than by how modern the acting seemed.
+
+[[46]]`,
+  paragraphs: {
+    A: "The technical work was equally painstaking. Each frame of the damaged footage had to be scanned individually, and scratches, mould and chemical stains removed one by one. Where the surviving versions overlapped, she chose whichever frames were in better condition, a process that sometimes meant switching between sources several times within a single scene.",
+    B: "Nitrate film, the material used for most commercial films until the early 1950s, is notoriously unstable. As it ages, it can shrink, become sticky and eventually crumble to powder; in the worst cases, it can even catch fire. Many archives have lost entire collections in this way.",
+    C: "The breakthrough came from an unlikely source. A small archive in Buenos Aires replied to say that it held a print of an unidentified European drama that had been shown in Argentina in the late 1920s. When the reels arrived, Okonkwo found almost forty minutes of the missing film – though with Spanish intertitles and several scenes in a different order.",
+    D: "That reaction pleased her more than any review. 'People tend to think of silent films as stiff and melodramatic,' she says. 'Some were. But the best of them were doing things that cinema then forgot how to do for decades. If this film changes even a few people's minds about that, the eight years will have been worth it.'",
+    E: "That assumption began to unravel in 2015, when Ruth Okonkwo, an archivist at a national film collection, was cataloguing a donation from the estate of a private collector. Among dozens of unlabelled reels was a single canister containing eleven minutes of badly damaged footage. The title card was missing, but one scene – a storm seen through the windows of a lighthouse – matched a still she remembered from an old film magazine.",
+    F: "The remaining gaps presented a dilemma of a different kind. Some restorers fill missing scenes with still photographs or captions explaining what has been lost; others prefer to leave the gaps unmarked so that the film flows smoothly. Okonkwo was firmly in the first camp.",
+    G: "To solve it, Okonkwo turned detective. She tracked down the original screenplay in a university library, along with a set of publicity stills and a review that described several key scenes in detail. Together, these allowed her to establish the sequence of events with reasonable confidence, even where the footage itself was ambiguous."
+  },
+  answers: { "41": "E", "42": "C", "43": "G", "44": "F", "45": "A", "46": "D" },
+  explain: {
+    "41": "'That assumption' in E refers back to the belief that the film was lost forever, and E introduces the 'eleven minutes' of footage mentioned after the gap.",
+    "42": "After 'the replies were uniformly negative', C begins 'The breakthrough came'. Its different order of scenes is 'This… problem' after the gap, and 'either version' refers to the two prints.",
+    "43": "'To solve it' in G refers to the problem of the scene order described just before the gap.",
+    "44": "After seventy of the ninety minutes are found, F turns to 'the remaining gaps'. Okonkwo is 'in the first camp' (filling gaps with explanations), which is why she says making the film look complete 'would have been a kind of lie'.",
+    "45": "'Equally painstaking' in A compares the technical work with the difficult choices about the gaps. The next paragraph then describes the finished film being shown.",
+    "46": "'That reaction' in D refers to the audience's surprise at 'how modern the acting seemed'."
+  },
+  extra: { label: "B", explain: "B gives general background on nitrate film. It may seem to fit before 45 because the footage was damaged, but nothing after any gap refers back to it, and 'equally painstaking' in A is needed there." }
+},
+/* ---------------- Set 8 ---------------- */
+{
+  type: "gapped", pointsEach: 2,
+  intro: "You are going to read an article by a woman who spent a season working as a warden on a remote island nature reserve. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (41–46). There is one extra paragraph which you do not need to use.",
+  textTitle: "Six months at the edge of the map",
+  textSub: "A former office worker on life as a seabird warden",
+  text: `When I applied to spend a summer as a warden on a small island off the west coast of Scotland, I had a fairly romantic idea of what the job would involve. I pictured long days watching puffins, evenings reading by lamplight and a pleasantly undemanding solitude. Within a week of arriving, most of these assumptions had been revised.
+
+[[41]]
+
+The birds themselves proved far more demanding than I had imagined, too. Counting a cliff face of guillemots, which nest so closely together that they appear as a single shifting mass, requires a level of concentration I had not needed since my university exams. On my first attempt, my figures differed from my colleague's by almost a third.
+
+[[42]]
+
+The visitors were a different matter. Most were delightful – birdwatchers who had waited years for the trip, families seeing puffins for the first time – but a minority seemed to regard the island as a theme park.
+
+[[43]]
+
+Such encounters were rare, however, and in any case the visitors only came on calm days. For long stretches, often a week or more, the weather made landing impossible, and we saw no one at all.
+
+[[44]]
+
+What rescued me, oddly, was the work I had initially found so tedious. The daily counts and checks imposed a structure on the days that the empty calendar could not, and gradually the isolation became something I valued rather than endured.
+
+[[45]]
+
+Back on the mainland, the noise and speed of ordinary life took some getting used to. I found supermarkets overwhelming and conversations exhausting, and for weeks I woke at six without an alarm.
+
+[[46]]`,
+  paragraphs: {
+    A: "I lost count of the number of people I had to steer away from the burrows at the cliff edge, where puffins nest underground and a careless footstep can collapse a tunnel and kill the chick inside. Most were mortified when they understood. A few argued, and one man informed me that he had paid for his ticket and would stand wherever he liked.",
+    B: "By the end of the season, I had come to depend on that rhythm so completely that leaving was harder than arriving had been. On my last morning, my colleague and I did the final count in silence, both of us aware that the numbers would be someone else's responsibility the following year.",
+    C: "Those were the days I liked best. With no visitors to supervise, my colleague and I could get on with the counts undisturbed, and the island felt as if it belonged entirely to us.",
+    D: "For a start, there was nothing undemanding about it. The island's only other residents were a fellow warden and several thousand seabirds, and between us we were responsible for monitoring the colonies, maintaining the paths, guiding the day visitors who arrived by boat when the weather allowed, and keeping the generator running. Most days began at six and ended long after dark.",
+    E: "It was during these periods that I came closest to the solitude I had imagined, and I found it rather less pleasant than I had expected. Without the routine of the boat days, time began to lose its shape. I would catch myself talking to the birds, and once spent an entire afternoon convinced it was Tuesday when it was in fact Saturday.",
+    F: "I have since gone back to an office job, though not quite the same one. I work for a conservation charity now, and when I look at graphs showing seabird numbers falling year after year, I find I can picture the cliffs behind them. That, more than anything, is what the island gave me: a sense that the figures are not abstract.",
+    G: "She was kind about it. Accurate counts, she explained, came from method rather than talent: dividing the cliff into sections, counting each one three times and taking the average. Within a fortnight our numbers were rarely more than a few birds apart, and I had begun to understand why she found the work so absorbing."
+  },
+  answers: { "41": "D", "42": "G", "43": "A", "44": "E", "45": "B", "46": "F" },
+  explain: {
+    "41": "D begins by contradicting her expectation of 'a pleasantly undemanding solitude' ('there was nothing undemanding about it'). 'Too' after the gap shows that the birds were a second demanding element.",
+    "42": "'She was kind about it' in G refers to the colleague whose figures differed from hers by almost a third.",
+    "43": "A gives examples of the visitors who treated the island 'as a theme park'. 'Such encounters' after the gap refers back to these.",
+    "44": "'These periods' in E are the weeks when nobody could land. Her unhappiness with the solitude explains 'What rescued me' after the gap.",
+    "45": "'That rhythm' in B is the structure the daily counts gave her days. The paragraph ends with her leaving, which leads to 'Back on the mainland'.",
+    "46": "F completes the story: she is back in an office, but working for a conservation charity, and sees the figures differently."
+  },
+  extra: { label: "C", explain: "C seems to fit after 'we saw no one at all', but the writer goes on to say she needed to be 'rescued', so she cannot have liked those days best. 'Those days' has no other place to refer back to." }
+},
+/* ---------------- Set 9 ---------------- */
+{
+  type: "gapped", pointsEach: 2,
+  intro: "You are going to read an article about the traditional English practice of church bell-ringing. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (41–46). There is one extra paragraph which you do not need to use.",
+  textTitle: "Ringing the changes",
+  textSub: "Why a centuries-old pastime is attracting a new generation of ringers",
+  text: `At seven o'clock on a Thursday evening, eight people climb a narrow spiral staircase into the ringing chamber of a medieval church tower. Above them, out of sight, hang eight bells, the heaviest weighing more than a tonne. For the next two hours, they will ring them in patterns of extraordinary complexity, and almost nobody in the town below will notice anything except a pleasant noise.
+
+[[41]]
+
+Each ringer controls a single bell by means of a rope, and the bells themselves swing through a full circle with each stroke. Learning simply to handle one safely takes most beginners several weeks, and mastering the methods can take years.
+
+[[42]]
+
+Recently, however, there are signs that this decline may be slowing. Several towers report rising numbers of learners, many of them in their twenties and thirties – an age group that was until recently almost entirely absent.
+
+[[43]]
+
+Others are drawn by the mathematics. The methods are, in effect, a series of permutations, and some ringers become as interested in composing new ones as in ringing them.
+
+[[44]]
+
+That social dimension extends well beyond individual towers. Ringers frequently visit other churches to ring with local bands, and a keen ringer can travel the length of the country and be welcomed into a tower in almost any town.
+
+[[45]]
+
+There are limits to what enthusiasm can achieve, though. Even with more learners, many rural towers struggle to find enough ringers to ring all their bells, and some ringers worry that the recent revival is concentrated in cities.
+
+[[46]]`,
+  paragraphs: {
+    A: "Composition is a specialist pursuit, however, and most ringers are content to leave it to others. For the majority, the attraction is social rather than intellectual: the shared effort of the practice night, the friendships that develop between people of very different ages and backgrounds, and, in many towers, the visit to the pub that traditionally follows.",
+    B: "Back in the tower, such concerns are set aside for the evening. As the session ends, the bells are carefully brought to rest, mouth upwards, and the ringers file back down the stairs. In the town below, people carry on with their evenings, unaware that they have been listening to something that took years to learn.",
+    C: "A full peal, the most ambitious undertaking in change ringing, consists of at least five thousand changes, none of them repeated, and typically takes around three hours. Only a small proportion of ringers ever complete one.",
+    D: "It is not, in other words, a hobby that offers instant rewards, and for much of the past few decades it has struggled to attract newcomers. Many towers have relied on the same small group of ringers for years, and as those ringers have grown older, a number of bells have fallen silent altogether.",
+    E: "Such hospitality reflects a culture in which experience is shared freely. Teaching is unpaid, and experienced ringers often spend years helping beginners through the long early stages, knowing that the tradition depends on it.",
+    F: "That noise is the product of a practice known as change ringing, which has been developed in English church towers since the seventeenth century. Rather than playing tunes, ringers work through sequences in which the order of the bells changes with every round, following patterns called methods that may run to thousands of variations.",
+    G: "Asked what drew them, these newcomers give strikingly similar answers. Several mention the appeal of an activity that demands complete concentration, leaving no room to think about work or check a phone. 'For two hours, my mind is entirely on the rope and the pattern,' one says. 'It's the only time all week I'm not thinking about anything else.'"
+  },
+  answers: { "41": "F", "42": "D", "43": "G", "44": "A", "45": "E", "46": "B" },
+  explain: {
+    "41": "'That noise' in F refers to the 'pleasant noise' heard in the town, and F introduces 'the methods' mentioned after the gap.",
+    "42": "D draws a conclusion from the long learning process ('in other words') and describes the decline that 'this decline' after the gap refers to.",
+    "43": "'These newcomers' in G are the young learners just mentioned. 'Others are drawn by the mathematics' after the gap gives a second reason.",
+    "44": "A follows on from composing methods ('Composition is a specialist pursuit') and introduces the social side that 'That social dimension' refers to.",
+    "45": "'Such hospitality' in E refers to ringers being welcomed into towers all over the country.",
+    "46": "'Such concerns' in B refers to the worries about rural towers, and B returns to the practice night from the opening paragraph."
+  },
+  extra: { label: "C", explain: "C seems to fit after 'mastering the methods can take years' or after the paragraph about composing, but 'this decline' and 'That social dimension' after those gaps would then have nothing to refer to." }
 }
 ];
