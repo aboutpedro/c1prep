@@ -478,5 +478,95 @@ window.SETS = [
       answers: ["caught sight of", "briefly caught sight of"],
       explain: "'Catch sight of something' = see it suddenly or for a moment." }
   ]
+},
+/* ---------------- Set 17 ---------------- */
+{
+  type: "kwt", startAt: 25, pointsEach: 2,
+  items: [
+    { first: "I'm beginning to doubt whether accepting the job was a good idea.", key: "SECOND",
+      before: "I'm beginning to", after: "the job.",
+      answers: ["have second thoughts about accepting","have second thoughts about taking"],
+      explain: "'Have second thoughts about + noun / -ing' = start to doubt a decision." },
+    { first: "Tom is usually so punctual, so I'm surprised he's late.", key: "LIKE",
+      before: "It's", after: "late – he's usually so punctual.",
+      answers: ["not like Tom to be","not like him to be"],
+      explain: "'It's not like someone to do something' = it is unusual behaviour for them." },
+    { first: "It's impossible to know how the market will react.", key: "TELLING",
+      before: "There", after: "how the market will react.",
+      answers: ["is no telling"],
+      explain: "'There is no telling + wh- clause' = it is impossible to know." },
+    { first: "You can borrow my car if you promise to drive carefully.", key: "LONG",
+      before: "You can borrow my car", after: "drive carefully.",
+      answers: ["as long as you","so long as you","as long as you promise to","so long as you promise to"],
+      explain: "'As long as / so long as' = on condition that." },
+    { first: "He gave up smoking because he wanted his children to stay healthy.", key: "SAKE",
+      before: "He gave up smoking", after: "health.",
+      answers: ["for the sake of his children's"],
+      explain: "'For the sake of something' = in order to help or protect it." },
+    { first: "The noise from next door annoyed me most.", key: "WHAT",
+      before: "", after: "the noise from next door.",
+      answers: ["What annoyed me most was","What annoyed me the most was"],
+      explain: "A cleft sentence with 'What + clause + be' puts the focus on the noise." }
+  ]
+},
+/* ---------------- Set 18 ---------------- */
+{
+  type: "kwt", startAt: 25, pointsEach: 2,
+  items: [
+    { first: "Could you watch my bag while I buy a ticket?", key: "EYE",
+      before: "Could you", after: "my bag while I buy a ticket?",
+      answers: ["keep an eye on"],
+      explain: "'Keep an eye on' = watch, look after." },
+    { first: "It's years since I was last in contact with my old school friends.", key: "TOUCH",
+      before: "I", after: "my old school friends years ago.",
+      answers: ["lost touch with"],
+      explain: "'Lose touch with someone' = stop being in contact." },
+    { first: "A mechanic is going to repair my car tomorrow.", key: "HAVE",
+      before: "I'm going to", after: "tomorrow.",
+      answers: ["have my car repaired","have my car fixed","have the car repaired","have the car fixed"],
+      explain: "Causative 'have + object + past participle': someone else does the work for you." },
+    { first: "There's no possibility of us cancelling the trip now.", key: "QUESTION",
+      before: "Cancelling the trip now", after: ".",
+      answers: ["is out of the question"],
+      explain: "'Out of the question' = impossible, not allowed." },
+    { first: "We have almost no milk left.", key: "RUN",
+      before: "We have almost", after: "milk.",
+      answers: ["run out of"],
+      explain: "'Run out of' = use all of something so none is left." },
+    { first: "She used the good weather to paint the fence.", key: "ADVANTAGE",
+      before: "She", after: "the good weather to paint the fence.",
+      answers: ["took advantage of"],
+      explain: "'Take advantage of' = make use of an opportunity." }
+  ]
+},
+/* ---------------- Set 19 ---------------- */
+{
+  type: "kwt", startAt: 25, pointsEach: 2,
+  items: [
+    { first: "He talked about the accident in a way that suggested he had seen it himself.", key: "AS",
+      before: "He talked about the accident", after: "seen it himself.",
+      answers: ["as if he had","as though he had","as if he'd","as though he'd"],
+      explain: "'As if / as though + past perfect' describes how something seemed (he hadn't necessarily seen it)." },
+    { first: "I have never been to Japan before.", key: "FIRST",
+      before: "This is", after: "been to Japan.",
+      answers: ["the first time I have","the first time I've","the first time that I have","the first time that I've"],
+      explain: "'This is the first time + present perfect'." },
+    { first: "It doesn't matter whether it rains; the race will still go ahead.", key: "EVEN",
+      before: "The race will go ahead", after: "rains.",
+      answers: ["even if it"],
+      explain: "'Even if' = whether or not." },
+    { first: "There's nothing better to do, so we should go home.", key: "MIGHT",
+      before: "We", after: "home, since there's nothing better to do.",
+      answers: ["might as well go"],
+      explain: "'Might as well' = there is no good reason not to, because nothing better is available." },
+    { first: "Who is responsible for the marketing department?", key: "CHARGE",
+      before: "Who is", after: "the marketing department?",
+      answers: ["in charge of"],
+      explain: "'Be in charge of' = be responsible for, manage." },
+    { first: "Most of the residents support the plan for a new park.", key: "FAVOUR",
+      before: "Most of the residents are", after: "the plan for a new park.",
+      answers: ["in favour of","very much in favour of","strongly in favour of"],
+      explain: "'Be in favour of' = support." }
+  ]
 }
 ];
