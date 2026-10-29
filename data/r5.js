@@ -400,5 +400,93 @@ Perhaps the most useful lesson, then, is a personal one. We cannot always shorte
       answer: 3,
       explain: "A queue can be 'a few minutes in which nothing is asked of us', which in a crowded life 'is not the worst thing that can happen'." }
   ]
+},
+/* ---------------- Set 10 ---------------- */
+{
+  type: "mc-reading", startAt: 31, pointsEach: 2,
+  intro: "You are going to read an article in which a journalist writes about losing her sense of smell.",
+  textTitle: "The forgotten sense",
+  textSub: "A journalist who lost her sense of smell discovers how much it had been doing all along",
+  text: `I did not notice when my sense of smell disappeared. There was no dramatic moment, no sudden absence, only a gradual realisation over several weeks that something was wrong. Coffee tasted of hot water. A friend's new perfume, which she insisted was overpowering, registered as nothing at all. It was only when I burnt a pan of rice and failed to notice until the smoke alarm went off that I understood how much I had been relying on a sense I had never given a moment's thought.
+
+Smell has long been the poor relation of the senses. Philosophers dismissed it as crude and animal; scientists, for much of the twentieth century, assumed that humans had largely lost the ability in the course of evolution. That assumption now looks badly mistaken. Recent research suggests that people can distinguish an enormous number of odours – some estimates run to more than a trillion, although the methods behind such figures remain contested – and that in tasks such as following a scent trail, we perform far better than our reputation would suggest.
+
+What struck me most during the months without it, however, was not the practical inconvenience but the emotional flatness. Food became fuel. Walks in the park, once full of cut grass and wet earth, felt like watching a film with the sound turned down. Psychologists have long noted the unusually close connection between smell and memory: the pathways that carry smells into the brain run directly to areas involved in emotion and recollection, bypassing the routes taken by sight and hearing. Without it, I found, the present lost some of its texture and the past some of its accessibility.
+
+Doctors were sympathetic but had little to offer. Smell loss, I learned, is surprisingly common, particularly after viral infections, and in many cases recovers on its own. Where it does not, the main treatment is 'smell training': sniffing a small set of strong scents, such as rose, lemon, clove and eucalyptus, twice a day for several months, in the hope of encouraging the damaged nerves to recover. The evidence for its effectiveness is encouraging rather than conclusive, but it is cheap, harmless and, crucially, gives patients something to do.
+
+I approached it with the scepticism of someone who had read too many miracle-cure headlines. For six weeks nothing happened, and I began to suspect I was simply sniffing jars for the sake of feeling useful. Then one morning, while making tea, I caught a faint trace of bergamot. It lasted perhaps two seconds. I stood in the kitchen and wept, which is not a sentence I ever expected to write about a teabag.
+
+My sense of smell has not fully returned, and some things – coffee, unfortunately, among them – now smell strange, almost rotten, a common side effect of recovery that doctors call parosmia. But I have stopped taking it for granted. I sniff things now, deliberately and with some ceremony: a lemon before I cut it, a book before I open it. Friends find this mildly eccentric. I think of it as paying attention to something that was paying attention to me all along.`,
+  questions: [
+    { q: "What does the writer say about losing her sense of smell in the first paragraph?",
+      options: ["It disappeared suddenly after an illness.","She had not realised how much she depended on it.","Her friends noticed the change before she did.","She first realised something was wrong when the smoke alarm went off."],
+      answer: 1,
+      explain: "The burnt rice made her understand 'how much I had been relying on a sense I had never given a moment's thought'. The loss was gradual (not A), and she had noticed something was wrong weeks before the alarm (not D)." },
+    { q: "What point does the writer make about scientific views of human smell in the second paragraph?",
+      options: ["They have been overturned by a single recent study.","They are based on methods that are widely contested.","They were heavily influenced by philosophers.","Until recently they underestimated what humans are capable of."],
+      answer: 3,
+      explain: "The assumption that humans had lost the ability 'now looks badly mistaken'. Only the trillion figure is contested (not B), and philosophers are mentioned separately (not C)." },
+    { q: "Why does the writer compare walks in the park to 'watching a film with the sound turned down'?",
+      options: ["to convey how her experiences had become less vivid","to suggest that she had lost interest in going out","to show that her other senses had also been affected","to explain why she found it difficult to concentrate"],
+      answer: 0,
+      explain: "The comparison illustrates the 'emotional flatness' she felt: the experience was still there, but something essential was missing." },
+    { q: "What does the writer suggest about smell training in the fourth paragraph?",
+      options: ["It is the most effective treatment currently available.","Doctors only recommend it when nothing else has worked.","Part of its value lies in giving patients a sense of purpose.","It works best for people whose loss followed an infection."],
+      answer: 2,
+      explain: "The evidence is 'encouraging rather than conclusive', but 'crucially, gives patients something to do'. Being the main treatment does not make it the most effective (A)." },
+    { q: "What does the writer's comment about the teabag show?",
+      options: ["She is embarrassed that she doubted the treatment.","She is amused by how strongly she reacted to such a small moment.","She regrets having been so sceptical at the start.","She was disappointed that the smell lasted so briefly."],
+      answer: 1,
+      explain: "Weeping over a teabag 'is not a sentence I ever expected to write': she makes gentle fun of her own intense reaction to something trivial." },
+    { q: "How does the writer feel about her sense of smell now?",
+      options: ["She is frustrated that it has not fully returned.","She worries that her friends find her behaviour odd.","She feels it has become stronger than it was before.","She values it more consciously, despite its imperfections."],
+      answer: 3,
+      explain: "She has 'stopped taking it for granted' and sniffs things 'deliberately', even though recovery is incomplete. Her friends find this eccentric, but she isn't worried (not B)." }
+  ]
+},
+/* ---------------- Set 11 ---------------- */
+{
+  type: "mc-reading", startAt: 31, pointsEach: 2,
+  intro: "You are going to read an article by a writer who has changed her mind about zoos.",
+  textTitle: "Behind the glass",
+  textSub: "A former critic of zoos explains why she now sees them differently",
+  text: `For most of my twenties, I refused to set foot in a zoo. I had read the arguments, seen the footage of pacing bears and listless elephants, and concluded that keeping wild animals in captivity for our entertainment was indefensible. When friends suggested a day out to see the penguins, I would decline with a short lecture that, I suspect, did little to change their minds and a good deal to reduce the number of invitations I received.
+
+My views began to shift not through argument but through accident. Researching an article on endangered amphibians, I found myself spending a week behind the scenes at a city zoo, in a cramped laboratory where keepers were breeding a species of frog that no longer exists in the wild. Its native forest had been cleared, and a fungal disease had finished off the survivors. The few hundred individuals in that room, and in a handful of similar facilities elsewhere, were all that remained.
+
+It would be convenient to conclude from this that zoos are, after all, a force for good, and many zoos would like visitors to draw exactly that conclusion. The truth is less tidy. Conservation programmes like the one I saw account for a small fraction of most zoos' budgets, and relatively few of the animals on public display belong to species that are seriously threatened. Large, charismatic mammals draw the crowds and pay the bills; obscure frogs, however urgently they need help, do not.
+
+Nor have my original objections disappeared. Some animals clearly cope badly with captivity. Elephants, which in the wild may walk many kilometres a day, and large carnivores with vast natural ranges often show signs of stress that no amount of enrichment can fully relieve. Several zoos have quietly stopped keeping such species, and I think they are right to have done so. A modern zoo that still keeps polar bears in a converted concrete enclosure has some explaining to do.
+
+What has changed is that I no longer see the question as a simple choice between keeping animals and setting them free. For a growing number of species, there is no 'free' to return to, or only one that is shrinking fast. In those cases, the choice is between captivity and extinction, and I find it harder than I once did to argue for the second. The challenge is to ensure that zoos earn the right to that role by putting conservation, rather than spectacle, at the centre of what they do.
+
+I still feel uneasy in front of certain enclosures, and I suspect I always will. But I have stopped lecturing my friends. Last month I took my niece to see the frogs – now on public display, with a sign explaining their story. She was unimpressed by their size and colour, and wanted to know where the lions were. It was, I thought, a fair summary of the problem.`,
+  questions: [
+    { q: "What does the writer suggest about the way she behaved in her twenties?",
+      options: ["She avoided zoos mainly because her friends disapproved of them.","She had formed her opinion without looking at the evidence.","Her lectures affected her social life more than her friends' opinions.","She regretted turning down so many invitations."],
+      answer: 2,
+      explain: "Her lectures 'did little to change their minds and a good deal to reduce the number of invitations I received'. She had 'read the arguments' (not B)." },
+    { q: "What first led the writer to change her views?",
+      options: ["an experience she had not planned","a conversation with a zookeeper","research she undertook to test her own opinions","an article she read about endangered species"],
+      answer: 0,
+      explain: "'Not through argument but through accident': she was writing an article on amphibians and happened to spend a week at a zoo. She wrote the article; she didn't read one (D)." },
+    { q: "In the third paragraph, the writer suggests that zoos",
+      options: ["deliberately mislead visitors about their conservation work.","tend to put popular animals before the ones most in need.","spend most of their money on protecting endangered species.","should stop keeping large mammals altogether."],
+      answer: 1,
+      explain: "Large mammals 'draw the crowds and pay the bills'; obscure frogs 'do not', however urgently they need help. A is too strong: zoos would simply 'like' visitors to reach a convenient conclusion." },
+    { q: "What is the writer's view of the zoos that have stopped keeping certain species?",
+      options: ["They have done so mainly to avoid criticism.","They should have explained their decision publicly.","They have deprived visitors of an important experience.","They have made a sensible decision."],
+      answer: 3,
+      explain: "'I think they are right to have done so.' 'Quietly' describes how they did it, not why (not A)." },
+    { q: "According to the fifth paragraph, why has the writer's position changed?",
+      options: ["She accepts that for some species, survival may depend on captivity.","She now believes that most animals are content in zoos.","She thinks zoos have become much better at caring for animals.","She accepts that zoos need popular animals to survive financially."],
+      answer: 0,
+      explain: "For some species 'the choice is between captivity and extinction', and she finds it hard to argue for extinction." },
+    { q: "What does the writer suggest by describing her niece's reaction?",
+      options: ["Children show little interest in conservation.","The frogs were not displayed in an engaging way.","What attracts the public does not always match what needs protecting.","Zoos should do more to educate young visitors."],
+      answer: 2,
+      explain: "Her niece wanted the lions, not the endangered frogs: 'a fair summary of the problem' described in the third paragraph." }
+  ]
 }
 ];
