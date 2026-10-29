@@ -435,5 +435,92 @@ An international project launched in 2017 has set its [4] on completing the map 
     8: { options: ["lamp", "beam", "glow", "light"], answer: 3,
          explain: "Fixed phrase: 'shed light on something' = help to explain it." }
   }
+},
+/* ---------------- Set 16 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "The return of the wolf",
+  text: `Wolves had been [0] out across much of western Europe by the early twentieth century, hunted relentlessly by farmers who saw them as a threat to their livelihoods. Over the past few decades, however, they have [1] a remarkable recovery, aided by legal protection and an [2] of deer and wild boar to feed on. Packs now roam within an hour's drive of several major cities.
+
+Many conservationists have [3] their return as a sign that damaged ecosystems can heal. Farmers, who have borne the [4] of the attacks on livestock, are rather less enthusiastic. In some regions, losses of sheep have [5] a record high, and compensation schemes have done little to [6] tensions.
+
+Striking a [7] between the interests of rural communities and the needs of a protected species is proving difficult. Persuading both sides that they can share the same landscape will be no mean [8].`,
+  gaps: {
+    0: { options: ["wiped","rubbed","swept","cleaned"], answer: 0 },
+    1: { options: ["held","set","staged","run"], answer: 2,
+      explain: "'Stage a recovery / comeback' = achieve one after a difficult period. 'Held', 'set' and 'run' don't collocate with 'recovery'." },
+    2: { options: ["excess","abundance","affluence","plenty"], answer: 1,
+      explain: "'An abundance of' = a large quantity of. 'Plenty' can't follow 'an', 'excess' means too much, and 'affluence' means wealth." },
+    3: { options: ["considered","believed","viewed","thought"], answer: 2,
+      explain: "'View X as Y'. 'Consider' and 'believe' aren't followed by 'as' in this structure, and 'think' would need 'of… as'." },
+    4: { options: ["edge","brunt","front","peak"], answer: 1,
+      explain: "'Bear the brunt of' = suffer the worst part of something." },
+    5: { options: ["beaten","met","struck","hit"], answer: 3,
+      explain: "'Hit a record high' = reach the highest level ever recorded." },
+    6: { options: ["ease","loosen","slacken","release"], answer: 0,
+      explain: "'Ease tensions' = make a tense situation calmer. The other verbs are used for physical things (loosen a knot, slacken a rope)." },
+    7: { options: ["scale","measure","balance","weight"], answer: 2,
+      explain: "'Strike a balance between X and Y' = find a fair compromise." },
+    8: { options: ["deed","act","exploit","feat"], answer: 3,
+      explain: "'No mean feat' = a difficult achievement." }
+  }
+},
+/* ---------------- Set 17 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "The trouble with tipping",
+  text: `Few customs cause as much [0] among travellers as tipping. In some countries, leaving nothing is considered rude; in others, offering money can cause [1]. Even locals are often unsure how much to leave, and the expected amount seems to [2] ever upwards.
+
+The origins of the practice are [3] in mystery, though historians agree that it was well established in European inns by the seventeenth century. In the United States, its spread was [4] by employers who paid their staff little or nothing, leaving them at the [5] of customers' generosity.
+
+Critics argue that the system is unfair to workers and confusing for customers, and some restaurants have [6] tips altogether in favour of higher prices. Others insist that tipping gives staff a reason to provide good service. Whatever its [7], the custom shows little sign of dying [8].`,
+  gaps: {
+    0: { options: ["confusion","disorder","chaos","mess"], answer: 0 },
+    1: { options: ["insult","offence","injury","harm"], answer: 1,
+      explain: "'Cause offence' = upset someone by seeming rude or disrespectful." },
+    2: { options: ["crawl","sneak","creep","slip"], answer: 2,
+      explain: "'Creep upwards' = rise slowly but steadily." },
+    3: { options: ["covered","clouded","hidden","shrouded"], answer: 3,
+      explain: "Fixed phrase: 'shrouded in mystery' = unknown, hard to explain." },
+    4: { options: ["fuelled","burned","heated","ignited"], answer: 0,
+      explain: "'Fuel' = help something grow or spread." },
+    5: { options: ["hands","will","mercy","power"], answer: 2,
+      explain: "'At the mercy of' = completely dependent on. We say 'in the hands of', not 'at'." },
+    6: { options: ["scraped","scrapped","scrubbed","scratched"], answer: 1,
+      explain: "'Scrap' = abolish, get rid of. The other verbs describe physical actions." },
+    7: { options: ["deserts","credits","graces","merits"], answer: 3,
+      explain: "'Whatever its merits' = whatever its good points may be." },
+    8: { options: ["up","out","over","through"], answer: 1,
+      explain: "'Die out' = disappear completely." }
+  }
+},
+/* ---------------- Set 18 ---------------- */
+{
+  type: "mc-cloze",
+  textTitle: "Born first, born last",
+  text: `It is a widely held [0] that our position in the family shapes our personality. Firstborns, the theory goes, are responsible and ambitious; youngest children are rebellious and charming; and middle children, so the story goes, get [1] in the shuffle.
+
+The idea has a long and distinguished [2], but it has fared poorly under [3]. When researchers analysed data from tens of thousands of people, they found that birth order had a [4] effect on personality, if any. Earlier studies, it [5] out, had often compared children within the same family, where older siblings are inevitably more mature at any given moment.
+
+Why, then, does the belief [6] so stubbornly? Part of the answer may be that it confirms what we already think we know. Once we expect an eldest child to be bossy, we are more likely to notice behaviour that [7] the bill and ignore the rest. Stereotypes, it seems, are hard to shake [8].`,
+  gaps: {
+    0: { options: ["belief","faith","trust","creed"], answer: 0 },
+    1: { options: ["missed","lost","dropped","mislaid"], answer: 1,
+      explain: "'Get lost in the shuffle' = be overlooked among many others." },
+    2: { options: ["parentage","descent","pedigree","breed"], answer: 2,
+      explain: "'A long and distinguished pedigree' = a long, respected history (of an idea or tradition)." },
+    3: { options: ["surveillance","observance","supervision","scrutiny"], answer: 3,
+      explain: "'Under scrutiny' = when examined closely." },
+    4: { options: ["negligible","neglected","negligent","neglectful"], answer: 0,
+      explain: "'Negligible' = so small it is not important. 'Negligent' means careless; 'neglected' and 'neglectful' are about a lack of care." },
+    5: { options: ["set","worked","turned","found"], answer: 2,
+      explain: "'It turned out (that)' = it was discovered that." },
+    6: { options: ["insist","persist","resist","consist"], answer: 1,
+      explain: "'Persist' = continue to exist." },
+    7: { options: ["suits","matches","meets","fits"], answer: 3,
+      explain: "Idiom: 'fit the bill' = be exactly what is needed or expected." },
+    8: { options: ["off","out","away","down"], answer: 0,
+      explain: "'Shake off' = get rid of something unwanted." }
+  }
 }
 ];
