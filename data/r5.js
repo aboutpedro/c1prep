@@ -262,5 +262,143 @@ As for the dinner party, I have stopped apologising. These days I simply say tha
       answer: 0,
       explain: "He has 'stopped apologising'; his answer is 'not a tidy answer', but it is true." }
   ]
+},
+/* ---------------- Set 7 ---------------- */
+{
+  type: "mc-reading", startAt: 31, pointsEach: 2,
+  intro: "You are going to read an article in which a teacher considers whether schools should still teach handwriting.",
+  textTitle: "The case for the pen",
+  textSub: "A secondary school teacher reconsiders a skill she once thought was on its way out",
+  text: `For most of my career, I regarded handwriting lessons as a quaint survival from another age, rather like the inkwells that still sit, unused, in the oldest desks at my school. When our department began issuing tablets to every pupil, I welcomed the change without a second thought. My students' essays became legible overnight, their notes could be searched in seconds, and I no longer spent my weekends deciphering what one colleague memorably called 'the archaeology of the scrawl'.
+
+What first unsettled this comfortable view was not a research paper but a conversation. A sixteen-year-old who had been one of my most fluent writers on screen admitted, almost apologetically, that she could no longer remember anything she typed in class. 'It goes in through my fingers,' she told me, 'and straight out the other side.' I was inclined to dismiss this as the kind of thing teenagers say to excuse a poor test result, but it nagged at me, not least because I recognised the experience myself.
+
+The research, when I eventually turned to it, proved less decisive than either side of the debate tends to claim. One widely cited study found that students who took lecture notes by hand understood the material better than those who used laptops, apparently because the slowness of writing forced them to summarise rather than transcribe. Later attempts to reproduce the result have been considerably less clear-cut, and some researchers now argue that what matters is not the tool but the habit of processing information rather than copying it. Advocates of handwriting have not always been scrupulous about mentioning this.
+
+Even so, the underlying argument struck me as hard to wave away. Typing is fast enough to allow us to take down words without engaging with them; a pen is not. The friction that makes handwriting so laborious may be precisely what makes it useful, in the way that walking somewhere teaches you a route that a car journey never does. That is a less dramatic claim than the one sometimes made – that keyboards are damaging children's brains – but it has the advantage of being plausible.
+
+There is also a practical consideration that tends to be overlooked. Despite years of talk about digital examinations, most of the high-stakes exams my students sit are still written by hand, often over three hours. Pupils who have rarely written more than a shopping list on paper are at a real disadvantage, not because they understand less but because their hands simply give out. I have watched capable students lose marks in the final half-hour of an exam for no better reason than cramp.
+
+None of this has turned me into a nostalgic. I have no wish to return to marking illegible essays, and I suspect that, for many kinds of writing, the keyboard is simply the better instrument. Drafting, revising and rearranging ideas are all easier on a screen, and it would be perverse to deny pupils that. What I have changed is my sense of what is at stake. I used to think the question was whether handwriting was obsolete. I now think it is whether we are willing to protect a little inefficiency in a system that prizes speed above almost everything else.
+
+In my own classroom, the compromise is modest. Notes are taken by hand; essays are drafted on screen. Some pupils grumble, and I have no way of proving to them that the arrangement makes a difference. But the student who once complained that everything went straight through her fingers recently told me, with some surprise, that she had remembered an entire lesson without revising it. It is hardly conclusive. It was, nonetheless, enough to persuade me that the inkwells may have been retired a little too early.`,
+  questions: [
+    { q: "What does the writer say about her reaction when tablets were introduced at her school?",
+      options: ["She had doubts about them that she kept to herself.","She was persuaded by colleagues who were more enthusiastic than her.","She welcomed them because they solved problems she had found frustrating.","She saw them as a chance to change the way she taught."],
+      answer: 2,
+      explain: "She 'welcomed the change without a second thought': essays became 'legible overnight' and she no longer spent weekends deciphering handwriting. 'Without a second thought' rules out A; colleagues (B) and teaching methods (D) are not mentioned." },
+    { q: "How did the writer first respond to her student's comment in the second paragraph?",
+      options: ["She immediately looked for research that might explain it.","She was surprised that such a capable student was struggling.","She felt the student was criticising the school's use of technology.","She suspected the student was making excuses for a disappointing result."],
+      answer: 3,
+      explain: "She was 'inclined to dismiss this as the kind of thing teenagers say to excuse a poor test result'. She only turned to the research 'eventually' (not A)." },
+    { q: "What point does the writer make about the research in the third paragraph?",
+      options: ["It has been misrepresented by people who oppose handwriting.","It suggests that how actively students process information may matter more than the tool they use.","It has been largely discredited by more recent studies.","It proves that laptops prevent students from understanding lectures."],
+      answer: 1,
+      explain: "Some researchers argue 'what matters is not the tool but the habit of processing information rather than copying it'. C is too strong ('less clear-cut' is not 'discredited'), and it is advocates of handwriting, not opponents, who have been selective (A)." },
+    { q: "In the fourth paragraph, the writer compares handwriting with walking to suggest that",
+      options: ["a slower process can help people take in what they are learning.","handwriting is a more natural activity than typing.","some skills are best learned through physical activity.","students need more time to complete written tasks."],
+      answer: 0,
+      explain: "Walking 'teaches you a route that a car journey never does', just as the 'friction' of handwriting may make it useful: slowness forces engagement." },
+    { q: "What does the writer imply about digital examinations in the fifth paragraph?",
+      options: ["They would give some students an unfair advantage.","They have been discussed far more than they have been introduced.","They are likely to replace written exams within a few years.","They would reduce the stress students feel in exams."],
+      answer: 1,
+      explain: "'Despite years of talk about digital examinations, most… exams… are still written by hand.' The talk has not led to much change." },
+    { q: "What does the writer conclude in the last two paragraphs?",
+      options: ["Handwriting should replace typing for most kinds of school work.","Her student's experience proves that the new arrangement works.","Some inefficiency may be worth keeping, even though she cannot prove its value.","Introducing tablets into her classroom was a mistake."],
+      answer: 2,
+      explain: "She wants to 'protect a little inefficiency' and admits she has 'no way of proving' it makes a difference. The student's experience is 'hardly conclusive' (not B), and she still uses screens for essays (not A or D)." }
+  ]
+},
+/* ---------------- Set 8 ---------------- */
+{
+  type: "mc-reading", startAt: 31, pointsEach: 2,
+  intro: "You are going to read an article by a photographer about faded advertisements painted on the walls of old buildings.",
+  textTitle: "Writing on the wall",
+  textSub: "Why one photographer has spent twenty years recording advertisements that were never meant to last",
+  text: `The first one I noticed was on the gable end of a derelict warehouse near the railway station: a pale rectangle of brickwork on which, if you squinted in the right light, you could just make out the words 'Marlow's Biscuits – Baked Daily'. I must have walked past it hundreds of times without seeing it. Once I had, I started seeing them everywhere – fragments of lettering for long-vanished soap, cocoa and cough mixtures, fading quietly above shop fronts and down side streets, like a second, older city showing through the first.
+
+These 'ghost signs', as enthusiasts call them, were painted directly onto walls by specialist signwriters, mostly between the late nineteenth century and the middle of the twentieth. They were never intended to survive. Advertisers expected them to be repainted every few years or covered by the next campaign, and the paint itself was chosen for brightness rather than durability. That any remain at all is largely an accident: a neighbouring building that shielded a wall from the weather, an owner who could not afford to repaint, a council that simply never got round to it.
+
+For the past twenty years I have been photographing them, initially as a hobby and lately with something closer to urgency. They are disappearing faster than they were ever painted. Some are lost to demolition, others to developers who see a crumbling advertisement as a blemish to be sandblasted away. More are vanishing in a quieter way: insulation panels, new windows, a coat of fashionable grey paint. I have returned to sites I photographed a decade ago to find nothing but clean render and a feeling of having arrived at a funeral too late.
+
+You might expect, then, that I would welcome the recent enthusiasm for restoring them. Several towns have commissioned signwriters to repaint faded signs in their original colours, and the results are undeniably striking. Yet I find these restorations faintly troubling. A restored sign is, in effect, a new advertisement for a product that no longer exists, painted by someone who never saw the original. It may tell you what the sign looked like in 1920, but nothing about the century that has passed since – and it is that passage of time, visible in every cracked and weathered letter, that gives a ghost sign its power.
+
+Not everyone shares this view, and I accept that my position can look like a kind of aesthetic snobbery. Local historians point out, reasonably enough, that a sign left to fade will eventually become unreadable, and that a careful restoration at least preserves the information it contains. Business owners, meanwhile, have discovered that a restored sign draws visitors and gives a street a certain character. I can hardly argue that a sign is better preserved by being allowed to disappear.
+
+My own compromise is to record rather than intervene. Each photograph is catalogued with its location, the date and whatever I can discover about the business it advertised, and the archive is freely available online. It has, to my surprise, become something of a community project. People send me pictures of signs revealed when a neighbouring building is pulled down, or stories about shops their grandparents ran. One woman wrote to say that a sign I had photographed was the only surviving trace of her great-grandfather's tailoring business; she had not known it existed until she saw it on her screen.
+
+It is messages like hers that persuade me the project is worth continuing, even as the signs themselves dwindle. The walls will eventually be cleaned or knocked down, and the lettering will go with them. But a ghost sign was always a record of something that had already gone. In that sense, a photograph of one is simply continuing the work the paint began.`,
+  questions: [
+    { q: "In the first paragraph, the writer suggests that once he had noticed one ghost sign,",
+      options: ["he regretted having paid so little attention to his surroundings.","he became aware of a hidden layer of the city's past.","he began to research the products the signs had advertised.","he found the signs more interesting than the buildings they were painted on."],
+      answer: 1,
+      explain: "He saw the signs 'everywhere… like a second, older city showing through the first'. He admits he walked past it many times, but expresses no regret (A)." },
+    { q: "According to the second paragraph, the ghost signs that remain have survived mainly because of",
+      options: ["the durable paint that signwriters used.","deliberate efforts to protect them.","a series of fortunate accidents.","the skill of the people who painted them."],
+      answer: 2,
+      explain: "'That any remain at all is largely an accident': a sheltering building, an owner who couldn't afford to repaint, a council that never got round to it. The paint was chosen 'for brightness rather than durability' (not A)." },
+    { q: "The writer uses the phrase 'arrived at a funeral too late' to express",
+      options: ["his anger at developers who destroy signs deliberately.","his guilt at not having campaigned to save the signs.","his surprise that nobody else had photographed them.","his sadness at finding that signs had disappeared without his knowledge."],
+      answer: 3,
+      explain: "He returns to sites he photographed years earlier and finds the signs gone: they were lost while he wasn't there to see it. Developers are mentioned, but the image expresses loss, not anger (A)." },
+    { q: "What is the writer's main objection to restoring ghost signs?",
+      options: ["It removes the very evidence of time that makes them meaningful.","The restored signs are often historically inaccurate.","It promotes products that are no longer available.","The signwriters involved lack the necessary skills."],
+      answer: 0,
+      explain: "It is 'that passage of time, visible in every cracked and weathered letter, that gives a ghost sign its power'. He says a restoration may show what the sign looked like (not B), and the point about products that no longer exist is ironic, not his real objection (C)." },
+    { q: "In the fifth paragraph, the writer",
+      options: ["criticises business owners for exploiting the signs for profit.","suggests that restoration should only be carried out by historians.","acknowledges that there are reasonable arguments against his view.","argues that faded signs contain little useful information."],
+      answer: 2,
+      explain: "He accepts his position 'can look like a kind of aesthetic snobbery', says historians argue 'reasonably enough', and admits he 'can hardly argue' against them." },
+    { q: "Why does the writer mention the woman who wrote to him?",
+      options: ["To explain why he decided to make his archive public.","To show that the archive has proved valuable in ways he had not expected.","To illustrate how hard it is to find information about old businesses.","To suggest that some signs should be restored after all."],
+      answer: 1,
+      explain: "The archive has 'to my surprise, become something of a community project', and messages 'like hers' persuade him to continue. It was already public before she wrote (not A)." }
+  ]
+},
+/* ---------------- Set 9 ---------------- */
+{
+  type: "mc-reading", startAt: 31, pointsEach: 2,
+  intro: "You are going to read an article about why waiting can feel longer or shorter than it really is.",
+  textTitle: "Time well wasted",
+  textSub: "What queues reveal about the way we experience time",
+  text: `Few everyday experiences generate as much quiet fury as waiting. We fume in supermarket queues, drum our fingers on hold to the bank and glare at the departure board as if sheer resentment might hurry the plane. Yet the curious thing about waiting is that our irritation bears surprisingly little relation to how long it actually lasts. A ten-minute wait can feel bearable on one occasion and intolerable on another, and the difference usually has less to do with the clock than with what is going on in our heads.
+
+Researchers who study queues have known this for decades. In an influential essay published in the 1980s, the management scholar David Maister set out a series of principles that still underpin much of the thinking on the subject. Unoccupied time, he argued, feels longer than occupied time; uncertain waits feel longer than known, finite ones; and unexplained waits feel longer than those for which a reason has been given. None of these observations is especially startling. What is striking is how consistently organisations have ignored them.
+
+Consider a story that circulates widely among people who design waiting systems, perhaps because it is too neat not to repeat. An airport, the story goes, received a steady stream of complaints about the time passengers spent waiting for their luggage. Adding staff reduced the wait considerably, but the complaints continued. The eventual solution was not to speed up the baggage handlers but to move the arrival gates further from the baggage hall, so that passengers spent most of the time walking rather than standing still. The total time was much the same; the complaints all but disappeared. Whether every detail is accurate is hard to establish, but the principle it illustrates has been confirmed in more rigorous settings.
+
+There is something faintly uncomfortable about all this. If the experience of waiting can be managed so easily, it can also be manipulated. The mirrors beside lifts, the progress bars that move quickly at the start and slowly at the end, the recorded message assuring you that your call is important – all are designed to alter your perception of time rather than the time itself. Some of these tricks are harmless. Others, such as the estimated waiting time that turns out to have been deliberately exaggerated so that customers are pleasantly surprised, shade into something closer to deception.
+
+And yet it would be a mistake to see the psychology of waiting purely as a set of techniques for keeping customers quiet. Maister's most interesting observation, to my mind, concerned fairness. People, he noted, will tolerate a long wait far more readily than one they consider unjust. Nothing provokes anger in a queue like the sight of someone pushing in, even if it adds only seconds to everyone else's wait. What we resent, it seems, is not so much the loss of time as the sense that the rules have been broken.
+
+This may explain why the single 'snake' queue, in which everyone waits in one line and is called to the next free counter, has spread so widely. It does tend to move people through more efficiently, but its greatest advantage is psychological: nobody can find themselves stuck in the slow lane, watching others overtake them. Everybody waits, but everybody waits equally.
+
+Perhaps the most useful lesson, then, is a personal one. We cannot always shorten the waits we face, but we can recognise how much of our frustration is self-inflicted. A queue is rarely a catastrophe. It is often, if we let it be, simply a few minutes in which nothing is asked of us – which, in a life as crowded as most of ours, is not the worst thing that can happen.`,
+  questions: [
+    { q: "What point does the writer make in the first paragraph?",
+      options: ["People have become less patient than they used to be.","How annoying a wait feels depends more on our state of mind than on its length.","Most waits are shorter than people believe them to be.","Waiting is more frustrating in some places than in others."],
+      answer: 1,
+      explain: "Our irritation 'bears surprisingly little relation to how long it actually lasts'; the difference has 'less to do with the clock than with what is going on in our heads'." },
+    { q: "What does the writer find striking about Maister's principles?",
+      options: ["how obvious they seem today","how much research has supported them","how long ago they were first proposed","how rarely organisations have acted on them"],
+      answer: 3,
+      explain: "'None of these observations is especially startling. What is striking is how consistently organisations have ignored them.' A repeats the first sentence, which he does not find striking." },
+    { q: "What is the writer's attitude to the airport story in the third paragraph?",
+      options: ["He suspects that it was invented to make a point.","He believes it is more often repeated than understood.","He accepts the idea behind it while being unsure of the details.","He uses it to show that hiring more staff rarely solves problems."],
+      answer: 2,
+      explain: "'Whether every detail is accurate is hard to establish, but the principle it illustrates has been confirmed.' He doubts the details, not the whole story (A)." },
+    { q: "In the fourth paragraph, the writer suggests that some ways of managing waiting",
+      options: ["cross the line into dishonesty.","have become too familiar to work.","are more effective than others.","annoy customers more than the wait itself."],
+      answer: 0,
+      explain: "Some tricks are harmless, but an estimated wait 'deliberately exaggerated' shades 'into something closer to deception'." },
+    { q: "According to the fifth paragraph, what makes people angriest in a queue?",
+      options: ["not knowing how long they will have to wait","seeing someone gain an unfair advantage","being given no reason for a delay","losing time they could have spent more usefully"],
+      answer: 1,
+      explain: "'Nothing provokes anger in a queue like the sight of someone pushing in'; we resent 'not so much the loss of time' (not D) as broken rules. A and C are Maister's other principles, not the one discussed here." },
+    { q: "What does the writer suggest in the final paragraph?",
+      options: ["Organisations should do more to reduce waiting times.","People should complain less about poor service.","Most people are too busy to use their time well.","A wait can be seen as a welcome pause rather than a nuisance."],
+      answer: 3,
+      explain: "A queue can be 'a few minutes in which nothing is asked of us', which in a crowded life 'is not the worst thing that can happen'." }
+  ]
 }
 ];
