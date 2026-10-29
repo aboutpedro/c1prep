@@ -441,5 +441,103 @@ There are limits to what enthusiasm can achieve, though. Even with more learners
     "46": "'Such concerns' in B refers to the worries about rural towers, and B returns to the practice night from the opening paragraph."
   },
   extra: { label: "C", explain: "C seems to fit after 'mastering the methods can take years' or after the paragraph about composing, but 'this decline' and 'That social dimension' after those gaps would then have nothing to refer to." }
+},
+/* ---------------- Set 10 ---------------- */
+{
+  type: "gapped", pointsEach: 2,
+  intro: "You are going to read an article about training guide dogs for blind and partially sighted people. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (41–46). There is one extra paragraph which you do not need to use.",
+  textTitle: "Learning to lead",
+  textSub: "What it takes to turn a playful puppy into a guide dog",
+  text: `The puppy sitting at Hannah Lewis's feet is ten weeks old, mostly ears, and currently attempting to eat her shoelace. In two years' time, if all goes well, he will be guiding a blind person through crowded streets, across busy roads and onto trains. Lewis, a volunteer puppy raiser, has done this four times before, and she knows that 'if all goes well' is doing a great deal of work in that sentence.
+
+[[41]]
+
+For the first year or so, the puppy will live with Lewis and her family, who will introduce him to as many sights, sounds and situations as possible: buses, lifts, cafés, shopping centres, the clatter of a building site. The aim is not to teach him to guide – that comes later – but to make sure that nothing in the ordinary world frightens him.
+
+[[42]]
+
+At around fourteen months, the dogs move to a training centre, where professional instructors begin the specialised work. They learn to walk in a straight line in the centre of the pavement, to stop at kerbs and steps, and to judge whether a gap is wide enough for their owner as well as themselves.
+
+[[43]]
+
+The most sophisticated skill of all is known as 'intelligent disobedience'. A guide dog must obey its owner's commands, but it must also know when to refuse them. If its owner says 'forward' at a crossing and a car is approaching, the dog is expected to stay put.
+
+[[44]]
+
+Not every dog makes it. A significant proportion of puppies are withdrawn at some stage, most often because they prove too easily distracted or too anxious in busy places. These dogs are not wasted: many go on to other kinds of assistance work, and others are rehomed with families who have been waiting, sometimes for years, to adopt one.
+
+[[45]]
+
+For those who do qualify, the final stage is matching. Instructors consider not only an owner's walking speed and height but their way of life: a dog suited to a quiet rural routine might be overwhelmed by a daily commute into a city centre.
+
+[[46]]`,
+  paragraphs: {
+    A: "Some of this is surprisingly subtle. A dog must learn, for example, to allow for overhanging branches and open car doors that it could easily walk under or past itself, but that would hit a person at head height.",
+    B: "Lewis has been on both sides of this. Of the four puppies she has raised, two now work as guide dogs and one is still in training; the fourth was withdrawn for being, in her words, 'far too interested in pigeons', and now lives happily with a family in Wales.",
+    C: "Guide dogs were first trained on a large scale in Germany during and after the First World War, to help soldiers who had been blinded in combat. The idea spread quickly, and similar schools were soon established in Switzerland, the United States and Britain.",
+    D: "That is because a great deal can go wrong. Training a guide dog takes around two years and involves a long chain of people, from breeders and volunteers to specialist instructors, and at every stage there is a chance that a dog will turn out to be unsuited to the work.",
+    E: "When the match is right, the results can be transformative. Owners describe regaining the confidence to travel alone, to take up jobs and to visit friends without having to arrange help. Lewis has met the owner of one of her former puppies only once, but she still keeps the letter he sent her afterwards.",
+    F: "It is harder than it sounds. Lewis remembers one promising puppy who was fearless on escalators and unbothered by fireworks but panicked at the sight of a man in a large hat. 'You can't predict what will upset them,' she says, 'so you try to expose them to absolutely everything.'",
+    G: "Teaching this is a delicate business. Trainers set up situations in which obeying the command would be dangerous and reward the dog for refusing, while making sure it does not conclude that ignoring instructions is generally a good idea."
+  },
+  answers: { "41": "D", "42": "F", "43": "A", "44": "G", "45": "B", "46": "E" },
+  explain: {
+    "41": "'That is because' in D explains why 'if all goes well' matters so much: a great deal can go wrong.",
+    "42": "'It is harder than it sounds' in F refers to making sure 'nothing in the ordinary world frightens him', and the hat story illustrates this.",
+    "43": "'Some of this' in A refers to the skills just listed, such as judging whether a gap is wide enough for the owner too.",
+    "44": "'Teaching this' in G refers to 'intelligent disobedience' – rewarding the dog for refusing a dangerous command.",
+    "45": "'Both sides of this' in B refers to dogs that qualify and dogs that are withdrawn and rehomed, described just before the gap.",
+    "46": "E follows the matching stage ('When the match is right') and closes the article with the result for owners."
+  },
+  extra: { label: "C", explain: "C gives general history. It might seem to fit after the opening paragraph, but the next paragraph continues with 'the puppy' and Lewis, so the article needs D there." }
+},
+/* ---------------- Set 11 ---------------- */
+{
+  type: "gapped", pointsEach: 2,
+  intro: "You are going to read an article about a craftswoman who restores stained-glass windows. Six paragraphs have been removed from the article. Choose from the paragraphs A–G the one which fits each gap (41–46). There is one extra paragraph which you do not need to use.",
+  textTitle: "Through a glass, brightly",
+  textSub: "Restoring medieval windows is slow, painstaking work – and much of it is about restraint",
+  text: `The window arrived at Maya Sterling's workshop in forty-three wooden crates. For six centuries it had filled the east end of a parish church in Norfolk, depicting scenes from the life of a local saint in deep reds and blues. Now its lead had perished, several panels were bulging dangerously, and the church faced a choice between restoring it and watching it collapse.
+
+[[41]]
+
+Her first task, as always, was simply to look. Before a single piece of glass is touched, every panel is photographed, measured and drawn, and its condition recorded in detail. This can take weeks, and clients are sometimes impatient. Sterling is unmoved. 'Once you start taking a window apart,' she says, 'you can never put it back exactly as it was. So you'd better know what "as it was" means.'
+
+[[42]]
+
+This is where the real detective work begins. A medieval window is rarely the product of a single moment. Most have been repaired many times over the centuries, sometimes skilfully and sometimes not, and pieces from other windows have often been inserted to fill gaps left by storms or wars.
+
+[[43]]
+
+Deciding what to do with these later additions is one of the most difficult parts of the job. Removing them would make the window more 'authentic', but it would also erase part of its history. In most cases, Sterling leaves them in place.
+
+[[44]]
+
+Where new glass is needed, it is made to match the colour of the original as closely as possible, but it is never disguised. Each new piece is discreetly marked with the date, so that future restorers will know exactly which parts are old.
+
+[[45]]
+
+Cleaning, too, demands restraint. Centuries of dirt can be removed, but some of what looks like dirt is in fact the remains of the original paint, applied to give faces and folds of fabric their shape. Too vigorous a cleaning would wipe away the very detail the window was made to show.
+
+[[46]]`,
+  paragraphs: {
+    A: "The panel showing the unfamiliar saint was a case in point. Its style and colours suggested it had come from another church altogether, probably in the seventeenth century, when many windows were damaged and fragments were salvaged and reused wherever they would fit.",
+    B: "In the Norfolk window, the records revealed something nobody had suspected. Several of the scenes, it turned out, were not in their original order, and one panel appeared to show a saint who had no connection with the church at all.",
+    C: "Stained glass is made by adding metal oxides to molten glass: copper produces greens and reds, cobalt a deep blue. The pieces are then cut, painted, fired in a kiln and held together with strips of lead.",
+    D: "It was a choice the church could only just afford to make. Restoration on this scale can take more than a year and cost hundreds of thousands of pounds, raised in this case through a combination of grants, a public appeal and, as Sterling puts it, 'an extraordinary number of cake sales'.",
+    E: "When the window was finally reinstalled, the congregation gathered for a service of rededication. Sterling sat at the back, watching the morning light come through glass she had spent fourteen months handling piece by piece. 'People always ask if I feel proud,' she says. 'Mostly I'm relieved. It's still their window, not mine. That's how it should be.'",
+    F: "'They're part of the story now,' she explains. 'Someone in the 1600s cared enough about this window to patch it with whatever they could find. I don't think it's my job to undo that.' The scenes that had been put back in the wrong order, by contrast, were returned to the sequence the records made clear.",
+    G: "Sterling sees this honesty as essential. 'The worst thing a restorer can do is pretend,' she says. 'If I make a new piece look six hundred years old, I'm not preserving history. I'm inventing it.'"
+  },
+  answers: { "41": "D", "42": "B", "43": "A", "44": "F", "45": "G", "46": "E" },
+  explain: {
+    "41": "'It was a choice' in D refers to the church's choice between restoring the window and watching it collapse.",
+    "42": "B describes what the detailed records revealed; 'This is where the real detective work begins' follows from that discovery.",
+    "43": "'The panel showing the unfamiliar saint' in A refers back to the saint mentioned in B, and is 'a case in point' of pieces inserted from other windows.",
+    "44": "F explains why Sterling leaves later additions in place ('They're part of the story now').",
+    "45": "'This honesty' in G refers to never disguising new glass and marking it with the date.",
+    "46": "E describes the finished window being reinstalled, which ends the story begun in the first paragraph."
+  },
+  extra: { label: "C", explain: "C explains how stained glass is made in general. Nothing before or after any gap refers to it, and 'Cleaning, too, demands restraint' needs to follow the point about honesty in G." }
 }
 ];
