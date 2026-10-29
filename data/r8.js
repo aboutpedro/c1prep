@@ -280,5 +280,75 @@ window.SETS = [
     { q: "admits that they sometimes miss having people around?", answer: "E",
       explain: "'I won't pretend it's never lonely… I'd give a lot for a neighbour to knock on the door.' Agnes describes her old house, not loneliness now." }
   ]
+},
+/* ---------------- Set 10 ---------------- */
+{
+  type: "matching", startAt: 47, pointsEach: 1,
+  intro: "You are going to read an article in which five people talk about working in a family business. For questions 47–56, choose from the people (A–E). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Rosa: hardware shop", text: `My great-grandfather opened the hardware shop in 1931, and when my father's health began to fail, everyone simply assumed I would take over. Nobody asked me directly, and I never quite felt I could say no – there's a lot of weight in a name painted above a shop door. The first big argument came when I wanted to start selling online. My father thought it would cheapen the business and refused to discuss it, so in the end I went ahead without his blessing. Online sales now make up nearly half our income. He's never actually said I was right, but he shows the website to everyone who visits.` },
+    { label: "B", title: "Kenji: restaurant", text: `I spent twelve years in banking before joining my parents' restaurant, and I expected to feel like a beginner. In fact, a lot of what I'd learned carried over surprisingly well: managing cash flow, negotiating with suppliers, reading a balance sheet. My parents had been running the place on instinct for thirty years, and some of those instincts were costing them money. The hardest thing is my mother. She has no hesitation in telling me I've got something wrong in front of the whole kitchen, which does nothing for my authority. At home I can laugh about it. At work, it's harder.` },
+    { label: "C", title: "Amara: vineyard", text: `My brother and I inherited the vineyard together, and we agreed early on that we needed clear boundaries or we'd end up fighting about everything. He runs the vines and the winemaking; I handle sales, marketing and the tasting room. We each have the final say in our own area, which keeps us out of each other's hair most of the time. The one serious disagreement we've had was over whether to buy a neighbouring plot. We were completely stuck, so we brought in an independent consultant to look at the figures. She came down on my brother's side, and I accepted it, which I'm not sure I would have done if he'd simply told me I was wrong.` },
+    { label: "D", title: "Lars: printing firm", text: `The printing firm had been in the family for three generations, and I was supposed to be the fourth. I worked there through school and university, and the longer I stayed, the more certain I became that I didn't want it. Telling my father was the hardest conversation of my life. He was hurt, and for a while we barely spoke. In the end he sold the business to a larger company and retired. Strangely, we get on far better now than we ever did when we worked together. There's no longer a business sitting between us.` },
+    { label: "E", title: "Fatima: bakery", text: `I started the bakery twenty years ago, and my daughter has worked alongside me for the last six. We've agreed that she'll take over completely when I turn sixty, which gives us four years to make sure she knows everything I know. She's already changed a lot. I was very doubtful when she suggested a range of vegan cakes – I thought our regular customers would hate them – but she talked me into a trial, and now they're among our best-sellers. I've learned to listen to her more than I expected to.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "made a change to the business despite a relative's opposition?", answer: "A",
+      explain: "Her father 'refused to discuss it, so in the end I went ahead without his blessing'. Fatima was doubtful at first but agreed to a trial." },
+    { q: "found that experience from a different industry was useful?", answer: "B",
+      explain: "What he learned in banking 'carried over surprisingly well'." },
+    { q: "chose not to continue the family tradition?", answer: "D",
+      explain: "He 'was supposed to be the fourth' generation but became 'certain I didn't want it'." },
+    { q: "used someone from outside the family to settle a disagreement?", answer: "C",
+      explain: "They 'brought in an independent consultant to look at the figures'." },
+    { q: "finds it difficult when a relative criticises them in front of others?", answer: "B",
+      explain: "His mother corrects him 'in front of the whole kitchen, which does nothing for my authority'." },
+    { q: "has agreed a definite timetable for handing over the business?", answer: "E",
+      explain: "Her daughter will 'take over completely when I turn sixty'." },
+    { q: "took on a role that others expected of them without being asked?", answer: "A",
+      explain: "'Everyone simply assumed I would take over. Nobody asked me directly.' Lars was also expected to take over, but he didn't." },
+    { q: "says their relationship with a parent improved as a result of their decision?", answer: "D",
+      explain: "'We get on far better now than we ever did when we worked together.'" },
+    { q: "explains how they avoid interfering in each other's work?", answer: "C",
+      explain: "Each has 'the final say in our own area, which keeps us out of each other's hair'." },
+    { q: "was persuaded to change the products they sell?", answer: "E",
+      explain: "Her daughter 'talked me into a trial' of vegan cakes, now 'among our best-sellers'." }
+  ]
+},
+/* ---------------- Set 11 ---------------- */
+{
+  type: "matching", startAt: 47, pointsEach: 1,
+  intro: "You are going to read an article in which five amateur volunteers describe the scientific research they help with. For questions 47–56, choose from the people (A–E). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Olga: butterfly counter", text: `Every week from April to September, I walk the same two-kilometre route along the edge of a nature reserve and count every butterfly I see within a few metres of the path. The figures go into a national database that scientists use to track how populations are changing. Some people would find it unbearably repetitive, but I find it soothing – the same gate, the same hedges, the same slow pace, week after week. What's less soothing is what the numbers show. When I started, eleven years ago, I'd regularly count over two hundred butterflies on a good day. Now I'm pleased to reach eighty.` },
+    { label: "B", title: "Ravi: galaxy spotter", text: `I started classifying galaxies online during a long spell of insomnia, when I needed something to do at three in the morning that wasn't scrolling through the news. You're shown images from telescopes and asked simple questions: is it smooth or does it have spiral arms, is it round or elongated? Thousands of volunteers look at each image, so no single mistake matters much. A couple of years in, I flagged an odd green blob that turned out to be a type of object nobody had properly described before. The researchers who studied it listed me as a co-author on their paper, which I still find slightly unreal.` },
+    { label: "C", title: "Helen: rainfall recorder", text: `I've measured the rainfall in my garden every morning at nine o'clock since 1994 and sent the figures to the national weather service. In all that time I've missed only one fortnight, when I was in hospital, and even then my neighbour took the readings for me. It doesn't take long – a few minutes at most – but you have to be disciplined about it. Farmers in the valley ring me after a big storm to ask how much has fallen, and the local flood team uses my records too, so I feel a responsibility to get it right.` },
+    { label: "D", title: "Tomás: river tester", text: `I joined a group that tests water samples from our local river once a month. Last spring, my readings showed a sudden spike in a type of pollution linked to sewage, just downstream from a pipe nobody seemed to know about. I photographed the outlet, sent everything to the environmental agency and waited. And waited. It took nearly four months for anyone to come and look, by which time the fish in that stretch had largely disappeared. The pipe has since been dealt with, but I'm still angry about how long it took.` },
+    { label: "E", title: "June: logbook transcriber", text: `I transcribe handwritten weather observations from nineteenth-century ships' logbooks, which climate scientists use to work out what conditions were like before modern records began. The handwriting can be terrible, and I'm always anxious about misreading a figure, because one wrong number could distort the data. What keeps me going, though, are the little notes in the margins that have nothing to do with the weather: a sailor's birthday, a complaint about the food, a whale spotted off the coast. They make the past feel very close.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "finds the repetitive nature of the task calming?", answer: "A",
+      explain: "'Some people would find it unbearably repetitive, but I find it soothing.'" },
+    { q: "was frustrated by how slowly the authorities responded?", answer: "D",
+      explain: "'It took nearly four months for anyone to come and look… I'm still angry about how long it took.'" },
+    { q: "has received formal credit for a discovery?", answer: "B",
+      explain: "The researchers 'listed me as a co-author on their paper'." },
+    { q: "enjoys details that have nothing to do with the main purpose of the work?", answer: "E",
+      explain: "The notes in the margins 'have nothing to do with the weather' but keep her going." },
+    { q: "has kept up the activity for many years with hardly a break?", answer: "C",
+      explain: "Since 1994 she has 'missed only one fortnight'." },
+    { q: "took up the activity to fill time when they couldn't sleep?", answer: "B",
+      explain: "He started 'during a long spell of insomnia'." },
+    { q: "has noticed a long-term decline in what they record?", answer: "A",
+      explain: "Counts have fallen from over two hundred to around eighty in eleven years. Tomás describes a sudden event, not a long-term trend." },
+    { q: "worries that their own errors could affect the results?", answer: "E",
+      explain: "'One wrong number could distort the data.' Ravi says that a single mistake doesn't matter much." },
+    { q: "took action after discovering a problem?", answer: "D",
+      explain: "He 'photographed the outlet, sent everything to the environmental agency'." },
+    { q: "mentions that other people rely on the information they collect?", answer: "C",
+      explain: "Farmers 'ring me after a big storm', and 'the local flood team uses my records'." }
+  ]
 }
 ];
