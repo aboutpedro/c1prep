@@ -309,5 +309,70 @@ This suggests that déjà vu may occur when a situation feels familiar without o
     15: { answers: ["being"], explain: "'Without + possessive + -ing': without our being able = without us being able." },
     16: { answers: ["this", "that", "such"], explain: "'If this/that is the case' = if that is true. 'If such is the case' is more formal." }
   }
+},
+/* ---------------- Set 16 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "The fork in history",
+  text: `It is hard to imagine a meal [0] a fork, yet for much of history Europeans managed perfectly well with knives, spoons and their fingers. When a Byzantine princess used a small golden fork at a banquet in Venice in the eleventh century, local churchmen were scandalised. Food, they argued, was a gift from God and should be handled with nothing [9] the fingers He had provided.
+
+Attitudes changed slowly. The fork gradually caught [10] in Italy, but elsewhere it was regarded with suspicion well [11] the sixteenth century. In the early seventeenth century, an English traveller [12] had seen forks in Italy began using one at home, and was mocked [13] his trouble. Many of his countrymen considered the habit affected, and [14] even thought it unmanly.
+
+[15] the eighteenth century, however, the fork had become standard across much of Europe. Today it is so familiar that few of us stop to wonder how [16] earth people ever coped without one.`,
+  gaps: {
+    0: { answers: ["without"] },
+    9: { answers: ["but"], explain: "'Nothing but' = only." },
+    10: { answers: ["on"], explain: "'Catch on' = become popular." },
+    11: { answers: ["into"], explain: "'Well into the sixteenth century' = until a time quite late in that century." },
+    12: { answers: ["who","that"], explain: "A defining relative pronoun for a person." },
+    13: { answers: ["for"], explain: "'Be mocked / thanked / rewarded for your trouble' = as a result of your effort." },
+    14: { answers: ["some","others"], explain: "A pronoun meaning 'some people' or 'other people', contrasting with 'many'." },
+    15: { answers: ["By"], explain: "'By + time' + past perfect = before or at that time." },
+    16: { answers: ["on"], explain: "'How on earth…?' adds emphasis to a question, showing surprise." }
+  }
+},
+/* ---------------- Set 17 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "Nature's compass",
+  text: `Every autumn, billions of birds embark [0] journeys of thousands of kilometres, often travelling at night and over open sea. Many return to exactly the same spot the following year, a feat of navigation that has puzzled scientists [9] centuries.
+
+It is now clear that birds rely [10] several sources of information at once. Some use the position of the sun or stars; [11] recognise landmarks such as coastlines and mountain ranges. Most remarkable of all is their apparent ability to sense the Earth's magnetic field. [12] exactly they do this remains uncertain, but one leading theory suggests that a protein in their eyes may allow them to 'see' magnetic lines as patterns of light and shade.
+
+If this is true, it would mean that birds perceive the world in a way [13] is almost impossible for us to imagine. It also raises concerns. Some studies have found that electromagnetic noise from cities can interfere [14] this sense, leaving birds unable to orient themselves properly. [15] the scale of the problem is still unclear, researchers believe it is worth taking seriously, [16] only because migrating birds already face so many other threats.`,
+  gaps: {
+    0: { answers: ["on","upon"] },
+    9: { answers: ["for"], explain: "'For + period of time' with the present perfect." },
+    10: { answers: ["on","upon"], explain: "'Rely on' = depend on." },
+    11: { answers: ["others"], explain: "'Some… others…' contrasts two groups." },
+    12: { answers: ["How"], explain: "'How' introduces a clause acting as the subject (how they do this remains uncertain)." },
+    13: { answers: ["that","which"], explain: "A relative pronoun after 'a way'." },
+    14: { answers: ["with"], explain: "'Interfere with' = disturb, prevent from working properly." },
+    15: { answers: ["Although","Though","While","Whilst"], explain: "A contrast linker at the start of the sentence." },
+    16: { answers: ["if"], explain: "'If only because' = at least for the reason that." }
+  }
+},
+/* ---------------- Set 18 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "A world built for the right hand",
+  text: `Around one person [0] ten is left-handed, a proportion that appears to have remained remarkably stable for thousands of years. Cave paintings and ancient tools suggest that our ancestors were divided in much the same way as we are today.
+
+For most of that time, [9], being left-handed was far from easy. Many languages associate the left side [10] bad luck or dishonesty; the English word 'sinister' originally [11] 'left' in Latin. Well into the twentieth century, children who showed a preference for their left hand were often made to write with their right, a practice that some believe did more harm [12] good.
+
+[13] left-handedness exists at all is something of a puzzle. If being in the minority carried such disadvantages, why has it not disappeared? One explanation is that left-handers may have had an advantage in combat, [14] opponents were less used to facing them. Supporters of this theory point out that left-handers are still over-represented in sports such as fencing and boxing.
+
+Whatever the explanation, life for left-handers has improved considerably. Scissors, desks and kitchen tools designed specifically [15] them are now widely available, [16] many still complain that the world is built for the right-handed majority.`,
+  gaps: {
+    0: { answers: ["in"] },
+    9: { answers: ["however","though"], explain: "A contrast linker in mid-sentence, between commas." },
+    10: { answers: ["with"], explain: "'Associate X with Y'." },
+    11: { answers: ["meant"], explain: "'Mean' = have as its meaning; the past tense is needed because it is about the word's origin." },
+    12: { answers: ["than"], explain: "Fixed phrase: 'do more harm than good'." },
+    13: { answers: ["Why"], explain: "'Why' introduces a clause acting as the subject (Why it exists is a puzzle)." },
+    14: { answers: ["as","since","because"], explain: "A linker giving the reason." },
+    15: { answers: ["for"], explain: "'Designed for someone'." },
+    16: { answers: ["though","although","but","yet"], explain: "A contrast linker joining two clauses." }
+  }
 }
 ];
