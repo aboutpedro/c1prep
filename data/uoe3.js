@@ -341,5 +341,68 @@ There are signs that this is beginning to happen. Buying second-hand clothes has
     23: { stem: "SOCIAL", answers: ["socially"], explain: "An adverb modifying 'acceptable': social → socially." },
     24: { stem: "SPECTACLE", answers: ["spectacularly"], explain: "An adverb modifying 'grown' = very greatly: spectacle → spectacular → spectacularly." }
   }
+},
+/* ---------------- Set 17 ---------------- */
+{
+  type: "word-form",
+  textTitle: "The colour of money",
+  text: `Companies spend [0] sums of money choosing the colours of their logos and packaging, and with good reason. Research suggests that colour can strongly influence our [17] of a product before we have even read the label. Blue, for example, is widely associated with [18], which may explain its popularity among banks, while red is thought to stimulate the appetite.
+
+However, the [19] between colours and emotions are far less universal than marketers sometimes claim. In many Western countries white symbolises purity, but in parts of Asia it is traditionally linked with mourning. What appears [20] attractive in one market can therefore seem entirely [21] in another.
+
+Some researchers go further, arguing that the effects of colour have been greatly [22]. In carefully controlled studies, they point out, the differences are often small and highly [23] from one study to the next. For now, the most [24] conclusion may be that colour matters, but rarely as much as its champions would like us to believe.`,
+  gaps: {
+    0: { stem: "ORDINARY", answers: ["extraordinary"] },
+    17: { stem: "PERCEIVE", answers: ["perception","perceptions"], explain: "A noun after the possessive 'our'. Note the spelling change: perceive → perception." },
+    18: { stem: "STABLE", answers: ["stability"], explain: "A noun after 'associated with'." },
+    19: { stem: "ASSOCIATE", answers: ["associations"], explain: "A plural noun: the verb 'are' shows it must be plural." },
+    20: { stem: "IMMENSE", answers: ["immensely"], explain: "An adverb modifying the adjective 'attractive'." },
+    21: { stem: "APPROPRIATE", answers: ["inappropriate"], explain: "The negative prefix in- is needed: the sentence contrasts what is attractive in one market with what is wrong in another." },
+    22: { stem: "EXAGGERATE", answers: ["exaggerated"], explain: "A past participle in a passive structure: 'have been exaggerated'. Note the double g." },
+    23: { stem: "VARY", answers: ["variable"], explain: "An adjective after 'highly': changing, inconsistent." },
+    24: { stem: "DEFEND", answers: ["defensible"], explain: "An adjective after 'the most': able to be supported by argument. Note the spelling -ible." }
+  }
+},
+/* ---------------- Set 18 ---------------- */
+{
+  type: "word-form",
+  textTitle: "Close to the edge",
+  text: `Volcano tourism has become a [0] industry. Every year, hundreds of thousands of people pay to hike to the rims of active craters, drawn by the chance to witness the raw power of the planet at close range. For many, the experience is [17] and unforgettable.
+
+It is not, however, without risk. Eruptions remain [18] difficult to forecast, and gases released by volcanoes can be [19] even when there is no visible activity. Several tragedies in recent years have raised questions about the [20] of allowing visitors so close to unstable ground.
+
+Tour operators insist that safety is their highest priority, and most now require visitors to wear helmets and follow strict [21]. Critics, however, argue that commercial pressures make operators [22] to cancel trips at short notice. Local authorities face a difficult balancing act: tourism brings much-needed income to often [23] regions, but no amount of money can make up for the loss of life. Finding the right balance will require both caution and [24].`,
+  gaps: {
+    0: { stem: "BOOM", answers: ["booming"] },
+    17: { stem: "AWE", answers: ["awe-inspiring","awesome"], explain: "An adjective: so impressive that it fills you with wonder." },
+    18: { stem: "EXCEPTION", answers: ["exceptionally"], explain: "An adverb modifying the adjective 'difficult'." },
+    19: { stem: "DEATH", answers: ["deadly"], explain: "An adjective after 'can be': able to kill. 'Deathly' means 'like death' (a deathly silence), so it doesn't fit." },
+    20: { stem: "WISE", answers: ["wisdom"], explain: "A noun after 'the': whether something is sensible." },
+    21: { stem: "GUIDE", answers: ["guidelines"], explain: "A plural noun: 'follow strict guidelines' = rules on how to behave." },
+    22: { stem: "WILLING", answers: ["unwilling"], explain: "A negative adjective: commercial pressure makes operators not want to cancel trips." },
+    23: { stem: "POOR", answers: ["impoverished","poverty-stricken"], explain: "An adjective before 'regions': very poor." },
+    24: { stem: "IMAGINE", answers: ["imagination"], explain: "A noun, parallel to 'caution'." }
+  }
+},
+/* ---------------- Set 19 ---------------- */
+{
+  type: "word-form",
+  textTitle: "The first Olympians",
+  text: `The ancient Olympic Games were [0] a religious festival, held every four years in honour of Zeus. For more than a thousand years, athletes from across the Greek world travelled to Olympia to [17] in running, wrestling, chariot racing and other events.
+
+[18] in the modern sense was unknown. Only free-born Greek men could take part, and married women were [19] forbidden even to watch. Victors received nothing more than a crown of olive leaves, though the [20] they enjoyed on returning home could be considerable: some were given free meals for life, and statues were erected to [21] their achievements.
+
+The Games were also accompanied by a sacred truce, intended to guarantee the [22] passage of athletes and spectators. Historians debate how [23] this truce really was, but the ideal of setting conflict aside for the sake of sport proved remarkably [24], inspiring the founders of the modern Olympics many centuries later.`,
+  gaps: {
+    0: { stem: "PRIMARY", answers: ["primarily"] },
+    17: { stem: "COMPETITION", answers: ["compete"], explain: "A verb after 'to'. Here the stem is a noun and you need the verb." },
+    18: { stem: "EQUAL", answers: ["Equality"], explain: "A noun as the subject of the sentence." },
+    19: { stem: "STRICT", answers: ["strictly"], explain: "An adverb modifying 'forbidden'." },
+    20: { stem: "RECOGNISE", answers: ["recognition","recognitions"], explain: "A noun after 'the': the respect and honour they received." },
+    21: { stem: "MEMORY", answers: ["commemorate","memorialise","memorialize"], explain: "A verb after 'to': honour the memory of something publicly." },
+    22: { stem: "HINDER", answers: ["unhindered"], explain: "A negative adjective: free from obstruction." },
+    23: { stem: "EFFECT", answers: ["effective"], explain: "An adjective after 'how': how well it worked." },
+    24: { stem: "ENDURE", answers: ["enduring"], explain: "An adjective after 'proved remarkably': long-lasting." }
+  }
 }
 ];
