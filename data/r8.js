@@ -175,5 +175,110 @@ window.SETS = [
     { q: "says their family encouraged them to take the less obvious path?", answer: "D",
       explain: "'My wife and children pushed me to choose the second' option rather than another similar job." }
   ]
+},
+/* ---------------- Set 7 ---------------- */
+{
+  type: "matching", startAt: 47, pointsEach: 1,
+  intro: "You are going to read an article in which five people talk about working at night. For questions 47–56, choose from the people (A–E). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Lena: overnight radio presenter", text: `People assume the overnight show is where presenters are sent when the station wants to get rid of them, and I suppose that's sometimes true. But I asked for it. Between one and five in the morning, the people listening are the ones who most need company: lorry drivers, new parents, people who can't sleep because something's on their mind. They call in and tell me things they'd never say in daylight, and some of those conversations have stayed with me for years. The price is a strange sort of jet lag that never ends. I sleep from nine until four with blackout blinds and earplugs, and I treat that time as completely non-negotiable, whatever my friends have planned.` },
+    { label: "B", title: "Owen: baker", text: `My grandfather opened the bakery in 1962, and I've been starting work at two in the morning since I was nineteen. My body has started telling me I'm not nineteen any more – thirty years of lifting flour sacks will do that – but I still love the first few hours. The streets are empty, the ovens are warming up, and there's a stillness you just don't get once the town wakes up and the phone starts ringing. The hardest part has been family life. I've missed nearly every breakfast my children have ever eaten, but I finish at eleven, so I've been at the school gate every single afternoon, which plenty of parents with office jobs can't say.` },
+    { label: "C", title: "Farah: hospital porter", text: `I'll be honest: I started doing nights as a hospital porter because of the extra pay, and I assumed I'd switch to days once I'd cleared a few debts. That was six years ago. What kept me there was the atmosphere. During the day, everyone sticks to their place in the pecking order, but at three in the morning a consultant will happily share a pot of tea with a porter, and you get to know people properly. The thing that does worry me is what it's doing to me in the long run. I've read the studies linking years of night work to heart problems and diabetes, and I'm not sure how many more years I want to push my luck.` },
+    { label: "D", title: "Joaquín: astronomer", text: `Observing time on a big telescope is allocated months in advance, and if the sky clouds over on your nights, that's it – you go home with nothing and apply again next year. In my second year here, I had three observing runs in a row ruined by weather, and I seriously thought about leaving astronomy for something with more predictable results. I'm glad I didn't. On a clear night at this altitude, the sky is unlike anything you can imagine from a city, and the data we collect is extraordinary. The thin air takes its toll – headaches, poor sleep – but you get used to it. Mostly.` },
+    { label: "E", title: "Sunita: roadworks manager", text: `I manage overnight roadworks on the motorway, which means closing lanes at ten at night and having everything reopened before the morning rush. The work itself is fairly routine. What isn't routine is the traffic: drivers come past our cones at full speed, sometimes clearly not paying attention, and we've had some very near misses. You never completely relax. What I love, though, is the thought that a few hours later, thousands of people will drive over a stretch of road we've resurfaced and never give it a second thought. If they notice nothing, that means we've done our job properly. I find that oddly satisfying.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "asked to work at night, despite what others might assume about the job?", answer: "A",
+      explain: "'People assume the overnight show is where presenters are sent when the station wants to get rid of them… But I asked for it.'" },
+    { q: "admits that a financial motive was the original reason for working nights?", answer: "C",
+      explain: "'I started doing nights… because of the extra pay.'" },
+    { q: "takes satisfaction from the fact that the people who benefit from their work are unaware of it?", answer: "E",
+      explain: "Drivers will 'never give it a second thought. If they notice nothing, that means we've done our job properly. I find that oddly satisfying.'" },
+    { q: "explains how they make up for time missed with their family?", answer: "B",
+      explain: "He has missed his children's breakfasts, but finishes at eleven, so he has 'been at the school gate every single afternoon'." },
+    { q: "says that their opportunity to work can be wasted for reasons beyond their control?", answer: "D",
+      explain: "'If the sky clouds over on your nights, that's it – you go home with nothing.'" },
+    { q: "says that people share things at night that they would not reveal during the day?", answer: "A",
+      explain: "Callers 'tell me things they'd never say in daylight'. Farah says people get to know each other at night, but she is talking about the hierarchy relaxing, not secrets." },
+    { q: "is concerned about the effect their working hours may have on their health in the future?", answer: "C",
+      explain: "'What it's doing to me in the long run… studies linking years of night work to heart problems.' Owen and Joaquín mention physical effects they feel now, not future risks." },
+    { q: "describes a risk to their personal safety?", answer: "E",
+      explain: "Drivers pass 'at full speed… we've had some very near misses. You never completely relax.'" },
+    { q: "came close to abandoning their career after a frustrating period?", answer: "D",
+      explain: "After three runs ruined by weather, 'I seriously thought about leaving astronomy'." },
+    { q: "particularly enjoys the time before other people start their day?", answer: "B",
+      explain: "'I still love the first few hours… there's a stillness you just don't get once the town wakes up.'" }
+  ]
+},
+/* ---------------- Set 8 ---------------- */
+{
+  type: "matching", startAt: 47, pointsEach: 1,
+  intro: "You are going to read an article in which five people describe their unusual collections. For questions 47–56, choose from the people (A–E). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Nadia: antique maps", text: `It began with a battered map of the Mediterranean that I bought at a flea market for less than the price of a sandwich, mostly because I liked the colours. When I discovered it was nearly three hundred years old, I was hooked. These days, what fascinates me most are the errors. For about a century, many European maps showed California as an island, and I own two of them. To me, those mistakes are more revealing than any accurate map, because they show you exactly where people's knowledge ran out and their imagination took over. The finest examples are far beyond my budget, sadly, so I've learned to look in the places serious dealers ignore.` },
+    { label: "B", title: "Hugo: mechanical watches", text: `My grandfather left me his pocket watch, and I spent years trying to understand how something so small could keep such accurate time without a battery. That curiosity turned into a collection of about forty mechanical watches, most of which spend their lives in a drawer rather than on my wrist. Prices for some of them have risen sharply, and I've had several offers from dealers that would have paid for a new kitchen. I've said no every time. My wife thinks the whole thing has got completely out of hand, and she may well be right, but I've never been interested in them as investments. I just like knowing they're there.` },
+    { label: "C", title: "Ines: vegetable seeds", text: `People are surprised to hear that I collect seeds – mainly old varieties of beans and tomatoes that disappeared from shops decades ago. Unlike most collections, mine can't just sit on a shelf. Seeds lose their ability to germinate over time, so every few years each variety has to be planted, harvested and its seeds saved again. I give a lot of them away, because the more gardeners grow a variety, the safer it is. Even so, I lost a purple bean my great-aunt used to grow when one wet summer rotted the whole crop. I should have shared it more widely, and I still kick myself about it.` },
+    { label: "D", title: "Theo: typewriters", text: `Most of my typewriters came to me broken. People find them in attics and would rather give them to someone who'll appreciate them than throw them away, so I clean them, repair them and get them working again. I don't keep them as ornaments, either: I write all my letters on them, and a surprising number of friends now write back the same way. The biggest practical problem is ribbons, which are getting harder to find. The other is space. My partner has been remarkably patient, but when the collection started spreading into the living room, she very reasonably asked me to keep it to one room, and I did.` },
+    { label: "E", title: "Ruth: matchbox labels", text: `My father collected matchbox labels, and when he died I found I couldn't bear to let them go, so I started adding to them. It's a cheap hobby – most labels cost almost nothing – and I've become fascinated by what they tell you about everyday life in the past: the products people bought, the jokes they found funny, the causes they supported. Most of my friends find it baffling, which I don't mind in the least. I've already arranged for the whole collection to go to a local history museum after my death, so at least it won't end up in a skip.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "has to keep renewing the items in their collection to prevent it from being lost?", answer: "C",
+      explain: "Seeds lose the ability to germinate, so 'every few years each variety has to be planted, harvested and its seeds saved again'." },
+    { q: "is most interested in items that contain errors?", answer: "A",
+      explain: "'What fascinates me most are the errors', such as maps showing California as an island." },
+    { q: "agreed to a request to keep their collection within a limited area?", answer: "D",
+      explain: "His partner 'asked me to keep it to one room, and I did'." },
+    { q: "has refused offers that would have brought them financial gain?", answer: "B",
+      explain: "He has had offers 'that would have paid for a new kitchen. I've said no every time.'" },
+    { q: "has made arrangements for their collection after their death?", answer: "E",
+      explain: "'I've already arranged for the whole collection to go to a local history museum after my death.'" },
+    { q: "blames themselves for a loss?", answer: "C",
+      explain: "She lost a bean variety and says 'I should have shared it more widely, and I still kick myself about it.'" },
+    { q: "was first attracted to an item by its appearance rather than its value?", answer: "A",
+      explain: "She bought the map 'mostly because I liked the colours', before discovering its age. Hugo was drawn by how his watch worked, not how it looked." },
+    { q: "says the items they collect reveal details about everyday life in the past?", answer: "E",
+      explain: "The labels show 'the products people bought, the jokes they found funny, the causes they supported'. Nadia's maps show what people knew about the world, not their daily lives." },
+    { q: "regularly uses items in their collection to keep in touch with people?", answer: "D",
+      explain: "'I write all my letters on them.'" },
+    { q: "acknowledges that a family member may be right to think the hobby has gone too far?", answer: "B",
+      explain: "'My wife thinks the whole thing has got completely out of hand, and she may well be right.' Theo's partner is described as 'remarkably patient'." }
+  ]
+},
+/* ---------------- Set 9 ---------------- */
+{
+  type: "matching", startAt: 47, pointsEach: 1,
+  intro: "You are going to read an article in which five people describe living in a very small home. For questions 47–56, choose from the people (A–E). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Matteo: narrowboat", text: `Living on a narrowboat sounds idyllic until your first January, when you're breaking ice on the canal to get to the water point. Because I don't pay for a permanent mooring, the rules say I have to move to a new spot at least every fourteen days, so my whole life runs on a two-week cycle – doctor's appointments, deliveries, everything. It's exhausting at times. What makes it work is the other boaters. If your engine fails or you run out of fuel, someone will turn up with a spare part or a can of diesel, and you return the favour the next time. I've never known a community like it.` },
+    { label: "B", title: "Zara: tiny house", text: `I built my tiny house myself, on a trailer, over two years of weekends. I'd watched dozens of online videos and genuinely thought it would take six months. The carpentry I could manage; the wiring nearly defeated me, and in the end I had to pay an electrician to redo half of what I'd done. The bigger headache was bureaucracy. The council took over a year to decide whether a house on wheels counted as a building, and I spent much of that time convinced I'd have to sell it. Now it sits in the corner of a farmer's field, and I pay him a small rent. It's perfect.` },
+    { label: "C", title: "Ben: city studio", text: `My flat is eighteen square metres, which is roughly the size of my parents' kitchen. I could have had three times the space for the same rent an hour outside the city, but I'd rather walk to work and be five minutes from the river than have a spare bedroom I'd never use. Everything folds: the bed goes into the wall, the table comes down on a hinge. The one thing I've had to rethink is having people over. Dinner parties are out of the question, so I meet friends in cafés and parks, and the flat has become somewhere I come back to rather than somewhere I host.` },
+    { label: "D", title: "Agnes: cottage", text: `When my husband died, I was left rattling around a five-bedroom house full of forty years of belongings. Moving to a two-room cottage meant getting rid of about ninety per cent of them, and there were evenings when I sat on the floor surrounded by old letters and children's drawings and simply couldn't decide. My son and daughter were against the move at first – they felt I was selling their childhood home – and we had some difficult conversations. They've come round now. I have less to look after, less to clean and less to worry about, and I feel lighter than I have in years.` },
+    { label: "E", title: "Kwame: converted van", text: `I work as a graphic designer, and as long as I have a signal I can do my job from anywhere, which is why I converted a van three years ago. The trouble is that 'as long as I have a signal' is a big condition. I've lost whole mornings driving around looking for a connection strong enough to send files to clients, and a flat battery once cost me a deadline. Most of the time I love the freedom of waking up somewhere new each week. But I won't pretend it's never lonely. There are evenings when I'd give a lot for a neighbour to knock on the door.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "says that a regulation determines the pattern of their life?", answer: "A",
+      explain: "'The rules say I have to move to a new spot at least every fourteen days, so my whole life runs on a two-week cycle.'" },
+    { q: "underestimated how long a project would take?", answer: "B",
+      explain: "She 'genuinely thought it would take six months'; it took two years." },
+    { q: "found it hard to decide what to keep?", answer: "D",
+      explain: "Surrounded by old letters and drawings, she 'simply couldn't decide'." },
+    { q: "has changed the way they socialise?", answer: "C",
+      explain: "'Dinner parties are out of the question, so I meet friends in cafés and parks.'" },
+    { q: "relies on people in the same situation for practical help?", answer: "A",
+      explain: "Other boaters turn up 'with a spare part or a can of diesel'." },
+    { q: "preferred a convenient location to extra space?", answer: "C",
+      explain: "He could have had 'three times the space… an hour outside the city', but would 'rather walk to work'." },
+    { q: "has had their work affected by technical problems?", answer: "E",
+      explain: "He has 'lost whole mornings' looking for a signal, and 'a flat battery once cost me a deadline'. Zara's wiring problems affected building her house, not her work." },
+    { q: "faced opposition from family members to their decision?", answer: "D",
+      explain: "'My son and daughter were against the move at first.'" },
+    { q: "was uncertain for a long time whether they would be allowed to keep their home?", answer: "B",
+      explain: "The council took over a year to decide, and she was 'convinced I'd have to sell it'. Matteo follows a rule, but it doesn't threaten his home." },
+    { q: "admits that they sometimes miss having people around?", answer: "E",
+      explain: "'I won't pretend it's never lonely… I'd give a lot for a neighbour to knock on the door.' Agnes describes her old house, not loneliness now." }
+  ]
 }
 ];
