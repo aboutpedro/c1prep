@@ -174,5 +174,71 @@ window.SETS = [
     { q: "has a different view from B about Reyes's assessment of Varga's importance?", answer: "A",
       explain: "B (like D) says he 'overstates her influence'. A thinks he 'makes a persuasive case' for her importance." }
   ]
+},
+/* ---------------- Set 9 ---------------- */
+{
+  type: "matching", startAt: 37, pointsEach: 2,
+  intro: "You are going to read four extracts in which commentators discuss attempts to bring back extinct animals such as the woolly mammoth. For questions 37–40, choose from the writers A–D. The writers may be chosen more than once.",
+  sections: [
+    { label: "A", text: `The promise of 'bringing back' the woolly mammoth makes for irresistible headlines, but we should be clear about what is actually on offer. Scientists cannot recreate an extinct animal; at best, they can edit the genes of a living relative, such as the Asian elephant, so that it resembles its lost cousin in a few chosen respects. The result would be a hairy elephant, not a mammoth. More troubling is the opportunity cost. Every pound spent on such projects is a pound not spent protecting species that are disappearing now, and whose habitats could still be saved. And even if a convincing substitute were produced, the cold grassland it once roamed has largely vanished. Releasing it would be like returning a key to a house that has been demolished.` },
+    { label: "B", text: `Critics are right that a gene-edited elephant would not be a true mammoth in every respect, but that is beside the point. What matters is whether it could perform the same role in the ecosystem, and there are good reasons to think it might: by trampling snow and knocking down trees, large grazers once kept the Arctic grassland open, which may help to stop the frozen ground beneath it from thawing. Nor is it fair to accuse such projects of stealing money from conservation. Most of the funding comes from private investors who would never have given it to a wildlife charity in the first place. As for the animals' welfare, captive elephants can be kept healthy and well cared for, and there is no reason to expect anything different here.` },
+    { label: "C", text: `There is no doubt that the techniques being developed are scientifically impressive, but impressive is not the same as wise. What would emerge from the laboratory would be a new animal with some borrowed features, not a resurrected species. My main concern, though, is for the creatures themselves. Elephants are intensely social, and calves learn how to behave from their mothers and the rest of the herd. A lone hybrid calf, born to a surrogate of a different species, would have no one to learn from and might spend its life confused and distressed. And at a time when conservation budgets are already stretched to breaking point, I find it hard to justify pouring resources into such a speculative venture.` },
+    { label: "D", text: `Much of the criticism rests on a misunderstanding of what a species is. If an animal carries the genes responsible for the characteristics that made the mammoth distinctive – its thick coat, its tolerance of cold, its reserves of fat – then for all practical purposes it is a mammoth, whatever its ancestry. I am more cautious about how such animals would be raised. Without a herd to guide them, the first generation may well struggle, and we have a responsibility to ensure they do not suffer for our curiosity. But the potential rewards are considerable. Restoring large grazers to the tundra could help to slow the release of carbon from thawing ground, and that alone makes the research worth pursuing.` }
+  ],
+  questionsIntro: "Which writer",
+  questions: [
+    { q: "has a different view from the others about whether the animals produced would really be the extinct species?", answer: "D",
+      explain: "A ('a hairy elephant, not a mammoth'), B ('not a true mammoth in every respect') and C ('not a resurrected species') all deny it. D argues that 'for all practical purposes it is a mammoth'." },
+    { q: "shares A's opinion about whether these projects take money away from existing conservation work?", answer: "C",
+      explain: "A sees an 'opportunity cost'; C finds it hard to justify 'pouring resources' into the projects when conservation budgets are stretched. B says the money would never have gone to conservation anyway." },
+    { q: "has a similar view to B about the possible benefits for the environment?", answer: "D",
+      explain: "B thinks grazers could keep the ground from thawing; D agrees they could 'slow the release of carbon'. A thinks the animals' habitat 'has largely vanished'." },
+    { q: "expresses a different opinion from C about how well the animals would be likely to cope?", answer: "B",
+      explain: "C (like D) fears a calf with no herd 'might spend its life confused and distressed'. B sees 'no reason to expect' the animals to suffer." }
+  ]
+},
+/* ---------------- Set 10 ---------------- */
+{
+  type: "matching", startAt: 37, pointsEach: 2,
+  intro: "You are going to read four reviews of a new public library building in the town of Harwick. For questions 37–40, choose from the reviewers A–D. The reviewers may be chosen more than once.",
+  sections: [
+    { label: "A", text: `From the street, Harwick's new Central Library is a triumph: a sweep of pale stone and glass that seems to float above the square, catching the light at every hour of the day. Its architects have also taken pains to respect the old market town around it, keeping the roofline low and echoing the arches of the neighbouring corn exchange. Inside, unfortunately, the story is less happy. The open, multi-level plan may look dramatic in photographs, but finding the reference section involves three staircases and a good deal of guesswork, and several readers I spoke to had simply given up. Still, at a time when public buildings are routinely built on the cheap, it is refreshing to see a council invest properly in culture. Every penny shows.` },
+    { label: "B", text: `I have rarely seen a building so determined to be noticed. The library's jagged glass façade, which its designers compare to a stack of open books, looks to me more like a collapsed greenhouse, and it sits among the Georgian terraces of the old town like a guest who has turned up to a funeral in fancy dress. That is a pity, because the interior is genuinely good. The reading rooms are calm and full of natural light, the shelving is intuitive, and the children's library is one of the best-designed spaces of its kind in the country. Visitors may wince when they arrive, but they will be happy once they are inside.` },
+    { label: "C", text: `Nobody could deny that the new library is beautiful. The interplay of glass and stone is handled with real elegance, and on a sunny morning the façade is breathtaking. But beauty is not the only consideration. The building makes no attempt to engage with the historic streets around it; it might as well have been dropped from the sky. Inside, at least, it works well: the layout is clear, the study spaces are generous, and staff report that visitor numbers have doubled. What I cannot forgive is the cost. The project ran nearly forty per cent over budget at a time when branch libraries across the county were being closed, and that money could have kept several of them open.` },
+    { label: "D", text: `Harwick's library is the most elegant public building the town has seen in a century, and its glowing façade has already become a symbol of the place. It is a shame, then, that so little thought seems to have gone into how people would actually use it. Signs are hard to find, the lifts are tucked away behind the café, and older visitors in particular complain of getting lost. I am also uneasy about the price tag. The final bill was far higher than originally promised, and it is fair to ask whether a less ambitious design would have served the town just as well.` }
+  ],
+  questionsIntro: "Which reviewer",
+  questions: [
+    { q: "has a different opinion from the others about the appearance of the building's exterior?", answer: "B",
+      explain: "A ('a triumph'), C ('beautiful') and D ('the most elegant public building') admire it. B thinks it 'looks… like a collapsed greenhouse'." },
+    { q: "shares A's view of how easy the building is to find your way around?", answer: "D",
+      explain: "A says finding a section involves 'a good deal of guesswork'; D says visitors 'complain of getting lost'. B and C think the interior works well." },
+    { q: "agrees with C about how the building relates to the streets around it?", answer: "B",
+      explain: "C says it 'makes no attempt to engage with the historic streets'; B says it sits among them 'like a guest who has turned up to a funeral in fancy dress'. A thinks it respects the old town." },
+    { q: "has a different opinion from C about whether the building was worth what it cost?", answer: "A",
+      explain: "C (like D) questions the cost. A welcomes the investment: 'Every penny shows.'" }
+  ]
+},
+/* ---------------- Set 11 ---------------- */
+{
+  type: "matching", startAt: 37, pointsEach: 2,
+  intro: "You are going to read four extracts in which writers discuss taxes on tourists in historic cities. For questions 37–40, choose from the writers A–D. The writers may be chosen more than once.",
+  sections: [
+    { label: "A", text: `Tourist taxes are often presented as a way of reducing overcrowding, but a few euros a night is hardly going to change anyone's travel plans. Their real justification lies elsewhere. Visitors use roads, water, rubbish collection and public spaces, and it is only fair that they should contribute something towards the cost. The question is what happens to the money. Too often it disappears into general budgets or is spent on marketing campaigns that attract even more visitors. It should go directly to the people who live with the consequences of tourism, through affordable housing and better local services. Some campaigners would prefer strict limits on visitor numbers instead, but I struggle to see how these could be enforced in a city with dozens of entry points.` },
+    { label: "B", text: `I have yet to see any evidence that tourist taxes keep people away; cities that have introduced them seem to be as crowded as ever. What they do achieve is to make travel a little less affordable for students and families on tight budgets, while barely registering with wealthier visitors. That strikes me as the wrong way round. If a tax is to be collected at all, the least we can expect is that the proceeds are used to make life better for residents, who are being priced out of their own neighbourhoods. Better still would be a limit on the number of visitors allowed in at peak times, which would tackle the problem directly rather than simply raising money from it.` },
+    { label: "C", text: `Critics who dismiss tourist taxes as ineffective are looking at the wrong figures. The overall number of visitors may not fall, but in cities where the charge is high enough, day trippers and short-stay visitors have started to stay away, and they are the ones who cause the most congestion for the least benefit. Nor is it unreasonable to ask visitors to pay a modest charge; nobody objects to paying to enter a museum. The priority now should be to spend the revenue on what attracts people in the first place. Many historic centres are crumbling, and without serious investment in restoration, there will soon be little left worth visiting.` },
+    { label: "D", text: `Taxing visitors may sound sensible, but it rarely achieves what its supporters claim. The charges are too low to discourage anyone, and they fall hardest on those who can least afford them: a backpacker sharing a hostel dormitory can end up paying the same flat rate as a guest in a luxury hotel. If cities are serious about protecting their historic centres, they should do what some islands and national parks already do, and limit the number of people allowed in each day, using a booking system if necessary. That would be fairer to everyone, and far more effective.` }
+  ],
+  questionsIntro: "Which writer",
+  questions: [
+    { q: "has a different view from the others about whether tourist taxes reduce the number of visitors?", answer: "C",
+      explain: "A ('hardly going to change anyone's travel plans'), B ('as crowded as ever') and D ('too low to discourage anyone') say they don't. C says day trippers 'have started to stay away'." },
+    { q: "shares B's opinion about whether tourist taxes are fair to visitors?", answer: "D",
+      explain: "B says they hit 'students and families on tight budgets'; D says they 'fall hardest on those who can least afford them'. A and C think it is fair for visitors to pay." },
+    { q: "agrees with A about how the money raised should be spent?", answer: "B",
+      explain: "A wants it to go to residents through housing and services; B wants it 'used to make life better for residents'. C would spend it on restoring historic buildings." },
+    { q: "has a different opinion from D about limiting the number of visitors?", answer: "A",
+      explain: "D (like B) thinks limits would be 'far more effective'. A doubts 'how these could be enforced'." }
+  ]
 }
 ];
