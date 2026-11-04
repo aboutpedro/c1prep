@@ -107,5 +107,110 @@ Finally, remember that an interview is a [24], not a test. Ask questions of your
     23: { stem: "LIKE", answers: ["unlikely"], explain: "An adjective after 'it is'. If you are late, you probably won't get the job, so the negative form is needed." },
     24: { stem: "CONVERSE", answers: ["conversation"], explain: "A noun after 'a', contrasted with 'a test'." }
   }
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "word-form",
+  textTitle: "Say cheese",
+  text: `Selfies have become [0] popular, especially among young people. For many, sharing pictures of themselves online is simply a [17] part of everyday life.
+
+Some experts, however, are [18] about the effect this may have on our [19]. Many people take dozens of photos before finding one they are happy with, and some use apps to change their [20]. Psychologists warn that constantly comparing ourselves with these edited images can lead to [21] with the way we really look.
+
+Selfies can also be [22]. Every year there are reports of people who have been injured while trying to get a [23] shot on the edge of a cliff or in the middle of a busy road. As a result, some popular tourist [24] have introduced 'no selfie' zones.`,
+  gaps: {
+    0: { stem: "EXTREME", answers: ["extremely"] },
+    17: { stem: "NATURE", answers: ["natural"], explain: "An adjective before 'part': nature → natural." },
+    18: { stem: "CONCERN", answers: ["concerned"], explain: "An -ed adjective after 'are': be concerned about something = be worried about it." },
+    19: { stem: "CONFIDENT", answers: ["confidence", "self-confidence"], explain: "A noun after 'our': confident → confidence." },
+    20: { stem: "APPEAR", answers: ["appearance"], explain: "A noun after 'their': appearance = the way someone looks." },
+    21: { stem: "SATISFY", answers: ["dissatisfaction"], explain: "A noun after 'lead to'. The meaning is negative (unhappy with how we look), so it needs the prefix dis-: dis- + satisfaction." },
+    22: { stem: "DANGER", answers: ["dangerous"], explain: "An adjective after 'can be'." },
+    23: { stem: "DRAMA", answers: ["dramatic"], explain: "An adjective before 'shot': dramatic = exciting and impressive." },
+    24: { stem: "ATTRACT", answers: ["attractions"], explain: "A plural noun is needed because the verb is 'have introduced': tourist attractions = places that tourists visit." }
+  }
+},
+/* ---------------- Set 7 ---------------- */
+{
+  type: "word-form",
+  textTitle: "Standing firm",
+  text: `Earthquakes are among the most [0] natural events on Earth. However, it is rarely the shaking itself that kills people, but the [17] of buildings that are not strong enough to [18] it.
+
+In countries such as Japan, where earthquakes happen [19], engineers have come up with some highly [20] solutions. Some buildings sit on thick rubber pads that act as shock [21], allowing the ground to move while the building above stays almost still. Others have a huge weight near the top that swings in the [22] direction to the movement, helping to [23] the whole structure.
+
+Such technology is expensive, however, and it is still not [24] available in many of the poorer regions where earthquakes are common.`,
+  gaps: {
+    0: { stem: "DESTROY", answers: ["destructive"] },
+    17: { stem: "FAIL", answers: ["failure"], explain: "A noun after 'the': fail → failure (here, buildings falling down)." },
+    18: { stem: "STAND", answers: ["withstand"], explain: "A verb after 'strong enough to': withstand = not be damaged by something." },
+    19: { stem: "REGULAR", answers: ["regularly"], explain: "An adverb describing how often earthquakes happen." },
+    20: { stem: "INVENT", answers: ["inventive"], explain: "An adjective after 'highly', before 'solutions': inventive = new and clever." },
+    21: { stem: "ABSORB", answers: ["absorbers"], explain: "A plural noun: 'shock absorbers' are devices that reduce the effect of sudden movement." },
+    22: { stem: "OPPOSE", answers: ["opposite"], explain: "An adjective before 'direction': the opposite direction." },
+    23: { stem: "STABLE", answers: ["stabilise", "stabilize"], explain: "A verb after 'help to': stabilise = make steady. Both spellings are correct." },
+    24: { stem: "WIDE", answers: ["widely"], explain: "An adverb modifying 'available': widely available = easy to find in many places." }
+  }
+},
+/* ---------------- Set 8 ---------------- */
+{
+  type: "word-form",
+  textTitle: "Living with a volcano",
+  text: `Around the world, millions of people live within sight of an active volcano. To an outsider, this may seem [0], but there are good reasons for it. Volcanic soil is [17] fertile, which makes it ideal for [18]. Volcanoes also attract [19], providing jobs for local people.
+
+Of course, the risks are real. [20] can destroy homes and farmland in a matter of hours. [21], scientists are now much better at predicting when a volcano is about to become active. By measuring small earthquakes and changes in the gases that come out of the ground, they can often give people a [22] several days in advance.
+
+However, persuading people to leave their homes is not always easy. Many are [23] to abandon their land and animals, and some simply underestimate the [24] of the danger.`,
+  gaps: {
+    0: { stem: "SURPRISE", answers: ["surprising"] },
+    17: { stem: "EXCEPTION", answers: ["exceptionally"], explain: "An adverb modifying the adjective 'fertile': exceptionally = unusually, extremely." },
+    18: { stem: "FARM", answers: ["farming", "farmers"], explain: "A noun after 'ideal for': farming (the activity) or farmers (the people) both fit." },
+    19: { stem: "TOUR", answers: ["tourists", "tourism"], explain: "A noun as the object of 'attract': tourists (people) or tourism (the industry)." },
+    20: { stem: "ERUPT", answers: ["Eruptions"], explain: "A plural noun is needed as the subject: there is no article, so the singular 'eruption' isn't possible." },
+    21: { stem: "LUCK", answers: ["Luckily"], explain: "A sentence adverb: luckily = fortunately." },
+    22: { stem: "WARN", answers: ["warning"], explain: "A noun after 'a': a warning." },
+    23: { stem: "WILL", answers: ["unwilling"], explain: "An adjective after 'are'. They don't want to leave, so it needs the negative prefix: un- + willing." },
+    24: { stem: "SEVERE", answers: ["severity"], explain: "A noun after 'the': severe → severity = how serious something is." }
+  }
+},
+/* ---------------- Set 9 ---------------- */
+{
+  type: "word-form",
+  textTitle: "A home that thinks",
+  text: `Not long ago, a house that could switch on its own lights or adjust the heating [0] would have seemed like science fiction. Today, smart speakers, lights and heating controls are [17] available, and they can be operated with a few words or a tap on a phone.
+
+Supporters say smart homes make life more [18] and help to reduce energy [19]. A smart thermostat, for example, can learn when you are usually out and turn the heating down in your [20]. For elderly people, or for those with [21], such technology can make a real difference to their [22].
+
+However, not everyone is convinced. Some people worry about their [23], since many devices are listening all the time. Others point out that the more technology a home contains, the more things there are that can go wrong. A [24] device, they say, can turn a smart home into a very frustrating one.`,
+  gaps: {
+    0: { stem: "AUTOMATIC", answers: ["automatically"] },
+    17: { stem: "READY", answers: ["readily"], explain: "An adverb modifying 'available': readily available = easy to get." },
+    18: { stem: "COMFORT", answers: ["comfortable"], explain: "An adjective after 'make life more'." },
+    19: { stem: "CONSUME", answers: ["consumption"], explain: "A noun: 'energy consumption' = the amount of energy used." },
+    20: { stem: "ABSENT", answers: ["absence"], explain: "A noun after 'your': in your absence = while you are not there." },
+    21: { stem: "ABLE", answers: ["disabilities", "disability"], explain: "A noun after 'those with': people with disabilities. The prefix dis- gives the right meaning." },
+    22: { stem: "DEPEND", answers: ["independence"], explain: "A noun after 'their'. The technology helps people live without help, so the prefix in- is needed: independence." },
+    23: { stem: "PRIVATE", answers: ["privacy"], explain: "A noun after 'their': privacy = being free from people watching or listening." },
+    24: { stem: "FAULT", answers: ["faulty"], explain: "An adjective before 'device': faulty = not working properly." }
+  }
+},
+/* ---------------- Set 10 ---------------- */
+{
+  type: "word-form",
+  textTitle: "Click and buy",
+  text: `Online shopping has grown [0] over the last twenty years. With a few clicks, we can buy almost anything and have it [17] to our door, often the next day.
+
+For many customers, the main attraction is its [18]. Shoppers can compare prices [19] and read reviews written by other [20] before deciding what to buy.
+
+However, there are also [21]. Many small shops have struggled to compete, and some town centres now have a large number of [22] shops. The huge amount of [23] used to send goods is also bad for the environment. Finally, it is all too easy to spend more than you intended: online shops are extremely [24] at persuading us to buy things we do not really need.`,
+  gaps: {
+    0: { stem: "ENORMOUS", answers: ["enormously"] },
+    17: { stem: "DELIVER", answers: ["delivered"], explain: "A past participle after 'have it': have something delivered = arrange for someone to bring it." },
+    18: { stem: "SIMPLE", answers: ["simplicity"], explain: "A noun after 'its': simple → simplicity." },
+    19: { stem: "INSTANT", answers: ["instantly"], explain: "An adverb describing how quickly they compare prices." },
+    20: { stem: "BUY", answers: ["buyers"], explain: "A plural noun for people after 'other'." },
+    21: { stem: "DRAW", answers: ["drawbacks"], explain: "A plural noun after 'there are': drawbacks = disadvantages." },
+    22: { stem: "OCCUPY", answers: ["unoccupied"], explain: "An adjective before 'shops'. The shops have closed, so it needs the negative prefix: un- + occupied = empty." },
+    23: { stem: "PACK", answers: ["packaging"], explain: "An uncountable noun after 'amount of': packaging = the boxes and materials used to wrap goods." },
+    24: { stem: "SKILL", answers: ["skilful", "skillful", "skilled"], explain: "An adjective after 'extremely': skilful (US skillful) or skilled at doing something." }
+  }
 }
 ];

@@ -119,5 +119,126 @@ window.SETS = [
     { q: "has taught the skill to a member of their family?", answer: "A", explain: "'I've also taught my teenage daughter, who's now better at it than I am.'" },
     { q: "paid for a course because it offered feedback from experts?", answer: "C", explain: "'It wasn't cheap… but it included regular feedback from real tutors, and I decided that was worth paying for.'" }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "matching", startAt: 43, pointsEach: 1,
+  intro: "You are going to read an article in which four people describe how they changed the way they eat. For questions 43–52, choose from the people (A–D). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Emma", text: `I stopped eating meat three years ago, after watching a documentary about how animals are farmed. I'd never thought much about where my food came from, and I couldn't get the images out of my head. My family thought it was just a phase. My dad kept putting sausages on my plate 'just in case', and my brother bet me ten pounds that I wouldn't last a month. Well, I won the bet. The hardest part has been eating out, especially in small towns where the only vegetarian option is a sad salad. And I won't pretend I don't think about bacon sandwiches sometimes. The smell of one cooking is still torture!` },
+    { label: "B", title: "Kwabena", text: `When I started university, I lived on takeaways and instant noodles. I didn't know how to cook anything, and I didn't think I had time to learn. Then I looked at my bank statement at the end of the first term and nearly fainted: I'd spent more on food deliveries than on rent! So I asked my mum for some simple recipes and started cooking large amounts on Sundays. Now I spend about a third of what I used to. The best thing, though, is that my flatmates have joined in. We take turns to choose a dish, cook it together and eat around the table, which is a lot more fun than eating noodles alone in my room.` },
+    { label: "C", title: "Julia", text: `I'd never thought of myself as someone who ate a lot of sugar, but when my doctor looked at my blood test results, she told me I needed to cut down, and fast. I was shocked when I started reading labels: there was sugar in almost everything, even bread and soup. The first two weeks were awful. I had headaches, I felt tired all the time and, according to my husband, I was quite bad-tempered. But it passed. What amazes me now is how much better things taste. A strawberry tastes incredibly sweet to me these days, and I can taste spices in food that I never noticed before.` },
+    { label: "D", title: "Arjun", text: `Four years ago I got an allotment, a small piece of land where I can grow my own vegetables, and it's completely changed the way I eat. I used to buy the same things all year round without thinking about where they came from. Now I eat whatever's ready: lots of salad in summer, and soups and stews made from root vegetables in winter. Some years there's far too much of one thing. Last August I had more courgettes than I knew what to do with, so I left bags of them on my neighbours' doorsteps. I think a few of them were quite relieved when the season ended!` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "made the change after seeing a film?", answer: "A", explain: "'I stopped eating meat three years ago, after watching a documentary about how animals are farmed.'" },
+    { q: "changed their diet on the advice of an expert?", answer: "C", explain: "'My doctor looked at my blood test results… she told me I needed to cut down.'" },
+    { q: "now eats different food at different times of year?", answer: "D", explain: "'Now I eat whatever's ready: lots of salad in summer, and soups and stews… in winter.'" },
+    { q: "has saved a lot of money?", answer: "B", explain: "'Now I spend about a third of what I used to.'" },
+    { q: "still misses a particular food?", answer: "A", explain: "'I think about bacon sandwiches sometimes. The smell of one cooking is still torture!'" },
+    { q: "felt physically unwell at the start?", answer: "C", explain: "'The first two weeks were awful. I had headaches, I felt tired all the time.'" },
+    { q: "enjoys preparing meals with other people?", answer: "B", explain: "'We take turns to choose a dish, cook it together and eat around the table.'" },
+    { q: "can now taste things they did not notice before?", answer: "C", explain: "'I can taste spices in food that I never noticed before.'" },
+    { q: "gives away some of the food they produce?", answer: "D", explain: "'I left bags of them [courgettes] on my neighbours' doorsteps.'" },
+    { q: "was not taken seriously by family members at first?", answer: "A", explain: "'My family thought it was just a phase… my brother bet me ten pounds that I wouldn't last a month.'" }
+  ]
+},
+/* ---------------- Set 7 ---------------- */
+{
+  type: "matching", startAt: 43, pointsEach: 1,
+  intro: "You are going to read an article in which four people describe an unusual hobby. For questions 43–52, choose from the people (A–D). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Freya: geocaching", text: `Geocaching is basically a treasure hunt using GPS. People hide small boxes, called caches, all over the world and post their location online, and you use your phone to find them. Inside, there's usually a notebook to sign and a few small objects to swap. I started doing it with my two kids when they were small, as a way of getting them out of the house at weekends without complaints, and they still love it. We've found caches in forests, on beaches and once, memorably, under a bench in the middle of a busy railway station in Germany when we were there on holiday. It makes ordinary walks feel like an adventure.` },
+    { label: "B", title: "Diego: ballroom dancing", text: `I'll be honest: ballroom dancing was my wife's idea, not mine. She'd always wanted to learn, and for our twentieth wedding anniversary I agreed to go to a class with her. I spent the first lesson staring at my feet and apologising. But something clicked. Within a year we'd entered our first competition, and now we compete about six times a year. We've even won a few medals, although my wife says that's mainly thanks to her. I've also lost eight kilos, and I'm fitter than I've been since I was a teenager. My friends laughed when I told them, but they stopped laughing when they saw us dance.` },
+    { label: "C", title: "Yusuf: model railways", text: `My hobby is building model railways. At the moment I'm working on a model of a small mountain town in Switzerland, complete with trains, a station, a river and about three hundred tiny people. I started it six years ago and it's still nowhere near finished. Most of the techniques I use came from an online forum, where people from all over the world share photos and give advice. I've never met any of them, but they've been incredibly generous with their time. I don't tell people at work about it, though. I'm an engineer, and I'm afraid they'd think it was a bit childish.` },
+    { label: "D", title: "Clara: bell-ringing", text: `Bell-ringing is a very old English tradition. A team of ringers each pull a rope attached to a huge bell in a church tower, and together they ring the bells in complicated patterns. I joined my local group two years ago after hearing them practise one evening. I hadn't realised how physical it would be: some of the bells weigh more than a tonne, and after my first practice my arms ached for days. But what I love is the teamwork. If one person makes a mistake, it affects everyone, so you have to concentrate completely and trust the people around you. We go to the pub afterwards, too, which helps.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "took up the hobby to please someone else?", answer: "B", explain: "'Ballroom dancing was my wife's idea, not mine… I agreed to go to a class with her.'" },
+    { q: "has been working on the same project for years?", answer: "C", explain: "'I started it six years ago and it's still nowhere near finished.'" },
+    { q: "has shared the hobby with their children?", answer: "A", explain: "'I started doing it with my two kids when they were small… and they still love it.'" },
+    { q: "found the hobby more physically demanding than expected?", answer: "D", explain: "'I hadn't realised how physical it would be… my arms ached for days.'" },
+    { q: "now takes part in competitions?", answer: "B", explain: "'Now we compete about six times a year.'" },
+    { q: "gets help from people they have never met?", answer: "C", explain: "'People from all over the world share photos and give advice. I've never met any of them.'" },
+    { q: "has done the hobby in another country?", answer: "A", explain: "'Under a bench… in a busy railway station in Germany when we were there on holiday.'" },
+    { q: "says that one person's mistake can affect the whole group?", answer: "D", explain: "'If one person makes a mistake, it affects everyone.'" },
+    { q: "does not tell their colleagues about the hobby?", answer: "C", explain: "'I don't tell people at work about it… I'm afraid they'd think it was a bit childish.'" },
+    { q: "has become much fitter thanks to the hobby?", answer: "B", explain: "'I've also lost eight kilos, and I'm fitter than I've been since I was a teenager.'" }
+  ]
+},
+/* ---------------- Set 8 ---------------- */
+{
+  type: "matching", startAt: 43, pointsEach: 1,
+  intro: "You are going to read an article in which five people describe a teacher who changed their life. For questions 43–52, choose from the people (A–E). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Hugo", text: `I was terrible at maths, and by the age of thirteen I'd decided that I was just stupid. Then Mr Barker arrived. To be honest, I didn't like him at first: he was strict, he never smiled and he made us write down every step of our working. But one day he kept me behind after class and said, 'You're not bad at maths. You've just never been taught properly.' Nobody had ever said anything like that to me before, and I'd certainly never thought it myself. I still remember exactly where I was standing when he said it.` },
+    { label: "B", title: "Anika", text: `I was painfully shy at school and would do anything to avoid speaking in front of the class. So when Ms Okafor, our drama teacher, told me I was going to play the main part in the school play, I actually cried. I begged her to give it to someone else, but she refused. She just said, 'You'll be fine,' and walked off. I was terrified on the first night, but I got through it, and something changed. I'm a lawyer now, and every time I stand up to speak in court, I use the breathing exercises she taught us before that play.` },
+    { label: "C", title: "Callum", text: `For years, my teachers wrote 'lazy' and 'doesn't concentrate' on my school reports. I spent most lessons copying from the person next to me, because I couldn't see what was written on the board. Nobody realised, not even me: I thought everyone saw it that way. It was Mrs Patel, my new science teacher, who noticed me screwing up my eyes and sent a note home suggesting an eye test. Two weeks later I had glasses, and I couldn't believe how clear everything was. By the end of that year, my marks had gone up in almost every subject.` },
+    { label: "D", title: "Bea", text: `Mr Lewis taught history as if he'd been there. He'd come into the classroom dressed as a Roman soldier, or play us songs that people sang during the war, and suddenly people from hundreds of years ago weren't just names in a textbook. I'll never forget the day he took us to a castle and made us imagine what it would be like to defend it. I work in a museum now, looking after a collection of medieval objects, and I often think I'd be doing something completely different if I hadn't been in his class.` },
+    { label: "E", title: "Tariq", text: `There weren't many books in our house, and I didn't read much as a child. Miss Grant, my English teacher, must have noticed, because one day she handed me a novel from her own shelf and said, 'Tell me what you think.' When I gave it back, she gave me another one, and that went on for two years. I'm a doctor now, so I didn't follow her into teaching or writing, but I still read every evening. We still send each other a card every Christmas, and I always tell her what I've been reading.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "had a problem that their other teachers had not noticed?", answer: "C", explain: "Teachers called him 'lazy', but 'Nobody realised' he couldn't see the board until Mrs Patel noticed." },
+    { q: "is still in touch with the teacher?", answer: "E", explain: "'We still send each other a card every Christmas.'" },
+    { q: "did not like the teacher at first?", answer: "A", explain: "'To be honest, I didn't like him at first: he was strict, he never smiled…'" },
+    { q: "has a job connected with the subject the teacher taught?", answer: "D", explain: "A history teacher's student who now works 'in a museum… looking after a collection of medieval objects'." },
+    { q: "was made to do something they did not want to do?", answer: "B", explain: "'I begged her to give it to someone else, but she refused.'" },
+    { q: "was lent things by the teacher?", answer: "E", explain: "'She handed me a novel from her own shelf… When I gave it back, she gave me another one.'" },
+    { q: "did much better at school after the teacher's help?", answer: "C", explain: "'By the end of that year, my marks had gone up in almost every subject.'" },
+    { q: "was told something about themselves that they had never believed?", answer: "A", explain: "'You're not bad at maths… I'd certainly never thought it myself.'" },
+    { q: "still uses a technique the teacher taught them?", answer: "B", explain: "'Every time I stand up to speak in court, I use the breathing exercises she taught us.'" },
+    { q: "says the teacher made the past feel real?", answer: "D", explain: "'Suddenly people from hundreds of years ago weren't just names in a textbook.'" }
+  ]
+},
+/* ---------------- Set 9 ---------------- */
+{
+  type: "matching", startAt: 43, pointsEach: 1,
+  intro: "You are going to read an article in which four people talk about learning to drive. For questions 43–52, choose from the people (A–D). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Zoe", text: `I failed my driving test three times, which my friends still find hilarious. The problem wasn't my driving. I was fine in lessons, but as soon as the examiner got into the car, my hands started shaking and I forgot everything. Before my fourth test, my instructor suggested I describe out loud everything I was doing, as if I were a sports commentator: 'Checking my mirror, slowing down for the bend.' The examiner must have thought I was mad, but it kept me calm, and I passed. Now I love driving. Last summer, a friend and I drove all the way to the south of France.` },
+    { label: "B", title: "Patrick", text: `I lived in London for twenty-five years and never needed a car. The trains and buses took me everywhere. Then my company moved me to an office in the Scottish Highlands, where the nearest bus stop was a forty-minute walk away, so at forty-four I had no choice but to learn. The worst part was sitting in the test centre waiting room surrounded by seventeen-year-olds who clearly thought I was someone's dad. I was determined not to have to go back there, so I practised every evening for months, and fortunately I passed first time.` },
+    { label: "C", title: "Lin", text: `I'd been driving in Taiwan for ten years before I moved to the UK, so I thought getting a British licence would be easy. In fact, I had to take the test again, and I needed lessons to get used to driving on the left. My hands knew what to do, but my brain kept telling me to go to the wrong side of the road. Roundabouts were the worst. We don't have many at home, and I couldn't understand who was supposed to go first. My instructor drew diagrams for me on the back of an envelope until it finally made sense.` },
+    { label: "D", title: "Gemma", text: `My dad offered to teach me, to save money. It was a disaster. He'd take me to the supermarket car park on Sunday mornings and shout instructions at me, and I'd shout back, and we'd drive home in silence. After three weeks, my mum said she couldn't stand it any longer and paid for proper lessons with an instructor. Things improved immediately. I passed in the end, but I'm still not a confident driver. I'll do almost anything to avoid motorways, even if it means the journey takes twice as long.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "failed the test several times?", answer: "A", explain: "'I failed my driving test three times.'" },
+    { q: "was first taught by a parent?", answer: "D", explain: "'My dad offered to teach me, to save money.'" },
+    { q: "had never needed to drive before?", answer: "B", explain: "'I lived in London for twenty-five years and never needed a car.'" },
+    { q: "already had experience of driving?", answer: "C", explain: "'I'd been driving in Taiwan for ten years before I moved to the UK.'" },
+    { q: "found one kind of junction particularly confusing?", answer: "C", explain: "'Roundabouts were the worst… I couldn't understand who was supposed to go first.'" },
+    { q: "felt out of place among the other learners?", answer: "B", explain: "'Surrounded by seventeen-year-olds who clearly thought I was someone's dad.'" },
+    { q: "still avoids certain kinds of road?", answer: "D", explain: "'I'll do almost anything to avoid motorways.'" },
+    { q: "found a way to control their nerves?", answer: "A", explain: "Describing everything out loud 'kept me calm, and I passed'." },
+    { q: "passed the test at the first attempt?", answer: "B", explain: "'Fortunately I passed first time.'" },
+    { q: "says the lessons caused arguments with the person teaching them?", answer: "D", explain: "'He'd… shout instructions at me, and I'd shout back, and we'd drive home in silence.'" }
+  ]
+},
+/* ---------------- Set 10 ---------------- */
+{
+  type: "matching", startAt: 43, pointsEach: 1,
+  intro: "You are going to read an article in which four people describe their experiences of music festivals. For questions 43–52, choose from the people (A–D). The people may be chosen more than once.",
+  sections: [
+    { label: "A", title: "Oscar", text: `My first festival was when I was sixteen. Four of us went, with one tent between us, which we'd never actually put up before. It rained for the whole weekend, and on the second night the tent flooded and we had to sleep in my friend's car. I also lost my phone somewhere in the mud on the first day, so I have no photos at all. And yet it's still one of the best weekends of my life. Somehow, being cold and wet together made it even more fun. Watching my favourite band from the front, soaked to the skin, I didn't care about anything else.` },
+    { label: "B", title: "Ruby", text: `Festival tickets are so expensive that I'd never have been able to afford them, so for the last three summers I've volunteered as a steward. You work three eight-hour shifts over the weekend, checking tickets, giving directions and keeping an eye on the crowds, and in return you get in for free. The shifts can be long and tiring, especially the night ones, but you still have plenty of time to see bands. And the people are great. I've met some of my closest friends through volunteering, people I'd never have met otherwise. We plan our summers around it now.` },
+    { label: "C", title: "Kenta", text: `I went to one of the really big festivals a few years ago, and to be honest I didn't enjoy it much. There were over a hundred thousand people, and unless you got there hours early, you couldn't see the stage at all. I watched most of the bands on giant screens, which I could have done at home. These days I go to small folk and jazz festivals instead, with maybe two thousand people. My parents come with me now, which I never imagined happening. Dad and I sit on our camping chairs, listening to the music, while Mum goes off to dance.` },
+    { label: "D", title: "Isla", text: `Last summer my band played at a festival for the first time. We were on a tiny stage at two o'clock on a Friday afternoon, which is probably the worst time there is. When we walked on, there were about fifteen people in front of us, and three of them were our parents. I was so nervous that I forgot the words to our first song. But people gradually wandered over, and by the end there were a few hundred, singing along to the chorus of our last song. I still don't really know where they all came from.` }
+  ],
+  questionsIntro: "Which person",
+  questions: [
+    { q: "got into festivals without paying?", answer: "B", explain: "'In return you get in for free.'" },
+    { q: "had problems because of the weather?", answer: "A", explain: "'It rained for the whole weekend, and on the second night the tent flooded.'" },
+    { q: "prefers smaller events?", answer: "C", explain: "'These days I go to small folk and jazz festivals instead, with maybe two thousand people.'" },
+    { q: "performed at a festival?", answer: "D", explain: "'Last summer my band played at a festival for the first time.'" },
+    { q: "has made close friends through festivals?", answer: "B", explain: "'I've met some of my closest friends through volunteering.'" },
+    { q: "was unable to see the performers properly?", answer: "C", explain: "'Unless you got there hours early, you couldn't see the stage at all.'" },
+    { q: "lost something at a festival?", answer: "A", explain: "'I also lost my phone somewhere in the mud on the first day.'" },
+    { q: "now goes to festivals with their parents?", answer: "C", explain: "'My parents come with me now, which I never imagined happening.'" },
+    { q: "watched the audience grow?", answer: "D", explain: "'About fifteen people… by the end there were a few hundred.'" },
+    { q: "has to work long hours at festivals?", answer: "B", explain: "'You work three eight-hour shifts over the weekend… The shifts can be long and tiring.'" }
+  ]
 }
 ];

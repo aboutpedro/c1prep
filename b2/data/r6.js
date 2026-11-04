@@ -191,5 +191,190 @@ Leaving was harder than I had expected. On my last evening, Ana cooked a huge me
     42: "'It' in 'I have not opened it yet' is the jar of honey, given to him as he left."
   },
   extra: { label: "B", explain: "It contradicts the article: 'The afternoons were free', and the volunteers cooked dinner by taking turns. It doesn't link to any gap." }
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "gapped", unit: "sentence", pointsEach: 2,
+  intro: "You are going to read an article about a night market.",
+  textTitle: "After dark",
+  textSub: "Every Friday, a city-centre car park becomes one of the busiest places in town",
+  text: `Every Friday at six o'clock, an ordinary car park in the centre of the city is transformed. The cars disappear, and in their place come rows of brightly lit stalls selling food from every corner of the world. [[37]] The night market, which started five years ago with just eight stalls, now attracts around five thousand visitors a week.
+
+Amira Haddad has run a stall here since the very first night. She sells flatbreads cooked on a round metal plate, using a recipe she learnt from her grandmother in Lebanon. 'At first, hardly anyone knew what they were,' she says. [[38]] On a busy night she makes more than four hundred.
+
+The work is exhausting. Amira starts preparing her dough at two in the afternoon and rarely gets home before one in the morning. [[39]] 'People see the lights and hear the music and think it's a party,' she laughs. 'For us, it's a very long shift.'
+
+So why does she do it? For Amira, the answer is simple: the market gave her a start that she could never have found anywhere else. Renting a restaurant in the city centre would cost a fortune. [[40]] Several former stallholders have gone on to open restaurants of their own.
+
+The market has also changed the area around it. Five years ago, the streets nearby were almost empty after the offices closed. Now, new bars and cafés have opened, and the streets are busy late into the evening. [[41]] Some residents complain about the noise and the litter, and the council has had to introduce a strict closing time of eleven o'clock.
+
+As the evening comes to an end, Amira starts packing up. She is tired, but she looks pleased. [[42]] 'Maybe next year I'll need a bigger stall,' she says.`,
+  paragraphs: {
+    A: "Not everyone is happy about this, however.",
+    B: "In winter, standing outside for hours in the cold and rain can be miserable.",
+    C: "Most of the stalls are run by large restaurant chains.",
+    D: "She has sold out of flatbreads for the third week in a row.",
+    E: "By seven, the air is full of smoke and music, and the queues are already long.",
+    F: "Here, a stall costs a small fee for the evening, so people can try out an idea without risking all their savings.",
+    G: "'Now I have customers who come every single week and order exactly the same thing.'"
+  },
+  answers: { 37: "E", 38: "G", 39: "B", 40: "F", 41: "A", 42: "D" },
+  explain: {
+    37: "'By seven' continues the time sequence that starts 'at six o'clock', and the long queues show how popular the market is before the visitor numbers are given.",
+    38: "'Now' contrasts with 'At first, hardly anyone knew what they were', and the quote continues Amira's words.",
+    39: "The cold and rain are another reason why the work is 'exhausting', and they explain why it doesn't feel like 'a party' to the stallholders.",
+    40: "'Here' contrasts the cheap stall with the expensive restaurant just mentioned, and trying out an idea explains how former stallholders went on to open restaurants.",
+    41: "'This' is the change to the area (busy streets at night). 'Not everyone is happy' leads to the residents' complaints.",
+    42: "Selling out explains why she 'looks pleased' and why she might need 'a bigger stall'."
+  },
+  extra: { label: "C", explain: "It contradicts the article: the market gives individuals like Amira a cheap start, and stallholders later open their own restaurants." }
+},
+/* ---------------- Set 7 ---------------- */
+{
+  type: "gapped", unit: "sentence", pointsEach: 2,
+  intro: "You are going to read an article about a woman who climbed Mount Kilimanjaro.",
+  textTitle: "The roof of Africa",
+  textSub: "Becky Lord had never climbed a mountain before. Then a friend made a suggestion.",
+  text: `I am not, by nature, an adventurous person. My idea of a good holiday is a sunbed and a pile of books. So when my best friend suggested that we celebrate turning thirty by climbing Kilimanjaro, I laughed. [[37]] Six months later, we were standing at the bottom of Africa's highest mountain, wondering what we had done.
+
+Kilimanjaro is nearly 5,900 metres high, but you don't need to be a mountaineer to climb it. There are no ropes or ice axes involved; most of the route is a long, steep walk. [[38]] As you climb higher, there is less oxygen in the air, and many people suffer from headaches, sickness and exhaustion.
+
+Our guide, Joseph, had climbed the mountain more than two hundred times, and he had one rule: 'pole pole', which means 'slowly, slowly' in Swahili. [[39]] We were overtaken by other groups, and I worried that we would never reach the top. But Joseph knew what he was doing. Climbing slowly gives the body time to adjust, and by the fifth day, several of the groups that had rushed past us had turned back.
+
+The final climb to the summit starts at midnight. We walked for seven hours in the dark, wearing every piece of clothing we had brought. [[40]] I remember very little of those hours except putting one foot in front of the other and listening to Joseph singing quietly ahead of us.
+
+We reached the top just as the sun was rising. Below us, the clouds stretched as far as I could see, and the ice on the mountain glowed pink in the early light. [[41]] We stayed for only fifteen minutes, because it is dangerous to remain at that height for long.
+
+Going down took two days, and my knees have still not forgiven me. But I came home with something more valuable than a photo at the summit sign. [[42]] Next year, I'm thinking of trying something even harder. My sunbed will have to wait.`,
+  paragraphs: {
+    A: "It was so cold that the water in our bottles froze.",
+    B: "I had discovered that I was capable of far more than I had ever imagined.",
+    C: "She wasn't joking.",
+    D: "At first, the pace seemed almost ridiculous.",
+    E: "Climbing quickly is the best way to avoid feeling ill.",
+    F: "The real challenge is the altitude.",
+    G: "My friend burst into tears, and so, to my surprise, did I."
+  },
+  answers: { 37: "C", 38: "F", 39: "D", 40: "A", 41: "G", 42: "B" },
+  explain: {
+    37: "'She wasn't joking' contrasts with 'I laughed', and leads to 'Six months later, we were standing at the bottom…'.",
+    38: "'The real challenge' contrasts with the easy parts just described (no ropes, just walking), and 'altitude' is explained by 'less oxygen in the air'.",
+    39: "The slow pace ('pole pole') seemed ridiculous, which is why she worried when other groups overtook them.",
+    40: "The freezing cold explains why they were 'wearing every piece of clothing we had brought'.",
+    41: "Crying is her reaction to the view at the top; 'so… did I' shows her own surprise.",
+    42: "This is the 'something more valuable than a photo', and it explains why she now wants to try 'something even harder'."
+  },
+  extra: { label: "E", explain: "It contradicts the article: Joseph's rule was 'slowly, slowly', because climbing slowly gives the body time to adjust." }
+},
+/* ---------------- Set 8 ---------------- */
+{
+  type: "gapped", unit: "sentence", pointsEach: 2,
+  intro: "You are going to read an article about a young man who works as a lifeguard.",
+  textTitle: "Between the flags",
+  textSub: "Liam Hughes has spent three summers keeping swimmers safe on one of the country's busiest beaches",
+  text: `Most people think lifeguards spend their summers sitting in the sun, watching the waves and occasionally blowing a whistle. When I applied for the job at nineteen, I thought the same. [[37]] Before I was allowed anywhere near the beach, I had to pass a tough fitness test, including a four-hundred-metre swim in the sea in under eight minutes.
+
+Then came weeks of training. We learnt first aid, how to use rescue boards and how to bring a person back to shore without putting ourselves in danger. [[38]] It was about watching. Our instructor taught us to scan the water constantly, from left to right and back again, and never to look at the same spot for too long.
+
+On a busy day, there might be three thousand people on our part of the beach. [[39]] A swimmer who is not moving forward, a head low in the water, someone who suddenly stops waving: these are all signs that a person may be in trouble. People who are drowning rarely shout for help, because they are using all their energy to stay above the surface.
+
+Much of the job is about preventing problems before they start. We put up red and yellow flags to show the safest area for swimming and spend a lot of time asking people to stay between them. [[40]] I have been called many things by tourists who did not want to move their towels, and I've learnt not to take it personally.
+
+My first real rescue happened in my second week. A boy of about ten had been pulled away from the shore by a strong current. [[41]] I got him onto the rescue board and paddled back, and his mother, who had been searching for him further up the beach, ran into the water to meet us.
+
+I've been a lifeguard for three summers now, and I still love it. The pay isn't great and the days are long. [[42]]`,
+  paragraphs: {
+    A: "By the time I reached him, he was too frightened to speak.",
+    B: "I soon found out how wrong I was.",
+    C: "But there are not many jobs where you can say, at the end of the day, that you have helped to keep thousands of people safe.",
+    D: "The most important lesson, though, had nothing to do with swimming.",
+    E: "Not everyone appreciates this.",
+    F: "Luckily, the sea on our beach is always calm and safe.",
+    G: "Keeping track of all of them is impossible, so you learn to look for warning signs."
+  },
+  answers: { 37: "B", 38: "D", 39: "G", 40: "E", 41: "A", 42: "C" },
+  explain: {
+    37: "'How wrong I was' refers to thinking that lifeguards just sit in the sun. The tough fitness test that follows proves it.",
+    38: "'Though' contrasts with the practical skills just listed, and 'It was about watching' explains what the lesson was.",
+    39: "'All of them' are the three thousand people, and the 'warning signs' are listed in the next sentence.",
+    40: "'This' is being asked to stay between the flags. Tourists calling him names shows that not everyone appreciates it.",
+    41: "'Him' is the boy pulled away by the current, and the next sentence describes getting him onto the board.",
+    42: "'But' contrasts with the disadvantages (low pay, long days) and explains why he still loves the job."
+  },
+  extra: { label: "F", explain: "It contradicts the article: a boy was pulled away from the shore by a strong current, and the flags show the safest area because the sea can be dangerous." }
+},
+/* ---------------- Set 9 ---------------- */
+{
+  type: "gapped", unit: "sentence", pointsEach: 2,
+  intro: "You are going to read an article about a man who repairs old toys.",
+  textTitle: "The toy hospital",
+  textSub: "For more than forty years, Walter Briggs has been bringing much-loved toys back to life",
+  text: `In a narrow street behind the cathedral, there is a small shop with a hand-painted sign that reads 'Toy Hospital'. Inside, every shelf is crowded with patients: teddy bears missing an eye, dolls with broken arms, a rabbit that has lost most of its stuffing. [[37]]
+
+The shop belongs to Walter Briggs, who has been repairing toys for more than forty years. He trained as a tailor, but when his daughter's favourite bear was damaged in the washing machine, he spent a weekend mending it. [[38]] Eventually, he gave up tailoring altogether.
+
+Most of Walter's customers are not children but adults. Many bring in toys they have owned since they were small, and which are now forty, fifty or even seventy years old. [[39]] 'People sometimes apologise for being silly,' Walter says. 'They're not being silly at all. These things matter.'
+
+Walter's golden rule is that a repaired toy should still look like itself. [[40]] If an old bear's fur has worn thin, he will patch it rather than give it a new coat, and he keeps boxes of old buttons, fabric and glass eyes so that he can find materials that match the original.
+
+Some jobs take an afternoon; others take weeks. The most difficult toy he has ever repaired was a doll that had been in a house fire. [[41]] Walter worked on it for two months. When the woman came to collect it, he says, she held it for a long time without saying anything.
+
+Walter is now seventy-four, and people often ask him when he is going to retire. [[42]] He has recently taken on a young apprentice, though, so that the toy hospital will stay open long after he has gone.`,
+  paragraphs: {
+    A: "That means he never replaces anything unless he really has to.",
+    B: "Word soon got around, and before long, neighbours were knocking on his door with toys of their own.",
+    C: "His answer is always the same: not while there are still patients waiting.",
+    D: "Walter prefers to use modern materials because they last longer.",
+    E: "Its owner, an elderly woman, had been given it by her mother when she was a little girl.",
+    F: "Each one has a paper label tied around its wrist, with its name and its owner's phone number.",
+    G: "For them, a bear is not just a toy but a link to their childhood."
+  },
+  answers: { 37: "F", 38: "B", 39: "G", 40: "A", 41: "E", 42: "C" },
+  explain: {
+    37: "'Each one' refers to the toys ('patients') on the shelves, continuing the hospital idea with labels like a patient's wristband.",
+    38: "News of the repaired bear spreading to neighbours explains why he 'eventually' gave up tailoring.",
+    39: "'Them' are the adults with very old toys, and the link to their childhood explains why 'these things matter'.",
+    40: "'That means' explains the golden rule, and patching rather than replacing is the example that follows.",
+    41: "'Its owner' introduces 'the woman' who later came to collect the doll, and explains why the doll meant so much to her.",
+    42: "His answer replies to the question about retiring, and 'though' in the next sentence contrasts with it: he has still planned for the future."
+  },
+  extra: { label: "D", explain: "It contradicts the article: Walter's golden rule is that a toy should still look like itself, so he looks for old materials that match the original." }
+},
+/* ---------------- Set 10 ---------------- */
+{
+  type: "gapped", unit: "sentence", pointsEach: 2,
+  intro: "You are going to read an article by a teacher who worked with a robot in her classroom.",
+  textTitle: "The robot in the classroom",
+  textSub: "For one term, a primary school teacher shared her classroom with a robot teaching assistant",
+  text: `When my head teacher told me that our school had been chosen to try out a robot teaching assistant, my first reaction was panic. I have taught nine-year-olds for fifteen years, and I still struggle to connect my laptop to the projector. [[37]]
+
+The robot arrived in September. It was about the size of a small child, with a round white head, two large eyes on a screen and wheels instead of legs. The children named it Pip. [[38]] Every morning there was an argument about who would get to sit next to it.
+
+Pip's main job was to help children practise reading and maths. It could listen to a child read aloud, gently correct mistakes and ask questions about the story. [[39]] One boy, who would hardly say a word in front of his classmates, happily read to Pip for twenty minutes at a time. 'It doesn't laugh at me when I get it wrong,' he told me.
+
+There were problems, of course. Pip often misunderstood children with strong accents, and it could not cope with background noise. [[40]] The children thought this was hilarious; I was less amused.
+
+By the end of the term, I had changed my mind about some things, but not others. Pip was good at the repetitive tasks that I rarely have enough time for, such as listening to every child read every day. [[41]] But it could not tell when a child was upset, or why a usually cheerful girl had suddenly gone quiet.
+
+Pip has now moved on to another school, and the children made it a card. [[42]] I just hope that people remember what it can't do as well as what it can.`,
+  paragraphs: {
+    A: "Within a week, it had become the most popular member of the class.",
+    B: "I suspect that, in a few years, every classroom will have something similar.",
+    C: "What surprised me most was how much some of the shyer children enjoyed this.",
+    D: "The idea of sharing my classroom with a machine filled me with dread.",
+    E: "Pip was able to tell immediately when a child was unhappy.",
+    F: "That gave me more time for the children who needed my help most.",
+    G: "On one occasion, it suddenly started reciting the times tables in the middle of a quiet reading lesson."
+  },
+  answers: { 37: "D", 38: "A", 39: "C", 40: "G", 41: "F", 42: "B" },
+  explain: {
+    37: "'Dread' repeats the idea of 'panic', and the machine connects to her problems with technology (her laptop and projector).",
+    38: "Pip being popular explains the daily 'argument about who would get to sit next to it'.",
+    39: "'This' is reading aloud to Pip, and the shy boy who 'would hardly say a word' is an example of the shyer children.",
+    40: "Reciting the times tables at the wrong moment is another problem, and it is what the children 'thought was hilarious'.",
+    41: "'That' refers to Pip doing the repetitive tasks, which gave her more time. 'But' in the next sentence introduces what Pip couldn't do.",
+    42: "'Something similar' means another robot, and 'it' in the next sentence refers to this kind of technology."
+  },
+  extra: { label: "E", explain: "It contradicts the article: Pip 'could not tell when a child was upset'." }
 }
 ];

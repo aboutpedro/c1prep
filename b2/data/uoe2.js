@@ -103,5 +103,114 @@ All the events are run [15] volunteers, who do everything from marking the cours
     15: { answers: ["by"], explain: "Passive: 'be run by someone' shows who does the action." },
     16: { answers: ["as"], explain: "'As much (pleasure) as' compares two equal amounts." }
   }
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "Fit for an earl",
+  text: `Few foods are [0] simple as the sandwich, yet it has a surprisingly interesting history. People had been putting meat between slices of bread for centuries, but the name only dates [9] to the eighteenth century. The story goes that John Montagu, the fourth Earl of Sandwich, was so busy playing cards [10] he refused to stop for dinner. Instead, he asked a servant to bring him some meat between two pieces of bread, so that he could eat [11] getting his cards greasy. Soon his friends were asking for 'the same as Sandwich'.
+
+[12] the story is true or not is impossible to say. The earl's family have always insisted that he was in fact working at his desk, not gambling. Either [13], the idea caught on, and today sandwiches [14] eaten in enormous numbers all over the world. In the UK alone, billions are sold [15] year. Whoever invented it, the sandwich has certainly earned [16] place in history.`,
+  gaps: {
+    0: { answers: ["as"] },
+    9: { answers: ["back"], explain: "'Date back to (a time)' = have existed since then." },
+    10: { answers: ["that"], explain: "'So + adjective + that…' introduces a result." },
+    11: { answers: ["without"], explain: "'Without + -ing' = not doing something: he could eat and his cards wouldn't get greasy." },
+    12: { answers: ["Whether"], explain: "'Whether… or not' introduces a clause that is the subject of the sentence ('If' can't begin a subject clause)." },
+    13: { answers: ["way"], explain: "'Either way' = whichever of the two possibilities is true." },
+    14: { answers: ["are"], explain: "Present simple passive: are + past participle (are eaten)." },
+    15: { answers: ["every", "each", "a", "per"], explain: "'Every/each/a/per year' says how often something happens." },
+    16: { answers: ["its", "a"], explain: "'Earn its/a place in history' = deserve to be remembered." }
+  }
+},
+/* ---------------- Set 7 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "Changing the clocks",
+  text: `Twice a year, in many parts of the world, people [0] to change their clocks. In spring, the clocks go forward [9] hour, and in autumn they go back again. The idea is to make better use [10] the daylight during the summer months.
+
+The first country to introduce the system was Germany, in 1916, [11] part of an effort to save fuel during the First World War. [12] other countries soon followed its example.
+
+These days, however, more and more people are questioning [13] changing the clocks still makes sense. Research suggests that losing an hour's sleep in spring can be bad [14] our health, and the energy savings appear to be smaller than was once believed. Some countries have already given [15] the practice altogether. Brazil, [16] example, stopped changing its clocks in 2019.`,
+  gaps: {
+    0: { answers: ["have"] },
+    9: { answers: ["an", "one"], explain: "'An/one hour' – 'hour' begins with a vowel sound, so the article is 'an'." },
+    10: { answers: ["of"], explain: "'Make (better) use of something' = use it (more effectively)." },
+    11: { answers: ["as"], explain: "'As part of something' = being one part of a bigger plan or effort." },
+    12: { answers: ["Many", "Several", "Some"], explain: "A quantifier before the plural noun 'countries'." },
+    13: { answers: ["whether", "if"], explain: "'Question whether/if…' introduces an indirect yes/no question." },
+    14: { answers: ["for"], explain: "'Be bad/good for something' = harm or help it." },
+    15: { answers: ["up"], explain: "'Give up (a practice/habit)' = stop doing it." },
+    16: { answers: ["for"], explain: "'For example' introduces an example." }
+  }
+},
+/* ---------------- Set 8 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "Touch wood",
+  text: `Do you avoid walking under ladders, or knock on wood to stop something bad [0] happening? If so, you are [9] alone. Surveys suggest that a large number of people are at [10] a little superstitious, even if they do not like to admit it.
+
+Many superstitions have their roots in practical concerns. Walking under a ladder, for instance, really is risky, as something might fall [11] you. Others are much harder to explain. Nobody really knows why the number thirteen is considered unlucky in many Western countries, [12] in parts of East Asia it is the number four.
+
+Psychologists believe that superstitions give us a sense of control in situations [13] the outcome is uncertain. This explains [14] they are especially common among sports players and students taking exams. Some tennis players, for example, always bounce the ball exactly the same number of times [15] serving.
+
+Surprisingly, superstitions may actually help. In one experiment, people who were told they had a 'lucky' golf ball performed better than those [16] were not.`,
+  gaps: {
+    0: { answers: ["from"] },
+    9: { answers: ["not"], explain: "'You are not alone' = other people do the same." },
+    10: { answers: ["least"], explain: "'At least' = not less than; here, 'to some degree'." },
+    11: { answers: ["on", "onto"], explain: "'Fall on (someone)' = drop from above onto them." },
+    12: { answers: ["while", "whereas", "whilst", "but"], explain: "A linker of contrast joining two clauses." },
+    13: { answers: ["where", "when"], explain: "A relative word after 'situations': where/when the outcome is uncertain. ('In which' would also be possible, but that is two words.)" },
+    14: { answers: ["why"], explain: "'This explains why + clause' gives the reason." },
+    15: { answers: ["before"], explain: "'Before + -ing' = earlier than doing something." },
+    16: { answers: ["who", "that"], explain: "A defining relative pronoun for people, as the subject of 'were not'." }
+  }
+},
+/* ---------------- Set 9 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "Keeping the balls in the air",
+  text: `Juggling is not just a circus skill. It is also a hobby that anyone can learn, and it may even be good [0] your brain. In one study, researchers found that people who spent three months learning to juggle showed changes in the areas of the brain [9] deal with movement and vision.
+
+Most beginners start [10] three soft balls, which do not roll away [11] you drop them. The first step is to throw one ball from hand to hand until you can do it without looking [12] your hands. Then you add a second ball, and finally a third.
+
+[13] any new skill, juggling takes patience. You will drop the balls hundreds of times, so it is a good idea to practise standing in front [14] a sofa or a bed, where they will land softly. Experts recommend short, regular practice sessions rather [15] one long one.
+
+Once you have mastered the basic pattern, there is almost no limit to [16] you can do.`,
+  gaps: {
+    0: { answers: ["for"] },
+    9: { answers: ["that", "which"], explain: "A defining relative pronoun for things, as the subject of 'deal with'." },
+    10: { answers: ["with"], explain: "'Start with something' = use it first." },
+    11: { answers: ["when", "if"], explain: "'When/if you drop them' introduces the situation." },
+    12: { answers: ["at"], explain: "'Look at something' – the preposition is needed after 'look'." },
+    13: { answers: ["Like"], explain: "'Like any new skill' = in the same way as any new skill." },
+    14: { answers: ["of"], explain: "'In front of' is a fixed preposition." },
+    15: { answers: ["than"], explain: "'Rather than' = instead of." },
+    16: { answers: ["what"], explain: "'What' = the thing(s) that: there is no limit to what you can do." }
+  }
+},
+/* ---------------- Set 10 ---------------- */
+{
+  type: "open-cloze",
+  textTitle: "The mystery of the purr",
+  text: `Anyone [0] has ever stroked a contented cat will be familiar with the sound of purring. Yet scientists are still not entirely sure how or why cats do it.
+
+What we do know is that the sound is produced [9] muscles in the cat's throat, which vibrate as the animal breathes in [10] out. Kittens start purring when they are only a few days old, probably to let [11] mother know that they are well.
+
+Most people assume that a purring cat is a happy cat, but this is not always the [12]. Cats also purr when they are frightened, ill or in pain, [13] suggests that purring may help them to calm down. Some researchers believe that the vibrations [14] even help to heal injuries, although this has not been proved.
+
+There is also evidence that cats use a special kind of purr when they are hungry. This purr includes a high sound similar [15] a baby's cry, which humans find very hard to ignore. In other [16], your cat may be cleverer than you think.`,
+  gaps: {
+    0: { answers: ["who"] },
+    9: { answers: ["by"], explain: "Passive: 'be produced by something' shows what causes the action." },
+    10: { answers: ["and"], explain: "'Breathe in and out' – two actions joined by 'and'." },
+    11: { answers: ["their", "the"], explain: "A possessive (or the article) before 'mother': their mother." },
+    12: { answers: ["case"], explain: "'This is not always the case' = this is not always true." },
+    13: { answers: ["which"], explain: "'Which' after a comma refers back to the whole previous clause." },
+    14: { answers: ["could", "may", "might", "can"], explain: "A modal verb of possibility before the infinitive 'help'." },
+    15: { answers: ["to"], explain: "'Similar to something' – the adjective is followed by 'to'." },
+    16: { answers: ["words"], explain: "'In other words' = to say it more simply." }
+  }
 }
 ];
