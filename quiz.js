@@ -266,25 +266,16 @@
       root.appendChild(makeNotesBox());
     }
 
-    /* Part 7 */
+    /* Part 7 (C1: whole paragraphs removed). Also B2 Part 6, where single sentences are
+       removed inside paragraphs: set unit: "sentence" and put [[n]] in the middle of a paragraph. */
     function buildGapped() {
       const keys = Object.keys(EX.paragraphs).sort();
-      const card = el("div", { class: "card" });
-      if (EX.textTitle) card.appendChild(el("p", { class: "text-title" }, esc(EX.textTitle)));
-      if (EX.textSub) card.appendChild(el("p", { class: "text-sub" }, esc(EX.textSub)));
-      const body = el("div", { class: "text" });
-      paras(EX.text).forEach((p) => {
-        const m = p.match(/^\[\[(\d+)\]\]$/);
-        if (!m) { body.appendChild(el("p", null, esc(p))); return; }
-        const n = Number(m[1]);
-        const slot = el("div", { class: "slot" });
-        slot.appendChild(el("span", { class: "gapnum" }, String(n)));
-        slot.appendChild(el("span", null, "Paragraph:"));
+      const unit = EX.unit || "paragraph";
+      const Unit = unit.charAt(0).toUpperCase() + unit.slice(1);
+      const gapSelect = (n) => {
         const sel = el("select", { class: "choice", "aria-label": "Gap " + n });
         sel.appendChild(el("option", { value: "" }, "—"));
         keys.forEach((L) => sel.appendChild(el("option", { value: L }, L)));
-        slot.appendChild(sel);
-        body.appendChild(slot);
         const ans = EX.answers[n];
         const note = addNote(n, ans, EX.explain && EX.explain[n]);
         items.push({
@@ -298,17 +289,45 @@
           reveal() {},
           reset() { sel.value = ""; sel.classList.remove("ok", "bad"); note.ok = null; },
         });
+        return sel;
+      };
+      const card = el("div", { class: "card" });
+      if (EX.textTitle) card.appendChild(el("p", { class: "text-title" }, esc(EX.textTitle)));
+      if (EX.textSub) card.appendChild(el("p", { class: "text-sub" }, esc(EX.textSub)));
+      const body = el("div", { class: "text" });
+      paras(EX.text).forEach((p) => {
+        const m = p.match(/^\[\[(\d+)\]\]$/);
+        if (m) {
+          const n = Number(m[1]);
+          const slot = el("div", { class: "slot" });
+          slot.appendChild(el("span", { class: "gapnum" }, String(n)));
+          slot.appendChild(el("span", null, Unit + ":"));
+          slot.appendChild(gapSelect(n));
+          body.appendChild(slot);
+          return;
+        }
+        if (!/\[\[\d+\]\]/.test(p)) { body.appendChild(el("p", null, esc(p))); return; }
+        const pe = el("p");
+        p.split(/\[\[(\d+)\]\]/).forEach((chunk, i) => {
+          if (i % 2 === 0) { pe.appendChild(document.createTextNode(chunk)); return; }
+          const n = Number(chunk);
+          const wrap = el("span", { class: "gapwrap" });
+          wrap.appendChild(el("span", { class: "gapnum" }, String(n)));
+          wrap.appendChild(gapSelect(n));
+          pe.appendChild(wrap);
+        });
+        body.appendChild(pe);
       });
       card.appendChild(body);
       root.appendChild(card);
 
       const bank = el("div", { class: "card para-bank" });
-      bank.appendChild(el("h3", { style: "margin-top:0" }, "Paragraphs"));
+      bank.appendChild(el("h3", { style: "margin-top:0" }, Unit + "s"));
       keys.forEach((L) => bank.appendChild(el("div", { class: "para" }, "<b>" + L + "</b>" + esc(EX.paragraphs[L]))));
       root.appendChild(bank);
       const nb = makeNotesBox();
       if (EX.extra) {
-        notesBox.appendChild(el("p", { style: "margin:10px 0 0" }, "<b>Extra paragraph: " + esc(EX.extra.label) + ".</b> " + esc(EX.extra.explain)));
+        notesBox.appendChild(el("p", { style: "margin:10px 0 0" }, "<b>Extra " + unit + ": " + esc(EX.extra.label) + ".</b> " + esc(EX.extra.explain)));
       }
       root.appendChild(nb);
     }
@@ -344,8 +363,9 @@
         let attempt = 1;
         try { attempt = (+sessionStorage.getItem(key) || 0) + 1; sessionStorage.setItem(key, attempt); } catch (e) {}
         const h1 = document.querySelector("h1");
+        const level = document.documentElement.getAttribute("data-level");
         window.c1Log({
-          part: (document.querySelector(".kicker") ? document.querySelector(".kicker").textContent.replace(/^.*·\s*/, "") + " · " : "") + (h1 ? h1.textContent : ""),
+          part: (level ? level + " · " : "") + (document.querySelector(".kicker") ? document.querySelector(".kicker").textContent.replace(/^.*·\s*/, "") + " · " : "") + (h1 ? h1.textContent : ""),
           set: setIndex + 1,
           title: EX.textTitle || "",
           score: right * pts, max: items.length * pts,
