@@ -31,10 +31,10 @@
     wrap.className = "name-modal";
     wrap.innerHTML =
       '<form class="name-card" role="dialog" aria-modal="true" aria-labelledby="nm-title">' +
-      '<div class="wave" aria-hidden="true">\u{1F44B}</div>' +
-      '<h2 id="nm-title">Hi! What’s your name?</h2>' +
+      '<h2 id="nm-title">What’s your name?</h2>' +
       '<p>Your teacher will see your results under this name.</p>' +
-      '<input type="text" name="n" maxlength="60" autocomplete="name" placeholder="First and last name" required>' +
+      '<label for="nm-input">First and last name</label>' +
+      '<input id="nm-input" type="text" name="n" maxlength="60" autocomplete="name" required>' +
       '<button type="submit">Let’s start</button></form>';
     document.body.appendChild(wrap);
     const input = wrap.querySelector("input");
@@ -62,7 +62,10 @@
   function paintNameChips() {
     document.querySelectorAll(".name-chip").forEach((chip) => {
       const n = getName();
-      chip.innerHTML = n ? '<span class="who">' + esc(n) + '</span><span class="edit">change</span>' : '<span class="edit">Add your name</span>';
+      chip.innerHTML = n
+        ? '<span class="avatar" aria-hidden="true">' + esc(n.charAt(0).toUpperCase()) + '</span><span class="who">' + esc(n) + '</span><span class="edit">change</span>'
+        : '<span class="edit">Add your name</span>';
+      chip.title = n ? "Change your name" : "Add your name";
     });
     const hello = document.querySelector(".hello");
     if (hello) {
@@ -117,7 +120,7 @@
     const lead = document.querySelector(".wrap > .lead");
     if (!isExercise && document.querySelector(".grid") && lead) {
       const hello = document.createElement("p");
-      hello.className = "hello rise";
+      hello.className = "hello";
       lead.after(hello);
     }
     paintNameChips();

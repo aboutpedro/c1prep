@@ -1,6 +1,6 @@
 /* C1 Prep — shared exercise engine.
    A page defines window.SETS (an array of exercise sets) and loads this file.
-   The set shown is chosen with the buttons at the top, or with #set-N in the URL. */
+   The set shown is chosen with the set menu at the top, or with #set-N in the URL. */
 (function () {
   "use strict";
   const SETS = window.SETS || (window.EX ? [window.EX] : null);
@@ -24,10 +24,25 @@
   };
   const paras = (text) => text.trim().split(/\n\s*\n/).map((p) => p.trim());
 
-  /* ---------- set picker ---------- */
-  const picker = el("div", { class: "tabs setpicker", role: "tablist", "aria-label": "Exercise sets" });
+  const ICON = {
+    prev: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
+    next: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>',
+    reset: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>',
+  };
+  const setLabel = (i) => "Set " + (i + 1) + (SETS[i].textTitle ? " · " + SETS[i].textTitle : "");
+
+  /* ---------- set navigation: previous / dropdown / next ---------- */
+  const nav = el("div", { class: "setnav" });
+  const bPrev = el("button", { type: "button", class: "icon-btn", "aria-label": "Previous set", title: "Previous set" }, ICON.prev);
+  const pickWrap = el("div", { class: "select-wrap" });
+  const pick = el("select", { class: "setselect", "aria-label": "Choose a set" });
+  SETS.forEach((s, i) => pick.appendChild(el("option", { value: String(i + 1) }, esc(setLabel(i)))));
+  pickWrap.appendChild(pick);
+  const bNext = el("button", { type: "button", class: "icon-btn", "aria-label": "Next set", title: "Next set" }, ICON.next);
+  const count = el("span", { class: "setcount" }, SETS.length + " sets");
+  nav.append(bPrev, pickWrap, bNext, count);
   const root = el("div");
-  if (SETS.length > 1) host.appendChild(picker);
+  if (SETS.length > 1) host.appendChild(nav);
   host.appendChild(root);
 
   function currentIndex() {
@@ -35,24 +50,27 @@
     const i = m ? Number(m[1]) - 1 : 0;
     return i >= 0 && i < SETS.length ? i : 0;
   }
-  SETS.forEach((s, i) => {
-    const b = el("button", { type: "button", role: "tab" }, "Set " + (i + 1));
-    b.addEventListener("click", () => { location.hash = "set-" + (i + 1); });
-    picker.appendChild(b);
-  });
+  function go(n) { if (n >= 1 && n <= SETS.length) location.hash = "set-" + n; }
+  pick.addEventListener("change", () => go(Number(pick.value)));
+  bPrev.addEventListener("click", () => go(currentIndex()));
+  bNext.addEventListener("click", () => go(currentIndex() + 2));
   window.addEventListener("hashchange", render);
   render();
 
   function render() {
     const idx = currentIndex();
-    [...picker.children].forEach((b, i) => b.setAttribute("aria-selected", i === idx ? "true" : "false"));
+    pick.value = String(idx + 1);
+    bPrev.disabled = idx === 0;
+    bNext.disabled = idx === SETS.length - 1;
     root.innerHTML = "";
     root.classList.remove("set-enter"); void root.offsetWidth; root.classList.add("set-enter");
     build(SETS[idx], root, idx);
   }
 
   /* ---------- one set ---------- */
-  function build(EX, root, setIndex) {
+  function build(EX, mount, setIndex) {
+    const root = el("div", { class: "set-view" });
+    mount.appendChild(root);
     const startedAt = Date.now();
     let revealed = false;
     let lastSig = null;
@@ -61,6 +79,19 @@
     let notesBox = null;
 
     if (EX.intro) root.appendChild(el("p", { class: "lead" }, esc(EX.intro)));
+
+    /* Reading parts: text on the left, questions on the right on wide screens (stacked otherwise). */
+    function makeSplit() {
+      const s = el("div", { class: "split" });
+      const main = el("div", { class: "pane-main" });
+      const side = el("div", { class: "pane-side" });
+      s.append(main, side);
+      root.appendChild(s);
+      const w = host.closest(".wrap");
+      if (w) w.classList.add("wide");
+      return { main, side };
+    }
+    const qRange = (first, n) => "Questions " + first + "–" + (first + n - 1);
 
     function addNote(n, answer, explain) {
       const rec = { n, answer, explain, ok: null };
@@ -182,9 +213,10 @@
       root.appendChild(card);
     }
 
-    function textCard(title, sub, text) {
+    function textCard(title, sub, text, label) {
       const card = el("div", { class: "card" });
-      if (title) card.appendChild(el("p", { class: "text-title" }, esc(title)));
+      if (label) card.appendChild(el("p", { class: "text-title" }, '<span class="sec-badge">' + esc(label) + "</span>" + (title ? esc(title) : "")));
+      else if (title) card.appendChild(el("p", { class: "text-title" }, esc(title)));
       if (sub) card.appendChild(el("p", { class: "text-sub" }, esc(sub)));
       const body = el("div", { class: "text" });
       paras(text).forEach((p) => body.appendChild(el("p", null, esc(p))));
@@ -194,8 +226,10 @@
 
     /* Part 5 */
     function buildMCReading() {
-      root.appendChild(textCard(EX.textTitle, EX.textSub, EX.text));
+      const sp = makeSplit();
+      sp.main.appendChild(textCard(EX.textTitle, EX.textSub, EX.text));
       const card = el("div", { class: "card" });
+      card.appendChild(el("h3", null, qRange(EX.startAt || 31, EX.questions.length)));
       EX.questions.forEach((qq, idx) => {
         const n = (EX.startAt || 31) + idx;
         const q = el("div", { class: "q" });
@@ -230,15 +264,17 @@
           reset() { q.querySelectorAll("input").forEach((i) => (i.checked = false)); labels.forEach((l) => l.classList.remove("ok", "bad")); q.classList.remove("checked"); },
         });
       });
-      root.appendChild(card);
+      sp.side.appendChild(card);
     }
 
     /* Parts 6 & 8 */
     function buildMatching() {
       const letters = EX.sections.map((s) => s.label);
-      EX.sections.forEach((s) => root.appendChild(textCard(s.title ? s.label + "  " + s.title : s.label, s.sub, s.text)));
+      const sp = makeSplit();
+      EX.sections.forEach((s) => sp.main.appendChild(textCard(s.title, s.sub, s.text, s.label)));
       const card = el("div", { class: "card" });
-      if (EX.questionsIntro) card.appendChild(el("p", { class: "lead", style: "margin-bottom:6px" }, esc(EX.questionsIntro)));
+      card.appendChild(el("h3", null, qRange(EX.startAt || 1, EX.questions.length)));
+      if (EX.questionsIntro) card.appendChild(el("p", { class: "q-intro" }, esc(EX.questionsIntro)));
       EX.questions.forEach((qq, idx) => {
         const n = (EX.startAt || 1) + idx;
         const row = el("div", { class: "match-row" });
@@ -262,8 +298,8 @@
           reset() { sel.value = ""; sel.classList.remove("ok", "bad"); note.ok = null; },
         });
       });
-      root.appendChild(card);
-      root.appendChild(makeNotesBox());
+      sp.side.appendChild(card);
+      sp.side.appendChild(makeNotesBox());
     }
 
     /* Part 7 (C1: whole paragraphs removed). Also B2 Part 6, where single sentences are
@@ -319,17 +355,18 @@
         body.appendChild(pe);
       });
       card.appendChild(body);
-      root.appendChild(card);
+      const sp = makeSplit();
+      sp.main.appendChild(card);
 
       const bank = el("div", { class: "card para-bank" });
       bank.appendChild(el("h3", { style: "margin-top:0" }, Unit + "s"));
       keys.forEach((L) => bank.appendChild(el("div", { class: "para" }, "<b>" + L + "</b>" + esc(EX.paragraphs[L]))));
-      root.appendChild(bank);
+      sp.side.appendChild(bank);
       const nb = makeNotesBox();
       if (EX.extra) {
         notesBox.appendChild(el("p", { style: "margin:10px 0 0" }, "<b>Extra " + unit + ": " + esc(EX.extra.label) + ".</b> " + esc(EX.extra.explain)));
       }
-      root.appendChild(nb);
+      sp.side.appendChild(nb);
     }
 
     ({
@@ -338,13 +375,41 @@
       "matching": buildMatching, "gapped": buildGapped,
     })[EX.type]();
 
+    /* Previous / next set links at the end of the set. */
+    if (SETS.length > 1) {
+      const pager = el("nav", { class: "set-pager", "aria-label": "More sets" });
+      const link = (i, cls, dir) => {
+        const a = el("a", { href: "#set-" + (i + 1), class: cls }, '<span class="dir">' + dir + '</span><span class="t">' + esc(setLabel(i)) + "</span>");
+        a.addEventListener("click", () => window.scrollTo(0, 0));
+        return a;
+      };
+      if (setIndex > 0) pager.appendChild(link(setIndex - 1, "prev", "← Previous"));
+      if (setIndex < SETS.length - 1) pager.appendChild(link(setIndex + 1, "next", "Next →"));
+      root.appendChild(pager);
+    }
+
+    /* Action bar: progress, then the score. */
     const bar = el("div", { class: "bar" });
-    const bCheck = el("button", { type: "button" }, "Check answers");
-    const bShow = el("button", { type: "button", class: "secondary" }, "Show answers");
-    const bReset = el("button", { type: "button", class: "secondary" }, "Start again");
+    const status = el("div", { class: "status" });
+    const meter = el("span", { class: "meter", "aria-hidden": "true" }, "<i></i>");
+    const progress = el("span", { class: "progress" });
     const score = el("span", { class: "score", "aria-live": "polite" });
-    bar.append(bCheck, bShow, bReset, score);
+    status.append(meter, progress, score);
+    const bReset = el("button", { type: "button", class: "secondary reset", "aria-label": "Start again", title: "Start again" }, ICON.reset + '<span class="label">Start again</span>');
+    const bShow = el("button", { type: "button", class: "secondary" }, "Show answers");
+    const bCheck = el("button", { type: "button" }, "Check answers");
+    bar.append(status, bReset, bShow, bCheck);
     root.appendChild(bar);
+
+    function updateProgress() {
+      const done = items.filter((it) => it.info().given !== "").length;
+      progress.textContent = done + " of " + items.length + " answered";
+      meter.firstChild.style.width = (items.length ? (100 * done) / items.length : 0) + "%";
+      progress.hidden = meter.hidden = !!score.textContent;
+    }
+    root.addEventListener("input", updateProgress);
+    root.addEventListener("change", updateProgress);
+    updateProgress();
 
     const pts = EX.pointsEach || 1;
     bCheck.addEventListener("click", () => {
@@ -354,6 +419,7 @@
       items.forEach((it) => { if (it.check()) right++; else mistakes.push(it.info()); });
       drawNotes();
       score.textContent = "Score: " + right * pts + " / " + items.length * pts;
+      progress.hidden = meter.hidden = true;
       score.classList.remove("bump", "perfect"); void score.offsetWidth; score.classList.add("bump");
       if (right === items.length) { score.classList.add("perfect"); if (window.c1Confetti) window.c1Confetti(); }
       const sig = right + "|" + JSON.stringify(mistakes.map((m) => m.given));
@@ -380,6 +446,7 @@
       if (notesBox) notesBox.hidden = true;
       score.textContent = "";
       score.classList.remove("bump", "perfect");
+      updateProgress();
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
