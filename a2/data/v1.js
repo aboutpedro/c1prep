@@ -1,0 +1,147 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Home and daily routine",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["alarm", "cupboard", "fridge", "kettle", "neighbours", "pillow", "rubbish", "sink", "sofa", "stairs", "towel", "washing machine"],
+  items: [
+    { s: "My ___ goes off at 6.30 every morning.", answers: ["alarm"],
+      explain: "An alarm (clock) wakes you up. It 'goes off' when it starts ringing." },
+    { s: "Can you put the milk back in the ___, please?", answers: ["fridge"],
+      explain: "A fridge keeps food and drinks cold." },
+    { s: "The plates and glasses are in the ___ next to the cooker.", answers: ["cupboard"],
+      explain: "A cupboard is a piece of furniture with doors where you keep plates, food, etc." },
+    { s: "Please take the ___ out. The bin is full.", answers: ["rubbish"],
+      explain: "Rubbish = things you throw away. We 'take the rubbish out'." },
+    { s: "Leave the dirty plates in the ___ and I'll wash them later.", answers: ["sink"],
+      explain: "The sink is where you wash the dishes in the kitchen." },
+    { s: "Dad fell asleep on the ___ in front of the TV.", answers: ["sofa"],
+      explain: "A sofa is a long, soft seat for two or more people." },
+    { s: "Our bedrooms are upstairs, so we go up the ___ to bed.", answers: ["stairs"],
+      explain: "You go up and down the stairs between floors." },
+    { s: "Can you pass me a ___? I've just had a shower.", answers: ["towel"],
+      explain: "You use a towel to dry yourself." },
+    { s: "Put your dirty clothes in the ___.", answers: ["washing machine"],
+      explain: "A washing machine washes clothes." },
+    { s: "The people who live next door are our ___.", answers: ["neighbours", "neighbors"],
+      explain: "Neighbours are the people who live near you." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Food and drink",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["bill", "bottle", "dessert", "fork", "fried", "menu", "plate", "raw", "recipe", "salty", "slice", "spicy"],
+  items: [
+    { s: "Could we see the ___, please? We'd like to order.", answers: ["menu"],
+      explain: "The menu is the list of food in a restaurant." },
+    { s: "This curry is very ___. I need some water!", answers: ["spicy"],
+      explain: "Spicy food has a hot taste, for example from chilli." },
+    { s: "Would you like a ___ of cake?", answers: ["slice"],
+      explain: "A slice = a thin, flat piece cut from something (a slice of cake, bread, pizza)." },
+    { s: "For ___, I'd like chocolate ice cream.", answers: ["dessert"],
+      explain: "Dessert is the sweet food at the end of a meal." },
+    { s: "Can we have the ___, please? We'd like to pay.", answers: ["bill", "check"],
+      explain: "The bill is the paper that shows how much you have to pay in a restaurant." },
+    { s: "I usually eat pasta with a ___.", answers: ["fork"],
+      explain: "A fork is what you use to pick up food (with a knife and a spoon)." },
+    { s: "My grandmother gave me her ___ for apple pie.", answers: ["recipe"],
+      explain: "A recipe tells you how to cook something." },
+    { s: "You can eat carrots cooked or ___.", answers: ["raw"],
+      explain: "Raw = not cooked." },
+    { s: "I bought a ___ of water for the journey.", answers: ["bottle"],
+      explain: "A bottle of water, a bottle of juice." },
+    { s: "Would you like your eggs boiled or ___?", answers: ["fried"],
+      explain: "Fried = cooked in hot oil." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Travel and transport",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["book", "delayed", "journey", "luggage", "miss", "passport", "platform", "return", "seat", "timetable", "tourist", "traffic"],
+  items: [
+    { s: "Our flight was ___ by two hours because of the snow.", answers: ["delayed"],
+      explain: "Delayed = later than planned." },
+    { s: "You need a ___ to travel to most other countries.", answers: ["passport"],
+      explain: "A passport is the document you show at borders." },
+    { s: "The train to Glasgow leaves from ___ 4.", answers: ["platform"],
+      explain: "At a station, you wait for the train on a platform." },
+    { s: "Hurry up or we'll ___ the bus!", answers: ["miss"],
+      explain: "Miss the bus/train = arrive too late to get on it." },
+    { s: "Is this ___ free? Can I sit here?", answers: ["seat"],
+      explain: "A seat is a place to sit." },
+    { s: "I'd like a ___ ticket to Oxford, please. I'm coming back tonight.", answers: ["return"],
+      explain: "A return ticket is for going and coming back. (A single is only one way.)" },
+    { s: "How long is the ___ from London to Edinburgh by train?", answers: ["journey"],
+      explain: "A journey = travelling from one place to another." },
+    { s: "There was a lot of ___ on the way to work, so I was late.", answers: ["traffic"],
+      explain: "Traffic = the cars, buses, etc. on the road." },
+    { s: "You can only take one bag on the plane, so don't bring too much ___.", answers: ["luggage"],
+      explain: "Luggage = the bags and suitcases you take when you travel. It's uncountable (not 'luggages')." },
+    { s: "Let's check the bus ___ to see when the next bus leaves.", answers: ["timetable"],
+      explain: "A timetable shows the times of buses, trains or classes." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Shopping and money",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["afford", "borrow", "cash", "change", "cheap", "cost", "discount", "receipt", "sale", "size", "spend", "try on"],
+  items: [
+    { s: "These jeans were only €15. They were really ___.", answers: ["cheap"],
+      explain: "Cheap = not expensive." },
+    { s: "Can I ___ this jacket? Where are the changing rooms?", answers: ["try on"],
+      explain: "Try on = put on clothes to see if they fit or look good." },
+    { s: "I can't ___ a new laptop. They're too expensive for me.", answers: ["afford"],
+      explain: "Can't afford = don't have enough money for something." },
+    { s: "Do you want to pay by card or in ___?", answers: ["cash"],
+      explain: "Cash = coins and notes. We say 'pay in cash' or 'pay by card'." },
+    { s: "Keep the ___ in case you need to take the shoes back.", answers: ["receipt"],
+      explain: "A receipt is the piece of paper that shows what you bought and paid." },
+    { s: "The shop has a ___ this week. Everything is 30% off.", answers: ["sale"],
+      explain: "A sale = a time when a shop sells things at lower prices." },
+    { s: "'Here's €20.' 'Thanks. And here's your ___: €3.50.'", answers: ["change"],
+      explain: "Change = the money you get back when you pay more than the price." },
+    { s: "Do you have these trainers in a bigger ___?", answers: ["size"],
+      explain: "Clothes and shoes come in different sizes." },
+    { s: "How much money do you ___ on clothes every month?", answers: ["spend"],
+      explain: "Spend money on something." },
+    { s: "Students get a 10% ___ at this bookshop.", answers: ["discount"],
+      explain: "A discount = a lower price for some people or at some times." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Health and the body",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["ankle", "appointment", "cough", "headache", "healthy", "hurt", "medicine", "nurse", "rest", "sneeze", "sore", "temperature"],
+  items: [
+    { s: "I've got a terrible ___. Can you turn the music down?", answers: ["headache"],
+      explain: "A headache is a pain in your head." },
+    { s: "You should stay in bed and ___ for a few days.", answers: ["rest"],
+      explain: "Rest = relax and not do anything tiring." },
+    { s: "I can't talk very well. I've got a ___ throat.", answers: ["sore"],
+      explain: "A sore throat = your throat hurts." },
+    { s: "She has a high ___, so she isn't going to school today.", answers: ["temperature"],
+      explain: "When you're ill, your body temperature can go up: you have a (high) temperature." },
+    { s: "I fell off my bike and ___ my knee.", answers: ["hurt"],
+      explain: "Hurt – hurt – hurt: I hurt my knee = I injured it." },
+    { s: "Take this ___ three times a day after meals.", answers: ["medicine"],
+      explain: "Medicine is what you take to get better when you're ill." },
+    { s: "I'd like to make an ___ to see the doctor.", answers: ["appointment"],
+      explain: "Make an appointment = arrange a time to see a doctor, dentist, etc." },
+    { s: "Dust always makes me ___!", answers: ["sneeze"],
+      explain: "When you sneeze, air comes out of your nose suddenly: 'Atchoo!'" },
+    { s: "He's had a bad ___ for a week, especially at night.", answers: ["cough"],
+      explain: "A cough is when air comes out of your throat with a noise, often when you have a cold." },
+    { s: "I twisted my ___ playing football, and now it hurts when I walk.", answers: ["ankle"],
+      explain: "Your ankle is between your foot and your leg." }
+  ]
+}
+];

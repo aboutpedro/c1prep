@@ -78,6 +78,14 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   Full width on phones.
 - **Tabs** (writing): underline tabs that scroll sideways on phones.
 - **Callout**: instructions in `--surface-2` with a navy left rule.
+- **Sentence sets** (A2/B1 grammar and vocabulary, `type: "sentences"`): one
+  numbered sentence per row with an inline gap. Typed gaps use the normal inline
+  input; choices are pill-shaped radio chips under the sentence, and the chosen
+  word fills the gap. An optional word bank sits above in its own card.
+  Contractions are accepted either way (don't = do not).
+- **Short texts** (A2/B1 Reading Part 1, `type: "mc-texts"`): each notice or
+  message in its own box beside its options (stacked on phones). Notices are
+  centred with a dark border; messages have a grey left rule and a From/To line.
 
 ## Motion
 
@@ -104,5 +112,7 @@ optically centred.
 | `favicon.ico` | Browsers without SVG icons | 16 and 32 px drawn larger (cap 35, radius 12) so they stay legible; 48 px as the SVG |
 | `apple-touch-icon.png` | Phone home screen | 180 px, square and full-bleed (the phone rounds it), cap 27 |
 
-C1 lives at the root, B2 in `b2/`, C2 in `c2/`. Icon links carry `?v=2`;
+C1 lives at the root, A2 in `a2/`, B1 in `b1/`, B2 in `b2/`, C2 in `c2/`. In the A2
+mark the gap is wider at the baseline (about 1) because the A's diagonal leaves
+the top open; B1 keeps the same 1.4 closest gap as B2. Icon links carry `?v=2`;
 bump it whenever the icons change.

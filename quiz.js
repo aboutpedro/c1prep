@@ -1,4 +1,4 @@
-/* C1 Prep — shared exercise engine.
+/* C1 Prep — shared exercise engine (A2, B1, B2, C1, C2).
    A page defines window.SETS (an array of exercise sets) and loads this file.
    The set shown is chosen with the set menu at the top, or with #set-N in the URL. */
 (function () {
@@ -15,6 +15,10 @@
     .trim()
     .replace(/[.,!?;:]+$/g, "")
     .trim();
+  /* For the A2/B1 sentence sets: "doesn't" = "does not", "I'm" = "I am", etc. */
+  const CONTR = [[/\bcan't\b/g, "cannot"], [/\bcan not\b/g, "cannot"], [/\bwon't\b/g, "will not"], [/\bshan't\b/g, "shall not"],
+    [/n't\b/g, " not"], [/'m\b/g, " am"], [/'re\b/g, " are"], [/'ve\b/g, " have"], [/'ll\b/g, " will"]];
+  const loose = (s) => { let t = norm(s); CONTR.forEach(([re, to]) => { t = t.replace(re, to); }); return t.replace(/\s+/g, " ").trim(); };
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const el = (tag, attrs, html) => {
     const e = document.createElement(tag);
@@ -364,15 +368,168 @@
       sp.side.appendChild(bank);
       const nb = makeNotesBox();
       if (EX.extra) {
-        notesBox.appendChild(el("p", { style: "margin:10px 0 0" }, "<b>Extra " + unit + ": " + esc(EX.extra.label) + ".</b> " + esc(EX.extra.explain)));
+        notesBox.appendChild(el("p", { style: "margin:10px 0 0" }, "<b>Extra " + unit + (EX.extra.label.length > 1 ? "s" : "") + ": " + esc(EX.extra.label) + ".</b> " + esc(EX.extra.explain)));
       }
       sp.side.appendChild(nb);
+    }
+
+    /* A2/B1 grammar and vocabulary: one sentence per item, with a typed gap (answers) or a choice (options + answer).
+       Mark the gap with ___ in `s`. An optional word bank (`bank`) is shown above the sentences. */
+    function buildSentences() {
+      if (EX.bank) {
+        const bank = el("div", { class: "card bank" });
+        bank.appendChild(el("p", { class: "bank-label" }, esc(EX.bankLabel || "Word bank")));
+        const list = el("div", { class: "bank-words" });
+        EX.bank.forEach((w) => list.appendChild(el("span", null, esc(w))));
+        bank.appendChild(list);
+        root.appendChild(bank);
+      }
+      const card = el("div", { class: "card sentences" });
+      EX.items.forEach((it, idx) => {
+        const n = (EX.startAt || 1) + idx;
+        const q = el("div", { class: "q sent" });
+        const prompt = el("p", { class: "prompt" });
+        prompt.appendChild(el("span", { class: "n" }, String(n)));
+        const line = el("span", { class: "s" });
+        const parts = it.s.split(/_{3,}/);
+        if (parts.length !== 2) throw new Error("Item " + n + " needs exactly one ___ gap");
+        line.appendChild(document.createTextNode(parts[0]));
+        const wrap = el("span", { class: "gapwrap" });
+        let input = null, blank = null;
+        const choice = Array.isArray(it.options);
+        if (choice) {
+          blank = el("span", { class: "blank" }, "\u2003\u2003\u2003");
+          wrap.appendChild(blank);
+        } else {
+          input = el("input", { class: "gap", type: "text", autocomplete: "off", autocapitalize: "off", spellcheck: "false", "aria-label": "Answer " + n });
+          if (it.width) input.style.width = it.width + "ch";
+          wrap.appendChild(input);
+        }
+        line.appendChild(wrap);
+        line.appendChild(document.createTextNode(parts[1]));
+        prompt.appendChild(line);
+        q.appendChild(prompt);
+        let labels = [];
+        if (choice) {
+          const chips = el("div", { class: "chips", role: "radiogroup", "aria-label": "Options for " + n });
+          // shuffle: true on a set mixes the order of the options (the same order every time).
+          const order = it.options.map((o, k) => k);
+          if (EX.shuffle) {
+            let seed = (setIndex + 1) * 7919 + n * 104729;
+            const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+            for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
+          }
+          order.forEach((k) => {
+            const lab = el("label");
+            lab.innerHTML = '<input type="radio" name="s' + n + '" value="' + k + '"><span>' + esc(it.options[k]) + "</span>";
+            chips.appendChild(lab);
+            labels[k] = lab;
+          });
+          chips.addEventListener("change", () => {
+            const sel = chips.querySelector("input:checked");
+            blank.textContent = sel ? it.options[+sel.value] : "\u2003\u2003\u2003";
+            blank.classList.toggle("filled", !!sel);
+          });
+          q.appendChild(chips);
+        }
+        const correct = choice ? it.options[it.answer] : it.answers[0];
+        const ex = el("div", { class: "explain" });
+        const html = "<b>Answer:</b> " + esc(correct) +
+          (!choice && it.answers.length > 1 ? ' <span class="also">(also accepted: ' + esc(it.answers.slice(1).join("; ")) + ")</span>" : "") +
+          (it.explain ? "<br>" + esc(it.explain) : "");
+        q.appendChild(ex);
+        card.appendChild(q);
+        const given = () => {
+          if (!choice) return input.value.trim();
+          const sel = q.querySelector("input:checked");
+          return sel ? it.options[+sel.value] : "";
+        };
+        items.push({
+          info() { return { n, given: given(), correct }; },
+          check() {
+            let ok;
+            if (choice) {
+              const sel = q.querySelector("input:checked");
+              const v = sel ? Number(sel.value) : -1;
+              ok = v === it.answer;
+              labels.forEach((l, k) => { l.classList.remove("ok", "bad"); if (k === it.answer) l.classList.add("ok"); else if (k === v) l.classList.add("bad"); });
+              blank.classList.toggle("ok", ok); blank.classList.toggle("bad", !ok);
+            } else {
+              const v = loose(input.value);
+              ok = it.answers.some((a) => loose(a) === v);
+              input.classList.toggle("ok", ok); input.classList.toggle("bad", !ok);
+            }
+            ex.innerHTML = html;
+            q.classList.add("checked");
+            return ok;
+          },
+          reveal() { if (choice) labels[it.answer].classList.add("ok"); ex.innerHTML = html; q.classList.add("checked"); },
+          reset() {
+            if (choice) {
+              q.querySelectorAll("input").forEach((i) => (i.checked = false));
+              labels.forEach((l) => l.classList.remove("ok", "bad"));
+              blank.textContent = "\u2003\u2003\u2003"; blank.classList.remove("filled", "ok", "bad");
+            } else { input.value = ""; input.classList.remove("ok", "bad"); }
+            q.classList.remove("checked");
+          },
+        });
+      });
+      root.appendChild(card);
+    }
+
+    /* A2 Key / B1 Preliminary Part 1: several short texts (notices, messages), one question each. */
+    function buildShortTexts() {
+      const card = el("div", { class: "card" });
+      EX.items.forEach((it, idx) => {
+        const n = (EX.startAt || 1) + idx;
+        const q = el("div", { class: "q short" });
+        const box = el("div", { class: "short-text st-" + (it.kind || "message") });
+        if (it.head) box.appendChild(el("p", { class: "st-head" }, esc(it.head)));
+        if (it.title) box.appendChild(el("p", { class: "st-title" }, esc(it.title)));
+        it.text.trim().split(/\n\s*\n/).forEach((p) => box.appendChild(el("p", null, esc(p.trim()).replace(/\n/g, "<br>"))));
+        q.appendChild(el("p", { class: "prompt" }, '<span class="n">' + n + "</span>" + (it.q ? "<span>" + esc(it.q) + "</span>" : "")));
+        const side = el("div", { class: "short-q" });
+        const opts = el("div", { class: "opts" });
+        const labels = [];
+        it.options.forEach((o, k) => {
+          const lab = el("label");
+          lab.innerHTML = '<input type="radio" name="t' + n + '" value="' + k + '"><span class="letter">' + LETTERS[k] + "</span><span>" + esc(o) + "</span>";
+          opts.appendChild(lab);
+          labels.push(lab);
+        });
+        side.appendChild(opts);
+        const grid = el("div", { class: "short-grid" });
+        grid.append(box, side);
+        q.appendChild(grid);
+        const ex = el("div", { class: "explain" });
+        const html = "<b>Answer: " + LETTERS[it.answer] + ".</b> " + (it.explain ? esc(it.explain) : "");
+        q.appendChild(ex);
+        card.appendChild(q);
+        items.push({
+          info() {
+            const sel = q.querySelector("input:checked");
+            return { n, given: sel ? LETTERS[+sel.value] + " " + it.options[+sel.value] : "", correct: LETTERS[it.answer] + " " + it.options[it.answer] };
+          },
+          check() {
+            const sel = q.querySelector("input:checked");
+            const v = sel ? Number(sel.value) : -1;
+            labels.forEach((l, k) => { l.classList.remove("ok", "bad"); if (k === it.answer) l.classList.add("ok"); else if (k === v) l.classList.add("bad"); });
+            ex.innerHTML = html;
+            q.classList.add("checked");
+            return v === it.answer;
+          },
+          reveal() { labels[it.answer].classList.add("ok"); ex.innerHTML = html; q.classList.add("checked"); },
+          reset() { q.querySelectorAll("input").forEach((i) => (i.checked = false)); labels.forEach((l) => l.classList.remove("ok", "bad")); q.classList.remove("checked"); },
+        });
+      });
+      root.appendChild(card);
     }
 
     ({
       "mc-cloze": buildCloze, "open-cloze": buildCloze, "word-form": buildCloze,
       "kwt": buildKWT, "mc-reading": buildMCReading,
       "matching": buildMatching, "gapped": buildGapped,
+      "sentences": buildSentences, "mc-texts": buildShortTexts,
     })[EX.type]();
 
     /* Previous / next set links at the end of the set. */

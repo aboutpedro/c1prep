@@ -1,4 +1,4 @@
-/* C1 Prep: shared styles for C1 (root), B2 (b2/) and C2 (c2/). Tokens and rules: DESIGN.md. */
+/* C1 Prep: shared styles for C1 (root), A2 (a2/), B1 (b1/), B2 (b2/) and C2 (c2/). Tokens and rules: DESIGN.md. */
 
 /* ================= Tokens ================= */
 :root {
@@ -530,6 +530,55 @@ html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ================= A2 / B1: sentence sets, word bank, short texts (quiz.js) ================= */
+.sentences .q.sent { padding: var(--s4) 0; }
+.sentences .q.sent:first-child { padding-top: 0; }
+.sentences .q.sent:last-child { padding-bottom: 0; }
+.q.sent .prompt { margin: 0; line-height: 2.1; }
+.q.sent .prompt .n { margin-top: 4px; }
+.q.sent .s { flex: 1; min-width: 0; }
+.q.sent .explain { margin-top: var(--s2); }
+.blank {
+  display: inline-block; min-width: 6ch; padding: 0 8px; margin: 0 2px; line-height: 1.6;
+  border-bottom: 2px solid var(--border-strong); color: var(--primary); font-weight: 600; text-align: center;
+  border-radius: var(--r-sm) var(--r-sm) 0 0;
+}
+.blank.filled { background: var(--primary-soft); border-bottom-color: var(--primary); }
+.blank.ok, .blank.bad { border-width: 0 0 2px; border-style: solid; }
+.chips { display: flex; flex-wrap: wrap; gap: var(--s2); margin: var(--s2) 0 0 40px; }
+.chips label {
+  position: relative; display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 6px 14px;
+  background: var(--surface); border: 1px solid var(--border-strong); border-radius: 999px;
+  font-size: 15px; font-weight: 500; cursor: pointer;
+  transition: border-color .15s var(--ease), background-color .15s var(--ease);
+}
+.chips label:hover { border-color: var(--primary); }
+.chips label:has(input:checked) { border-color: var(--primary); background: var(--primary-soft); }
+.chips label:has(input:focus-visible) { outline: 2px solid var(--primary); outline-offset: 2px; }
+.chips input { position: absolute; left: 0; top: 0; opacity: 0; width: 1px; height: 1px; margin: 0; pointer-events: none; }
+.chips label.ok::after { content: "✓"; color: var(--ok); font-weight: 800; }
+.chips label.bad::after { content: "✗"; color: var(--bad); font-weight: 800; }
+@media (max-width: 599px) { .chips { margin-left: 0; } }
+.bank { padding: var(--s4) var(--s5); }
+.bank-label { margin: 0 0 var(--s2); font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.bank-words { display: flex; flex-wrap: wrap; gap: var(--s2); }
+.bank-words span { padding: 4px 12px; font-size: 15px; font-weight: 500; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--r-sm); }
+.short-grid { display: grid; gap: var(--s4); }
+@media (min-width: 680px) { .short-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; } }
+.short-text { padding: var(--s4); font-family: var(--serif); font-size: 17px; line-height: 1.6; background: var(--surface-2); border-radius: var(--r-md); }
+.short-text p { margin: 0 0 .6em; }
+.short-text p:last-child { margin-bottom: 0; }
+.short-text .st-head { font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--muted); }
+.short-text .st-title { font-weight: 700; }
+.st-notice { text-align: center; background: var(--surface); border: 2px solid var(--text); font-family: var(--sans); font-size: 16px; font-weight: 500; }
+.st-notice .st-title { font-size: 17px; letter-spacing: .02em; }
+.st-message { border-left: 3px solid var(--border-strong); border-radius: 0 var(--r-md) var(--r-md) 0; }
+.q.short > .prompt { margin-bottom: var(--s3); }
+.q.short .explain { margin-left: 0; }
+
+/* notes on writing prompts (A2/B1 writing pages) */
+.wnote { font-family: var(--sans); font-size: 14px; font-weight: 650; color: var(--primary); white-space: nowrap; }
 
 /* ================= Print ================= */
 @media print {
