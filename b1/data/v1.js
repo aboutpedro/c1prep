@@ -1,0 +1,147 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Work and jobs",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["apply", "colleagues", "contract", "deadline", "earn", "fired", "interview", "part-time", "promoted", "retire", "salary", "unemployed"],
+  items: [
+    { s: "I'm going to ___ for a job at the new hotel.", answers: ["apply"],
+      explain: "apply for a job = ask for it formally, usually by sending a CV or form." },
+    { s: "She was ___ to manager after only two years.", answers: ["promoted"],
+      explain: "be promoted = get a more important job in the same company." },
+    { s: "My ___ is paid on the last day of every month.", answers: ["salary"],
+      explain: "salary = the money you get every month for your job." },
+    { s: "He works ___ – only mornings, Monday to Wednesday.", answers: ["part-time", "part time"],
+      explain: "part-time = fewer hours than a full working week." },
+    { s: "I have a job ___ tomorrow at ten. I'm so nervous!", answers: ["interview"],
+      explain: "a job interview = a meeting where an employer asks you questions." },
+    { s: "We have to finish the project by Friday. The ___ is very close.", answers: ["deadline"],
+      explain: "deadline = the time by which something must be finished." },
+    { s: "My dad wants to ___ at 60 and travel the world.", answers: ["retire"],
+      explain: "retire = stop working because of your age." },
+    { s: "I get on really well with my ___. We often have lunch together.", answers: ["colleagues"],
+      explain: "colleagues = the people you work with." },
+    { s: "Before you start, you need to sign a ___.", answers: ["contract"],
+      explain: "contract = a legal agreement between you and your employer." },
+    { s: "How much does a nurse ___ in your country?", answers: ["earn"],
+      explain: "earn = get money for work." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences",
+  textTitle: "The environment",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["climate", "endangered", "energy", "global", "litter", "plastic", "pollution", "recycle", "solar", "species", "waste", "wildlife"],
+  items: [
+    { s: "Air ___ in big cities can cause health problems.", answers: ["pollution"],
+      explain: "pollution = dirty air, water or land caused by people." },
+    { s: "Please ___ these bottles. Don't put them in the normal bin.", answers: ["recycle"],
+      explain: "recycle = use something again or make it into something new." },
+    { s: "Tigers are an ___ species. There are only a few thousand left in the wild.", answers: ["endangered"],
+      explain: "endangered = in danger of disappearing completely." },
+    { s: "___ panels on the roof turn sunlight into electricity.", answers: ["solar"],
+      explain: "solar = from the sun." },
+    { s: "We should use less ___. Turn off the lights when you leave a room.", answers: ["energy"],
+      explain: "energy = power such as electricity or gas." },
+    { s: "Dropping ___ on the street can get you a fine in many cities.", answers: ["litter"],
+      explain: "litter = rubbish left on the ground in public places." },
+    { s: "Scientists say that ___ change is making summers hotter.", answers: ["climate"],
+      explain: "climate change = long-term changes in the Earth's weather." },
+    { s: "There are thousands of ___ of birds in the rainforest.", answers: ["species"],
+      explain: "a species = a type of animal or plant. (The plural is also species.)" },
+    { s: "We can reduce food ___ by buying only what we need.", answers: ["waste"],
+      explain: "waste = things that are thrown away without being used." },
+    { s: "Single-use ___ bags are not allowed in many shops.", answers: ["plastic"],
+      explain: "plastic bags." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Technology",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["app", "battery", "charge", "deleted", "device", "download", "online", "password", "screen", "settings", "update", "uploaded"],
+  items: [
+    { s: "My phone's ___ only lasts half a day.", answers: ["battery"],
+      explain: "The battery stores the power in a phone or laptop." },
+    { s: "Is there somewhere I can ___ my phone?", answers: ["charge"],
+      explain: "charge = put power into a battery." },
+    { s: "Never share your ___ with anyone.", answers: ["password"],
+      explain: "password = the secret word you use to get into an account." },
+    { s: "You can ___ the game for free.", answers: ["download"],
+      explain: "download = copy something from the internet onto your device." },
+    { s: "I accidentally ___ all my photos!", answers: ["deleted"],
+      explain: "delete = remove something from a computer or phone." },
+    { s: "The ___ on my laptop is cracked.", answers: ["screen"],
+      explain: "The screen is the part you look at." },
+    { s: "Your phone needs an ___. It will restart in five minutes.", answers: ["update"],
+      explain: "update = a newer version of the software." },
+    { s: "She ___ a video of her cat and it got a million views.", answers: ["uploaded"],
+      explain: "upload = put something from your device onto the internet." },
+    { s: "Go to ___ and turn on dark mode.", answers: ["settings"],
+      explain: "settings = the place where you can change how a device works." },
+    { s: "I do most of my shopping ___ now.", answers: ["online"],
+      explain: "online = on the internet." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Health and fitness",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["allergic", "diet", "fit", "injury", "muscles", "prescription", "recover", "stressed", "symptoms", "treatment", "warm up", "workout"],
+  items: [
+    { s: "She's ___ to nuts, so she has to be careful what she eats.", answers: ["allergic"],
+      explain: "allergic to something = your body reacts badly to it." },
+    { s: "It's important to ___ before you start running.", answers: ["warm up"],
+      explain: "warm up = do gentle exercise to prepare your body." },
+    { s: "He eats a healthy ___ with lots of fruit and vegetables.", answers: ["diet"],
+      explain: "diet = the food you usually eat." },
+    { s: "The doctor gave me a ___ for some antibiotics.", answers: ["prescription"],
+      explain: "prescription = a doctor's note that lets you get medicine." },
+    { s: "Swimming is good for all the ___ in your body.", answers: ["muscles"],
+      explain: "muscles = the parts of the body that help you move." },
+    { s: "It took her six months to ___ from the operation.", answers: ["recover"],
+      explain: "recover from = get better after an illness or injury." },
+    { s: "A high temperature and a cough are common ___ of flu.", answers: ["symptoms"],
+      explain: "symptoms = signs that you have an illness." },
+    { s: "I go to the gym three times a week to keep ___.", answers: ["fit"],
+      explain: "keep fit = stay healthy and strong." },
+    { s: "I'm feeling really ___ about my exams.", answers: ["stressed"],
+      explain: "stressed = worried and nervous." },
+    { s: "He couldn't play in the final because of a knee ___.", answers: ["injury"],
+      explain: "injury = damage to the body, for example in an accident or sport." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Entertainment and media",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["audience", "celebrity", "channel", "character", "documentary", "episode", "headline", "live", "plot", "review", "series", "subtitles"],
+  items: [
+    { s: "I watched a fascinating ___ about life in the deep ocean.", answers: ["documentary"],
+      explain: "documentary = a film or programme about real facts." },
+    { s: "The ___ clapped and cheered at the end of the show.", answers: ["audience"],
+      explain: "audience = the people watching a show." },
+    { s: "I read a bad ___ of the film, so I didn't go to see it.", answers: ["review"],
+      explain: "review = an article giving an opinion of a film, book, etc." },
+    { s: "I like watching foreign films with ___.", answers: ["subtitles"],
+      explain: "subtitles = words at the bottom of the screen that translate what people say." },
+    { s: "The ___ of the book was so complicated that I got lost.", answers: ["plot"],
+      explain: "plot = what happens in a story." },
+    { s: "We watched the final ___ of the series last night.", answers: ["episode"],
+      explain: "episode = one part of a TV series." },
+    { s: "The match is being shown ___ on TV.", answers: ["live"],
+      explain: "live = shown at the same time as it happens." },
+    { s: "What ___ is the football on?", answers: ["channel"],
+      explain: "channel = a TV station." },
+    { s: "The main ___ in the story is a young detective.", answers: ["character"],
+      explain: "character = a person in a story." },
+    { s: "The ___ on the front page was about the storm.", answers: ["headline"],
+      explain: "headline = the title of a newspaper article, in large letters." }
+  ]
+}
+];
