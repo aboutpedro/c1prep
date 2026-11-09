@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="../style.css?v=6">
+<link rel="stylesheet" href="../style.css?v=7">
 <script src="../theme.js?v=5"></script>
 <script src="../log.js?v=5"></script>
 </head>
@@ -19,10 +19,63 @@
   <header class="site"><a class="brand" href="./">B1 Prep</a><nav><a href="./">All exercises</a></nav></header>
   <p class="kicker">Grammar</p>
   <h1>The passive</h1>
-  <div class="card instructions"><p>Each set has 10 sentences. Follow the instructions above the sentences, then press <b>Check answers</b>.</p></div>
-  <div id="exercise"></div>
+  <div class="tabs page-tabs" role="tablist" aria-label="Page sections">
+    <button type="button" role="tab" id="tab-ex" aria-controls="panel-ex" aria-selected="true">Exercises</button>
+    <button type="button" role="tab" id="tab-guide" aria-controls="panel-guide" aria-selected="false" tabindex="-1">Grammar guide</button>
+  </div>
+  <div id="panel-ex" role="tabpanel" aria-labelledby="tab-ex">
+    <div class="card instructions"><p>Each set has 10 sentences. Follow the instructions above the sentences, then press <b>Check answers</b>.</p></div>
+    <div id="exercise"></div>
+  </div>
+  <div id="panel-guide" class="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
+    <p class="guide-intro">In a <b>passive</b> sentence, the thing that the action happens to becomes the subject. We use it when the action or its result matters more than the person who did it, or when we don’t know who did it.</p>
+
+    <section class="card guide-sec">
+    <h2>From active to passive</h2>
+    <figure class="diagram"><svg viewBox="0 0 360 196" role="img" aria-label="Active: Someone stole my bike. Passive: My bike was stolen (by someone). The object my bike moves to the front; the person who did it moves to the end after by, or disappears." focusable="false"><text x="14" y="14" class="dg-h" text-anchor="start">ACTIVE</text><rect class="dg-box" x="14.0" y="24.0" width="92" height="32" rx="8"/><text x="60" y="45" class="dg-tb" text-anchor="middle">Someone</text><rect class="dg-box" x="130.0" y="24.0" width="64" height="32" rx="8"/><text x="162" y="45" class="dg-tb" text-anchor="middle">stole</text><rect class="dg-box-acc" x="240.0" y="24.0" width="90" height="32" rx="8"/><text x="285" y="45" class="dg-tb" text-anchor="middle">my bike</text><rect class="dg-box-acc" x="14.0" y="134.0" width="86" height="32" rx="8"/><text x="57" y="155" class="dg-tb" text-anchor="middle">My bike</text><rect class="dg-box-acc" x="112.0" y="134.0" width="100" height="32" rx="8"/><text x="162" y="155" class="dg-ta" text-anchor="middle">was stolen</text><rect class="dg-box" x="226.0" y="134.0" width="118" height="32" rx="8"/><text x="285" y="155" class="dg-tb" text-anchor="middle">(by someone)</text><path class="dg-acc" d="M285,58 C285,104 57,92 57.0,125.0"/><polygon class="dg-acc-fill" points="57.0,132.0 51.5,122.0 62.5,122.0"/><path class="dg-acc2" stroke-dasharray="6 5" d="M60,58 C60,104 285,92 285.0,125.0"/><polygon class="dg-acc2-fill" points="285.0,132.0 279.5,122.0 290.5,122.0"/><text x="14" y="188" class="dg-h" text-anchor="start">PASSIVE</text><text x="162" y="186" class="dg-s" text-anchor="middle">be + past participle</text><text x="285" y="186" class="dg-s" text-anchor="middle">(often left out)</text></svg></figure>
+    <p>The object of the active sentence moves to the front. The verb becomes <b>be + past participle</b>. The person who did the action moves to the end after <i>by</i>, but we usually leave it out if it’s obvious, unknown or not important.</p>
+    <p class="ex-label">The basics</p>
+    <ul class="ex">
+    <li>English <b>is spoken</b> in many countries.</li>
+    <li>This bridge <b>was built</b> in 1890.</li>
+    <li>My bike <b>was stolen</b> last night.</li>
+    <li>The Mona Lisa <b>was painted by</b> Leonardo da Vinci.<span class="note">Here who did it is interesting, so we keep by.</span></li>
+    </ul>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>The passive in different tenses</h2>
+    <p>Only <i>be</i> changes to show the tense. The past participle stays the same.</p>
+    <div class="table-wrap"><table class="form-table">
+    <tr><th>tense</th><th>passive</th></tr>
+    <tr><td>present simple</td><td>Coffee <b>is grown</b> in Brazil.</td></tr>
+    <tr><td>past simple</td><td>The letters <b>were sent</b> yesterday.</td></tr>
+    <tr><td>present continuous</td><td>The road <b>is being repaired</b>.</td></tr>
+    <tr><td>present perfect</td><td>Our flight <b>has been cancelled</b>.</td></tr>
+    <tr><td>will · going to</td><td>The results <b>will be announced</b> tomorrow.</td></tr>
+    <tr><td>modal verbs</td><td>This medicine <b>must be kept</b> in the fridge.</td></tr>
+    </table></div>
+    <p class="ex-label">You might also see</p>
+    <ul class="ex">
+    <li>I <b>was born</b> in 1995.<span class="note">Always passive in English.</span></li>
+    <li>The new stadium <b>is going to be opened</b> next year.</li>
+    <li>Smoking <b>isn’t allowed</b> in the building.</li>
+    <li>My phone <b>got stolen</b> on the train.<span class="note">In informal English, get sometimes replaces be.</span></li>
+    </ul>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>Active or passive?</h2>
+    <p>Use the active when you want to say who did something. Use the passive when the focus is on what happened.</p>
+    <ul class="ex">
+    <li>My grandfather <b>built</b> this house. <span class="note">Focus on my grandfather.</span></li>
+    <li>This house <b>was built</b> in 1920. <span class="note">Focus on the house.</span></li>
+    </ul>
+    <p class="tip"><b>Careful:</b> only verbs that have an object can be passive. Verbs like <i>happen, arrive, die</i> and <i>appear</i> can’t: <i>The accident <b>happened</b> at night</i>, not <i>The accident was happened</i>.</p>
+    </section>
+  </div>
 </div>
 <script src="data/g4.js?v=1"></script>
-<script src="../quiz.js?v=7"></script>
+<script src="../quiz.js?v=8"></script>
 </body>
 </html>

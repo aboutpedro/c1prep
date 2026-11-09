@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="../style.css?v=6">
+<link rel="stylesheet" href="../style.css?v=7">
 <script src="../theme.js?v=5"></script>
 <script src="../log.js?v=5"></script>
 </head>
@@ -19,10 +19,81 @@
   <header class="site"><a class="brand" href="./">A2 Prep</a><nav><a href="./">All exercises</a></nav></header>
   <p class="kicker">Grammar</p>
   <h1>Modal verbs</h1>
-  <div class="card instructions"><p>Each set has 10 sentences. Follow the instructions above the sentences, then press <b>Check answers</b>.</p></div>
-  <div id="exercise"></div>
+  <div class="tabs page-tabs" role="tablist" aria-label="Page sections">
+    <button type="button" role="tab" id="tab-ex" aria-controls="panel-ex" aria-selected="true">Exercises</button>
+    <button type="button" role="tab" id="tab-guide" aria-controls="panel-guide" aria-selected="false" tabindex="-1">Grammar guide</button>
+  </div>
+  <div id="panel-ex" role="tabpanel" aria-labelledby="tab-ex">
+    <div class="card instructions"><p>Each set has 10 sentences. Follow the instructions above the sentences, then press <b>Check answers</b>.</p></div>
+    <div id="exercise"></div>
+  </div>
+  <div id="panel-guide" class="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
+    <p class="guide-intro">Modal verbs like <b>can</b>, <b>must</b> and <b>should</b> add meaning to another verb: ability, permission, obligation or advice. They’re easy to use because they never change: no <span class="nw">-s</span>, no <i>to</i> after them, and no <i>do</i> in questions.</p>
+
+    <section class="card guide-sec">
+    <h2>The rules for every modal</h2>
+    <ul class="ex">
+    <li>She <b>can swim</b>. <span class="note">Not: She cans swim / She can to swim.</span></li>
+    <li><b>Should</b> I <b>call</b> her? <span class="note">Not: Do I should call her?</span></li>
+    <li>You <b>mustn’t touch</b> that.</li>
+    </ul>
+    <p class="tip"><b>Careful:</b> <i>have to</i> is different: it works like a normal verb. <i>She <b>has to</b> work. <b>Do</b> you <b>have to</b> go? I <b>didn’t have to</b> pay.</i></p>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>can and could</h2>
+    <p>Use <i>can</i> for ability now and <i>could</i> for ability in the past. Both are also used to ask for permission or for help. <i>Could</i> sounds more polite.</p>
+    <p class="ex-label">The basics</p>
+    <ul class="ex">
+    <li>I <b>can</b> speak three languages, but I <b>can’t</b> drive.</li>
+    <li>When I was five, I <b>could</b> read. I <b>couldn’t</b> swim.</li>
+    <li><b>Can</b> I open the window?</li>
+    <li><b>Could</b> you help me, please?</li>
+    </ul>
+    <p class="ex-label">You might also see</p>
+    <ul class="ex">
+    <li>I <b>can’t find</b> my keys anywhere.</li>
+    <li><b>Could</b> you tell me where the station is?</li>
+    <li>We <b>could</b> go to the cinema tonight.<span class="note">A suggestion.</span></li>
+    </ul>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>must, have to, mustn’t, don’t have to</h2>
+    <div class="table-wrap"><table class="form-table">
+    <tr><td class="nw"><b>must</b><br><b>have to</b></td><td>it’s necessary. <i>I have to wear a uniform at work.</i></td></tr>
+    <tr><td class="nw"><b>mustn’t</b></td><td>it’s not allowed: don’t do it! <i>You mustn’t smoke here.</i></td></tr>
+    <tr><td class="nw"><b>don’t have to</b></td><td>it isn’t necessary, but you can if you want. <i>You don’t have to bring food.</i></td></tr>
+    </table></div>
+    <p><i>Must</i> and <i>have to</i> are very similar. <i>Must</i> is common on signs and for things the speaker feels are important; <i>have to</i> is common for rules and routines. For the past, use <i>had to</i>.</p>
+    <p class="ex-label">The basics</p>
+    <ul class="ex">
+    <li>You <b>must</b> be quiet in the library.</li>
+    <li>She <b>has to</b> get up at five every day.</li>
+    <li>It’s Sunday, so I <b>don’t have to</b> work.</li>
+    </ul>
+    <p class="ex-label">You might also see</p>
+    <ul class="ex">
+    <li>The bus didn’t come, so I <b>had to</b> walk.</li>
+    <li><b>Do</b> you <b>have to</b> work on Saturdays?</li>
+    <li>I <b>must</b> call my mum. It’s her birthday.</li>
+    </ul>
+    <p class="tip"><b>Careful:</b> <i>mustn’t</i> and <i>don’t have to</i> are very different. <i>You mustn’t swim here</i> = it’s dangerous or not allowed. <i>You don’t have to swim</i> = it’s your choice.</p>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>should and shouldn’t</h2>
+    <p>Use <i>should</i> to give advice or say what you think is a good idea.</p>
+    <ul class="ex">
+    <li>You <b>should</b> see a doctor.</li>
+    <li>You <b>shouldn’t</b> eat so much sugar.</li>
+    <li>What <b>should</b> I wear to the party?</li>
+    <li>I think you <b>should</b> say sorry.</li>
+    </ul>
+    </section>
+  </div>
 </div>
 <script src="data/g6.js?v=1"></script>
-<script src="../quiz.js?v=7"></script>
+<script src="../quiz.js?v=8"></script>
 </body>
 </html>

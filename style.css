@@ -545,6 +545,7 @@ html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *
   border-radius: var(--r-sm) var(--r-sm) 0 0;
 }
 .blank.filled { background: var(--primary-soft); border-bottom-color: var(--primary); }
+.q.sent .blank { white-space: normal; max-width: 100%; }
 .blank.ok, .blank.bad { border-width: 0 0 2px; border-style: solid; }
 .chips { display: flex; flex-wrap: wrap; gap: var(--s2); margin: var(--s2) 0 0 40px; }
 .chips label {
@@ -577,12 +578,65 @@ html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *
 .q.short > .prompt { margin-bottom: var(--s3); }
 .q.short .explain { margin-left: 0; }
 
+/* ================= A2 / B1: grammar guide tab (quiz.js wires the tabs) ================= */
+.page-tabs { margin: var(--s4) 0 0; }
+.page-tabs + [role="tabpanel"] > .instructions { margin-top: var(--s4); }
+.guide { padding-top: var(--s4); }
+.guide-intro { font-size: 17px; margin: 0 0 var(--s4); max-width: 65ch; }
+.guide-sec h2 { font-size: 20px; margin: 0 0 var(--s3); }
+.guide-sec h3 { font-size: 16px; margin: var(--s5) 0 var(--s2); }
+.guide-sec p { max-width: 68ch; }
+.guide .ex-label {
+  margin: var(--s4) 0 var(--s1);
+  font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
+}
+.guide ul.ex { list-style: none; margin: 0 0 var(--s3); padding: 0; }
+.guide ul.ex li { position: relative; padding: 5px 0 5px 20px; font-family: var(--serif); font-size: 17px; line-height: 1.5; }
+.guide ul.ex li::before { content: ""; position: absolute; left: 3px; top: 16px; width: 6px; height: 6px; border-radius: 50%; background: var(--border-strong); }
+.guide ul.ex b, .guide .form-table b, .guide .eg b { color: var(--primary); font-weight: 650; }
+.guide ul.ex .note { display: block; margin-top: 2px; font-family: var(--sans); font-size: 14px; line-height: 1.45; color: var(--muted); }
+.guide .eg { font-family: var(--serif); font-size: 17px; }
+.guide .muted { color: var(--muted); font-size: 14px; }
+.guide .tip {
+  margin: var(--s4) 0 0; padding: var(--s3) var(--s4);
+  background: var(--surface-2); border-radius: var(--r-md); font-size: 15px; max-width: none;
+}
+.table-wrap { overflow-x: auto; margin: var(--s3) 0; -webkit-overflow-scrolling: touch; }
+.form-table { border-collapse: collapse; width: 100%; font-size: 15px; line-height: 1.45; }
+.form-table th, .form-table td { text-align: left; vertical-align: top; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--border); }
+.form-table th { font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.form-table tr:last-child td { border-bottom: 0; }
+.form-table .nw, .guide .nw { white-space: nowrap; }
+.form-table td:last-child, .form-table th:last-child { padding-right: 0; }
+@media (max-width: 400px) { .form-table { font-size: 14px; } .form-table th, .form-table td { padding-right: 8px; } }
+/* diagrams: inline SVG, coloured with the theme tokens */
+.diagram { margin: var(--s4) 0; }
+.diagram svg { display: block; width: 100%; max-width: 440px; height: auto; margin: 0 auto; overflow: visible; }
+.diagram figcaption { margin: var(--s2) auto 0; max-width: 440px; font-size: 14px; color: var(--muted); text-align: center; }
+.dg-axis { stroke: var(--border-strong); stroke-width: 2; fill: none; }
+.dg-head { fill: var(--border-strong); }
+.dg-now { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 4 4; fill: none; }
+.dg-acc { stroke: var(--primary); stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.dg-acc-fill { fill: var(--primary); }
+.dg-band { fill: var(--primary-soft); stroke: var(--primary); stroke-width: 1.5; }
+.dg-band2 { fill: var(--warn-soft); stroke: var(--warn); stroke-width: 1.5; }
+.dg-acc2 { stroke: var(--warn); stroke-width: 2.5; fill: none; stroke-linecap: round; }
+.dg-acc2-fill { fill: var(--warn); }
+.dg-box { fill: var(--surface); stroke: var(--border-strong); stroke-width: 1.5; }
+.dg-box-acc { fill: var(--primary-soft); stroke: var(--primary); stroke-width: 1.5; }
+.dg-t { fill: var(--text); font-family: var(--sans); font-size: 14px; font-weight: 500; }
+.dg-tb { fill: var(--text); font-family: var(--sans); font-size: 14px; font-weight: 700; }
+.dg-ta { fill: var(--primary); font-family: var(--sans); font-size: 14px; font-weight: 700; }
+.dg-ta2 { fill: var(--warn); font-family: var(--sans); font-size: 14px; font-weight: 700; }
+.dg-s { fill: var(--muted); font-family: var(--sans); font-size: 12.5px; font-weight: 500; }
+.dg-h { fill: var(--muted); font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .05em; }
+
 /* notes on writing prompts (A2/B1 writing pages) */
 .wnote { font-family: var(--sans); font-size: 14px; font-weight: 650; color: var(--primary); white-space: nowrap; }
 
 /* ================= Print ================= */
 @media print {
-  .bar, header.site nav, .setnav, .set-pager, .backlink, .confetti, .toast { display: none !important; }
+  .page-tabs, .bar, header.site nav, .setnav, .set-pager, .backlink, .confetti, .toast { display: none !important; }
   header.site { position: static; }
   body { background: #fff; }
   .card { border-color: #ccc; }

@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="../style.css?v=6">
+<link rel="stylesheet" href="../style.css?v=7">
 <script src="../theme.js?v=5"></script>
 <script src="../log.js?v=5"></script>
 </head>
@@ -19,10 +19,68 @@
   <header class="site"><a class="brand" href="./">B1 Prep</a><nav><a href="./">All exercises</a></nav></header>
   <p class="kicker">Grammar</p>
   <h1>Narrative tenses</h1>
-  <div class="card instructions"><p>Each set has 10 sentences. Follow the instructions above the sentences, then press <b>Check answers</b>.</p></div>
-  <div id="exercise"></div>
+  <div class="tabs page-tabs" role="tablist" aria-label="Page sections">
+    <button type="button" role="tab" id="tab-ex" aria-controls="panel-ex" aria-selected="true">Exercises</button>
+    <button type="button" role="tab" id="tab-guide" aria-controls="panel-guide" aria-selected="false" tabindex="-1">Grammar guide</button>
+  </div>
+  <div id="panel-ex" role="tabpanel" aria-labelledby="tab-ex">
+    <div class="card instructions"><p>Each set has 10 sentences. Follow the instructions above the sentences, then press <b>Check answers</b>.</p></div>
+    <div id="exercise"></div>
+  </div>
+  <div id="panel-guide" class="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
+    <p class="guide-intro">When we tell a story about the past, we mix tenses to show how events relate to each other in time. The <b>past simple</b> moves the story forward, the <b>past continuous</b> sets the scene, and the <b>past perfect</b> takes us further back.</p>
+
+    <section class="card guide-sec">
+    <h2>The three narrative tenses together</h2>
+    <figure class="diagram"><svg viewBox="0 0 360 112" role="img" aria-label="Timeline: it was raining in the background; first the film started, then we arrived." focusable="false"><line class="dg-axis" x1="12" y1="58" x2="342" y2="58"/><polygon class="dg-head" points="348.0,58.0 339.0,63.0 339.0,53.0"/><line class="dg-now" x1="330" y1="36" x2="330" y2="70"/><text x="330" y="30" class="dg-h" text-anchor="middle">NOW</text><rect class="dg-band" x="24" y="52.0" width="276" height="12" rx="6.0"/><text x="40" y="38" class="dg-ta" text-anchor="start">it was raining (background)</text><path class="dg-acc2" d="M102,50 L118,66 M118,50 L102,66"/><path class="dg-acc" d="M224,50 L240,66 M240,50 L224,66"/><text x="110" y="86" class="dg-ta2" text-anchor="middle">the film had started</text><text x="232" y="86" class="dg-ta" text-anchor="middle">we arrived</text><text x="110" y="104" class="dg-s" text-anchor="middle">1st</text><text x="232" y="104" class="dg-s" text-anchor="middle">2nd</text></svg><figcaption>It <b>was raining</b>. When we <b>arrived</b>, the film <b>had</b> already <b>started</b>.</figcaption></figure>
+    <div class="table-wrap"><table class="form-table">
+    <tr><th>tense</th><th>form</th><th>job in a story</th></tr>
+    <tr><td>past simple</td><td>arrived, went</td><td>the main events, one after another</td></tr>
+    <tr><td>past continuous</td><td>was / were + <span class="nw">-ing</span></td><td>the background; an action in progress when something else happened</td></tr>
+    <tr><td>past perfect</td><td>had + past participle</td><td>something that happened <b>before</b> another past event</td></tr>
+    </table></div>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>Past perfect: further back in the past</h2>
+    <p>Use the past perfect when you’re already talking about the past and need to go back to an earlier moment. It’s common with <i>when, because, by the time, already, never</i> and <i>before</i>.</p>
+    <p class="ex-label">The basics</p>
+    <ul class="ex">
+    <li>When I got to the station, the train <b>had left</b>.<span class="note">It left first, then I arrived.</span></li>
+    <li>I didn’t recognise him because he <b>had grown</b> a beard.</li>
+    <li>By the time we arrived, everyone <b>had gone</b> home.</li>
+    </ul>
+    <p>Compare: <i>When I got to the station, the train <b>left</b>.</i> Here the train left just as I arrived.</p>
+    <p class="ex-label">You might also see</p>
+    <ul class="ex">
+    <li>It was the first time I <b>had seen</b> the sea.</li>
+    <li>She <b>had</b> never <b>flown</b> before, so she was quite nervous.</li>
+    <li>After he <b>had finished</b> dinner, he went out. / After he <b>finished</b> dinner, he went out.<span class="note">With after and before, the order is already clear, so the past simple is fine too.</span></li>
+    </ul>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>Past continuous: setting the scene</h2>
+    <ul class="ex">
+    <li>It <b>was raining</b> and the streets <b>were</b> empty.</li>
+    <li>I <b>was waiting</b> for the bus when I saw an old friend.</li>
+    <li>While we <b>were having</b> lunch, the lights went out.</li>
+    </ul>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>used to: how things were</h2>
+    <p>Use <i>used to + verb</i> for past habits and states that are no longer true. In negatives and questions, it’s <i>use to</i> (no d), because <i>did</i> already shows the past.</p>
+    <ul class="ex">
+    <li>I <b>used to</b> live in Porto, but now I live in Lisbon.</li>
+    <li>I <b>didn’t use to</b> like olives. Now I love them.</li>
+    <li><b>Did</b> you <b>use to</b> play any sports at school?</li>
+    </ul>
+    <p class="tip"><b>Careful:</b> <i>used to</i> is for things that happened regularly or were true for a long time, not single events. <i>I <b>went</b> to Paris in 2015</i>, not <i>I used to go to Paris in 2015</i>.</p>
+    </section>
+  </div>
 </div>
 <script src="data/g1.js?v=1"></script>
-<script src="../quiz.js?v=7"></script>
+<script src="../quiz.js?v=8"></script>
 </body>
 </html>

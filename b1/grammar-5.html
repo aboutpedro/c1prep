@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="../style.css?v=6">
+<link rel="stylesheet" href="../style.css?v=7">
 <script src="../theme.js?v=5"></script>
 <script src="../log.js?v=5"></script>
 </head>
@@ -19,10 +19,76 @@
   <header class="site"><a class="brand" href="./">B1 Prep</a><nav><a href="./">All exercises</a></nav></header>
   <p class="kicker">Grammar</p>
   <h1>Modal verbs</h1>
-  <div class="card instructions"><p>Each set has 10 sentences. Follow the instructions above the sentences, then press <b>Check answers</b>.</p></div>
-  <div id="exercise"></div>
+  <div class="tabs page-tabs" role="tablist" aria-label="Page sections">
+    <button type="button" role="tab" id="tab-ex" aria-controls="panel-ex" aria-selected="true">Exercises</button>
+    <button type="button" role="tab" id="tab-guide" aria-controls="panel-guide" aria-selected="false" tabindex="-1">Grammar guide</button>
+  </div>
+  <div id="panel-ex" role="tabpanel" aria-labelledby="tab-ex">
+    <div class="card instructions"><p>Each set has 10 sentences. Follow the instructions above the sentences, then press <b>Check answers</b>.</p></div>
+    <div id="exercise"></div>
+  </div>
+  <div id="panel-guide" class="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
+    <p class="guide-intro">Modal verbs let us talk about what’s necessary, what’s a good idea, what’s possible, and how sure we are about something. Like all modals, they’re followed by the base verb, without <i>to</i> (except <i>have to</i> and <i>ought to</i>).</p>
+
+    <section class="card guide-sec">
+    <h2>Obligation and necessity</h2>
+    <div class="table-wrap"><table class="form-table">
+    <tr><td class="nw"><b>must</b></td><td>necessary: the speaker feels it’s important, or it’s a written rule. <i>I must call my mum tonight.</i></td></tr>
+    <tr><td class="nw"><b>have to</b></td><td>necessary: a rule or a situation from outside. <i>I have to wear a tie at work.</i></td></tr>
+    <tr><td class="nw"><b>mustn’t</b></td><td>not allowed. <i>You mustn’t use your phone in the exam.</i></td></tr>
+    <tr><td class="nw"><b>don’t have to</b><br><b>don’t need to</b><br><b>needn’t</b></td><td>not necessary. <i>You don’t have to come if you’re busy.</i></td></tr>
+    </table></div>
+    <p class="ex-label">You might also see</p>
+    <ul class="ex">
+    <li>We <b>had to</b> wait for two hours.<span class="note">Must has no past form, so we use had to.</span></li>
+    <li>You <b>needn’t</b> take your shoes off.</li>
+    <li><b>Will</b> I <b>have to</b> pay extra?</li>
+    </ul>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>Advice: should, ought to, had better</h2>
+    <p><i>Should</i> and <i>ought to</i> mean the same, but <i>should</i> is much more common. <i>Had better</i> (<i>’d better</i>) is stronger: it suggests something bad will happen if you don’t.</p>
+    <ul class="ex">
+    <li>You <b>should</b> get more sleep.</li>
+    <li>You <b>ought to</b> apologise to her.</li>
+    <li>You<b>’d better</b> leave now or you’ll miss the train.</li>
+    <li>We<b>’d better not</b> be late again.<span class="note">The negative is had better not, not hadn’t better.</span></li>
+    </ul>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>Possibility: may, might, could</h2>
+    <p>Use <i>may, might</i> or <i>could</i> when something is possible but you’re not sure. <i>Might</i> is the most common in conversation.</p>
+    <ul class="ex">
+    <li>It <b>might</b> rain later. Take a coat.</li>
+    <li>She <b>may</b> be at work, I’m not sure.</li>
+    <li>Don’t call now. He <b>could</b> be asleep.</li>
+    <li>I <b>might not</b> come to the party.<span class="note">For “possibly not”, use might not or may not. Couldn’t means “impossible”.</span></li>
+    </ul>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>How sure are you? must, might, can’t</h2>
+    <figure class="diagram"><svg viewBox="0 0 360 74" role="img" aria-label="A scale of how sure you are: can&#x27;t (sure it&#x27;s not true), might, may or could (not sure), must (sure it is true)." focusable="false"><line class="dg-axis" x1="20" y1="40" x2="340" y2="40"/><text x="60" y="18" class="dg-h" text-anchor="middle">SURE IT’S NOT</text><circle class="dg-acc-fill" cx="60" cy="40" r="4.5"/><text x="60" y="66" class="dg-ta" text-anchor="middle">can’t</text><text x="180" y="18" class="dg-h" text-anchor="middle">NOT SURE</text><circle class="dg-acc-fill" cx="180" cy="40" r="4.5"/><text x="180" y="66" class="dg-ta" text-anchor="middle">might / may / could</text><text x="300" y="18" class="dg-h" text-anchor="middle">SURE IT IS</text><circle class="dg-acc-fill" cx="300" cy="40" r="4.5"/><text x="300" y="66" class="dg-ta" text-anchor="middle">must</text></svg></figure>
+    <p>When we draw a conclusion from what we know, we use <i>must</i> if we’re sure something is true, <i>can’t</i> if we’re sure it isn’t, and <i>might, may</i> or <i>could</i> if it’s possible.</p>
+    <p class="ex-label">The basics</p>
+    <ul class="ex">
+    <li>The lights are on. She <b>must be</b> at home.</li>
+    <li>Her car isn’t here. She <b>can’t be</b> at home.</li>
+    <li>I’m not sure where she is. She <b>might be</b> at the gym.</li>
+    </ul>
+    <p class="ex-label">You might also see</p>
+    <ul class="ex">
+    <li>You <b>must be</b> joking!</li>
+    <li>Don’t make a noise. The baby <b>might be sleeping</b>.<span class="note">Modal + be + <span class="nw">-ing</span> for something happening now.</span></li>
+    <li>She’s not answering. She <b>must have left</b> already.<span class="note">Modal + have + past participle for conclusions about the past.</span></li>
+    </ul>
+    <p class="tip"><b>Careful:</b> the opposite of <i>must be</i> here is <i>can’t be</i>, not <i>mustn’t be</i>: <i>That <b>can’t</b> be Tom. He’s in Paris.</i></p>
+    </section>
+  </div>
 </div>
 <script src="data/g5.js?v=1"></script>
-<script src="../quiz.js?v=7"></script>
+<script src="../quiz.js?v=8"></script>
 </body>
 </html>

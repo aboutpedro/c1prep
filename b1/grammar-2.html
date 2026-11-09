@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="../style.css?v=6">
+<link rel="stylesheet" href="../style.css?v=7">
 <script src="../theme.js?v=5"></script>
 <script src="../log.js?v=5"></script>
 </head>
@@ -19,10 +19,74 @@
   <header class="site"><a class="brand" href="./">B1 Prep</a><nav><a href="./">All exercises</a></nav></header>
   <p class="kicker">Grammar</p>
   <h1>Present perfect simple and continuous</h1>
-  <div class="card instructions"><p>Each set has 10 sentences. Follow the instructions above the sentences, then press <b>Check answers</b>.</p></div>
-  <div id="exercise"></div>
+  <div class="tabs page-tabs" role="tablist" aria-label="Page sections">
+    <button type="button" role="tab" id="tab-ex" aria-controls="panel-ex" aria-selected="true">Exercises</button>
+    <button type="button" role="tab" id="tab-guide" aria-controls="panel-guide" aria-selected="false" tabindex="-1">Grammar guide</button>
+  </div>
+  <div id="panel-ex" role="tabpanel" aria-labelledby="tab-ex">
+    <div class="card instructions"><p>Each set has 10 sentences. Follow the instructions above the sentences, then press <b>Check answers</b>.</p></div>
+    <div id="exercise"></div>
+  </div>
+  <div id="panel-guide" class="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
+    <p class="guide-intro">Both forms connect the past with now. The <b>present perfect simple</b> (<i>have done</i>) focuses on the result or on how many. The <b>present perfect continuous</b> (<i>have been doing</i>) focuses on the activity and how long it has been going on.</p>
+
+    <section class="card guide-sec">
+    <h2>Form</h2>
+    <div class="table-wrap"><table class="form-table">
+    <tr><th></th><th>simple</th><th>continuous</th></tr>
+    <tr><td>+</td><td>I<b>’ve painted</b></td><td>I<b>’ve been painting</b></td></tr>
+    <tr><td>−</td><td>She <b>hasn’t painted</b></td><td>She <b>hasn’t been painting</b></td></tr>
+    <tr><td>?</td><td><b>Have</b> you <b>painted</b>…?</td><td><b>Have</b> you <b>been painting</b>…?</td></tr>
+    </table></div>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>Activity or result?</h2>
+    <figure class="diagram"><svg viewBox="0 0 360 214" role="img" aria-label="Two timelines. Present perfect continuous: an activity from some time in the past until now. Present perfect simple: finished results you can count." focusable="false"><text x="12" y="16" class="dg-h" text-anchor="start">CONTINUOUS · THE ACTIVITY</text><line class="dg-axis" x1="12" y1="62" x2="342" y2="62"/><polygon class="dg-head" points="348.0,62.0 339.0,67.0 339.0,57.0"/><line class="dg-now" x1="300" y1="40" x2="300" y2="74"/><text x="300" y="34" class="dg-h" text-anchor="middle">NOW</text><rect class="dg-band" x="120" y="55.0" width="180" height="14" rx="7.0"/><text x="180" y="92" class="dg-ta" text-anchor="middle">I’ve been painting all morning.</text><text x="12" y="130" class="dg-h" text-anchor="start">SIMPLE · THE RESULT</text><line class="dg-axis" x1="12" y1="176" x2="342" y2="176"/><polygon class="dg-head" points="348.0,176.0 339.0,180.9 339.0,171.1"/><line class="dg-now" x1="300" y1="154" x2="300" y2="188"/><text x="300" y="148" class="dg-h" text-anchor="middle">NOW</text><path class="dg-acc" d="M164,170 L176,182 M176,170 L164,182"/><path class="dg-acc" d="M244,170 L256,182 M256,170 L244,182"/><text x="170" y="160" class="dg-s" text-anchor="middle">room 1</text><text x="250" y="160" class="dg-s" text-anchor="middle">room 2</text><text x="180" y="206" class="dg-ta" text-anchor="middle">I’ve painted two rooms.</text></svg></figure>
+    <p>Use the continuous for an activity that started in the past and is still going on, or has only just stopped. Use the simple for what has been completed, especially when you say how many or how much.</p>
+    <p class="ex-label">The basics</p>
+    <ul class="ex">
+    <li>I<b>’ve been waiting</b> for twenty minutes.<span class="note">And I’m still waiting.</span></li>
+    <li>You look tired. <b>Have</b> you <b>been running</b>?<span class="note">It’s just stopped, and you can see the result.</span></li>
+    <li>I<b>’ve written</b> three emails this morning.<span class="note">How many: simple.</span></li>
+    </ul>
+    <p class="ex-label">You might also see</p>
+    <ul class="ex">
+    <li>How long <b>have</b> you <b>been learning</b> English? / How many lessons <b>have</b> you <b>had</b>?</li>
+    <li>It<b>’s been raining</b> all day.</li>
+    <li>She<b>’s been working</b> here since she left university.<span class="note">After since, use the past simple for the starting point.</span></li>
+    </ul>
+    <p class="tip"><b>Careful:</b> state verbs like <i>know, be, have</i> (own), <i>like</i> and <i>understand</i> stay in the simple form: <i>I<b>’ve known</b> her for years</i>, not <i>I’ve been knowing her</i>.</p>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>still, yet, already, just, ever, for, since</h2>
+    <div class="table-wrap"><table class="form-table">
+    <tr><th>word</th><th>where it goes</th><th>example</th></tr>
+    <tr><td>still</td><td>before haven’t / hasn’t</td><td>I <b>still</b> haven’t finished.</td></tr>
+    <tr><td>yet</td><td>end of negatives and questions</td><td>Have you finished <b>yet</b>?</td></tr>
+    <tr><td>already · just</td><td>before the past participle</td><td>I’ve <b>already</b> eaten. She’s <b>just</b> left.</td></tr>
+    <tr><td>ever</td><td>questions, and after superlatives</td><td>Have you <b>ever</b> been to Japan?</td></tr>
+    <tr><td>for · since</td><td>for + a period, since + a starting point</td><td><b>for</b> two hours · <b>since</b> 9 o’clock</td></tr>
+    </table></div>
+    <p class="ex-label">You might also see</p>
+    <ul class="ex">
+    <li>It’s the first time I<b>’ve</b> ever <b>done</b> this.</li>
+    <li>I <b>haven’t seen</b> him for ages.</li>
+    </ul>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>Present perfect or past simple?</h2>
+    <p>As soon as you mention a finished time (<i>yesterday, in 2018, last week, two years ago</i>), switch to the past simple.</p>
+    <ul class="ex">
+    <li>I<b>’ve been</b> to Japan twice. I <b>went</b> there in 2018 and 2022.</li>
+    <li>He<b>’s worked</b> here for five years. Before that, he <b>worked</b> in a hotel.</li>
+    </ul>
+    </section>
+  </div>
 </div>
 <script src="data/g2.js?v=1"></script>
-<script src="../quiz.js?v=7"></script>
+<script src="../quiz.js?v=8"></script>
 </body>
 </html>

@@ -76,7 +76,8 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
 - **Level buttons** ("Other levels" on each home page): one secondary-style
   button per other level, with that level's logo, the exam name and a chevron.
   Full width on phones.
-- **Tabs** (writing): underline tabs that scroll sideways on phones.
+- **Tabs** (writing, and Exercises / Grammar guide on A2/B1 grammar pages):
+  underline tabs that scroll sideways on phones. Arrow keys move between tabs.
 - **Callout**: instructions in `--surface-2` with a navy left rule.
 - **Sentence sets** (A2/B1 grammar and vocabulary, `type: "sentences"`): one
   numbered sentence per row with an inline gap. Typed gaps use the normal inline
@@ -87,6 +88,16 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   message in its own box beside its options (stacked on phones). Notices are
   centred with a dark border; messages have a grey left rule and a From/To line.
 
+- **Grammar guide** (A2/B1 grammar pages, second tab): a short intro, then one
+  card per point. Example lists are serif with the target form in navy bold,
+  under small caps labels "The basics" and "You might also see"; an optional
+  grey note line explains an example. Form tables are plain rows with hairline
+  dividers. "Careful" notes use the `--surface-2` box.
+- **Diagrams** (grammar guides): inline SVG on a 360-wide canvas, max 440px on
+  screen, coloured only through theme tokens (`--primary` for the main form,
+  `--warn` for the contrasting one, `--border-strong` for time lines), so they
+  work in light and dark. Timelines run left to right with a dashed NOW marker.
+
 ## Motion
 
 Hover and focus transitions of 120–150ms; a 150ms fade when a set changes.
@@ -95,7 +106,7 @@ under `prefers-reduced-motion`.
 
 ## Imagery and icons
 
-No illustrations or photos. Icons are simple 1.75px-stroke line icons drawn
+No illustrations or photos (the grammar diagrams above are the only drawings). Icons are simple 1.75px-stroke line icons drawn
 inline (chevrons, sun/moon, reset), in `currentColor`.
 
 ## Logo

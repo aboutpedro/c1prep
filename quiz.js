@@ -1,4 +1,4 @@
-/* C1 Prep — shared exercise engine (A2, B1, B2, C1, C2).
+/* C1 Prep — shared exercise engine (A2, B1, B2, C1, C2), plus the grammar-guide tabs on A2/B1 grammar pages.
    A page defines window.SETS (an array of exercise sets) and loads this file.
    The set shown is chosen with the set menu at the top, or with #set-N in the URL. */
 (function () {
@@ -607,4 +607,31 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
+})();
+
+/* A2/B1 grammar pages: the Exercises / Grammar guide tabs under the title. */
+(function () {
+  "use strict";
+  const bar = document.querySelector(".page-tabs");
+  if (!bar) return;
+  const tabs = Array.from(bar.querySelectorAll('[role="tab"]'));
+  function select(tab, focus) {
+    tabs.forEach((t) => {
+      const on = t === tab;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+      const panel = document.getElementById(t.getAttribute("aria-controls"));
+      if (panel) panel.hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach((t, i) => {
+    t.addEventListener("click", () => select(t));
+    t.addEventListener("keydown", (e) => {
+      const d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      select(tabs[(i + d + tabs.length) % tabs.length], true);
+    });
+  });
 })();
