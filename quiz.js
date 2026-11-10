@@ -1,11 +1,13 @@
 /* C1 Prep — shared exercise engine (A2, B1, B2, C1, C2), plus the grammar-guide tabs on A2/B1 grammar pages.
    A page defines window.SETS (an array of exercise sets) and loads this file.
-   The set shown is chosen with the set menu at the top, or with #set-N in the URL. */
+   The set shown is chosen with the set menu at the top, or with #set-N in the URL.
+   Answers are saved as they are typed and finished sets are remembered (progress.js).
+   Exam mode and "My weak spots" build single sets themselves with window.c1Quiz.build(). */
 (function () {
   "use strict";
   const SETS = window.SETS || (window.EX ? [window.EX] : null);
   const host = document.getElementById("exercise");
-  if (!SETS || !host) return;
+  const store = window.c1Store || null;
 
   const LETTERS = "ABCDEFGHIJ";
   const norm = (s) => String(s || "")
@@ -33,46 +35,77 @@
     next: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>',
     reset: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>',
   };
-  const setLabel = (i) => "Set " + (i + 1) + (SETS[i].textTitle ? " · " + SETS[i].textTitle : "");
+  const setLabel = (sets, i) => "Set " + (i + 1) + (sets[i].textTitle ? " · " + sets[i].textTitle : "");
+  const hash = (s) => { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return (h >>> 0).toString(36); };
 
-  /* ---------- set navigation: previous / dropdown / next ---------- */
-  const nav = el("div", { class: "setnav" });
-  const bPrev = el("button", { type: "button", class: "icon-btn", "aria-label": "Previous set", title: "Previous set" }, ICON.prev);
-  const pickWrap = el("div", { class: "select-wrap" });
-  const pick = el("select", { class: "setselect", "aria-label": "Choose a set" });
-  SETS.forEach((s, i) => pick.appendChild(el("option", { value: String(i + 1) }, esc(setLabel(i)))));
-  pickWrap.appendChild(pick);
-  const bNext = el("button", { type: "button", class: "icon-btn", "aria-label": "Next set", title: "Next set" }, ICON.next);
-  const count = el("span", { class: "setcount" }, SETS.length + " sets");
-  nav.append(bPrev, pickWrap, bNext, count);
-  const root = el("div");
-  if (SETS.length > 1) host.appendChild(nav);
-  host.appendChild(root);
+  window.c1Quiz = { build: build };
+  if (SETS && host) startPage();
 
-  function currentIndex() {
-    const m = location.hash.match(/set-(\d+)/);
-    const i = m ? Number(m[1]) - 1 : 0;
-    return i >= 0 && i < SETS.length ? i : 0;
+  /* ---------- an exercise page: set navigation (previous / dropdown / next) and the set itself ---------- */
+  function startPage() {
+    const kick = document.querySelector(".kicker"), h1 = document.querySelector("h1");
+    const label = (kick ? kick.textContent.replace(/^.*·\s*/, "") + " · " : "") + (h1 ? h1.textContent : "");
+    const pageKey = store ? store.key(store.page) : "";
+    if (store) store.setCount(pageKey, SETS.length);
+
+    const nav = el("div", { class: "setnav" });
+    const bPrev = el("button", { type: "button", class: "icon-btn", "aria-label": "Previous set", title: "Previous set" }, ICON.prev);
+    const pickWrap = el("div", { class: "select-wrap" });
+    const pick = el("select", { class: "setselect", "aria-label": "Choose a set" });
+    SETS.forEach((s, i) => pick.appendChild(el("option", { value: String(i + 1) }, esc(setLabel(SETS, i)))));
+    pickWrap.appendChild(pick);
+    const bNext = el("button", { type: "button", class: "icon-btn", "aria-label": "Next set", title: "Next set" }, ICON.next);
+    const count = el("span", { class: "setcount" }, SETS.length + " sets");
+    nav.append(bPrev, pickWrap, bNext, count);
+    const root = el("div");
+    if (SETS.length > 1) host.appendChild(nav);
+    host.appendChild(root);
+
+    /* Finished sets show their last score in the menu. */
+    function paintPicker() {
+      if (!store) return;
+      const res = store.results(pageKey).s;
+      let done = 0;
+      SETS.forEach((s, i) => {
+        const r = res[i];
+        if (r) done++;
+        pick.options[i].textContent = setLabel(SETS, i) + (r ? "  ·  " + r[0] + "/" + r[1] + (r[0] === r[1] ? " ✓" : "") : "");
+      });
+      count.textContent = SETS.length + " sets" + (done ? " · " + done + " done" : "");
+    }
+
+    function currentIndex() {
+      const m = location.hash.match(/set-(\d+)/);
+      const i = m ? Number(m[1]) - 1 : 0;
+      return i >= 0 && i < SETS.length ? i : 0;
+    }
+    function go(n) { if (n >= 1 && n <= SETS.length) location.hash = "set-" + n; }
+    pick.addEventListener("change", () => go(Number(pick.value)));
+    bPrev.addEventListener("click", () => go(currentIndex()));
+    bNext.addEventListener("click", () => go(currentIndex() + 2));
+    window.addEventListener("hashchange", render);
+    paintPicker();
+    render();
+
+    function render() {
+      const idx = currentIndex();
+      pick.value = String(idx + 1);
+      bPrev.disabled = idx === 0;
+      bNext.disabled = idx === SETS.length - 1;
+      root.innerHTML = "";
+      root.classList.remove("set-enter"); void root.offsetWidth; root.classList.add("set-enter");
+      build(SETS[idx], root, idx, { sets: SETS, pageKey: pageKey, label: label, onRecord: paintPicker });
+    }
   }
-  function go(n) { if (n >= 1 && n <= SETS.length) location.hash = "set-" + n; }
-  pick.addEventListener("change", () => go(Number(pick.value)));
-  bPrev.addEventListener("click", () => go(currentIndex()));
-  bNext.addEventListener("click", () => go(currentIndex() + 2));
-  window.addEventListener("hashchange", render);
-  render();
 
-  function render() {
-    const idx = currentIndex();
-    pick.value = String(idx + 1);
-    bPrev.disabled = idx === 0;
-    bNext.disabled = idx === SETS.length - 1;
-    root.innerHTML = "";
-    root.classList.remove("set-enter"); void root.offsetWidth; root.classList.add("set-enter");
-    build(SETS[idx], root, idx);
-  }
-
-  /* ---------- one set ---------- */
-  function build(EX, mount, setIndex) {
+  /* ---------- one set ----------
+     opt.sets      all the sets on the page (for the previous / next links)
+     opt.pageKey   where answers and results are saved; without it nothing is saved for the set
+     opt.embedded  no action bar: the caller marks the set itself with the returned controller (exam mode)
+     opt.onNew     the "Start again" button becomes "New set" and calls this (weak spots practice)
+     Returns a controller: { items, count, max, answered(), mark(), reveal(), reset(), snapshot(), restore(v), sig() }. */
+  function build(EX, mount, setIndex, opt) {
+    opt = opt || {};
     const root = el("div", { class: "set-view" });
     mount.appendChild(root);
     const startedAt = Date.now();
@@ -91,8 +124,8 @@
       const side = el("div", { class: "pane-side" });
       s.append(main, side);
       root.appendChild(s);
-      const w = host.closest(".wrap");
-      if (w) w.classList.add("wide");
+      const w = mount.closest(".wrap");
+      if (w && !opt.embedded) w.classList.add("wide");
       return { main, side };
     }
     const qRange = (first, n) => "Questions " + first + "–" + (first + n - 1);
@@ -179,11 +212,8 @@
       root.appendChild(makeNotesBox());
     }
 
-    /* Part 4 */
-    function buildKWT() {
-      const card = el("div", { class: "card" });
-      EX.items.forEach((it, idx) => {
-        const n = (EX.startAt || 25) + idx;
+    /* Part 4: one key word transformation. `after` is extra HTML for the end of the explanation. */
+    function kwtItem(it, n, card, after) {
         const q = el("div", { class: "q" });
         q.appendChild(el("p", { class: "prompt" }, '<span class="n">' + n + "</span>" + esc(it.first)));
         q.appendChild(el("div", { class: "kwt-key" }, esc(it.key)));
@@ -196,7 +226,7 @@
         const ex = el("div", { class: "explain" });
         const html = "<b>Answer:</b> " + esc(it.answers[0]) +
           (it.answers.length > 1 ? ' <span class="also">(also accepted: ' + esc(it.answers.slice(1).join("; ")) + ")</span>" : "") +
-          (it.explain ? "<br>" + esc(it.explain) : "");
+          (it.explain ? "<br>" + esc(it.explain) : "") + (after || "");
         q.appendChild(ex);
         card.appendChild(q);
         items.push({
@@ -213,7 +243,11 @@
           reveal() { ex.innerHTML = html; q.classList.add("checked"); },
           reset() { input.value = ""; input.classList.remove("ok", "bad"); q.classList.remove("checked"); },
         });
-      });
+        return q;
+    }
+    function buildKWT() {
+      const card = el("div", { class: "card" });
+      EX.items.forEach((it, idx) => kwtItem(it, (EX.startAt || 25) + idx, card));
       root.appendChild(card);
     }
 
@@ -375,18 +409,7 @@
 
     /* A2/B1 grammar and vocabulary: one sentence per item, with a typed gap (answers) or a choice (options + answer).
        Mark the gap with ___ in `s`. An optional word bank (`bank`) is shown above the sentences. */
-    function buildSentences() {
-      if (EX.bank) {
-        const bank = el("div", { class: "card bank" });
-        bank.appendChild(el("p", { class: "bank-label" }, esc(EX.bankLabel || "Word bank")));
-        const list = el("div", { class: "bank-words" });
-        EX.bank.forEach((w) => list.appendChild(el("span", null, esc(w))));
-        bank.appendChild(list);
-        root.appendChild(bank);
-      }
-      const card = el("div", { class: "card sentences" });
-      EX.items.forEach((it, idx) => {
-        const n = (EX.startAt || 1) + idx;
+    function sentItem(it, n, card, shuffle, after) {
         const q = el("div", { class: "q sent" });
         const prompt = el("p", { class: "prompt" });
         prompt.appendChild(el("span", { class: "n" }, String(n)));
@@ -405,6 +428,7 @@
           if (it.width) input.style.width = it.width + "ch";
           wrap.appendChild(input);
         }
+        if (it.stem) wrap.appendChild(el("span", { class: "stem" }, " (" + esc(it.stem) + ")"));
         line.appendChild(wrap);
         line.appendChild(document.createTextNode(parts[1]));
         prompt.appendChild(line);
@@ -412,10 +436,10 @@
         let labels = [];
         if (choice) {
           const chips = el("div", { class: "chips", role: "radiogroup", "aria-label": "Options for " + n });
-          // shuffle: true on a set mixes the order of the options (the same order every time).
+          // shuffle: true on a set mixes the order of the options (the same order every time); a number is used as the seed.
           const order = it.options.map((o, k) => k);
-          if (EX.shuffle) {
-            let seed = (setIndex + 1) * 7919 + n * 104729;
+          if (shuffle) {
+            let seed = (typeof shuffle === "number" ? shuffle : (setIndex + 1) * 7919) + n * 104729;
             const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
             for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
           }
@@ -436,7 +460,7 @@
         const ex = el("div", { class: "explain" });
         const html = "<b>Answer:</b> " + esc(correct) +
           (!choice && it.answers.length > 1 ? ' <span class="also">(also accepted: ' + esc(it.answers.slice(1).join("; ")) + ")</span>" : "") +
-          (it.explain ? "<br>" + esc(it.explain) : "");
+          (it.explain ? "<br>" + esc(it.explain) : "") + (after || "");
         q.appendChild(ex);
         card.appendChild(q);
         const given = () => {
@@ -473,6 +497,31 @@
             q.classList.remove("checked");
           },
         });
+        return q;
+    }
+    function buildSentences() {
+      if (EX.bank) {
+        const bank = el("div", { class: "card bank" });
+        bank.appendChild(el("p", { class: "bank-label" }, esc(EX.bankLabel || "Word bank")));
+        const list = el("div", { class: "bank-words" });
+        EX.bank.forEach((w) => list.appendChild(el("span", null, esc(w))));
+        bank.appendChild(list);
+        root.appendChild(bank);
+      }
+      const card = el("div", { class: "card sentences" });
+      EX.items.forEach((it, idx) => sentItem(it, (EX.startAt || 1) + idx, card, EX.shuffle));
+      root.appendChild(card);
+    }
+
+    /* Weak spots practice: single questions taken from different sets. Each item is a key word transformation
+       (kind: "kwt") or a sentence with one gap, with a `task` line above it, `source` HTML added to its
+       explanation, and `ref` saying which question it is ({pageKey, set, i}). Options are always mixed. */
+    function buildMixed() {
+      const card = el("div", { class: "card sentences mixed" });
+      EX.items.forEach((it, idx) => {
+        const q = it.kind === "kwt" ? kwtItem(it, idx + 1, card, it.source) : sentItem(it, idx + 1, card, it.seed || 1, it.source);
+        if (it.task) q.insertBefore(el("p", { class: "task-kind" }, esc(it.task)), q.firstChild);
+        items[items.length - 1].ref = it.ref;
       });
       root.appendChild(card);
     }
@@ -529,21 +578,55 @@
       "mc-cloze": buildCloze, "open-cloze": buildCloze, "word-form": buildCloze,
       "kwt": buildKWT, "mc-reading": buildMCReading,
       "matching": buildMatching, "gapped": buildGapped,
-      "sentences": buildSentences, "mc-texts": buildShortTexts,
+      "sentences": buildSentences, "mc-texts": buildShortTexts, "mixed": buildMixed,
     })[EX.type]();
 
     /* Previous / next set links at the end of the set. */
-    if (SETS.length > 1) {
+    if (opt.sets && opt.sets.length > 1) {
       const pager = el("nav", { class: "set-pager", "aria-label": "More sets" });
       const link = (i, cls, dir) => {
-        const a = el("a", { href: "#set-" + (i + 1), class: cls }, '<span class="dir">' + dir + '</span><span class="t">' + esc(setLabel(i)) + "</span>");
+        const a = el("a", { href: "#set-" + (i + 1), class: cls }, '<span class="dir">' + dir + '</span><span class="t">' + esc(setLabel(opt.sets, i)) + "</span>");
         a.addEventListener("click", () => window.scrollTo(0, 0));
         return a;
       };
       if (setIndex > 0) pager.appendChild(link(setIndex - 1, "prev", "← Previous"));
-      if (setIndex < SETS.length - 1) pager.appendChild(link(setIndex + 1, "next", "Next →"));
+      if (setIndex < opt.sets.length - 1) pager.appendChild(link(setIndex + 1, "next", "Next →"));
       root.appendChild(pager);
     }
+
+    const pts = EX.pointsEach || 1;
+    const answered = () => items.filter((it) => it.info().given !== "").length;
+    const controls = () => Array.from(root.querySelectorAll("input, select"));
+    const ctrl = {
+      root: root, items: items, count: items.length, max: items.length * pts,
+      answered: answered,
+      /* Identifies the answer key, so saved results can tell when a set has been rewritten. */
+      sig() { return hash(items.map((it) => it.info().correct).join("|")); },
+      /* Marks every question and shows the answers and explanations. */
+      mark() {
+        let right = 0;
+        const mistakes = [], per = [];
+        items.forEach((it, i) => {
+          const ok = it.check(), inf = it.info();
+          if (ok) right++; else mistakes.push(inf);
+          per.push({ n: inf.n, i: i, ok: ok, ref: it.ref });
+        });
+        drawNotes();
+        return { right: right, total: items.length, score: right * pts, max: items.length * pts, mistakes: mistakes, per: per };
+      },
+      reveal() { items.forEach((it) => it.reveal()); drawNotes(); },
+      reset() { items.forEach((it) => it.reset()); if (notesBox) notesBox.hidden = true; },
+      /* The answers as typed or chosen, to save and put back later. */
+      snapshot() { return controls().map((c) => (c.type === "radio" ? (c.checked ? 1 : 0) : c.value)); },
+      restore(v) {
+        const cs = controls();
+        if (!Array.isArray(v) || v.length !== cs.length) return false;
+        cs.forEach((c, i) => { if (c.type === "radio") c.checked = !!v[i]; else c.value = v[i]; });
+        cs.forEach((c) => { if (c.type === "radio" && c.checked) c.dispatchEvent(new Event("change", { bubbles: true })); });
+        return true;
+      }
+    };
+    if (opt.embedded) return ctrl;
 
     /* Action bar: progress, then the score. */
     const bar = el("div", { class: "bar" });
@@ -552,60 +635,105 @@
     const progress = el("span", { class: "progress" });
     const score = el("span", { class: "score", "aria-live": "polite" });
     status.append(meter, progress, score);
-    const bReset = el("button", { type: "button", class: "secondary reset", "aria-label": "Start again", title: "Start again" }, ICON.reset + '<span class="label">Start again</span>');
+    const resetLabel = opt.onNew ? "New set" : "Start again";
+    const bReset = el("button", { type: "button", class: "secondary reset", "aria-label": resetLabel, title: resetLabel }, ICON.reset + '<span class="label">' + resetLabel + "</span>");
     const bShow = el("button", { type: "button", class: "secondary" }, "Show answers");
     const bCheck = el("button", { type: "button" }, "Check answers");
     bar.append(status, bReset, bShow, bCheck);
     root.appendChild(bar);
 
+    const pageKey = opt.pageKey || "";
+    let isChecked = false;   // the set is showing its marks
+    let counted = false;     // this attempt is already in the saved results
+    let peeked = false;      // "Show answers" was used before checking, so the attempt doesn't count
+    let restoring = false;
+
     function updateProgress() {
-      const done = items.filter((it) => it.info().given !== "").length;
+      const done = answered();
       progress.textContent = done + " of " + items.length + " answered";
       meter.firstChild.style.width = (items.length ? (100 * done) / items.length : 0) + "%";
       progress.hidden = meter.hidden = !!score.textContent;
     }
-    root.addEventListener("input", updateProgress);
-    root.addEventListener("change", updateProgress);
-    updateProgress();
+    function saveDraft() {
+      if (!store || !pageKey || restoring) return;
+      const a = answered();
+      if (!a && !isChecked) { store.dropDraft(pageKey, setIndex); return; }
+      store.saveDraft(pageKey, setIndex, {
+        v: ctrl.snapshot(), c: isChecked ? 1 : 0, a: a, of: items.length,
+        l: opt.label || "", s: opt.sets ? setLabel(opt.sets, setIndex) : ""
+      });
+    }
+    root.addEventListener("input", () => { updateProgress(); saveDraft(); });
+    root.addEventListener("change", () => { updateProgress(); saveDraft(); });
 
-    const pts = EX.pointsEach || 1;
+    function showScore(r, quiet) {
+      score.textContent = "Score: " + r.score + " / " + r.max;
+      progress.hidden = meter.hidden = true;
+      score.classList.remove("bump", "perfect");
+      if (!quiet) { void score.offsetWidth; score.classList.add("bump"); }
+      if (r.right === r.total) { score.classList.add("perfect"); if (!quiet && window.c1Confetti) window.c1Confetti(); }
+    }
+    const logSig = (r) => r.right + "|" + JSON.stringify(r.mistakes.map((m) => m.given));
+
     bCheck.addEventListener("click", () => {
       if (window.c1RequireName && !window.c1RequireName(() => bCheck.click())) return;
-      let right = 0;
-      const mistakes = [];
-      items.forEach((it) => { if (it.check()) right++; else mistakes.push(it.info()); });
-      drawNotes();
-      score.textContent = "Score: " + right * pts + " / " + items.length * pts;
-      progress.hidden = meter.hidden = true;
-      score.classList.remove("bump", "perfect"); void score.offsetWidth; score.classList.add("bump");
-      if (right === items.length) { score.classList.add("perfect"); if (window.c1Confetti) window.c1Confetti(); }
-      const sig = right + "|" + JSON.stringify(mistakes.map((m) => m.given));
+      const r = ctrl.mark();
+      showScore(r, false);
+      isChecked = true;
+      if (store && !peeked && !counted) {
+        counted = true;
+        if (pageKey) {
+          store.record(pageKey, setIndex, ctrl.sig(), r.score, r.max, r.per);
+          store.setLast({ page: pageKey.split("/")[1], set: setIndex, n: opt.sets ? opt.sets.length : 1, l: opt.label || "" });
+          if (opt.onRecord) opt.onRecord();
+        } else {
+          store.recordItems(r.per.filter((p) => p.ref).map((p) => ({ pageKey: p.ref.pageKey, set: p.ref.set, i: p.ref.i, ok: p.ok })));
+        }
+      }
+      saveDraft();
+      const sig = logSig(r);
       if (window.c1Log && sig !== lastSig) {
         lastSig = sig;
-        const key = "c1-attempt:" + location.pathname + ":" + setIndex;
+        const key = "c1-attempt:" + location.pathname + ":" + (opt.logPart || "") + setIndex;
         let attempt = 1;
         try { attempt = (+sessionStorage.getItem(key) || 0) + 1; sessionStorage.setItem(key, attempt); } catch (e) {}
         const h1 = document.querySelector("h1");
         const level = document.documentElement.getAttribute("data-level");
         window.c1Log({
-          part: (level ? level + " · " : "") + (document.querySelector(".kicker") ? document.querySelector(".kicker").textContent.replace(/^.*·\s*/, "") + " · " : "") + (h1 ? h1.textContent : ""),
+          part: (level ? level + " · " : "") + (opt.logPart || ((document.querySelector(".kicker") ? document.querySelector(".kicker").textContent.replace(/^.*·\s*/, "") + " · " : "") + (h1 ? h1.textContent : ""))),
           set: setIndex + 1,
-          title: EX.textTitle || "",
-          score: right * pts, max: items.length * pts,
-          mistakes, attempt, revealed,
+          title: opt.logTitle || EX.textTitle || "",
+          score: r.score, max: r.max,
+          mistakes: r.mistakes, attempt, revealed,
           seconds: Math.round((Date.now() - startedAt) / 1000)
         });
       }
     });
-    bShow.addEventListener("click", () => { revealed = true; items.forEach((it) => it.reveal()); drawNotes(); if (notesBox) notesBox.scrollIntoView({ behavior: "smooth", block: "start" }); });
+    bShow.addEventListener("click", () => { revealed = true; if (!isChecked) peeked = true; ctrl.reveal(); if (notesBox) notesBox.scrollIntoView({ behavior: "smooth", block: "start" }); });
     bReset.addEventListener("click", () => {
-      items.forEach((it) => it.reset());
-      if (notesBox) notesBox.hidden = true;
+      if (opt.onNew) { opt.onNew(); return; }
+      ctrl.reset();
       score.textContent = "";
       score.classList.remove("bump", "perfect");
+      isChecked = counted = peeked = false;
+      if (store && pageKey) store.dropDraft(pageKey, setIndex);
       updateProgress();
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
+
+    /* Put back the answers saved for this set; if it had been checked, show the marks again. */
+    if (store && pageKey) {
+      const d = store.getDraft(pageKey, setIndex);
+      if (d) {
+        restoring = true;
+        const ok = ctrl.restore(d.v);
+        if (ok && d.c) { const r = ctrl.mark(); showScore(r, true); isChecked = counted = true; lastSig = logSig(r); }
+        restoring = false;
+        if (!ok) store.dropDraft(pageKey, setIndex);
+      }
+    }
+    updateProgress();
+    return ctrl;
   }
 })();
 

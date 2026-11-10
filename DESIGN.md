@@ -98,6 +98,26 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   `--warn` for the contrasting one, `--border-strong` for time lines), so they
   work in light and dark. Timelines run left to right with a dashed NOW marker.
 
+- **Saved progress** (home pages, `progress.js`): a tile whose part has finished
+  sets gets a line under its description with a small meter, "5 of 18 sets
+  done" and the share of right answers; it turns green with a ✓ when every set
+  is done. A "Continue" row in `--primary-soft` under the name banner links to
+  the set left unfinished (or the next set, or a paper in progress). In the set
+  menu, finished sets show their last score, with a ✓ for full marks.
+- **Skill rows** (My weak spots, `weak.js`): name, one line saying what the
+  skill covers, then a meter with the percentage and "7 of 11 right"; on the
+  right a small secondary button ("Practise") or, for reading skills, a link to
+  the next set. Up to three focus areas sit in a card at the top with the main
+  button. Practice sets use the sentence-set layout with a grey instruction
+  line above each question; the explanation ends with the skill and a link to
+  the set the question comes from.
+- **Exam mode** (`exam.js`): underline tabs, one per part, each with a count
+  under it (answered/questions, then marks after the end). The action bar shows
+  the clock (red in the last five minutes), the answered count, Previous part
+  (an icon on phones), Next part and Finish. Finishing asks first, in a dialog
+  with the look of the name dialog. The result is a card above the tabs: total,
+  a marks-and-time table by part, and a rough Cambridge English Scale guide.
+
 ## Motion
 
 Hover and focus transitions of 120–150ms; a 150ms fade when a set changes.
