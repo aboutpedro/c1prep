@@ -1,7 +1,9 @@
 /* C1 Prep: exam mode (exam.html at B2, C1 and C2).
    A full Reading and Use of English paper: one set from each part (sets not done yet come first), against the clock.
-   Answers are saved as they are entered; the clock keeps running if the page is closed. At the end every part is
-   marked, the sets count as done, and one summary line goes to the teacher's sheet. Needs progress.js and quiz.js. */
+   Answers are saved as they are entered; the clock keeps running if the page is closed. At the end the paper is
+   handed in: the marks go to the teacher's sheet only. The student sees no score, no marking and no answers here,
+   and nothing about the paper is kept in the browser except its date, its length and which sets it used.
+   Needs progress.js and quiz.js. */
 (function () {
   "use strict";
   const store = window.c1Store, quiz = window.c1Quiz, host = document.getElementById("exercise");
@@ -66,12 +68,6 @@
     }
     return table[table.length - 1][1];
   }
-  function levelOf(score) {
-    if (score == null) return "below " + cfg.cefr[cfg.cefr.length - 1][1];
-    for (const c of cfg.cefr) if (score >= c[0]) return c[1] + " level";
-    return "below " + cfg.cefr[cfg.cefr.length - 1][1];
-  }
-
   /* ---------- loading ---------- */
   const DATA = {}, INSTR = {};
   function loadData(p) {
@@ -98,15 +94,17 @@
     await texts;
     PARTS.forEach((p) => store.setCount(store.key(p.page), DATA[p.page].length));
   }
-  /* A set not done yet if there is one; otherwise the one done longest ago. */
-  function pickSet(p) {
+  /* A set neither done on its own page nor used in an earlier paper, if there is one; then one not used in a paper;
+     then any. */
+  function pickSet(p, k) {
     const n = DATA[p.page].length, done = store.results(store.key(p.page)).s;
-    const fresh = [];
-    for (let i = 0; i < n; i++) if (!done[i]) fresh.push(i);
-    if (fresh.length) return fresh[Math.floor(Math.random() * fresh.length)];
-    let best = 0;
-    for (let i = 1; i < n; i++) if (done[i][4] < done[best][4]) best = i;
-    return best;
+    const used = {};
+    store.examLog().forEach((x) => { if (x.sets) used[x.sets[k]] = true; });
+    const all = [];
+    for (let i = 0; i < n; i++) all.push(i);
+    const tiers = [all.filter((i) => !done[i] && !used[i]), all.filter((i) => !used[i]), all.filter((i) => !done[i]), all];
+    const pool = tiers.find((t) => t.length);
+    return pool[Math.floor(Math.random() * pool.length)];
   }
 
   /* ---------- small dialog (same look as the name dialog) ---------- */
@@ -140,7 +138,7 @@
     card.appendChild(el("ul", { class: "plain-list" },
       "<li>You can move between the parts in any order and change your answers until you finish.</li>" +
       "<li>Your answers are saved as you go. If you close the page, the clock keeps running, as it would in the exam room.</li>" +
-      "<li>Nothing is marked until you press <b>Finish</b> or the time runs out. Then you see your score for each part, with the answers and explanations.</li>"));
+      "<li>When you press <b>Finish</b>, or the time runs out, your paper goes to your teacher. You won't see a score here: your teacher will go through the paper with you.</li>"));
     const go = el("button", { type: "button", class: "exam-start" }, "Start the paper");
     go.addEventListener("click", () => {
       if (window.c1RequireName && !window.c1RequireName(() => go.click())) return;
@@ -156,10 +154,9 @@
       const c = el("div", { class: "card" });
       const rows = past.slice().reverse().map((x) => {
         const d = new Date(x.at);
-        return "<tr><td>" + esc(d.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })) + '</td><td class="num"><b>' + x.score + " / " + x.max +
-          '</b></td><td class="num">' + Math.round((100 * x.score) / x.max) + '%</td><td class="num">' + (x.timeUp ? "time ran out" : mins(x.secs)) + "</td></tr>";
+        return "<tr><td>" + esc(d.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })) + '</td><td class="num">' + (x.timeUp ? "time ran out" : mins(x.secs)) + "</td><td>Handed in</td></tr>";
       }).join("");
-      c.appendChild(el("div", { class: "table-wrap" }, '<table class="form-table result-table"><thead><tr><th>Date</th><th class="num">Marks</th><th class="num">Right</th><th class="num">Time</th></tr></thead><tbody>' + rows + "</tbody></table>"));
+      c.appendChild(el("div", { class: "table-wrap" }, '<table class="form-table result-table"><thead><tr><th>Date</th><th class="num">Time</th><th></th></tr></thead><tbody>' + rows + "</tbody></table>"));
       host.appendChild(c);
     }
   }
@@ -179,7 +176,7 @@
     const tabs = el("div", { class: "tabs exam-tabs", role: "tablist", "aria-label": "Parts of the paper" });
     host.append(top, tabs);
     const ctrls = [], panels = [], tabBtns = [];
-    let finished = false, results = null;
+    let finished = false;
 
     PARTS.forEach((p, i) => {
       const t = el("button", { type: "button", role: "tab", id: "xt" + i, "aria-controls": "xp" + i }, "<span>Part " + p.no + '</span><span class="cnt"></span>');
@@ -206,8 +203,7 @@
     const timer = el("span", { class: "timer", role: "timer", "aria-label": "Time left" });
     const meter = el("span", { class: "meter", "aria-hidden": "true" }, "<i></i>");
     const progress = el("span", { class: "progress" });
-    const total = el("span", { class: "score" });
-    status.append(timer, meter, progress, total);
+    status.append(timer, meter, progress);
     const bPrev = el("button", { type: "button", class: "secondary reset", "aria-label": "Previous part", title: "Previous part" }, ICON.prev + '<span class="label">Previous part</span>');
     const bNext = el("button", { type: "button", class: "secondary" }, "Next part");
     const bEnd = el("button", { type: "button" }, "Finish");
@@ -218,7 +214,7 @@
       let done = 0;
       ctrls.forEach((c, i) => {
         const a = c.answered(); done += a;
-        tabBtns[i].querySelector(".cnt").textContent = results ? results[i].score + "/" + results[i].max : a + "/" + c.count;
+        tabBtns[i].querySelector(".cnt").textContent = a + "/" + c.count;
       });
       progress.textContent = done + " of " + QUESTIONS + " answered";
       meter.firstChild.style.width = (100 * done) / QUESTIONS + "%";
@@ -258,66 +254,59 @@
     window.addEventListener("pagehide", save);
 
     bEnd.addEventListener("click", () => {
-      if (finished) { store.dropExam(); intro(); window.scrollTo(0, 0); return; }
+      if (finished) return;
       const done = counts(), missing = QUESTIONS - done;
       dialog("Finish the paper?", (missing ? "You have " + missing + " question" + (missing === 1 ? "" : "s") + " without an answer. " : "You have answered every question. ") +
-        "Once the paper is marked you can't change your answers.",
-        [{ label: "Keep working" }, { label: "Finish and mark", primary: true, go: () => finish(false) }]);
+        "Once you hand the paper in, you can't change your answers.",
+        [{ label: "Keep working" }, { label: "Hand in the paper", primary: true, go: () => finish(false) }]);
     });
 
+    /* Hand the paper in. It is marked out of sight (in a copy that is never put on the page) and the marks go to the
+       teacher's sheet. Nothing here shows the student a score, a mark or a right answer. */
     function finish(timeUp) {
       if (finished) return;
       tick0();
       finished = true;
       clearInterval(ticker);
       const secs = Math.min(cfg.minutes * 60, Math.round((Date.now() - state.start) / 1000));
-      results = ctrls.map((c) => c.mark());
+      const snaps = ctrls.map((c) => c.snapshot());
       const sum = { R: [0, 0], U: [0, 0] };
       let score = 0, max = 0, mistakes = [];
-      PARTS.forEach((p, i) => {
-        const r = results[i];
-        store.record(store.key(p.page), state.sets[i], ctrls[i].sig(), r.score, r.max, r.per);
+      const marks = PARTS.map((p, i) => {
+        const hidden = document.createElement("div");
+        const c = quiz.build(DATA[p.page][state.sets[i]], hidden, state.sets[i], { embedded: true });
+        c.restore(snaps[i]);
+        const r = c.mark();
         score += r.score; max += r.max;
         sum[p.paper][0] += r.score; sum[p.paper][1] += r.max;
         mistakes = mistakes.concat(r.mistakes);
+        return "P" + p.no + " " + r.score + "/" + r.max;
       });
-      const no = store.addExam({ at: Date.now(), score: score, max: max, secs: secs, timeUp: timeUp ? 1 : 0, sets: state.sets, parts: results.map((r) => [r.score, r.max]) });
+      const no = store.addExam({ at: Date.now(), secs: secs, timeUp: timeUp ? 1 : 0, sets: state.sets });
       store.dropExam();
 
+      const sR = scaleScore(sum.R[0], cfg.scale.R), sU = scaleScore(sum.U[0], cfg.scale.U), low = cfg.scale.R[0][1];
+      const est = (x) => (x == null ? "below " + low : "about " + x);
       if (window.c1Log) {
         window.c1Log({
           part: (store.levelName ? store.levelName + " · " : "") + "Exam mode · Reading and Use of English",
-          set: no, title: "Sets " + state.sets.map((s) => s + 1).join(", ") + (timeUp ? " (time ran out)" : ""),
+          set: no,
+          title: marks.join(", ") + " · Reading " + sum.R[0] + "/" + sum.R[1] + " (" + est(sR) + "), Use of English " + sum.U[0] + "/" + sum.U[1] + " (" + est(sU) + ")" +
+            " · sets " + state.sets.map((s) => s + 1).join(", ") + (timeUp ? " · time ran out" : ""),
           score: score, max: max, mistakes: mistakes, attempt: 1, revealed: false, seconds: secs
         });
       }
 
-      /* result */
-      const sR = scaleScore(sum.R[0], cfg.scale.R), sU = scaleScore(sum.U[0], cfg.scale.U);
-      const low = cfg.scale.R[0][1];
-      const rParts = PARTS.filter((p) => p.paper === "R").map((p) => p.no), uParts = PARTS.filter((p) => p.paper === "U").map((p) => p.no);
+      wrap.classList.remove("wide");
+      host.oninput = host.onchange = null;
+      host.innerHTML = "";
       const card = el("div", { class: "card exam-result" });
-      card.appendChild(el("h2", null, timeUp ? "Time's up: your result" : "Your result"));
-      card.appendChild(el("p", { class: "big" }, score + " / " + max + "<span>" + Math.round((100 * score) / max) + "% of the marks · " + (timeUp ? "all " + cfg.minutes + " minutes used" : "finished in " + mins(secs)) + "</span>"));
-      card.appendChild(el("div", { class: "table-wrap" },
-        '<table class="form-table result-table"><thead><tr><th>Part</th><th>Task</th><th class="num">Marks</th><th class="num">Time</th></tr></thead><tbody>' +
-        PARTS.map((p, i) => '<tr><td class="nw">Part ' + p.no + "</td><td>" + esc(p.name) + '</td><td class="num"><b>' + results[i].score + " / " + results[i].max +
-          '</b></td><td class="num">' + (state.spent[i] < 30 ? "under 1 min" : mins(state.spent[i])) + "</td></tr>").join("") + "</tbody></table>"));
-      card.appendChild(el("h3", null, "A rough guide to your level"));
-      const line = (name, parts, s, x) => '<tr><td><b>' + name + '</b><br><span class="muted">Parts ' + parts.join(", ") + '</span></td><td class="num">' + s[0] + " / " + s[1] +
-        '</td><td class="num">' + (x == null ? "below " + low : "about " + x) + "</td><td>" + levelOf(x) + "</td></tr>";
-      card.appendChild(el("div", { class: "table-wrap" },
-        '<table class="form-table result-table"><thead><tr><th>Paper</th><th class="num">Marks</th><th class="num">Cambridge English Scale</th><th>Level</th></tr></thead><tbody>' +
-        line("Reading", rParts, sum.R, sR) + line("Use of English", uParts, sum.U, sU) + "</tbody></table>"));
-      card.appendChild(el("p", { class: "small-note" },
-        "Cambridge gives Reading and Use of English separate scores. These figures use Cambridge's own conversion for official practice tests. This paper is not an official test, and here a Part 4 answer gets 2 marks or none, so treat them as a rough guide only. Go through each part below to see the answers and explanations."));
-      top.appendChild(card);
-
-      timer.hidden = meter.hidden = progress.hidden = true;
-      total.textContent = "Total: " + score + " / " + max;
-      bEnd.textContent = "New paper";
-      counts();
-      show(0, false);
+      card.appendChild(el("h2", null, timeUp ? "Time's up: your paper is handed in" : "Your paper is handed in"));
+      card.appendChild(el("p", null, "Your answers have gone to your teacher, who will go through the paper with you. " +
+        (timeUp ? "You used all " + cfg.minutes + " minutes." : "You finished in " + mins(secs) + ".")));
+      const home = el("a", { class: "btn-link", href: "./" }, "Back to all exercises");
+      card.appendChild(home);
+      host.appendChild(card);
       window.scrollTo(0, 0);
     }
     /* Add the time since the last tick to the part on screen. */

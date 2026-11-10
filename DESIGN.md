@@ -115,8 +115,9 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   under it (answered/questions, then marks after the end). The action bar shows
   the clock (red in the last five minutes), the answered count, Previous part
   (an icon on phones), Next part and Finish. Finishing asks first, in a dialog
-  with the look of the name dialog. The result is a card above the tabs: total,
-  a marks-and-time table by part, and a rough Cambridge English Scale guide.
+  with the look of the name dialog. The student never sees marks: the page is
+  replaced by a card saying the paper is handed in, with the time used and a
+  link back to the exercises. Marks go to the teacher's sheet only.
 
 ## Motion
 
