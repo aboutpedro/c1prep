@@ -62,6 +62,11 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
 
 - **Header**: sticky, 60px, full-width surface with bottom border. Brand (level
   icon + name) on the left; name chip, back link and theme toggle on the right.
+- **Header level buttons** (theme.js, every page): the five level logos (A2, B1,
+  B2, C1, C2) right after the brand; the current level has a border. With a mouse,
+  hovering or keyboard focus slides the level's name out (A2 Elementary, B1
+  Intermediate, B2 First, C1 Advanced, C2 Proficiency) and tilts the logo. Under
+  700px they move to their own row as 44px targets 12px apart, with no animation.
 - **Buttons**: primary (navy fill), secondary (surface, strong border, navy
   text), quiet (text only). 44px tall, 10px radius. Hover darkens; focus shows a
   2px navy outline with 2px offset; disabled is 45% opacity.

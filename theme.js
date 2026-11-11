@@ -1,4 +1,4 @@
-/* C1 Prep: light/dark toggle, header (logo + back link) and confetti. Loaded in <head>. */
+/* C1 Prep: light/dark toggle, header (logo, level buttons, back link) and confetti. Loaded in <head>. */
 (function () {
   "use strict";
   const KEY = "c1prep-theme";
@@ -16,6 +16,16 @@
 
   const SUN = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
   const MOON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+  // Every level of the site. theme.js lives at the site root, so the level folders are found from its own address.
+  const SITE = new URL(".", document.currentScript ? document.currentScript.src : location.href);
+  const LEVELS = [
+    ["a2/", "A2 Elementary"],
+    ["b1/", "B1 Intermediate"],
+    ["b2/", "B2 First"],
+    ["", "C1 Advanced"],
+    ["c2/", "C2 Proficiency"],
+  ];
+
   const BACK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>';
 
   function makeToggle() {
@@ -77,6 +87,33 @@
       img.alt = "";
       img.width = 28; img.height = 28;
       brand.prepend(img);
+    }
+
+    // Level buttons next to the brand: the level's logo; on a computer the name slides out on hover.
+    if (brand && !header.querySelector(".level-switch")) {
+      const here = location.href.split(/[?#]/)[0].replace(/[^/]*$/, "");
+      const sw = document.createElement("div");
+      sw.className = "level-switch";
+      sw.setAttribute("role", "navigation");
+      sw.setAttribute("aria-label", "Levels");
+      LEVELS.forEach(([dir, name]) => {
+        const home = new URL(dir, SITE).href;
+        const a = document.createElement("a");
+        a.className = "lvl";
+        a.href = home;
+        a.title = name;
+        if (home === here) a.setAttribute("aria-current", "page");
+        const img = document.createElement("img");
+        img.src = new URL(dir + "favicon.svg?v=2", SITE).href;
+        img.alt = "";
+        img.width = 28; img.height = 28;
+        const label = document.createElement("span");
+        label.className = "lvl-name";
+        label.textContent = name;
+        a.append(img, label);
+        sw.appendChild(a);
+      });
+      brand.after(sw);
     }
 
     let nav = header.querySelector("nav");

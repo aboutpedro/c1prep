@@ -96,6 +96,39 @@ header.site nav { display: flex; align-items: center; gap: var(--s2); min-width:
 /* The "All exercises" link becomes the back link above the page title (theme.js). */
 header.site nav > a { display: none; }
 
+/* Level buttons next to the brand (theme.js): the level's logo; on a computer the name slides out on hover or keyboard focus. */
+.level-switch { display: flex; align-items: center; gap: 6px; margin-right: auto; min-width: 0; }
+.level-switch .lvl {
+  display: inline-flex; align-items: center; gap: 0; height: 38px; padding: 4px;
+  border: 1px solid transparent; border-radius: var(--r-md);
+  color: var(--text); text-decoration: none; white-space: nowrap;
+  transition: gap .25s var(--ease), padding .25s var(--ease), background-color .2s var(--ease), border-color .2s var(--ease);
+}
+.level-switch .lvl img { width: 28px; height: 28px; border-radius: 7px; display: block; flex: none; transition: transform .25s var(--ease); }
+.level-switch .lvl-name {
+  display: inline-block; max-width: 0; overflow: hidden; opacity: 0; transform: translateX(-4px);
+  font-size: 14px; font-weight: 600;
+  transition: max-width .3s var(--ease), opacity .2s var(--ease), transform .3s var(--ease);
+}
+.level-switch .lvl[aria-current="page"] { border-color: var(--border-strong); background: var(--surface); }
+@media (min-width: 700px) {
+  .level-switch .lvl:focus-visible { gap: 8px; padding-right: 12px; background: var(--surface); border-color: var(--border-strong); }
+  .level-switch .lvl:focus-visible .lvl-name { max-width: 160px; opacity: 1; transform: none; }
+}
+@media (min-width: 700px) and (hover: hover) and (pointer: fine) {
+  .level-switch .lvl:hover { gap: 8px; padding-right: 12px; background: var(--surface); border-color: var(--border-strong); }
+  .level-switch .lvl:hover .lvl-name { max-width: 160px; opacity: 1; transform: none; }
+  .level-switch .lvl:hover img { transform: scale(1.08) rotate(-4deg); }
+}
+/* Phones and small tablets: the level buttons get their own row, with room between them for fingers. */
+@media (max-width: 699px) {
+  header.site { flex-wrap: wrap; row-gap: 0; padding-top: var(--s2); }
+  header.site nav { flex: 1 1 0; justify-content: flex-end; }
+  .level-switch { order: 3; flex: 1 0 100%; gap: var(--s3); margin: 0; padding: 2px 0 var(--s3); }
+  .level-switch .lvl { width: 44px; height: 44px; padding: 0; justify-content: center; }
+  .level-switch .lvl img { width: 32px; height: 32px; border-radius: 8px; }
+}
+
 .backlink {
   display: inline-flex; align-items: center; gap: 6px; margin: 0 0 var(--s4);
   font-size: 14px; font-weight: 500; color: var(--muted); text-decoration: none;
@@ -715,7 +748,7 @@ a.btn-link:hover { background: var(--surface-2); }
 
 /* ================= Print ================= */
 @media print {
-  .page-tabs, .bar, header.site nav, .setnav, .set-pager, .backlink, .confetti, .toast { display: none !important; }
+  .page-tabs, .bar, header.site nav, .level-switch, .setnav, .set-pager, .backlink, .confetti, .toast { display: none !important; }
   header.site { position: static; }
   body { background: #fff; }
   .card { border-color: #ccc; }
