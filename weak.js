@@ -68,7 +68,7 @@
 
   /* ---------- the pages of each level ----------
      scheme: questions are tagged one by one in tags.js; skill: every question on the page tests the same thing;
-     own: the page is its own skill (A2/B1/B2 grammar and vocabulary). file: its data file, if single questions can be practised. */
+     own: the page is its own skill (A2/B1/B2/C1 grammar and vocabulary). file: its data file, if single questions can be practised. */
   const TASK = {
     mc: "Choose the word that fits the gap.",
     open: "Write one word in the gap.",
@@ -81,7 +81,7 @@
     { page: "use-of-english-3", file: "uoe3", label: "Part 3 · Word formation", scheme: "wf" },
     { page: "use-of-english-4", file: "uoe4", label: "Part 4 · Key word transformations", scheme: "kwt", task: kwtTask(words) }
   ];
-  /* group: list the pages under their own heading, named by their label (B2, where the exam parts already have
+  /* group: list the pages under their own heading, named by their label (B2 and C1, where the exam parts already have
      skills with the same names, such as Linking words). */
   const own = (kind, g, names, group) => names.map((name, i) => {
     const label = g + " " + (i + 1) + " · " + name;
@@ -93,7 +93,11 @@
       { page: "reading-6", label: "Part 6 · Cross-text matching", skill: "r-cross" },
       { page: "reading-7", label: "Part 7 · Gapped text", skill: "r-gapped" },
       { page: "reading-8", label: "Part 8 · Multiple matching", skill: "r-match" }
-    ]),
+    ]).concat(own("grammar", "Grammar", ["Tenses and aspect", "Future forms and the future in the past", "Conditionals",
+      "Wishes and unreal past", "The passive and causative", "Reporting verbs", "Modal verbs", "Inversion and emphasis",
+      "Verb patterns", "Relative and participle clauses", "Comparison and degree", "Linking words"], "Grammar topics"))
+      .concat(own("vocabulary", "Vocabulary", ["Phrasal verbs", "Collocations", "Dependent prepositions", "Word formation",
+      "Fixed phrases and idioms", "Easily confused words"], "Vocabulary topics")),
     b2: uoe("two to five").concat([
       { page: "reading-5", label: "Part 5 · Multiple choice", scheme: "read" },
       { page: "reading-6", label: "Part 6 · Gapped text", skill: "r-gapped" },
