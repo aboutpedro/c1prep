@@ -1,0 +1,147 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Family and describing people",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["aunt", "beard", "cousin", "curly", "friendly", "grandparents", "husband", "nephew", "shy", "slim", "tall", "uncle"],
+  items: [
+    { s: "My mum's sister is my ___.", answers: ["aunt"],
+      explain: "Your mother's or father's sister is your aunt. (Their brother is your uncle.)" },
+    { s: "My aunt's son is my ___.", answers: ["cousin"],
+      explain: "The child of your aunt or uncle is your cousin." },
+    { s: "My mum's parents are my ___. They live on a farm.", answers: ["grandparents"],
+      explain: "Your parents' parents are your grandparents." },
+    { s: "Anna's ___ is called Tom. They got married last year.", answers: ["husband"],
+      explain: "A married man is a woman's husband. (She is his wife.)" },
+    { s: "My brother's son is my ___.", answers: ["nephew"],
+      explain: "Your brother's or sister's son is your nephew. (A daughter is your niece.)" },
+    { s: "She has long, ___ hair, like her mother.", answers: ["curly"],
+      explain: "Curly hair isn't straight; it goes round and round." },
+    { s: "My dad has a ___. He doesn't shave.", answers: ["beard"],
+      explain: "A beard is hair on a man's chin and face." },
+    { s: "Leo is very ___. He's almost two metres!", answers: ["tall"],
+      explain: "Tall = high, for people. The opposite is short." },
+    { s: "Our new neighbours are very ___. They always say hello.", answers: ["friendly"],
+      explain: "Friendly people are nice and kind to others." },
+    { s: "Mia is quite ___. She doesn't talk much when she meets new people.", answers: ["shy"],
+      explain: "Shy people feel nervous with people they don't know." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Clothes and colours",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["belt", "boots", "gloves", "hat", "jeans", "purple", "pyjamas", "scarf", "sunglasses", "swimsuit", "tie", "trainers"],
+  items: [
+    { s: "It's cold. Wear a ___ around your neck.", answers: ["scarf"],
+      explain: "A scarf is a long piece of material that you wear around your neck." },
+    { s: "My hands are freezing. Where are my ___?", answers: ["gloves"],
+      explain: "You wear gloves on your hands." },
+    { s: "He wears a suit and ___ to work.", answers: ["tie"],
+      explain: "A tie is a long, thin piece of material worn around the neck with a shirt." },
+    { s: "I'm going running. Have you seen my ___?", answers: ["trainers"],
+      explain: "Trainers are sports shoes." },
+    { s: "I can't see the screen with my ___ on. Can I take them off?", answers: ["sunglasses"],
+      explain: "Sunglasses are dark glasses for when it's sunny." },
+    { s: "Take your ___. We're going to the beach.", answers: ["swimsuit"],
+      explain: "You wear a swimsuit to go swimming." },
+    { s: "My ___ are too big. I need a belt.", answers: ["jeans"],
+      explain: "Jeans are trousers made of blue cotton (denim)." },
+    { s: "It's snowing! Put on your ___ so your feet stay dry.", answers: ["boots"],
+      explain: "Boots are strong shoes that cover your feet and ankles." },
+    { s: "I always wear my ___ in bed.", answers: ["pyjamas"],
+      explain: "Pyjamas are clothes you wear to sleep in." },
+    { s: "Red and blue make ___.", answers: ["purple"],
+      explain: "Mix red and blue paint and you get purple." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Hobbies, sport and free time",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["beat", "camping", "chess", "collect", "guitar", "gym", "lose", "match", "painting", "photos", "score", "team"],
+  items: [
+    { s: "We went ___ in the mountains and slept in a tent.", answers: ["camping"],
+      explain: "Go camping = stay outside in a tent." },
+    { s: "My grandad taught me to play ___. He always wins with his queen.", answers: ["chess"],
+      explain: "Chess is a board game with a king, a queen and other pieces." },
+    { s: "Do you ___ anything, like stamps or coins?", answers: ["collect"],
+      explain: "Collect = get lots of things of the same kind as a hobby." },
+    { s: "I go to the ___ three times a week to lift weights.", answers: ["gym"],
+      explain: "A gym is a place where you do exercise with machines and weights." },
+    { s: "Did you watch the ___ last night? It was 2–1.", answers: ["match"],
+      explain: "A match is a sports game between two teams or players." },
+    { s: "Which ___ do you support? Real Madrid or Barcelona?", answers: ["team"],
+      explain: "A team is a group of players who play together." },
+    { s: "She loves ___. Her pictures of the sea are beautiful.", answers: ["painting"],
+      explain: "Painting = making pictures with paint." },
+    { s: "Can you play the ___? – Yes, I've been in a band for years.", answers: ["guitar"],
+      explain: "We say play the guitar, play the piano (play + the + instrument)." },
+    { s: "I take lots of ___ with my phone when I travel.", answers: ["photos"],
+      explain: "We say take photos." },
+    { s: "What's the ___? – 3–1 to us!", answers: ["score"],
+      explain: "The score is the number of points or goals each team has." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences",
+  textTitle: "School and work",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["boss", "colleagues", "degree", "exam", "homework", "interview", "lesson", "office", "salary", "subject", "timetable", "uniform"],
+  items: [
+    { s: "Maths is my favourite school ___. I always get good marks.", answers: ["subject", "lesson"],
+      explain: "A subject is something you study at school, like maths, history or art." },
+    { s: "I have a job ___ tomorrow. I'm so nervous!", answers: ["interview"],
+      explain: "A job interview is a meeting where they ask you questions to decide if you get the job." },
+    { s: "We have to wear a ___ at our school: a blue shirt and grey trousers.", answers: ["uniform"],
+      explain: "A uniform is special clothes that everyone in a school or job wears." },
+    { s: "My ___ is very kind. She lets me leave early on Fridays.", answers: ["boss"],
+      explain: "Your boss is the person who is in charge of you at work." },
+    { s: "I get on well with my ___. We often have lunch together.", answers: ["colleagues"],
+      explain: "Colleagues are the people you work with." },
+    { s: "Did you do your ___? – Yes, all the maths exercises.", answers: ["homework"],
+      explain: "Homework is work a teacher gives you to do at home." },
+    { s: "She has a ___ in engineering from a big university.", answers: ["degree"],
+      explain: "You get a degree when you finish a university course." },
+    { s: "I work in an ___ on the 10th floor of a big building.", answers: ["office"],
+      explain: "An office is a room or building where people work at desks." },
+    { s: "The job is interesting, but the ___ is quite low.", answers: ["salary"],
+      explain: "A salary is the money you get every month for your job." },
+    { s: "We had a ___ about volcanoes today. The teacher showed us a video.", answers: ["lesson"],
+      explain: "A lesson is a period of time when you learn something with a teacher." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Weather and the natural world",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["cloudy", "desert", "foggy", "forecast", "lightning", "rainbow", "river", "storm", "sunny", "temperature", "wild", "wind"],
+  items: [
+    { s: "The weather ___ says it will rain tomorrow.", answers: ["forecast"],
+      explain: "The weather forecast tells you what the weather will be like." },
+    { s: "It's very ___ this morning. Drive slowly – you can't see far.", answers: ["foggy"],
+      explain: "When it's foggy, there's a kind of thick cloud near the ground and it's hard to see." },
+    { s: "Look! There's a ___ in the sky – red, orange, yellow, green…", answers: ["rainbow"],
+      explain: "A rainbow is a curve of colours in the sky, when the sun shines after rain." },
+    { s: "We saw ___ during the storm. It hit a tree.", answers: ["lightning"],
+      explain: "Lightning is the bright flash of light in a storm. (The noise is thunder.)" },
+    { s: "There was a big ___ last night. The wind broke our fence.", answers: ["storm"],
+      explain: "A storm is very bad weather with strong wind and rain." },
+    { s: "We swam in the ___ behind the village. The water was very cold.", answers: ["river"],
+      explain: "A river is a long line of water that flows to the sea." },
+    { s: "It's ___ today. Let's go to the beach!", answers: ["sunny"],
+      explain: "Sunny = with a lot of sun." },
+    { s: "The ___ today is 35°C!", answers: ["temperature"],
+      explain: "The temperature is how hot or cold it is." },
+    { s: "There's a strong ___ today. Hold on to your hat!", answers: ["wind"],
+      explain: "Wind is moving air." },
+    { s: "You can see ___ animals like zebras and lions in this park.", answers: ["wild"],
+      explain: "Wild animals live in nature, not with people." }
+  ]
+}
+];

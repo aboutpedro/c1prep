@@ -1,0 +1,147 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Town and directions",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["bakery", "bridge", "corner", "library", "map", "museum", "petrol station", "pharmacy", "post office", "straight on", "traffic lights", "turn"],
+  items: [
+    { s: "Go ___ for 200 metres. Don't turn left or right.", answers: ["straight on"],
+      explain: "Go straight on = continue in the same direction." },
+    { s: "Then ___ left at the end of the street.", answers: ["turn"],
+      explain: "Turn left / turn right = go to the left / right." },
+    { s: "Stop! The ___ are red.", answers: ["traffic lights"],
+      explain: "Traffic lights are red, yellow (amber) and green lights that control cars." },
+    { s: "The café is on the ___, where the two streets meet.", answers: ["corner"],
+      explain: "The corner is the place where two streets meet." },
+    { s: "I need to buy some stamps at the ___.", answers: ["post office"],
+      explain: "You buy stamps and send letters and parcels at the post office." },
+    { s: "You can borrow books from the ___ for free.", answers: ["library"],
+      explain: "A library lends books. (A bookshop sells them.)" },
+    { s: "We walked across the ___ over the river.", answers: ["bridge"],
+      explain: "A bridge goes over a river or a road." },
+    { s: "I bought some medicine at the ___.", answers: ["pharmacy"],
+      explain: "A pharmacy (or chemist's) sells medicine." },
+    { s: "There's a great ___ of modern art in the city centre.", answers: ["museum"],
+      explain: "A museum is a building where you can see art or old and interesting things." },
+    { s: "We buy our bread at the ___ next to our flat.", answers: ["bakery"],
+      explain: "A bakery makes and sells bread and cakes." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Feelings and opinions",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["angry", "bored", "boring", "delicious", "excited", "frightened", "lonely", "proud", "surprised", "terrible", "tired", "worried"],
+  items: [
+    { s: "I'm so ___ about the trip! We leave tomorrow!", answers: ["excited"],
+      explain: "Excited = very happy because something good is going to happen." },
+    { s: "It's midnight and Leo isn't home yet. His parents are very ___.", answers: ["worried"],
+      explain: "Worried = thinking that something bad might happen." },
+    { s: "There's nothing to do and nothing on TV. I'm really ___.", answers: ["bored"],
+      explain: "Use -ed for how you feel: I'm bored. (The TV is boring.)" },
+    { s: "My dad was ___ because I broke his phone.", answers: ["angry"],
+      explain: "Angry = not happy at all because someone did something bad." },
+    { s: "This soup is ___! Can I have the recipe?", answers: ["delicious"],
+      explain: "Delicious = it tastes very good." },
+    { s: "I'm so ___ of you! You passed all your exams.", answers: ["proud"],
+      explain: "Proud of someone = happy about what they did." },
+    { s: "I was very ___ to see Ana at the party. I thought she was in Paris.", answers: ["surprised"],
+      explain: "Surprised = you didn't expect it." },
+    { s: "I didn't sleep last night, so I'm really ___ today.", answers: ["tired"],
+      explain: "Tired = you need to rest or sleep." },
+    { s: "The weather was ___. It rained every day of our holiday.", answers: ["terrible"],
+      explain: "Terrible = very bad." },
+    { s: "My little sister is ___ of dogs. She cries when she sees one.", answers: ["frightened"],
+      explain: "Frightened of = afraid of." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Technology and communication",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["battery", "charger", "download", "email", "internet", "keyboard", "laptop", "message", "password", "printer", "screen", "website"],
+  items: [
+    { s: "My phone's ___ is at 2%. I need to charge it.", answers: ["battery"],
+      explain: "The battery gives the phone its power." },
+    { s: "Can I borrow your ___? Mine is at home and my phone is almost dead.", answers: ["charger"],
+      explain: "You use a charger to put power back into the battery." },
+    { s: "I can't log in. I've forgotten my ___.", answers: ["password"],
+      explain: "A password is a secret word you need to log in." },
+    { s: "You can ___ the app for free.", answers: ["download"],
+      explain: "Download = copy something from the internet onto your phone or computer." },
+    { s: "I'll send you an ___ with all the details.", answers: ["email"],
+      explain: "An email is a message you send by internet. (Note an, before a vowel sound.)" },
+    { s: "The ___ on my phone is broken. I can't read anything.", answers: ["screen"],
+      explain: "The screen is the glass part you look at." },
+    { s: "I take my ___ to university to write my essays.", answers: ["laptop"],
+      explain: "A laptop is a small computer you can carry." },
+    { s: "Check the museum's ___ for the opening times.", answers: ["website"],
+      explain: "A website is a page or group of pages on the internet." },
+    { s: "Did you get my ___? I texted you an hour ago.", answers: ["message"],
+      explain: "A text message is what you send with your phone." },
+    { s: "The ___ is very slow today. I can't watch any videos.", answers: ["internet"],
+      explain: "The internet connection is slow." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Entertainment and media",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["actor", "audience", "cartoon", "channel", "concert", "documentary", "episode", "festival", "magazine", "news", "stage", "ticket"],
+  items: [
+    { s: "Turn on the ___. I want to know who won the election.", answers: ["news"],
+      explain: "The news tells you what is happening in the world." },
+    { s: "We watched a ___ about real whales in the Atlantic. I learned a lot.", answers: ["documentary"],
+      explain: "A documentary is a film or programme about real facts." },
+    { s: "My favourite ___ is Tom Hanks.", answers: ["actor"],
+      explain: "An actor plays characters in films and plays." },
+    { s: "The ___ clapped and cheered at the end of the play.", answers: ["audience"],
+      explain: "The audience is the people who watch a show." },
+    { s: "What's on the other ___? This programme is boring.", answers: ["channel"],
+      explain: "A TV channel is a station, like BBC One." },
+    { s: "The band's ___ starts at 9 and finishes at 11.", answers: ["concert"],
+      explain: "A concert is a show where musicians play live." },
+    { s: "My little brother watches a ___ every morning. Tom and Jerry is his favourite.", answers: ["cartoon"],
+      explain: "A cartoon is a film made with drawings." },
+    { s: "I watched the last ___ of the series last night. It was so sad!", answers: ["episode"],
+      explain: "An episode is one part of a TV series." },
+    { s: "How much is a ___ for the show?", answers: ["ticket"],
+      explain: "You buy a ticket to go to a show, a match or a film." },
+    { s: "The singer walked onto the ___ and the crowd went crazy.", answers: ["stage"],
+      explain: "The stage is the raised area where people perform." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Time, dates and numbers",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["calendar", "century", "date", "decade", "dozen", "half", "hundred", "midnight", "minute", "quarter", "second", "weekend"],
+  items: [
+    { s: "It's a ___ past three: 3.15.", answers: ["quarter"],
+      explain: "A quarter past three = 3.15. (A quarter to four = 3.45.)" },
+    { s: "The train leaves at ___ past ten: 10.30.", answers: ["half"],
+      explain: "Half past ten = 10.30." },
+    { s: "We went to bed at ___: 12 o'clock at night.", answers: ["midnight"],
+      explain: "Midnight = 12 o'clock at night. (12 o'clock in the day = midday.)" },
+    { s: "What's the ___ today? – It's the 5th of May.", answers: ["date"],
+      explain: "The date is the day and month (and year)." },
+    { s: "Write the dentist appointment on the ___ in the kitchen.", answers: ["calendar"],
+      explain: "A calendar shows the days, weeks and months of the year." },
+    { s: "This church was built in the 15th ___.", answers: ["century"],
+      explain: "A century is 100 years." },
+    { s: "A ___ is ten years.", answers: ["decade"],
+      explain: "A decade = ten years. The 1990s were a decade." },
+    { s: "I'm going camping this ___. I'll be back on Monday.", answers: ["weekend"],
+      explain: "The weekend = Saturday and Sunday." },
+    { s: "Can you buy a ___ eggs? – Twelve? OK.", answers: ["dozen"],
+      explain: "A dozen = twelve." },
+    { s: "There were about two ___ people at the wedding – 200 guests!", answers: ["hundred"],
+      explain: "Two hundred = 200. (No -s: two hundred people.)" }
+  ]
+}
+];

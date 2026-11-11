@@ -1,0 +1,147 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Education",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["assignment", "certificate", "cheat", "deadline", "fail", "fees", "graduate", "lecture", "notes", "revise", "scholarship", "term"],
+  items: [
+    { s: "I need to ___ for my exam on Monday. I've forgotten everything!", answers: ["revise"],
+      explain: "Revise = study again what you've learned, before an exam." },
+    { s: "The ___ for this essay is Friday at 5 p.m. Don't be late.", answers: ["deadline"],
+      explain: "A deadline is the time by which you must finish something." },
+    { s: "She got a ___, so she doesn't have to pay to study in London.", answers: ["scholarship"],
+      explain: "A scholarship is money given to a student to pay for their studies." },
+    { s: "University ___ are very high in some countries.", answers: ["fees"],
+      explain: "Fees = the money you pay to study." },
+    { s: "The ___ on climate change was really interesting. The professor spoke for two hours.", answers: ["lecture"],
+      explain: "A lecture is a talk given to students at university." },
+    { s: "Can I borrow your ___? I missed yesterday's class.", answers: ["notes"],
+      explain: "Notes are what you write down during a class." },
+    { s: "I'll ___ from university next year with a degree in law.", answers: ["graduate"],
+      explain: "Graduate = finish university and get your degree." },
+    { s: "If you don't study, you'll ___ the exam.", answers: ["fail"],
+      explain: "Fail an exam = not pass it." },
+    { s: "You get a ___ when you finish the course. You can show it to employers.", answers: ["certificate"],
+      explain: "A certificate is an official paper that shows you completed a course." },
+    { s: "The autumn ___ starts in September and ends in December.", answers: ["term"],
+      explain: "A term is one of the periods the school or university year is divided into." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences",
+  textTitle: "House and home",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["attic", "balcony", "ceiling", "flatmate", "furnished", "garage", "heating", "landlord", "neighbourhood", "rent", "share", "tap"],
+  items: [
+    { s: "The ___ is €800 a month, including bills.", answers: ["rent"],
+      explain: "Rent is the money you pay every month to live in a flat or house that isn't yours." },
+    { s: "Our ___ fixed the shower quickly. He's a good owner.", answers: ["landlord"],
+      explain: "The landlord is the person who owns the flat you rent." },
+    { s: "The flat is ___, so you don't need to buy a bed or a sofa.", answers: ["furnished"],
+      explain: "Furnished = with furniture in it." },
+    { s: "We have breakfast on the ___ when it's sunny.", answers: ["balcony"],
+      explain: "A balcony is a small area outside an upstairs window or door." },
+    { s: "It's a quiet ___ with lots of parks and good schools.", answers: ["neighbourhood"],
+      explain: "A neighbourhood is an area of a town where people live." },
+    { s: "Turn the ___ on. It's freezing in here!", answers: ["heating"],
+      explain: "Heating keeps a house warm." },
+    { s: "I ___ a bathroom with my brother, so we're always arguing about it.", answers: ["share"],
+      explain: "Share = use something together with someone." },
+    { s: "The ___ is dripping. Can you fix it?", answers: ["tap"],
+      explain: "You turn on the tap to get water in the kitchen or bathroom." },
+    { s: "We keep the car in the ___.", answers: ["garage"],
+      explain: "A garage is a building where you keep a car." },
+    { s: "There's a big crack in the ___ above my bed.", answers: ["ceiling"],
+      explain: "The ceiling is the top 'wall' of a room, above your head." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Food and eating out",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["bill", "book", "dessert", "ingredients", "menu", "raw", "recipe", "spicy", "starter", "takeaway", "tip", "vegetarian"],
+  items: [
+    { s: "Could we have the ___, please? We'd like to pay.", answers: ["bill"],
+      explain: "The bill shows how much you have to pay in a restaurant." },
+    { s: "It's a popular restaurant, so you should ___ a table.", answers: ["book"],
+      explain: "Book a table = ask the restaurant to keep a table for you." },
+    { s: "I'm full, but I always have room for ___!", answers: ["dessert"],
+      explain: "Dessert is the sweet food you eat at the end of a meal." },
+    { s: "What ___ do I need for this cake? – Flour, eggs, butter and sugar.", answers: ["ingredients"],
+      explain: "Ingredients are the different foods you use to make a dish." },
+    { s: "Can I see the ___, please? I'd like to order.", answers: ["menu"],
+      explain: "The menu is the list of food and drinks in a restaurant." },
+    { s: "My grandma gave me her ___ for chocolate cake.", answers: ["recipe"],
+      explain: "A recipe tells you how to cook something." },
+    { s: "Sushi is often made with ___ fish.", answers: ["raw"],
+      explain: "Raw = not cooked." },
+    { s: "This curry is too ___ for me. My mouth is on fire!", answers: ["spicy"],
+      explain: "Spicy food has a hot taste (from chilli, for example)." },
+    { s: "We had soup as a ___, and then fish.", answers: ["starter"],
+      explain: "A starter is the small first part of a meal." },
+    { s: "I'm ___, so I don't eat meat or fish.", answers: ["vegetarian"],
+      explain: "A vegetarian doesn't eat meat or fish." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Shopping and services",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["afford", "bargain", "cash", "delivery", "discount", "exchange", "queue", "receipt", "refund", "sale", "size", "try on"],
+  items: [
+    { s: "Can I ___ these jeans? – Yes, the changing rooms are over there.", answers: ["try on"],
+      explain: "Try on = put on clothes in a shop to see if they fit." },
+    { s: "I can't ___ a new car. They're too expensive.", answers: ["afford"],
+      explain: "Can't afford = don't have enough money for something." },
+    { s: "Only €5 for this jacket? What a ___!", answers: ["bargain"],
+      explain: "A bargain is something you buy for much less than its usual price." },
+    { s: "Students get a 10% ___ at this cinema.", answers: ["discount"],
+      explain: "A discount is a smaller price than normal." },
+    { s: "Do you have this in a bigger ___?", answers: ["size"],
+      explain: "Size = how big clothes or shoes are: small, medium, 38, 40…" },
+    { s: "Keep the ___ in case you need to return it.", answers: ["receipt"],
+      explain: "A receipt is the paper that shows what you bought and how much you paid." },
+    { s: "The shoes were broken, so I took them back and the shop gave me a ___: all my money back.", answers: ["refund"],
+      explain: "A refund = the shop gives you your money back." },
+    { s: "There was a long ___ at the checkout, so I waited for twenty minutes.", answers: ["queue"],
+      explain: "A queue is a line of people waiting." },
+    { s: "Can I pay by card, or only in ___?", answers: ["cash"],
+      explain: "Cash = coins and notes." },
+    { s: "Everything is half price in the ___.", answers: ["sale"],
+      explain: "In a sale, shops sell things for lower prices for a short time." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Clothes and fashion",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["casual", "fashionable", "fit", "loose", "match", "pattern", "second-hand", "sleeves", "smart", "suit", "tight", "wear"],
+  items: [
+    { s: "These jeans are too ___. I can't breathe!", answers: ["tight"],
+      explain: "Tight clothes are too small and press on your body." },
+    { s: "This dress doesn't ___ me. It's too big.", answers: ["fit"],
+      explain: "Fit = be the right size." },
+    { s: "You should wear something ___ for the interview, like a jacket and nice shoes.", answers: ["smart"],
+      explain: "Smart clothes are formal and look good." },
+    { s: "On Fridays, we can wear ___ clothes to the office, like jeans and T-shirts.", answers: ["casual"],
+      explain: "Casual clothes are comfortable and informal." },
+    { s: "That bag doesn't ___ your shoes. They're very different colours.", answers: ["match"],
+      explain: "Match = look good together (often the same colour or style)." },
+    { s: "I buy ___ clothes. They're cheaper and better for the environment.", answers: ["second-hand"],
+      explain: "Second-hand = used before by someone else." },
+    { s: "This T-shirt is very ___. It's three sizes too big!", answers: ["loose"],
+      explain: "Loose clothes are big and not tight." },
+    { s: "I love the ___ on your shirt. Are those little birds?", answers: ["pattern"],
+      explain: "A pattern is a design of lines, shapes or pictures repeated on cloth." },
+    { s: "She always wears the latest styles. She's very ___.", answers: ["fashionable"],
+      explain: "Fashionable = in the style that is popular now." },
+    { s: "He wore a dark ___ and tie to the wedding.", answers: ["suit"],
+      explain: "A suit is a jacket and trousers (or skirt) made of the same material." }
+  ]
+}
+];

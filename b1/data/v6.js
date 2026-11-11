@@ -1,0 +1,147 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Sport and leisure",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["beat", "coach", "competition", "draw", "fans", "hobby", "membership", "opponent", "record", "referee", "stadium", "train"],
+  items: [
+    { s: "The ___ blew his whistle and the game stopped.", answers: ["referee"],
+      explain: "The referee controls a football match and makes sure players follow the rules." },
+    { s: "The match was a ___: 1–1.", answers: ["draw"],
+      explain: "A draw = both teams have the same score at the end." },
+    { s: "Our ___ makes us run for an hour before every practice.", answers: ["coach"],
+      explain: "A coach trains a team or a player." },
+    { s: "The ___ was full: 60,000 people!", answers: ["stadium"],
+      explain: "A stadium is a big sports ground with seats all around it." },
+    { s: "We ___ them 3–0 in the final.", answers: ["beat"],
+      explain: "Beat a team = win against them. (You win a match, but you beat a team.)" },
+    { s: "She won a cooking ___ last year.", answers: ["competition"],
+      explain: "A competition is an event where people try to be the best." },
+    { s: "Thousands of ___ were singing and waving flags.", answers: ["fans"],
+      explain: "Fans are people who love and support a team or a star." },
+    { s: "He broke the world ___ for the 100 metres.", answers: ["record"],
+      explain: "Break a record = do better than anyone has done before." },
+    { s: "I ___ three times a week for the marathon.", answers: ["train"],
+      explain: "Train = practise and do exercise to get ready for a sports event." },
+    { s: "Photography is my favourite ___. I do it every weekend.", answers: ["hobby"],
+      explain: "A hobby is something you do in your free time for fun." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Town and countryside",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["cliff", "cottage", "crowded", "field", "hill", "lake", "nightlife", "pollution", "rural", "suburbs", "traffic jam", "village"],
+  items: [
+    { s: "The city centre is very ___ at the weekend. You can hardly move.", answers: ["crowded"],
+      explain: "Crowded = full of people." },
+    { s: "We were stuck in a ___ for two hours on the motorway.", answers: ["traffic jam"],
+      explain: "A traffic jam is a long line of cars that can't move." },
+    { s: "There's a lot of air ___ in big cities because of all the cars.", answers: ["pollution"],
+      explain: "Pollution = dirty air, water or land." },
+    { s: "We live in the ___, about twenty minutes from the centre by train.", answers: ["suburbs"],
+      explain: "The suburbs are the areas where people live, outside the city centre." },
+    { s: "My grandparents live in a small ___ with only one shop and a church.", answers: ["village"],
+      explain: "A village is a very small town in the countryside." },
+    { s: "There were cows in the ___ next to the farm.", answers: ["field"],
+      explain: "A field is an area of land with grass or crops, often with a fence around it." },
+    { s: "We walked up the ___ to see the view of the valley.", answers: ["hill"],
+      explain: "A hill is high land, smaller than a mountain." },
+    { s: "Life in ___ areas is quieter than in the city.", answers: ["rural"],
+      explain: "Rural = in the countryside. (The opposite is urban.)" },
+    { s: "The ___ is great here: lots of bars, clubs and live music.", answers: ["nightlife"],
+      explain: "Nightlife = places to go out in the evening." },
+    { s: "They rented a little ___ in the countryside, with a garden full of flowers.", answers: ["cottage"],
+      explain: "A cottage is a small, old house in the countryside." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Nature and weather",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["breeze", "climate", "degrees", "drought", "environment", "flood", "freezing", "heatwave", "humid", "recycle", "shower", "thunderstorm"],
+  items: [
+    { s: "It's ___ outside. Put on a warm coat and a hat.", answers: ["freezing"],
+      explain: "Freezing = very, very cold." },
+    { s: "It was 40 ___ yesterday!", answers: ["degrees"],
+      explain: "We measure temperature in degrees: 40 degrees (40°C)." },
+    { s: "There was a ___ last night, with lots of thunder and lightning.", answers: ["thunderstorm"],
+      explain: "A thunderstorm is a storm with thunder and lightning." },
+    { s: "After a week of rain, there was a ___ and many houses were under water.", answers: ["flood"],
+      explain: "A flood = a lot of water covers land that is usually dry." },
+    { s: "It's very ___ here. The air feels wet and heavy.", answers: ["humid"],
+      explain: "Humid = hot and wet (there's a lot of water in the air)." },
+    { s: "There may be a short ___ this afternoon, but then it'll be sunny.", answers: ["shower"],
+      explain: "A shower is a short period of rain." },
+    { s: "There's been no rain for months. It's the worst ___ in 50 years.", answers: ["drought"],
+      explain: "A drought is a long time with no rain." },
+    { s: "During the ___, temperatures stayed above 38°C for a week.", answers: ["heatwave"],
+      explain: "A heatwave is a period of very hot weather." },
+    { s: "The ___ in this region is warm and dry all year.", answers: ["climate"],
+      explain: "Climate = the usual weather in a place over a long time." },
+    { s: "We should ___ plastic bottles instead of throwing them away.", answers: ["recycle"],
+      explain: "Recycle = use again, or make into something new." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Feelings and personality",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["ambitious", "confident", "curious", "embarrassed", "generous", "jealous", "moody", "patient", "relieved", "reliable", "selfish", "stressed"],
+  items: [
+    { s: "She wants to run her own company one day. She's very ___.", answers: ["ambitious"],
+      explain: "Ambitious people want to be very successful." },
+    { s: "He always pays for everyone's dinner. He's so ___.", answers: ["generous"],
+      explain: "Generous people like giving things and money to others." },
+    { s: "I was so ___ when I fell over in front of everyone.", answers: ["embarrassed"],
+      explain: "Embarrassed = feeling silly in front of other people." },
+    { s: "You can always count on Ana. She does what she says. She's very ___.", answers: ["reliable"],
+      explain: "Reliable people do what they promise." },
+    { s: "He's ___ of his brother's new car. He wants one too.", answers: ["jealous"],
+      explain: "Jealous = unhappy because someone has something you want." },
+    { s: "I was so ___ when I found my passport. I thought I'd lost it!", answers: ["relieved"],
+      explain: "Relieved = happy because something bad didn't happen." },
+    { s: "Teachers of young children need to be very ___.", answers: ["patient"],
+      explain: "Patient people can wait calmly and don't get angry easily." },
+    { s: "He only thinks about himself. He's so ___.", answers: ["selfish"],
+      explain: "Selfish people only care about themselves." },
+    { s: "She's happy one minute and angry the next. She's very ___.", answers: ["moody"],
+      explain: "Moody people change their mood quickly." },
+    { s: "I've got three exams and a project this week. I'm really ___.", answers: ["stressed"],
+      explain: "Stressed = worried because you have too much to do." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Communication and language",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["accent", "apologise", "argue", "chat", "complain", "explain", "fluent", "mention", "persuade", "shout", "translate", "whisper"],
+  items: [
+    { s: "She speaks ___ Spanish. You'd think she was from Madrid.", answers: ["fluent"],
+      explain: "Fluent = speaking a language easily and well." },
+    { s: "He has a strong Scottish ___.", answers: ["accent"],
+      explain: "An accent is the way people from a place pronounce a language." },
+    { s: "Can you ___ this letter into English for me?", answers: ["translate"],
+      explain: "Translate = change words into another language." },
+    { s: "My parents often ___ about money.", answers: ["argue"],
+      explain: "Argue = disagree angrily with someone." },
+    { s: "We had a quick ___ in the corridor before the meeting.", answers: ["chat"],
+      explain: "A chat is a friendly, informal conversation." },
+    { s: "I tried to ___ him to come, but he said no.", answers: ["persuade"],
+      explain: "Persuade = make someone agree to do something." },
+    { s: "If your food is cold, you should ___ to the waiter.", answers: ["complain"],
+      explain: "Complain = say that you're not happy about something." },
+    { s: "Don't ___ the party to Leo. It's a surprise!", answers: ["mention"],
+      explain: "Mention = talk about something briefly." },
+    { s: "Could you ___ how this machine works?", answers: ["explain"],
+      explain: "Explain = make something clear so someone understands it." },
+    { s: "We had to ___ because the baby was sleeping.", answers: ["whisper"],
+      explain: "Whisper = speak very quietly." }
+  ]
+}
+];

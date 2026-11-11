@@ -64,11 +64,11 @@
     kwt:  { a: "passive", c: "cond", i: "emph", m: "modal", r: "report", k: "compare", f: "fixed", p: "phrasal", v: "vpat", l: "linker" },
     read: { d: "r-detail", o: "r-opinion", i: "r-implied", p: "r-purpose", w: "r-words" }
   };
-  const GROUPS = ["Grammar", "Vocabulary", "Word formation", "Reading"];
+  const GROUPS = ["Grammar", "Vocabulary", "Word formation", "Reading", "Grammar topics", "Vocabulary topics"];
 
   /* ---------- the pages of each level ----------
      scheme: questions are tagged one by one in tags.js; skill: every question on the page tests the same thing;
-     own: the page is its own skill (A2/B1 grammar and vocabulary). file: its data file, if single questions can be practised. */
+     own: the page is its own skill (A2/B1/B2 grammar and vocabulary). file: its data file, if single questions can be practised. */
   const TASK = {
     mc: "Choose the word that fits the gap.",
     open: "Write one word in the gap.",
@@ -81,9 +81,12 @@
     { page: "use-of-english-3", file: "uoe3", label: "Part 3 · Word formation", scheme: "wf" },
     { page: "use-of-english-4", file: "uoe4", label: "Part 4 · Key word transformations", scheme: "kwt", task: kwtTask(words) }
   ];
-  const own = (kind, g, names) => names.map((name, i) => ({
-    page: kind + "-" + (i + 1), file: kind.charAt(0) + (i + 1), label: g + " " + (i + 1) + " · " + name, own: { g: g, name: name }
-  }));
+  /* group: list the pages under their own heading, named by their label (B2, where the exam parts already have
+     skills with the same names, such as Linking words). */
+  const own = (kind, g, names, group) => names.map((name, i) => {
+    const label = g + " " + (i + 1) + " · " + name;
+    return { page: kind + "-" + (i + 1), file: kind.charAt(0) + (i + 1), label: label, own: group ? { g: group, name: label } : { g: g, name: name } };
+  });
   const LEVELS = {
     c1: uoe("three to six").concat([
       { page: "reading-5", label: "Part 5 · Multiple choice", scheme: "read" },
@@ -95,15 +98,23 @@
       { page: "reading-5", label: "Part 5 · Multiple choice", scheme: "read" },
       { page: "reading-6", label: "Part 6 · Gapped text", skill: "r-gapped" },
       { page: "reading-7", label: "Part 7 · Multiple matching", skill: "r-match" }
-    ]),
+    ]).concat(own("grammar", "Grammar", ["Present tenses", "Past tenses, used to and would", "Future forms", "Conditionals",
+      "Wishes and regrets", "The passive and causative", "Reported speech and reporting verbs", "Modal verbs", "Verb patterns",
+      "Relative clauses", "Comparison", "Linking words"], "Grammar topics"))
+      .concat(own("vocabulary", "Vocabulary", ["Phrasal verbs", "Collocations", "Dependent prepositions", "Word formation",
+      "Fixed phrases and idioms", "Easily confused words"], "Vocabulary topics")),
     c2: uoe("three to eight").concat([
       { page: "reading-5", label: "Part 5 · Multiple choice", scheme: "read" },
       { page: "reading-6", label: "Part 6 · Gapped text", skill: "r-gapped" },
       { page: "reading-7", label: "Part 7 · Multiple matching", skill: "r-match" }
     ]),
     a2: own("grammar", "Grammar", ["Present simple and present continuous", "Past simple and past continuous", "Present perfect",
-      "Talking about the future", "Comparatives and superlatives", "Modal verbs", "Articles", "Question forms", "Countable and uncountable nouns"])
-      .concat(own("vocabulary", "Vocabulary", ["Topic vocabulary", "make, do, have, take, go, get", "Easily confused words", "Phrasal verbs"]))
+      "Talking about the future", "Comparatives and superlatives", "Modal verbs", "Articles", "Question forms",
+      "Countable and uncountable nouns", "Pronouns and possessives", "Prepositions of time and place",
+      "there is, there are; something, anyone, nowhere", "Adverbs and word order", "Verb + -ing or to + verb",
+      "Linking words, time clauses and if", "The passive", "Relative clauses: who, which, that, where"])
+      .concat(own("vocabulary", "Vocabulary", ["Topic vocabulary", "make, do, have, take, go, get", "Easily confused words", "Phrasal verbs",
+      "Topic vocabulary 2", "Topic vocabulary 3", "Prepositional phrases and word building"]))
       .concat([
         { page: "reading-1", label: "Reading Part 1 · Short texts", skill: "r-short" },
         { page: "reading-2", label: "Reading Part 2 · Matching", skill: "r-match" },
@@ -112,8 +123,12 @@
         { page: "reading-5", file: "r5", label: "Reading Part 5 · Open cloze", scheme: "open" }
       ]),
     b1: own("grammar", "Grammar", ["Narrative tenses", "Present perfect simple and continuous", "Conditionals", "The passive", "Modal verbs",
-      "-ing or to-infinitive?", "used to, be used to, get used to", "Reported speech", "Relative clauses"])
-      .concat(own("vocabulary", "Vocabulary", ["Topic vocabulary", "Collocations", "Phrasal verbs", "Prepositions"]))
+      "-ing or to-infinitive?", "used to, be used to, get used to", "Reported speech", "Relative clauses",
+      "Future forms", "Question tags and indirect questions", "Third conditional and wishes", "Quantifiers",
+      "Comparing; so, such, too and enough", "Linking words", "have something done",
+      "should have, could have, must have"])
+      .concat(own("vocabulary", "Vocabulary", ["Topic vocabulary", "Collocations", "Phrasal verbs", "Prepositions", "Topic vocabulary 2",
+      "Topic vocabulary 3", "Word formation", "Easily confused words"]))
       .concat([
         { page: "reading-1", label: "Reading Part 1 · Short texts", skill: "r-short" },
         { page: "reading-2", label: "Reading Part 2 · Matching", skill: "r-match" },
