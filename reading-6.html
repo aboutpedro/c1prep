@@ -10,8 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="style.css?v=9">
-<script src="theme.js?v=6"></script>
+<link rel="stylesheet" href="style.css?v=11">
+<script src="theme.js?v=7"></script>
 <script src="log.js?v=5"></script>
 <script src="progress.js?v=1"></script>
 </head>
@@ -20,8 +20,38 @@
   <header class="site"><a class="brand" href="./">C1 Prep</a><nav><a href="./">All exercises</a></nav></header>
   <p class="kicker">Reading and Use of English · Part 6</p>
   <h1>Cross-text matching</h1>
-  <div class="card instructions"><p>For questions 37–40, choose from the writers A–D. The writers may be chosen more than once.</p></div>
-  <div id="exercise"></div>
+  <div class="tabs page-tabs" role="tablist" aria-label="Page sections">
+    <button type="button" role="tab" id="tab-ex" aria-controls="panel-ex" aria-selected="true">Exercises</button>
+    <button type="button" role="tab" id="tab-guide" aria-controls="panel-guide" aria-selected="false" tabindex="-1">How to tackle it</button>
+  </div>
+  <div id="panel-ex" role="tabpanel" aria-labelledby="tab-ex">
+    <div class="card instructions"><p>For questions 37–40, choose from the writers A–D. The writers may be chosen more than once.</p></div>
+    <div id="exercise"></div>
+  </div>
+  <div id="panel-guide" class="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
+    <p class="guide-intro">Four short texts by different writers on the same topic, and four questions. The questions ask which writer shares or disagrees with another writer’s opinion on a particular point.</p>
+
+    <section class="card guide-sec">
+    <h2>How to do it</h2>
+    <ol class="steps">
+    <li>Read each text and write down, in a few words, each writer’s view on each main point.</li>
+    <li>Read a question and find the point it is about (for example, the cost of a project).</li>
+    <li>Compare the writers on that point only: who agrees, who disagrees, who has a different reason.</li>
+    <li>Answer the question exactly: it may ask which writer <b>differs</b> from the others, or which one <b>shares</b> a view with writer A.</li>
+    </ol>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>Watch out for</h2>
+    <ul class="steps">
+    <li>A writer may agree on one point and disagree on another. Keep the points separate.</li>
+    <li>Mild opinions: <i>not entirely convinced</i> is still disagreement.</li>
+    <li>Mixing up the writers. Your short notes on each writer help here.</li>
+    </ul>
+    </section>
+
+    <p class="small-note">In the C1 Advanced exam, the whole Reading and Use of English paper takes 90 minutes. Aim for about 10 minutes on this part.</p>
+  </div>
 </div>
 <script src="data/r6.js?v=6"></script>
 <script src="quiz.js?v=9"></script>

@@ -10,8 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="style.css?v=9">
-<script src="theme.js?v=6"></script>
+<link rel="stylesheet" href="style.css?v=11">
+<script src="theme.js?v=7"></script>
 <script src="log.js?v=5"></script>
 <script src="progress.js?v=1"></script>
 </head>
@@ -20,10 +20,42 @@
   <header class="site"><a class="brand" href="./">C1 Prep</a><nav><a href="./">All exercises</a></nav></header>
   <p class="kicker">Reading and Use of English · Part 2</p>
   <h1>Open cloze</h1>
-  <div class="card instructions"><p>For questions 9–16, read the text below and think of the word which best fits each gap. Use only <b>one</b> word in each gap. There is an example at the beginning (0).</p></div>
-  <div id="exercise"></div>
+  <div class="tabs page-tabs" role="tablist" aria-label="Page sections">
+    <button type="button" role="tab" id="tab-ex" aria-controls="panel-ex" aria-selected="true">Exercises</button>
+    <button type="button" role="tab" id="tab-guide" aria-controls="panel-guide" aria-selected="false" tabindex="-1">How to tackle it</button>
+  </div>
+  <div id="panel-ex" role="tabpanel" aria-labelledby="tab-ex">
+    <div class="card instructions"><p>For questions 9–16, read the text below and think of the word which best fits each gap. Use only <b>one</b> word in each gap. There is an example at the beginning (0).</p></div>
+    <div id="exercise"></div>
+  </div>
+  <div id="panel-guide" class="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
+    <p class="guide-intro">The gaps test <b>grammar words</b>: prepositions, articles, pronouns, auxiliaries, linking words, relative pronouns, parts of fixed phrases and phrasal verbs. There are no options, so you write one word.</p>
+
+    <section class="card guide-sec">
+    <h2>How to do it</h2>
+    <ol class="steps">
+    <li>Read the whole text first for the general meaning.</li>
+    <li>At each gap, decide what kind of word is missing: a preposition? a verb (which form)? a linker? Read the <b>whole sentence</b>, not only the words next to the gap.</li>
+    <li>Check the meaning across sentences: contrast (<i>however, though</i>), reference back (<i>which, this, such</i>), comparison (<i>as, than</i>).</li>
+    <li>Look for fixed phrases: <i>by no means</i>, <i>in spite <b>of</b></i>, <i>as <b>long</b> as</i>, <i>for <b>the</b> sake of</i>.</li>
+    <li>Read the finished text again. Every answer must make the sentence grammatical <b>and</b> keep the meaning of the text.</li>
+    </ol>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>Watch out for</h2>
+    <ul class="steps">
+    <li>One word only: <i>a lot</i> or <i>in spite</i> is two words. Contractions such as <i>don’t</i> are not accepted.</li>
+    <li>Spelling counts: a misspelt word is wrong.</li>
+    <li>Negatives and contrasts: a missing <i>not</i>, <i>no</i> or <i>although</i> can turn the meaning upside down.</li>
+    <li>Don’t stop at the first word that fits the gap: check it still fits once you read to the end of the sentence.</li>
+    </ul>
+    </section>
+
+    <p class="small-note">In the C1 Advanced exam, the whole Reading and Use of English paper takes 90 minutes. Aim for about 8 minutes on this part.</p>
+  </div>
 </div>
-<script src="data/uoe2.js?v=9"></script>
+<script src="data/uoe2.js?v=10"></script>
 <script src="quiz.js?v=9"></script>
 </body>
 </html>

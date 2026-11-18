@@ -128,6 +128,10 @@ header.site nav > a { display: none; }
   .level-switch .lvl { width: 44px; height: 44px; padding: 0; justify-content: center; }
   .level-switch .lvl img { width: 32px; height: 32px; border-radius: 8px; }
 }
+/* Six buttons are wider than the narrowest phones allow with 12px gaps: spread them over the row instead. */
+@media (max-width: 379px) {
+  .level-switch { gap: 4px; justify-content: space-between; }
+}
 
 .backlink {
   display: inline-flex; align-items: center; gap: 6px; margin: 0 0 var(--s4);
@@ -745,6 +749,27 @@ a.btn-link:hover { background: var(--surface-2); }
 .result-table .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .result-table .muted { font-size: 13px; color: var(--muted); }
 .name-card .stack { display: grid; gap: var(--s2); }
+
+/* "How to tackle it" tab on Use of English and Reading pages */
+.guide-sec .steps { margin: 0; padding-left: 22px; }
+.guide-sec .steps li { margin: 0 0 10px; padding-left: 4px; max-width: 70ch; }
+.guide-sec .steps li:last-child { margin-bottom: 0; }
+
+/* ================= Move my progress (move.js) ================= */
+#move .card > h2:first-child { margin-top: 0; margin-bottom: var(--s2); }
+#move .card.move-in { border-color: var(--primary); box-shadow: var(--shadow-sm); }
+.move-actions { display: flex; flex-wrap: wrap; gap: var(--s3); margin-top: var(--s4); }
+textarea.code-in {
+  min-height: 0; height: auto; margin-top: var(--s2); padding: 10px 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 14px; line-height: 1.5;
+  word-break: break-all; resize: vertical;
+}
+.move-msg:empty { display: none; }
+.move-msg { margin: var(--s3) 0 0; font-weight: 600; }
+.move-msg.ok { color: var(--ok); }
+.move-msg.bad { color: var(--bad); }
+.move-msg a { font-weight: 600; white-space: nowrap; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 
 /* ================= Print ================= */
 @media print {

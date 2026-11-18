@@ -1,0 +1,142 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Future meanings",
+  intro: "Choose the best option.",
+  items: [
+    { s: "The Prime Minister ___ visit China next month, it was announced today.", options: ["is to", "is about to", "is on the point of"], answer: 0,
+      explain: "be to = an official arrangement." },
+    { s: "Hurry up! The train ___ leave.", options: ["is about to", "is to", "is bound", "is due"], answer: 0,
+      explain: "be about to = very soon." },
+    { s: "The new law is ___ come into force in January.", options: ["due to", "about to", "on the verge to", "likely"], answer: 0,
+      explain: "be due to = expected at a time." },
+    { s: "Experts say house prices are ___ to rise again.", options: ["set", "sure that", "about", "on the point"], answer: 0,
+      explain: "be set to = be expected to (news style)." },
+    { s: "You've had no sleep. You're ___ to make mistakes.", options: ["bound", "about", "due", "on the brink"], answer: 0,
+      explain: "be bound to = be certain to." },
+    { s: "Scientists are on the ___ of a major breakthrough.", options: ["verge", "point to", "edge to", "eve to"], answer: 0,
+      explain: "on the verge of = very close to." },
+    { s: "I'll call you the moment I ___.", options: ["land", "will land", "am landing", "would land"], answer: 0,
+      explain: "After time words (the moment, as soon as) we use a present form for the future." },
+    { s: "This time tomorrow I ___ on a beach in Crete.", options: ["will be lying", "will lie", "lie", "am going to lie"], answer: 0,
+      explain: "In progress at a future time: future continuous." },
+    { s: "___ you need any help, just let me know.", options: ["Should", "Would", "Shall", "Will"], answer: 0,
+      explain: "Should + subject = if (formal)." },
+    { s: "All employees ___ wear identity badges at all times.", options: ["are to", "are about to", "are due", "are set"], answer: 0,
+      explain: "be to = an instruction (formal)." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "The future in the past",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "I ___ call you last night, but I fell asleep.", options: ["was going to", "will", "was about", "am to"], answer: 0,
+      explain: "was going to = a plan that didn't happen." },
+    { s: "Little did she know that she ___ become the first woman to run the company.", options: ["would", "will", "was about", "is to"], answer: 0,
+      explain: "would = a future seen from the past." },
+    { s: "We ___ leave when the phone rang.", options: ["were about to", "were bound", "would", "are about to"], answer: 0,
+      explain: "were about to = very close to doing something in the past." },
+    { s: "The meeting ___ at ten, but it was postponed.", options: ["was to have started", "was starting", "is to start", "has started"], answer: 0,
+      explain: "was to have + past participle = a planned event that didn't happen." },
+    { s: "He said he ___ the report by Friday.", options: ["would have finished", "will have finished", "has finished", "finished"], answer: 0,
+      explain: "Reported future perfect: would have + past participle." },
+    { s: "They were ___ to win the final, but they lost.", options: ["expected", "due", "about", "bound"], answer: 0,
+      explain: "be expected to = people thought they would." },
+    { s: "She ___ getting married in June, but she's postponed the wedding.", options: ["was", "is", "will be", "would"], answer: 0,
+      explain: "was getting married = a past arrangement that changed." },
+    { s: "At that time, I had no idea that we ___ meet again twenty years later.", options: ["were to", "are to", "will", "are bound to"], answer: 0,
+      explain: "were to = a future in the past (fate)." },
+    { s: "I knew it ___ be a difficult conversation.", options: ["was going to", "is going to", "will", "has"], answer: 0,
+      explain: "was going to = a prediction made in the past." },
+    { s: "The ship ___ sail at dawn, but the storm delayed it.", options: ["was due to", "is due to", "will", "is about to"], answer: 0,
+      explain: "was due to = was scheduled to." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Future perfect and continuous",
+  intro: "Write the verb in brackets in the correct future form.",
+  items: [
+    { s: "By the time you get this letter, I ___ (leave) the country.", answers: ["will have left"],
+      explain: "Completed before a future point: future perfect." },
+    { s: "Don't call at eight: we ___ (have) dinner.", answers: ["will be having"],
+      explain: "In progress at a future time: future continuous." },
+    { s: "Next month I ___ (work) here for twenty years.", answers: ["will have been working", "will have worked"],
+      explain: "Duration up to a future point: future perfect continuous." },
+    { s: "___ (you / use) the car tomorrow? If not, can I borrow it?", answers: ["Will you be using"],
+      explain: "Future continuous for polite questions about plans." },
+    { s: "By 2040, scientists ___ (find) a cure, I'm sure.", answers: ["will have found"],
+      explain: "Completed before 2040: future perfect." },
+    { s: "This time next week, they ___ (fly) to Tokyo.", answers: ["will be flying"],
+      explain: "In progress at a future time." },
+    { s: "I ___ (finish) the report by the time you arrive.", answers: ["will have finished"],
+      explain: "Completed before a future event." },
+    { s: "The guests ___ (arrive) any minute now.", answers: ["will be arriving", "are arriving", "will arrive"],
+      explain: "Expected in the natural course of events." },
+    { s: "She ___ (not / receive) the parcel yet, I'm afraid.", answers: ["won't have received", "will not have received"],
+      explain: "Prediction about the present/past: won't have + past participle." },
+    { s: "When I retire, I ___ (teach) for forty years.", answers: ["will have been teaching", "will have taught"],
+      explain: "Duration up to a future point." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Which form fits best?",
+  intro: "Choose the best option.",
+  items: [
+    { s: "Look at that sky! It ___ pour.", options: ["'s going to", "will", "'s to", "'s due to"], answer: 0,
+      explain: "Evidence now: going to." },
+    { s: "I'm sure you ___ love the new flat.", options: ["'ll", "'re about to", "'re to", "'re due to"], answer: 0,
+      explain: "A prediction or opinion: will." },
+    { s: "The film ___ at 8.15, so let's meet at eight.", options: ["starts", "is to be start", "will have started", "has started"], answer: 0,
+      explain: "Timetables: present simple." },
+    { s: "Wait, I ___ help you with those bags.", options: ["'ll", "'m going to", "'m to", "'m helping"], answer: 0,
+      explain: "A decision at the moment of speaking: will." },
+    { s: "We ___ dinner with the Smiths on Saturday. It's all arranged.", options: ["'re having", "'ll have", "have", "'re to have"], answer: 0,
+      explain: "An arrangement: present continuous." },
+    { s: "By the time we get there, the shops ___.", options: ["will have closed", "will close", "close", "are closing"], answer: 0,
+      explain: "Completed before a future point." },
+    { s: "If the company ___ survive, it must cut costs.", options: ["is to", "will", "is about to", "is due to"], answer: 0,
+      explain: "If + be to = if it is necessary for this to happen." },
+    { s: "I'll be surprised if he ___ on time.", options: ["turns up", "will turn up", "is going to turn", "is turning"], answer: 0,
+      explain: "After if, present simple for the future." },
+    { s: "There's no point calling her now. She ___ be asleep.", options: ["will", "is about to", "is to", "is due to"], answer: 0,
+      explain: "will for a confident guess about the present." },
+    { s: "In the years to come, the town ___ change beyond recognition.", options: ["will", "is to", "is about to", "is due"], answer: 0,
+      explain: "will for long-term prediction." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Rewrite the sentence",
+  intro: "Complete the second sentence so that it means the same as the first. Use the word in brackets and between three and eight words.",
+  items: [
+    { s: "The plane will take off in a few minutes. → The plane is ___ off. (ABOUT)", answers: ["about to take"],
+      explain: "be about to = very soon." },
+    { s: "I'm sure the plan will fail. → The plan ___ fail. (BOUND)", answers: ["is bound to"],
+      explain: "be bound to = certain to." },
+    { s: "We planned to go to Spain, but we cancelled the trip. → We ___ Spain, but we cancelled the trip. (GOING)", answers: ["were going to go to", "were going to travel to"],
+      explain: "was / were going to = a plan that didn't happen." },
+    { s: "The President has arranged to visit Kenya in May. → The President ___ Kenya in May. (TO)", answers: ["is to visit", "is due to visit", "is going to visit"],
+      explain: "be to = official arrangement." },
+    { s: "I'll have finished by Friday. → I ___ the time Friday comes. (WILL)", answers: ["will have finished by", "will have done it by", "will have completed it by"],
+      explain: "future perfect + by the time." },
+    { s: "The company expects profits to rise next year. → Profits ___ next year. (SET)", answers: ["are set to rise", "are set to increase"],
+      explain: "be set to = be expected to." },
+    { s: "He was on the point of leaving when she called. → He ___ when she called. (ABOUT)", answers: ["was about to leave", "was just about to leave"],
+      explain: "was about to = was on the point of." },
+    { s: "If you need anything, call reception. → Should ___ call reception. (ANYTHING)", answers: ["you need anything,", "you need anything"],
+      explain: "Should + subject = If." },
+    { s: "Next year marks twenty years since we opened. → Next year we ___ for twenty years. (BEEN)", answers: ["will have been open", "will have been open for business", "will have been running"],
+      explain: "future perfect for a period up to a future time." },
+    { s: "The match was supposed to start at three, but it rained. → The match ___ at three, but it rained. (WAS)", answers: ["was to have started", "was due to start", "was supposed to start"],
+      explain: "was to have + past participle = it didn't happen." }
+  ]
+}
+];

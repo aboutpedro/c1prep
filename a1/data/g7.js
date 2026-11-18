@@ -1,0 +1,142 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Do or Does?",
+  intro: "Choose Do or Does. I, you, we, they → Do; he, she, it → Does.",
+  items: [
+    { s: "___ you like pizza?", options: ["Do", "Does", "Are"], answer: 0,
+      explain: "With you: Do you…?" },
+    { s: "___ she speak French?", options: ["Does", "Do", "Is"], answer: 0,
+      explain: "With she: Does she…?" },
+    { s: "___ they live in Rome?", options: ["Do", "Does", "Are"], answer: 0,
+      explain: "With they: Do they…?" },
+    { s: "___ your dad work at the weekend?", options: ["Does", "Do", "Is"], answer: 0,
+      explain: "Your dad = he: Does he…?" },
+    { s: "___ it rain a lot in London?", options: ["Does", "Do", "Is"], answer: 0,
+      explain: "With it: Does it…?" },
+    { s: "___ we have homework today?", options: ["Do", "Does", "Are"], answer: 0,
+      explain: "With we: Do we…?" },
+    { s: "___ your friends play video games?", options: ["Do", "Does", "Are"], answer: 0,
+      explain: "Your friends = they: Do they…?" },
+    { s: "___ the shop open on Sundays?", options: ["Does", "Do", "Is"], answer: 0,
+      explain: "The shop = it: Does it…?" },
+    { s: "___ I need a ticket?", options: ["Do", "Does", "Am"], answer: 0,
+      explain: "With I: Do I…?" },
+    { s: "___ Maria go to your school?", options: ["Does", "Do", "Is"], answer: 0,
+      explain: "Maria = she: Does she…?" }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "The verb after Does",
+  intro: "Choose the correct verb. After Does, the verb has no -s: Does she play…?",
+  items: [
+    { s: "Does your brother ___ tennis?", options: ["play", "plays", "playing"], answer: 0,
+      explain: "After does: play (no -s)." },
+    { s: "Does he ___ a car?", options: ["have", "has", "haves"], answer: 0,
+      explain: "After does: have (not has)." },
+    { s: "Does the train ___ at this station?", options: ["stop", "stops", "stopping"], answer: 0,
+      explain: "After does: stop (no -s)." },
+    { s: "Does she ___ in an office?", options: ["work", "works", "working"], answer: 0,
+      explain: "After does: work (no -s)." },
+    { s: "Does your sister ___ to music in bed?", options: ["listen", "listens", "listening"], answer: 0,
+      explain: "After does: listen (no -s)." },
+    { s: "Does it ___ much?", options: ["cost", "costs", "costing"], answer: 0,
+      explain: "After does: cost (no -s)." },
+    { s: "Does Paul ___ meat?", options: ["eat", "eats", "eating"], answer: 0,
+      explain: "After does: eat (no -s)." },
+    { s: "Does the film ___ at 8?", options: ["start", "starts", "starting"], answer: 0,
+      explain: "After does: start (no -s)." },
+    { s: "Does your mum ___ coffee?", options: ["drink", "drinks", "drinking"], answer: 0,
+      explain: "After does: drink (no -s)." },
+    { s: "Does he ___ his homework every day?", options: ["do", "does", "doing"], answer: 0,
+      explain: "After does: do (no -s)." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Short answers",
+  intro: "Choose the correct short answer.",
+  items: [
+    { s: "Do you like cats? – Yes, ___.", options: ["I do", "I like", "I am"], answer: 0,
+      explain: "Short answer: Yes, I do." },
+    { s: "Does she live here? – No, ___.", options: ["she doesn't", "she don't", "she isn't"], answer: 0,
+      explain: "With she: No, she doesn't." },
+    { s: "Do they speak English? – Yes, ___.", options: ["they do", "they does", "they speak"], answer: 0,
+      explain: "Short answer: Yes, they do." },
+    { s: "Does your dad cook? – Yes, ___.", options: ["he does", "he do", "he cooks"], answer: 0,
+      explain: "With he: Yes, he does." },
+    { s: "Do you work here? – No, ___.", options: ["I don't", "I doesn't", "I'm not"], answer: 0,
+      explain: "Short answer: No, I don't." },
+    { s: "Does it hurt? – No, ___.", options: ["it doesn't", "it don't", "it isn't"], answer: 0,
+      explain: "With it: No, it doesn't." },
+    { s: "Do your parents know? – No, ___.", options: ["they don't", "they doesn't", "they aren't"], answer: 0,
+      explain: "With they: No, they don't." },
+    { s: "Does Leo play the piano? – Yes, ___.", options: ["he does", "he plays", "he is"], answer: 0,
+      explain: "With he: Yes, he does." },
+    { s: "Do you and your sister share a room? – Yes, ___.", options: ["we do", "they do", "you do"], answer: 0,
+      explain: "You and your sister includes me: Yes, we do." },
+    { s: "Do I need a passport? – Yes, ___.", options: ["you do", "I do", "you need"], answer: 0,
+      explain: "The question is about \"I\", so the answer is about \"you\": Yes, you do." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Questions with question words",
+  intro: "Put the words in order. Choose the correct question.",
+  items: [
+    { s: "Where ___?", options: ["do you live", "you live", "live you"], answer: 0,
+      explain: "Question word + do + you + verb: Where do you live?" },
+    { s: "What time ___?", options: ["does the film start", "the film starts", "does the film starts"], answer: 0,
+      explain: "What time + does + the film + start (no -s)." },
+    { s: "What ___ for breakfast?", options: ["do you have", "you have", "have you"], answer: 0,
+      explain: "What + do + you + have?" },
+    { s: "How ___ to work?", options: ["does she go", "she goes", "does she goes"], answer: 0,
+      explain: "How + does + she + go (no -s)." },
+    { s: "When ___ English?", options: ["do they study", "they study", "study they"], answer: 0,
+      explain: "When + do + they + study?" },
+    { s: "What ___ in the evening?", options: ["does your brother do", "your brother does", "does your brother does"], answer: 0,
+      explain: "What + does + your brother + do?" },
+    { s: "Where ___ on Fridays?", options: ["does Ana work", "Ana works", "does Ana works"], answer: 0,
+      explain: "Where + does + Ana + work (no -s)." },
+    { s: "How often ___ swimming?", options: ["do you go", "you go", "go you"], answer: 0,
+      explain: "How often + do + you + go?" },
+    { s: "Why ___ cats?", options: ["don't you like", "you don't like", "not you like"], answer: 0,
+      explain: "Why + don't + you + like?" },
+    { s: "What music ___?", options: ["do your friends like", "your friends like", "like your friends"], answer: 0,
+      explain: "What music + do + your friends + like?" }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Write the question",
+  intro: "Write do, does, don't or doesn't.",
+  items: [
+    { s: "___ you know my brother?", answers: ["Do"],
+      explain: "With you: Do…?" },
+    { s: "Where ___ your sister work?", answers: ["does"],
+      explain: "Your sister = she: Where does…?" },
+    { s: "She ___ like coffee. She drinks tea.", answers: ["doesn't"],
+      explain: "Negative with she: doesn't." },
+    { s: "What ___ you do at the weekend?", answers: ["do"],
+      explain: "With you: What do…?" },
+    { s: "___ your teacher give you a lot of homework?", answers: ["Does"],
+      explain: "Your teacher = he or she: Does…?" },
+    { s: "I ___ have a car.", answers: ["don't"],
+      explain: "Negative with I: don't." },
+    { s: "What time ___ the bank close?", answers: ["does"],
+      explain: "The bank = it: What time does…?" },
+    { s: "Do you like football? – No, I ___.", answers: ["don't"],
+      explain: "Short answer: No, I don't." },
+    { s: "Does he speak Italian? – Yes, he ___.", answers: ["does"],
+      explain: "Short answer: Yes, he does." },
+    { s: "How many languages ___ your parents speak?", answers: ["do"],
+      explain: "Your parents = they: How many languages do…?" }
+  ]
+}
+];

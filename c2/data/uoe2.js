@@ -210,7 +210,7 @@ The experiment has [13] become something of a tourist attraction, and a webcam n
     13: { answers: ["since"], explain: "'Has since become' = has become in the time after that." },
     14: { answers: ["watch", "vigil"], explain: "'Keep watch (for something)' = watch carefully so as not to miss it." },
     15: { answers: ["for"], explain: "'An award for something' = given because of it." },
-    16: { answers: ["match", "equal", "beat", "challenge"], explain: "A verb meaning 'be as good as or better than': match / equal / beat a record or claim." }
+    16: { answers: ["match", "equal", "beat", "challenge", "surpass"], explain: "A verb meaning 'be as good as or better than': match / equal / beat a record or claim." }
   }
 }
 ];

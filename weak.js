@@ -95,9 +95,9 @@
       { page: "reading-8", label: "Part 8 · Multiple matching", skill: "r-match" }
     ]).concat(own("grammar", "Grammar", ["Tenses and aspect", "Future forms and the future in the past", "Conditionals",
       "Wishes and unreal past", "The passive and causative", "Reporting verbs", "Modal verbs", "Inversion and emphasis",
-      "Verb patterns", "Relative and participle clauses", "Comparison and degree", "Linking words"], "Grammar topics"))
+      "Verb patterns", "Relative and participle clauses", "Comparison and degree", "Linking words", "Nouns and articles", "Determiners and quantifiers", "Adjectives, adverbs and modifiers", "Substitution and ellipsis"], "Grammar topics"))
       .concat(own("vocabulary", "Vocabulary", ["Phrasal verbs", "Collocations", "Dependent prepositions", "Word formation",
-      "Fixed phrases and idioms", "Easily confused words"], "Vocabulary topics")),
+      "Fixed phrases and idioms", "Easily confused words", "Thinking, learning and change", "Work and money", "Communication and the media", "Health and reactions", "Nature, chance and travel", "Society, power and relationships", "The arts, buildings and leisure"], "Vocabulary topics")),
     b2: uoe("two to five").concat([
       { page: "reading-5", label: "Part 5 · Multiple choice", scheme: "read" },
       { page: "reading-6", label: "Part 6 · Gapped text", skill: "r-gapped" },
@@ -111,14 +111,18 @@
       { page: "reading-5", label: "Part 5 · Multiple choice", scheme: "read" },
       { page: "reading-6", label: "Part 6 · Gapped text", skill: "r-gapped" },
       { page: "reading-7", label: "Part 7 · Multiple matching", skill: "r-match" }
-    ]),
+    ])
+      .concat(own("grammar", "Grammar", ["Perfect and continuous forms", "Future forms and the future in the past", "Conditionals and alternatives to if", "Likelihood, deduction and obligation", "Inversion and fronting", "Participle and verbless clauses", "Gerunds and infinitives", "Reference, substitution and cohesion", "Wishes, preferences and the subjunctive", "The passive and causative", "Concession, purpose and reason", "Comparison and degree"], "Grammar topics"))
+      .concat(own("vocabulary", "Vocabulary", ["Idioms", "Phrases with take, set, come, turn, go and place", "Collocations", "Word formation", "Phrasal verbs", "Shades of meaning", "Register, metaphor and new words", "Prepositional phrases"], "Vocabulary topics")),
+    a1: own("grammar", "Grammar", ["The verb be", "Pronouns and possessives", "Plurals; this, that, these, those", "a, an and the", "have got and has got", "Present simple: positive and negative", "Present simple: questions", "Question words", "Adverbs of frequency and time phrases", "can and can’t", "Present continuous", "there is, there are; some and any", "Prepositions of place and time", "Imperatives, let’s and would like", "Past simple: was and were", "Past simple: regular and irregular verbs"])
+      .concat(own("vocabulary", "Vocabulary", ["People and family", "Numbers, dates and time", "Home and everyday things", "Food and drink", "Daily routine and free time", "Town and transport", "Clothes, colours and the weather", "Everyday English"])),
     a2: own("grammar", "Grammar", ["Present simple and present continuous", "Past simple and past continuous", "Present perfect",
       "Talking about the future", "Comparatives and superlatives", "Modal verbs", "Articles", "Question forms",
       "Countable and uncountable nouns", "Pronouns and possessives", "Prepositions of time and place",
       "there is, there are; something, anyone, nowhere", "Adverbs and word order", "Verb + -ing or to + verb",
-      "Linking words, time clauses and if", "The passive", "Relative clauses: who, which, that, where"])
+      "Linking words, time clauses and if", "The passive", "Relative clauses: who, which, that, where", "Irregular verbs in the past simple", "Present perfect or past simple?", "too, enough and very", "-ed and -ing adjectives; adjective + preposition", "Requests, offers and would like", "Suggestions", "Prepositions of movement", "Mixed tenses"])
       .concat(own("vocabulary", "Vocabulary", ["Topic vocabulary", "make, do, have, take, go, get", "Easily confused words", "Phrasal verbs",
-      "Topic vocabulary 2", "Topic vocabulary 3", "Prepositional phrases and word building"]))
+      "Topic vocabulary 2", "Topic vocabulary 3", "Prepositional phrases and word building", "Topic vocabulary 4", "Collocations", "Verbs with prepositions", "Everyday expressions", "Phrasal verbs 2"]))
       .concat([
         { page: "reading-1", label: "Reading Part 1 · Short texts", skill: "r-short" },
         { page: "reading-2", label: "Reading Part 2 · Matching", skill: "r-match" },

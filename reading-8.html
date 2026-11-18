@@ -10,8 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="style.css?v=9">
-<script src="theme.js?v=6"></script>
+<link rel="stylesheet" href="style.css?v=11">
+<script src="theme.js?v=7"></script>
 <script src="log.js?v=5"></script>
 <script src="progress.js?v=1"></script>
 </head>
@@ -20,8 +20,39 @@
   <header class="site"><a class="brand" href="./">C1 Prep</a><nav><a href="./">All exercises</a></nav></header>
   <p class="kicker">Reading and Use of English · Part 8</p>
   <h1>Multiple matching</h1>
-  <div class="card instructions"><p>For questions 47–56, choose from the sections. The sections may be chosen more than once.</p></div>
-  <div id="exercise"></div>
+  <div class="tabs page-tabs" role="tablist" aria-label="Page sections">
+    <button type="button" role="tab" id="tab-ex" aria-controls="panel-ex" aria-selected="true">Exercises</button>
+    <button type="button" role="tab" id="tab-guide" aria-controls="panel-guide" aria-selected="false" tabindex="-1">How to tackle it</button>
+  </div>
+  <div id="panel-ex" role="tabpanel" aria-labelledby="tab-ex">
+    <div class="card instructions"><p>For questions 47–56, choose from the sections. The sections may be chosen more than once.</p></div>
+    <div id="exercise"></div>
+  </div>
+  <div id="panel-guide" class="guide" role="tabpanel" aria-labelledby="tab-guide" hidden>
+    <p class="guide-intro">Ten questions and several texts or sections. You find which text says each thing. The questions are written in different words from the texts, so the task tests <b>paraphrase</b> and fast, careful reading.</p>
+
+    <section class="card guide-sec">
+    <h2>How to do it</h2>
+    <ol class="steps">
+    <li>Read the questions first and underline the key idea in each one (not single words).</li>
+    <li>Read the first text or section and decide which questions it answers. Then move to the next.</li>
+    <li>When you find a possible match, read that part again carefully: does it say <b>exactly</b> what the question says?</li>
+    <li>If two texts seem to match, compare the details (all or some? past or now? the writer or someone else?).</li>
+    <li>Don’t leave anything empty: at the end, make your best guess.</li>
+    </ol>
+    </section>
+
+    <section class="card guide-sec">
+    <h2>Watch out for</h2>
+    <ul class="steps">
+    <li>Word matching: the same word can appear in a text that doesn’t answer the question. Look for the same <b>idea</b>.</li>
+    <li>Questions about one person’s opinion, a plan or a regret: check who says it, and when.</li>
+    <li>Spending too long on one question. Move on and come back to it.</li>
+    </ul>
+    </section>
+
+    <p class="small-note">In the C1 Advanced exam, the whole Reading and Use of English paper takes 90 minutes. Aim for about 12 minutes on this part.</p>
+  </div>
 </div>
 <script src="data/r8.js?v=8"></script>
 <script src="quiz.js?v=9"></script>

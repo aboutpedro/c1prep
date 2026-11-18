@@ -19,6 +19,7 @@
   // Every level of the site. theme.js lives at the site root, so the level folders are found from its own address.
   const SITE = new URL(".", document.currentScript ? document.currentScript.src : location.href);
   const LEVELS = [
+    ["a1/", "A1 Beginner"],
     ["a2/", "A2 Elementary"],
     ["b1/", "B1 Intermediate"],
     ["b2/", "B2 First"],
@@ -78,7 +79,7 @@
     const header = document.querySelector("header.site");
     if (!header) return;
 
-    // Logo: the level's own icon (c1, b2, c2), taken from the page's favicon.
+    // Logo: the level's own icon, taken from the page's favicon.
     const brand = header.querySelector("a.brand");
     const icon = document.querySelector('link[rel="icon"][type="image/svg+xml"]');
     if (brand && icon && !brand.querySelector("img")) {

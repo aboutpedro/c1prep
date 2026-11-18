@@ -1,0 +1,142 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "always, usually, sometimes, never",
+  intro: "Choose the word that matches the sentence after the dash.",
+  items: [
+    { s: "I ___ drink coffee. – I drink it every day.", options: ["always", "never", "sometimes"], answer: 0,
+      explain: "Every day = always." },
+    { s: "She ___ eats meat. – She's vegetarian.", options: ["never", "always", "usually"], answer: 0,
+      explain: "A vegetarian doesn't eat meat: never." },
+    { s: "We ___ go to the beach. – About once a month.", options: ["sometimes", "always", "never"], answer: 0,
+      explain: "Once a month = sometimes." },
+    { s: "He ___ walks to work. – He walks five days a week, but takes the bus when it rains.", options: ["usually", "never", "always"], answer: 0,
+      explain: "Most days, but not every day: usually." },
+    { s: "They ___ watch TV. – They haven't got a TV!", options: ["never", "often", "always"], answer: 0,
+      explain: "They haven't got a TV: never." },
+    { s: "I ___ go to bed late. – Only on Saturdays.", options: ["sometimes", "always", "never"], answer: 0,
+      explain: "Only on Saturdays = sometimes." },
+    { s: "My dad ___ reads the newspaper. – Every morning, with his coffee.", options: ["always", "never", "sometimes"], answer: 0,
+      explain: "Every morning = always." },
+    { s: "I ___ eat fast food. – Maybe once a year.", options: ["hardly ever", "always", "usually"], answer: 0,
+      explain: "Once a year = almost never: hardly ever." },
+    { s: "She ___ calls her mum. – Four or five times a week.", options: ["often", "never", "hardly ever"], answer: 0,
+      explain: "Four or five times a week = often." },
+    { s: "We ___ have pizza on Fridays. – It's our Friday tradition!", options: ["always", "never", "hardly ever"], answer: 0,
+      explain: "A tradition = every Friday: always." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Where does the word go?",
+  intro: "Choose the correct words. always, often, never… go before the main verb, but after am, is, are.",
+  items: [
+    { s: "I ___ at seven.", options: ["always get up", "get always up", "get up always"], answer: 0,
+      explain: "Before the main verb: I always get up." },
+    { s: "She ___ late.", options: ["is never", "never is", "never be"], answer: 0,
+      explain: "After be: She is never late." },
+    { s: "We ___ lunch at one.", options: ["usually have", "have usually", "usually has"], answer: 0,
+      explain: "Before the main verb: We usually have lunch." },
+    { s: "He ___ tired.", options: ["is often", "often is", "often are"], answer: 0,
+      explain: "After be: He is often tired." },
+    { s: "They ___ tennis on Sundays.", options: ["sometimes play", "play sometimes", "sometimes plays"], answer: 0,
+      explain: "Before the main verb: They sometimes play." },
+    { s: "My sister ___ hungry after school.", options: ["is always", "always is", "always are"], answer: 0,
+      explain: "After be: My sister is always hungry." },
+    { s: "My mum ___ coffee.", options: ["never drinks", "drinks never", "never drink"], answer: 0,
+      explain: "Before the main verb: My mum never drinks coffee." },
+    { s: "The bus ___ on time.", options: ["is usually", "usually is", "usually are"], answer: 0,
+      explain: "After be: The bus is usually on time." },
+    { s: "We ___ out on Mondays.", options: ["don't usually go", "don't go usually", "usually go don't"], answer: 0,
+      explain: "After don't and before the main verb: We don't usually go out." },
+    { s: "___ eat fish?", options: ["Do you often", "Do often you", "Often do you"], answer: 0,
+      explain: "In questions: Do + you + often + verb." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Time phrases: every, on, in, at",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "I play football ___ Saturdays.", options: ["on", "in", "at"], answer: 0,
+      explain: "Days: on Saturdays." },
+    { s: "She goes swimming ___ the morning.", options: ["in", "on", "at"], answer: 0,
+      explain: "Parts of the day: in the morning." },
+    { s: "We have English ___ Monday and Wednesday.", options: ["on", "in", "at"], answer: 0,
+      explain: "Days: on Monday." },
+    { s: "I go to bed ___ eleven o'clock.", options: ["at", "in", "on"], answer: 0,
+      explain: "Clock times: at eleven o'clock." },
+    { s: "He visits his grandmother ___ weekend.", options: ["every", "all", "each the"], answer: 0,
+      explain: "every weekend." },
+    { s: "I read ___ night.", options: ["at", "in", "on"], answer: 0,
+      explain: "We say at night." },
+    { s: "My dad works ___ the evening.", options: ["in", "on", "at"], answer: 0,
+      explain: "Parts of the day: in the evening (but at night)." },
+    { s: "We go to the beach ___ summer.", options: ["in", "on", "at"], answer: 0,
+      explain: "Seasons: in summer." },
+    { s: "I check my phone every ___.", options: ["day", "days", "the day"], answer: 0,
+      explain: "every + singular noun: every day." },
+    { s: "I go to the gym ___ a week.", options: ["twice", "two", "two times every"], answer: 0,
+      explain: "twice a week = two times a week." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences",
+  textTitle: "How often?",
+  intro: "Write one word in each gap.",
+  items: [
+    { s: "I go to the dentist ___ a year. (1 time)", answers: ["once"],
+      explain: "1 time = once." },
+    { s: "She plays tennis two ___ a week.", answers: ["times"],
+      explain: "two times a week (or twice a week)." },
+    { s: "We eat out once ___ month.", answers: ["a"],
+      explain: "once a month." },
+    { s: "He goes running ___ day.", answers: ["every"],
+      explain: "every day." },
+    { s: "I visit my cousins ___ a year. (2 times)", answers: ["twice"],
+      explain: "2 times = twice." },
+    { s: "They go to the cinema three times a ___.", answers: ["week", "month", "year"],
+      explain: "three times a week / a month / a year." },
+    { s: "My grandparents call me ___ Sunday.", answers: ["every"],
+      explain: "every Sunday." },
+    { s: "I wash my hair ___ other day.", answers: ["every"],
+      explain: "every other day = one day yes, one day no." },
+    { s: "The magazine comes out once a ___.", answers: ["month", "week", "year"],
+      explain: "once a month (or a week, a year)." },
+    { s: "I have English classes ___ a week. (3 times)", answers: ["three times"],
+      explain: "3 times a week. After two, we say three times, four times…" }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "How often? Use the percentages",
+  intro: "Write always (100%), usually (90%), often (70%), sometimes (50%), hardly ever (10%) or never (0%).",
+  items: [
+    { s: "I ___ (100%) brush my teeth before bed.", answers: ["always"],
+      explain: "100% = always." },
+    { s: "She ___ (0%) eats sweets.", answers: ["never"],
+      explain: "0% = never." },
+    { s: "We ___ (90%) have dinner at seven.", answers: ["usually"],
+      explain: "90% = usually." },
+    { s: "He ___ (50%) cooks at the weekend.", answers: ["sometimes"],
+      explain: "50% = sometimes." },
+    { s: "They ___ (70%) go to the park after school.", answers: ["often"],
+      explain: "70% = often." },
+    { s: "I'm ___ (100%) tired on Monday mornings.", answers: ["always"],
+      explain: "100% = always. It goes after be: I'm always tired." },
+    { s: "My cat is ___ (0%) quiet.", answers: ["never"],
+      explain: "0% = never. It goes after be: is never quiet." },
+    { s: "It ___ (10%) snows here.", answers: ["hardly ever", "rarely"],
+      explain: "10% = hardly ever (rarely means the same)." },
+    { s: "My parents ___ (90%) get up at six.", answers: ["usually"],
+      explain: "90% = usually." },
+    { s: "Is your teacher ___ (70%) angry?", answers: ["often"],
+      explain: "70% = often." }
+  ]
+}
+];

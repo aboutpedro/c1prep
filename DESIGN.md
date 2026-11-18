@@ -62,11 +62,12 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
 
 - **Header**: sticky, 60px, full-width surface with bottom border. Brand (level
   icon + name) on the left; name chip, back link and theme toggle on the right.
-- **Header level buttons** (theme.js, every page): the five level logos (A2, B1,
-  B2, C1, C2) right after the brand; the current level has a border. With a mouse,
-  hovering or keyboard focus slides the level's name out (A2 Elementary, B1
-  Intermediate, B2 First, C1 Advanced, C2 Proficiency) and tilts the logo. Under
-  700px they move to their own row as 44px targets 12px apart, with no animation.
+- **Header level buttons** (theme.js, every page): the six level logos (A1, A2,
+  B1, B2, C1, C2) right after the brand; the current level has a border. With a
+  mouse, hovering or keyboard focus slides the level's name out (A1 Beginner, A2
+  Elementary, B1 Intermediate, B2 First, C1 Advanced, C2 Proficiency) and tilts the
+  logo. Under 700px they move to their own row as 44px targets 12px apart, with no
+  animation; under 380px the six buttons spread across the row (at least 4px apart).
 - **Buttons**: primary (navy fill), secondary (surface, strong border, navy
   text), quiet (text only). 44px tall, 10px radius. Hover darkens; focus shows a
   2px navy outline with 2px offset; disabled is 45% opacity.
@@ -81,10 +82,11 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
 - **Level buttons** ("Other levels" on each home page): one secondary-style
   button per other level, with that level's logo, the exam name and a chevron.
   Full width on phones.
-- **Tabs** (writing, and Exercises / Grammar guide on A2/B1 grammar pages):
+- **Tabs** (writing; Exercises / Grammar guide on grammar pages at every level; Exercises / How to tackle it on every
+  Use of English and Reading page at B2, C1 and C2, written by generator/tips.py):
   underline tabs that scroll sideways on phones. Arrow keys move between tabs.
 - **Callout**: instructions in `--surface-2` with a navy left rule.
-- **Sentence sets** (A2/B1 grammar and vocabulary, `type: "sentences"`): one
+- **Sentence sets** (A1/A2/B1 grammar and vocabulary, `type: "sentences"`): one
   numbered sentence per row with an inline gap. Typed gaps use the normal inline
   input; choices are pill-shaped radio chips under the sentence, and the chosen
   word fills the gap. An optional word bank sits above in its own card.
@@ -93,7 +95,7 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   message in its own box beside its options (stacked on phones). Notices are
   centred with a dark border; messages have a grey left rule and a From/To line.
 
-- **Grammar guide** (A2/B1 grammar pages, second tab): a short intro, then one
+- **Grammar guide** (A1/A2/B1 grammar pages, second tab): a short intro, then one
   card per point. Example lists are serif with the target form in navy bold,
   under small caps labels "The basics" and "You might also see"; an optional
   grey note line explains an example. Form tables are plain rows with hairline
@@ -123,6 +125,18 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   with the look of the name dialog. The student never sees marks: the page is
   replaced by a card saying the paper is handed in, with the time used and a
   link back to the exercises. Marks go to the teacher's sheet only.
+- **Move my progress** (`progress.html` at every level, `move.js`): three cards.
+  "Send your progress" says what this device holds and has the main button
+  (Send to my other device, using the phone's share sheet, where there is one)
+  and Copy link. "Paste a link" takes a pasted link or code. A card with a navy
+  border at the top appears only when the page is opened from a link: what the
+  link holds, and Add to this device. Results show under the button in green or
+  red. The page loads neither log.js nor progress.js, so no name dialog opens
+  before the progress (and the name) arrive. The link is `progress.html#code=` +
+  `C1P1.` + base64url of the deflate-raw JSON of every `c1p:` key and the name
+  (`C1P1j.` = not compressed). Adding merges and never deletes: the newer attempt
+  per set, the larger counts per question, and the same link twice changes
+  nothing. Nothing leaves the browser.
 
 ## Motion
 
@@ -149,7 +163,8 @@ optically centred.
 | `favicon.ico` | Browsers without SVG icons | 16 and 32 px drawn larger (cap 35, radius 12) so they stay legible; 48 px as the SVG |
 | `apple-touch-icon.png` | Phone home screen | 180 px, square and full-bleed (the phone rounds it), cap 27 |
 
-C1 lives at the root, A2 in `a2/`, B1 in `b1/`, B2 in `b2/`, C2 in `c2/`. In the A2
+C1 lives at the root, A1 in `a1/`, A2 in `a2/`, B1 in `b1/`, B2 in `b2/`, C2 in `c2/`. The A1
+mark is the A2 mark's A with the B1 mark's 1 (same 0.34 gap as in B1). In the A2
 mark the gap is wider at the baseline (about 1) because the A's diagonal leaves
 the top open; B1 keeps the same 1.4 closest gap as B2. Icon links carry `?v=2`;
 bump it whenever the icons change.

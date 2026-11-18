@@ -51,7 +51,7 @@ Of course, there is a limit [14] how much failure anyone can take. Repeated disa
   gaps: {
     0: { answers: ["as"] },
     9: { answers: ["than"], explain: "'More … than' — a comparison." },
-    10: { answers: ["before", "until"], explain: "A time linker: he built the prototypes before (or until) he got it right." },
+    10: { answers: ["before", "until", "till"], explain: "A time linker: he built the prototypes before (or until) he got it right." },
     11: { answers: ["with"], explain: "'Deal with' = cope with or handle." },
     12: { answers: ["of"], explain: "Fixed phrase: 'for fear of (doing) something' = because you are afraid of it." },
     13: { answers: ["on"], explain: "Fixed phrase: 'on the other hand' introduces a contrasting point." },
@@ -111,7 +111,7 @@ Not everyone approved [11] them, however. In 1675, King Charles II tried to clos
 Today, it is easy to forget [14] radical the coffee house once was. Yet the idea of a public space [15] strangers can meet and exchange ideas as equals is one that has never really gone [16] of fashion.`,
   gaps: {
     0: { answers: ["than"] },
-    9: { answers: ["For"], explain: "'For the price of' = by paying that amount." },
+    9: { answers: ["For", "At"], explain: "'For the price of' = by paying that amount." },
     10: { answers: ["as"], explain: "'Be known as' = be called." },
     11: { answers: ["of"], explain: "'Approve of something/someone' = think it is good or acceptable. 'However' at the end of the sentence already gives the contrast." },
     12: { answers: ["such"], explain: "'Such + a/an + noun + that' introduces a result (such an outcry that…)." },
@@ -221,7 +221,7 @@ Today, around a billion umbrellas are sold worldwide every year, [14] of which a
     11: { answers: ["who", "that"], explain: "A defining relative pronoun for a person, as the subject of 'carried'." },
     12: { answers: ["whose"], explain: "'Whose' shows possession: the coachmen's livelihood." },
     13: { answers: ["not"], explain: "'It was not until… that…' = only after that did something happen." },
-    14: { answers: ["many", "most", "some", "half"], explain: "Quantifier + 'of which' refers back to the umbrellas: many of which = and many of them." },
+    14: { answers: ["many", "most", "some", "half", "millions"], explain: "Quantifier + 'of which' refers back to the umbrellas: many of which = and many of them." },
     15: { answers: ["but", "yet", "although", "though", "while", "whilst"], explain: "A contrast linker: many improvements have been tried, but the shape is the same." },
     16: { answers: ["that", "which"], explain: "A relative pronoun for a thing, as the subject of 'works'." }
   }
@@ -326,7 +326,7 @@ Attitudes changed slowly. The fork gradually caught [10] in Italy, but elsewhere
     11: { answers: ["into"], explain: "'Well into the sixteenth century' = until a time quite late in that century." },
     12: { answers: ["who","that"], explain: "A defining relative pronoun for a person." },
     13: { answers: ["for"], explain: "'Be mocked / thanked / rewarded for your trouble' = as a result of your effort." },
-    14: { answers: ["some","others"], explain: "A pronoun meaning 'some people' or 'other people', contrasting with 'many'." },
+    14: { answers: ["some", "others", "many"], explain: "A pronoun meaning 'some people' or 'other people', contrasting with 'many'." },
     15: { answers: ["By"], explain: "'By + time' + past perfect = before or at that time." },
     16: { answers: ["on"], explain: "'How on earth…?' adds emphasis to a question, showing surprise." }
   }
@@ -372,7 +372,7 @@ Whatever the explanation, life for left-handers has improved considerably. Sciss
     13: { answers: ["Why"], explain: "'Why' introduces a clause acting as the subject (Why it exists is a puzzle)." },
     14: { answers: ["as","since","because"], explain: "A linker giving the reason." },
     15: { answers: ["for"], explain: "'Designed for someone'." },
-    16: { answers: ["though","although","but","yet"], explain: "A contrast linker joining two clauses." }
+    16: { answers: ["though", "although", "but", "yet", "while", "whilst"], explain: "A contrast linker joining two clauses." }
   }
 }
 ];
