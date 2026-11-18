@@ -216,6 +216,22 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
 - **Privacy, 404**: plain prose pages with the same header and footer. 404.html
   uses addresses from the site root (`/style.css`), because GitHub Pages shows it
   at any address.
+- **Kids** (`kids/`, `kids.js`, `kids.css`; pages written by
+  generator/kidspages.py): picture games with sound for children. The kids home
+  has one big card per topic (pictures on top, name in Poppins, the stars won);
+  a topic page (`kids/animals.html`) loads `kids/data/<topic>.js` and shows its
+  games as cards (round icon, name, one line, three stars), one game at a time
+  by address (`#listen`). Games: Look and listen, Listen and tap (4 pictures),
+  Read and choose (3 words), Spell the word (letter tiles), Yes or no? and
+  Listen and find (spots on one big picture, boxes in the picture's pixels).
+  Rounds of 8–10; a wrong answer shakes and greys out, and the round goes on
+  (Yes or no shows the right answer and a Next button). Stars from the answers
+  right the first time: 90% three, 60% two, else one; kept in this browser
+  (`c1p:kids`), the best one stays. Words are spoken by the browser's English
+  voice (en-GB first, rate 0.85); with no English voice the word is written and
+  a note says why. The pictures always sit on a cream tile (`#fff8ee`) because
+  they are drawn for a light background, in dark mode and every theme too.
+  Big words, tiles and buttons in Poppins; tap targets of 52–64px.
 
 ## Offline
 
@@ -235,7 +251,10 @@ under `prefers-reduced-motion`.
 
 ## Imagery and icons
 
-No illustrations or photos (the grammar diagrams above are the only drawings). Icons are simple 1.75px-stroke line icons drawn
+No illustrations or photos in the exercises (the grammar diagrams above are the only drawings). The kids
+section is the exception: flat cartoon pictures with dark outlines on a transparent background
+(`kids/img/<topic>-<word>.webp`, 512px, the drawing 448px across) and one scene per topic
+(`kids/img/scene-<topic>.webp`, 1200px wide). The current pictures are placeholders made with Gemini. Icons are simple 1.75px-stroke line icons drawn
 inline (chevrons, sun/moon, reset), in `currentColor`.
 
 ## Logo
