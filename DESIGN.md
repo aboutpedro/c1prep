@@ -139,8 +139,8 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   nothing. Nothing leaves the browser.
 
 - **Site footer** (every page, written by generator/sitewide.py): after a 1px rule,
-  the page's own note if it has one, then three links (All levels → the front
-  page, Level test, Privacy) and the Cambridge trademark disclaimer in 13px muted text.
+  the page's own note if it has one, then four links (All levels → the front
+  page, Search, Level test, Privacy) and the Cambridge trademark disclaimer in 13px muted text.
 - **Button links** (`a.btn`, `a.btn.secondary`): links that look like the primary
   and secondary buttons, for actions that go to another page.
 - **Front page** (`index.html`, written by generator/sitepages.py): kicker, title
@@ -160,6 +160,20 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   again, a list of parts with scores (✓ green for passed, "Not needed" in grey),
   then every answer marked with its explanation. The result is kept in this
   browser (`c1prep-placement`) and is never sent.
+- **Search** (`search.html`, `search.js`, index `search-index.js` written by
+  generator/search_index.js): the grammar and vocabulary pages at every level.
+  A 46px search field with a magnifier inside, then two rows of filter pills
+  (Level: All, A1…C2; Type: All, Grammar, Vocabulary; the chosen one in navy,
+  the label on its own line on phones). Results come as you type and the address
+  keeps the search (`?q=…&level=…&kind=…`). "Topics" are level cards with a 36px
+  logo, "B1 · Grammar 3", the name and description; "In the exercises" has one
+  card per topic with up to 3 sentences (Show all…), the answer underlined in
+  grey, matches in `<mark>` (soft navy, semibold), and "Set 2 ›" linking to
+  `page.html#set-2`; 15 topics at a time. With no search, a row of suggestion
+  buttons. A search of several words looks for them as a phrase first; words of
+  4 letters or more also match longer words (rule out → ruled out).
+  The same field, with a Search button, sits under the intro on the front page
+  and every level home (it opens search.html with that level chosen).
 - **Privacy, 404**: plain prose pages with the same header and footer. 404.html
   uses addresses from the site root (`/style.css`), because GitHub Pages shows it
   at any address.

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-site>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search · C1 Prep</title>
+<meta name="description" content="Search the grammar and vocabulary exercises at every level, from A1 to C2: topics, words and phrases.">
+<link rel="canonical" href="https://c1prep.duckdns.org/search.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="C1 Prep">
+<meta property="og:title" content="Search · C1 Prep">
+<meta property="og:description" content="Search the grammar and vocabulary exercises at every level, from A1 to C2: topics, words and phrases.">
+<meta property="og:url" content="https://c1prep.duckdns.org/search.html">
+<meta property="og:image" content="https://c1prep.duckdns.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="C1 Prep: free English practice from A1 to C2, with the six level logos.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico?v=2" sizes="32x32">
+<link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
+<link rel="stylesheet" href="style.css?v=13">
+<script src="theme.js?v=8"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="site"><a class="brand" href="./">C1 Prep</a></header>
+  <p class="kicker">Grammar and vocabulary</p>
+  <h1>Search</h1>
+  <p class="lead">Find a topic, a word or a phrase in the grammar and vocabulary exercises at every level.</p>
+  <form id="search-form" action="search.html" role="search">
+    <div class="search-box"><label class="sr-only" for="q">Search grammar and vocabulary</label><svg class="sb-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4.2-4.2"/></svg><input id="q" type="search" name="q" placeholder="A topic, a word or a phrase" autocomplete="off" enterkeyhint="search" spellcheck="false"></div>
+    <div class="filters">
+      <div class="seg" role="radiogroup" aria-label="Level"><span class="seg-label" aria-hidden="true">Level</span><label><input type="radio" name="level" value="" checked><span>All</span></label><label><input type="radio" name="level" value="a1"><span>A1</span></label><label><input type="radio" name="level" value="a2"><span>A2</span></label><label><input type="radio" name="level" value="b1"><span>B1</span></label><label><input type="radio" name="level" value="b2"><span>B2</span></label><label><input type="radio" name="level" value="c1"><span>C1</span></label><label><input type="radio" name="level" value="c2"><span>C2</span></label></div>
+      <div class="seg" role="radiogroup" aria-label="Type"><span class="seg-label" aria-hidden="true">Type</span><label><input type="radio" name="kind" value="" checked><span>All</span></label><label><input type="radio" name="kind" value="g"><span>Grammar</span></label><label><input type="radio" name="kind" value="v"><span>Vocabulary</span></label></div>
+    </div>
+  </form>
+  <p class="search-status" id="search-status" aria-live="polite"></p>
+  <div id="search-results"></div>
+
+  <footer class="site-foot">
+    <p class="foot-links"><a href="./">All levels</a><a href="search.html">Search</a><a href="placement.html">Level test</a><a href="privacy.html">Privacy</a></p>
+    <p class="legal">Not affiliated with or endorsed by Cambridge University Press &amp; Assessment. A2 Key, B1 Preliminary, B2 First, C1 Advanced and C2 Proficiency are trademarks of Cambridge University Press &amp; Assessment.</p>
+  </footer>
+</div>
+<script src="search-index.js?v=b93e73b2"></script>
+<script src="search.js?v=1"></script>
+</body>
+</html>
