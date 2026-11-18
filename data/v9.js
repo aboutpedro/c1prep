@@ -106,7 +106,7 @@ window.SETS = [
       explain: "a first-hand account = from someone who was there." },
     { s: "The news ___ a lot of controversy.", options: ["sparked", "lit", "burnt", "fired"], answer: 0,
       explain: "spark controversy = cause it suddenly." },
-    { s: "She ___ the record straight in an interview.", options: ["set", "put", "made", "laid"], answer: 0,
+    { s: "She ___ the record straight in an interview.", options: ["set", "got", "made", "laid"], answer: 0,
       explain: "set the record straight = correct a false story." },
     { s: "Word of ___ is still the best advertising.", options: ["mouth", "tongue", "lips", "speech"], answer: 0,
       explain: "word of mouth = people telling each other." }

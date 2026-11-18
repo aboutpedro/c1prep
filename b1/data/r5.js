@@ -91,7 +91,7 @@ Today, [25] two billion cups of coffee are drunk every day. For many of us, it's
           explain: "make someone feel something. Caused and got would need to (caused him to feel)." },
     23: { options: ["lately", "later", "late", "latest"], answer: 1,
           explain: "later = after that time. Lately means 'recently'." },
-    24: { options: ["points", "rooms", "parts", "places"], answer: 3,
+    24: { options: ["seats", "rooms", "parts", "places"], answer: 3,
           explain: "a meeting place = somewhere people meet." },
     25: { options: ["much", "many", "around", "several"], answer: 2,
           explain: "around + number = approximately." },

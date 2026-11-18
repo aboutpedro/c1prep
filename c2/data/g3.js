@@ -45,13 +45,13 @@ window.SETS = [
       explain: "Supposing = imagine that." },
     { s: "Hurry up, ___ we'll miss the bus.", options: ["otherwise", "unless", "in case", "provided"], answer: 0,
       explain: "otherwise = if not." },
-    { s: "You can borrow my car ___ long as you drive carefully.", options: ["as", "so", "for", "in"], answer: 0,
+    { s: "You can borrow my car ___ long as you drive carefully.", options: ["as", "too", "for", "in"], answer: 0,
       explain: "as long as = on condition that." },
     { s: "___ there is a delay, we'll call you.", options: ["In the event that", "In case of", "Unless", "Otherwise"], answer: 0,
       explain: "In the event that = if (formal)." },
     { s: "___ no one objects, we'll start now.", options: ["Assuming", "Unless", "Otherwise", "In case"], answer: 0,
       explain: "Assuming (that) = if we accept that." },
-    { s: "___ of fire, do not use the lift.", options: ["In case", "In the event", "Unless", "Provided"], answer: 0,
+    { s: "___ of fire, do not use the lift.", options: ["In case", "On account", "Unless", "Provided"], answer: 0,
       explain: "In case of + noun = if there is (on notices)." }
   ]
 },

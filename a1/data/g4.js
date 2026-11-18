@@ -99,7 +99,7 @@ window.SETS = [
       explain: "We say watch TV (no article)." },
     { s: "I play ___ on Saturdays.", options: ["football", "the football", "a football"], answer: 0,
       explain: "With sports, no article: play football." },
-    { s: "My brother plays ___.", options: ["the guitar", "guitar", "a guitar"], answer: 0,
+    { s: "My brother plays ___.", options: ["the guitar", "guitars", "a guitar"], answer: 0,
       explain: "With musical instruments we usually say the: play the guitar." },
     { s: "Children go to ___ at 8 o'clock.", options: ["school", "the school", "a school"], answer: 0,
       explain: "go to school (no article) = to study." },
@@ -135,7 +135,7 @@ window.SETS = [
       explain: "One glass, first time: a glass." },
     { s: "___ Tokyo is a very big city.", options: ["– (nothing)", "A", "An", "The"], answer: 0,
       explain: "No article before the names of cities." },
-    { s: "I play ___ piano.", options: ["the", "a", "an", "– (nothing)"], answer: 0,
+    { s: "I play ___ piano.", options: ["the", "a", "an"], answer: 0,
       explain: "Musical instruments: play the piano." }
   ]
 }

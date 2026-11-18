@@ -98,7 +98,7 @@ window.SETS = [
       explain: "Anything else? = something more?" },
     { s: "Customer: Can I have the ___, please?", options: ["bill", "ticket", "price"], answer: 0,
       explain: "The bill tells you how much to pay." },
-    { s: "Waiter: ___ you are.", options: ["Here", "There", "It"], answer: 0,
+    { s: "Waiter: ___ you are.", options: ["Here", "Where", "It"], answer: 0,
       explain: "When you give something: Here you are." },
     { s: "Customer: How ___ is a sandwich?", options: ["much", "many", "cost"], answer: 0,
       explain: "Asking the price: How much…?" },

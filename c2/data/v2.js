@@ -77,7 +77,7 @@ window.SETS = [
       explain: "fall into place = start to make sense." },
     { s: "She's always ___ the extra mile for her students.", options: ["going", "coming", "taking", "setting"], answer: 0,
       explain: "go the extra mile = make extra effort." },
-    { s: "It's out of ___ to criticise him in public.", options: ["place", "order", "line", "turn"], answer: 0,
+    { s: "It's out of ___ to criticise him in public.", options: ["place", "date", "hand", "turn"], answer: 0,
       explain: "out of place = not suitable." },
     { s: "The business went ___ the drain.", options: ["down", "into", "under", "through"], answer: 0,
       explain: "go down the drain = be wasted, fail." }

@@ -119,7 +119,7 @@ window.SETS = [
   textTitle: "At the weekend",
   intro: "Choose the correct word.",
   items: [
-    { s: "On Saturday I ___ late. I get up at eleven!", options: ["sleep", "go", "stay up"], answer: 0,
+    { s: "On Saturday I ___ late. I get up at eleven!", options: ["sleep", "go", "lie"], answer: 0,
       explain: "sleep late = stay in bed late." },
     { s: "I ___ my friends at the shopping centre.", options: ["meet", "go", "play"], answer: 0,
       explain: "We meet friends." },

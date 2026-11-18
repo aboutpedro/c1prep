@@ -70,7 +70,7 @@ window.SETS = [
       explain: "come up with = think of an idea." },
     { s: "He eventually ___ our way of thinking.", options: ["came round to", "came up with", "came over", "came along"], answer: 0,
       explain: "come round to = change your opinion to agree." },
-    { s: "Try to ___ the main points as you read.", options: ["pick out", "pick up on", "take after", "make over"], answer: 0,
+    { s: "Try to ___ the main points as you read.", options: ["pick out", "pick off", "take after", "make over"], answer: 0,
       explain: "pick out = identify from a group." },
     { s: "The policy was ___ gradually over three years.", options: ["phased in", "phased out of", "faded in", "brought round"], answer: 0,
       explain: "phase in = introduce in stages." },

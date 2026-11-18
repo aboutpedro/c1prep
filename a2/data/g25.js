@@ -127,7 +127,7 @@ window.SETS = [
       explain: "ever: present perfect." },
     { s: "We were having lunch when the fire alarm ___ (ring).", answers: ["rang"],
       explain: "A short action in the middle: past simple." },
-    { s: "Next summer we ___ (travel) around Europe. We've planned everything.", answers: ["are going to travel", "are travelling"],
+    { s: "Next summer we ___ (travel) around Europe. We've planned everything.", answers: ["are going to travel", "are travelling", "are traveling"],
       explain: "A plan: going to (or present continuous)." },
     { s: "She ___ (not / see) her brother since Christmas.", answers: ["hasn't seen"],
       explain: "since: present perfect." },

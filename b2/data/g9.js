@@ -123,7 +123,7 @@ window.SETS = [
       explain: "There's no point (in) + -ing." },
     { s: "My boss forced me to work late. → My boss ___ late. (MADE)", answers: ["made me work"],
       explain: "make + person + infinitive without to." },
-    { s: "I'm sorry I didn't listen to your advice. → I regret ___ to your advice. (LISTENING)", answers: ["not listening"],
+    { s: "I'm sorry I didn't listen to your advice. → I regret ___ to your advice. (LISTENING)", answers: ["not listening", "not having listened"],
       explain: "regret not doing." },
     { s: "My parents didn't allow me to go to the concert. → My parents didn't ___ to the concert. (LET)", answers: ["let me go"],
       explain: "let + person + infinitive without to." },

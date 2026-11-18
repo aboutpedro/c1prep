@@ -1,0 +1,143 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Films, shows and concerts",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "The ___ clapped and cheered at the end of the concert.", options: ["audience", "spectators", "public"], answer: 0,
+      explain: "the audience at a concert, play or film." },
+    { s: "Thousands of ___ watched the match.", options: ["spectators", "audience", "public"], answer: 0,
+      explain: "spectators at a sports event." },
+    { s: "The film's ___ was hard to follow.", options: ["plot", "argument", "history"], answer: 0,
+      explain: "the plot = the story of a film or book." },
+    { s: "Who ___ the main role in the film?", options: ["plays", "acts", "does"], answer: 0,
+      explain: "play a role (or a part)." },
+    { s: "The concert was ___ out, so we couldn't get tickets.", options: ["sold", "sell", "sale"], answer: 0,
+      explain: "sold out = no tickets left." },
+    { s: "Her new film is a ___ about a family on holiday.", options: ["comedy", "comic", "comedian"], answer: 0,
+      explain: "a comedy = a funny film or play." },
+    { s: "I'd like to book two ___ for the eight o'clock show.", options: ["seats", "chairs", "places"], answer: 0,
+      explain: "book seats in a theatre or cinema." },
+    { s: "We had a great time at the ___; the rides were amazing.", options: ["theme park", "museum", "gallery"], answer: 0,
+      explain: "a theme park has rides." },
+    { s: "He's a big ___ of rock music.", options: ["fan", "supporter", "follower"], answer: 0,
+      explain: "be a fan of." },
+    { s: "The ___ was so funny that we couldn't stop laughing.", options: ["show", "spectacle", "sight"], answer: 0,
+      explain: "a show = a performance." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Hobbies",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "I ___ up yoga last year.", options: ["took", "made", "did"], answer: 0,
+      explain: "take up = start a new hobby." },
+    { s: "She ___ photographs of birds.", options: ["takes", "makes", "does"], answer: 0,
+      explain: "take photographs." },
+    { s: "Shall we ___ a game of chess?", options: ["play", "do", "make"], answer: 0,
+      explain: "play a game." },
+    { s: "I go ___ every Sunday in the mountains.", options: ["hiking", "hike", "to hike"], answer: 0,
+      explain: "go + -ing for activities: go hiking." },
+    { s: "He's ___ a member of the chess club.", options: ["become", "made", "turned"], answer: 0,
+      explain: "become a member." },
+    { s: "We ___ a party for her birthday.", options: ["threw", "made", "did"], answer: 0,
+      explain: "throw (or have) a party." },
+    { s: "Do you ___ any musical instruments?", options: ["play", "touch", "do"], answer: 0,
+      explain: "play an instrument." },
+    { s: "I spend my free time ___ to podcasts.", options: ["listening", "hearing", "playing"], answer: 0,
+      explain: "listen to." },
+    { s: "She's really ___ painting at the moment.", options: ["into", "onto", "for"], answer: 0,
+      explain: "be into something = be very interested in it (informal)." },
+    { s: "They ___ yoga every morning.", options: ["do", "play", "make"], answer: 0,
+      explain: "do yoga, do karate (activities without a ball)." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Phrasal verbs for free time",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "Let's ___ out tonight; I don't feel like cooking.", options: ["eat", "have", "take"], answer: 0,
+      explain: "eat out = eat in a restaurant." },
+    { s: "I usually ___ out with my friends at the weekend.", options: ["hang", "stay", "get"], answer: 0,
+      explain: "hang out = spend time together in a relaxed way." },
+    { s: "We're going to ___ out the new café on the corner.", options: ["try", "test", "taste"], answer: 0,
+      explain: "try out = test something new." },
+    { s: "What time does the match ___ off?", options: ["kick", "take", "set"], answer: 0,
+      explain: "kick off = start (a football match)." },
+    { s: "I'm ___ forward to the holidays.", options: ["looking", "waiting", "hoping"], answer: 0,
+      explain: "look forward to." },
+    { s: "The party ___ on until 3 a.m.", options: ["went", "took", "made"], answer: 0,
+      explain: "go on = continue." },
+    { s: "We had to ___ off the picnic because of the rain.", options: ["call", "take", "turn"], answer: 0,
+      explain: "call off = cancel." },
+    { s: "He ___ up with a great idea for the party.", options: ["came", "went", "got"], answer: 0,
+      explain: "come up with = think of." },
+    { s: "I'm going to ___ in early tonight; I'm exhausted.", options: ["turn", "go", "get"], answer: 0,
+      explain: "turn in = go to bed (informal)." },
+    { s: "Let's ___ round to Sam's house after school.", options: ["go", "make", "take"], answer: 0,
+      explain: "go round to someone's house = visit them." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Word formation",
+  intro: "Complete the sentences with the correct form of the word in brackets.",
+  items: [
+    { s: "The concert was a huge ___ (DISAPPOINT).", answers: ["disappointment"], width: 15,
+      explain: "disappoint → disappointment." },
+    { s: "The show was very ___ (ENTERTAIN).", answers: ["entertaining"], width: 15,
+      explain: "entertain → entertaining." },
+    { s: "She gave an amazing ___ (PERFORM).", answers: ["performance"], width: 15,
+      explain: "perform → performance." },
+    { s: "The museum has an ___ (EXHIBIT) of modern art.", answers: ["exhibition"], width: 15,
+      explain: "exhibit → exhibition." },
+    { s: "He's a talented ___ (MUSIC).", answers: ["musician"], width: 15,
+      explain: "music → musician." },
+    { s: "I'm not very ___ (ART); I can't draw at all.", answers: ["artistic"], width: 15,
+      explain: "art → artistic." },
+    { s: "The game was really ___ (EXCITE).", answers: ["exciting"], width: 15,
+      explain: "-ing for the thing that causes the feeling." },
+    { s: "The film was ___ (BORE), so we left early.", answers: ["boring"], width: 15,
+      explain: "-ing for the thing that causes the feeling." },
+    { s: "Theatre tickets are becoming ___ (INCREASE) expensive.", answers: ["increasingly"], width: 15,
+      explain: "increase → increasingly (adverb before an adjective)." },
+    { s: "She has a great ___ (IMAGINE).", answers: ["imagination"], width: 15,
+      explain: "imagine → imagination." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Free time",
+  intro: "Complete the sentences with the words in the box. There are two words you don't need.",
+  bank: ["board games", "crossword", "documentary", "festival", "gallery", "gig", "novel", "rehearsal", "sequel", "spare time", "stage", "tickets"],
+  items: [
+    { s: "The actors had a final ___ before the opening night.", answers: ["rehearsal"],
+      explain: "a rehearsal = practice before a performance." },
+    { s: "The band came on ___ at nine o'clock.", answers: ["stage"],
+      explain: "come on stage." },
+    { s: "We camped for three days at the music ___.", answers: ["festival"],
+      explain: "a music festival." },
+    { s: "There's a new exhibition at the art ___.", answers: ["gallery"],
+      explain: "an art gallery." },
+    { s: "I bought the ___ online, so we don't need to queue.", answers: ["tickets"],
+      explain: "tickets for a show." },
+    { s: "We watched a ___ about whales.", answers: ["documentary"],
+      explain: "a documentary = a factual film." },
+    { s: "I'm reading a great ___ about a detective in Paris.", answers: ["novel"],
+      explain: "a novel = a long story in a book." },
+    { s: "On rainy days we play ___, like chess.", answers: ["board games"],
+      explain: "board games = games played on a board." },
+    { s: "My friend's band is playing a ___ at a bar tonight.", answers: ["gig"],
+      explain: "a gig = a concert, usually small (informal)." },
+    { s: "What do you do in your ___?", answers: ["spare time"],
+      explain: "spare time = free time." }
+  ]
+}
+];

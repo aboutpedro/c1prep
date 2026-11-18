@@ -62,7 +62,7 @@ window.SETS = [
   textTitle: "Transport",
   intro: "Choose the correct word.",
   items: [
-    { s: "I go to work ___ bus.", options: ["by", "on the", "in"], answer: 0,
+    { s: "I go to work ___ bus.", options: ["by", "with", "in"], answer: 0,
       explain: "With transport: by bus, by car, by train." },
     { s: "She goes to school ___ foot.", options: ["on", "by", "with"], answer: 0,
       explain: "We say on foot (= walking)." },

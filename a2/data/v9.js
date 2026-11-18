@@ -51,7 +51,7 @@ window.SETS = [
       explain: "We say heavy traffic." },
     { s: "She's my ___ friend. We tell each other everything.", options: ["best", "most good", "bestest"], answer: 0,
       explain: "best friend." },
-    { s: "I've got a ___ cold. I can't stop sneezing.", options: ["bad", "strong", "heavy"], answer: 0,
+    { s: "I've got a ___ cold. I can't stop sneezing.", options: ["bad", "strong", "hard"], answer: 0,
       explain: "We say a bad cold." }
   ]
 },
@@ -132,8 +132,8 @@ window.SETS = [
       explain: "do somebody a favour." },
     { s: "He ___ a shower every morning.", answers: ["has", "takes"],
       explain: "have (or take) a shower." },
-    { s: "Let's ___ a walk in the park.", answers: ["go for", "take"],
-      explain: "go for a walk / take a walk." },
+    { s: "Let's ___ for a walk in the park.", answers: ["go"],
+      explain: "go for a walk." },
     { s: "I ___ my best, but I didn't win.", answers: ["did"],
       explain: "do your best." },
     { s: "Can you ___ me a hand with these bags?", answers: ["give", "lend"],

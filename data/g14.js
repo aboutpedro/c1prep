@@ -19,7 +19,7 @@ window.SETS = [
       explain: "every + number + plural noun for regular intervals: every twenty minutes." },
     { s: "I've been waiting ___ day for this call.", options: ["all", "every", "whole"], answer: 0,
       explain: "all day = the whole day." },
-    { s: "___ village was flooded.", options: ["The whole", "All the", "Every of the"], answer: 0,
+    { s: "___ village was flooded.", options: ["The whole", "Whole the", "Every of the"], answer: 0,
       explain: "the whole + singular noun = all of it." },
     { s: "Not ___ the guests stayed until the end.", options: ["all", "every", "each"], answer: 0,
       explain: "not all = some did, some didn't." },

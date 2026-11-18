@@ -100,7 +100,7 @@ window.SETS = [
       explain: "a stick-in-the-mud = a person who resists change." },
     { s: "Recycling is a ___ in the ocean compared to what's needed.", options: ["drop", "drip", "splash", "wave"], answer: 0,
       explain: "a drop in the ocean = too small to make a difference." },
-    { s: "The project is ___ sailing now that we have the funding.", options: ["plain", "clear", "smooth", "calm"], answer: 0,
+    { s: "The project is ___ sailing now that we have the funding.", options: ["plain", "clear", "flat", "calm"], answer: 0,
       explain: "plain sailing = easy." },
     { s: "The idea spread like ___.", options: ["wildfire", "fire", "lightning", "storm"], answer: 0,
       explain: "spread like wildfire = spread very fast." },

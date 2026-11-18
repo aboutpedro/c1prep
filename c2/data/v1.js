@@ -78,7 +78,7 @@ window.SETS = [
       explain: "go up in smoke = fail completely." },
     { s: "She's had a ___ time of it lately.", options: ["rough", "hard-hit", "rocky", "sore"], answer: 0,
       explain: "have a rough time (of it) = have a difficult period." },
-    { s: "It's an uphill ___ to change people's minds.", options: ["struggle", "climb", "road", "path"], answer: 0,
+    { s: "It's an uphill ___ to change people's minds.", options: ["struggle", "track", "road", "path"], answer: 0,
       explain: "an uphill struggle = a very difficult task." },
     { s: "We managed to keep our ___ above water.", options: ["heads", "noses", "hands", "faces"], answer: 0,
       explain: "keep your head above water = survive financially." }

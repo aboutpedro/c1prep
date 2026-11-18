@@ -128,7 +128,7 @@ window.SETS = [
       explain: "hand in = give to the teacher." },
     { s: "They ___ the party because of the rain.", options: ["called off", "called up", "called back"], answer: 0,
       explain: "call off = cancel." },
-    { s: "I'll ___ you at the airport.", options: ["pick up", "pick on", "pick out"], answer: 0,
+    { s: "I'll ___ Grandma at the airport.", options: ["pick up", "pick on", "pick out"], answer: 0,
       explain: "pick up = collect." },
     { s: "Please ___ your phones before the film starts.", options: ["switch off", "switch on", "switch over"], answer: 0,
       explain: "switch off = stop." },

@@ -8,11 +8,9 @@
 <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <link rel="manifest" href="../manifest.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="../style.css?v=13">
-<script src="../theme.js?v=8"></script>
+<link rel="preload" href="../fonts/inter-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../style.css?v=16">
+<script src="../theme.js?v=10"></script>
 </head>
 <body>
 <div class="wrap">
@@ -20,6 +18,12 @@
   <p class="kicker">Writing · Parts 6 and 7</p>
   <h1>Writing tasks</h1>
   <p class="lead">In Cambridge A2 Key you write a short email or note (Part 6) and a story about three pictures (Part 7). Your text stays in this browser as you type, so you can come back to it later.</p>
+  <details class="card marking">
+    <summary>How your writing is marked, and how to check it yourself</summary>
+    <p>In A2 Key, your writing is marked on three things. Read your text again and ask yourself:</p>
+    <dl class="marking-list"><div><dt>Content</dt><dd>Did I write about every point, or every picture? Will the reader understand everything?</dd></div><div><dt>Organisation</dt><dd>Is it one clear text, with linking words (<i>and, but, because, so, then</i>)? Does an email start and end like an email?</dd></div><div><dt>Language</dt><dd>Did I use the right tenses (the past simple for a story)? Is the spelling of everyday words right? Did I use some different words, not the same ones again and again?</dd></div></dl>
+    <p class="small-note">Then compare your text with the model answer under each task. A different answer can be just as good: what matters is that it does the job well.</p>
+  </details>
 
   <h2>Part 6 · Email or note (25 words or more)</h2>
   <div class="tabs" role="tablist" data-group="p6">
@@ -38,6 +42,15 @@
       <p class="small-note">Write 25 words or more.</p>
     </div>
     <div class="task" data-id="p6-e1" data-min="25" data-checks="Invites Alex to the cinema|Says which film|Says where to meet|Starts and ends like an email (Hi Alex, … See you soon, …)|25 words or more"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (45 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Hi Alex,</p><p>Would you like to come to the cinema with me on Saturday? There’s a new comedy about a family on holiday, and my sister says it’s really funny. It starts at 7.30. Let’s meet outside the cinema at 7.15.</p><p>See you soon,<br>Lucas</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>All three points are there: the invitation, the film and where to meet.</li><li><i>Would you like to…?</i> and <i>Let’s…</i> are simple, natural ways to invite and suggest.</li><li>It starts and ends like an email to a friend.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p6" id="e2" hidden>
@@ -48,6 +61,15 @@
       <p class="small-note">Write 25 words or more.</p>
     </div>
     <div class="task" data-id="p6-e2" data-min="25" data-checks="Says where the new home is|Says what you like about it|Says when Sam can visit|Starts and ends like an email|25 words or more"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (41 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Hi Sam,</p><p>We’ve moved! Our new flat is in Green Street, near the park. I love my bedroom because it’s big and sunny, and I can see the trees from the window. Can you visit me next Saturday afternoon?</p><p>Love,<br>Bia</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It answers all three points: where the home is, what she likes and when Sam can come.</li><li><i>because</i> gives a reason, which makes the email more interesting.</li><li>It ends with a question, so Sam knows he needs to reply.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p6" id="e3" hidden>
@@ -58,6 +80,15 @@
       <p class="small-note">Write 25 words or more.</p>
     </div>
     <div class="task" data-id="p6-e3" data-min="25" data-checks="Says sorry|Explains what happened (past simple)|Says what you will do (I'll…)|Starts with Jo's name and ends with yours|25 words or more"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (35 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Jo,</p><p>I’m really sorry, but I’ve lost your book. I took it on the bus on Monday, and I left it on the seat. I’ll buy you a new one this weekend.</p><p>Sorry again!<br>Leo</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It says sorry, explains what happened and says what Leo will do.</li><li>The past simple (<i>took</i>, <i>left</i>) tells the story; <i>I’ll</i> makes a promise.</li><li>A note can be short, but every point needs a full sentence.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p6" id="e4" hidden>
@@ -68,6 +99,15 @@
       <p class="small-note">Write 25 words or more.</p>
     </div>
     <div class="task" data-id="p6-e4" data-min="25" data-checks="Invites Chris|Says when and where|Says what to bring|Starts and ends like an email|25 words or more"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (40 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Hi Chris,</p><p>I’m having a birthday party, and I’d love you to come! It’s on Friday 12th May at 8 pm at my house, 24 Hill Road. Please bring some music, because we’re going to dance!</p><p>See you there,<br>Marta</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It gives all the information: the invitation, when, where and what to bring.</li><li>The present continuous (<i>I’m having a party</i>) is right for a plan.</li><li><i>Please bring…, because…</i> asks for something and explains why.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p6" id="e5" hidden>
@@ -78,6 +118,15 @@
       <p class="small-note">Write 25 words or more.</p>
     </div>
     <div class="task" data-id="p6-e5" data-min="25" data-checks="Says you can't come|Explains why|Asks about the homework|Polite opening and ending (Dear Ms Taylor, … Best wishes, …)|25 words or more"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (35 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Dear Ms Taylor,</p><p>I’m sorry, but I can’t come to the English class tomorrow. I have to go to the dentist at 10 o’clock. What homework should I do for next week?</p><p>Best wishes,<br>Paulo</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li><i>Dear Ms Taylor</i> and <i>Best wishes</i> are polite ways to write to a teacher.</li><li><i>I have to…</i> explains why he can’t come.</li><li>The question about homework is clear and polite.</li></ul>
+      </div>
+    </details>
   </section>
 
   <h2>Part 7 · Story (35 words or more)</h2>
@@ -96,6 +145,15 @@
       <p class="small-note">Write 35 words or more.</p>
     </div>
     <div class="task" data-id="p7-s1" data-min="35" data-checks="Tells the story in all three pictures|Uses the past simple (and maybe the past continuous)|Uses linking words (first, then, after that, but, so, because)|35 words or more"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (55 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Last Sunday, Max was walking his dog in the park. He threw a ball, and the dog ran after it. But the ball went into the lake, so the dog jumped into the water! Max went into the lake to help him. When they came out, they were both very wet, and everyone was laughing.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It tells the story of all three pictures, in order.</li><li>The past continuous (<i>was walking</i>) sets the scene; the past simple tells what happened.</li><li>Linking words (<i>and, but, so, when</i>) join the sentences.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p7" id="s2" hidden>
@@ -105,6 +163,15 @@
       <p class="small-note">Write 35 words or more.</p>
     </div>
     <div class="task" data-id="p7-s2" data-min="35" data-checks="Tells the story in all three pictures|Uses the past simple (and maybe the past continuous)|Uses linking words (first, then, after that, but, so, because)|35 words or more"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (53 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>It was raining, and a woman was waiting at the bus stop. Suddenly, a car drove through a big puddle, and the water went all over her. She was very angry! But the driver stopped and said, “I’m so sorry!” Then he drove her to work, and they talked all the way there.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li><i>was raining</i> and <i>was waiting</i> describe the background; <i>Suddenly</i> starts the action.</li><li>It says how the woman felt (<i>very angry</i>).</li><li>The words of the driver make the story more alive.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p7" id="s3" hidden>
@@ -114,6 +181,15 @@
       <p class="small-note">Write 35 words or more.</p>
     </div>
     <div class="task" data-id="p7-s3" data-min="35" data-checks="Tells the story in all three pictures|Uses the past simple (and maybe the past continuous)|Uses linking words (first, then, after that, but, so, because)|35 words or more"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (51 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>One afternoon, Leo and Ana made a cake in the kitchen. They put it in the oven, and then they watched TV. After an hour, they saw smoke coming from the oven! They ran to the kitchen, but the cake was black. So they ordered a pizza and laughed about it.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Time words (<i>One afternoon, then, After an hour</i>) make the order clear.</li><li>Every picture is in the story, with the funny ending.</li><li>It uses many past simple verbs correctly: <i>made, put, saw, ran, ordered</i>.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p7" id="s4" hidden>
@@ -123,6 +199,15 @@
       <p class="small-note">Write 35 words or more.</p>
     </div>
     <div class="task" data-id="p7-s4" data-min="35" data-checks="Tells the story in all three pictures|Uses the past simple (and maybe the past continuous)|Uses linking words (first, then, after that, but, so, because)|35 words or more"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (54 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Yesterday, a girl called Sofia found a wallet on the street. There was a lot of money in it, so she took it to the police station. The next day, an old man came to her house with some flowers. It was his wallet! He said, “Thank you so much!” Sofia was very happy.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li><i>Yesterday</i> and <i>The next day</i> show when things happened.</li><li>It adds small details (<i>a lot of money</i>) that are not in the pictures.</li><li>The end says how Sofia felt.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p7" id="s5" hidden>
@@ -132,6 +217,15 @@
       <p class="small-note">Write 35 words or more.</p>
     </div>
     <div class="task" data-id="p7-s5" data-min="35" data-checks="Tells the story in all three pictures|Uses the past simple (and maybe the past continuous)|Uses linking words (first, then, after that, but, so, because)|35 words or more"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (54 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Last summer, the Silva family put their bags in the car because they were going on holiday. But on the motorway, the car stopped and it didn’t start again. They called a mechanic, and while they were waiting, they had a picnic next to the road. In the end, it was a fun day!</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li><i>because, but</i> and <i>while</i> join ideas in longer sentences.</li><li><i>were going</i> and <i>were waiting</i> (past continuous) explain what was happening.</li><li><i>In the end</i> gives the story a good finish.</li></ul>
+      </div>
+    </details>
   </section>
 
   <footer class="site-foot">

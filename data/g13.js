@@ -9,7 +9,7 @@ window.SETS = [
       explain: "advice is uncountable: some advice, a piece of advice." },
     { s: "We need to buy new ___ for the laboratory.", options: ["equipment", "equipments", "an equipment"], answer: 0,
       explain: "equipment is uncountable: no plural, no a/an." },
-    { s: "The ___ from the election is surprising.", options: ["news is", "news are", "new is"], answer: 0,
+    { s: "The ___ surprising – nobody expected that result.", options: ["news is", "news are", "new is"], answer: 0,
       explain: "news is uncountable and takes a singular verb: The news is…" },
     { s: "She has a lot of ___ in project management.", options: ["experience", "experiences", "an experience"], answer: 0,
       explain: "experience (= knowledge from doing something) is uncountable." },

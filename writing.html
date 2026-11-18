@@ -8,11 +8,9 @@
 <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="style.css?v=13">
-<script src="theme.js?v=8"></script>
+<link rel="preload" href="fonts/inter-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=16">
+<script src="theme.js?v=10"></script>
 </head>
 <body>
 <div class="wrap">
@@ -20,6 +18,12 @@
   <p class="kicker">Writing · Parts 1 and 2</p>
   <h1>Writing tasks</h1>
   <p class="lead">In the exam you have 1 hour 30 minutes for both parts: one essay (Part 1) and one task you choose (Part 2). Write 220–260 words for each. Your text stays in this browser as you type, so you can come back to it later.</p>
+  <details class="card marking">
+    <summary>How your writing is marked, and how to check it yourself</summary>
+    <p>In C1 Advanced, your writing is marked on four things. Read your text again and ask yourself:</p>
+    <dl class="marking-list"><div><dt>Content</dt><dd>Did I cover every point fully, developing ideas rather than just listing them?</dd></div><div><dt>Communicative achievement</dt><dd>Is the register consistent and right for the reader? Does the text hold their attention and achieve its purpose?</dd></div><div><dt>Organisation</dt><dd>Does the text flow, with a variety of linking and referencing (<i>whereas, this approach, the former</i>)? Is the structure right for the genre (headings in a report or proposal)?</dd></div><div><dt>Language</dt><dd>Did I use precise, less common vocabulary and complex structures, accurately and naturally? Are there only occasional slips?</dd></div></dl>
+    <p class="small-note">Then compare your text with the model answer under each task. A different answer can be just as good: what matters is that it does the job well.</p>
+  </details>
 
   <h2>Part 1 · Essay (compulsory)</h2>
   <div class="tabs" role="tablist" data-group="p1">
@@ -40,6 +44,15 @@
       <p class="small-note">You may, if you wish, make use of the opinions expressed in the discussion, but you should use your own words as far as possible.</p>
     </div>
     <div class="task" data-id="p1" data-checks="Discusses exactly two of the three areas|Clearly states which area is more important, and why|Has an introduction and a conclusion|Uses linking devices between paragraphs (However, Moreover, On balance…)|Uses own words rather than copying the opinions|Formal, neutral register throughout"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (242 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Local authorities face difficult choices when deciding how to improve life for young people, as budgets are limited and needs are many. Two areas that are frequently debated are public transport and cultural spaces.</p><p>Affordable public transport has a strong claim to priority. For teenagers who cannot drive, buses and trains are the key to independence: they determine whether a young person can take up a place at a distant college, accept a part-time job or simply meet friends across town. When transport is expensive or unreliable, every other opportunity a city offers becomes, in effect, out of reach.</p><p>Cultural spaces, by contrast, address a different need. Libraries, arts centres and community venues give young people somewhere to spend time that does not require money, which is particularly valuable in town centres dominated by shops and cafés. They also nurture creativity and a sense of belonging, benefits that are harder to measure but no less real.</p><p>On balance, however, I would argue that transport should come first. A well-funded arts centre is of little use to a teenager who cannot afford the fare to reach it, whereas cheap and reliable transport makes existing facilities, cultural or otherwise, accessible to everyone. Investment in transport therefore multiplies the value of everything else a city provides.</p><p>In conclusion, while cultural spaces deserve support, local authorities should prioritise public transport, as it is the foundation on which young people’s access to education, work and leisure depends.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It discusses exactly two areas and makes the choice explicit (<i>On balance, however, I would argue that…</i>).</li><li>The key argument is developed, not just stated: transport <i>multiplies the value of everything else</i>.</li><li>The opinions from the discussion are used, but in the writer’s own words (<i>every other opportunity… becomes out of reach</i>).</li><li>C1 language: <i>has a strong claim to priority, in effect, by contrast, no less real, the foundation on which…</i></li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p1" id="e2" hidden>
@@ -54,6 +67,15 @@
       <p class="small-note">You may, if you wish, make use of the opinions expressed in the documentary, but you should use your own words as far as possible.</p>
     </div>
     <div class="task" data-id="p1-e2" data-checks="Discusses exactly two of the three changes|Clearly states which change will have the greater effect, and why|Has an introduction and a conclusion|Uses linking devices between paragraphs|Uses own words rather than copying the opinions|Formal, neutral register throughout"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (235 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Technology is transforming the way people learn, and few areas illustrate this better than online courses and artificial intelligence tools. Both are already changing students’ experience, but in quite different ways.</p><p>Online courses have dramatically widened access to education. A student in a small town can now follow lectures from leading universities, often free of charge, and study at a time that suits them. For those who cannot afford to move or pay high fees, this represents a genuine opportunity. Nevertheless, completion rates for such courses are notoriously low, which suggests that access alone does not guarantee learning.</p><p>Artificial intelligence tools, on the other hand, affect not where students learn but how. Used well, they can explain difficult concepts, give instant feedback and adapt to each learner’s level. Used badly, they allow students to produce essays and solve problems without engaging with the material at all, raising serious questions about what assessment actually measures.</p><p>In my view, AI tools will have the greater effect on students. Online courses mainly extend a familiar model of teaching to a wider audience, whereas AI is changing the very process of thinking and writing that education is meant to develop. Schools will have to rethink both how they teach and how they assess.</p><p>To conclude, although online learning has opened doors for millions, it is artificial intelligence that will most profoundly reshape what it means to be a student.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Each paragraph evaluates its change, with both advantages and limitations.</li><li>The comparison is precise: online courses change <i>where</i>, AI changes <i>how</i>.</li><li>Cohesion is varied: <i>Nevertheless, on the other hand, whereas, it is… that</i> (a cleft sentence for emphasis).</li><li>The register is formal and consistent throughout.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p1" id="e3" hidden>
@@ -68,6 +90,15 @@
       <p class="small-note">You may, if you wish, make use of the opinions expressed in the lecture, but you should use your own words as far as possible.</p>
     </div>
     <div class="task" data-id="p1-e3" data-checks="Discusses exactly two of the three measures|Clearly states which measure would be more effective, and why|Has an introduction and a conclusion|Uses linking devices between paragraphs|Uses own words rather than copying the opinions|Formal, neutral register throughout"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (236 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Governments are under growing pressure to reduce the environmental impact of everyday life, and two measures often proposed are taxes on flights and a ban on single-use plastics. Both have their merits, but they are unlikely to be equally effective.</p><p>Taxing flights targets one of the most carbon-intensive activities an individual can engage in. Higher prices would discourage unnecessary journeys and could fund cleaner forms of transport. However, the measure raises questions of fairness: wealthy travellers would barely notice the cost, while families who fly once a year to visit relatives would be hit hardest. Demand for air travel has also proved remarkably resistant to price increases.</p><p>A ban on single-use plastics, by contrast, changes behaviour directly. Rather than relying on consumers to make better choices, it forces manufacturers and retailers to adopt alternatives, as has already happened with plastic bags and straws in many countries. The effect is immediate and visible, and it applies to everyone equally.</p><p>That said, plastic waste, though highly visible, accounts for a relatively small share of total emissions. Even so, I believe the ban would be the more effective measure, because it achieves what it sets out to do with certainty, whereas the impact of flight taxes depends on how people respond to prices.</p><p>In conclusion, while both policies have a role to play, banning single-use plastics offers a more reliable way of reducing environmental harm in the short term.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The writer weighs the strongest counter-argument (<i>That said, plastic waste… accounts for a relatively small share</i>) before concluding.</li><li>Ideas are evaluated, not just described: fairness, certainty, speed of effect.</li><li>Precise vocabulary: <i>carbon-intensive, hit hardest, remarkably resistant, sets out to do</i>.</li></ul>
+      </div>
+    </details>
   </section>
 
   <h2>Part 2 · Choose one task</h2>
@@ -85,34 +116,106 @@
   <section class="tabpanel" data-group="p2" id="t1">
     <div class="card"><p><b>Proposal.</b> The college where you study has received a sum of money to improve the experience of international students during their first month. The principal has invited students to send proposals. In your proposal, you should <b>describe the difficulties new international students face</b>, <b>suggest how the money could best be spent</b>, and <b>explain how your suggestions would help</b>.</p></div>
     <div class="task" data-id="p2-proposal" data-checks="Has a title and clear headings|Covers all three points (difficulties, suggestions, benefits)|Makes concrete, realistic recommendations|Uses persuasive language (I would recommend…, It would be advisable…)|Formal register; addresses the principal as reader"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (227 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Proposal: Welcoming international students</p><p>Introduction<br>This proposal outlines the main difficulties faced by international students during their first month at the college and recommends how the new funding could best be used to address them.</p><p>Difficulties faced by new students<br>In a recent informal survey, international students identified three main problems. Many felt isolated, as most local students already belong to established friendship groups. Others struggled with practical matters such as opening a bank account or registering with a doctor. Finally, several said that the academic expectations, particularly regarding essays and referencing, were very different from those in their home countries.</p><p>Recommendations<br>I would recommend dividing the money between three initiatives. Firstly, a “buddy” scheme could pair each new arrival with a second-year student, with a small budget for shared social activities. Secondly, a practical help desk, staffed for the first four weeks, would guide students through paperwork. Thirdly, it would be advisable to run a series of short workshops on academic writing and study skills.</p><p>Expected benefits<br>These measures would help students settle in more quickly and feel part of the college community from the outset. Resolving practical problems early would reduce stress, while the workshops would prevent avoidable difficulties with assessed work later in the year.</p><p>Conclusion<br>With relatively modest investment, the college could make a lasting difference to the experience of its international students.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Headings follow the three points in the task, so the principal can find each one quickly.</li><li>Recommendations are concrete (<i>a buddy scheme, a help desk staffed for four weeks</i>), not vague.</li><li>Persuasive, formal language: <i>I would recommend, it would be advisable, from the outset, a lasting difference</i>.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t5" hidden>
     <div class="card"><p><b>Proposal.</b> Your town council wants to make better use of an empty building in the town centre and has asked residents for proposals. In your proposal, you should <b>describe the building and its current state</b>, <b>suggest a new use for it</b>, and <b>explain how the community would benefit</b>.</p></div>
     <div class="task" data-id="p2-proposal-2" data-checks="Has a title and clear headings|Covers all three points (current state, new use, benefits)|Makes concrete, realistic recommendations|Uses persuasive language|Formal register; addresses the council as reader"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (231 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Proposal: A new life for the old post office</p><p>Introduction<br>The purpose of this proposal is to describe the former post office on Market Street, to suggest a new use for the building and to explain how the community would benefit.</p><p>The building and its current state<br>The post office, an attractive nineteenth-century building, has been empty for over three years. Although the structure is sound, the windows are boarded up, the paintwork is peeling and the entrance has become a magnet for litter. Its neglected appearance gives the whole street a run-down feel.</p><p>Proposed use<br>I would propose converting the building into a community hub. The large ground-floor hall could host a café run by a local charity, alongside space for weekly markets, exhibitions and events. The smaller rooms upstairs could be rented out cheaply as workspaces for small businesses and freelancers, which would generate income to cover running costs.</p><p>Benefits to the community<br>Such a hub would bring people back into the town centre, supporting nearby shops that have suffered from falling footfall. It would also offer residents, particularly older people and young families, a welcoming place to meet. Furthermore, restoring a historic building would improve the appearance of the area and strengthen local pride.</p><p>Conclusion<br>I strongly recommend that the council consider this proposal, as it would turn a neglected building into an asset for the whole town.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The description of the current state is vivid but objective (<i>a magnet for litter, a run-down feel</i>).</li><li>The proposal deals with a practical concern (how to pay for it) without being asked, which makes it more convincing.</li><li>Formal persuasive structures: <i>I would propose converting…, I strongly recommend that the council consider…</i></li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t2" hidden>
     <div class="card"><p><b>Review.</b> A culture website has asked readers to review a TV series that changed the way they think about a particular subject. Write a review in which you <b>briefly describe the series</b>, <b>explain how it changed your thinking</b>, and <b>say whether you would recommend it to people who are not usually interested in that subject</b>.</p></div>
     <div class="task" data-id="p2-review" data-checks="Has an engaging title and opening|Describes the series briefly, without retelling the whole plot|Explains clearly how your thinking changed|Gives a clear recommendation for the target group|Uses a range of evaluative language (gripping, thought-provoking, falls short…)|Register suits a website audience: lively but not too informal"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (223 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Rethinking the plate: a series that changed my diet</p><p>I have never been particularly interested in where my food comes from. Supermarket shelves were simply full, and that was the end of the story. Then a friend recommended Harvest, a six-part documentary series about the global food system, and I reluctantly agreed to watch the first episode.</p><p>Each episode follows a single product, from coffee to tomatoes, tracing its journey from the field to the shop. What sets the series apart is its refusal to preach. Rather than lecturing viewers, it lets farmers, factory workers and scientists tell their own stories, and the result is far more powerful than any statistic.</p><p>The episode on fishing changed my thinking most. I had assumed that buying fish was a healthy, harmless choice, but the footage of empty fishing grounds and the testimony of fishermen who can no longer make a living were genuinely shocking. Since watching it, I have changed what I buy and, more importantly, I now ask questions I never used to.</p><p>Admittedly, the series is not perfect. Some episodes are rather slow, and the music can be overly dramatic. Even so, I would wholeheartedly recommend it to people who are not interested in food or the environment. Precisely because it never tells you what to think, it may well change your mind.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The opening establishes the writer’s starting point, so the change in thinking is clear.</li><li>Evaluative language is varied: <i>sets the series apart, refusal to preach, genuinely shocking, overly dramatic</i>.</li><li>A balanced judgement (<i>Admittedly… Even so…</i>) makes the recommendation more credible.</li><li>The recommendation answers the task exactly: it is aimed at people <i>not usually interested</i> in the subject.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t6" hidden>
     <div class="card"><p><b>Review.</b> A travel magazine is publishing a series called 'Places that didn't live up to the hype'. Write a review of a tourist attraction you have visited that was less impressive than you expected. You should <b>describe the attraction</b>, <b>explain why it disappointed you</b>, and <b>suggest what kind of visitor might still enjoy it</b>.</p></div>
     <div class="task" data-id="p2-review-2" data-checks="Has an engaging title and opening|Describes the attraction concisely|Explains the disappointment with specific details|Suggests who might still enjoy it|Uses evaluative language and some humour or irony where appropriate|Register suits a magazine audience"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (231 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>The leaning tower of disappointment</p><p>Few attractions are photographed as often as the Clock Tower in my city, so when I finally visited it last spring, my expectations were sky-high. Sadly, the experience fell rather flat.</p><p>The tower itself is undeniably beautiful, with its delicate stonework and gilded clock face. The trouble begins when you try to see it. After queuing for over an hour in the sun, visitors are allowed exactly fifteen minutes at the top, squeezed onto a narrow platform with forty other people, all trying to take the same photograph. The famous view consists largely of the backs of other tourists’ heads.</p><p>What disappointed me most, though, was the lack of information. There are no guides, almost no signs and an audio tour that costs extra and was, on the day I visited, out of order. I left knowing no more about the tower’s history than when I arrived, and considerably poorer, given the price of the ticket.</p><p>That said, the tower is not without its charms. Photographers prepared to visit at opening time, when the queues are short and the light is soft, will be rewarded. Similarly, visitors who simply want to tick a famous sight off their list may well leave satisfied.</p><p>For anyone hoping to understand the city, however, my advice is to admire the tower from the café opposite and spend the money elsewhere.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Gentle irony suits the magazine series: <i>fell rather flat, the backs of other tourists’ heads, considerably poorer</i>.</li><li>The disappointment is explained with specific details, not just general complaints.</li><li>It suggests who might still enjoy the attraction, as the task requires.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t3" hidden>
     <div class="card"><p><b>Letter.</b> You recently took part in a volunteering programme abroad that was organised by an international agency. The agency has asked participants to write a letter about their experience. In your letter, you should <b>evaluate how well the programme was organised</b>, <b>describe what you gained personally</b>, and <b>suggest one change that would improve the programme for future volunteers</b>.</p></div>
     <div class="task" data-id="p2-letter" data-checks="Opens and closes appropriately (Dear Sir or Madam … Yours faithfully)|Evaluates the organisation, with both positives and negatives|Describes personal gains with specific examples|Makes one clear, justified suggestion|Formal register; polite and constructive tone"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (224 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Dear Sir or Madam,</p><p>I am writing in response to your request for feedback from participants in the Coastal Conservation programme, in which I took part last August.</p><p>Overall, the programme was very well organised. The information pack sent before departure was clear and thorough, and the local coordinators were always available and supportive. Accommodation and meals were simple but entirely adequate, and safety procedures were taken seriously. The one area that fell short was the first week, when there was some confusion about which tasks volunteers should be doing, and several mornings were spent waiting for instructions.</p><p>On a personal level, the experience was invaluable. Working alongside volunteers from eleven countries greatly improved my confidence and my ability to communicate across cultures. I also acquired practical skills, from monitoring turtle nests to leading short talks for visiting schoolchildren, which I had never imagined myself doing.</p><p>If I could suggest one change, it would be to introduce a two-day induction at the start of the programme. This would allow coordinators to explain the projects in detail, assign roles according to volunteers’ skills and ensure that everyone could contribute fully from the outset.</p><p>I would like to thank the agency for an experience that I will remember for a long time, and I hope these comments prove useful for future participants.</p><p>Yours faithfully,<br>Lucas Almeida</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The evaluation is balanced and specific: praise for the pack and coordinators, a clear weakness in the first week.</li><li>The suggestion follows directly from the weakness, and its benefits are explained.</li><li>The tone is formal, polite and constructive, as the agency is asking for feedback.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t7" hidden>
     <div class="card"><p><b>Email.</b> An English-speaking friend is thinking of spending six months working in your country and has emailed you for advice. Write an email to your friend in which you <b>recommend the best place to live and explain why</b>, <b>warn them about any difficulties they may face</b>, and <b>suggest how they could make friends quickly</b>.</p></div>
     <div class="task" data-id="p2-email-2" data-checks="Opens and closes appropriately for a friend|Covers all three points (where to live, difficulties, making friends)|Gives specific, practical advice|Informal but well-organised, with paragraphs|Uses a range of advice language (If I were you…, You might want to…, Make sure you…)"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (230 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Hi Sam,</p><p>It’s brilliant news that you’re thinking of coming over to work! I’m sure you’ll love it, so here’s my advice.</p><p>If I were you, I’d look for a flat in Vila Madalena. It’s a lively neighbourhood full of cafés, bookshops and street art, and it’s well connected to the centre by metro, so you won’t need a car. It isn’t the cheapest area, but the atmosphere more than makes up for it.</p><p>You should be aware of a couple of things, though. The bureaucracy can be frustrating: getting a work visa and opening a bank account can take weeks, so make sure you start the paperwork well before you arrive. Also, the traffic is a nightmare at rush hour, which is another reason to live near a metro station.</p><p>As for making friends, people here are very open and curious about foreigners, so you won’t find it hard, especially if you make an effort with the language. You might want to join a running group or a language exchange; there are loads of them, and they’re a great way to meet locals who want to practise their English. And of course, I’ll introduce you to my friends as soon as you get here, and we’ll throw you a welcome barbecue!</p><p>Let me know if you have any other questions. I’m really looking forward to seeing you!</p><p>Best,<br>Carol</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Informal but carefully organised: one paragraph per point in the task.</li><li>A good range of advice language: <i>If I were you, You should be aware of, make sure, You might want to</i>.</li><li>Natural informal expressions: <i>more than makes up for it, a nightmare, loads of them</i>.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t4" hidden>
     <div class="card"><p><b>Report.</b> You work for a company that introduced flexible working hours six months ago. Your manager has asked you to write a report <b>assessing how the change has affected staff</b>, <b>identifying any problems that have arisen</b>, and <b>recommending whether the scheme should continue in its current form</b>.</p></div>
     <div class="task" data-id="p2-report" data-checks="Has a title, an introduction stating the purpose, and headings|Assesses the effects on staff, with evidence (surveys, feedback…)|Identifies problems clearly|Ends with a clear recommendation|Impersonal, formal style (It was found that…, A majority of staff…)"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (241 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Report on the flexible working scheme</p><p>Introduction<br>This report assesses the impact of the flexible working hours introduced six months ago, identifies the problems that have arisen and makes a recommendation on the future of the scheme. It is based on a staff survey, completed by 85% of employees, and on discussions with team leaders.</p><p>Effects on staff<br>The response has been largely positive. Over three quarters of staff reported a better balance between work and family life, and many said they appreciated being able to avoid rush-hour traffic. Sickness absence has fallen by around 15%, and most team leaders noted no drop in productivity.</p><p>Problems identified<br>However, some difficulties have emerged. Several teams reported that it had become harder to arrange meetings, as colleagues are rarely all in the office at the same time. In addition, customer service staff felt that the phones were not always covered at the beginning and end of the day, which has led to a number of complaints.</p><p>Recommendation<br>In view of these findings, it is recommended that the scheme continue, but with two adjustments. Firstly, a set of “core hours”, for instance from 10 a.m. to 3 p.m., should be introduced, during which all staff are expected to be available. Secondly, customer service teams should agree a rota to ensure full cover throughout opening hours.</p><p>Conclusion<br>With these changes, the company could keep the clear benefits of flexible working while addressing its main drawbacks.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The introduction states the purpose and the evidence the report is based on.</li><li>Findings are reported impersonally with figures: <i>Over three quarters of staff reported…</i></li><li>The recommendation is clear (continue, with changes) and each change solves a problem identified earlier.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t8" hidden>
     <div class="card"><p><b>Report.</b> Your school recently organised a cultural week with talks, films and food from different countries. The head teacher has asked you to write a report <b>describing which events were most popular and why</b>, <b>explaining what did not go well</b>, and <b>recommending improvements for next year</b>.</p></div>
     <div class="task" data-id="p2-report-2" data-checks="Has a title, an introduction stating the purpose, and headings|Describes the most popular events and gives reasons|Explains what went wrong objectively|Ends with clear recommendations|Impersonal, formal style"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (235 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Report on the cultural week</p><p>Introduction<br>The aim of this report is to review the cultural week held in March, describe which events were most popular, explain what did not go well and recommend improvements for next year.</p><p>Most popular events<br>By far the most successful event was the international food fair, which attracted over four hundred visitors, including many parents. Its popularity was largely due to the active involvement of students’ families, who cooked dishes from their home countries. The film evenings also attracted large audiences, particularly the comedies, which appealed to students of all ages.</p><p>What did not go well<br>By contrast, attendance at the afternoon talks was disappointing. They clashed with sports practice and other after-school clubs, and, according to feedback forms, several speakers spoke for too long without involving the audience. There were also some organisational problems: the timetable was published only two days in advance, so many students were unaware of what was on offer.</p><p>Recommendations<br>For next year, it is recommended that the programme be published at least two weeks beforehand and promoted through class representatives. Talks should be shorter, more interactive and scheduled at lunchtime to avoid clashes. Finally, given the success of the food fair, it would be worth extending it to two days.</p><p>Conclusion<br>The cultural week was a success overall, and with better planning it could become one of the highlights of the school year.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Popular events are described with reasons, not just listed (<i>Its popularity was largely due to…</i>).</li><li>Problems are explained objectively, citing evidence (<i>according to feedback forms</i>).</li><li>Each recommendation responds to a specific problem or success.</li></ul>
+      </div>
+    </details>
   </section>
 
   <footer class="site-foot">

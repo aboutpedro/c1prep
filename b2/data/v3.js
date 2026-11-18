@@ -19,7 +19,7 @@ window.SETS = [
       explain: "jealous of." },
     { s: "I'm not accustomed ___ such cold weather.", options: ["to", "with", "at"], answer: 0,
       explain: "accustomed to = used to." },
-    { s: "We're a bit short ___ money this month.", options: ["of", "on", "with"], answer: 0,
+    { s: "We're a bit short ___ money this month.", options: ["of", "in", "with"], answer: 0,
       explain: "short of = not having enough." },
     { s: "She's involved ___ several charity projects.", options: ["in", "at", "on"], answer: 0,
       explain: "involved in." },

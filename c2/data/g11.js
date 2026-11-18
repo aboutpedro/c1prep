@@ -13,7 +13,7 @@ window.SETS = [
       explain: "Adjective + though / as + subject + verb = although he is talented." },
     { s: "He's a good player, ___ a little slow.", options: ["albeit", "although being", "despite", "whereas"], answer: 0,
       explain: "albeit + adjective/phrase = although (formal)." },
-    { s: "___ what people say, I think he's honest.", options: ["Whatever", "However", "Wherever", "Whoever"], answer: 0,
+    { s: "___ people say, I think he's honest.", options: ["Whatever", "However", "Wherever", "Whoever"], answer: 0,
       explain: "Whatever + clause = no matter what." },
     { s: "___ as it may seem, I've never been abroad.", options: ["Strange", "Strangely", "Stranger", "Strangeness"], answer: 0,
       explain: "Adjective + as + it may seem." },

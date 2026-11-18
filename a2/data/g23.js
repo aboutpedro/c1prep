@@ -63,7 +63,7 @@ window.SETS = [
   items: [
     { s: "___ go to the park.", answers: ["Let's"],
       explain: "Let's + verb." },
-    { s: "___ we order a pizza?", answers: ["Shall"],
+    { s: "___ we order a pizza?", answers: ["Shall", "Should"],
       explain: "Shall we + verb?" },
     { s: "How about ___ (go) to the concert?", answers: ["going"],
       explain: "How about + -ing." },
@@ -75,7 +75,7 @@ window.SETS = [
       explain: "Negative: Let's not + verb." },
     { s: "___ about a game of chess?", answers: ["How", "What"],
       explain: "How about…? / What about…?" },
-    { s: "Where ___ we go on holiday this year?", answers: ["shall"],
+    { s: "Where ___ we go on holiday this year?", answers: ["shall", "should"],
       explain: "Where shall we…?" },
     { s: "Let's ___ (meet) outside the cinema.", answers: ["meet"],
       explain: "Let's + verb." },

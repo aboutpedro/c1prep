@@ -8,11 +8,9 @@
 <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <link rel="manifest" href="../manifest.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="../style.css?v=13">
-<script src="../theme.js?v=8"></script>
+<link rel="preload" href="../fonts/inter-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../style.css?v=16">
+<script src="../theme.js?v=10"></script>
 </head>
 <body>
 <div class="wrap">
@@ -20,6 +18,12 @@
   <p class="kicker">Writing · Parts 1 and 2</p>
   <h1>Writing tasks</h1>
   <p class="lead">In the exam you have 1 hour 20 minutes for both parts: one essay (Part 1) and one task you choose (Part 2). Write 140–190 words for each. Your text stays in this browser as you type, so you can come back to it later.</p>
+  <details class="card marking">
+    <summary>How your writing is marked, and how to check it yourself</summary>
+    <p>In B2 First, your writing is marked on four things. Read your text again and ask yourself:</p>
+    <dl class="marking-list"><div><dt>Content</dt><dd>Did I answer every part of the task, with relevant ideas? Would the reader be fully informed?</dd></div><div><dt>Communicative achievement</dt><dd>Is the register right for the reader and the type of text (formal for an application, lively for an article)? Does it do its job: persuade, inform, recommend?</dd></div><div><dt>Organisation</dt><dd>Are the paragraphs clear, each with one main idea? Do linking words and referencing (<i>this, such, which</i>) connect the ideas, without repeating the same ones?</dd></div><div><dt>Language</dt><dd>Did I use a range of vocabulary and structures (conditionals, passives, relative clauses) with good control? Are mistakes rare and minor?</dd></div></dl>
+    <p class="small-note">Then compare your text with the model answer under each task. A different answer can be just as good: what matters is that it does the job well.</p>
+  </details>
 
   <h2>Part 1 · Essay (compulsory)</h2>
   <div class="tabs" role="tablist" data-group="p1">
@@ -37,6 +41,15 @@
       <div class="notes-box"><b>Do young people today have more opportunities than their parents had?</b><ul style="list-style:none;padding-left:0"><li><b>Notes</b> — Write about:</li><li>1. education</li><li>2. travel</li><li>3. ……………… (your own idea)</li></ul></div>
     </div>
     <div class="task" data-id="p1-e1" data-checks="Answers the question with a clear opinion|Covers both notes (education and travel)|Adds a third, different idea of your own|Has an introduction, a paragraph for each idea and a conclusion|Uses linking words (Firstly, In addition, However, On the other hand, In conclusion…)|Neutral or formal style: no contractions or slang"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (164 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>It is often said that young people today have opportunities their parents could only dream of. In my opinion, this is largely true, although the picture is not entirely positive.</p><p>Firstly, education is far more accessible than it used to be. Thanks to the internet, anyone can take an online course or watch lectures from top universities for free. In addition, many more young people now go to university than in their parents’ generation.</p><p>Secondly, travel has become much cheaper and easier. Low-cost airlines and exchange programmes mean that many students spend time abroad, which was rare thirty years ago.</p><p>However, when it comes to work, the situation is less clear. Many young people have degrees but struggle to find a stable job, and housing is so expensive that they often live with their parents for longer.</p><p>In conclusion, I believe young people have more opportunities to learn and travel than their parents did, but they face new difficulties in building an independent life.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The opinion is clear from the first paragraph and repeated, slightly developed, in the conclusion.</li><li>Each note has its own paragraph, and the third idea (work and housing) adds a contrasting point.</li><li>Linking words guide the reader: <i>Firstly, In addition, Secondly, However, In conclusion</i>.</li><li>The register is neutral: no contractions, and phrases like <i>when it comes to</i> and <i>is far more accessible</i>.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p1" id="e2" hidden>
@@ -46,6 +59,15 @@
       <div class="notes-box"><b>Should all young people do some unpaid work to help their local community?</b><ul style="list-style:none;padding-left:0"><li><b>Notes</b> — Write about:</li><li>1. benefits for the community</li><li>2. time for studying</li><li>3. ……………… (your own idea)</li></ul></div>
     </div>
     <div class="task" data-id="p1-e2" data-checks="Answers the question with a clear opinion|Covers both notes (the community and time for studying)|Adds a third, different idea of your own|Has an introduction, a paragraph for each idea and a conclusion|Uses linking words between and within paragraphs|Neutral or formal style: no contractions or slang"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (150 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Volunteering is often presented as something every young person should do. While I agree that it is valuable, I do not think it should be compulsory.</p><p>There is no doubt that the community benefits. Volunteers help in hospitals, clean up parks and support elderly people who live alone. Without them, many local projects would simply not exist.</p><p>On the other hand, young people already have heavy workloads. Students preparing for important exams may not have time for regular unpaid work, and forcing them to do it could affect their results.</p><p>Another point is that volunteering only works well when people want to do it. Someone who is made to help may do the job badly, whereas a genuine volunteer brings energy and commitment.</p><p>In conclusion, I believe young people should be encouraged to volunteer, for example through school projects, but it should remain a free choice rather than an obligation.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The answer is balanced (<i>While I agree… I do not think…</i>) but the opinion is never in doubt.</li><li>The writer’s own idea (people do better work when they choose to help) is relevant and well argued.</li><li>Good B2 language: <i>There is no doubt that</i>, <i>would simply not exist</i>, <i>whereas</i>, <i>rather than</i>.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p1" id="e3" hidden>
@@ -55,6 +77,15 @@
       <div class="notes-box"><b>Is it a good idea for students to have a part-time job while they are studying?</b><ul style="list-style:none;padding-left:0"><li><b>Notes</b> — Write about:</li><li>1. money</li><li>2. experience</li><li>3. ……………… (your own idea)</li></ul></div>
     </div>
     <div class="task" data-id="p1-e3" data-checks="Answers the question with a clear opinion|Covers both notes (money and experience)|Adds a third, different idea of your own|Has an introduction, a paragraph for each idea and a conclusion|Uses linking words between and within paragraphs|Neutral or formal style: no contractions or slang"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (164 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Many students today combine their studies with a part-time job. In my view, this can be a good idea, as long as the job does not take up too much time.</p><p>The most obvious advantage is money. A part-time job allows students to pay for their own expenses, such as transport or books, and teaches them to manage a budget instead of relying entirely on their parents.</p><p>Work experience is another important benefit. Even a job in a café or a shop teaches skills like teamwork, punctuality and dealing with customers, all of which employers value. It can also help students decide what career they want.</p><p>However, a job can affect students’ studies. If they work late in the evenings, they may be too tired to concentrate in class or to prepare properly for exams.</p><p>To sum up, I believe a part-time job is worthwhile for students, provided that it is limited to a few hours a week and their studies remain the priority.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The opinion includes a condition (<i>as long as… / provided that…</i>), which makes it more thoughtful.</li><li>Each paragraph starts with a clear topic sentence (<i>The most obvious advantage is money</i>).</li><li><i>all of which employers value</i> is a good example of a relative clause that adds information neatly.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p1" id="e4" hidden>
@@ -64,6 +95,15 @@
       <div class="notes-box"><b>Should public transport be free for everyone?</b><ul style="list-style:none;padding-left:0"><li><b>Notes</b> — Write about:</li><li>1. the environment</li><li>2. the cost</li><li>3. ……………… (your own idea)</li></ul></div>
     </div>
     <div class="task" data-id="p1-e4" data-checks="Answers the question with a clear opinion|Covers both notes (the environment and the cost)|Adds a third, different idea of your own|Has an introduction, a paragraph for each idea and a conclusion|Uses linking words between and within paragraphs|Neutral or formal style: no contractions or slang"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (158 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>In many cities, traffic and pollution are serious problems. One solution that is often suggested is making public transport free for everyone. In my opinion, this would bring more advantages than disadvantages.</p><p>From an environmental point of view, the benefits are clear. If buses and trains were free, many people would leave their cars at home, which would reduce air pollution and carbon emissions.</p><p>The main argument against the idea is the cost. Someone has to pay for the service, and that would probably mean higher taxes. However, governments already spend large amounts on roads and on the health problems caused by pollution.</p><p>Free transport would also be fairer. People on low incomes, students and the elderly would be able to get to work, school or the doctor without worrying about the price of a ticket.</p><p>In conclusion, although free public transport would be expensive, I believe it would make our cities cleaner and fairer places to live.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It deals with the argument against (the cost) and then answers it, which makes the opinion stronger.</li><li>The second conditional (<i>If buses and trains were free, people would…</i>) suits an imaginary situation.</li><li>The own idea (fairness) is different from both notes and clearly explained.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p1" id="e5" hidden>
@@ -73,6 +113,15 @@
       <div class="notes-box"><b>Do people depend too much on their mobile phones?</b><ul style="list-style:none;padding-left:0"><li><b>Notes</b> — Write about:</li><li>1. communication</li><li>2. health</li><li>3. ……………… (your own idea)</li></ul></div>
     </div>
     <div class="task" data-id="p1-e5" data-checks="Answers the question with a clear opinion|Covers both notes (communication and health)|Adds a third, different idea of your own|Has an introduction, a paragraph for each idea and a conclusion|Uses linking words between and within paragraphs|Neutral or formal style: no contractions or slang"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (161 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Mobile phones have become part of almost every moment of our lives. In my opinion, many people do depend on them too much, even though they are extremely useful.</p><p>In terms of communication, phones have clear advantages. We can contact family and friends instantly, wherever they are. However, it is common to see friends sitting together in a café, each looking at their own screen instead of talking.</p><p>Health is another concern. Using a phone late at night can affect our sleep, and spending hours looking down at a small screen may cause neck and eye problems. Some people also feel anxious when they cannot check their messages.</p><p>Furthermore, we rely on phones for things we used to do ourselves. Few people remember phone numbers or can find their way around a city without a map app.</p><p>To conclude, I believe phones are valuable tools, but we should use them more consciously and make sure they do not control our lives.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li><i>many people do depend on them</i> uses <i>do</i> for emphasis, a nice touch at B2.</li><li>The communication paragraph looks at both sides before the writer’s point.</li><li>Specific examples (<i>neck and eye problems, map apps</i>) make the arguments convincing.</li></ul>
+      </div>
+    </details>
   </section>
 
   <h2>Part 2 · Choose one task</h2>
@@ -94,6 +143,15 @@
       <p>Write your <b>article</b>.</p>
     </div>
     <div class="task" data-id="p2-article-1" data-checks="Has an interesting title|Opens in a way that catches the reader's attention (a question, a surprising detail…)|Answers both questions: what happened and why you remember it|Uses narrative tenses correctly (past simple, past continuous, past perfect)|Uses some descriptive and emotional language|Ends with a memorable final line|Lively, fairly informal style for a magazine reader"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (152 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>The day I met my hero</p><p>Have you ever met someone you have admired for years? It happened to me last summer, and I still smile when I think about it.</p><p>I had queued for three hours in the rain outside a bookshop to get my favourite author to sign her new novel. By the time I reached the front, I was soaked and exhausted, and the staff were about to close the doors.</p><p>When she saw me, she laughed and asked how long I had been waiting. Then, instead of just signing the book, she talked to me for ten minutes about my own writing and told me never to give up.</p><p>I remember that day so clearly because it changed the way I see myself. Before, writing was just a hobby. Now I’m studying literature and working on my first novel.</p><p>Sometimes the best moments are worth getting wet for!</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The title and the opening question make the reader want to read on.</li><li>Narrative tenses are used well: <i>had queued</i>, <i>was soaked</i>, <i>were about to close</i>, <i>had been waiting</i>.</li><li>It answers both questions: what happened, and why the writer still remembers it.</li><li>The short, humorous final line is memorable.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t2" hidden>
     <div class="card">
@@ -102,6 +160,15 @@
       <p>Write your <b>article</b>.</p>
     </div>
     <div class="task" data-id="p2-article-2" data-checks="Has an interesting title|Opens in a way that catches the reader's attention|Answers all three questions: where, what you do there, why it's special|Describes the place with specific details and adjectives|Speaks to the reader directly (Have you ever…? If you're ever in…)|Lively, fairly informal style for a website reader"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (154 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>The best seat in town</p><p>If you’ve ever wanted to escape from the noise of the city for an hour, let me tell you about my favourite place: the rooftop garden of our central library.</p><p>Most people don’t even know it exists. You take the old lift to the sixth floor, walk past the history section, and suddenly you’re outside, surrounded by plants, wooden benches and an amazing view over the rooftops.</p><p>I go there almost every Saturday morning. I usually take a coffee and a novel, but sometimes I just sit and watch the city waking up below me.</p><p>What makes it special is the peace. Even though you’re right in the centre, all you can hear are birds and the wind in the trees. It’s the perfect place to think, read or simply do nothing.</p><p>So next time you’re in town, take the lift to the sixth floor. You won’t regret it!</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It talks directly to the reader (<i>If you’ve ever wanted…, You take the old lift…</i>), which suits a website.</li><li>The description is specific and visual: <i>the old lift, wooden benches, the city waking up</i>.</li><li><i>What makes it special is…</i> is a useful structure for emphasis.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t3" hidden>
     <div class="card">
@@ -110,6 +177,15 @@
       <p>Write your <b>email</b>.</p>
     </div>
     <div class="task" data-id="p2-email" data-checks="Opens and closes in a friendly way (Hi Alex… / See you soon…)|Answers all three questions (what to do, what clothes to bring, anything else to know)|Gives specific suggestions and reasons|Uses paragraphs, even though it's informal|Informal, friendly style: contractions and phrasal verbs are fine|Uses some advice language (You should…, Don't forget to…, Why don't we…?)"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (152 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Hi Alex,</p><p>Great to hear you’re coming over next summer! You’re more than welcome to stay with us for a few days.</p><p>The best thing to do round here is definitely to go to the coast. It’s only an hour away by train, and there are some beautiful beaches where we could go surfing. I’ll also take you to the old town, which has great markets and restaurants.</p><p>As for clothes, it’s usually hot during the day, so bring shorts and T-shirts, but don’t forget a jumper, because it can get quite chilly in the evenings. You’ll need comfortable shoes too, as we’ll be walking a lot.</p><p>One more thing: shops here often close for a few hours after lunch, so don’t be surprised if the streets are empty in the afternoon. Also, it’s a good idea to bring some cash, as not everywhere takes cards.</p><p>Can’t wait to see you!<br>Mariana</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Informal but organised: one paragraph for each of Alex’s questions.</li><li>Natural informal language: <i>round here, chilly, Can’t wait to see you!</i></li><li>Advice language: <i>don’t forget, You’ll need, it’s a good idea to</i>.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t4" hidden>
     <div class="card">
@@ -118,16 +194,43 @@
       <p>Write your <b>letter of application</b>.</p>
     </div>
     <div class="task" data-id="p2-letter" data-checks="Opens and closes formally (Dear Sir or Madam… / Yours faithfully)|Says in the first paragraph which job you are applying for|Explains why you are suitable, with examples (experience, skills, personality)|Mentions your level of English|Has a polite final paragraph (I look forward to hearing from you)|Formal style: no contractions or slang"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (164 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Dear Sir or Madam,</p><p>I am writing to apply for the position of summer camp assistant, which I saw advertised in last week’s edition of your newspaper.</p><p>I am a nineteen-year-old university student, and I have a lot of experience of working with children. For the past two years, I have helped to run a football club for eight- to twelve-year-olds at my local sports centre, where I organise training sessions and games every Saturday.</p><p>I would describe myself as energetic, patient and creative. I enjoy planning activities, and I am good at making sure that every child feels included, even the shy ones. I also have a first-aid certificate.</p><p>As for my English, I have studied it for ten years and recently passed the B2 First exam, so I would have no difficulty communicating with the children or the other staff.</p><p>I would be happy to attend an interview at any time. I look forward to hearing from you.</p><p>Yours faithfully,<br>Ana Pereira</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The first paragraph says which job she is applying for and where she saw it.</li><li>Experience, personality and English each have a paragraph, with concrete examples.</li><li>Formal register throughout, and the right opening and closing (<i>Dear Sir or Madam… Yours faithfully</i>).</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t5" hidden>
     <div class="card"><p><b>Report.</b> Your English teacher has asked you to write a report about the sports facilities at your school or college. In your report, you should <b>describe the facilities</b>, <b>say what students like about them</b> and <b>suggest how they could be improved</b>.</p>
       <p>Write your <b>report</b>.</p></div>
     <div class="task" data-id="p2-report-1" data-checks="Has a title and clear headings (Introduction, Current facilities, Recommendations…)|States the purpose of the report in the introduction|Covers all three points: the facilities, what students like, improvements|Makes clear, practical recommendations|Formal, impersonal style (Most students said that…, It is recommended that…)"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (167 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Report on the school’s sports facilities</p><p>Introduction<br>The aim of this report is to describe the sports facilities at our school, to say what students think of them and to suggest some improvements. It is based on a survey of sixty students.</p><p>Current facilities<br>The school has a large sports hall, an outdoor football pitch and a small gym with exercise bikes and weights. There are also changing rooms with showers.</p><p>What students like<br>Most students said that the sports hall is the best facility, as it is used for basketball, volleyball and badminton. The football pitch is also popular, especially at lunchtime.</p><p>Recommendations<br>However, many students complained that the gym is too small and that the equipment is old. It is therefore recommended that the gym be enlarged and new machines bought. In addition, the changing rooms need repainting, and the pitch would be used more if it had lights for winter evenings.</p><p>Conclusion<br>If these changes were made, more students would take part in sport.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Clear headings make the report easy to read, and the introduction states its purpose.</li><li>Impersonal language: <i>Most students said that…, It is therefore recommended that…</i></li><li>The recommendations are practical and linked to the problems students mentioned.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t6" hidden>
     <div class="card"><p><b>Report.</b> The tourist office in your town wants to attract more young visitors. You have been asked to write a report <b>describing what the town offers young people at the moment</b> and <b>recommending what could be done to make it more attractive to them</b>.</p>
       <p>Write your <b>report</b>.</p></div>
     <div class="task" data-id="p2-report-2" data-checks="Has a title and clear headings|States the purpose of the report in the introduction|Describes what the town offers now, with specific examples|Makes clear, realistic recommendations|Ends with a short conclusion|Formal, impersonal style"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (163 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Attracting young visitors to Vila Nova</p><p>Introduction<br>This report describes what our town offers young people at the moment and suggests how it could become more attractive to them.</p><p>What the town offers now<br>Vila Nova has a beautiful old town with historic buildings and a popular weekly market. There is also a river beach, which is crowded with local teenagers in summer. However, there are few activities in the evenings, and most cafés close early.</p><p>Recommendations<br>Firstly, it would be a good idea to organise a summer music festival on the river beach, as this would bring in visitors from other towns. Secondly, the tourist office could produce a free map in English showing cheap places to eat and stay, such as the youth hostel. Finally, I would suggest hiring out bicycles, since the cycle paths along the river are one of the town’s best features.</p><p>Conclusion<br>With a few low-cost changes, Vila Nova could become a popular destination for young people.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It describes the current situation honestly, including what is missing.</li><li>Each recommendation comes with a reason (<i>as this would…, since…</i>).</li><li>The conclusion is short and sums up the main message.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t7" hidden>
     <div class="card">
@@ -136,6 +239,15 @@
       <p>Write your <b>review</b>.</p>
     </div>
     <div class="task" data-id="p2-review-1" data-checks="Has a title and an opening that catches the reader's attention|Describes the film briefly, without telling the whole story|Explains clearly why you liked it|Says who would enjoy it most|Uses a range of adjectives (gripping, moving, hilarious, well-acted…)|Ends with a clear recommendation"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (156 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>A film that will stay with you</p><p>Every now and then, a film comes along that makes you look at the world differently. For me, that film is The Last Lighthouse.</p><p>It tells the story of Marta, a teenage girl who is sent to spend the summer with her grandfather, a lighthouse keeper on a remote island. At first she is bored and angry, but slowly she discovers a family secret that changes everything.</p><p>What I loved most was the acting. The young actress who plays Marta is completely convincing, and the scenes with her grandfather are both funny and deeply moving. The photography is stunning too: you can almost feel the wind and the sea.</p><p>Although it is a quiet film with very little action, it is never boring. Anyone who enjoys stories about families will love it, but I think teenagers in particular will relate to Marta.</p><p>Don’t miss it, and take some tissues!</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It describes the story briefly without giving away the ending (<i>a family secret that changes everything</i>).</li><li>Evaluative language: <i>completely convincing, deeply moving, stunning</i>.</li><li>It says who would enjoy it most and ends with a clear, lively recommendation.</li></ul>
+      </div>
+    </details>
   </section>
   <section class="tabpanel" data-group="p2" id="t8" hidden>
     <div class="card">
@@ -144,6 +256,15 @@
       <p>Write your <b>review</b>.</p>
     </div>
     <div class="task" data-id="p2-review-2" data-checks="Has a title and names the place early on|Covers all three areas: food, service, atmosphere|Gives specific details and examples|Balances positive and negative points, if there are any|Uses a range of evaluative language (delicious, overpriced, cosy, slow…)|Ends with a clear recommendation"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (148 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Café Lisboa: worth the wait?</p><p>Everyone in town has been talking about Café Lisboa, which opened on the main square last month, so last Saturday I finally went to see what all the fuss was about.</p><p>The food was definitely the highlight. I had a warm chicken salad with fresh herbs, followed by the best custard tart I have ever tasted. The portions were generous, and the prices were reasonable for the city centre.</p><p>Unfortunately, the service did not match the food. We waited almost twenty minutes before anyone took our order, and the waiter seemed rushed and forgot our drinks.</p><p>The atmosphere, on the other hand, was lovely. With its old tiles, soft music and big windows overlooking the square, it is a cosy place to spend an afternoon.</p><p>Overall, I would recommend Café Lisboa, especially for its cakes, but go early or be prepared to wait.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Food, service and atmosphere each have their own paragraph, with specific details.</li><li>It balances positive and negative points (<i>Unfortunately…, on the other hand…</i>).</li><li>The recommendation is clear but honest about the problem.</li></ul>
+      </div>
+    </details>
   </section>
 
   <footer class="site-foot">

@@ -133,7 +133,7 @@ window.SETS = [
       explain: "Were + subject + to-infinitive = If… were to…" },
     { s: "He took the medicine, so he recovered quickly. → If he ___ the medicine, he wouldn't have recovered so quickly. (TAKEN)", answers: ["had not taken", "hadn't taken"],
       explain: "Third conditional: had(n't) + past participle." },
-    { s: "Take a map because you might get lost. → Take a map ___ lost. (CASE)", answers: ["in case you get", "in case you got"],
+    { s: "Take a map because you might get lost. → Take a map ___ lost. (CASE)", answers: ["in case you get"],
       explain: "in case = as a precaution." },
     { s: "I'm only going to the party if you come too. → I'm not going to the party ___ too. (UNLESS)", answers: ["unless you come", "unless you go"],
       explain: "not… unless = only if." }

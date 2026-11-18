@@ -1,0 +1,142 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Indirect questions",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "Could you tell me where ___?", options: ["the station is", "is the station", "does the station"], answer: 0,
+      explain: "Indirect questions use normal word order: where the station is." },
+    { s: "I wonder what time ___.", options: ["the film starts", "does the film start", "starts the film"], answer: 0,
+      explain: "No do or does in indirect questions." },
+    { s: "Do you know if ___ open on Sundays?", options: ["the shop is", "is the shop", "does the shop"], answer: 0,
+      explain: "if or whether + normal word order." },
+    { s: "Can you tell me how much ___?", options: ["this jacket costs", "does this jacket cost", "costs this jacket"], answer: 0,
+      explain: "Normal word order, and no does." },
+    { s: "I'd like to know why ___ late again.", options: ["you were", "were you", "did you be"], answer: 0,
+      explain: "Normal word order: subject, then verb." },
+    { s: "Do you have any idea where ___ my keys?", options: ["I left", "did I leave", "left I"], answer: 0,
+      explain: "Past simple without did in indirect questions." },
+    { s: "She asked me ___ I could help her.", options: ["if", "that", "what"], answer: 0,
+      explain: "Yes/no questions are reported with if or whether." },
+    { s: "Could you tell me ___ the meeting has finished?", options: ["whether", "that", "what"], answer: 0,
+      explain: "whether = if." },
+    { s: "Do you remember what ___?", options: ["she said", "did she say", "said she"], answer: 0,
+      explain: "Normal word order after Do you remember…" },
+    { s: "Would you mind telling me ___ you're from?", options: ["where", "that", "which"], answer: 0,
+      explain: "where for a place." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Question tags",
+  intro: "Choose the correct question tag.",
+  items: [
+    { s: "You're coming tomorrow, ___?", options: ["aren't you", "don't you", "won't you"], answer: 0,
+      explain: "Positive sentence with be: negative tag with be (aren't you)." },
+    { s: "She doesn't eat meat, ___?", options: ["does she", "doesn't she", "is she"], answer: 0,
+      explain: "Negative sentence: positive tag." },
+    { s: "They've already left, ___?", options: ["haven't they", "didn't they", "don't they"], answer: 0,
+      explain: "Present perfect: the tag uses have." },
+    { s: "He can swim, ___?", options: ["can't he", "doesn't he", "isn't he"], answer: 0,
+      explain: "Modal verb: the tag uses the same modal." },
+    { s: "You won't tell anyone, ___?", options: ["will you", "won't you", "do you"], answer: 0,
+      explain: "Negative sentence (won't): positive tag (will)." },
+    { s: "I'm late, ___?", options: ["aren't I", "am not I", "isn't I"], answer: 0,
+      explain: "I am → aren't I." },
+    { s: "Let's go for a walk, ___?", options: ["shall we", "will we", "don't we"], answer: 0,
+      explain: "Let's → shall we." },
+    { s: "Nobody called while I was out, ___?", options: ["did they", "didn't they", "did he"], answer: 0,
+      explain: "nobody is negative, so the tag is positive, with they." },
+    { s: "She went to the party, ___?", options: ["didn't she", "wasn't she", "doesn't she"], answer: 0,
+      explain: "Past simple: the tag uses did." },
+    { s: "There's a bank near here, ___?", options: ["isn't there", "isn't it", "hasn't there"], answer: 0,
+      explain: "There is → isn't there." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Question words and prepositions",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "What are you looking ___?", options: ["at", "to", "on"], answer: 0,
+      explain: "look at something; the preposition goes at the end of the question." },
+    { s: "Who did you go to the cinema ___?", options: ["with", "to", "by"], answer: 0,
+      explain: "go somewhere with someone: Who did you go with?" },
+    { s: "What's your new teacher ___?", options: ["like", "as", "how"], answer: 0,
+      explain: "What's she like? = Describe her." },
+    { s: "___ do you think of my new haircut?", options: ["What", "How", "Which"], answer: 0,
+      explain: "What do you think of…? = What's your opinion?" },
+    { s: "___ is the airport from here? About 20 km.", options: ["How far", "How long", "How much"], answer: 0,
+      explain: "How far = what distance." },
+    { s: "___ have you been learning English?", options: ["How long", "How much", "How far"], answer: 0,
+      explain: "How long = for how much time." },
+    { s: "___ of these two coats do you prefer?", options: ["Which", "What", "Who"], answer: 0,
+      explain: "Which for a choice between a small number of things." },
+    { s: "What ___ like to do at the weekend?", options: ["do you", "are you", "you"], answer: 0,
+      explain: "Present simple question: What do you like…?" },
+    { s: "Whose ___ are these?", options: ["keys", "key", "the keys"], answer: 0,
+      explain: "Whose + noun: Whose keys are these?" },
+    { s: "Who ___ this cake? It's delicious!", options: ["made", "did made", "did you make"], answer: 0,
+      explain: "Who is the subject (the person who made it), so there is no did." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Short answers, so and neither",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "\"___ you hungry? You haven't eaten all day.\"", options: ["Aren't", "Don't", "Haven't"], answer: 0,
+      explain: "A negative question can show surprise: Aren't you hungry?" },
+    { s: "\"Didn't you get my message?\" \"No, I ___.\"", options: ["didn't", "did", "don't"], answer: 0,
+      explain: "The answer is about the facts: No, I didn't get it." },
+    { s: "\"You don't like coffee, do you?\" \"___, I love it!\"", options: ["Yes, I do", "No, I do", "Yes, I don't"], answer: 0,
+      explain: "Yes goes with a positive answer: Yes, I do (like it)." },
+    { s: "\"I'm really tired.\" \"So ___ I.\"", options: ["am", "do", "have"], answer: 0,
+      explain: "So + auxiliary + subject; with be: So am I." },
+    { s: "\"I don't eat fish.\" \"Neither ___ I.\"", options: ["do", "am", "don't"], answer: 0,
+      explain: "Neither + positive auxiliary + subject." },
+    { s: "\"I've never been to Japan.\" \"___ have I.\"", options: ["Neither", "So", "Either"], answer: 0,
+      explain: "never is negative, so: Neither have I." },
+    { s: "\"Did you enjoy the film?\" \"Yes, I ___.\"", options: ["did", "enjoyed", "was"], answer: 0,
+      explain: "Short answers use the auxiliary: Yes, I did." },
+    { s: "\"Will you be at the meeting?\" \"I'm afraid ___.\"", options: ["not", "no", "don't"], answer: 0,
+      explain: "I'm afraid not = Sorry, I won't." },
+    { s: "\"Is it going to rain tomorrow?\" \"I hope ___.\"", options: ["not", "no", "don't"], answer: 0,
+      explain: "I hope not = I hope it won't." },
+    { s: "\"She can't drive.\" \"___ can her husband.\"", options: ["Neither", "So", "Either"], answer: 0,
+      explain: "Neither + auxiliary + subject, after a negative sentence." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Rewrite the question",
+  intro: "Complete the second sentence so that it means the same as the first. Use between two and five words.",
+  items: [
+    { s: "Where is the post office? → Could you tell me ___?", answers: ["where the post office is"],
+      explain: "Indirect question: normal word order." },
+    { s: "What time does the train leave? → Do you know ___?", answers: ["what time the train leaves"],
+      explain: "No does; the verb takes -s." },
+    { s: "Did she accept the job? → I wonder ___ the job.", answers: ["if she accepted", "whether she accepted"],
+      explain: "if or whether + past simple, without did." },
+    { s: "How old is your grandmother? → Can I ask ___?", answers: ["how old your grandmother is"],
+      explain: "Normal word order: subject before is." },
+    { s: "Why did they cancel the concert? → Nobody knows ___ the concert.", answers: ["why they cancelled", "why they canceled"],
+      explain: "No did: past simple (cancelled)." },
+    { s: "Has the parcel arrived? → Could you check ___?", answers: ["if the parcel has arrived", "whether the parcel has arrived"],
+      explain: "if or whether + normal word order." },
+    { s: "Where did you buy that coat? → Would you mind telling me ___ that coat?", answers: ["where you bought"],
+      explain: "No did: past simple (bought)." },
+    { s: "How much does this phone cost? → I'd like to know ___.", answers: ["how much this phone costs"],
+      explain: "No does; the verb takes -s." },
+    { s: "Is there a pharmacy near here? → Do you know ___ near here?", answers: ["if there is a pharmacy", "whether there is a pharmacy", "if there's a pharmacy", "whether there's a pharmacy"],
+      explain: "if or whether + there is." },
+    { s: "What are they talking about? → I can't hear ___ about.", answers: ["what they are talking", "what they're talking"],
+      explain: "Normal word order: they are talking." }
+  ]
+}
+];

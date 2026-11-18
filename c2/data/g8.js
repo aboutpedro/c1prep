@@ -23,7 +23,7 @@ window.SETS = [
       explain: "This refers back to the whole idea." },
     { s: "___ were the results that the project was cancelled.", options: ["Such", "So", "That", "This"], answer: 0,
       explain: "Such were the results that… = the results were so bad that…" },
-    { s: "I've read his first novel, but not the ___ he wrote later.", options: ["ones", "one", "them", "those ones"], answer: 0,
+    { s: "I've read his first novel, but not the ___ he wrote later.", options: ["ones", "it", "them", "those ones"], answer: 0,
       explain: "ones replaces novels." }
   ]
 },
@@ -97,7 +97,7 @@ window.SETS = [
       explain: "do so replaces study medicine." },
     { s: "I don't think he'll come, but if he ___, we'll be ready.", options: ["does", "will", "is", "do"], answer: 0,
       explain: "does replaces comes." },
-    { s: "The film has a great cast. ___ is the story.", options: ["So", "Such", "Nor", "Neither"], answer: 0,
+    { s: "The film's cast is great. ___ is the story.", options: ["So", "Such", "Nor", "Neither"], answer: 0,
       explain: "So is the story = the story is great too." },
     { s: "Some students prefer online classes; ___ prefer face-to-face.", options: ["others", "other", "another", "the other"], answer: 0,
       explain: "others = other students." },

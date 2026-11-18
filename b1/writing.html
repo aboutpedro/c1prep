@@ -8,11 +8,9 @@
 <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <link rel="manifest" href="../manifest.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="../style.css?v=13">
-<script src="../theme.js?v=8"></script>
+<link rel="preload" href="../fonts/inter-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../style.css?v=16">
+<script src="../theme.js?v=10"></script>
 </head>
 <body>
 <div class="wrap">
@@ -20,6 +18,12 @@
   <p class="kicker">Writing · Parts 1 and 2</p>
   <h1>Writing tasks</h1>
   <p class="lead">In Cambridge B1 Preliminary you write an email (Part 1) and then choose an article or a story (Part 2). Write about 100 words for each. Your text stays in this browser as you type, so you can come back to it later.</p>
+  <details class="card marking">
+    <summary>How your writing is marked, and how to check it yourself</summary>
+    <p>In B1 Preliminary, your writing is marked on four things. Read your text again and ask yourself:</p>
+    <dl class="marking-list"><div><dt>Content</dt><dd>Did I do everything the task asks, with details and reasons? Will the reader have all the information they need?</dd></div><div><dt>Communicative achievement</dt><dd>Is the style right for the reader: friendly for a friend, polite for a teacher, lively for an article, exciting for a story?</dd></div><div><dt>Organisation</dt><dd>Did I use paragraphs? Did I join ideas with linking words (<i>however, although, first of all</i>) and words like <i>this, it, which</i>?</dd></div><div><dt>Language</dt><dd>Did I use a range of tenses and vocabulary? Are most sentences correct? Do any mistakes make it hard to understand?</dd></div></dl>
+    <p class="small-note">Then compare your text with the model answer under each task. A different answer can be just as good: what matters is that it does the job well.</p>
+  </details>
 
   <h2>Part 1 · Email (compulsory)</h2>
   <div class="tabs" role="tablist" data-group="p1">
@@ -37,6 +41,15 @@
       <p>Write your email to Jamie, using <b>all</b> the notes. Write about 100 words.</p>
     </div>
     <div class="task" data-id="p1-e1" data-min="90" data-max="120" data-target="about 100" data-checks="Answers all four notes|Opens and closes like an email (Hi Jamie, … See you soon, …)|Gives details and reasons, not just yes or no|Uses paragraphs|Friendly, informal style|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (98 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Hi Jamie,</p><p>That’s great news! I can’t wait to see you.</p><p>I think the end of the month is the best time to come, because I’ll have finished my exams by then and I’ll have much more free time.</p><p>There are lots of things we can do outdoors. How about going hiking in the mountains near my town? The views are amazing, and we could have a picnic at the top.</p><p>Yes, you should bring some comfortable walking boots and a warm jacket, because it can get quite cold up there in the evenings.</p><p>See you soon!<br>Bruno</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Every note is answered, each in its own paragraph, and each answer has a reason (<i>because…</i>).</li><li>Friendly phrases suit an email to a friend: <i>That’s great news!</i>, <i>How about…?</i>, <i>I can’t wait…</i></li><li>It shows a range of grammar: <i>I’ll have finished</i>, <i>we could</i>, <i>you should</i>, <i>it can get</i>.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p1" id="e2" hidden>
@@ -46,6 +59,15 @@
       <p>Write your email to Mr Hall, using <b>all</b> the notes. Write about 100 words.</p>
     </div>
     <div class="task" data-id="p1-e2" data-min="90" data-max="120" data-target="about 100" data-checks="Answers all four notes|Opens and closes politely (Dear Mr Hall, … Best wishes, …)|Gives reasons for your choices|Uses paragraphs|Polite but friendly style|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (109 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Dear Mr Hall,</p><p>Thank you for your email about the trip. I’d prefer to visit the science museum, because it has a new exhibition about space and we could learn a lot there. Also, the weather might be bad at the end of term.</p><p>I think the train is a better idea than the coach. It’s faster and more comfortable, and the station is near the museum.</p><p>For lunch, why don’t we have a picnic in the park next to the museum? It would be cheaper than a restaurant.</p><p>I’d be happy to help you organise the trip. I could book the train tickets, for example.</p><p>Best wishes,<br>Carla</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It is polite but friendly, which is right for a teacher: <i>Thank you for your email</i>, <i>I’d be happy to…</i></li><li>Each choice has a reason, and the comparison (<i>faster and more comfortable</i>) is clear.</li><li>The offer to help is specific: <i>I could book the train tickets</i>.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p1" id="e3" hidden>
@@ -55,6 +77,15 @@
       <p>Write your email to Kim, using <b>all</b> the notes. Write about 100 words.</p>
     </div>
     <div class="task" data-id="p1-e3" data-min="90" data-max="120" data-target="about 100" data-checks="Answers all four notes|Opens and closes like an email|Gives details and reasons, not just yes or no|Uses paragraphs|Friendly, informal style|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (95 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Hi Kim,</p><p>Thanks for inviting me! Yes, I’d love to come. I really like that band too.</p><p>Why don’t we go by bus? There’s one that stops right outside the concert hall, and it’s cheaper than a taxi.</p><p>I like most kinds of food, but my favourite is Japanese. There’s a great sushi restaurant near the hall, so we could eat there at about six.</p><p>Midnight is fine for me. My mum says she can pick us up after the concert and drive you home, so we won’t be late.</p><p>See you on Saturday!<br>Rafa</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>All four notes are answered with details, not just <i>yes</i> or <i>no</i>.</li><li><i>Why don’t we…?</i> and <i>we could…</i> are good ways to suggest.</li><li>Linking words (<i>but, so, and</i>) make the sentences flow.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p1" id="e4" hidden>
@@ -64,6 +95,15 @@
       <p>Write your email to Ms Evans, using <b>all</b> the notes. Write about 100 words.</p>
     </div>
     <div class="task" data-id="p1-e4" data-min="90" data-max="120" data-target="about 100" data-checks="Answers all four notes|Opens and closes politely (Dear Ms Evans, … Best regards, …)|Gives reasons for your answers|Uses paragraphs|Polite, fairly formal style|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (107 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Dear Ms Evans,</p><p>Thank you for your email. I am most interested in swimming and yoga, because I would like to get fitter and also feel more relaxed.</p><p>I would prefer to come in the early evening, after work. I finish at five, so six o’clock would be perfect for me.</p><p>For the café, I would suggest healthy snacks such as fruit salads and smoothies, as well as good coffee. People often want something light after exercising.</p><p>Unfortunately, I will not be able to help at the open day in June, because I will be on holiday then. I hope it goes well!</p><p>Best regards,<br>Daniel Costa</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It is more formal than an email to a friend: no contractions, <i>I would suggest</i>, <i>Unfortunately, I will not be able to…</i></li><li>Saying no politely, with a reason, is still a complete answer to the note.</li><li><i>such as</i> and <i>as well as</i> add examples and details.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p1" id="e5" hidden>
@@ -73,6 +113,15 @@
       <p>Write your email to Alex, using <b>all</b> the notes. Write about 100 words.</p>
     </div>
     <div class="task" data-id="p1-e5" data-min="90" data-max="120" data-target="about 100" data-checks="Answers all four notes|Opens and closes like an email|Gives details and examples|Uses paragraphs|Friendly, informal style|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (101 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Hi Alex,</p><p>Me too! It’ll be great to have you at our school.</p><p>Our school is quite big and modern, with a huge library and a sports hall. The teachers are friendly, and everyone will be really happy to meet you.</p><p>After school, most people do sports, like football or volleyball, or go to the shopping centre with friends. Some of us also play in the school band.</p><p>The weather in September is usually warm, but it gets cold in November. I’d advise you to bring a few T-shirts, but also a warm coat and an umbrella.</p><p>See you soon!<br>Julia</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It describes the school with useful details (<i>big and modern, with a huge library</i>).</li><li><i>like football or volleyball</i> gives examples.</li><li><i>I’d advise you to…</i> is a natural way to give advice.</li></ul>
+      </div>
+    </details>
   </section>
 
   <h2>Part 2 · Choose one task</h2>
@@ -94,6 +143,15 @@
       <p>Write your <b>article</b> in about 100 words.</p>
     </div>
     <div class="task" data-id="p2-a1" data-min="90" data-max="120" data-target="about 100" data-checks="Has a title|Answers all the questions in the task|Starts in an interesting way and speaks to the reader (Have you ever…?)|Gives examples and reasons|Uses paragraphs|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (103 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>My secret garden</p><p>Have you ever needed a quiet place to forget about your problems? I have one, and it’s only five minutes from my house.</p><p>It’s a small park behind the old library. Not many people know about it, so it’s always peaceful. I usually go there after school with a good book, or I just sit under a big tree and listen to music.</p><p>It’s special to me because my grandfather used to take me there when I was a child. Every time I go, I remember him and feel calm. If you need to relax, find your own secret garden!</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The title and the question at the start make the reader want to continue.</li><li>Each paragraph answers one question: where, what she does, why it is special.</li><li>It ends by speaking to the reader, which is typical of an article.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p2" id="a2" hidden>
@@ -103,6 +161,15 @@
       <p>Write your <b>article</b> in about 100 words.</p>
     </div>
     <div class="task" data-id="p2-a2" data-min="90" data-max="120" data-target="about 100" data-checks="Has a title|Answers all the questions in the task|Starts in an interesting way and speaks to the reader (Have you ever…?)|Gives examples and reasons|Uses paragraphs|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (96 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>My hero: my grandmother</p><p>When people talk about heroes, they usually mean famous people. My hero is my grandmother, Rosa.</p><p>She grew up in a small village and had to leave school when she was twelve to work on the farm. But she never stopped learning. At the age of fifty, she went back to school, and three years later she finished university!</p><p>I admire her because she shows me that it’s never too late to follow your dreams. Whenever I feel like giving up, I think of her and keep going. Who is your hero?</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The opening is a little surprising: not a famous person, but a grandmother.</li><li>The middle paragraph tells her story with past tenses and a strong detail (<i>At the age of fifty…</i>).</li><li>The reason for admiring her is clear, and the final question involves the reader.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p2" id="a3" hidden>
@@ -112,6 +179,15 @@
       <p>Write your <b>article</b> in about 100 words.</p>
     </div>
     <div class="task" data-id="p2-a3" data-min="90" data-max="120" data-target="about 100" data-checks="Has a title|Answers all the questions in the task|Starts in an interesting way and speaks to the reader (Have you ever…?)|Gives examples and reasons|Uses paragraphs|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (104 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>I couldn’t live without my phone!</p><p>Imagine a day without your phone. Could you do it? I’m not sure I could!</p><p>I use my phone for almost everything. I chat with my friends, listen to music on the bus and look up English words I don’t know. I even use it to pay for things in shops.</p><p>Without it, my life would be much slower. I would have to carry maps, a camera and a dictionary! On the other hand, I might spend more time talking to people face to face, which wouldn’t be a bad thing. Maybe I’ll try a phone-free day soon!</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>It answers all three questions, one in each paragraph.</li><li><i>would</i> and <i>might</i> (second conditional) describe life without the phone.</li><li><i>On the other hand</i> shows the writer can see both sides.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p2" id="a4" hidden>
@@ -121,6 +197,15 @@
       <p>Write your <b>article</b> in about 100 words.</p>
     </div>
     <div class="task" data-id="p2-a4" data-min="90" data-max="120" data-target="about 100" data-checks="Has a title|Answers all the questions in the task|Starts in an interesting way and speaks to the reader (Have you ever…?)|Gives examples and reasons|Uses paragraphs|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (93 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>A day at Lake Azul</p><p>Are you looking for a great day out? Then Lake Azul, just forty minutes from the city, is the place for you!</p><p>There’s so much to do there. You can hire a boat, swim in the clear water or walk along the paths through the forest. If you’re hungry, there’s a lovely café that sells delicious homemade cakes.</p><p>Families with young children will love the playground and the little beach, but it’s also perfect for groups of friends who enjoy sport and fresh air. Don’t forget your camera!</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The question in the first line speaks directly to the reader.</li><li>Lots of specific activities and adjectives (<i>clear water, delicious homemade cakes</i>).</li><li>It says exactly who would enjoy it, as the task asks.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p2" id="s1" hidden>
@@ -130,6 +215,15 @@
       <p>Write your <b>story</b> in about 100 words.</p>
     </div>
     <div class="task" data-id="p2-s1" data-min="90" data-max="120" data-target="about 100" data-checks="Begins with the sentence given|Has a clear beginning, middle and end|Uses past tenses correctly (past simple, past continuous, past perfect)|Uses linking words (when, while, suddenly, after that, finally)|Says how people felt|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (95 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>When I opened the door, I couldn’t believe my eyes. All my friends were standing in the living room, shouting, “Happy birthday!”</p><p>I had thought that everyone had forgotten my birthday. Nobody had called me all day, and even my best friend, Lucas, hadn’t sent me a message. I had felt really sad.</p><p>But while I was at school, my mum had secretly organised a surprise party. There was a huge chocolate cake on the table and balloons everywhere.</p><p>I was so happy that I nearly cried. It was the best birthday I’ve ever had!</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The past perfect (<i>had forgotten, had organised</i>) explains what happened before the door opened.</li><li>It has a clear beginning, middle and end, and says how the writer felt.</li><li><i>so happy that…</i> and the last line give the story a strong ending.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p2" id="s2" hidden>
@@ -139,6 +233,15 @@
       <p>Write your <b>story</b> in about 100 words.</p>
     </div>
     <div class="task" data-id="p2-s2" data-min="90" data-max="120" data-target="about 100" data-checks="Begins with the sentence given|Has a clear beginning, middle and end|Uses past tenses correctly (past simple, past continuous, past perfect)|Uses linking words (when, while, suddenly, after that, finally)|Says how people felt|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (101 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Ana looked at her phone and saw the message she had been waiting for. It was from the music school: “Congratulations! You have a place on our course.”</p><p>For months, she had practised the piano every evening after work. Her family had told her she was too old to start again, but she hadn’t listened.</p><p>She read the message three times. Then she ran into the kitchen, where her brother was cooking dinner, and showed it to him. At first he didn’t say anything. Finally, he smiled and gave her a big hug.</p><p>“I knew you could do it,” he said.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>The second paragraph goes back in time with the past perfect to explain why the message matters.</li><li><i>At first… Finally…</i> build a little suspense.</li><li>Ending with words in speech marks is short and effective.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p2" id="s3" hidden>
@@ -148,6 +251,15 @@
       <p>Write your <b>story</b> in about 100 words.</p>
     </div>
     <div class="task" data-id="p2-s3" data-min="90" data-max="120" data-target="about 100" data-checks="Begins with the sentence given|Has a clear beginning, middle and end|Uses past tenses correctly (past simple, past continuous, past perfect)|Uses linking words (when, while, suddenly, after that, finally)|Says how people felt|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (100 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>It was the first day of the holidays, and it was raining. Marco was lying on the sofa, feeling bored, when his phone rang. It was his cousin, Bia.</p><p>“Let’s do something different,” she said. “Why don’t we make a film?”</p><p>An hour later, they were in the garden with an umbrella and Marco’s phone. They made up a story about a detective who was looking for a lost cat in the rain. They got very wet, but they laughed all afternoon.</p><p>That evening, they showed the film to their family. Everyone loved it, and Marco wasn’t bored any more.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li><i>was lying… when his phone rang</i> (past continuous + past simple) is a classic way to start the action.</li><li>Time phrases (<i>An hour later, That evening</i>) move the story on.</li><li>The ending links back to the beginning: Marco isn’t bored any more.</li></ul>
+      </div>
+    </details>
   </section>
 
   <section class="tabpanel" data-group="p2" id="s4" hidden>
@@ -157,6 +269,15 @@
       <p>Write your <b>story</b> in about 100 words.</p>
     </div>
     <div class="task" data-id="p2-s4" data-min="90" data-max="120" data-target="about 100" data-checks="Begins with the sentence given|Has a clear beginning, middle and end|Uses past tenses correctly (past simple, past continuous, past perfect)|Uses linking words (when, while, suddenly, after that, finally)|Says how people felt|About 100 words"></div>
+    <details class="model">
+      <summary>Show a model answer</summary>
+      <div class="model-body">
+        <p class="model-note">One good way to answer this task (103 words). Write your own answer first, then compare.</p>
+        <div class="text model-text"><p>Tom heard a strange noise coming from the garden. It was midnight, and his parents were asleep. He looked out of the window, but it was too dark to see anything.</p><p>Feeling nervous, he took a torch and went downstairs. As he opened the back door, the noise stopped. Suddenly, something moved behind the bushes.</p><p>Tom pointed the torch at it and saw two shining eyes. It was a small, hungry fox! It had knocked over the rubbish bin and was looking for food.</p><p>Tom laughed with relief. The next morning, he told his parents, and they bought a bin with a lid.</p></div>
+        <h3>Why it works</h3>
+        <ul class="plain-list"><li>Short sentences and <i>Suddenly</i> create suspense.</li><li><i>Feeling nervous</i> and <i>laughed with relief</i> show how Tom felt at different moments.</li><li>The past perfect (<i>had knocked over</i>) explains the noise.</li></ul>
+      </div>
+    </details>
   </section>
 
   <footer class="site-foot">

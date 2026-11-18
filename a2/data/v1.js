@@ -37,7 +37,7 @@ window.SETS = [
   items: [
     { s: "Could we see the ___, please? We'd like to order.", answers: ["menu"],
       explain: "The menu is the list of food in a restaurant." },
-    { s: "This curry is very ___. I need some water!", answers: ["spicy"],
+    { s: "This curry is very ___. My mouth is on fire!", answers: ["spicy"],
       explain: "Spicy food has a hot taste, for example from chilli." },
     { s: "Would you like a ___ of cake?", answers: ["slice"],
       explain: "A slice = a thin, flat piece cut from something (a slice of cake, bread, pizza)." },
@@ -136,7 +136,7 @@ window.SETS = [
       explain: "Medicine is what you take to get better when you're ill." },
     { s: "I'd like to make an ___ to see the doctor.", answers: ["appointment"],
       explain: "Make an appointment = arrange a time to see a doctor, dentist, etc." },
-    { s: "Dust always makes me ___!", answers: ["sneeze"],
+    { s: "Dust always makes me ___! Atchoo!", answers: ["sneeze"],
       explain: "When you sneeze, air comes out of your nose suddenly: 'Atchoo!'" },
     { s: "He's had a bad ___ for a week, especially at night.", answers: ["cough"],
       explain: "A cough is when air comes out of your throat with a noise, often when you have a cold." },

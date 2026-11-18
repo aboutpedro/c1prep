@@ -16,7 +16,7 @@ Sara`,
   gaps: {
     0: { answers: ["for"] },
     25: { answers: ["with"], explain: "busy with something = doing a lot of it." },
-    26: { answers: ["so"], explain: "so introduces a result: the exams finished, so now I can relax." },
+    26: { answers: ["so", "and"], explain: "so introduces a result: the exams finished, so now I can relax." },
     27: { answers: ["on"], explain: "on + days of the week: on Saturday." },
     28: { answers: ["after"], explain: "after that = later, when we have finished eating." },
     29: { answers: ["about"], explain: "talk about something." },

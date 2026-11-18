@@ -1,0 +1,142 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "It was… that",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "It was my brother ___ broke the window, not me.", options: ["who", "which", "what"], answer: 0,
+      explain: "It was + person + who (or that)." },
+    { s: "It's the noise ___ I can't stand.", options: ["that", "what", "who"], answer: 0,
+      explain: "It's + thing + that." },
+    { s: "It wasn't until midnight ___ we got home.", options: ["that", "when", "than"], answer: 0,
+      explain: "It wasn't until… that…" },
+    { s: "It was in Paris ___ they first met.", options: ["that", "which", "what"], answer: 0,
+      explain: "It was + place phrase + that." },
+    { s: "___ was the price that surprised me most.", options: ["It", "What", "Which"], answer: 0,
+      explain: "It was… that… puts the focus on the price." },
+    { s: "It's not the money ___ matters, it's the experience.", options: ["that", "what", "it"], answer: 0,
+      explain: "It's not + noun + that…" },
+    { s: "It was only when I got home ___ I realised I'd lost my phone.", options: ["that", "what", "which"], answer: 0,
+      explain: "It was only when… that…" },
+    { s: "It's your attitude, not your talent, ___ needs to change.", options: ["that", "what", "it"], answer: 0,
+      explain: "It's + noun + that." },
+    { s: "Was it you ___ called me last night?", options: ["who", "which", "what"], answer: 0,
+      explain: "Was it + person + who…?" },
+    { s: "It was because of the rain ___ the match was cancelled.", options: ["that", "why", "so"], answer: 0,
+      explain: "It was because of… that…" }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "What… is",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "___ I need is a long holiday.", options: ["What", "That", "Which"], answer: 0,
+      explain: "What = the thing that: What I need is…" },
+    { s: "What I like about her ___ her sense of humour.", options: ["is", "it is", "that"], answer: 0,
+      explain: "What… is + noun." },
+    { s: "What annoys me ___ that he never says thank you.", options: ["is", "it", "what"], answer: 0,
+      explain: "What annoys me is that…" },
+    { s: "All I want ___ a cup of tea.", options: ["is", "it is", "that"], answer: 0,
+      explain: "All I want is… = The only thing I want is…" },
+    { s: "What we did ___ call the police.", options: ["was", "did", "that"], answer: 0,
+      explain: "What we did was (to) + verb." },
+    { s: "The thing I hate most ___ getting up early.", options: ["is", "it is", "what"], answer: 0,
+      explain: "The thing (that) I hate is…" },
+    { s: "___ happened was that the car broke down.", options: ["What", "That", "It"], answer: 0,
+      explain: "What happened was that…" },
+    { s: "What you should do ___ talk to your teacher.", options: ["is", "it is", "so"], answer: 0,
+      explain: "What you should do is + verb." },
+    { s: "The reason I'm late ___ that the bus didn't come.", options: ["is", "it is", "why"], answer: 0,
+      explain: "The reason… is that…" },
+    { s: "What surprised everyone ___ how calm she was.", options: ["was", "it was", "that"], answer: 0,
+      explain: "What surprised everyone was…" }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Inversion after negative words",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "Never ___ such a beautiful sunset.", options: ["have I seen", "I have seen", "I saw"], answer: 0,
+      explain: "Never at the start of a sentence: auxiliary + subject." },
+    { s: "Not only ___ late, but he also forgot the tickets.", options: ["was he", "he was", "he did be"], answer: 0,
+      explain: "Not only + inversion." },
+    { s: "Hardly ___ sat down when the phone rang.", options: ["had I", "I had", "did I"], answer: 0,
+      explain: "Hardly had I… when…" },
+    { s: "No sooner had we arrived ___ it started to rain.", options: ["than", "when", "that"], answer: 0,
+      explain: "No sooner… than…" },
+    { s: "Only when you're older ___ understand.", options: ["will you", "you will", "you'll"], answer: 0,
+      explain: "Only when… + inversion in the main clause." },
+    { s: "Rarely ___ such a talented young player.", options: ["do you see", "you see", "see you"], answer: 0,
+      explain: "Rarely + do/does + subject + verb." },
+    { s: "Under no circumstances ___ open this door.", options: ["should you", "you should", "you must"], answer: 0,
+      explain: "Under no circumstances + inversion." },
+    { s: "Not until I read the letter ___ the truth.", options: ["did I understand", "I understood", "I did understand"], answer: 0,
+      explain: "Not until… + did + subject + verb." },
+    { s: "Little ___ that he was being watched.", options: ["did he know", "he knew", "knew he"], answer: 0,
+      explain: "Little did he know = he had no idea." },
+    { s: "Seldom ___ so many people at the beach.", options: ["have I seen", "I have seen", "I saw"], answer: 0,
+      explain: "Seldom (= rarely) + inversion." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Emphasis with do, so and such",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "I ___ like your new haircut! It really suits you.", options: ["do", "am", "does"], answer: 0,
+      explain: "do + verb for emphasis." },
+    { s: "He ___ apologise in the end, but only after a long argument.", options: ["did", "was", "had"], answer: 0,
+      explain: "did + verb for emphasis in the past." },
+    { s: "It was ___ a good film that we watched it twice.", options: ["such", "so", "very"], answer: 0,
+      explain: "such a + adjective + noun… that…" },
+    { s: "The exam was ___ difficult that nobody finished it.", options: ["so", "such", "too"], answer: 0,
+      explain: "so + adjective… that…" },
+    { s: "She ___ look tired. Is she OK?", options: ["does", "is", "do"], answer: 0,
+      explain: "does + verb for emphasis." },
+    { s: "They were ___ friendly people that we stayed for hours.", options: ["such", "so", "such a"], answer: 0,
+      explain: "such + adjective + plural noun (no a)." },
+    { s: "I've never been ___ embarrassed in my life!", options: ["so", "such", "such a"], answer: 0,
+      explain: "so + adjective." },
+    { s: "There were ___ many people that we couldn't get in.", options: ["so", "such", "such a"], answer: 0,
+      explain: "so many / so much + noun." },
+    { s: "___ come in and sit down!", options: ["Do", "Does", "Are"], answer: 0,
+      explain: "Do + imperative is a warm, polite invitation." },
+    { s: "I really ___ hope you can come.", options: ["do", "am", "does"], answer: 0,
+      explain: "do + verb for emphasis." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Rewrite the sentence",
+  intro: "Complete the second sentence so that it means the same as the first. Use the word in brackets and between two and five words.",
+  items: [
+    { s: "I have never been so frightened. → Never ___ so frightened. (HAVE)", answers: ["have I been"],
+      explain: "Never + have + subject + past participle." },
+    { s: "She didn't realise her mistake until later. → It was only later ___ her mistake. (THAT)", answers: ["that she realised", "that she realized"],
+      explain: "It was only later that…" },
+    { s: "Tom broke the vase, not his sister. → It ___ the vase, not his sister. (WHO)", answers: ["was Tom who broke"],
+      explain: "It was + person + who." },
+    { s: "He was late and he was also rude. → Not only ___ late, but he was also rude. (WAS)", answers: ["was he"],
+      explain: "Not only + was + subject." },
+    { s: "As soon as we left, it started snowing. → No ___ than it started snowing. (SOONER)", answers: ["sooner had we left"],
+      explain: "No sooner had + subject + past participle + than." },
+    { s: "You must not tell anyone about this. → Under ___ tell anyone about this. (CIRCUMSTANCES)", answers: ["no circumstances must you", "no circumstances should you"],
+      explain: "Under no circumstances + inversion." },
+    { s: "The film was so boring that I fell asleep. → It was ___ that I fell asleep. (SUCH)", answers: ["such a boring film"],
+      explain: "such a + adjective + noun." },
+    { s: "I enjoyed the party very much. → I really ___ the party. (DID)", answers: ["did enjoy"],
+      explain: "did + verb for emphasis." },
+    { s: "I didn't understand until I saw the diagram. → Only when I saw the diagram ___. (DID)", answers: ["did I understand"],
+      explain: "Only when… + did + subject + verb." },
+    { s: "The thing that worries me is the cost. → What ___ the cost. (WORRIES)", answers: ["worries me is"],
+      explain: "What worries me is…" }
+  ]
+}
+];

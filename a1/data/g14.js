@@ -99,7 +99,7 @@ window.SETS = [
       explain: "An invitation: Would you like to…?" },
     { s: "Do you like tea? – Yes, ___. I drink it every day.", options: ["I do", "I'd like", "I would"], answer: 0,
       explain: "Do you like…? is about what you like in general: Yes, I do." },
-    { s: "Would you like some cake? – ___.", options: ["Yes, please.", "Yes, I like.", "Yes, I would like cake."], answer: 0,
+    { s: "Would you like some cake? – ___", options: ["Yes, please.", "Yes, I like.", "Yes, I would like cake."], answer: 0,
       explain: "A polite answer: Yes, please. (or No, thank you.)" },
     { s: "What ___ for dinner?", options: ["would you like", "do you like for", "you would like"], answer: 0,
       explain: "Asking what somebody wants now: What would you like…?" },
@@ -117,7 +117,7 @@ window.SETS = [
   textTitle: "Mixed: instructions, let's and would like",
   intro: "Write one word in each gap.",
   items: [
-    { s: "___ like a cup of tea? – Yes, please.", answers: ["Would"],
+    { s: "___ you like a cup of tea? – Yes, please.", answers: ["Would"],
       explain: "Would you like…?" },
     { s: "___ worry. It's not a problem.", answers: ["Don't"],
       explain: "Negative instruction: Don't worry." },
@@ -135,7 +135,7 @@ window.SETS = [
       explain: "I'd like (= I would like)." },
     { s: "___ down, please.", answers: ["Sit"],
       explain: "Instruction: Sit down." },
-    { s: "Would you like ___ more tea?", answers: ["some"],
+    { s: "Would you like ___ more tea?", answers: ["some", "any"],
       explain: "In offers we use some: Would you like some more tea?" }
   ]
 }

@@ -17,7 +17,7 @@
     .trim()
     .replace(/[.,!?;:]+$/g, "")
     .trim();
-  /* For the A2/B1 sentence sets: "doesn't" = "does not", "I'm" = "I am", etc. */
+  /* For typed sentence answers and key word transformations: "doesn't" = "does not", "I'm" = "I am", etc. */
   const CONTR = [[/\bcan't\b/g, "cannot"], [/\bcan not\b/g, "cannot"], [/\bwon't\b/g, "will not"], [/\bshan't\b/g, "shall not"],
     [/n't\b/g, " not"], [/'m\b/g, " am"], [/'re\b/g, " are"], [/'ve\b/g, " have"], [/'ll\b/g, " will"]];
   const loose = (s) => { let t = norm(s); CONTR.forEach(([re, to]) => { t = t.replace(re, to); }); return t.replace(/\s+/g, " ").trim(); };
@@ -232,8 +232,9 @@
         items.push({
           info() { return { n, given: input.value.trim(), correct: it.answers[0] }; },
           check() {
-            const v = norm(input.value);
-            const ok = it.answers.some((a) => norm(a) === v);
+            // contractions count as the full form: didn't = did not (both are two words in the exam)
+            const v = loose(input.value);
+            const ok = it.answers.some((a) => loose(a) === v);
             input.classList.toggle("ok", ok);
             input.classList.toggle("bad", !ok);
             ex.innerHTML = html;

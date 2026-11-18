@@ -28,11 +28,27 @@ Navy `#1f4e79` and cream come from the favicon, so the brand stays the same.
 Right and wrong are never shown by color alone: a ✓ or ✗ goes with them.
 Text contrast is at least 4.5:1 in both themes.
 
+### Themes (Themes menu)
+Besides the default (light or dark), visitors can pick a theme: Christmas, New Year,
+Thanksgiving, Halloween, Valentine's Day, Whimsical and Kids. Each has one palette
+(no light/dark pair): New Year and Halloween are dark, the others light. A theme
+redefines the same tokens under `:root[data-skin="…"]` (after the dark-mode rules, so
+it wins), adds a faint pattern behind the page (`--skin-pattern`), a 4px band along
+the top (`--skin-band`) and its own confetti colours (`--confetti`). Kids also has
+rounder corners and Poppins Bold headings; Whimsical sets h1/h2 in Lora Italic
+(both fonts self-hosted, downloaded only when that theme is on). Every palette passes
+the same contrast checks as the default (4.5:1 text, 3:1 input borders). While a theme
+is on, theme.js sets `data-theme` to the theme's brightness; pressing light/dark mode
+goes back to the default theme.
+
 ## Typography
 
 - **Inter** for the interface: headings, labels, buttons, questions.
 - **Source Serif 4** only for exam texts (passages, paragraph banks, writing
   prompts' answer box), so reading feels like reading.
+- Both are served from the site (`fonts/`, latin subset, variable weight, declared
+  in style.css; Inter is preloaded on every page). Characters outside the subset
+  (→, ✓, ✗) come from the system font, as before.
 
 | Name | Size / line height | Weight | Use |
 |---|---|---|---|
@@ -61,7 +77,12 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
 ## Components
 
 - **Header**: sticky, 60px, full-width surface with bottom border. Brand (level
-  icon + name) on the left; name chip, back link and theme toggle on the right.
+  icon + name) on the left; name chip, back link, Themes button and theme toggle on the right.
+- **Themes menu** (theme.js): a palette button left of light/dark mode opens a menu of
+  every theme (Default first), each with three colour dots and a tick on the current
+  one. Arrow keys, Home/End, Enter and Escape work; clicking outside closes it. When a
+  theme is on, a dot in its colour sits on the button. The choice is kept in this
+  browser ("c1prep-skin").
 - **Header level buttons** (theme.js, every page): the six level logos (A1, A2,
   B1, B2, C1, C2) right after the brand; the current level has a border. With a
   mouse, hovering or keyboard focus slides the level's name out (A1 Beginner, A2
@@ -86,11 +107,19 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   Use of English and Reading page at B2, C1 and C2, written by generator/tips.py):
   underline tabs that scroll sideways on phones. Arrow keys move between tabs.
 - **Callout**: instructions in `--surface-2` with a navy left rule.
+- **Model answers** (writing pages at every level, generator/writing_models.py from
+  content/writing/<level>.txt): under each task, a closed `<details>` card, "Show a
+  model answer" in navy with a small chevron. Open, it shows the length, the model in
+  serif on `--surface-2`, and "Why it works" as a short list. Under the page intro, a
+  card of the same style, "How your writing is marked, and how to check it
+  yourself", lists the exam's marking criteria (three at A2, four from B1) as
+  questions to ask about your own text.
 - **Sentence sets** (A1/A2/B1 grammar and vocabulary, `type: "sentences"`): one
   numbered sentence per row with an inline gap. Typed gaps use the normal inline
   input; choices are pill-shaped radio chips under the sentence, and the chosen
   word fills the gap. An optional word bank sits above in its own card.
-  Contractions are accepted either way (don't = do not).
+  Contractions are accepted either way (don't = do not), here and in key word
+  transformations (Use of English Part 4).
 - **Short texts** (A2/B1 Reading Part 1, `type: "mc-texts"`): each notice or
   message in its own box beside its options (stacked on phones). Notices are
   centred with a dark border; messages have a grey left rule and a From/To line.
@@ -122,9 +151,19 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   under it (answered/questions, then marks after the end). The action bar shows
   the clock (red in the last five minutes), the answered count, Previous part
   (an icon on phones), Next part and Finish. Finishing asks first, in a dialog
-  with the look of the name dialog. The student never sees marks: the page is
+  with the look of the name dialog. Class students never see marks: the page is
   replaced by a card saying the paper is handed in, with the time used and a
-  link back to the exercises. Marks go to the teacher's sheet only.
+  link back to the exercises, and the marks go to the teacher's sheet only.
+  Everyone else gets a result card above the tabs (total in Display size, a
+  table of Reading and Use of English marks with estimated Cambridge English
+  Scale scores, a table of marks per part, Start a new paper / Back to all
+  exercises); the bar goes, every part is marked with its explanations, the
+  tab counts become marks and the answers are locked.
+- **Class mode** (`log.js`, `class.html`): only students who joined with the
+  class link (which saves their name) see the name chip and the home-page name
+  banner and send results; nobody else is ever asked for a name. The class page
+  is one card: name field and Join the class; once in, "You're in the class as
+  …", Change my name, Leave the class on this device, and the level buttons.
 - **Move my progress** (`progress.html` at every level, `move.js`): three cards.
   "Send your progress" says what this device holds and has the main button
   (Send to my other device, using the phone's share sheet, where there is one)
@@ -177,6 +216,16 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
 - **Privacy, 404**: plain prose pages with the same header and footer. 404.html
   uses addresses from the site root (`/style.css`), because GitHub Pages shows it
   at any address.
+
+## Offline
+
+`sw.js` (written by generator/sitepages.py, registered by theme.js) keeps every
+page and file a browser has opened, so it works without internet: files with
+`?v=` come from the cache first (a newer version replaces the older one), pages
+and everything else from the network first. A page never opened shows
+`offline.html` (title "You're offline", Try again, Go to the front page).
+Requests to other sites (the teacher's sheet) are not touched. The cache name
+changes whenever sw.js changes, so bumping a ?v= in sitepages.py is enough.
 
 ## Motion
 

@@ -127,7 +127,7 @@ window.SETS = [
       explain: "Present perfect question: Have + you + ever + past participle (been)." },
     { s: "___ – Because I was tired. (why / you / leave / early)", answers: ["Why did you leave early?"], width: 26,
       explain: "A past action, so we use did + base verb: Why did you leave early?" },
-    { s: "___ – No, she can't. (your mum / can / drive)", answers: ["Can your mum drive?"], width: 26,
+    { s: "___ – No, she can't. (can / your mum / drive)", answers: ["Can your mum drive?"], width: 26,
       explain: "With can, there's no do: just put can before the subject." },
     { s: "___ – They're watching TV. (what / the children / do)", answers: ["What are the children doing?"], width: 26,
       explain: "The answer is in the present continuous, so the question is too: What are they doing?" },

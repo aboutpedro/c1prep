@@ -1,0 +1,142 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "some, any, no, none",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "Would you like ___ more coffee?", options: ["some", "any", "no"], answer: 0,
+      explain: "some in offers and requests." },
+    { s: "There isn't ___ milk left.", options: ["any", "some", "no"], answer: 0,
+      explain: "any after a negative verb (not any)." },
+    { s: "There's ___ milk left. We need to buy some.", options: ["no", "any", "none"], answer: 0,
+      explain: "no + noun = not any (with a positive verb)." },
+    { s: "\"How many tickets are left?\" \"___, I'm afraid.\"", options: ["None", "No", "Any"], answer: 0,
+      explain: "none stands alone, without a noun." },
+    { s: "___ of the students passed the test; it was far too difficult.", options: ["None", "No", "Any"], answer: 0,
+      explain: "none of + noun phrase = not one of." },
+    { s: "You can take ___ bus from here; they all go to the station.", options: ["any", "some", "no"], answer: 0,
+      explain: "any = it doesn't matter which." },
+    { s: "Is there ___ chance of seeing you before you leave?", options: ["any", "some", "none"], answer: 0,
+      explain: "any in questions." },
+    { s: "I've got ___ idea what he's talking about.", options: ["no", "any", "none"], answer: 0,
+      explain: "I've got no idea = I haven't got any idea." },
+    { s: "If you have ___ questions, please ask.", options: ["any", "no", "none"], answer: 0,
+      explain: "any after if." },
+    { s: "Can I have ___ water, please?", options: ["some", "any", "none"], answer: 0,
+      explain: "some in requests." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "much, many, a lot of, plenty of",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "How ___ money did you spend?", options: ["much", "many", "lot"], answer: 0,
+      explain: "much + uncountable noun." },
+    { s: "There weren't ___ people at the concert.", options: ["many", "much", "lots"], answer: 0,
+      explain: "many + plural noun." },
+    { s: "She's got ___ friends at her new school.", options: ["lots of", "much", "a lot"], answer: 0,
+      explain: "lots of / a lot of + noun in positive sentences." },
+    { s: "Don't worry, we've got ___ time.", options: ["plenty of", "many", "a few"], answer: 0,
+      explain: "plenty of = more than enough." },
+    { s: "I don't eat ___ meat these days.", options: ["much", "many", "a few"], answer: 0,
+      explain: "much + uncountable noun in negative sentences." },
+    { s: "___ of the work was done by volunteers.", options: ["Much", "Many", "A few"], answer: 0,
+      explain: "much of + uncountable noun (work)." },
+    { s: "There are ___ good restaurants in this area.", options: ["a lot of", "much", "a lot"], answer: 0,
+      explain: "a lot of + plural noun." },
+    { s: "He doesn't have ___ experience, but he learns fast.", options: ["much", "many", "few"], answer: 0,
+      explain: "much + uncountable noun (experience)." },
+    { s: "How ___ times have you been to London?", options: ["many", "much", "lot"], answer: 0,
+      explain: "many + plural noun (times)." },
+    { s: "There's too ___ traffic in the city centre.", options: ["much", "many", "lot"], answer: 0,
+      explain: "too much + uncountable noun." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "few, a few, little, a little",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "I've got ___ good friends here, so I'm never lonely.", options: ["a few", "few", "a little"], answer: 0,
+      explain: "a few = some (a positive idea)." },
+    { s: "Very ___ people came to the meeting, which was disappointing.", options: ["few", "a few", "little"], answer: 0,
+      explain: "very few = not many (a negative idea)." },
+    { s: "Could I have ___ milk in my tea, please?", options: ["a little", "a few", "few"], answer: 0,
+      explain: "a little + uncountable noun = some." },
+    { s: "After so many days, there's ___ hope of finding the missing climbers.", options: ["little", "a little", "few"], answer: 0,
+      explain: "little = almost no (a negative idea)." },
+    { s: "I can speak ___ Spanish, enough to order food in a restaurant.", options: ["a little", "little", "a few"], answer: 0,
+      explain: "a little = some (enough to do something)." },
+    { s: "Only ___ students had read the book.", options: ["a few", "few", "a little"], answer: 0,
+      explain: "only a few, not only few." },
+    { s: "We've got ___ time before the train leaves. Let's have a coffee.", options: ["a little", "little", "a few"], answer: 0,
+      explain: "a little = some time (enough for a coffee)." },
+    { s: "He has ___ patience with people who are late; he gets angry very quickly.", options: ["little", "a little", "few"], answer: 0,
+      explain: "little = almost none." },
+    { s: "I'll be ready in ___ minutes.", options: ["a few", "few", "a little"], answer: 0,
+      explain: "a few + plural noun = a small number." },
+    { s: "There were quite ___ mistakes in the report, so I had to rewrite it.", options: ["a few", "few", "little"], answer: 0,
+      explain: "quite a few = quite a lot." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "each, every, all, whole, both, either, neither",
+  intro: "Choose the correct option.",
+  items: [
+    { s: "___ student gets a certificate at the end of the course.", options: ["Every", "All", "Both"], answer: 0,
+      explain: "every + singular noun." },
+    { s: "___ the students passed the exam.", options: ["All", "Every", "Each"], answer: 0,
+      explain: "all (of) the + plural noun." },
+    { s: "I've spent the ___ day cleaning the house.", options: ["whole", "all", "every"], answer: 0,
+      explain: "the whole + singular noun = all of it." },
+    { s: "___ my parents are teachers.", options: ["Both", "Either", "Neither"], answer: 0,
+      explain: "both (of) my + plural noun + plural verb." },
+    { s: "You can sit at ___ end of the table. It doesn't matter.", options: ["either", "both", "neither"], answer: 0,
+      explain: "either = one or the other." },
+    { s: "___ of the two hotels had any rooms, so we slept in the car.", options: ["Neither", "Either", "Both"], answer: 0,
+      explain: "neither = not one and not the other." },
+    { s: "The tickets cost €20 ___.", options: ["each", "every", "all"], answer: 0,
+      explain: "each at the end = for one: €20 each." },
+    { s: "I go swimming ___ other day.", options: ["every", "each", "all"], answer: 0,
+      explain: "every other day = one day yes, one day no." },
+    { s: "___ team has eleven players on the pitch.", options: ["Each", "All", "Both"], answer: 0,
+      explain: "each + singular noun." },
+    { s: "I didn't like ___ of the films. They were both boring.", options: ["either", "neither", "both"], answer: 0,
+      explain: "not… either = neither (with a negative verb)." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Rewrite the sentence",
+  intro: "Complete the second sentence so that it means the same as the first. Use the word in brackets and between two and five words.",
+  items: [
+    { s: "There isn't any sugar left. → There ___ left. (NO)", answers: ["is no sugar", "'s no sugar"],
+      explain: "no + noun = not any." },
+    { s: "My brother doesn't like football, and my sister doesn't either. → ___ my sister likes football. (NEITHER)", answers: ["Neither my brother nor"],
+      explain: "neither… nor… with a singular verb (likes)." },
+    { s: "Not many people came to the opening. → Very ___ to the opening. (FEW)", answers: ["few people came"],
+      explain: "very few = not many." },
+    { s: "The rain lasted all day. → It rained ___ day. (WHOLE)", answers: ["the whole"],
+      explain: "the whole + singular noun." },
+    { s: "Both of the answers are wrong. → ___ answers is right. (NEITHER)", answers: ["Neither of the"],
+      explain: "neither of the + plural noun, with a singular verb (is)." },
+    { s: "You can choose the red one or the blue one. → You can choose ___. (EITHER)", answers: ["either of them", "either one", "either colour", "either color", "either of the two"],
+      explain: "either = one or the other." },
+    { s: "We've got more than enough chairs. → We've got ___ chairs. (PLENTY)", answers: ["plenty of"],
+      explain: "plenty of = more than enough." },
+    { s: "I didn't spend much money on holiday. → I spent ___ money on holiday. (LITTLE)", answers: ["very little"],
+      explain: "very little = not much." },
+    { s: "Every student in the class has a laptop. → ___ in the class has a laptop. (EACH)", answers: ["Each student", "Each of the students"],
+      explain: "each + singular noun, or each of the + plural noun." },
+    { s: "Every room in the hotel has a sea view. → ___ the hotel have a sea view. (ALL)", answers: ["All the rooms in", "All of the rooms in"],
+      explain: "all (of) the + plural noun + plural verb (have)." }
+  ]
+}
+];

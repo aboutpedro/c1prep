@@ -35,7 +35,7 @@ window.SETS = [
   items: [
     { s: "___ cooking, always wash your hands first.", options: ["Before", "Until", "Despite", "Since"], answer: 0,
       explain: "before + -ing." },
-    { s: "___ reading the instructions, I understood how it worked.", options: ["On", "In", "At", "By"], answer: 0,
+    { s: "___ reading the instructions, I understood how it worked.", options: ["On", "In", "At", "For"], answer: 0,
       explain: "On + -ing = when / as soon as." },
     { s: "___ asked to leave, he refused.", options: ["When", "While", "Despite", "Although being"], answer: 0,
       explain: "When + past participle = when he was asked." },

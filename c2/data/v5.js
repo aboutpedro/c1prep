@@ -7,7 +7,7 @@ window.SETS = [
   items: [
     { s: "He tried to ___ with a cheap excuse.", options: ["fob me off", "put me off", "turn me off", "see me off"], answer: 0,
       explain: "fob someone off = give them a poor excuse to make them go away." },
-    { s: "She ___ her boss for a pay rise.", options: ["sounded out", "sounded off", "sounded up", "sounded through"], answer: 0,
+    { s: "She ___ her boss about a pay rise.", options: ["sounded out", "sounded off", "sounded up", "sounded through"], answer: 0,
       explain: "sound someone out = find out what they think, carefully." },
     { s: "Don't let him ___ buying it.", options: ["talk you into", "talk you over", "talk you out", "talk you down"], answer: 0,
       explain: "talk someone into + -ing = persuade them." },

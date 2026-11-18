@@ -49,8 +49,8 @@ window.SETS = [
       explain: "remarkably + adjective = surprisingly, very." },
     { s: "You're ___ late. The film has already started.", options: ["rather", "rather a", "fairly a"], answer: 0,
       explain: "rather + adjective with a negative meaning." },
-    { s: "The town was ___ quiet than I expected.", options: ["rather more", "more rather", "quite more"], answer: 0,
-      explain: "rather + comparative: rather more quiet / rather quieter." },
+    { s: "The town was ___ peaceful than I expected.", options: ["rather more", "more rather", "quite more"], answer: 0,
+      explain: "rather + comparative: rather more peaceful." },
     { s: "I ___ enjoyed the show.", options: ["quite", "quite a", "pretty a"], answer: 0,
       explain: "quite + verb: I quite enjoyed it = I enjoyed it a fair amount." }
   ]

@@ -69,7 +69,7 @@ window.SETS = [
       explain: "Request: ask + person + to-infinitive." },
     { s: "'Please don't be late,' my mum said to me. → My mum ___ (ask) be late.", answers: ["asked me not to"],
       explain: "ask + person + not to." },
-    { s: "'Turn off your phones,' the pilot said to the passengers. → The pilot ___ (tell) turn off their phones.", answers: ["told the passengers to"],
+    { s: "'Turn off your phones,' the pilot said to the passengers. → The pilot ___ (tell) turn off their phones.", answers: ["told the passengers to", "told them to"],
       explain: "tell + person + to." },
     { s: "'You should see a doctor,' he said to me. → He ___ (advise) see a doctor.", answers: ["advised me to"],
       explain: "advise + person + to-infinitive." },

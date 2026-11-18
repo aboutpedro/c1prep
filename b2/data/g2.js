@@ -119,7 +119,7 @@ window.SETS = [
   items: [
     { s: "I ___ along the beach when I noticed something shining in the sand.", options: ["was walking", "had walked", "walked"], answer: 0,
       explain: "A longer background action interrupted by a shorter one: past continuous." },
-    { s: "I picked it up. It was a ring that someone ___ .", options: ["had lost", "was losing", "has lost"], answer: 0,
+    { s: "I picked it up. It was a ring that someone ___.", options: ["had lost", "was losing", "has lost"], answer: 0,
       explain: "The ring was lost before I found it: past perfect." },
     { s: "___ I was looking at it, a woman came running towards me.", options: ["While", "During", "By the time"], answer: 0,
       explain: "while + clause (subject + verb). during is followed by a noun: during the walk." },

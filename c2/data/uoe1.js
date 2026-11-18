@@ -164,7 +164,7 @@ Researchers who study apologies argue that the most effective ones share several
 
 Timing matters, too. An apology that comes too late can seem calculated, less an expression of genuine remorse than an exercise in damage [6]. Yet one that comes too early, before the full [7] of the harm is known, may be dismissed as hollow. Getting it right, it seems, is a delicate [8] act.`,
   gaps: {
-    0: { options: ["growth", "boom", "rising", "booming"], answer: 0 },
+    0: { options: ["growth", "surge", "spurt", "bloom"], answer: 0 },
     1: { options: ["misnomer", "misgiving", "misconception", "misdemeanour"], answer: 3,
          explain: "'A misdemeanour' = a minor wrongdoing, something you might apologise for. A 'misnomer' is a wrong name, a 'misgiving' a feeling of doubt, and a 'misconception' a mistaken belief." },
     2: { options: ["raise", "rear", "nurse", "breed"], answer: 3,
@@ -222,7 +222,7 @@ The Great Stink, as it became known, finally [3] Parliament into action. Within 
 
 Bazalgette is said to have doubled the diameter of the pipes he thought necessary, [6] that the population would grow. This foresight is widely [7] with the system's remarkable longevity: much of it is still in use today. His work also helped to put [8] to the cholera epidemics that had repeatedly struck the capital, although, ironically, it had been designed to remove smells rather than germs.`,
   gaps: {
-    0: { options: ["met", "faced", "underwent", "sustained"], answer: 1 },
+    0: { options: ["met", "faced", "fronted", "sustained"], answer: 1 },
     1: { options: ["verifiable", "venerable", "veritable", "viable"], answer: 2,
          explain: "'Veritable' = real, true (used to emphasise a description). 'Verifiable' means able to be checked, 'venerable' means respected because of age, and 'viable' means workable." },
     2: { options: ["sunk", "flooded", "drowned", "soaked"], answer: 3,
@@ -251,7 +251,7 @@ The war changed everything. Governments, [2] to the threat of espionage, began t
 
 Not everyone welcomed the innovation. Many early travellers found the requirement to carry a photograph of themselves faintly [5], comparing the experience to being treated as a criminal. Others [6] at the descriptions that accompanied the photograph, which could include such unflattering details as the shape of the bearer's nose. Over time, however, the passport has become so deeply [7] in modern life that the prospect of crossing a border without one now seems almost [8].`,
   gaps: {
-    0: { options: ["intrinsic", "integral", "inherent", "essential"], answer: 1 },
+    0: { options: ["intrinsic", "integral", "inherent", "innate"], answer: 1 },
     1: { options: ["presentation", "introduction", "induction", "inauguration"], answer: 1,
          explain: "Fixed phrase: 'a letter of introduction' = a letter presenting someone to people who don't know them." },
     2: { options: ["lively", "living", "alive", "live"], answer: 2,

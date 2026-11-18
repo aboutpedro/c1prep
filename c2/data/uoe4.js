@@ -129,7 +129,7 @@ window.SETS = [
       explain: "A what-cleft ('What… is…') with the idiom 'get on someone's nerves' = annoy them." },
     { first: "If there is a fire, do not use the lifts.", key: "EVENT",
       before: "", after: "fire, do not use the lifts.",
-      answers: ["In the event of a"],
+      answers: ["In the event of a", "In the event of"],
       explain: "'In the event of + noun' = if something happens (formal, used in notices and instructions)." },
     { first: "Nobody knows yet whether the new policy will work.", key: "REMAINS",
       before: "It", after: "the new policy will work.",

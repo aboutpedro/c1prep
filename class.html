@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-site>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join the class · C1 Prep</title>
+<meta name="description" content="For students in a class: join once on each device so your results go to your teacher.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.ico?v=2" sizes="32x32">
+<link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="fonts/inter-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=16">
+<script src="theme.js?v=10"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="site"><a class="brand" href="./">C1 Prep</a></header>
+  <p class="kicker">For students in a class</p>
+  <h1>Join the class</h1>
+  <p class="lead">Your teacher sent you this link. Join once on each phone or computer you use, and your teacher will see your results.</p>
+  <div id="class"><noscript><p>Please turn on JavaScript to join the class.</p></noscript></div>
+  <div hidden><div class="levels" id="class-levels"><a class="level-btn" href="a1/"><img src="a1/favicon.svg?v=2" alt="" width="28" height="28"><span>A1 Beginner</span></a><a class="level-btn" href="a2/"><img src="a2/favicon.svg?v=2" alt="" width="28" height="28"><span>A2 Elementary</span></a><a class="level-btn" href="b1/"><img src="b1/favicon.svg?v=2" alt="" width="28" height="28"><span>B1 Intermediate</span></a><a class="level-btn" href="b2/"><img src="b2/favicon.svg?v=2" alt="" width="28" height="28"><span>B2 First</span></a><a class="level-btn" href="c1.html"><img src="favicon.svg?v=2" alt="" width="28" height="28"><span>C1 Advanced</span></a><a class="level-btn" href="c2/"><img src="c2/favicon.svg?v=2" alt="" width="28" height="28"><span>C2 Proficiency</span></a></div></div>
+
+  <footer class="site-foot">
+    <p class="foot-links"><a href="./">All levels</a><a href="search.html">Search</a><a href="placement.html">Level test</a><a href="privacy.html">Privacy</a></p>
+    <p class="legal">Not affiliated with or endorsed by Cambridge University Press &amp; Assessment. A2 Key, B1 Preliminary, B2 First, C1 Advanced and C2 Proficiency are trademarks of Cambridge University Press &amp; Assessment.</p>
+  </footer>
+</div>
+<script>
+/* Class mode: joining saves the student's name in this browser (the same key log.js reads), and from then on
+   the sets they check are sent to the teacher. Leaving removes the name, so nothing more is sent. */
+(function () {
+  "use strict";
+  const NAME = "c1prep-name", QUEUE = "c1prep-queue";
+  const get = () => { try { return (localStorage.getItem(NAME) || "").trim(); } catch (e) { return ""; } };
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const host = document.getElementById("class");
+  const LEVELS = document.getElementById("class-levels").outerHTML;
+
+  function joinForm(value, label) {
+    host.innerHTML = '<form class="card class-card" novalidate>' +
+      '<p>Type your name. From then on, the results of the sets you check on this phone or computer go to your teacher.</p>' +
+      '<label class="field-label" for="cl-name">First and last name</label>' +
+      '<input id="cl-name" class="text-in" type="text" maxlength="60" autocomplete="name" required>' +
+      '<p class="move-msg bad" id="cl-msg"></p>' +
+      '<div class="move-actions"><button type="submit">' + label + '</button></div>' +
+      '<p class="small-note">Using another phone or computer too? Open this link there as well. <a href="privacy.html">Privacy</a></p></form>';
+    const input = host.querySelector("input");
+    input.value = value || "";
+    host.querySelector("form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const v = input.value.trim().replace(/\s+/g, " ");
+      if (v.length < 2) { host.querySelector("#cl-msg").textContent = "Please type your name."; input.focus(); return; }
+      try { localStorage.setItem(NAME, v); } catch (err) {}
+      joined(true);
+    });
+    input.focus();
+  }
+  function joined(justNow) {
+    const n = get();
+    host.innerHTML = '<div class="card class-card">' +
+      "<h2>" + (justNow ? "Welcome, " + esc(n.split(" ")[0]) + "!" : "You’re in the class") + "</h2>" +
+      "<p>You’re in the class as <b>" + esc(n) + "</b>. The results of the sets you check go to your teacher automatically.</p>" +
+      '<div class="move-actions"><button type="button" class="secondary" id="cl-change">Change my name</button>' +
+      '<button type="button" class="secondary" id="cl-leave">Leave the class on this device</button></div></div>' +
+      "<h2>Choose your level</h2>" + LEVELS;
+    host.querySelector("#cl-change").addEventListener("click", () => joinForm(get(), "Save my name"));
+    host.querySelector("#cl-leave").addEventListener("click", () => {
+      try { localStorage.removeItem(NAME); localStorage.removeItem(QUEUE); } catch (e) {}
+      left();
+    });
+  }
+  function left() {
+    host.innerHTML = '<div class="card class-card"><h2>You’ve left the class on this device</h2>' +
+      "<p>Nothing more will be sent to your teacher from here. Your answers and scores stay in this browser.</p>" +
+      '<div class="move-actions"><button type="button" id="cl-again">Join again</button><a class="btn secondary" href="./">Go to the front page</a></div></div>';
+    host.querySelector("#cl-again").addEventListener("click", () => joinForm("", "Join the class"));
+  }
+  if (get()) joined(false); else joinForm("", "Join the class");
+})();
+</script>
+</body>
+</html>

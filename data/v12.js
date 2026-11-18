@@ -70,7 +70,7 @@ window.SETS = [
       explain: "look into = investigate." },
     { s: "She was ___ by her grandparents in a small village.", options: ["brought up", "brought about", "brought round", "brought in"], answer: 0,
       explain: "bring up = raise a child." },
-    { s: "He ___ me in front of everyone.", options: ["put down", "put off", "put out", "put by"], answer: 0,
+    { s: "He ___ his colleagues in front of everyone.", options: ["put down", "put off", "put out", "put by"], answer: 0,
       explain: "put someone down = criticise them to make them feel stupid." },
     { s: "I can't ___ his rudeness any longer.", options: ["put up with", "put up", "put down to", "put in for"], answer: 0,
       explain: "put up with = tolerate." },

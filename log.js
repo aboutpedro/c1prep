@@ -1,4 +1,6 @@
-/* C1 Prep: student name + sending finished sets to the teacher's results sheet. */
+/* C1 Prep: class mode. Pedro's students join once per device with the class link (class.html), which saves their
+   name; only then are finished sets sent to the teacher's results sheet. Everyone else is never asked for a name
+   and nothing is sent. Students who typed a name before class mode existed simply stay in the class. */
 (function () {
   "use strict";
   const ENDPOINT = "https://script.google.com/macros/s/AKfycbwuvbTw5zPsGFrT2ouLKdMJxhaNGn3Gim2-yS_Q-_LXWK8skkK0uVeUgOUG8HUPnjw/exec";
@@ -13,6 +15,8 @@
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   };
   const getName = () => (ls.get(NAME_KEY) || "").trim();
+  const inClass = () => !!getName();
+  window.c1InClass = inClass;
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   /* ---------- toast ---------- */
@@ -54,12 +58,8 @@
     });
   }
 
-  // Returns true if a name is set; otherwise asks for it and runs `then` afterwards.
-  window.c1RequireName = function (then) {
-    if (getName()) return true;
-    askName(then);
-    return false;
-  };
+  // Kept for the pages that call it: nobody has to give a name any more (class students already have one).
+  window.c1RequireName = function () { return true; };
 
   function paintNameChips() {
     document.querySelectorAll(".name-chip").forEach((chip) => {
@@ -98,6 +98,7 @@
   }
 
   window.c1Log = async function (r) {
+    if (!inClass()) return;                 // not in a class: nothing leaves the browser
     const rec = Object.assign({ key: SITE_KEY, name: getName(), page: location.pathname, at: new Date().toISOString() }, r);
     rec.mistakes = (r.mistakes || []).map((m) => ({ n: m.n, given: m.given, correct: m.correct }));
     try {
@@ -112,6 +113,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector("header.site nav");
     const isExercise = !!document.getElementById("exercise");
+    if (!inClass()) return;                 // the name chip and banner are for class students only
     if (nav && isExercise) {
       const chip = document.createElement("button");
       chip.type = "button";
@@ -126,7 +128,6 @@
       lead.after(hello);
     }
     paintNameChips();
-    if (isExercise && !getName()) setTimeout(() => askName(), 400);
     flush();
   });
 })();

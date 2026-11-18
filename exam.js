@@ -1,8 +1,11 @@
 /* C1 Prep: exam mode (exam.html at B2, C1 and C2).
    A full Reading and Use of English paper: one set from each part (sets not done yet come first), against the clock.
-   Answers are saved as they are entered; the clock keeps running if the page is closed. At the end the paper is
-   handed in: the marks go to the teacher's sheet only. The student sees no score, no marking and no answers here,
-   and nothing about the paper is kept in the browser except its date, its length and which sets it used.
+   Answers are saved as they are entered; the clock keeps running if the page is closed.
+   - Class students (log.js, c1InClass): at the end the paper is handed in and the marks go to the teacher's sheet
+     only. They see no score, no marking and no answers here, and nothing about the paper is kept in the browser
+     except its date, its length and which sets it used.
+   - Everyone else: the paper is marked on the spot, with the marks per part, an estimated Cambridge English Scale
+     score for Reading and for Use of English, and every answer with its explanation.
    Needs progress.js and quiz.js. */
 (function () {
   "use strict";
@@ -40,6 +43,7 @@
   };
   const cfg = CFG[store.level];
   if (!cfg) return;
+  const inClass = () => !!(window.c1InClass && window.c1InClass());
   const PARTS = cfg.parts.map((p, i) => ({ page: p[0], file: p[1], name: p[2], count: p[3], paper: p[4], no: i + 1 }));
   const QUESTIONS = PARTS.reduce((a, p) => a + p.count, 0);
 
@@ -138,10 +142,11 @@
     card.appendChild(el("ul", { class: "plain-list" },
       "<li>You can move between the parts in any order and change your answers until you finish.</li>" +
       "<li>Your answers are saved as you go. If you close the page, the clock keeps running, as it would in the exam room.</li>" +
-      "<li>When you press <b>Finish</b>, or the time runs out, your paper goes to your teacher. You won't see a score here: your teacher will go through the paper with you.</li>"));
+      (inClass()
+        ? "<li>When you press <b>Finish</b>, or the time runs out, your paper goes to your teacher. You won't see a score here: your teacher will go through the paper with you.</li>"
+        : "<li>When you press <b>Finish</b>, or the time runs out, the paper is marked. You see your marks for each part, an estimate of your Cambridge English Scale score, and every answer with an explanation.</li>")));
     const go = el("button", { type: "button", class: "exam-start" }, "Start the paper");
     go.addEventListener("click", () => {
-      if (window.c1RequireName && !window.c1RequireName(() => go.click())) return;
       go.disabled = true; go.textContent = "Getting the paper ready…";
       start().catch(() => { go.disabled = false; go.textContent = "Start the paper"; host.insertBefore(el("p", { class: "lead" }, "The paper could not be loaded. Check your connection and try again."), host.firstChild); });
     });
@@ -154,7 +159,8 @@
       const c = el("div", { class: "card" });
       const rows = past.slice().reverse().map((x) => {
         const d = new Date(x.at);
-        return "<tr><td>" + esc(d.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })) + '</td><td class="num">' + (x.timeUp ? "time ran out" : mins(x.secs)) + "</td><td>Handed in</td></tr>";
+        return "<tr><td>" + esc(d.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })) + '</td><td class="num">' + (x.timeUp ? "time ran out" : mins(x.secs)) + "</td>" +
+          (x.max ? '<td class="num">' + x.score + " / " + x.max + "</td>" : "<td>Handed in</td>") + "</tr>";
       }).join("");
       c.appendChild(el("div", { class: "table-wrap" }, '<table class="form-table result-table"><thead><tr><th>Date</th><th class="num">Time</th><th></th></tr></thead><tbody>' + rows + "</tbody></table>"));
       host.appendChild(c);
@@ -282,11 +288,13 @@
         mistakes = mistakes.concat(r.mistakes);
         return "P" + p.no + " " + r.score + "/" + r.max;
       });
-      const no = store.addExam({ at: Date.now(), secs: secs, timeUp: timeUp ? 1 : 0, sets: state.sets });
+      const own = !inClass();
+      const no = store.addExam(Object.assign({ at: Date.now(), secs: secs, timeUp: timeUp ? 1 : 0, sets: state.sets }, own ? { score: score, max: max } : {}));
       store.dropExam();
 
       const sR = scaleScore(sum.R[0], cfg.scale.R), sU = scaleScore(sum.U[0], cfg.scale.U), low = cfg.scale.R[0][1];
       const est = (x) => (x == null ? "below " + low : "about " + x);
+      if (own) { showResult(timeUp, secs, score, max, sum, sR, sU, est); return; }
       if (window.c1Log) {
         window.c1Log({
           part: (store.levelName ? store.levelName + " · " : "") + "Exam mode · Reading and Use of English",
@@ -307,6 +315,36 @@
       const home = el("a", { class: "btn-link", href: document.documentElement.hasAttribute("data-level") ? "./" : "c1.html" }, "Back to all exercises");
       card.appendChild(home);
       host.appendChild(card);
+      window.scrollTo(0, 0);
+    }
+    /* Not in a class: mark the paper on screen. The result goes above the tabs; every part stays open to go
+       through, marked, with its explanations, and nothing can be changed any more. */
+    function showResult(timeUp, secs, score, max, sum, sR, sU, est) {
+      bar.remove();
+      host.oninput = host.onchange = null;
+      const rows = ctrls.map((c, i) => {
+        const r = c.mark();
+        tabBtns[i].querySelector(".cnt").textContent = r.score + "/" + r.max;
+        return "<tr><td>Part " + PARTS[i].no + " · " + esc(PARTS[i].name) + '</td><td class="num">' + r.score + " / " + r.max + "</td></tr>";
+      }).join("");
+      host.querySelectorAll("input, select, textarea, button.slot-clear").forEach((x) => { x.disabled = true; });
+      const card = el("div", { class: "card exam-result" });
+      card.appendChild(el("h2", null, timeUp ? "Time’s up: your result" : "Your result"));
+      card.appendChild(el("p", { class: "big" }, score + " / " + max + "<span>" +
+        (timeUp ? "You used all " + cfg.minutes + " minutes." : "You finished in " + mins(secs) + ".") + "</span>"));
+      card.appendChild(el("div", { class: "table-wrap" },
+        '<table class="form-table result-table"><thead><tr><th>Paper</th><th class="num">Marks</th><th class="num">Cambridge English Scale</th></tr></thead><tbody>' +
+        "<tr><td>Reading</td><td class=\"num\">" + sum.R[0] + " / " + sum.R[1] + '</td><td class="num">' + est(sR) + "</td></tr>" +
+        "<tr><td>Use of English</td><td class=\"num\">" + sum.U[0] + " / " + sum.U[1] + '</td><td class="num">' + est(sU) + "</td></tr></tbody></table>"));
+      card.appendChild(el("div", { class: "table-wrap" },
+        '<table class="form-table result-table"><thead><tr><th>Part</th><th class="num">Marks</th></tr></thead><tbody>' + rows + "</tbody></table>"));
+      card.appendChild(el("p", { class: "small-note" }, "The scale scores are an estimate from Cambridge’s published conversion for practice tests, for this paper only. " +
+        "Go through each part below: every answer is marked, with an explanation."));
+      const acts = el("div", { class: "move-actions" });
+      acts.appendChild(el("a", { class: "btn", href: "exam.html" }, "Start a new paper"));
+      acts.appendChild(el("a", { class: "btn secondary", href: document.documentElement.hasAttribute("data-level") ? "./" : "c1.html" }, "Back to all exercises"));
+      card.appendChild(acts);
+      top.appendChild(card);
       window.scrollTo(0, 0);
     }
     /* Add the time since the last tick to the part on screen. */

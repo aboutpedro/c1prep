@@ -284,7 +284,7 @@ Designing a large display is a highly skilled job. Every rocket has to be [4] to
 
 Not everyone is a [6], however. Fireworks can be extremely frightening for pets and wild animals, and every year some people are injured because they do not follow the safety instructions. For this [7], some towns have started using drones that light up instead. They create colourful patterns in the sky without any noise, although many people [8] that the bang is half the fun.`,
   gaps: {
-    0: { options: ["invented", "discovered", "found", "created"], answer: 0 },
+    0: { options: ["invented", "discovered", "found", "originated"], answer: 0 },
     1: { options: ["chances", "possibilities", "occasions", "opportunities"], answer: 2,
          explain: "Collocation: 'a special occasion' = an important event, such as a birthday or a festival." },
     2: { options: ["guilty", "responsible", "liable", "accountable"], answer: 1,

@@ -1,0 +1,143 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Money words",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "I can't ___ a new car; they're too expensive.", options: ["afford", "pay", "spend"], answer: 0,
+      explain: "afford = have enough money for." },
+    { s: "This jacket was a real ___: only €20!", options: ["bargain", "offer", "sale"], answer: 0,
+      explain: "a bargain = something cheaper than usual." },
+    { s: "This doesn't fit. Can I have a ___, please?", options: ["refund", "return", "receipt"], answer: 0,
+      explain: "a refund = your money back." },
+    { s: "Keep the ___ in case you need to take it back.", options: ["receipt", "recipe", "prescription"], answer: 0,
+      explain: "a receipt = a piece of paper showing what you paid." },
+    { s: "How much did you ___ for your phone?", options: ["pay", "spend", "cost"], answer: 0,
+      explain: "pay for something." },
+    { s: "The shops are having a ___; everything is 50% off.", options: ["sale", "sell", "bargain"], answer: 0,
+      explain: "have a sale = sell things at lower prices." },
+    { s: "I'd like to ___ some money from my account.", options: ["withdraw", "take off", "remove"], answer: 0,
+      explain: "withdraw money = take it out of a bank account." },
+    { s: "He ___ me €50 and hasn't paid it back.", options: ["owes", "lends", "borrows"], answer: 0,
+      explain: "owe = have to pay back." },
+    { s: "Could you ___ me some money until Friday?", options: ["lend", "borrow", "owe"], answer: 0,
+      explain: "lend = give for a short time. borrow = take for a short time." },
+    { s: "I'm ___ up to buy a new bike.", options: ["saving", "keeping", "putting"], answer: 0,
+      explain: "save up = keep money for something." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Paying and spending",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "I paid ___ cash.", options: ["in", "by", "on"], answer: 0,
+      explain: "pay in cash, but pay by card." },
+    { s: "Can I pay ___ card?", options: ["by", "in", "on"], answer: 0,
+      explain: "pay by card." },
+    { s: "She ___ a fortune on clothes.", options: ["spends", "pays", "costs"], answer: 0,
+      explain: "spend money on something." },
+    { s: "The holiday ___ us a fortune.", options: ["cost", "spent", "paid"], answer: 0,
+      explain: "something costs (someone) money." },
+    { s: "He's in ___ because he borrowed too much money.", options: ["debt", "dept", "debit"], answer: 0,
+      explain: "be in debt = owe money." },
+    { s: "Prices have ___ by 10% this year.", options: ["risen", "raised", "arisen"], answer: 0,
+      explain: "rise (no object): prices rise." },
+    { s: "The government wants to ___ taxes.", options: ["raise", "rise", "arise"], answer: 0,
+      explain: "raise (with an object): raise taxes." },
+    { s: "Students get a 10% ___ at this shop.", options: ["discount", "refund", "profit"], answer: 0,
+      explain: "a discount = a lower price." },
+    { s: "The company made a ___ of over a million euros last year.", options: ["profit", "benefit", "gain"], answer: 0,
+      explain: "make a profit." },
+    { s: "We're ___ budget on this project. We've spent too much.", options: ["over", "above", "beyond"], answer: 0,
+      explain: "over budget = spending more than planned." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Phrasal verbs and expressions",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "I need to ___ back the money I borrowed.", options: ["pay", "make", "do"], answer: 0,
+      explain: "pay back = return money." },
+    { s: "They ___ off their mortgage last year.", options: ["paid", "took", "gave"], answer: 0,
+      explain: "pay off = pay all the money you owe." },
+    { s: "We've ___ out of milk. Can you get some?", options: ["run", "gone", "used"], answer: 0,
+      explain: "run out of = have none left." },
+    { s: "I'm trying to ___ down on unnecessary spending.", options: ["cut", "put", "take"], answer: 0,
+      explain: "cut down on = reduce." },
+    { s: "That watch must have cost an arm and a ___.", options: ["leg", "foot", "hand"], answer: 0,
+      explain: "cost an arm and a leg = be very expensive." },
+    { s: "After paying the bills, I'm ___ of money until payday.", options: ["short", "low", "little"], answer: 0,
+      explain: "be short of = not have enough." },
+    { s: "It's hard to ___ ends meet on such a low salary.", options: ["make", "get", "have"], answer: 0,
+      explain: "make ends meet = have just enough money to live." },
+    { s: "I'll ___ the bill; you paid last time.", options: ["get", "make", "do"], answer: 0,
+      explain: "get the bill = pay for everyone." },
+    { s: "The meal was expensive, but it was ___ the money.", options: ["worth", "value", "cost"], answer: 0,
+      explain: "worth the money = good enough for the price." },
+    { s: "He's much better ___ since he got his new job.", options: ["off", "of", "out"], answer: 0,
+      explain: "better off = richer." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Word formation",
+  intro: "Complete the sentences with the correct form of the word in brackets.",
+  items: [
+    { s: "The shop has a wide ___ (CHOOSE) of shoes.", answers: ["choice"], width: 14,
+      explain: "choose → choice." },
+    { s: "The prices here are very ___ (REASON).", answers: ["reasonable"], width: 14,
+      explain: "reasonable = not too expensive." },
+    { s: "I'm not ___ (SATISFY) with this product.", answers: ["satisfied"], width: 14,
+      explain: "satisfied = happy with something." },
+    { s: "He's very careful with money; he's quite ___ (ECONOMY).", answers: ["economical"], width: 14,
+      explain: "economical = not spending much." },
+    { s: "The new store had a very ___ (SUCCEED) first week.", answers: ["successful"], width: 14,
+      explain: "succeed → successful." },
+    { s: "Most of our ___ (CUSTOM) are students.", answers: ["customers"], width: 14,
+      explain: "custom → customer → customers." },
+    { s: "___ (PAY) must be made by Friday.", answers: ["Payment"], width: 14,
+      explain: "pay → payment." },
+    { s: "It was an ___ (EXPENSE) holiday, so we didn't spend much.", answers: ["inexpensive"], width: 14,
+      explain: "in- + expensive = cheap." },
+    { s: "The ___ (OWN) of the shop is very friendly.", answers: ["owner"], width: 14,
+      explain: "own → owner." },
+    { s: "There has been a big ___ (GROW) in online shopping.", answers: ["growth"], width: 14,
+      explain: "grow → growth." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Money in everyday life",
+  intro: "Complete the sentences with the words in the box. There are two words you don't need.",
+  bank: ["account", "bargains", "bill", "budget", "cash", "change", "coins", "loan", "price", "salary", "tip", "wallet"],
+  items: [
+    { s: "We need to plan a ___ for the holiday.", answers: ["budget"],
+      explain: "a budget = a plan of how much to spend." },
+    { s: "Do you take cards, or only ___?", answers: ["cash"],
+      explain: "cash = notes and coins." },
+    { s: "Here's €20. Keep the ___.", answers: ["change"],
+      explain: "change = the money you get back." },
+    { s: "I've got lots of ___ in my pocket.", answers: ["coins"],
+      explain: "coins = metal money." },
+    { s: "They took out a ___ to buy a house.", answers: ["loan"],
+      explain: "take out a loan = borrow money from a bank." },
+    { s: "Can we have the ___, please? We'd like to pay.", answers: ["bill"],
+      explain: "the bill in a restaurant." },
+    { s: "What's the ___ of this jacket?", answers: ["price"],
+      explain: "the price = how much something costs." },
+    { s: "I've lost my ___ with all my cards in it.", answers: ["wallet"],
+      explain: "a wallet holds money and cards." },
+    { s: "I opened a bank ___ when I started work.", answers: ["account"],
+      explain: "open a bank account." },
+    { s: "You can find some great ___ at the market.", answers: ["bargains"],
+      explain: "bargains = things sold cheaply." }
+  ]
+}
+];

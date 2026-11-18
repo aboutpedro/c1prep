@@ -20,11 +20,9 @@
 <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap">
-<link rel="stylesheet" href="style.css?v=13">
-<script src="theme.js?v=8"></script>
+<link rel="preload" href="fonts/inter-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=16">
+<script src="theme.js?v=10"></script>
 </head>
 <body>
 <div class="wrap">
@@ -33,7 +31,7 @@
   <h1>Privacy</h1>
   <p class="updated">Last updated: 18 November 2026</p>
   <div class="prose">
-  <p class="lead">There are no accounts, ads, cookies or analytics on this site. Your answers and scores are saved in your own browser. When you check a set on an exercise page, your result is also sent to your teacher, with the name you typed.</p>
+  <p class="lead">There are no accounts, ads, cookies or analytics on this site. Your answers and scores are saved in your own browser and stay there. Only if you are one of Pedro’s students and have joined the class with his link are your results also sent to him.</p>
 
   <h2>Who is responsible</h2>
   <p>C1 Prep is run by Pedro Souza, an English teacher in Brazil, who is the controller of your personal data under Brazil’s data protection law (Lei Geral de Proteção de Dados, LGPD, Law 13,709/2018). For any question or request about your data, write to <a href="mailto:pedrosouza@outlook.com">pedrosouza@outlook.com</a>.</p>
@@ -45,12 +43,12 @@
     <li>your scores, and which questions you got right or wrong (for <b>My weak spots</b>)</li>
     <li>your writing tasks while you type them</li>
     <li>your level test result</li>
-    <li>your name, if you type it, and your choice of light or dark mode</li>
+    <li>your name, if you joined a class, and your choice of light or dark mode</li>
   </ul>
   <p>None of this leaves your device unless you send it. <b>Move my progress</b> puts your progress (and your name, if you gave one) into a link or code. It goes only where you send it, and the site doesn’t keep a copy.</p>
 
-  <h2>What is sent to your teacher</h2>
-  <p>The exercise pages ask for your name, so your teacher can follow your work. When you press <b>Check answers</b> on a set, or finish a timed paper, the site sends:</p>
+  <h2>What is sent to your teacher (class students only)</h2>
+  <p>If you haven’t joined a class, nothing is sent: the site never asks for your name. Pedro’s students join once on each device with the class link he gives them, by typing their name. After that, when you press <b>Check answers</b> on a set, or finish a timed paper, the site sends:</p>
   <ul>
     <li>the name you typed</li>
     <li>the page, the set, your score and the time you took</li>
@@ -58,14 +56,13 @@
     <li>whether you showed the answers, which attempt it was, and the date and time</li>
   </ul>
   <p>These go to a Google Sheet that only Pedro can open, through Google Apps Script. If you are offline, they wait in your browser and are sent later. Pedro uses them only to follow students’ progress and plan lessons. They are never sold, shared with anyone else or used for advertising. The level test, your writing tasks and the pages you visit are not sent.</p>
-  <p>The legal basis is your consent, given when you type your name (LGPD, art. 7, I), and, for Pedro’s students, the lessons you have agreed to take (art. 7, V). Pedro keeps results while they are useful for your lessons and deletes them when you ask.</p>
-  <p>If you are under 18, ask a parent or guardian before you type your name. Children under 12 need a parent’s or guardian’s permission (art. 14).</p>
+  <p>The legal basis is your consent, given when you join the class (LGPD, art. 7, I), and the lessons you have agreed to take (art. 7, V). Pedro keeps results while they are useful for your lessons and deletes them when you ask. To stop sending results from a device, open the class link again and choose <b>Leave the class on this device</b>.</p>
+  <p>If you are under 18, ask a parent or guardian before you join. Children under 12 need a parent’s or guardian’s permission (art. 14).</p>
 
   <h2>Other services</h2>
   <ul>
     <li><b>GitHub Pages</b> hosts the site. Like any web server, it receives technical data such as your IP address when you open a page.</li>
-    <li><b>Google Fonts</b> provides the fonts, so your browser asks Google’s servers for them, which shows Google your IP address.</li>
-    <li><b>Google Sheets and Apps Script</b> receive the results described above.</li>
+    <li><b>Google Sheets and Apps Script</b> receive the results described above (class students only).</li>
   </ul>
   <p>These companies may store data outside Brazil, under their own privacy policies.</p>
 

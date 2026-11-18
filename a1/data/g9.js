@@ -87,7 +87,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "How often?",
-  intro: "Write one word in each gap.",
+  intro: "Write one or two words in each gap.",
   items: [
     { s: "I go to the dentist ___ a year. (1 time)", answers: ["once"],
       explain: "1 time = once." },

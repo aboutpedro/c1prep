@@ -103,7 +103,7 @@ window.SETS = [
       explain: "Only later + inversion." },
     { s: "Much ___ I admire his work, I can't agree with him on this.", options: ["as", "like", "so"], answer: 0,
       explain: "Much as = although (with verbs of feeling)." },
-    { s: "In no ___ was I responsible for the accident.", options: ["way", "case", "time"], answer: 0,
+    { s: "In no ___ was I responsible for the accident.", options: ["way", "means", "time"], answer: 0,
       explain: "In no way + inversion = not at all." },
     { s: "Not once ___ she thank me for my help.", options: ["did", "had", "was"], answer: 0,
       explain: "Not once + did + subject + verb." },

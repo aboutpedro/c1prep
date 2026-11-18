@@ -1,0 +1,143 @@
+window.SETS = [
+/* ---------------- Set 1 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Travel words",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "Our ___ to Rome was cancelled because of the snow.", options: ["flight", "travel", "voyage"], answer: 0,
+      explain: "a flight = a journey by plane. A voyage is a long journey by sea." },
+    { s: "How long is the ___ from London to Edinburgh by train?", options: ["journey", "travel", "travelling"], answer: 0,
+      explain: "a journey = going from one place to another. travel is usually a verb or uncountable." },
+    { s: "We went on a day ___ to the coast.", options: ["trip", "journey", "travel"], answer: 0,
+      explain: "a day trip = a short visit somewhere and back again." },
+    { s: "Don't forget your ___; you'll need it at the border.", options: ["passport", "luggage", "baggage"], answer: 0,
+      explain: "You show your passport at the border." },
+    { s: "The plane ___ off at 6 a.m.", options: ["took", "went", "got"], answer: 0,
+      explain: "take off = leave the ground." },
+    { s: "We ___ in a small hotel near the beach.", options: ["stayed", "lived", "remained"], answer: 0,
+      explain: "stay in a hotel = be a guest there." },
+    { s: "Is breakfast ___ in the price?", options: ["included", "inclusive", "contained"], answer: 0,
+      explain: "be included in the price." },
+    { s: "We hired a car so we could ___ the island.", options: ["explore", "know", "meet"], answer: 0,
+      explain: "explore = travel around a place to learn about it." },
+    { s: "It's the high ___, so hotels are expensive.", options: ["season", "time", "period"], answer: 0,
+      explain: "high season = the busiest time of year for tourism." },
+    { s: "Our hotel room had a wonderful ___ of the sea.", options: ["view", "sight", "look"], answer: 0,
+      explain: "a view of = what you can see from a place." }
+  ]
+},
+/* ---------------- Set 2 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "The environment",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "Cars produce harmful ___ that pollute the air.", options: ["emissions", "wastes", "smokes"], answer: 0,
+      explain: "emissions = gases sent into the air." },
+    { s: "The panda is an ___ species.", options: ["endangered", "extinct", "dangerous"], answer: 0,
+      explain: "endangered = at risk of disappearing. extinct = no longer exists." },
+    { s: "We should ___ glass and paper instead of throwing them away.", options: ["recycle", "recover", "rebuild"], answer: 0,
+      explain: "recycle = treat used materials so they can be used again." },
+    { s: "___ change is causing more extreme weather.", options: ["Climate", "Weather", "Temperature"], answer: 0,
+      explain: "climate change." },
+    { s: "Solar and wind power are ___ energy sources.", options: ["renewable", "renewing", "refreshable"], answer: 0,
+      explain: "renewable energy never runs out." },
+    { s: "The forest is home to many different ___ of birds.", options: ["species", "races", "specials"], answer: 0,
+      explain: "a species = a type of animal or plant." },
+    { s: "Plastic ___ is a huge problem in the oceans.", options: ["pollution", "dirt", "dust"], answer: 0,
+      explain: "pollution = harmful substances in air, water or land." },
+    { s: "The river ___ after three days of heavy rain.", options: ["flooded", "drowned", "sank"], answer: 0,
+      explain: "flood = cover land with water." },
+    { s: "A long period with no rain is called a ___.", options: ["drought", "desert", "dryness"], answer: 0,
+      explain: "a drought." },
+    { s: "We need to reduce our ___ footprint by flying less.", options: ["carbon", "coal", "gas"], answer: 0,
+      explain: "your carbon footprint = the CO2 your lifestyle produces." }
+  ]
+},
+/* ---------------- Set 3 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Verbs for travelling",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "We ___ off early to avoid the traffic.", options: ["set", "put", "made"], answer: 0,
+      explain: "set off = start a journey." },
+    { s: "What time do we have to ___ in at the hotel?", options: ["check", "look", "stay"], answer: 0,
+      explain: "check in = arrive and register at a hotel or airport." },
+    { s: "My friend ___ me up at the airport.", options: ["picked", "took", "caught"], answer: 0,
+      explain: "pick someone up = collect them in a car." },
+    { s: "Our car ___ down on the motorway.", options: ["broke", "fell", "went"], answer: 0,
+      explain: "break down = stop working (cars, machines)." },
+    { s: "We ___ off in Lisbon for two days on our way to Brazil.", options: ["stopped", "stayed", "put"], answer: 0,
+      explain: "stop off = make a short visit during a longer journey." },
+    { s: "I'll ___ you off at the station on my way to work.", options: ["drop", "put", "let"], answer: 0,
+      explain: "drop someone off = take them somewhere in a car and leave them there." },
+    { s: "Can you ___ after my plants while I'm away?", options: ["look", "care", "take"], answer: 0,
+      explain: "look after = take care of." },
+    { s: "Hurry up or we'll ___ the train!", options: ["miss", "lose", "fail"], answer: 0,
+      explain: "miss a train, bus or plane = arrive too late for it." },
+    { s: "We ___ a room with a sea view.", options: ["booked", "ordered", "asked"], answer: 0,
+      explain: "book a room = reserve it." },
+    { s: "The flight was ___ for three hours because of fog.", options: ["delayed", "late", "slowed"], answer: 0,
+      explain: "delayed = made late." }
+  ]
+},
+/* ---------------- Set 4 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Word formation",
+  intro: "Complete the sentences with the correct form of the word in brackets.",
+  items: [
+    { s: "The ___ (POLLUTE) in this city is terrible.", answers: ["pollution"], width: 15,
+      explain: "pollute → pollution." },
+    { s: "Thousands of ___ (TOUR) visit the island every summer.", answers: ["tourists"], width: 15,
+      explain: "tour → tourist → tourists (plural)." },
+    { s: "It's an ___ (ENVIRONMENT) friendly product.", answers: ["environmentally"], width: 15,
+      explain: "An adverb before friendly: environmentally friendly." },
+    { s: "The ___ (DESTROY) of the rainforest is a global problem.", answers: ["destruction"], width: 15,
+      explain: "destroy → destruction." },
+    { s: "We had a ___ (WONDER) time in Greece.", answers: ["wonderful"], width: 15,
+      explain: "wonder → wonderful." },
+    { s: "The hotel staff were very ___ (HELP).", answers: ["helpful"], width: 15,
+      explain: "help → helpful." },
+    { s: "Plastic bags are very ___ (HARM) to sea life.", answers: ["harmful"], width: 15,
+      explain: "harm → harmful." },
+    { s: "The views from the top of the mountain are ___ (BREATH).", answers: ["breathtaking"], width: 15,
+      explain: "breathtaking = extremely beautiful." },
+    { s: "Our ___ (DEPART) was delayed by two hours.", answers: ["departure"], width: 15,
+      explain: "depart → departure." },
+    { s: "We need to find ___ (ALTERNATE) sources of energy.", answers: ["alternative"], width: 15,
+      explain: "alternative = another possibility." }
+  ]
+},
+/* ---------------- Set 5 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Travel and nature",
+  intro: "Complete the sentences with the words in the box. There are two words you don't need.",
+  bank: ["abroad", "accommodation", "crew", "destination", "global warming", "landscape", "litter", "luggage", "resort", "sightseeing", "souvenir", "wildlife"],
+  items: [
+    { s: "How much ___ are you taking? Just one bag?", answers: ["luggage"],
+      explain: "luggage is uncountable: How much luggage…?" },
+    { s: "The ___ was cheap: we stayed in a youth hostel.", answers: ["accommodation"],
+      explain: "accommodation = a place to stay." },
+    { s: "We spent the morning ___ in the old town.", answers: ["sightseeing"],
+      explain: "go sightseeing = visit famous places as a tourist." },
+    { s: "Bali is a popular holiday ___.", answers: ["destination"],
+      explain: "a destination = the place you travel to." },
+    { s: "Have you ever lived ___?", answers: ["abroad"],
+      explain: "abroad = in another country (no preposition before it)." },
+    { s: "I bought a fridge magnet as a ___.", answers: ["souvenir"],
+      explain: "a souvenir = something you buy to remember a place." },
+    { s: "The ___ in the north of the country is wild and beautiful.", answers: ["landscape"],
+      explain: "landscape = how an area of land looks." },
+    { s: "The national park is famous for its ___: bears, wolves and eagles.", answers: ["wildlife"],
+      explain: "wildlife = animals living in nature." },
+    { s: "Please don't drop ___ on the beach.", answers: ["litter"],
+      explain: "litter = rubbish left in public places." },
+    { s: "Rising temperatures caused by ___ are melting the ice.", answers: ["global warming"],
+      explain: "global warming = the rise in the Earth's temperature." }
+  ]
+}
+];
