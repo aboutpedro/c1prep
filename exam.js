@@ -304,7 +304,7 @@
       card.appendChild(el("h2", null, timeUp ? "Time's up: your paper is handed in" : "Your paper is handed in"));
       card.appendChild(el("p", null, "Your answers have gone to your teacher, who will go through the paper with you. " +
         (timeUp ? "You used all " + cfg.minutes + " minutes." : "You finished in " + mins(secs) + ".")));
-      const home = el("a", { class: "btn-link", href: "./" }, "Back to all exercises");
+      const home = el("a", { class: "btn-link", href: document.documentElement.hasAttribute("data-level") ? "./" : "c1.html" }, "Back to all exercises");
       card.appendChild(home);
       host.appendChild(card);
       window.scrollTo(0, 0);

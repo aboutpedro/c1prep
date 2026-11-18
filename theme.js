@@ -18,14 +18,22 @@
   const MOON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
   // Every level of the site. theme.js lives at the site root, so the level folders are found from its own address.
   const SITE = new URL(".", document.currentScript ? document.currentScript.src : location.href);
+  // [code, folder, name, home page]. C1 lives at the site root, where index.html is the site's front page.
   const LEVELS = [
-    ["a1/", "A1 Beginner"],
-    ["a2/", "A2 Elementary"],
-    ["b1/", "B1 Intermediate"],
-    ["b2/", "B2 First"],
-    ["", "C1 Advanced"],
-    ["c2/", "C2 Proficiency"],
+    ["a1", "a1/", "A1 Beginner", ""],
+    ["a2", "a2/", "A2 Elementary", ""],
+    ["b1", "b1/", "B1 Intermediate", ""],
+    ["b2", "b2/", "B2 First", ""],
+    ["c1", "", "C1 Advanced", "c1.html"],
+    ["c2", "c2/", "C2 Proficiency", ""],
   ];
+  // The page's level: from data-level ("B1 Intermediate" → b1). Pages without it are C1, except the
+  // site-wide pages (front page, level test, privacy, 404), which carry data-site and belong to no level.
+  const pageLevel = () => {
+    const lv = root.getAttribute("data-level");
+    if (lv) return lv.split(" ")[0].toLowerCase();
+    return root.hasAttribute("data-site") ? "" : "c1";
+  };
 
   const BACK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>';
 
@@ -92,18 +100,17 @@
 
     // Level buttons next to the brand: the level's logo; on a computer the name slides out on hover.
     if (brand && !header.querySelector(".level-switch")) {
-      const here = location.href.split(/[?#]/)[0].replace(/[^/]*$/, "");
+      const here = pageLevel();
       const sw = document.createElement("div");
       sw.className = "level-switch";
       sw.setAttribute("role", "navigation");
       sw.setAttribute("aria-label", "Levels");
-      LEVELS.forEach(([dir, name]) => {
-        const home = new URL(dir, SITE).href;
+      LEVELS.forEach(([code, dir, name, page]) => {
         const a = document.createElement("a");
         a.className = "lvl";
-        a.href = home;
+        a.href = new URL(dir + page, SITE).href;
         a.title = name;
-        if (home === here) a.setAttribute("aria-current", "page");
+        if (code === here) a.setAttribute("aria-current", "page");
         const img = document.createElement("img");
         img.src = new URL(dir + "favicon.svg?v=2", SITE).href;
         img.alt = "";

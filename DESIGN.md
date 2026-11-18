@@ -2,7 +2,7 @@
 
 Calm and focused: a quiet study tool where the exam text and the task are the
 only things competing for attention. One navy accent, plain surfaces, no
-decoration. Shared by C1 (root), B2 (`b2/`) and C2 (`c2/`) through `style.css`.
+decoration. Shared by every level and the site-wide pages through `style.css`.
 Pages use the variable names below, never raw values.
 
 ## Color
@@ -138,6 +138,32 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   per set, the larger counts per question, and the same link twice changes
   nothing. Nothing leaves the browser.
 
+- **Site footer** (every page, written by generator/sitewide.py): after a 1px rule,
+  the page's own note if it has one, then three links (All levels → the front
+  page, Level test, Privacy) and the Cambridge trademark disclaimer in 13px muted text.
+- **Button links** (`a.btn`, `a.btn.secondary`): links that look like the primary
+  and secondary buttons, for actions that go to another page.
+- **Front page** (`index.html`, written by generator/sitepages.py): kicker, title
+  and lead, then a card for the level test (text left, button right; stacked on
+  phones), then "Choose your level": six level cards (logo 48px, level name, one
+  line on what the level has, chevron), two per row from 640px. From this
+  browser's data it adds a "Continue" row (`a.continue`) to the level used last,
+  and after a level test the card says the result and that level's card gets a
+  navy border and a "Your result" pill. It loads neither log.js nor progress.js.
+- **Level test** (`placement.html`, `placement.js`): six parts of 8 questions, one
+  per level, as sentence sets with option chips. Above each part: "Part 2 of 6"
+  and a row of six small bars (done = navy, current = soft with a navy edge).
+  Under it: "5 of 8 answered" and Next part (full width on phones); trying to go
+  on with gaps turns the count red and scrolls to the first gap. 6 of 8 opens the
+  next part; the test stops at the first part with fewer. The result card says
+  "Start with B1 Intermediate", why, a button to that level and Take the test
+  again, a list of parts with scores (✓ green for passed, "Not needed" in grey),
+  then every answer marked with its explanation. The result is kept in this
+  browser (`c1prep-placement`) and is never sent.
+- **Privacy, 404**: plain prose pages with the same header and footer. 404.html
+  uses addresses from the site root (`/style.css`), because GitHub Pages shows it
+  at any address.
+
 ## Motion
 
 Hover and focus transitions of 120–150ms; a 150ms fade when a set changes.
@@ -162,8 +188,14 @@ optically centred.
 | `favicon.svg` | Browser tab, site header (theme.js) | Rounded tile |
 | `favicon.ico` | Browsers without SVG icons | 16 and 32 px drawn larger (cap 35, radius 12) so they stay legible; 48 px as the SVG |
 | `apple-touch-icon.png` | Phone home screen | 180 px, square and full-bleed (the phone rounds it), cap 27 |
+| `icon-192.png`, `icon-512.png` | Web app (manifest.webmanifest) | The C1 mark as in favicon.svg |
+| `icon-maskable-512.png` | Android home screen | Full-bleed navy, the mark at 78% so it survives any mask |
+| `og-image.png` | Share preview (Open Graph), 1200×630 | Page background, brand, "English practice, from A1 to C2", the six marks; generator/ogimage.py |
 
-C1 lives at the root, A1 in `a1/`, A2 in `a2/`, B1 in `b1/`, B2 in `b2/`, C2 in `c2/`. The A1
+C1 lives at the root (its home page is `c1.html`; `index.html` is the site's front
+page), A1 in `a1/`, A2 in `a2/`, B1 in `b1/`, B2 in `b2/`, C2 in `c2/`. Site-wide
+pages (front page, level test, privacy, 404) carry `data-site` on `<html>`, so no
+level button is marked as current. The A1
 mark is the A2 mark's A with the B1 mark's 1 (same 0.34 gap as in B1). In the A2
 mark the gap is wider at the baseline (about 1) because the A's diagonal leaves
 the top open; B1 keeps the same 1.4 closest gap as B2. Icon links carry `?v=2`;

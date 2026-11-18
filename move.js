@@ -281,7 +281,7 @@
       ? "Done! Added " + plural(newSets, "set", "sets") + " and " + plural(newQs, "question", "questions") + ". This device now has " + describe(after) + "."
       : "Done! This device already had all of that progress.") +
       (named ? " Your name (" + esc(named) + ") was added too." : "") +
-      ' <a href="./">Go to the exercises</a>';
+      ' <a href="' + (document.documentElement.hasAttribute("data-level") ? "./" : "c1.html") + '">Go to the exercises</a>';
     if (btn) btn.disabled = true;
     paintHere();
     return true;

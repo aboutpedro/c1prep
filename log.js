@@ -5,6 +5,8 @@
   const SITE_KEY = "c1prep-2026";
   const NAME_KEY = "c1prep-name";
   const QUEUE_KEY = "c1prep-queue";
+  // log.js lives at the site root, next to the privacy page.
+  const PRIVACY = new URL("privacy.html", document.currentScript ? document.currentScript.src : location.href).href;
 
   const ls = {
     get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
@@ -32,7 +34,7 @@
     wrap.innerHTML =
       '<form class="name-card" role="dialog" aria-modal="true" aria-labelledby="nm-title">' +
       '<h2 id="nm-title">What’s your name?</h2>' +
-      '<p>Your teacher will see your results under this name.</p>' +
+      '<p>Your teacher will see your results under this name. <a href="' + PRIVACY + '" target="_blank" rel="noopener">Privacy</a></p>' +
       '<label for="nm-input">First and last name</label>' +
       '<input id="nm-input" type="text" name="n" maxlength="60" autocomplete="name" required>' +
       '<button type="submit">Let’s start</button></form>';
