@@ -319,6 +319,19 @@ changes whenever sw.js changes, so bumping a ?v= in sitepages.py is enough.
   listening in 5…", "Played twice" or "Recording coming soon". After checking (or Show answers) a closed
   "Transcript" card appears under each recording: serif text, speaker names in small sans bold, speaker
   headings in navy capitals.
+- **Speaking tests** (C1 `speaking-N.html`, C2 `c2/speaking-N.html`, `speaking.css`, `speaking.js`; pages
+  written by generator/speaking.py from content/speaking/<level>.json): one card per part under its heading,
+  with the part's minutes in a grey pill. The examiner's words sit behind a 3px `--primary-soft` rule with a
+  small grey EXAMINER label, in serif italic; the questions the candidates answer are a plain list. Part 2
+  (C1) shows the questions printed on the candidate's sheet in a centred `--surface-2` box, then the three
+  photos side by side (stacked on phones); C2's six photos sit in a 3 × 2 grid (2 across on phones) with a
+  white letter badge. Photos are 3:2, tap to open the 1600px version in a dialog. C1 Part 3: the question in
+  a `--primary-soft` box in the middle and the five prompts around it (stacked on phones). C2 Part 3: a
+  bordered prompt card. Every timed step has a **timer**: a navy Start button (Pause, Resume, Start again),
+  the time in tabular figures, a thin bar that fills, amber in the last 10 seconds, green "Time’s up" with
+  two soft beeps; one timer runs at a time. Photo credits (Pexels, each name linked to its photo) close the
+  page in small grey type. A test goes live (tile in a "Speaking" section after Writing, sitemap) once all
+  its photos are in `photos/` (made by generator/photos.py).
 
 ## Motion
 
@@ -331,7 +344,8 @@ under `prefers-reduced-motion`.
 No illustrations or photos in the exercises (the grammar diagrams above are the only drawings). The kids
 section is the exception: flat cartoon pictures with dark outlines on a transparent background
 (`kids/img/<topic>-<word>.webp`, 512px, the drawing 448px across) and one scene per topic
-(`kids/img/scene-<topic>.webp`, 1200px wide). The current pictures are placeholders made with Gemini. Icons are simple 1.75px-stroke line icons drawn
+(`kids/img/scene-<topic>.webp`, 1200px wide). The current pictures are placeholders made with Gemini. The Speaking
+tests use real photos from Pexels (free licence, photographers credited on the page), cropped to 3:2. Icons are simple 1.75px-stroke line icons drawn
 inline (chevrons, sun/moon, reset), in `currentColor`.
 
 ## Logo
