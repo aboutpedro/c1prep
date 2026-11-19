@@ -251,7 +251,7 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
 - **Games** (every level; `games.js`, `games.css`; pages written by
   generator/gamespages.py from generator/games/<level>.json into
   `<level>/data/games.js`): the game tiles under a "Games" heading above Personal
-  practice, one page each (`game-scramble`, `game-pairs`, `game-odd`, `game-errors`, `game-hangman`,
+  practice, one page each (`game-scramble`, `game-pairs`, `game-odd`, `game-errors`, `game-hangman`, `game-crossword`, `game-escape`,
   `game-word`; C1's at the root). A status line on top (step on the left, score
   on the right); feedback in green ✓ / red ✗ text with the right answer shown;
   the end of a round is a centred card with the result, the best so far and
@@ -275,7 +275,29 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   drawing (gallows in `--border-strong`, the figure in `--text`, one part per
   wrong letter, six to lose), the letters as underlined slots that shrink to fit
   14 letters at 320px, and the same keyboard as Word of the day without Enter
-  and Delete; a lost word shows its missing letters in red. Six tiles in all.
+  and Delete; a lost word shows its missing letters in red.
+  Crosswords: themed puzzles (five per level, ten at B2 and C1) as pill buttons on top (the current
+  one navy, ✓ when solved); a navy-soft clue bar with previous/next arrows; the
+  grid (at most 11 squares across, laid out by generator/crosswords.py) with
+  small grey numbers, the current word in navy-soft and the current square with
+  a 2px navy ring, empty space left blank rather than black; the keyboard with
+  Delete; Check (wrong letters red and struck through), Show this word (letters
+  in navy) and Clear (asks once more); Across and Down lists below, or in a
+  sticky column beside the grid from 960px, where the page widens to 1100px.
+  Letters are saved as you type. Escape room: a start card (story in serif), then
+  a row of five door buttons (open = green with an open door, current = navy
+  border, locked = greyed) with the timer and hints used on the right; each room
+  is a card with "Room n of 5", the name, the story line in serif, the puzzle, a
+  Show a hint button (hint on `--warn-soft`) and, when solved, "✓ Click! The door
+  opens." Puzzles: answer chips with a small digit badge and a keypad lock; two
+  columns of halves to match (a pair turns green with a number); answer chips
+  and letter wheels; lines of a note to tap into order (serif); a paper note
+  (cream, slightly tilted) with a typed answer. Open rooms can be revisited.
+  Where a level has several escape rooms (B2 and C1 have six), the page opens on
+  a list of story cards (number badge, title, first line of the story, and "Not
+  started yet" / "In progress · time" / "✓ Escaped · best time"); inside a story a
+  navy back link with its title returns to the list, keeping the progress.
+  Eight tiles in all.
   Scores and today's game are kept in this browser (`c1p:games`).
 
 ## Offline
@@ -287,6 +309,16 @@ and everything else from the network first. A page never opened shows
 `offline.html` (title "You're offline", Try again, Go to the front page).
 Requests to other sites (the teacher's sheet) are not touched. The cache name
 changes whenever sw.js changes, so bumping a ?v= in sitepages.py is enough.
+
+- **Listening pages** (B2 and C1, `listening-*.html`, `listening.css` + the "listening" type in quiz.js): a
+  "Play each recording twice" checkbox at the top (on by default, kept per browser), then one card per
+  recording: label and situation, the player, then its questions (A–C or A–D options like reading, typed
+  gaps like sentence sets). Multiple matching: one card per task with the lettered list (A–H) and one row per
+  speaker with a dropdown. The **player** sits on `--surface-2`: a round 48px navy play/pause button, a
+  position bar (navy fill on a `--border-strong` track) and the time; the note on the right says "Second
+  listening in 5…", "Played twice" or "Recording coming soon". After checking (or Show answers) a closed
+  "Transcript" card appears under each recording: serif text, speaker names in small sans bold, speaker
+  headings in navy capitals.
 
 ## Motion
 

@@ -1,10 +1,12 @@
 /* C1 Prep games, at every level: Sentence scramble, Memory pairs (phrasal verbs), Odd one out, Word of the day,
-   Error hunt and Hangman.
+   Error hunt, Hangman, Crosswords and Escape room.
    A game page has <div id="game" data-game="…" data-level="…"> and loads its level's content first (window.GAMES,
    from data/games.js); Word of the day also loads games-words.js (window.GAME_DICT, the valid guesses).
    Best scores and today's word are kept in this browser (localStorage "c1p:games"):
    { "a1:scramble": 8, "a1:odd": 10, "a1:pairs": 9 (fewest tries), "a1:word": { day, guesses, played, won },
-     "a1:errors": 17 (points of 20), "a1:hangman": 4 (words of 5) }. */
+     "a1:errors": 17 (points of 20), "a1:hangman": 4 (words of 5),
+     "a1:cw": { last: puzzle, p: { 0: { g: letters ("." = empty), s: 1 if solved } } },
+     "a1:escape": { room, done: [rooms], hints: [rooms], t: seconds, started, finished, best } }. */
 (function () {
   "use strict";
   const root = document.getElementById("game");
@@ -55,10 +57,10 @@
     return card;
   }
 
-  /* An on-screen QWERTY keyboard. extra: true adds Enter and Delete. Keys don't take the focus when tapped. */
+  /* An on-screen QWERTY keyboard. extra: true adds Enter and Delete, "del" only Delete. Keys don't take the focus. */
   function keyboard(onKey, extra) {
     const keys = el("div", "g-keys"), byLetter = {};
-    ["qwertyuiop", "asdfghjkl", extra ? "+zxcvbnm-" : "zxcvbnm"].forEach((line) => {
+    ["qwertyuiop", "asdfghjkl", extra === true ? "+zxcvbnm-" : extra === "del" ? "zxcvbnm-" : "zxcvbnm"].forEach((line) => {
       const r = el("div", "g-krow");
       line.split("").forEach((ch) => {
         let b;
@@ -76,16 +78,18 @@
     });
     return { keys, byLetter };
   }
-  /* Letters typed on a real keyboard (not while a button or field has the focus and Enter/Space is pressed). */
+  /* Letters and digits typed on a real keyboard (not into a field, and not Enter/Space on a focused button). */
   function typing(onKey) {
-    document.addEventListener("keydown", (e) => {
+    const h = (e) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
       const t = e.target;
       if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
       if (t && t.tagName === "BUTTON" && (e.key === "Enter" || e.key === " ")) return;   // a focused button does its own thing
       if (e.key === "Enter" || e.key === "Backspace") { e.preventDefault(); onKey(e.key); }
-      else if (/^[a-z]$/i.test(e.key)) onKey(e.key.toLowerCase());
-    });
+      else if (/^[a-z0-9]$/i.test(e.key)) onKey(e.key.toLowerCase());
+    };
+    document.addEventListener("keydown", h);
+    return () => document.removeEventListener("keydown", h);   // stop listening
   }
 
   /* ================= Sentence scramble ================= */
@@ -428,7 +432,7 @@
       after.append(card);
     }
 
-    typing((k) => (k === "Enter" ? submit() : k === "Backspace" ? back() : type(k)));
+    typing((k) => (k === "Enter" ? submit() : k === "Backspace" ? back() : /^[a-z]$/.test(k) ? type(k) : null));
 
     guesses.forEach((g, r) => paint(r, g, false));
     const won = guesses[guesses.length - 1] === answer;
@@ -600,5 +604,640 @@
     start();
   }
 
-  ({ scramble, pairs, odd, word, errors, hangman }[KIND] || (() => {}))();
+  /* ================= Crosswords ================= */
+  function crossword() {
+    const P = G.crosswords;
+    const store = get("cw") || { last: 0, p: {} };
+    const save = () => put("cw", store);
+    let pi = Math.min(store.last || 0, P.length - 1);
+
+    const chips = el("div", "g-chips");
+    chips.setAttribute("aria-label", "Puzzles");
+    const holder = el("div", "g-cw-wrap");
+    root.replaceChildren(chips, holder, live);
+    let cleanup = null;
+
+    function drawChips() {
+      chips.replaceChildren();
+      P.forEach((pz, k) => {
+        const b = button("", "g-chip-btn");
+        b.append(el("span", "g-chip-n", String(k + 1)), " " + pz.t);
+        if (store.p[k] && store.p[k].s) b.append(el("span", "g-tick", " ✓"));
+        b.setAttribute("aria-pressed", k === pi ? "true" : "false");
+        b.addEventListener("click", () => { if (k !== pi) { pi = k; open(); } });
+        chips.append(b);
+      });
+    }
+
+    function open() {
+      if (cleanup) cleanup();
+      store.last = pi; save();
+      drawChips();
+      const pz = P[pi], W = pz.w, H = pz.h;
+      const st = store.p[pi] || (store.p[pi] = { g: "" });
+      const at = (x, y) => y * W + x;
+      // squares: answer letter, the entries through it, the number
+      const sq = new Map();
+      pz.e.forEach((en, k) => {
+        for (let i = 0; i < en.a.length; i++) {
+          const x = en.d === "a" ? en.x + i : en.x, y = en.d === "a" ? en.y : en.y + i;
+          const c = sq.get(at(x, y)) || { x, y, ans: en.a[i], a: null, d: null, n: null };
+          c[en.d] = k;
+          if (i === 0) c.n = en.n;
+          sq.set(at(x, y), c);
+        }
+      });
+      const letters = Array.from({ length: W * H }, (_, k) => (st.g[k] && st.g[k] !== "." ? st.g[k] : ""));
+      const marks = {};                                   // index -> "wrong" | "shown"
+      const keep = () => { st.g = letters.map((l) => l || ".").join(""); save(); };
+
+      holder.replaceChildren();
+      const bar = el("div", "g-cluebar");
+      const prev = button("", "g-iconbtn"), next = button("", "g-iconbtn");
+      prev.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>';
+      next.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>';
+      prev.setAttribute("aria-label", "Previous clue"); next.setAttribute("aria-label", "Next clue");
+      const clueText = el("p", "g-cluetext");
+      clueText.setAttribute("aria-live", "polite");
+      bar.append(prev, clueText, next);
+
+      const grid = el("div", "g-cw");
+      grid.style.gridTemplateColumns = "repeat(" + W + ", minmax(0, 1fr))";
+      grid.style.maxWidth = W * 44 + "px";
+      grid.setAttribute("role", "group");
+      grid.setAttribute("aria-label", "Crossword grid, " + W + " by " + H);
+      const cellEl = {};
+      for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+        const c = sq.get(at(x, y));
+        if (!c) { grid.append(el("span", "g-void")); continue; }
+        const d = el("span", "g-sq");
+        if (c.n) d.append(el("span", "g-num", String(c.n)));
+        d.append(el("span", "g-let"));
+        d.addEventListener("click", () => select(x, y, true));
+        grid.append(d);
+        cellEl[at(x, y)] = d;
+      }
+
+      const msg = el("p", "g-msg");
+      msg.setAttribute("aria-live", "polite");
+      const kb = keyboard((k) => key(k), "del");
+      const actions = el("div", "g-actions g-cw-actions");
+      const check = button("Check", "secondary"), reveal = button("Show this word", "secondary"), clear = button("Clear", "secondary");
+      actions.append(check, reveal, clear);
+
+      const lists = el("div", "g-cluelists");
+      const clueBtn = {};
+      [["a", "Across"], ["d", "Down"]].forEach(([dir, name]) => {
+        const box = el("div", "g-cluelist");
+        box.append(el("h3", null, name));
+        const ol = el("ol");
+        pz.e.forEach((en, k) => {
+          if (en.d !== dir) return;
+          const li = el("li");
+          const b = button("", "g-cl");
+          b.append(el("b", null, String(en.n)), " " + en.c + " (" + en.a.length + ")");
+          b.addEventListener("click", () => { cur.dir = dir; select(en.x, en.y, false, dir); grid.scrollIntoView({ block: "nearest" }); });
+          li.append(b); ol.append(li);
+          clueBtn[k] = b;
+        });
+        box.append(ol);
+        lists.append(box);
+      });
+
+      const layout = el("div", "g-cw-layout");
+      const left = el("div", "g-cw-main");
+      left.append(bar, grid, msg, kb.keys, actions);
+      layout.append(left, lists);
+      holder.append(layout);
+
+      const cur = { x: 0, y: 0, dir: "a" };
+      const entryOf = (x, y, dir) => { const c = sq.get(at(x, y)); return c ? (c[dir] != null ? c[dir] : c[dir === "a" ? "d" : "a"]) : null; };
+      const cellsOf = (k) => { const en = pz.e[k]; return Array.from(en.a, (_, i) => (en.d === "a" ? [en.x + i, en.y] : [en.x, en.y + i])); };
+
+      function paint() {
+        const k = entryOf(cur.x, cur.y, cur.dir);
+        const word = new Set(cellsOf(k).map(([x, y]) => at(x, y)));
+        sq.forEach((c, i) => {
+          const d = cellEl[i];
+          d.querySelector(".g-let").textContent = letters[i] ? letters[i].toUpperCase() : "";
+          d.className = "g-sq" + (word.has(i) ? " inword" : "") + (i === at(cur.x, cur.y) ? " here" : "") + (marks[i] ? " " + marks[i] : "");
+        });
+        const en = pz.e[k];
+        clueText.replaceChildren(el("b", null, en.n + " " + (en.d === "a" ? "across" : "down")), " " + en.c + " (" + en.a.length + ")");
+        Object.entries(clueBtn).forEach(([j, b]) => {
+          b.classList.toggle("on", Number(j) === k);
+          b.classList.toggle("done", cellsOf(Number(j)).every(([x, y]) => letters[at(x, y)]));
+        });
+      }
+      function select(x, y, tapped, dir) {
+        const c = sq.get(at(x, y));
+        if (!c) return;
+        if (dir) cur.dir = dir;
+        else if (tapped && cur.x === x && cur.y === y && c.a != null && c.d != null) cur.dir = cur.dir === "a" ? "d" : "a";
+        else if (c[cur.dir] == null) cur.dir = cur.dir === "a" ? "d" : "a";
+        cur.x = x; cur.y = y;
+        paint();
+      }
+      function step(delta) {
+        const cells = cellsOf(entryOf(cur.x, cur.y, cur.dir));
+        const i = cells.findIndex(([x, y]) => x === cur.x && y === cur.y);
+        const j = i + delta;
+        if (j >= 0 && j < cells.length) { cur.x = cells[j][0]; cur.y = cells[j][1]; return true; }
+        return false;
+      }
+      function moveClue(delta) {
+        const order = pz.e.map((en, k) => k).sort((a, b) => (pz.e[a].d === pz.e[b].d ? pz.e[a].n - pz.e[b].n : pz.e[a].d === "a" ? -1 : 1));
+        const k = entryOf(cur.x, cur.y, cur.dir);
+        const en = pz.e[order[(order.indexOf(k) + delta + order.length) % order.length]];
+        select(en.x, en.y, false, en.d);
+        // start at the first empty square of that word, if there is one
+        const empty = cellsOf(order[(order.indexOf(k) + delta + order.length) % order.length]).find(([x, y]) => !letters[at(x, y)]);
+        if (empty) { cur.x = empty[0]; cur.y = empty[1]; paint(); }
+      }
+      function key(k) {
+        const i = at(cur.x, cur.y);
+        if (k === "Backspace") {
+          if (letters[i]) letters[i] = "";
+          else if (step(-1)) letters[at(cur.x, cur.y)] = "";
+          delete marks[at(cur.x, cur.y)];
+        } else if (/^[a-z]$/.test(k)) {
+          letters[i] = k; delete marks[i];
+          step(1);
+        } else return;
+        keep(); paint(); done();
+      }
+      function arrow(e) {
+        const m = { ArrowLeft: [-1, 0, "a"], ArrowRight: [1, 0, "a"], ArrowUp: [0, -1, "d"], ArrowDown: [0, 1, "d"] }[e.key];
+        if (!m) return;
+        const t = e.target;
+        if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA")) return;
+        if (t && t.tagName === "BUTTON" && !t.classList.contains("g-key")) return;
+        e.preventDefault();
+        let x = cur.x + m[0], y = cur.y + m[1];
+        while (x >= 0 && y >= 0 && x < W && y < H && !sq.get(at(x, y))) { x += m[0]; y += m[1]; }
+        if (sq.get(at(x, y))) { cur.x = x; cur.y = y; }
+        const c = sq.get(at(cur.x, cur.y));
+        if (c[m[2]] != null) cur.dir = m[2];
+        paint();
+      }
+      document.addEventListener("keydown", arrow);
+      const off = typing((k) => (k === "Enter" ? moveClue(1) : key(k)));
+      cleanup = () => { document.removeEventListener("keydown", arrow); off(); };
+      prev.addEventListener("click", () => moveClue(-1));
+      next.addEventListener("click", () => moveClue(1));
+
+      function done() {
+        let filled = true, right = true;
+        sq.forEach((c, i) => { if (!letters[i]) filled = false; else if (letters[i] !== c.ans) right = false; });
+        if (filled && right) {
+          msg.className = "g-msg g-good";
+          msg.textContent = "✓ Solved! Well done.";
+          if (!st.s) { st.s = 1; save(); drawChips(); confetti(); }
+        } else if (filled) {
+          msg.className = "g-msg";
+          msg.textContent = "Every square is filled, but some letters are wrong. Press Check to see them.";
+        } else if (msg.classList.contains("g-good")) { msg.className = "g-msg"; msg.textContent = ""; }
+      }
+      check.addEventListener("click", () => {
+        let wrong = 0, empty = 0;
+        sq.forEach((c, i) => {
+          if (!letters[i]) empty++;
+          else if (letters[i] !== c.ans) { marks[i] = "wrong"; wrong++; }
+        });
+        paint();
+        msg.className = "g-msg" + (wrong ? " g-wrong" : "");
+        msg.textContent = wrong ? "✗ " + wrong + (wrong === 1 ? " letter is wrong" : " letters are wrong") + " (in red)." + (empty ? " " + empty + " squares are still empty." : "")
+                                : empty ? "✓ Everything so far is right. " + empty + (empty === 1 ? " square is" : " squares are") + " still empty." : msg.textContent;
+        done();
+      });
+      reveal.addEventListener("click", () => {
+        cellsOf(entryOf(cur.x, cur.y, cur.dir)).forEach(([x, y]) => {
+          const i = at(x, y);
+          if (letters[i] !== sq.get(i).ans) { letters[i] = sq.get(i).ans; marks[i] = "shown"; }
+        });
+        keep(); paint(); done();
+      });
+      let sure = null;
+      clear.addEventListener("click", () => {
+        if (!sure) {
+          clear.textContent = "Clear every letter?";
+          sure = setTimeout(() => { clear.textContent = "Clear"; sure = null; }, 3000);
+          return;
+        }
+        clearTimeout(sure); sure = null; clear.textContent = "Clear";
+        letters.fill(""); Object.keys(marks).forEach((k) => delete marks[k]);
+        st.s = 0; keep(); drawChips(); paint();
+        msg.className = "g-msg"; msg.textContent = "";
+      });
+
+      const first = pz.e.find((en) => en.d === "a") || pz.e[0];
+      select(first.x, first.y, false, first.d);
+      done();
+    }
+    open();
+  }
+
+  /* ================= Escape room ================= */
+  function escapeRoom() {
+    const LIST = G.escapes || [G.escape];
+    const keyOf = (k) => (k ? "escape-" + (k + 1) : "escape");      // the first story keeps the original key
+    const mmss = (t) => Math.floor(t / 60) + ":" + String(t % 60).padStart(2, "0");
+    if (LIST.length === 1) return escapeStory(LIST[0], keyOf(0), null);
+    chooser();
+
+    /* Several stories at this level: a list to choose from, with each one's progress */
+    function chooser() {
+      root.replaceChildren();
+      const list = el("div", "g-esc-list");
+      LIST.forEach((E, k) => {
+        const st = get(keyOf(k)) || {};
+        const b = button("", "g-esc-card");
+        const text = el("span", "g-esc-card-text");
+        text.append(el("span", "g-esc-card-title", E.title), el("span", "g-esc-card-intro", E.intro.split(/(?<=[.!?])\s/)[0]));
+        const status = st.finished ? "✓ Escaped · best time " + mmss(st.best || st.t)
+                     : st.started ? "In progress · " + mmss(st.t || 0) : "Not started yet";
+        text.append(el("span", "g-esc-card-status" + (st.finished ? " done" : ""), status));
+        b.append(el("span", "g-esc-card-n", String(k + 1)), text);
+        b.addEventListener("click", () => escapeStory(E, keyOf(k), chooser));
+        list.append(b);
+      });
+      root.append(el("p", "g-question", "Choose an escape room."), list, live);
+    }
+  }
+
+  /* One escape room: five rooms, a timer and hints. back: a function that returns to the list, or null. */
+  function escapeStory(E, KEY, back) {
+    const R = E.rooms, N = R.length;
+    const fresh = () => ({ room: 0, done: [], hints: [], t: 0, started: false, finished: false, best: (get(KEY) || {}).best || null });
+    let S = Object.assign(fresh(), get(KEY) || {});
+    const save = () => put(KEY, S);
+    const mmss = (t) => Math.floor(t / 60) + ":" + String(t % 60).padStart(2, "0");
+    let timer = null, view = S.room, off = null;
+    function backButton() {
+      const b = button("All escape rooms", "secondary g-esc-back");
+      b.addEventListener("click", () => { stop(); if (off) { off(); off = null; } back(); });
+      return b;
+    }
+    const norm2 = (s) => norm(s).replace(/[.!?,"“”]/g, "").replace(/-/g, " ").replace(/\s+/g, " ").trim();
+
+    const DOOR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17"/><path d="M3 21h18"/><circle cx="14.5" cy="12" r="1"/></svg>';
+    const OPEN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17"/><path d="M3 21h18"/><path d="M6 3l7 2.5V21"/></svg>';
+
+    function tick() {
+      if (timer) return;
+      timer = setInterval(() => {
+        if (document.hidden || !S.started || S.finished) return;
+        S.t++;
+        const c = root.querySelector(".g-clock");
+        if (c) c.textContent = mmss(S.t);
+        if (S.t % 5 === 0) save();
+      }, 1000);
+    }
+    function stop() { clearInterval(timer); timer = null; }
+
+    function startScreen() {
+      stop();
+      if (off) { off(); off = null; }
+      root.replaceChildren();
+      const card = el("div", "card g-esc-start");
+      card.append(el("p", "g-label", "Escape room"), el("h2", null, E.title), el("p", "g-story", E.intro));
+      const row = el("div", "g-actions");
+      if (S.started && !S.finished) {
+        const go = button("Carry on (" + mmss(S.t) + ")");
+        go.addEventListener("click", () => { view = S.room; game(); });
+        const again = button("Start again", "secondary");
+        again.addEventListener("click", () => { S = fresh(); S.started = true; save(); view = 0; game(); });
+        row.append(go, again);
+      } else {
+        const go = button("Go in");
+        go.addEventListener("click", () => { S = fresh(); S.started = true; save(); view = 0; game(); });
+        row.append(go);
+      }
+      card.append(row);
+      if (S.best) card.append(el("p", "g-best", "Your best time: " + mmss(S.best)));
+      root.append(card, live);
+      if (back) root.append(backButton());
+      card.querySelector("button").focus();
+    }
+
+    function game() {
+      if (off) { off(); off = null; }
+      tick();
+      root.replaceChildren();
+      const top = el("div", "g-esc-top");
+      const doors = el("div", "g-doors");
+      doors.setAttribute("aria-label", "Rooms");
+      R.forEach((r, k) => {
+        const open = S.done.includes(k);
+        const b = button("", "g-door" + (open ? " open" : "") + (k === S.room ? " now" : "") + (k === view ? " viewing" : ""));
+        b.innerHTML = (open ? OPEN : DOOR) + '<span class="g-door-n">' + (k + 1) + "</span>";
+        b.setAttribute("aria-label", "Room " + (k + 1) + ": " + r.name + (open ? ", open" : k === S.room ? ", you are here" : ", locked"));
+        if (k === view) b.setAttribute("aria-current", "true");
+        b.disabled = !(open || k === S.room);
+        b.addEventListener("click", () => { view = k; game(); });
+        doors.append(b);
+      });
+      const clock = el("span", "g-clock", mmss(S.t));
+      clock.setAttribute("aria-label", "Time");
+      const meta = el("div", "g-esc-meta");
+      meta.append(clock, el("span", "g-hintcount", S.hints.length + (S.hints.length === 1 ? " hint" : " hints")));
+      if (back) {
+        const t = button("", "g-esc-titlebtn");
+        t.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>';
+        t.append(E.title);
+        t.setAttribute("aria-label", E.title + ": back to all escape rooms (your progress is kept)");
+        t.addEventListener("click", () => { save(); stop(); if (off) { off(); off = null; } back(); });
+        top.prepend(t);
+      }
+      top.append(doors, meta);
+
+      const r = R[view], solved = S.done.includes(view);
+      const card = el("div", "card g-room");
+      card.append(el("p", "g-label", "Room " + (view + 1) + " of " + N), el("h2", null, r.name), el("p", "g-story", r.text));
+      const area = el("div", "g-puzzle");
+      const feedback = el("div", "g-feedback");
+      const after = el("div", "g-actions");
+      card.append(area, feedback);
+
+      const hintBox = el("div", "g-hintbox");
+      if (!solved) {
+        if (S.hints.includes(view)) hintBox.append(el("p", "g-hint", "Hint: " + r.hint));
+        else {
+          const hb = button("Show a hint", "secondary g-hintbtn");
+          hb.addEventListener("click", () => {
+            S.hints.push(view); save();
+            hintBox.replaceChildren(el("p", "g-hint", "Hint: " + r.hint));
+            meta.querySelector(".g-hintcount").textContent = S.hints.length + (S.hints.length === 1 ? " hint" : " hints");
+          });
+          hintBox.append(hb);
+        }
+      }
+      card.append(hintBox, after);
+      root.append(top, card, live);
+
+      function opened() {
+        if (!S.done.includes(view)) S.done.push(view);
+        const last = S.done.length === N;
+        if (!last) S.room = Math.min(...R.map((x, k) => k).filter((k) => !S.done.includes(k)));
+        save();
+        hintBox.replaceChildren();
+        feedback.replaceChildren(el("p", "g-good g-opened", "✓ Click! The door opens."));
+        say("The door opens.");
+        doors.querySelectorAll(".g-door")[view].classList.add("open");
+        doors.querySelectorAll(".g-door")[view].innerHTML = OPEN + '<span class="g-door-n">' + (view + 1) + "</span>";
+        const b = button(last ? "Step outside" : "Go to the next room");
+        b.addEventListener("click", () => { if (last) finish(); else { view = S.room; game(); } });
+        after.replaceChildren(b);
+        b.focus();
+      }
+      function fail(text, target) {
+        feedback.replaceChildren(el("p", "g-wrong", "✗ " + text));
+        say(text);
+        if (target) shake(target);
+      }
+      if (solved && view !== S.room && S.done.length < N) {
+        const b = button("Back to room " + (S.room + 1), "secondary");
+        b.addEventListener("click", () => { view = S.room; game(); });
+        after.append(b);
+      } else if (solved && S.done.length === N) {
+        const b = button("Step outside");
+        b.addEventListener("click", finish);
+        after.append(b);
+      }
+      ({ code: codeRoom, match: matchRoom, word: wordRoom, order: orderRoom, final: finalRoom })[r.type](r, area, solved, opened, fail);
+    }
+
+    /* Room: answers give the digits of the code */
+    function codeRoom(r, area, solved, opened, fail) {
+      const picks = r.qs.map(() => null);
+      r.qs.forEach((q, n) => {
+        const box = el("div", "g-esc-q");
+        box.append(el("p", "g-esc-s", (n + 1) + ". " + q[0]));
+        const opts = el("div", "g-esc-opts");
+        shuffle(q[1].map((o, k) => k)).forEach((k) => {
+          const b = button("", "g-esc-opt");
+          b.append(el("span", "g-dig", String(q[2][k])), q[1][k]);
+          b.setAttribute("aria-pressed", "false");
+          if (solved) { b.disabled = true; if (k === 0) b.setAttribute("aria-pressed", "true"); }
+          b.addEventListener("click", () => {
+            picks[n] = k;
+            opts.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b ? "true" : "false"));
+          });
+          opts.append(b);
+        });
+        box.append(opts);
+        area.append(box);
+      });
+      const lock = el("div", "g-lock");
+      lock.append(el("p", "g-label", "The lock"));
+      const slots = el("div", "g-codeslots");
+      const cells = Array.from({ length: r.code.length }, () => { const c = el("span", "g-codeslot"); slots.append(c); return c; });
+      let typed = solved ? r.code : "";
+      const draw = () => cells.forEach((c, k) => { c.textContent = typed[k] || ""; c.classList.toggle("on", !!typed[k]); });
+      const pad = el("div", "g-keypad");
+      "1234567890".split("").forEach((d) => {
+        const b = button(d, "g-padkey");
+        b.addEventListener("click", () => digit(d));
+        b.addEventListener("mousedown", (e) => e.preventDefault());
+        pad.append(b);
+      });
+      const del = button("", "g-padkey");
+      del.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h11v14H9l-6-7z"/><path d="M12 9.5l5 5M17 9.5l-5 5"/></svg>';
+      del.setAttribute("aria-label", "Delete");
+      del.addEventListener("click", () => { typed = typed.slice(0, -1); draw(); });
+      del.addEventListener("mousedown", (e) => e.preventDefault());
+      pad.append(del);
+      const go = button("Open the door");
+      lock.append(slots, pad, go);
+      area.append(lock);
+      draw();
+      function digit(d) { if (typed.length < r.code.length) { typed += d; draw(); } }
+      if (solved) { pad.querySelectorAll("button").forEach((b) => { b.disabled = true; }); go.remove(); slots.classList.add("open"); return; }
+      off = typing((k) => (/^[0-9]$/.test(k) ? digit(k) : k === "Backspace" ? (typed = typed.slice(0, -1), draw()) : k === "Enter" ? go.click() : null));
+      go.addEventListener("click", () => {
+        if (typed.length < r.code.length) return fail("Type all " + r.code.length + " numbers first.", slots);
+        if (typed === r.code) { slots.classList.add("open"); pad.querySelectorAll("button").forEach((b) => { b.disabled = true; }); go.remove(); off(); off = null; opened(); }
+        else { fail("The door won't open. Check your answers and try again.", slots); typed = ""; draw(); }
+      });
+    }
+
+    /* Room: tap two halves that go together */
+    function matchRoom(r, area, solved, opened, fail) {
+      const leftCol = el("div", "g-match-col"), rightCol = el("div", "g-match-col");
+      const grid = el("div", "g-match");
+      grid.append(leftCol, rightCol);
+      area.append(grid);
+      let pick = null, got = 0;
+      const L = shuffle(r.pairs.map((p, k) => k)), Rr = shuffle(r.pairs.map((p, k) => k));
+      const lb = {}, rb = {};
+      L.forEach((k) => { const b = button(r.pairs[k][0], "g-match-item"); lb[k] = b; leftCol.append(b); b.addEventListener("click", () => choose("l", k, b)); });
+      Rr.forEach((k) => { const b = button(r.pairs[k][1], "g-match-item"); rb[k] = b; rightCol.append(b); b.addEventListener("click", () => choose("r", k, b)); });
+      const pairUp = (k) => {
+        got++;
+        [lb[k], rb[k]].forEach((b) => { b.classList.remove("picked"); b.classList.add("matched"); b.disabled = true; b.prepend(el("span", "g-pairno", String(got))); });
+      };
+      if (solved) { r.pairs.forEach((p, k) => pairUp(k)); return; }
+      function choose(side, k, b) {
+        if (!pick || pick.side === side) {
+          if (pick) pick.b.classList.remove("picked");
+          pick = { side, k, b }; b.classList.add("picked");
+          return;
+        }
+        const other = pick; pick = null;
+        if (other.k === k) {
+          pairUp(k);
+          feedback(true);
+          if (got === r.pairs.length) opened();
+        } else {
+          other.b.classList.remove("picked");
+          fail("Those two don't go together.");
+          shake(other.b); shake(b);
+        }
+      }
+      function feedback() { area.parentNode.querySelector(".g-feedback").replaceChildren(el("p", "g-good", "✓ " + got + " of " + r.pairs.length + " matched.")); }
+    }
+
+    /* Room: the first letters of the right answers spell the password */
+    function wordRoom(r, area, solved, opened, fail) {
+      r.qs.forEach((q, n) => {
+        const box = el("div", "g-esc-q");
+        box.append(el("p", "g-esc-s", (n + 1) + ". " + q[0]));
+        const opts = el("div", "g-esc-opts");
+        shuffle(q[1].map((o, k) => k)).forEach((k) => {
+          const b = button(q[1][k], "g-esc-opt");
+          b.setAttribute("aria-pressed", solved && k === 0 ? "true" : "false");
+          if (solved) b.disabled = true;
+          b.addEventListener("click", () => opts.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b ? "true" : "false")));
+          opts.append(b);
+        });
+        box.append(opts);
+        area.append(box);
+      });
+      const L = r.password.length, A = "abcdefghijklmnopqrstuvwxyz";
+      const lock = el("div", "g-lock");
+      lock.append(el("p", "g-label", "The lock"));
+      const wheels = el("div", "g-wheels");
+      const val = solved ? r.password.split("").map((c) => A.indexOf(c)) : Array(L).fill(0);
+      let focus = 0;
+      const shows = [];
+      for (let w = 0; w < L; w++) {
+        const col = el("div", "g-wheel");
+        const up = button("", "g-wheel-btn"), dn = button("", "g-wheel-btn");
+        up.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>';
+        dn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+        up.setAttribute("aria-label", "Letter " + (w + 1) + " up"); dn.setAttribute("aria-label", "Letter " + (w + 1) + " down");
+        const show = el("span", "g-wheel-l");
+        up.addEventListener("click", () => turn(w, -1)); dn.addEventListener("click", () => turn(w, 1));
+        show.addEventListener("click", () => { focus = w; draw(); });
+        col.append(up, show, dn);
+        wheels.append(col);
+        shows.push(show);
+        if (solved) { up.disabled = dn.disabled = true; }
+      }
+      function turn(w, d) { val[w] = (val[w] + d + 26) % 26; focus = w; draw(); }
+      function draw() { shows.forEach((s, w) => { s.textContent = A[val[w]].toUpperCase(); s.classList.toggle("focus", !solved && w === focus); }); }
+      const go = button("Open the door");
+      lock.append(wheels, el("p", "g-small", "Turn the wheels, or type the letters."), go);
+      area.append(lock);
+      draw();
+      if (solved) { go.remove(); wheels.classList.add("open"); return; }
+      off = typing((k) => {
+        if (/^[a-z]$/.test(k)) { val[focus] = A.indexOf(k); focus = Math.min(focus + 1, L - 1); draw(); }
+        else if (k === "Backspace") { focus = Math.max(focus - 1, 0); draw(); }
+        else if (k === "Enter") go.click();
+      });
+      go.addEventListener("click", () => {
+        const word = val.map((v) => A[v]).join("");
+        if (word === r.password) { wheels.classList.add("open"); wheels.querySelectorAll("button").forEach((b) => { b.disabled = true; }); go.remove(); off(); off = null; opened(); }
+        else fail("The lock doesn't open. Check your answers and the first letters.", wheels);
+      });
+    }
+
+    /* Room: put the lines in order */
+    function orderRoom(r, area, solved, opened, fail) {
+      const placed = el("ol", "g-order");
+      placed.setAttribute("aria-label", "Your order");
+      const bank = el("div", "g-order-bank");
+      const go = button("Check the order");
+      const built = [];
+      let order = shuffle(r.lines.map((l, k) => k));
+      for (let t = 0; t < 5 && order.every((v, k) => v === k); t++) order = shuffle(order);
+      const bb = {};
+      order.forEach((k) => {
+        const b = button(r.lines[k], "g-line");
+        b.addEventListener("click", () => { built.push(k); b.hidden = true; draw(); });
+        bb[k] = b; bank.append(b);
+      });
+      function draw() {
+        placed.replaceChildren();
+        if (!built.length) placed.append(el("li", "g-placeholder g-noline", "Tap the lines below in the right order."));
+        built.forEach((k, pos) => {
+          const li = el("li");
+          const b = button(r.lines[k], "g-line placed");
+          b.setAttribute("aria-label", r.lines[k] + " (tap to take it out)");
+          b.addEventListener("click", () => { built.splice(pos, 1); bb[k].hidden = false; draw(); });
+          if (solved) b.disabled = true;
+          li.append(b); placed.append(li);
+        });
+        go.disabled = built.length !== r.lines.length;
+      }
+      area.append(el("p", "g-label", "Your order"), placed, bank, go);
+      if (solved) { r.lines.forEach((l, k) => { built.push(k); bb[k].hidden = true; }); draw(); go.remove(); placed.classList.add("open"); return; }
+      draw();
+      go.addEventListener("click", () => {
+        const right = built.filter((k, pos) => k === pos).length;
+        if (right === r.lines.length) { placed.classList.add("open"); placed.querySelectorAll("button").forEach((b) => { b.disabled = true; }); go.remove(); opened(); }
+        else fail(right + " of " + r.lines.length + " lines are in the right place. Tap a line to take it out.", placed);
+      });
+    }
+
+    /* Room: read the note, type the answer */
+    function finalRoom(r, area, solved, opened, fail) {
+      const note = el("div", "g-note");
+      r.note.split("\n").forEach((line) => note.append(el("p", null, line)));
+      const form = el("form", "g-final");
+      const id = "esc-answer";
+      const lab = el("label", "g-esc-s", r.question);
+      lab.setAttribute("for", id);
+      const input = el("input");
+      input.id = id; input.type = "text"; input.autocomplete = "off"; input.spellcheck = false;
+      input.setAttribute("autocapitalize", "none");
+      const go = button("Open the door"); go.type = "submit";
+      const row = el("div", "g-final-row");
+      row.append(input, go);
+      form.append(lab, row);
+      area.append(note, form);
+      if (solved) { input.value = r.answers[0]; input.disabled = true; go.remove(); return; }
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const a = norm2(input.value);
+        if (!a) return fail("Type your answer first.", input);
+        if (r.answers.some((x) => norm2(x) === a)) { input.disabled = true; go.remove(); input.classList.add("ok"); opened(); }
+        else fail("Nothing happens. Read the note again.", input);
+      });
+    }
+
+    function finish() {
+      stop();
+      if (off) { off(); off = null; }
+      if (!S.finished) { S.finished = true; if (!S.best || S.t < S.best) S.best = S.t; save(); confetti(); }
+      root.replaceChildren();
+      const card = el("div", "card g-end g-esc-end");
+      card.append(el("h2", null, "You escaped!"), el("p", "g-story", E.outro),
+        el("p", "g-end-line", "Your time: " + mmss(S.t) + (S.hints.length ? " · " + S.hints.length + (S.hints.length === 1 ? " hint" : " hints") : " · no hints")),
+        el("p", "g-best", "Your best time: " + mmss(S.best)));
+      const b = button("Play again");
+      b.addEventListener("click", () => { S = fresh(); save(); startScreen(); });
+      card.append(b);
+      root.append(card, live);
+      if (back) root.append(backButton());
+      say("You escaped in " + mmss(S.t) + ".");
+      b.focus();
+    }
+
+    if (S.finished) finish();
+    else startScreen();
+  }
+
+  ({ scramble, pairs, odd, word, errors, hangman, crossword, escape: escapeRoom }[KIND] || (() => {}))();
 })();

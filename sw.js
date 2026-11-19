@@ -5,7 +5,7 @@
    - Offline, on a page never opened here: offline.html.
    Requests to other sites (the teacher's sheet) are left alone. */
 "use strict";
-const CACHE = "c1prep-b983aba5";
+const CACHE = "c1prep-8a2dcdda";
 const CORE = ["offline.html", "style.css?v=17", "theme.js?v=10", "favicon.svg?v=2", "favicon.ico?v=2", "manifest.webmanifest", "fonts/inter-latin.woff2?v=1"];
 
 self.addEventListener("install", (e) => {
@@ -57,6 +57,7 @@ self.addEventListener("fetch", (e) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+  if (/\.(mp3|m4a|ogg|wav)$/i.test(url.pathname)) return;   // recordings stream straight from the network (range requests)
   e.respondWith(url.searchParams.has("v") ? cacheFirst(req) : networkFirst(req));
 });
 

@@ -1,0 +1,69 @@
+/* C1 Prep: listening pages (B2, C1). Loaded after style.css by listening-*.html only; uses its tokens. */
+
+.twice { display: flex; gap: var(--s3); align-items: flex-start; margin: 0 0 var(--s4); font-size: 15px; color: var(--muted); cursor: pointer; }
+.twice input { width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--primary); flex: none; }
+
+.listen .text-title { margin-bottom: var(--s2); }
+.listen-context { margin: 0 0 var(--s3); font-weight: 500; }
+.listen .player + .q { border-top: 0; padding-top: var(--s5); }
+
+/* the player: play button, position bar, time */
+.player {
+  display: grid; grid-template-columns: 48px minmax(0, 1fr); grid-template-rows: auto auto; column-gap: var(--s3); row-gap: 2px; align-items: center;
+  margin: 0 0 var(--s4); padding: var(--s3) var(--s4) var(--s3) var(--s3);
+  background: var(--surface-2); border-radius: var(--r-md);
+}
+.player .play {
+  grid-row: 1 / 3; width: 48px; height: 48px; min-height: 0; padding: 0; border-radius: 50%;
+  display: grid; place-items: center;
+}
+.player .play svg { width: 22px; height: 22px; stroke: none; }
+.player .play svg .fill { fill: currentColor; }
+.player input[type="range"] {
+  --pos: 0%;
+  width: 100%; height: 22px; margin: 0; background: transparent; cursor: pointer;
+  -webkit-appearance: none; appearance: none;
+}
+.player input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px; border-radius: 999px;
+  background: linear-gradient(to right, var(--primary) var(--pos), var(--border-strong) var(--pos));
+}
+.player input[type="range"]::-moz-range-track { height: 6px; border-radius: 999px; background: var(--border-strong); }
+.player input[type="range"]::-moz-range-progress { height: 6px; border-radius: 999px; background: var(--primary); }
+.player input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 16px; height: 16px; margin-top: -5px; border-radius: 50%;
+  background: var(--primary); border: 2px solid var(--surface);
+}
+.player input[type="range"]::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--primary); border: 2px solid var(--surface); }
+.player input[type="range"]:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 4px; }
+.player .pinfo { display: flex; justify-content: space-between; gap: var(--s3); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; min-height: 18px; }
+.player .pnote { text-align: right; }
+.player.on .pnote { color: var(--primary); font-weight: 600; }
+.player.missing { opacity: .75; }
+.player.missing input[type="range"] { cursor: default; }
+.player.missing .pnote { font-weight: 600; color: var(--text); }
+
+/* multiple matching: the option list, then one row per speaker */
+.match-task h3 { margin-top: 0; }
+.match-options { list-style: none; margin: 0 0 var(--s4); padding: 0; display: grid; gap: 6px; }
+.match-options li { display: flex; gap: var(--s3); align-items: baseline; font-size: 15px; }
+.match-options b {
+  display: inline-grid; place-items: center; flex: none; width: 26px; height: 26px; border-radius: var(--r-sm);
+  background: var(--primary-soft); color: var(--primary); font-size: 13px;
+}
+
+/* transcript: shown after checking, closed until opened */
+.transcript { padding: 0; }
+.transcript summary { padding: var(--s4) var(--s5); font-weight: 600; cursor: pointer; color: var(--primary); }
+.transcript summary:focus-visible { outline-offset: -2px; }
+.transcript .tr-body { padding: 0 var(--s5) var(--s5); font-family: var(--serif); font-size: 17px; line-height: 1.65; }
+.transcript .tr-body p { margin: 0 0 .8em; max-width: 70ch; }
+.transcript .tr-body b { font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--muted); }
+.transcript .tr-body h4 { margin: var(--s4) 0 var(--s2); font-family: var(--sans); font-size: 14px; letter-spacing: .04em; text-transform: uppercase; color: var(--primary); }
+.transcript .tr-body h4:first-child { margin-top: 0; }
+@media (max-width: 599px) {
+  .transcript summary { padding: var(--s4); }
+  .transcript .tr-body { padding: 0 var(--s4) var(--s4); font-size: 16px; }
+  .player { padding: var(--s3); }
+}
+@media print { .player, .twice { display: none !important; } .transcript { display: block !important; } }

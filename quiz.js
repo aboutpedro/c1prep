@@ -2,7 +2,8 @@
    A page defines window.SETS (an array of exercise sets) and loads this file.
    The set shown is chosen with the set menu at the top, or with #set-N in the URL.
    Answers are saved as they are typed and finished sets are remembered (progress.js).
-   Exam mode and "My weak spots" build single sets themselves with window.c1Quiz.build(). */
+   Exam mode and "My weak spots" build single sets themselves with window.c1Quiz.build().
+   Listening pages (type "listening") use the audio player below; listening.css styles it. */
 (function () {
   "use strict";
   const SETS = window.SETS || (window.EX ? [window.EX] : null);
@@ -34,7 +35,94 @@
     prev: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
     next: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>',
     reset: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>',
+    play: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M8 5.5v13l10.5-6.5z"/></svg>',
+    pause: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>',
   };
+
+  /* ---------- listening: one audio player ----------
+     A play/pause button, a position bar and the time. With "play twice" on (the exam way), the recording
+     starts again by itself after a 5-second pause, then stops. Only one recording plays at a time.
+     A file that can't be loaded shows "Recording coming soon". Its controls carry data-ui, so they are
+     not saved with the answers. */
+  const TWICE_KEY = "c1prep-twice";
+  const twiceOn = () => { try { return localStorage.getItem(TWICE_KEY) !== "0"; } catch (e) { return true; } };
+  const players = [];
+  const mmss = (t) => { t = Math.max(0, Math.floor(t || 0)); return Math.floor(t / 60) + ":" + String(t % 60).padStart(2, "0"); };
+  function audioPlayer(src, name) {
+    const box = el("div", { class: "player" });
+    const btn = el("button", { type: "button", class: "play", "data-ui": "", "aria-label": "Play " + name }, ICON.play);
+    const bar = el("input", { type: "range", min: "0", max: "1000", value: "0", step: "1", "data-ui": "", "aria-label": "Position in " + name });
+    const time = el("span", { class: "time" }, "0:00");
+    const note = el("span", { class: "pnote", "aria-live": "polite" });
+    const info = el("div", { class: "pinfo" });
+    info.append(time, note);
+    box.append(btn, bar, info);
+    const audio = new Audio();
+    audio.preload = "metadata";
+    let listens = 0, wait = null, count = 0, dragging = false;
+    const total = () => (isFinite(audio.duration) ? audio.duration : 0);
+    const paint = () => {
+      const d = total();
+      if (!dragging) bar.value = d ? String(Math.round((1000 * audio.currentTime) / d)) : "0";
+      time.textContent = mmss(audio.currentTime) + (d ? " / " + mmss(d) : "");
+      bar.style.setProperty("--pos", (bar.value / 10) + "%");
+    };
+    const stopWait = () => { if (wait) { clearInterval(wait); wait = null; } };
+    const setNote = (t) => { note.textContent = t; };
+    const p = {
+      audio: audio,
+      stop() { stopWait(); audio.pause(); },
+    };
+    players.push(p);
+    function start() {
+      players.forEach((o) => { if (o !== p) o.stop(); });
+      stopWait();
+      const r = audio.play();
+      if (r && r.catch) r.catch(() => {});
+    }
+    btn.addEventListener("click", () => {
+      if (box.classList.contains("missing")) return;
+      if (wait) { audio.currentTime = 0; setNote("Second listening"); start(); return; }
+      if (audio.paused) {
+        if (audio.ended || (total() && audio.currentTime >= total() - 0.05)) { audio.currentTime = 0; listens = 0; }
+        start();
+      } else audio.pause();
+    });
+    audio.addEventListener("play", () => { btn.innerHTML = ICON.pause; btn.setAttribute("aria-label", "Pause " + name); box.classList.add("on"); });
+    audio.addEventListener("pause", () => { btn.innerHTML = ICON.play; btn.setAttribute("aria-label", (wait ? "Start the second listening of " : "Play ") + name); box.classList.remove("on"); });
+    audio.addEventListener("timeupdate", paint);
+    audio.addEventListener("loadedmetadata", paint);
+    audio.addEventListener("ended", () => {
+      listens++;
+      if (twiceOn() && listens === 1) {
+        count = 5;
+        setNote("Second listening in " + count + "…");
+        wait = setInterval(() => {
+          count--;
+          if (count > 0) { setNote("Second listening in " + count + "…"); return; }
+          stopWait(); audio.currentTime = 0; setNote("Second listening"); start();
+        }, 1000);
+      } else {
+        listens = 0;
+        setNote(twiceOn() ? "Played twice" : "");
+      }
+    });
+    audio.addEventListener("error", () => {
+      box.classList.add("missing");
+      btn.disabled = true; bar.disabled = true;
+      time.textContent = "";
+      setNote("Recording coming soon");
+    });
+    bar.addEventListener("input", () => {
+      dragging = true;
+      const d = total();
+      if (d) audio.currentTime = (bar.value / 1000) * d;
+      bar.style.setProperty("--pos", (bar.value / 10) + "%");
+    });
+    bar.addEventListener("change", () => { dragging = false; paint(); });
+    audio.src = src;
+    return box;
+  }
   const setLabel = (sets, i) => "Set " + (i + 1) + (sets[i].textTitle ? " · " + sets[i].textTitle : "");
   const hash = (s) => { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return (h >>> 0).toString(36); };
 
@@ -114,6 +202,7 @@
     const items = [];       // {check(): bool, reveal(), reset()}
     const notes = [];       // {n, answer, explain, state} for the explanations panel
     let notesBox = null;
+    const onShow = [];      // called with true when the set is marked or the answers are shown, false on reset
 
     if (EX.intro) root.appendChild(el("p", { class: "lead" }, esc(EX.intro)));
 
@@ -575,11 +664,157 @@
       root.appendChild(card);
     }
 
+    /* Listening (B2, C1). EX.blocks: one recording each = {audio, label, context, transcript, questions};
+       a question is {q, options, answer, explain} (multiple choice) or {s: "… ___ …", answers, explain} (a word or
+       short phrase heard in the recording). EX.tasks: multiple matching under the recording, one row per speaker =
+       {title, intro, options: [[letter, text]], answers: [letter per speaker], explain: [one per speaker]}.
+       transcript: [[speaker, text]], ["#", heading] for a heading, ["", text] for another paragraph by the same speaker.
+       The transcript opens under each recording once the set is checked or the answers are shown. */
+    function buildListening() {
+      players.splice(0).forEach((o) => o.stop());   // a set shown before this one stops playing
+      let n = EX.startAt || 1;
+      const twice = el("label", { class: "twice" });
+      twice.innerHTML = '<input type="checkbox" data-ui=""><span>Play each recording twice, with a short pause, as in the exam</span>';
+      const tbox = twice.querySelector("input");
+      tbox.checked = twiceOn();
+      tbox.addEventListener("change", () => { try { localStorage.setItem(TWICE_KEY, tbox.checked ? "1" : "0"); } catch (e) {} });
+      root.appendChild(twice);
+      const lastBlock = EX.blocks.length - 1;
+      EX.blocks.forEach((b, bi) => {
+        const card = el("div", { class: "card listen" });
+        const name = b.label || "the recording";
+        if (b.label) card.appendChild(el("p", { class: "text-title" }, esc(b.label)));
+        if (b.context) card.appendChild(el("p", { class: "listen-context" }, esc(b.context)));
+        card.appendChild(audioPlayer(b.audio, name));
+        (b.questions || []).forEach((qq) => { if (qq.options) mcItem(qq, n++, card); else gapItem(qq, n++, card); });
+        root.appendChild(card);
+        if (bi === lastBlock && EX.tasks) EX.tasks.forEach((t) => { n = matchTask(t, n); });
+        if (b.transcript && b.transcript.length) {
+          const tr = el("details", { class: "card transcript", hidden: "" });
+          tr.appendChild(el("summary", null, "Transcript" + (b.label ? " · " + esc(b.label) : "")));
+          const body = el("div", { class: "tr-body" });
+          b.transcript.forEach((line) => {
+            if (line[0] === "#") { body.appendChild(el("h4", null, esc(line[1]))); return; }
+            body.appendChild(el("p", null, (line[0] ? "<b>" + esc(line[0]) + ":</b> " : "") + esc(line[1])));
+          });
+          tr.appendChild(body);
+          root.appendChild(tr);
+          onShow.push((on) => { tr.hidden = !on; if (!on) tr.open = false; });
+        }
+      });
+      if (EX.tasks) root.appendChild(makeNotesBox());
+    }
+    function mcItem(qq, n, card) {
+      const q = el("div", { class: "q" });
+      q.appendChild(el("p", { class: "prompt" }, '<span class="n">' + n + "</span>" + esc(qq.q)));
+      const opts = el("div", { class: "opts" });
+      const labels = [];
+      qq.options.forEach((o, k) => {
+        const lab = el("label");
+        lab.innerHTML = '<input type="radio" name="q' + n + '" value="' + k + '"><span class="letter">' + LETTERS[k] + "</span><span>" + esc(o) + "</span>";
+        opts.appendChild(lab);
+        labels.push(lab);
+      });
+      q.appendChild(opts);
+      const ex = el("div", { class: "explain" });
+      const html = "<b>Answer: " + LETTERS[qq.answer] + ".</b> " + (qq.explain ? esc(qq.explain) : "");
+      q.appendChild(ex);
+      card.appendChild(q);
+      items.push({
+        info() {
+          const sel = q.querySelector("input:checked");
+          return { n, given: sel ? LETTERS[+sel.value] + " " + qq.options[+sel.value] : "", correct: LETTERS[qq.answer] + " " + qq.options[qq.answer] };
+        },
+        check() {
+          const sel = q.querySelector("input:checked");
+          const v = sel ? Number(sel.value) : -1;
+          labels.forEach((l, k) => { l.classList.remove("ok", "bad"); if (k === qq.answer) l.classList.add("ok"); else if (k === v) l.classList.add("bad"); });
+          ex.innerHTML = html;
+          q.classList.add("checked");
+          return v === qq.answer;
+        },
+        reveal() { labels[qq.answer].classList.add("ok"); ex.innerHTML = html; q.classList.add("checked"); },
+        reset() { q.querySelectorAll("input").forEach((i) => (i.checked = false)); labels.forEach((l) => l.classList.remove("ok", "bad")); ex.innerHTML = ""; q.classList.remove("checked"); },
+      });
+    }
+    function gapItem(it, n, card) {
+      const q = el("div", { class: "q sent" });
+      const prompt = el("p", { class: "prompt" });
+      prompt.appendChild(el("span", { class: "n" }, String(n)));
+      const line = el("span", { class: "s" });
+      const parts = it.s.split(/_{3,}/);
+      if (parts.length !== 2) throw new Error("Question " + n + " needs exactly one ___ gap");
+      line.appendChild(document.createTextNode(parts[0]));
+      const wrap = el("span", { class: "gapwrap" });
+      const input = el("input", { class: "gap", type: "text", autocomplete: "off", autocapitalize: "off", spellcheck: "false", "aria-label": "Answer " + n });
+      input.style.width = Math.max(12, Math.min(22, Math.max.apply(null, it.answers.map((a) => a.length)) + 4)) + "ch";
+      wrap.appendChild(input);
+      line.appendChild(wrap);
+      line.appendChild(document.createTextNode(parts[1]));
+      prompt.appendChild(line);
+      q.appendChild(prompt);
+      const ex = el("div", { class: "explain" });
+      const html = "<b>Answer:</b> " + esc(it.answers[0]) +
+        (it.answers.length > 1 ? ' <span class="also">(also accepted: ' + esc(it.answers.slice(1).join("; ")) + ")</span>" : "") +
+        (it.explain ? "<br>" + esc(it.explain) : "");
+      q.appendChild(ex);
+      card.appendChild(q);
+      items.push({
+        info() { return { n, given: input.value.trim(), correct: it.answers[0] }; },
+        check() {
+          const v = norm(input.value);
+          const ok = it.answers.some((a) => norm(a) === v);
+          input.classList.toggle("ok", ok); input.classList.toggle("bad", !ok);
+          ex.innerHTML = html;
+          q.classList.add("checked");
+          return ok;
+        },
+        reveal() { ex.innerHTML = html; q.classList.add("checked"); },
+        reset() { input.value = ""; input.classList.remove("ok", "bad"); ex.innerHTML = ""; q.classList.remove("checked"); },
+      });
+    }
+    function matchTask(t, n) {
+      const card = el("div", { class: "card match-task" });
+      const first = n, last = n + t.answers.length - 1;
+      card.appendChild(el("h3", null, (t.title ? esc(t.title) + " · " : "") + "Questions " + first + "–" + last));
+      if (t.intro) card.appendChild(el("p", { class: "q-intro" }, esc(t.intro)));
+      const list = el("ul", { class: "match-options" });
+      t.options.forEach((o) => list.appendChild(el("li", null, "<b>" + esc(o[0]) + "</b>" + esc(o[1]))));
+      card.appendChild(list);
+      const text = {};
+      t.options.forEach((o) => { text[o[0]] = o[1]; });
+      t.answers.forEach((ans, k) => {
+        const num = n + k;
+        const row = el("div", { class: "match-row" });
+        row.appendChild(el("span", { class: "n" }, String(num)));
+        row.appendChild(el("span", { class: "stmt" }, "Speaker " + (k + 1)));
+        const sel = el("select", { class: "choice", "aria-label": "Question " + num + ", Speaker " + (k + 1) });
+        sel.appendChild(el("option", { value: "" }, "—"));
+        t.options.forEach((o) => sel.appendChild(el("option", { value: o[0] }, o[0])));
+        row.appendChild(sel);
+        card.appendChild(row);
+        const note = addNote(num, ans + " · " + text[ans], t.explain && t.explain[k]);
+        items.push({
+          info() { return { n: num, given: sel.value, correct: ans }; },
+          check() {
+            const ok = sel.value === ans;
+            sel.classList.toggle("ok", ok); sel.classList.toggle("bad", !ok);
+            note.ok = ok;
+            return ok;
+          },
+          reveal() {},
+          reset() { sel.value = ""; sel.classList.remove("ok", "bad"); note.ok = null; },
+        });
+      });
+      root.appendChild(card);
+      return n + t.answers.length;
+    }
+
     ({
       "mc-cloze": buildCloze, "open-cloze": buildCloze, "word-form": buildCloze,
       "kwt": buildKWT, "mc-reading": buildMCReading,
       "matching": buildMatching, "gapped": buildGapped,
-      "sentences": buildSentences, "mc-texts": buildShortTexts, "mixed": buildMixed,
+      "sentences": buildSentences, "mc-texts": buildShortTexts, "mixed": buildMixed, "listening": buildListening,
     })[EX.type]();
 
     /* Previous / next set links at the end of the set. */
@@ -597,7 +832,7 @@
 
     const pts = EX.pointsEach || 1;
     const answered = () => items.filter((it) => it.info().given !== "").length;
-    const controls = () => Array.from(root.querySelectorAll("input, select"));
+    const controls = () => Array.from(root.querySelectorAll("input:not([data-ui]), select:not([data-ui])"));
     const ctrl = {
       root: root, items: items, count: items.length, max: items.length * pts,
       answered: answered,
@@ -613,10 +848,11 @@
           per.push({ n: inf.n, i: i, ok: ok, ref: it.ref });
         });
         drawNotes();
+        onShow.forEach((f) => f(true));
         return { right: right, total: items.length, score: right * pts, max: items.length * pts, mistakes: mistakes, per: per };
       },
-      reveal() { items.forEach((it) => it.reveal()); drawNotes(); },
-      reset() { items.forEach((it) => it.reset()); if (notesBox) notesBox.hidden = true; },
+      reveal() { items.forEach((it) => it.reveal()); drawNotes(); onShow.forEach((f) => f(true)); },
+      reset() { items.forEach((it) => it.reset()); if (notesBox) notesBox.hidden = true; onShow.forEach((f) => f(false)); },
       /* The answers as typed or chosen, to save and put back later. */
       snapshot() { return controls().map((c) => (c.type === "radio" ? (c.checked ? 1 : 0) : c.value)); },
       restore(v) {
