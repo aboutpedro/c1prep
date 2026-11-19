@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="preload" href="../fonts/inter-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../style.css?v=16">
+<link rel="stylesheet" href="../style.css?v=17">
 <script src="../theme.js?v=10"></script>
 <script src="../log.js?v=7"></script>
 <script src="../progress.js?v=1"></script>
@@ -35,7 +35,9 @@
   <p class="lead">Do each task, then press <b>Check answers</b> to see your score, the correct answers and why they are right. Each part has several sets.</p>
   <form class="search-box" action="../search.html" role="search"><input type="hidden" name="level" value="c2"><label class="sr-only" for="home-q">Search grammar and vocabulary</label><svg class="sb-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4.2-4.2"/></svg><input id="home-q" type="search" name="q" placeholder="Search topics and words" autocomplete="off" enterkeyhint="search"><button type="submit">Search</button></form>
 
-  <h2>Reading and Use of English</h2>
+  <nav class="jump" aria-label="Sections on this page"><a href="#use-of-english">Reading &amp; Use of English</a><a href="#writing">Writing</a><a href="#grammar">Grammar</a><a href="#vocabulary">Vocabulary</a><a href="#games">Games</a><a href="#practice">Personal practice</a></nav>
+
+  <h2 id="use-of-english">Reading and Use of English</h2>
   <div class="grid">
     <a class="tile" href="use-of-english-1.html"><div class="part">Part 1</div><div class="name">Multiple-choice cloze</div><div class="desc">10 sets of 8 gaps. Choose the word that fits: collocations, phrasal verbs, fixed phrases.</div></a>
     <a class="tile" href="use-of-english-2.html"><div class="part">Part 2</div><div class="name">Open cloze</div><div class="desc">10 sets of 8 gaps. Write one word: prepositions, linkers, auxiliaries, pronouns.</div></a>
@@ -46,41 +48,43 @@
     <a class="tile" href="reading-7.html"><div class="part">Part 7</div><div class="name">Multiple matching</div><div class="desc">10 sets of four or five texts and 10 questions.</div></a>
   </div>
 
-  <h2>Writing</h2>
+  <h2 id="writing">Writing</h2>
   <div class="grid">
     <a class="tile" href="writing.html"><div class="part">Parts 1 &amp; 2</div><div class="name">Writing tasks</div><div class="desc">5 essays and 8 Part 2 tasks, with a word counter and checklist.</div></a>
   </div>
 
-  <h2>Grammar</h2>
-  <div class="grid">
-    <a class="tile" href="grammar-1.html"><div class="part">Grammar 1</div><div class="name">Perfect and continuous forms</div><div class="desc">to have left, having spent, had been waiting, will have been married, the best meal I had ever had. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-2.html"><div class="part">Grammar 2</div><div class="name">Future forms and the future in the past</div><div class="desc">be to, be due to, be set to, be bound to, on the verge of, was to have started, would. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-3.html"><div class="part">Grammar 3</div><div class="name">Conditionals and alternatives to if</div><div class="desc">mixed conditionals, Had we known…, Were it not for…, but for, provided, supposing, otherwise. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-4.html"><div class="part">Grammar 4</div><div class="name">Likelihood, deduction and obligation</div><div class="desc">may well, in all likelihood, a foregone conclusion, must have, needn’t have, might as well, try as I might. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-5.html"><div class="part">Grammar 5</div><div class="name">Inversion and fronting</div><div class="desc">Not once did he…, Scarcely had we…, So quietly did he speak…, Strange as it may seem…, Gone are the days. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-6.html"><div class="part">Grammar 6</div><div class="name">Participle and verbless clauses</div><div class="desc">Having been rejected…, Built in 1890…, On reading…, With the exams over…, If in doubt… 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-7.html"><div class="part">Grammar 7</div><div class="name">Gerunds and infinitives</div><div class="desc">remember, regret, try, go on; being told, having seen, to have been invited; no point, can’t help. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-8.html"><div class="part">Grammar 8</div><div class="name">Reference, substitution and cohesion</div><div class="desc">the former and the latter, do so, that of, those who, nevertheless, hence, that said, on the contrary. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-9.html"><div class="part">Grammar 9</div><div class="name">Wishes, preferences and the subjunctive</div><div class="desc">wish, if only, I’d rather you didn’t, it’s high time, recommend that she take, be that as it may. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-10.html"><div class="part">Grammar 10</div><div class="name">The passive and causative</div><div class="desc">is being looked into, is said to have been built, is understood to be, have it done, get someone to do it. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-11.html"><div class="part">Grammar 11</div><div class="name">Concession, purpose and reason</div><div class="desc">Talented though he is, albeit, for all, so as not to, lest, with a view to, in that, hence. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-12.html"><div class="part">Grammar 12</div><div class="name">Comparison and degree</div><div class="desc">nowhere near as, every bit as, by far, not so much… as, the more… the more, utterly, adverb position. 5 sets of 10 sentences.</div></a>
+  <h2 id="grammar">Grammar</h2>
+  <p class="sec-note">Each topic has 5 sets of 10 sentences.</p>
+  <div class="grid rows">
+    <a class="tile" href="grammar-1.html"><div class="part"><span class="pk">Grammar</span> <span class="n">1</span></div><div class="name">Perfect and continuous forms</div><div class="desc">to have left, having spent, had been waiting, will have been married, the best meal I had ever had. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-2.html"><div class="part"><span class="pk">Grammar</span> <span class="n">2</span></div><div class="name">Future forms and the future in the past</div><div class="desc">be to, be due to, be set to, be bound to, on the verge of, was to have started, would. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-3.html"><div class="part"><span class="pk">Grammar</span> <span class="n">3</span></div><div class="name">Conditionals and alternatives to if</div><div class="desc">mixed conditionals, Had we known…, Were it not for…, but for, provided, supposing, otherwise. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-4.html"><div class="part"><span class="pk">Grammar</span> <span class="n">4</span></div><div class="name">Likelihood, deduction and obligation</div><div class="desc">may well, in all likelihood, a foregone conclusion, must have, needn’t have, might as well, try as I might. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-5.html"><div class="part"><span class="pk">Grammar</span> <span class="n">5</span></div><div class="name">Inversion and fronting</div><div class="desc">Not once did he…, Scarcely had we…, So quietly did he speak…, Strange as it may seem…, Gone are the days. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-6.html"><div class="part"><span class="pk">Grammar</span> <span class="n">6</span></div><div class="name">Participle and verbless clauses</div><div class="desc">Having been rejected…, Built in 1890…, On reading…, With the exams over…, If in doubt… <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-7.html"><div class="part"><span class="pk">Grammar</span> <span class="n">7</span></div><div class="name">Gerunds and infinitives</div><div class="desc">remember, regret, try, go on; being told, having seen, to have been invited; no point, can’t help. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-8.html"><div class="part"><span class="pk">Grammar</span> <span class="n">8</span></div><div class="name">Reference, substitution and cohesion</div><div class="desc">the former and the latter, do so, that of, those who, nevertheless, hence, that said, on the contrary. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-9.html"><div class="part"><span class="pk">Grammar</span> <span class="n">9</span></div><div class="name">Wishes, preferences and the subjunctive</div><div class="desc">wish, if only, I’d rather you didn’t, it’s high time, recommend that she take, be that as it may. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-10.html"><div class="part"><span class="pk">Grammar</span> <span class="n">10</span></div><div class="name">The passive and causative</div><div class="desc">is being looked into, is said to have been built, is understood to be, have it done, get someone to do it. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-11.html"><div class="part"><span class="pk">Grammar</span> <span class="n">11</span></div><div class="name">Concession, purpose and reason</div><div class="desc">Talented though he is, albeit, for all, so as not to, lest, with a view to, in that, hence. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-12.html"><div class="part"><span class="pk">Grammar</span> <span class="n">12</span></div><div class="name">Comparison and degree</div><div class="desc">nowhere near as, every bit as, by far, not so much… as, the more… the more, utterly, adverb position. <span class="sets">5 sets of 10 sentences.</span></div></a>
   </div>
 
-  <h2>Vocabulary</h2>
-  <div class="grid">
-    <a class="tile" href="vocabulary-1.html"><div class="part">Vocabulary 1</div><div class="name">Idioms</div><div class="desc">a dark horse, over the moon, at the end of your tether, between a rock and a hard place, a bolt from the blue. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-2.html"><div class="part">Vocabulary 2</div><div class="name">Phrases with take, set, come, turn, go and place</div><div class="desc">take for granted, set a precedent, come to light, turn a blind eye, it goes without saying, fall into place. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-3.html"><div class="part">Vocabulary 3</div><div class="name">Collocations</div><div class="desc">bitterly disappointed, acutely aware, pose a threat, strike a balance, a foregone conclusion, a pang of guilt. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-4.html"><div class="part">Vocabulary 4</div><div class="name">Word formation</div><div class="desc">perseverance, irreparable, underrated, misleading, unseasonably, setback, breakthrough: Part 3 style. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-5.html"><div class="part">Vocabulary 5</div><div class="name">Phrasal verbs</div><div class="desc">fob off, gloss over, bank on, iron out, blow over, fall through, get round to, go back on. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-6.html"><div class="part">Vocabulary 6</div><div class="name">Shades of meaning</div><div class="desc">glance, glimpse, peer, gaze; mutter, mumble, whine; flaw or fiasco; Part 1 practice. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-7.html"><div class="part">Vocabulary 7</div><div class="name">Register, metaphor and new words</div><div class="desc">formal or informal, by and large, odds and ends, spread like wildfire, staycation, ghosted. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-8.html"><div class="part">Vocabulary 8</div><div class="name">Prepositional phrases</div><div class="desc">in the wake of, at odds with, on the verge of, under no obligation, prone to, fraught with, devoid of. 5 sets of 10 sentences.</div></a>
+  <h2 id="vocabulary">Vocabulary</h2>
+  <p class="sec-note">Each topic has 5 sets of 10 sentences.</p>
+  <div class="grid rows">
+    <a class="tile" href="vocabulary-1.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">1</span></div><div class="name">Idioms</div><div class="desc">a dark horse, over the moon, at the end of your tether, between a rock and a hard place, a bolt from the blue. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-2.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">2</span></div><div class="name">Phrases with take, set, come, turn, go and place</div><div class="desc">take for granted, set a precedent, come to light, turn a blind eye, it goes without saying, fall into place. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-3.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">3</span></div><div class="name">Collocations</div><div class="desc">bitterly disappointed, acutely aware, pose a threat, strike a balance, a foregone conclusion, a pang of guilt. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-4.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">4</span></div><div class="name">Word formation</div><div class="desc">perseverance, irreparable, underrated, misleading, unseasonably, setback, breakthrough: Part 3 style. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-5.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">5</span></div><div class="name">Phrasal verbs</div><div class="desc">fob off, gloss over, bank on, iron out, blow over, fall through, get round to, go back on. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-6.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">6</span></div><div class="name">Shades of meaning</div><div class="desc">glance, glimpse, peer, gaze; mutter, mumble, whine; flaw or fiasco; Part 1 practice. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-7.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">7</span></div><div class="name">Register, metaphor and new words</div><div class="desc">formal or informal, by and large, odds and ends, spread like wildfire, staycation, ghosted. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-8.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">8</span></div><div class="name">Prepositional phrases</div><div class="desc">in the wake of, at odds with, on the verge of, under no obligation, prone to, fraught with, devoid of. <span class="sets">5 sets of 10 sentences.</span></div></a>
   </div>
 
-  <h2>Games</h2>
-  <div class="grid">
+  <h2 id="games">Games</h2>
+  <div class="grid rows nonum">
     <a class="tile" href="game-scramble.html"><div class="part">Game</div><div class="name">Sentence scramble</div><div class="desc">Put the words in order to make a sentence. 10 sentences a round.</div></a>
     <a class="tile" href="game-pairs.html"><div class="part">Game</div><div class="name">Memory pairs</div><div class="desc">Turn over the cards and match each phrasal verb with its meaning.</div></a>
     <a class="tile" href="game-odd.html"><div class="part">Game</div><div class="name">Odd one out</div><div class="desc">Four words, and one doesn’t belong. Find it, then see why.</div></a>
@@ -89,14 +93,14 @@
     <a class="tile" href="game-hangman.html"><div class="part">Game</div><div class="name">Hangman</div><div class="desc">Guess the word letter by letter from its clue.</div></a>
   </div>
 
-  <h2>Personal practice</h2>
+  <h2 id="practice">Personal practice</h2>
   <div class="grid">
     <a class="tile" href="exam.html"><div class="part">Exam mode</div><div class="name">Timed paper</div><div class="desc">A full Reading and Use of English paper: one set from each part, 90 minutes.</div></a>
     <a class="tile" href="weak-spots.html"><div class="part">Just for you</div><div class="name">My weak spots</div><div class="desc">See which skills you miss most, and practise the questions you got wrong.</div></a>
     <a class="tile" href="progress.html"><div class="part">Just for you</div><div class="name">Move my progress</div><div class="desc">Carry on from another phone or computer: send your answers and scores there.</div></a>
   </div>
 
-  <h2>Other levels</h2>
+  <h2 id="other-levels">Other levels</h2>
   <div class="levels">
     <a class="level-btn" href="../a1/"><img src="../a1/favicon.svg?v=2" alt="" width="28" height="28"><span>A1 Beginner</span></a>
     <a class="level-btn" href="../a2/"><img src="../a2/favicon.svg?v=2" alt="" width="28" height="28"><span>A2 Elementary</span></a>

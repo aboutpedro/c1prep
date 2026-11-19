@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="preload" href="../fonts/inter-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../style.css?v=16">
+<link rel="stylesheet" href="../style.css?v=17">
 <script src="../theme.js?v=10"></script>
 <script src="../log.js?v=7"></script>
 <script src="../progress.js?v=1"></script>
@@ -35,40 +35,44 @@
   <p class="lead">Grammar and vocabulary practice for beginners. Do a set, then press <b>Check answers</b> to see your score and why each answer is right.</p>
   <form class="search-box" action="../search.html" role="search"><input type="hidden" name="level" value="a1"><label class="sr-only" for="home-q">Search grammar and vocabulary</label><svg class="sb-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4.2-4.2"/></svg><input id="home-q" type="search" name="q" placeholder="Search topics and words" autocomplete="off" enterkeyhint="search"><button type="submit">Search</button></form>
 
-  <h2>Grammar</h2>
-  <div class="grid">
-    <a class="tile" href="grammar-1.html"><div class="part">Grammar 1</div><div class="name">The verb be</div><div class="desc">I am, you are, she is; isn’t and aren’t; Are you…? Yes, I am. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-2.html"><div class="part">Grammar 2</div><div class="name">Pronouns and possessives</div><div class="desc">I or me, my or your, Tom’s, Whose…? 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-3.html"><div class="part">Grammar 3</div><div class="name">Plurals; this, that, these, those</div><div class="desc">books, boxes, children; this book, those shoes; two big dogs. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-4.html"><div class="part">Grammar 4</div><div class="name">a, an and the</div><div class="desc">a or an?; a or the?; a/an or no word. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-5.html"><div class="part">Grammar 5</div><div class="name">have got and has got</div><div class="desc">I’ve got a sister. Has she got a car? We haven’t got time. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-6.html"><div class="part">Grammar 6</div><div class="name">Present simple: positive and negative</div><div class="desc">I work, she works; don’t and doesn’t; I like cooking. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-7.html"><div class="part">Grammar 7</div><div class="name">Present simple: questions</div><div class="desc">Do you…? Does he…? Yes, I do. Where do you live? 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-8.html"><div class="part">Grammar 8</div><div class="name">Question words</div><div class="desc">what, where, who, when, how, how old, how many, what time. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-9.html"><div class="part">Grammar 9</div><div class="name">Adverbs of frequency and time phrases</div><div class="desc">always, usually, never; every day, on Mondays, in the morning. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-10.html"><div class="part">Grammar 10</div><div class="name">can and can’t</div><div class="desc">I can swim. Can you help me? Can I open the window? 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-11.html"><div class="part">Grammar 11</div><div class="name">Present continuous</div><div class="desc">I’m reading. Is it raining? Present simple or continuous? 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-12.html"><div class="part">Grammar 12</div><div class="name">there is, there are; some and any</div><div class="desc">There’s a bank. Are there any shops? some milk, any eggs. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-13.html"><div class="part">Grammar 13</div><div class="name">Prepositions of place and time</div><div class="desc">in, on, under, next to; at 7 o’clock, on Monday, in July. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-14.html"><div class="part">Grammar 14</div><div class="name">Imperatives, let’s and would like</div><div class="desc">Sit down. Don’t run. Let’s go. I’d like a tea. Would you like…? 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-15.html"><div class="part">Grammar 15</div><div class="name">Past simple: was and were</div><div class="desc">I was at home. Were you tired? It wasn’t easy. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="grammar-16.html"><div class="part">Grammar 16</div><div class="name">Past simple: regular and irregular verbs</div><div class="desc">worked, went, saw; didn’t go; Did you…? 5 sets of 10 sentences.</div></a>
+  <nav class="jump" aria-label="Sections on this page"><a href="#grammar">Grammar</a><a href="#vocabulary">Vocabulary</a><a href="#games">Games</a><a href="#practice">Personal practice</a></nav>
+
+  <h2 id="grammar">Grammar</h2>
+  <p class="sec-note">Each topic has 5 sets of 10 sentences.</p>
+  <div class="grid rows">
+    <a class="tile" href="grammar-1.html"><div class="part"><span class="pk">Grammar</span> <span class="n">1</span></div><div class="name">The verb be</div><div class="desc">I am, you are, she is; isn’t and aren’t; Are you…? Yes, I am. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-2.html"><div class="part"><span class="pk">Grammar</span> <span class="n">2</span></div><div class="name">Pronouns and possessives</div><div class="desc">I or me, my or your, Tom’s, Whose…? <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-3.html"><div class="part"><span class="pk">Grammar</span> <span class="n">3</span></div><div class="name">Plurals; this, that, these, those</div><div class="desc">books, boxes, children; this book, those shoes; two big dogs. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-4.html"><div class="part"><span class="pk">Grammar</span> <span class="n">4</span></div><div class="name">a, an and the</div><div class="desc">a or an?; a or the?; a/an or no word. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-5.html"><div class="part"><span class="pk">Grammar</span> <span class="n">5</span></div><div class="name">have got and has got</div><div class="desc">I’ve got a sister. Has she got a car? We haven’t got time. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-6.html"><div class="part"><span class="pk">Grammar</span> <span class="n">6</span></div><div class="name">Present simple: positive and negative</div><div class="desc">I work, she works; don’t and doesn’t; I like cooking. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-7.html"><div class="part"><span class="pk">Grammar</span> <span class="n">7</span></div><div class="name">Present simple: questions</div><div class="desc">Do you…? Does he…? Yes, I do. Where do you live? <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-8.html"><div class="part"><span class="pk">Grammar</span> <span class="n">8</span></div><div class="name">Question words</div><div class="desc">what, where, who, when, how, how old, how many, what time. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-9.html"><div class="part"><span class="pk">Grammar</span> <span class="n">9</span></div><div class="name">Adverbs of frequency and time phrases</div><div class="desc">always, usually, never; every day, on Mondays, in the morning. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-10.html"><div class="part"><span class="pk">Grammar</span> <span class="n">10</span></div><div class="name">can and can’t</div><div class="desc">I can swim. Can you help me? Can I open the window? <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-11.html"><div class="part"><span class="pk">Grammar</span> <span class="n">11</span></div><div class="name">Present continuous</div><div class="desc">I’m reading. Is it raining? Present simple or continuous? <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-12.html"><div class="part"><span class="pk">Grammar</span> <span class="n">12</span></div><div class="name">there is, there are; some and any</div><div class="desc">There’s a bank. Are there any shops? some milk, any eggs. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-13.html"><div class="part"><span class="pk">Grammar</span> <span class="n">13</span></div><div class="name">Prepositions of place and time</div><div class="desc">in, on, under, next to; at 7 o’clock, on Monday, in July. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-14.html"><div class="part"><span class="pk">Grammar</span> <span class="n">14</span></div><div class="name">Imperatives, let’s and would like</div><div class="desc">Sit down. Don’t run. Let’s go. I’d like a tea. Would you like…? <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-15.html"><div class="part"><span class="pk">Grammar</span> <span class="n">15</span></div><div class="name">Past simple: was and were</div><div class="desc">I was at home. Were you tired? It wasn’t easy. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="grammar-16.html"><div class="part"><span class="pk">Grammar</span> <span class="n">16</span></div><div class="name">Past simple: regular and irregular verbs</div><div class="desc">worked, went, saw; didn’t go; Did you…? <span class="sets">5 sets of 10 sentences.</span></div></a>
   </div>
 
-  <h2>Vocabulary</h2>
-  <div class="grid">
-    <a class="tile" href="vocabulary-1.html"><div class="part">Vocabulary 1</div><div class="name">People and family</div><div class="desc">Family, describing people, the body, jobs, countries and nationalities. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-2.html"><div class="part">Vocabulary 2</div><div class="name">Numbers, dates and time</div><div class="desc">Numbers, first/second, days and months, telling the time, prices. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-3.html"><div class="part">Vocabulary 3</div><div class="name">Home and everyday things</div><div class="desc">Rooms, furniture, the kitchen, things in your bag, jobs at home. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-4.html"><div class="part">Vocabulary 4</div><div class="name">Food and drink</div><div class="desc">Food, drinks, meals, at the café, a bottle of, a packet of. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-5.html"><div class="part">Vocabulary 5</div><div class="name">Daily routine and free time</div><div class="desc">get up, have breakfast; hobbies; play, go or do; school subjects. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-6.html"><div class="part">Vocabulary 6</div><div class="name">Town and transport</div><div class="desc">Places in town, shops, by bus, turn left, at the hotel. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-7.html"><div class="part">Vocabulary 7</div><div class="name">Clothes, colours and the weather</div><div class="desc">Clothes, colours, shopping for clothes, the weather and seasons. 5 sets of 10 sentences.</div></a>
-    <a class="tile" href="vocabulary-8.html"><div class="part">Vocabulary 8</div><div class="name">Everyday English</div><div class="desc">Hello and goodbye, in the classroom, please and sorry, opposites. 5 sets of 10 sentences.</div></a>
+  <h2 id="vocabulary">Vocabulary</h2>
+  <p class="sec-note">Each topic has 5 sets of 10 sentences.</p>
+  <div class="grid rows">
+    <a class="tile" href="vocabulary-1.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">1</span></div><div class="name">People and family</div><div class="desc">Family, describing people, the body, jobs, countries and nationalities. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-2.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">2</span></div><div class="name">Numbers, dates and time</div><div class="desc">Numbers, first/second, days and months, telling the time, prices. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-3.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">3</span></div><div class="name">Home and everyday things</div><div class="desc">Rooms, furniture, the kitchen, things in your bag, jobs at home. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-4.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">4</span></div><div class="name">Food and drink</div><div class="desc">Food, drinks, meals, at the café, a bottle of, a packet of. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-5.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">5</span></div><div class="name">Daily routine and free time</div><div class="desc">get up, have breakfast; hobbies; play, go or do; school subjects. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-6.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">6</span></div><div class="name">Town and transport</div><div class="desc">Places in town, shops, by bus, turn left, at the hotel. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-7.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">7</span></div><div class="name">Clothes, colours and the weather</div><div class="desc">Clothes, colours, shopping for clothes, the weather and seasons. <span class="sets">5 sets of 10 sentences.</span></div></a>
+    <a class="tile" href="vocabulary-8.html"><div class="part"><span class="pk">Vocabulary</span> <span class="n">8</span></div><div class="name">Everyday English</div><div class="desc">Hello and goodbye, in the classroom, please and sorry, opposites. <span class="sets">5 sets of 10 sentences.</span></div></a>
   </div>
 
-  <h2>Games</h2>
-  <div class="grid">
+  <h2 id="games">Games</h2>
+  <div class="grid rows nonum">
     <a class="tile" href="game-scramble.html"><div class="part">Game</div><div class="name">Sentence scramble</div><div class="desc">Put the words in order to make a sentence. 10 sentences a round.</div></a>
     <a class="tile" href="game-pairs.html"><div class="part">Game</div><div class="name">Memory pairs</div><div class="desc">Turn over the cards and match each phrasal verb with its meaning.</div></a>
     <a class="tile" href="game-odd.html"><div class="part">Game</div><div class="name">Odd one out</div><div class="desc">Four words, and one doesn’t belong. Find it, then see why.</div></a>
@@ -77,13 +81,13 @@
     <a class="tile" href="game-hangman.html"><div class="part">Game</div><div class="name">Hangman</div><div class="desc">Guess the word letter by letter from its clue.</div></a>
   </div>
 
-  <h2>Personal practice</h2>
+  <h2 id="practice">Personal practice</h2>
   <div class="grid">
     <a class="tile" href="weak-spots.html"><div class="part">Just for you</div><div class="name">My weak spots</div><div class="desc">See which skills you miss most, and practise the questions you got wrong.</div></a>
     <a class="tile" href="progress.html"><div class="part">Just for you</div><div class="name">Move my progress</div><div class="desc">Carry on from another phone or computer: send your answers and scores there.</div></a>
   </div>
 
-  <h2>Other levels</h2>
+  <h2 id="other-levels">Other levels</h2>
   <div class="levels">
     <a class="level-btn" href="../a2/"><img src="../a2/favicon.svg?v=2" alt="" width="28" height="28"><span>A2 Elementary</span></a>
     <a class="level-btn" href="../b1/"><img src="../b1/favicon.svg?v=2" alt="" width="28" height="28"><span>B1 Intermediate</span></a>

@@ -345,6 +345,65 @@ footer {
 .tile .name { font-size: 17px; line-height: 1.35; font-weight: 650; margin: 4px 0 4px; }
 .tile .desc { font-size: 14px; line-height: 1.5; color: var(--muted); }
 
+/* ================= Home: jump bar and topic rows (generator/homelayout.py) ================= */
+/* Jump bar: one link per section. Sticks to the top on phones and under the header from 700px. */
+.jump {
+  position: sticky; top: 0; z-index: 25;
+  display: flex; gap: var(--s2); overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain;
+  margin: var(--s5) calc(-1 * var(--s4)) 0; padding: var(--s2) var(--s4);
+  background: var(--bg); border-bottom: 1px solid var(--border);
+}
+.jump::-webkit-scrollbar { display: none; }
+.jump a {
+  flex: none; display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px;
+  background: var(--surface); color: var(--text); text-decoration: none; white-space: nowrap;
+  border: 1px solid var(--border); border-radius: 999px;
+  font-size: 14px; font-weight: 600;
+  transition: border-color .15s var(--ease), background-color .15s var(--ease);
+}
+.jump a:hover { border-color: var(--primary); color: var(--text); }
+@media (min-width: 600px) {
+  .jump { position: relative; flex-wrap: wrap; gap: 6px; margin: var(--s5) 0 0; padding: var(--s2) 0; }
+  .jump a { min-height: 36px; padding: 0 11px; }
+}
+@media (min-width: 700px) { .jump { position: sticky; top: var(--header-h); } }
+.wrap > h2[id], .wrap > h3.grp { scroll-margin-top: 76px; }
+@media (min-width: 600px) { .wrap > h2[id], .wrap > h3.grp { scroll-margin-top: 136px; } }
+@media (min-width: 700px) { .wrap > h2[id], .wrap > h3.grp { scroll-margin-top: calc(var(--header-h) + 68px); } }
+
+/* "5 sets of 10 sentences", said once under a section heading; group headings (A2 grammar) */
+.sec-note { margin: calc(-1 * var(--s2)) 0 var(--s4); font-size: 14px; color: var(--muted); }
+h3.grp { font-size: 16px; font-weight: 650; margin: var(--s5) 0 var(--s2); }
+.sec-note + h3.grp { margin-top: 0; }
+
+/* Topic rows: Grammar, Vocabulary and Games. One list, two columns from 640px. */
+.grid.rows {
+  gap: 0 var(--s5); padding: var(--s1) var(--s2);
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg);
+}
+.grid.rows a.tile {
+  display: grid; grid-template-columns: 1.75em minmax(0, 1fr); column-gap: var(--s2); align-content: center;
+  min-height: 0; padding: 10px 30px 10px var(--s2);
+  background: none; border: 0; border-top: 1px solid var(--border); border-radius: 0;
+}
+.grid.rows a.tile:first-child { border-top: 0; }
+@media (min-width: 640px) { .grid.rows a.tile:nth-child(2) { border-top: 0; } }
+.grid.rows a.tile:hover { background: var(--surface-2); border-color: var(--border); box-shadow: none; }
+.grid.rows a.tile::after { right: 12px; width: 7px; height: 7px; margin-top: -4px; }
+.grid.rows .part {
+  grid-row: 1 / span 3; padding-top: 1px;
+  font-size: 14px; line-height: 1.4; font-weight: 650; letter-spacing: 0; text-transform: none;
+  font-variant-numeric: tabular-nums; color: var(--primary);
+}
+.grid.rows .part .pk { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.grid.rows .name { grid-column: 2; margin: 0; font-size: 15.5px; line-height: 1.4; font-weight: 600; }
+.grid.rows .desc { grid-column: 2; font-size: 13.5px; line-height: 1.45; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.grid.rows .desc .sets { display: none; }
+.grid.rows .tile-progress { grid-column: 2; margin-top: var(--s1); font-size: 12.5px; }
+.grid.rows.nonum a.tile { grid-template-columns: minmax(0, 1fr); }
+.grid.rows.nonum .part { display: none; }
+.grid.rows.nonum :is(.name, .desc, .tile-progress) { grid-column: 1; }
+
 /* Other levels: one button per level (home pages) */
 .levels { display: flex; flex-wrap: wrap; gap: var(--s3); }
 .level-btn {
@@ -1103,7 +1162,7 @@ details.marking > p.small-note { margin: var(--s3) 0 var(--s5); font-size: 14px;
 
 /* ================= Print ================= */
 @media print {
-  :root[data-skin] body::before, .page-tabs, .bar, header.site nav, .level-switch, .setnav, .set-pager, .backlink, .confetti, .toast { display: none !important; }
+  :root[data-skin] body::before, .page-tabs, .bar, header.site nav, .level-switch, .jump, .setnav, .set-pager, .backlink, .confetti, .toast { display: none !important; }
   header.site { position: static; }
   body { background: #fff; }
   .card { border-color: #ccc; }

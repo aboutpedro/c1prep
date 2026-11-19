@@ -98,8 +98,24 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   and title, next button. Works the same with 5 sets or 19.
 - **Action bar**: sticks to the bottom of the screen on exercise pages, solid
   surface. Shows how many answers are filled in, then the score.
-- **Part tiles**: list rows with label, name, description and a chevron; the
-  whole row is the link.
+- **Part tiles**: cards with label, name, description and a chevron; the
+  whole card is the link. On the home pages they are used for the exam parts,
+  Writing and Personal practice.
+- **Topic rows** (home pages: Grammar, Vocabulary and Games; generator/homelayout.py):
+  one surface card per list, hairline dividers between rows, two columns from 640px.
+  Each row: the topic number in navy (the word "Grammar"/"Vocabulary" stays for screen
+  readers only), the name, the description on one line (cut with …) and a chevron;
+  hover fills `--surface-2`. "Each topic has 5 sets of 10 sentences" is said once under
+  the section heading instead of on every topic. Saved progress sits under the
+  description. Games rows have no number.
+- **Grammar groups** (A2 only, "groups" in generator/a2.json): 16px headings, each
+  over its own row card; numbers keep their order inside a group. A topic that is not
+  in a group yet shows under "More".
+- **Jump bar** (home pages): pill links, one per section (not Other levels), under the
+  search box. On phones it sticks to the top of the screen and scrolls sideways; from
+  700px it sticks under the header and wraps if needed; between 600 and 699px (two-row
+  header) it does not stick. Section headings have a scroll margin so a jump lands just
+  under the bars.
 - **Level buttons** ("Other levels" on each home page): one secondary-style
   button per other level, with that level's logo, the exam name and a chevron.
   Full width on phones.
