@@ -232,6 +232,35 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
   a note says why. The pictures always sit on a cream tile (`#fff8ee`) because
   they are drawn for a light background, in dark mode and every theme too.
   Big words, tiles and buttons in Poppins; tap targets of 52–64px.
+- **Games** (every level; `games.js`, `games.css`; pages written by
+  generator/gamespages.py from generator/games/<level>.json into
+  `<level>/data/games.js`): the game tiles under a "Games" heading above Personal
+  practice, one page each (`game-scramble`, `game-pairs`, `game-odd`, `game-errors`, `game-hangman`,
+  `game-word`; C1's at the root). A status line on top (step on the left, score
+  on the right); feedback in green ✓ / red ✗ text with the right answer shown;
+  the end of a round is a centred card with the result, the best so far and
+  Play again (confetti for a perfect round). Sentence scramble: word chips
+  (surface, strong border, 44px) tapped into a dashed answer box, where they turn
+  navy-soft; the first word is capitalised and the end mark added; a few other
+  natural orders are accepted (`alt`). Memory pairs: 12 cards (3 across on
+  phones, 4 from 600px) with a striped navy-soft back; phrasal verbs in bold
+  navy, meanings plain; a match turns green with ✓, a miss shows ✗ for a moment.
+  Odd one out: four options two by two; the frame (make …) in navy in the
+  question; after answering, the odd one is green ✓, a wrong pick red ✗, and the
+  reason below. Word of the day: 6×5 tiles and an on-screen keyboard; right
+  place = `--ok` fill with a small ✓, wrong place = `--warn` fill with ↔, not
+  in the word = `--surface-2`, with a legend under the keyboard; the same word
+  for everyone at a level on a given date; guesses must be in `games-words.js`.
+  Error hunt: the sentence as word buttons (18px, 1px border, navy-soft on
+  hover); the wrong word turns red and struck through with ✗, a wrongly tapped
+  word gets a dashed border; then three corrections as in Odd one out, and the
+  wrong word is replaced in green with ✓; one point for finding, one for fixing
+  (20 a round). Hangman: the clue in a small caps label and bold text, a line
+  drawing (gallows in `--border-strong`, the figure in `--text`, one part per
+  wrong letter, six to lose), the letters as underlined slots that shrink to fit
+  14 letters at 320px, and the same keyboard as Word of the day without Enter
+  and Delete; a lost word shows its missing letters in red. Six tiles in all.
+  Scores and today's game are kept in this browser (`c1p:games`).
 
 ## Offline
 
