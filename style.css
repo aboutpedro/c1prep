@@ -195,6 +195,7 @@ header.site a.brand {
   color: var(--text); text-decoration: none; white-space: nowrap;
 }
 header.site a.brand img { width: 28px; height: 28px; border-radius: 7px; display: block; }
+@media (max-width: 359px) { header.site a.brand { font-size: 15px; gap: 8px; letter-spacing: -.02em; } :root[data-skin="kids"] header.site a.brand { font-size: 14px; } }   /* the name and the theme buttons fit at 320 px */
 header.site nav { display: flex; align-items: center; gap: var(--s2); min-width: 0; }
 /* The "All exercises" link becomes the back link above the page title (theme.js). */
 header.site nav > a { display: none; }
@@ -732,6 +733,12 @@ textarea::placeholder { color: var(--muted); }
   background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--r-md);
 }
 .name-card button { width: 100%; min-height: 46px; font-size: 16px; }
+/* Report a problem (log.js, under every set) */
+.report-line { margin: var(--s4) 0 0; text-align: center; font-size: 14px; color: var(--muted); }
+.report-line .linkish { font-weight: 500; }
+.report-card label .opt { font-weight: 400; color: var(--muted); }
+.report-card textarea { min-height: 110px; margin: 0 0 var(--s4); padding: 10px 14px; font-family: inherit; font-size: 16px; line-height: 1.5; }
+.report-card .report-actions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s2); }
 
 .toast {
   position: fixed; left: 50%; top: var(--s4); transform: translateX(-50%); z-index: 60;
@@ -1164,7 +1171,7 @@ details.marking > p.small-note { margin: var(--s3) 0 var(--s5); font-size: 14px;
 
 /* ================= Print ================= */
 @media print {
-  :root[data-skin] body::before, .page-tabs, .bar, header.site nav, .level-switch, .jump, .setnav, .set-pager, .backlink, .confetti, .toast { display: none !important; }
+  :root[data-skin] body::before, .page-tabs, .bar, header.site nav, .level-switch, .jump, .setnav, .set-pager, .backlink, .confetti, .toast, .report-line { display: none !important; }
   header.site { position: static; }
   body { background: #fff; }
   .card { border-color: #ccc; }

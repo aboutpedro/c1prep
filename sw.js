@@ -1,12 +1,12 @@
-/* C1 Prep: offline use (service worker, registered by theme.js). Pages and files you have opened are kept on
+/* Future Perfect English: offline use (service worker, registered by theme.js). Pages and files you have opened are kept on
    this device, so they still work without internet. Written by generator/sitepages.py.
    - Files with a version in the address (style.css?v=14, data/g1.js?v=2, …) never change: cache first.
    - Pages and everything else: network first, keeping a copy; the copy when offline.
    - Offline, on a page never opened here: offline.html.
    Requests to other sites (the teacher's sheet) are left alone. */
 "use strict";
-const CACHE = "c1prep-141ebd1d";
-const CORE = ["offline.html", "style.css?v=18", "theme.js?v=10", "favicon.svg?v=2", "favicon.ico?v=2", "manifest.webmanifest", "fonts/inter-latin.woff2?v=1"];
+const CACHE = "c1prep-86cc3bc1";
+const CORE = ["offline.html", "style.css?v=19", "theme.js?v=10", "favicon.svg?v=2", "favicon.ico?v=2", "manifest.webmanifest", "fonts/inter-latin.woff2?v=1"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));

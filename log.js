@@ -1,4 +1,4 @@
-/* C1 Prep: class mode. Pedro's students join once per device with the class link (class.html), which saves their
+/* Future Perfect English: class mode, and the problem reports (window.c1Report). Pedro's students join once per device with the class link (class.html), which saves their
    name; only then are finished sets sent to the teacher's results sheet. Everyone else is never asked for a name
    and nothing is sent. Students who typed a name before class mode existed simply stay in the class. */
 (function () {
@@ -110,10 +110,65 @@
     }
   };
 
+  /* ---------- problem reports (anyone; quiz.js puts the link under every set) ----------
+     Sends what the person wrote, the page, the set and the question number to the same sheet, with type "report"
+     (the Apps Script puts these in the "Reports" tab). The name goes with it only for class students. */
+  window.c1Report = function (info) {
+    if (document.querySelector(".name-modal")) return;
+    info = info || {};
+    const wrap = document.createElement("div");
+    wrap.className = "name-modal";
+    wrap.innerHTML =
+      '<form class="name-card report-card" role="dialog" aria-modal="true" aria-labelledby="rp-title">' +
+      '<h2 id="rp-title">Report a problem</h2>' +
+      '<p>A wrong answer, a typo, something that doesn’t work? Tell us and it will be fixed. Please don’t include personal details. <a href="' + PRIVACY + '" target="_blank" rel="noopener">Privacy</a></p>' +
+      '<label for="rp-q">Question number <span class="opt">(optional)</span></label>' +
+      '<input id="rp-q" type="text" name="q" maxlength="10" inputmode="numeric" autocomplete="off">' +
+      '<label for="rp-msg">What’s wrong?</label>' +
+      '<textarea id="rp-msg" name="m" maxlength="1000" rows="4" required></textarea>' +
+      '<div class="report-actions"><button type="button" class="secondary" data-close>Cancel</button><button type="submit">Send</button></div></form>';
+    document.body.appendChild(wrap);
+    const form = wrap.querySelector("form"), msg = wrap.querySelector("#rp-msg");
+    const opener = document.activeElement;
+    const onKey = (e) => { if (e.key === "Escape") close(); };
+    const close = () => {
+      document.removeEventListener("keydown", onKey);
+      wrap.classList.add("out");
+      setTimeout(() => wrap.remove(), 160);
+      if (opener && opener.focus) opener.focus();
+    };
+    setTimeout(() => wrap.querySelector("#rp-q").focus(), 50);
+    wrap.querySelector("[data-close]").addEventListener("click", close);
+    wrap.addEventListener("click", (e) => { if (e.target === wrap) close(); });
+    document.addEventListener("keydown", onKey);
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const text = msg.value.trim();
+      if (text.length < 3) { msg.focus(); return; }
+      const h1 = document.querySelector("h1"), kicker = document.querySelector(".kicker");
+      const rec = {
+        key: SITE_KEY, type: "report", page: location.pathname, at: new Date().toISOString(),
+        name: inClass() ? getName() : "",
+        level: document.documentElement.getAttribute("data-level") || "",
+        part: info.part || ((kicker ? kicker.textContent.trim() + " · " : "") + (h1 ? h1.textContent.trim() : "")),
+        set: info.set || "", title: info.title || "",
+        question: wrap.querySelector("#rp-q").value.trim(), message: text
+      };
+      close();
+      try {
+        await send(rec);
+        toast("✓ Thank you! Your report was sent.", "toast-ok");
+      } catch (err) {
+        const q = readQueue(); q.push(rec); writeQueue(q);
+        toast("Saved. It will be sent when you're back online.", "toast-warn");
+      }
+    });
+  };
+
   document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector("header.site nav");
     const isExercise = !!document.getElementById("exercise");
-    if (!inClass()) return;                 // the name chip and banner are for class students only
+    if (!inClass()) { flush(); return; }    // (queued problem reports) the name chip and banner are for class students only
     if (nav && isExercise) {
       const chip = document.createElement("button");
       chip.type = "button";

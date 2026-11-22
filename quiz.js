@@ -878,6 +878,11 @@
     const bCheck = el("button", { type: "button" }, "Check answers");
     bar.append(status, bReset, bShow, bCheck);
     root.appendChild(bar);
+    if (window.c1Report) {   // log.js: anyone can report a mistake in this set
+      const rep = el("p", { class: "report-line" }, 'Something wrong in this set? <button type="button" class="linkish">Report a problem</button>');
+      rep.querySelector("button").addEventListener("click", () => window.c1Report({ set: setIndex + 1, title: opt.logTitle || EX.textTitle || "", part: opt.logPart || "" }));
+      root.appendChild(rep);
+    }
 
     const pageKey = opt.pageKey || "";
     let isChecked = false;   // the set is showing its marks
