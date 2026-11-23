@@ -16,12 +16,16 @@
       "/b2",
       "/c2",
       "/kids",
+      "/grammar",
       "/a1/",
       "/a2/",
       "/b1/",
       "/b2/",
       "/c2/",
-      "/kids/"
+      "/kids/",
+      "/grammar/",
+      "/class",
+      "/class/"
     ]
   }
 }

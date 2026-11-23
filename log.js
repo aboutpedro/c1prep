@@ -51,6 +51,7 @@
       const v = input.value.trim().replace(/\s+/g, " ");
       if (v.length < 2) { input.focus(); return; }
       ls.set(NAME_KEY, v);
+      document.dispatchEvent(new Event("c1class"));   // theme.js: the class mode button
       wrap.classList.add("out");
       setTimeout(() => wrap.remove(), 250);
       paintNameChips();

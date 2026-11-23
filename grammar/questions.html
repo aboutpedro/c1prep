@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-site>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questions: explanation and exercises from A1 to B2 · Future Perfect English</title>
+<meta name="description" content="Questions explained in plain English, with exercises that mark themselves at every level from A1 to B2. Free practice, with every answer explained.">
+<link rel="canonical" href="https://futureperfectenglish.com/grammar/questions.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Future Perfect English">
+<meta property="og:title" content="Questions: explanation and exercises from A1 to B2 · Future Perfect English">
+<meta property="og:description" content="Questions explained in plain English, with exercises that mark themselves at every level from A1 to B2. Free practice, with every answer explained.">
+<meta property="og:url" content="https://futureperfectenglish.com/grammar/questions.html">
+<meta property="og:image" content="https://futureperfectenglish.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Future Perfect English: English practice from A1 to C2, with the FP logo and the six level logos.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../fp-icon.ico?v=2" sizes="16x16 32x32 48x48">
+<link rel="icon" href="../fp-icon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../fp-apple-touch-icon.png?v=2">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preload" href="../fonts/inter-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../style.css?v=21">
+<script src="../theme.js?v=11"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="site"><a class="brand" href="../">Future Perfect English</a></header>
+
+  <p class="kicker"><a href="./">Grammar A–Z</a></p>
+  <h1>Questions</h1>
+  <p class="lead">A short explanation, then exercises from A1 to B2. Each exercise page has 5 sets of 10 sentences, a grammar guide, and every answer explained.</p>
+  <div class="guide topic-guide">
+  <section class="card guide-sec topic-intro">
+    <p class="guide-intro">In most questions, the auxiliary (<i>do, be, have, can</i>…) comes before the subject. When <i>who</i> or <i>what</i> is the subject, there is no <i>do</i>. Indirect questions and question tags are used to be polite or to check something.</p>
+    <ul class="ex">
+    <li>Where <b>do</b> you <b>live</b>?</li>
+    <li><b>Who called</b> you?</li>
+    <li>It’s cold, <b>isn’t it</b>?</li>
+    </ul>
+  </section>
+  </div>
+
+  <h2>Practise at your level</h2>
+  <div class="level-cards topic-levels">
+    <a href="../a1/grammar-7.html" data-level="a1"><img src="../a1/favicon.svg?v=2" alt="" width="48" height="48"><span><span class="lc-name">A1 Beginner</span><span class="lc-title">Present simple: questions</span><span class="lc-desc">Do or Does? · With question words</span></span></a>
+    <a href="../a1/grammar-8.html" data-level="a1"><img src="../a1/favicon.svg?v=2" alt="" width="48" height="48"><span><span class="lc-name">A1 Beginner</span><span class="lc-title">Question words</span><span class="lc-desc">The question words · How + another word</span></span></a>
+    <a href="../a2/grammar-8.html" data-level="a2"><img src="../a2/favicon.svg?v=2" alt="" width="48" height="48"><span><span class="lc-name">A2 Elementary</span><span class="lc-title">Question forms</span><span class="lc-desc">Yes/no questions · Wh- questions · Who and what as the subject</span></span></a>
+    <a href="../b1/grammar-11.html" data-level="b1"><img src="../b1/favicon.svg?v=2" alt="" width="48" height="48"><span><span class="lc-name">B1 Intermediate</span><span class="lc-title">Question tags and indirect questions</span><span class="lc-desc">Question tags · Indirect questions</span></span></a>
+    <a href="../b2/grammar-15.html" data-level="b2"><img src="../b2/favicon.svg?v=2" alt="" width="48" height="48"><span><span class="lc-name">B2 First</span><span class="lc-title">Questions</span><span class="lc-desc">Indirect questions · Question tags · Question words and prepositions · Short answers, so and neither</span></span></a>
+  </div>
+  <p class="topic-back"><a href="./">All grammar topics</a></p>
+
+  <footer class="site-foot">
+    <p class="foot-links"><a href="../">All levels</a><a href="../search.html">Search</a><a href="../placement.html">Level test</a><a href="../about.html">About</a><a href="../terms.html">Terms</a><a href="../privacy.html">Privacy</a></p>
+    <p class="legal">Not affiliated with or endorsed by Cambridge University Press &amp; Assessment. A2 Key, B1 Preliminary, B2 First, C1 Advanced and C2 Proficiency (formerly KET, PET, FCE, CAE and CPE) are trademarks of Cambridge University Press &amp; Assessment.</p>
+  </footer>
+</div>
+<script>
+/* Topic page: mark the level from this browser's level test result, or else the level used last. */
+(function () {
+  "use strict";
+  const read = (k) => { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } };
+  let code = (read("c1prep-placement") || {}).code || "";
+  if (!code) {
+    let best = 0;
+    const R = read("c1p:r") || {};
+    Object.keys(R).forEach((pk) => {
+      const s = (R[pk] && R[pk].s) || {};
+      Object.keys(s).forEach((n) => { const t = s[n] && s[n][4]; if (t > best) { best = t; code = pk.split("/")[0]; } });
+    });
+  }
+  const card = code && document.querySelector('.topic-levels a[data-level="' + code + '"]');
+  if (!card) return;
+  card.classList.add("suggested");
+  card.querySelector(".lc-name").insertAdjacentHTML("beforeend", '<span class="lc-badge">Your level</span>');
+})();
+</script>
+</body>
+</html>

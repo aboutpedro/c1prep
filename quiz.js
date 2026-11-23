@@ -3,12 +3,67 @@
    The set shown is chosen with the set menu at the top, or with #set-N in the URL.
    Answers are saved as they are typed and finished sets are remembered (progress.js).
    Exam mode and "My weak spots" build single sets themselves with window.c1Quiz.build().
-   Listening pages (type "listening") use the audio player below and drag-and-drop matching; listening.css styles them. */
+   Listening pages (type "listening") use the audio player below and drag-and-drop matching; listening.css styles them.
+   Grammar pages also get their topic from topics.js: a link to the topic at every level, and the level up / level down after a set. */
 (function () {
   "use strict";
   const SETS = window.SETS || (window.EX ? [window.EX] : null);
   const host = document.getElementById("exercise");
   const store = window.c1Store || null;
+
+  /* Grammar topics (topics.js, written by generator/topics.py). On a level's grammar page: a link under the title to
+     the topic at every level, and after a set is checked, the same topic one level up and one level down (never further). */
+  const SITE = new URL(".", document.currentScript ? document.currentScript.src : location.href);
+  const gKey = (() => {
+    const p = location.pathname, base = SITE.pathname;
+    const m = p.indexOf(base) === 0 && p.slice(base.length).match(/^(?:(a1|a2|b1|b2|c2)\/)?grammar-(\d+)\.html$/);
+    return m ? (m[1] || "c1") + ":" + m[2] : "";
+  })();
+  let topics = null;
+  const onTopics = [];
+  if (gKey && SETS && host) {
+    const s = document.createElement("script");
+    s.src = new URL("topics.js", SITE).href;
+    s.onload = () => {
+      topics = window.FPTOPICS && window.FPTOPICS.p[gKey] ? window.FPTOPICS : null;
+      if (topics) { topicLink(); onTopics.splice(0).forEach((f) => f()); }
+    };
+    document.head.appendChild(s);
+  }
+  const siteHref = (path) => new URL(path, SITE).href;
+  const topicHref = (slug) => siteHref("grammar/" + slug + ".html");
+  function topicLink() {
+    const slug = topics.p[gKey][0], t = topics.t[slug], h1 = document.querySelector("h1");
+    if (!h1 || t[1] < 2) return;
+    const p = el("p", { class: "topic-link" }, '<a href="' + topicHref(slug) + '">' + esc(t[0]) + " at every level</a>");
+    h1.after(p);
+  }
+  /* After a set is checked: the page with the same topic one level up and one level down, if the topic is there.
+     A score of 80% or more puts the level up first; a lower one puts the level down first. */
+  function nextLevels(root, after, r) {
+    const old = root.querySelector(".next-levels");
+    if (old) old.remove();
+    if (!topics) { if (gKey) onTopics.push(() => { if (root.isConnected && root.querySelector(".score").textContent) nextLevels(root, after, r); }); return; }
+    const [slug, up, down] = topics.p[gKey];
+    if (!up && !down) return;
+    const good = r.total > 0 && r.right / r.total >= 0.8;
+    const card = (k, dir) => {
+      const lv = k.split(":")[0], L = topics.l[lv];
+      return '<a href="' + siteHref(L[1] + "grammar-" + k.split(":")[1] + ".html") + '" data-level="' + lv + '">' +
+        '<img src="' + siteHref(L[1] + "favicon.svg?v=" + topics.i) + '" alt="" width="40" height="40">' +
+        '<span><span class="nl-k">' + (dir > 0 ? "One level up" : "One level down") + " · " + esc(L[0]) + "</span>" +
+        '<span class="nl-t">' + esc(topics.n[k] || "") + "</span></span></a>";
+    };
+    const links = good ? [up && card(up, 1), down && card(down, -1)] : [down && card(down, -1), up && card(up, 1)];
+    const head = good && up ? "Good score! Ready to try this topic one level up?"
+      : !good && down ? "Want more practice? Try this topic one level down, then come back."
+      : "Practise this topic at another level";
+    const box = el("div", { class: "next-levels" },
+      '<p class="nl-head">' + head + "</p>" +
+      '<div class="nl-links">' + links.filter(Boolean).join("") + "</div>" +
+      '<p class="nl-topic"><a href="' + topicHref(slug) + '">' + esc(topics.t[slug][0]) + " at every level</a></p>");
+    after.after(box);
+  }
 
   const LETTERS = "ABCDEFGHIJ";
   const norm = (s) => String(s || "")
@@ -182,7 +237,7 @@
       bNext.disabled = idx === SETS.length - 1;
       root.innerHTML = "";
       root.classList.remove("set-enter"); void root.offsetWidth; root.classList.add("set-enter");
-      build(SETS[idx], root, idx, { sets: SETS, pageKey: pageKey, label: label, onRecord: paintPicker });
+      build(SETS[idx], root, idx, { sets: SETS, pageKey: pageKey, label: label, onRecord: paintPicker, nextLevels: !!gKey });
     }
   }
 
@@ -1134,6 +1189,7 @@
       if (window.c1RequireName && !window.c1RequireName(() => bCheck.click())) return;
       const r = ctrl.mark();
       showScore(r, false);
+      if (opt.nextLevels) nextLevels(root, bar, r);
       isChecked = true;
       if (store && !peeked && !counted) {
         counted = true;
@@ -1169,6 +1225,7 @@
       if (opt.onNew) { opt.onNew(); return; }
       ctrl.reset();
       score.textContent = "";
+      if (root.querySelector(".next-levels")) root.querySelector(".next-levels").remove();
       score.classList.remove("bump", "perfect");
       isChecked = counted = peeked = false;
       if (store && pageKey) store.dropDraft(pageKey, setIndex);
@@ -1182,7 +1239,7 @@
       if (d) {
         restoring = true;
         const ok = ctrl.restore(d.v);
-        if (ok && d.c) { const r = ctrl.mark(); showScore(r, true); isChecked = counted = true; lastSig = logSig(r); }
+        if (ok && d.c) { const r = ctrl.mark(); showScore(r, true); if (opt.nextLevels) nextLevels(root, bar, r); isChecked = counted = true; lastSig = logSig(r); }
         restoring = false;
         if (!ok) store.dropDraft(pageKey, setIndex);
       }

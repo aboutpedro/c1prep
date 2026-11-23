@@ -1,7 +1,8 @@
 /* C1 Prep: level test (placement.html).
    Six parts of 8 questions, one per level from A1 to C2, each harder than the last. A part with 6 or more
    right opens the next one; the test ends at the first part with fewer, and suggests that part's level
-   (C2 when every part is passed). Nothing is sent anywhere: the result stays in this browser. */
+   (C2 when every part is passed). The result stays in this browser; for class students (log.js) it also goes to
+   the teacher's results sheet, like a finished set. */
 (function () {
   "use strict";
   const KEY = "c1prep-placement";
@@ -109,6 +110,7 @@
     let answers = [];   // answers[part][i] = option index chosen (0 = right)
     let part = 0;
     let prevLink = null;
+    let startedAt = Date.now();
 
     function scrollUp() {
       const y = host.getBoundingClientRect().top + window.scrollY - 90;
@@ -212,7 +214,24 @@
       const passedAll = scores[last] >= PASS;       // only possible after the last part
       const idx = passedAll ? LEVELS.length - 1 : last;
       const lv = LEVELS[idx];
-      ls.set(KEY, { code: lv.code, at: Date.now(), scores: scores });
+      const before = ls.get(KEY);
+      const tries = ((before && before.tries) || (before ? 1 : 0)) + 1;
+      ls.set(KEY, { code: lv.code, at: Date.now(), scores: scores, tries: tries });
+      // Class students: the result goes to the teacher (log.js sends nothing for anyone else).
+      if (window.c1Log) {
+        const mistakes = [];
+        answers.forEach((a, p) => PARTS[p].forEach((it, i) => {
+          if (a[i] !== 0) mistakes.push({ n: p * PER + i + 1, given: a[i] == null ? "" : it.o[a[i]], correct: it.o[0] });
+        }));
+        window.c1Log({
+          part: "Level test",
+          set: 1,
+          title: "Suggested level: " + lv.name + " · " + scores.map((s, i) => LEVELS[i].code.toUpperCase() + " " + s + "/" + PER).join(", "),
+          score: scores.reduce((a, b) => a + b, 0), max: scores.length * PER,
+          mistakes: mistakes, attempt: tries, revealed: false,
+          seconds: Math.round((Date.now() - startedAt) / 1000)
+        });
+      }
       if (prevLink) { prevLink.remove(); prevLink = null; }
 
       host.innerHTML = "";
@@ -227,7 +246,7 @@
       const acts = el("div", { class: "cta-actions" });
       acts.appendChild(el("a", { class: "btn", href: lv.href }, "Go to " + esc(lv.name)));
       const again = el("button", { type: "button", class: "secondary" }, "Take the test again");
-      again.addEventListener("click", () => { answers = []; part = 0; showPart(); scrollUp(); });
+      again.addEventListener("click", () => { answers = []; part = 0; startedAt = Date.now(); showPart(); scrollUp(); });
       acts.appendChild(again);
       card.appendChild(acts);
       if (!passedAll && last > 0 && scores[last] <= 3) {

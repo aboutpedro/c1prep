@@ -11,8 +11,8 @@
 <link rel="apple-touch-icon" href="fp-apple-touch-icon.png?v=2">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="preload" href="fonts/inter-latin.woff2?v=1" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=19">
-<script src="theme.js?v=10"></script>
+<link rel="stylesheet" href="style.css?v=21">
+<script src="theme.js?v=11"></script>
 </head>
 <body>
 <div class="wrap">
@@ -54,6 +54,7 @@
       const v = input.value.trim().replace(/\s+/g, " ");
       if (v.length < 2) { host.querySelector("#cl-msg").textContent = "Please type your name."; input.focus(); return; }
       try { localStorage.setItem(NAME, v); } catch (err) {}
+      document.dispatchEvent(new Event("c1class"));
       joined(true);
     });
     input.focus();
@@ -69,6 +70,7 @@
     host.querySelector("#cl-change").addEventListener("click", () => joinForm(get(), "Save my name"));
     host.querySelector("#cl-leave").addEventListener("click", () => {
       try { localStorage.removeItem(NAME); localStorage.removeItem(QUEUE); } catch (e) {}
+      document.dispatchEvent(new Event("c1class"));
       left();
     });
   }

@@ -1,4 +1,4 @@
-/* C1 Prep: light/dark toggle, themes menu, header (logo, level buttons, back link) and confetti. Loaded in <head>. */
+/* C1 Prep: light/dark toggle, themes menu, class mode button, header (logo, level buttons, back link) and confetti. Loaded in <head>. */
 (function () {
   "use strict";
   const KEY = "c1prep-theme";
@@ -96,6 +96,29 @@
     });
     document.addEventListener("c1skin", paint);
     return b;
+  }
+
+  // Class mode button, next to the themes: opens class.html (join, change the name, or leave). Lit up while this
+  // browser is in a class (the name log.js reads); class.html sends "c1class" when that changes.
+  const CLASS = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c.6-3.3 3-5.2 6-5.2s5.4 1.9 6 5.2"/><path d="M15.5 4.9a3.2 3.2 0 0 1 0 6.2M17.6 14.6c1.8.7 3 2.4 3.4 4.9"/></svg>';
+  function makeClassBtn() {
+    const a = document.createElement("a");
+    a.className = "icon-btn class-btn";
+    a.href = new URL("class.html", SITE).href;
+    a.innerHTML = CLASS + '<span class="skin-dot" aria-hidden="true"></span>';
+    if (new URL(a.href).pathname === location.pathname) a.setAttribute("aria-current", "page");
+    const paint = () => {
+      let n = "";
+      try { n = (localStorage.getItem("c1prep-name") || "").trim(); } catch (e) {}
+      a.classList.toggle("on", !!n);
+      const t = n ? "Class mode: you’re in as " + n : "Class mode: join your teacher’s class";
+      a.title = t;
+      a.setAttribute("aria-label", t);
+    };
+    paint();
+    document.addEventListener("c1class", paint);
+    window.addEventListener("storage", (e) => { if (!e.key || e.key === "c1prep-name") paint(); });
+    return a;
   }
 
   // Themes button: a menu of every theme, next to light/dark mode.
@@ -278,6 +301,6 @@
       kicker.before(back);
     }
 
-    nav.append(makeSkinPicker(), makeToggle());
+    nav.append(makeClassBtn(), makeSkinPicker(), makeToggle());
   });
 })();
