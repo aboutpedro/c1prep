@@ -77,7 +77,7 @@ sticky action bar, dialog and toast. Everything else is flat with a 1px border.
 ## Components
 
 - **Header**: sticky, 60px, full-width surface with bottom border. Brand (level
-  icon + name) on the left; name chip, back link, Themes button and theme toggle on the right.
+  icon + name, a link to the site's front page from every page) on the left; name chip, back link, Themes button and theme toggle on the right.
 - **Themes menu** (theme.js): a palette button left of light/dark mode opens a menu of
   every theme (Default first), each with three colour dots and a tick on the current
   one. Arrow keys, Home/End, Enter and Escape work; clicking outside closes it. When a
