@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "say or tell?",
-  intro: "Choose the correct option. Remember: tell + person, say (+ to + person).",
+  intro: "Choose the correct option or write the missing words. Remember: tell + person, say (+ to + person).",
   items: [
     { s: "She ___ me she was tired.", options: ["said", "told"], answer: 1,
       explain: "There's a person after the verb (me), so we use told." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Don't ___ anyone about the party! It's a surprise.", options: ["say", "tell"], answer: 1,
       explain: "tell + person: Don't tell anyone." },
     { s: "\"Good morning,\" she ___ with a smile.", options: ["said", "told"], answer: 0,
-      explain: "To introduce someone's exact words, we use said." }
+      explain: "To introduce someone's exact words, we use said." },
+    { s: "Could you ___ me your address?", answers: ["tell", "give", "send"],
+      explain: "tell + person + information." },
+    { s: "She ___ goodbye and left.", answers: ["said"],
+      explain: "say goodbye (no person after it)." },
+    { s: "He ___ a funny joke at dinner.", answers: ["told"],
+      explain: "tell a joke." },
+    { s: "I didn't ___ anything to her.", answers: ["say"],
+      explain: "say something to someone." },
+    { s: "Did you ___ the truth?", answers: ["tell"],
+      explain: "tell the truth." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Reported statements: the tense moves back",
-  intro: "Complete the reported sentences. Move the verb one step back into the past.",
+  intro: "Choose the correct option or complete the reported sentences. Move the verb one step back into the past.",
   items: [
     { s: "\"I'm tired,\" said Ana. → Ana said she ___ tired.", answers: ["was"],
       explain: "am → was." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "\"I don't like spicy food,\" said Kate. → Kate said she ___ spicy food.", answers: ["didn't like", "did not like"],
       explain: "don't like → didn't like." },
     { s: "\"I have to work on Saturday,\" said my dad. → My dad said he ___ work on Saturday.", answers: ["had to"],
-      explain: "have to → had to." }
+      explain: "have to → had to." },
+    { s: "\"I'm hungry,\" said Tom. → Tom said he ___ hungry.", options: ["was", "is", "has been"], answer: 0,
+      explain: "Present → past: am → was." },
+    { s: "\"We don't know the answer,\" they said. → They said they ___ the answer.", options: ["didn't know", "don't know", "hadn't knew"], answer: 0,
+      explain: "don't know → didn't know." },
+    { s: "\"I've finished,\" she said. → She said she ___.", options: ["had finished", "has finished", "finished had"], answer: 0,
+      explain: "have finished → had finished." },
+    { s: "\"I'll help you,\" he said. → He said he ___ me.", options: ["would help", "will help", "helps"], answer: 0,
+      explain: "will → would." },
+    { s: "\"I'm working tonight,\" Ana said. → Ana said she ___ that night.", options: ["is working", "worked tonight", "was working"], answer: 2,
+      explain: "am working → was working; tonight → that night." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Reported questions",
-  intro: "Choose the correct option. In reported questions, the subject comes before the verb and there's no do, does or did.",
+  intro: "Choose the correct option or write the missing words. In reported questions, the subject comes before the verb and there's no do, does or did.",
   items: [
     { s: "\"Where do you live?\" → She asked me where ___.", options: ["I lived", "did I live", "I did live"], answer: 0,
       explain: "Normal word order (I lived) and no did: She asked me where I lived." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "\"How old is your brother?\" → They asked me how old ___.", options: ["my brother was", "was my brother", "is my brother"], answer: 0,
       explain: "Subject (my brother) before the verb: how old my brother was." },
     { s: "\"Will you be at the party?\" → Tom asked ___ at the party.", options: ["if I would be", "would I be", "if would I be"], answer: 0,
-      explain: "if + subject + would: Tom asked if I would be at the party." }
+      explain: "if + subject + would: Tom asked if I would be at the party." },
+    { s: "\"Where are you going?\" → She asked me where ___.", answers: ["I was going"],
+      explain: "Normal word order, tense back: I was going." },
+    { s: "\"Do you speak English?\" → He asked me ___ English.", answers: ["if I spoke", "whether I spoke"],
+      explain: "Yes/no question → if + normal word order." },
+    { s: "\"What's your name?\" → The teacher asked me what ___.", answers: ["my name was"],
+      explain: "Normal word order: my name was." },
+    { s: "\"Have you been to Rome?\" → She asked me ___ to Rome.", answers: ["if I had been", "whether I had been", "if I'd been"],
+      explain: "if + had been." },
+    { s: "\"When will you arrive?\" → They asked when ___.", answers: ["I would arrive", "we would arrive"],
+      explain: "will → would, normal word order." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Requests and orders",
-  intro: "Complete the reported sentences with to or not to and a verb.",
+  intro: "Choose the correct option or complete the reported sentences with to or not to and a verb.",
   items: [
     { s: "\"Please sit down,\" she said to us. → She asked us ___ down.", answers: ["to sit"],
       explain: "ask + person + to + verb: She asked us to sit down." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "\"Don't forget your passport,\" Dad said to me. → Dad told me ___ my passport.", answers: ["not to forget"],
       explain: "Negative instruction: told me not to forget." },
     { s: "\"Turn off your phones,\" the teacher said to the class. → The teacher told the class ___ their phones.", answers: ["to turn off", "to switch off"],
-      explain: "An order: told the class to turn off their phones." }
+      explain: "An order: told the class to turn off their phones." },
+    { s: "\"Please be quiet,\" the librarian said. → The librarian asked us ___ quiet.", options: ["be", "being", "to be"], answer: 2,
+      explain: "ask + person + to-infinitive." },
+    { s: "\"Don't run!\" the teacher said. → The teacher told us ___.", options: ["don't run", "not to run", "to not running"], answer: 1,
+      explain: "tell + person + not to + verb." },
+    { s: "\"Can you lend me ten euros?\" my friend said. → My friend asked me ___ him ten euros.", options: ["lend", "to lend", "lending"], answer: 1,
+      explain: "ask + person + to + verb." },
+    { s: "\"Stop talking!\" she said to the boys. → She told the boys ___ talking.", options: ["stop", "to stop", "stopping"], answer: 1,
+      explain: "tell + person + to + verb." },
+    { s: "\"Don't worry,\" he said to me. → He told me ___.", options: ["not to worry", "don't worry", "not worry"], answer: 0,
+      explain: "tell + person + not to + verb." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Mixed practice",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "\"I'll see you tomorrow.\" → She ___ she would see me the next day.", options: ["said", "told", "said me"], answer: 0,
       explain: "No person after the verb, so said. (Told needs a person: told me; said me is wrong.)" },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "\"I'm going to buy a new car.\" → My neighbour said he ___ buy a new car.", options: ["was going to", "is going", "was going"], answer: 0,
       explain: "am going to → was going to (don't forget to before the verb)." },
     { s: "\"What did you buy?\" → My mum asked me what ___.", options: ["I had bought", "had I bought", "did I buy"], answer: 0,
-      explain: "Normal word order, no did, and bought → had bought: what I had bought." }
+      explain: "Normal word order, no did, and bought → had bought: what I had bought." },
+    { s: "\"I'm feeling ill,\" she said. → She said she ___ ill.", answers: ["was feeling", "felt"],
+      explain: "am feeling → was feeling." },
+    { s: "\"Did you enjoy the film?\" → He asked me ___ the film.", answers: ["if I had enjoyed", "whether I had enjoyed", "if I'd enjoyed"],
+      explain: "Yes/no question: if + past perfect." },
+    { s: "\"Please wait outside,\" the doctor said. → The doctor asked me ___ outside.", answers: ["to wait"],
+      explain: "ask + person + to + verb." },
+    { s: "\"We can't come,\" they said. → They said they ___ come.", answers: ["couldn't"],
+      explain: "can't → couldn't." },
+    { s: "\"I'll phone you tomorrow,\" she said. → She said she would phone me the ___ day.", answers: ["next", "following"],
+      explain: "tomorrow → the next day." }
   ]
 }
 ];

@@ -139,5 +139,34 @@ window.SETS = [
     { s: "She's on a ___ because she wants to lose weight.", answers: ["diet"],
       explain: "be on a diet." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Food and diet",
+  intro: "Complete the sentences with the words in the box. There are two words you don't need.",
+  bank: ["allergy", "homemade", "ingredients", "nutritious", "portions", "processed", "recipe", "snack", "starving", "takeaway", "vegan", "vegetarian"],
+  items: [
+    { s: "She doesn't eat meat or fish – she's ___.", answers: ["vegetarian"],
+      explain: "vegetarian = doesn't eat meat or fish." },
+    { s: "He doesn't eat any animal products, not even eggs or milk. He's ___.", answers: ["vegan"],
+      explain: "vegan = doesn't eat or use any animal products." },
+    { s: "Mix all the ___ together in a large bowl.", answers: ["ingredients"],
+      explain: "ingredients = the foods you use to make a dish." },
+    { s: "The restaurant serves huge ___ – I couldn't finish mine.", answers: ["portions"],
+      explain: "a portion = the amount of food for one person." },
+    { s: "I had a quick ___ between lunch and dinner – just an apple.", answers: ["snack"],
+      explain: "a snack = a small amount of food between meals." },
+    { s: "I haven't eaten anything since breakfast. I'm ___!", answers: ["starving"],
+      explain: "starving (informal) = very hungry." },
+    { s: "___ food, like crisps and ready meals, often contains a lot of salt.", answers: ["processed"],
+      explain: "processed food = food changed in a factory." },
+    { s: "Nothing beats ___ bread, straight out of your own oven.", answers: ["homemade"],
+      explain: "homemade = made at home, not bought." },
+    { s: "Lentils are cheap and very ___.", answers: ["nutritious"],
+      explain: "nutritious = full of things your body needs." },
+    { s: "We couldn't be bothered to cook, so we ordered a ___.", answers: ["takeaway"],
+      explain: "a takeaway = a meal you buy from a restaurant to eat at home." }
+  ]
 }
 ];

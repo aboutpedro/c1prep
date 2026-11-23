@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Imperatives",
-  intro: "Choose the correct verb. To tell somebody what to do, we use the verb with no subject: Sit down. Open your books.",
+  intro: "Choose or write the correct verb. To tell somebody what to do, we use the verb with no subject: Sit down. Open your books.",
   items: [
     { s: "___ the window, please. It's hot.", options: ["Open", "Opens", "To open"], answer: 0,
       explain: "Instruction: the verb with no subject: Open." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "___ a seat. The doctor is busy.", options: ["Take", "Takes", "Taking"], answer: 0,
       explain: "A polite instruction: Take a seat (= sit down)." },
     { s: "___ me tomorrow!", options: ["Call", "Calls", "Calling"], answer: 0,
-      explain: "Instruction: Call me." }
+      explain: "Instruction: Call me." },
+    { s: "___ the door, please. (close)", answers: ["Close"],
+      explain: "Instructions: the verb, no subject." },
+    { s: "___ your hands before you eat. (wash)", answers: ["Wash"],
+      explain: "Instruction: Wash…" },
+    { s: "___ up, please. (stand)", answers: ["Stand"],
+      explain: "Instruction: Stand up." },
+    { s: "___ your books on the desk. (put)", answers: ["Put"],
+      explain: "Instruction: Put…" },
+    { s: "___ a nice day! (have)", answers: ["Have"],
+      explain: "A nice wish uses an instruction too: Have a nice day!" }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Don't…",
-  intro: "Make the instruction negative. Write Don't + verb.",
+  intro: "Make the instruction negative: choose the correct option or write Don't + verb.",
   items: [
     { s: "___ (touch) that! It's hot.", answers: ["Don't touch"],
       explain: "Negative instruction: Don't + verb." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ (be) sad.", answers: ["Don't be"],
       explain: "Negative instruction with be: Don't be sad." },
     { s: "___ (use) your phone in class.", answers: ["Don't use"],
-      explain: "Don't + verb." }
+      explain: "Don't + verb." },
+    { s: "___ worry. I can help you.", options: ["Don't", "Not", "No"], answer: 0,
+      explain: "Negative instruction: Don't + verb." },
+    { s: "Don't ___ the door!", options: ["open", "opens", "to open"], answer: 0,
+      explain: "Don't + verb (no -s, no to)." },
+    { s: "___ late tomorrow!", options: ["Don't be", "Don't", "Not be"], answer: 0,
+      explain: "With be: Don't be late." },
+    { s: "___ eat in class, please.", options: ["Don't", "Doesn't", "Not"], answer: 0,
+      explain: "Instructions always use Don't." },
+    { s: "Please don't ___ loud. The baby's sleeping.", options: ["be", "are", "is"], answer: 0,
+      explain: "Don't + be." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Let's",
-  intro: "Choose the correct option. We use Let's + verb for an idea for you and me: Let's go!",
+  intro: "Choose the correct option or write the missing words. We use Let's + verb for an idea for you and me: Let's go!",
   items: [
     { s: "I'm hungry. ___ something.", options: ["Let's eat", "Let's to eat", "Let's eating"], answer: 0,
       explain: "Let's + verb: Let's eat." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The test is tomorrow. ___ study together.", options: ["Let's", "Let's to", "Lets to"], answer: 0,
       explain: "Let's + verb." },
     { s: "___ tell Mum. It's a surprise!", options: ["Let's not", "Let's no", "Not let's"], answer: 0,
-      explain: "Negative: Let's not." }
+      explain: "Negative: Let's not." },
+    { s: "It's hot. ___ go swimming!", answers: ["Let's"],
+      explain: "An idea for you and me: Let's + verb." },
+    { s: "I'm bored. Let's ___ a game. (play)", answers: ["play"],
+      explain: "Let's + verb (no to)." },
+    { s: "It's late. Let's ___ out. (not / go)", answers: ["not go"],
+      explain: "Negative: Let's not + verb." },
+    { s: "___ a party on Saturday! (have)", answers: ["Let's have"],
+      explain: "Let's + have." },
+    { s: "Let's ___ at six. (meet)", answers: ["meet"],
+      explain: "Let's + meet." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "would like",
-  intro: "Choose the correct option. I'd like = I want (more polite). Would you like…? = Do you want…?",
+  intro: "Choose the correct option or write the missing words. I'd like = I want (more polite). Would you like…? = Do you want…?",
   items: [
     { s: "___ a coffee, please.", options: ["I'd like", "I like", "I'm like"], answer: 0,
       explain: "To ask politely for something: I'd like." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "___ chocolate? – Yes, I love it!", options: ["Do you like", "Would you like", "Are you like"], answer: 0,
       explain: "The answer \"I love it\" is about liking in general: Do you like…?" },
     { s: "Would you like a sandwich? – No, ___. I'm not hungry.", options: ["thank you", "I wouldn't like", "I don't"], answer: 0,
-      explain: "A polite no: No, thank you." }
+      explain: "A polite no: No, thank you." },
+    { s: "I'd ___ a sandwich, please.", answers: ["like", "love"],
+      explain: "I'd like = I want (polite)." },
+    { s: "Would you like ___ come with us?", answers: ["to"],
+      explain: "would like + to + verb." },
+    { s: "___ you like some juice?", answers: ["Would"],
+      explain: "Offer: Would you like…?" },
+    { s: "What would you like to ___? – A coffee, please. (drink)", answers: ["drink"],
+      explain: "would like to + verb." },
+    { s: "I'd like ___ to Japan one day. (go)", answers: ["to go"],
+      explain: "would like + to go." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Mixed: instructions, let's and would like",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "___ you like a cup of tea? – Yes, please.", answers: ["Would"],
       explain: "Would you like…?" },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "___ down, please.", answers: ["Sit"],
       explain: "Instruction: Sit down." },
     { s: "Would you like ___ more tea?", answers: ["some", "any"],
-      explain: "In offers we use some: Would you like some more tea?" }
+      explain: "In offers we use some: Would you like some more tea?" },
+    { s: "___ your books, please.", options: ["Open", "Opening", "To open"], answer: 0,
+      explain: "Instruction: the verb only." },
+    { s: "___ go to the beach! It's sunny.", options: ["Let's", "Let", "Lets"], answer: 0,
+      explain: "An idea: Let's (with ')." },
+    { s: "Would you like ___ tea?", options: ["some", "a", "an"], answer: 0,
+      explain: "Offering a drink: some tea." },
+    { s: "I'd like ___ a ticket, please.", options: ["to buy", "buy", "buying"], answer: 0,
+      explain: "would like + to + verb." },
+    { s: "___ shout! I can hear you.", options: ["Don't", "Not", "No"], answer: 0,
+      explain: "Negative instruction: Don't + verb." }
   ]
 }
 ];

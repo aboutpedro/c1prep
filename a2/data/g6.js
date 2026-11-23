@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "can, can't, could, couldn't",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "My little brother ___ read yet. He's only four.", options: ["can't", "couldn't", "can"], answer: 0,
       explain: "Can't = not able to now. 'Yet' and 'he's only four' show we are talking about the present." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Sorry, I ___ come to your party on Saturday. I'm working.", options: ["can't", "couldn't", "don't"], answer: 0,
       explain: "Can't for the present or the future: I'm not able to come on Saturday." },
     { s: "We ___ see the sea from our hotel room. It was beautiful.", options: ["could", "can", "couldn't"], answer: 0,
-      explain: "'It was beautiful' shows we are in the past: could." }
+      explain: "'It was beautiful' shows we are in the past: could." },
+    { s: "When I was young, I ___ run very fast. Now I can't.", answers: ["could"],
+      explain: "Ability in the past: could." },
+    { s: "Sorry, I ___ hear you. Can you speak louder?", answers: ["can't", "couldn't"],
+      explain: "Not able now: can't." },
+    { s: "She ___ play the guitar very well. She practises every day.", answers: ["can"],
+      explain: "Ability now: can." },
+    { s: "We ___ get tickets for the concert. They were sold out.", answers: ["couldn't"],
+      explain: "Not able in the past: couldn't." },
+    { s: "___ you lend me your bike tomorrow?", answers: ["Can", "Could"],
+      explain: "A request: Can you…? / Could you…?" }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "must, mustn't, have to, don't have to",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "You ___ wear a seatbelt in the car. It's the law.", options: ["have to", "don't have to", "mustn't"], answer: 0,
       explain: "Have to = it's necessary (here, because of a rule or law)." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "My dad ___ travel a lot for his job.", options: ["has to", "have to", "must to"], answer: 0,
       explain: "He/she/it + has to. We never say 'must to'." },
     { s: "We ___ hurry. The film doesn't start for another hour.", options: ["don't have to", "mustn't", "have to"], answer: 0,
-      explain: "There's lots of time, so it isn't necessary to hurry: don't have to." }
+      explain: "There's lots of time, so it isn't necessary to hurry: don't have to." },
+    { s: "It's a holiday tomorrow, so you ___ go to school.", answers: ["don't have to"],
+      explain: "Not necessary: don't have to." },
+    { s: "You ___ talk in the library. People are studying.", answers: ["mustn't", "can't"],
+      explain: "Not allowed: mustn't." },
+    { s: "My mum ___ wear a uniform at work.", answers: ["has to"],
+      explain: "A rule for her: has to (she)." },
+    { s: "Do you ___ work on Saturdays?", answers: ["have to"],
+      explain: "Question: Do you have to…?" },
+    { s: "You ___ pay for the bus. Children travel free.", answers: ["don't have to"],
+      explain: "Not necessary: don't have to." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "should and shouldn't",
-  intro: "Complete the sentences with should or shouldn't and the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with should or shouldn't and the verbs in brackets.",
   items: [
     { s: "You look tired. You ___ (go) to bed early tonight.", answers: ["should go"],
       explain: "Should + verb = it's a good idea (advice)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "What ___ (we / do) this weekend?", answers: ["should we do"],
       explain: "Question: What + should + we + do?" },
     { s: "You ___ (drink) more water when it's hot.", answers: ["should drink"],
-      explain: "Advice: should + verb (no to: not 'should to drink')." }
+      explain: "Advice: should + verb (no to: not 'should to drink')." },
+    { s: "It's late. We ___ go home now.", options: ["shouldn't", "should", "should to"], answer: 1,
+      explain: "Advice: should + verb (no to)." },
+    { s: "You ___ watch TV all day. Go outside!", options: ["should", "shouldn't", "don't should"], answer: 1,
+      explain: "Negative advice: shouldn't." },
+    { s: "What ___ I do? I lost my passport.", options: ["do", "must to", "should"], answer: 2,
+      explain: "Asking for advice: What should I do?" },
+    { s: "You ___ ask the teacher. She knows the answer.", options: ["should", "shouldn't", "should to"], answer: 0,
+      explain: "Advice: should." },
+    { s: "Do you think I ___ buy this jacket?", options: ["should", "must to", "should to"], answer: 0,
+      explain: "should + verb." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Mixed modal verbs",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "You ___ smoke in the hospital. It's against the rules.", options: ["mustn't", "don't have to", "can"], answer: 0,
       explain: "Against the rules = not allowed: mustn't." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "All passengers ___ show their tickets to the driver.", options: ["have to", "don't have to", "could"], answer: 0,
       explain: "A rule: have to." },
     { s: "___ I use your phone? Mine isn't working.", options: ["Can", "Have", "Do"], answer: 0,
-      explain: "Asking for permission: Can I…?" }
+      explain: "Asking for permission: Can I…?" },
+    { s: "You ___ be 18 to vote in my country.", answers: ["have to", "must"],
+      explain: "A rule: have to." },
+    { s: "I ___ swim when I was three.", answers: ["could"],
+      explain: "Ability in the past: could." },
+    { s: "You look cold. You ___ put on a jumper.", answers: ["should", "could"],
+      explain: "Advice: should." },
+    { s: "You ___ bring anything. We have everything.", answers: ["don't have to", "don't need to", "needn't"],
+      explain: "Not necessary: don't have to." },
+    { s: "You ___ cross the road here. It's dangerous.", answers: ["mustn't", "shouldn't", "can't"],
+      explain: "A strong 'don't': mustn't." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Same meaning",
-  intro: "Complete the second sentence so that it means the same as the first. Use can, can't, could, couldn't, must, mustn't, have to, don't have to, should or shouldn't.",
+  intro: "Choose the correct option or complete the second sentence so that it means the same as the first. Use can, can't, could, couldn't, must, mustn't, have to, don't have to, should or shouldn't.",
   items: [
     { s: "It isn't necessary to bring a towel. → You ___ bring a towel.", answers: ["don't have to", "don't need to", "needn't"],
       explain: "Not necessary = don't have to." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "My brother knows how to cook paella. → My brother ___ cook paella.", answers: ["can"],
       explain: "Knows how to = can (ability)." },
     { s: "Is it necessary for us to wear a uniform? → ___ we have to wear a uniform?", answers: ["Do"],
-      explain: "Questions with have to use do/does: Do we have to…?" }
+      explain: "Questions with have to use do/does: Do we have to…?" },
+    { s: "It isn't necessary to call me. → You ___ call me.", options: ["don't have to", "mustn't", "can't"], answer: 0,
+      explain: "Not necessary = don't have to." },
+    { s: "It's not allowed to run here. → You ___ run here.", options: ["mustn't", "don't have to", "shouldn't"], answer: 0,
+      explain: "Not allowed = mustn't." },
+    { s: "I'm able to speak three languages. → I ___ speak three languages.", options: ["must", "should", "can"], answer: 2,
+      explain: "Able = can." },
+    { s: "It's a good idea to rest. → You ___ rest.", options: ["have to", "should", "can"], answer: 1,
+      explain: "A good idea = should." },
+    { s: "I wasn't able to find a taxi. → I ___ find a taxi.", options: ["mustn't", "didn't have to", "couldn't"], answer: 2,
+      explain: "Not able in the past = couldn't." }
   ]
 }
 ];

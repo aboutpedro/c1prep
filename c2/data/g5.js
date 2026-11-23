@@ -1,9 +1,9 @@
 window.SETS = [
 /* ---------------- Set 1 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Negative and limiting adverbials",
-  intro: "Write the words in brackets with inversion.",
+  intro: "Choose the correct option or write the words in brackets with inversion.",
   items: [
     { s: "Not once ___ (he / thank) me for my help.", answers: ["did he thank", "has he thanked"],
       explain: "Not once + auxiliary + subject." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Rarely ___ (a debut album / sell) so many copies.", answers: ["has a debut album sold", "does a debut album sell"],
       explain: "Rarely + auxiliary + subject." },
     { s: "In no way ___ (I / be) responsible for what happened.", answers: ["am I", "was I"],
-      explain: "In no way + inversion." }
+      explain: "In no way + inversion." },
+    { s: "Under no circumstances ___ the building during the drill.", options: ["should you leave", "you should leave", "leave you should"], answer: 0,
+      explain: "Under no circumstances + inversion." },
+    { s: "Not only ___ late, but he also forgot the tickets.", options: ["was he", "he was", "did he be"], answer: 0,
+      explain: "Not only + inversion." },
+    { s: "Little ___ what was about to happen.", options: ["did she know", "she knew", "knew she"], answer: 0,
+      explain: "Little + auxiliary + subject." },
+    { s: "Never before ___ such a crowd in the square.", options: ["had I seen", "I had seen", "seen I had"], answer: 0,
+      explain: "Never before + inversion." },
+    { s: "Only when the rain stopped ___ outside.", options: ["did the children go", "the children went", "went the children"], answer: 0,
+      explain: "Only when …, + inversion in the main clause." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "so, such, nor and as",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "So ___ that nobody could hear him.", options: ["quietly did he speak", "quietly he spoke", "did he speak quietly", "quiet he spoke"], answer: 0,
       explain: "So + adverb + auxiliary + subject." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Strange ___, I actually enjoyed the exam.", options: ["as it may seem", "it may seem as", "as may it seem", "it seems as"], answer: 0,
       explain: "Adjective + as + subject + verb = although it may seem…" },
     { s: "Much ___ I admire her, I can't agree.", options: ["as", "so", "though as", "like"], answer: 0,
-      explain: "Much as = although (very much)." }
+      explain: "Much as = although (very much)." },
+    { s: "So ___ the tickets that we stayed at home. (expensive / be)", answers: ["expensive were"],
+      explain: "So + adjective + verb + subject." },
+    { s: "He can't cook, and ___ can his wife.", answers: ["nor", "neither"],
+      explain: "nor / neither + auxiliary + subject." },
+    { s: "Such ___ the noise that we couldn't think. (be)", answers: ["was"],
+      explain: "Such + be + subject." },
+    { s: "Talented ___ he is, he still needs to practise.", answers: ["as", "though"],
+      explain: "Adjective + as / though = although." },
+    { s: "She loves jazz, as ___ her husband.", answers: ["does"],
+      explain: "as + auxiliary + subject = and so does." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Fronting for emphasis",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ he might, he couldn't lift the box.", options: ["Try as", "As try", "Trying as", "Though try"], answer: 0,
       explain: "Try as he might = however hard he tried." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Little ___ that the house was haunted.", options: ["did they suspect", "they suspected", "suspected they", "they did suspect"], answer: 0,
       explain: "Little + auxiliary + subject." },
     { s: "Gone ___ the days when you could leave your door unlocked.", options: ["are", "is", "have", "were"], answer: 0,
-      explain: "Fronted participle: Gone are the days…" }
+      explain: "Fronted participle: Gone are the days…" },
+    { s: "___ comes the bride!", answers: ["Here"],
+      explain: "Here + verb + noun subject." },
+    { s: "Out ___ the children into the garden. (run)", answers: ["ran"],
+      explain: "Adverb fronting + verb + subject." },
+    { s: "Little ___ he know that he was being followed.", answers: ["did"],
+      explain: "Little did … know." },
+    { s: "Be that ___ it may, we still need a decision.", answers: ["as"],
+      explain: "Be that as it may = even so." },
+    { s: "Down ___ the rain all afternoon. (come)", answers: ["came"],
+      explain: "Adverb fronting + verb + subject." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Cleft sentences",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "It was Ana ___ found the solution, not me.", answers: ["who", "that"],
       explain: "It was + person + who / that." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "The place ___ we first met has been demolished.", answers: ["where"],
       explain: "The place where…" },
     { s: "It's not the money I care about; it's the principle ___ the thing.", answers: ["of"],
-      explain: "the principle of the thing (fixed phrase)." }
+      explain: "the principle of the thing (fixed phrase)." },
+    { s: "It was in Paris ___ they first met.", options: ["that", "which", "what"], answer: 0,
+      explain: "It was + phrase + that." },
+    { s: "___ we need now is a bit of luck.", options: ["What", "That", "Which"], answer: 0,
+      explain: "What + clause + is." },
+    { s: "All she ___ was complain about the food.", options: ["did", "made", "was"], answer: 0,
+      explain: "All + subject + did + was + infinitive." },
+    { s: "It was only when I got home ___ I noticed the cut.", options: ["that", "which", "so"], answer: 0,
+      explain: "It was only when … that." },
+    { s: "The reason I left is ___ I was unhappy.", options: ["that", "why", "what"], answer: 0,
+      explain: "The reason … is that." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "She not only sings, but she also writes her own songs. → Not ___, but she also writes her own songs. (DOES)", answers: ["only does she sing"],
       explain: "Not only + auxiliary + subject." },
     { s: "The days when people wrote letters have gone. → Gone ___ people wrote letters. (WHEN)", answers: ["are the days when"],
-      explain: "Gone are the days when…" }
+      explain: "Gone are the days when…" },
+    { s: "I had hardly sat down when the phone rang. → Hardly ___ when the phone rang. (SAT)", answers: ["had I sat down"],
+      explain: "Hardly + inversion … when." },
+    { s: "He didn't apologise once. → Not once ___. (APOLOGISE)", answers: ["did he apologise", "did he apologize"],
+      explain: "Not once + inversion." },
+    { s: "You should not touch the wires under any circumstances. → Under no ___ the wires. (SHOULD)", answers: ["circumstances should you touch"],
+      explain: "Under no circumstances + inversion." },
+    { s: "We only realised what had happened later. → Only later ___ what had happened. (DID)", answers: ["did we realise", "did we realize"],
+      explain: "Only later + inversion." },
+    { s: "I just want some peace and quiet. → All ___ some peace and quiet. (IS)", answers: ["I want is", "that I want is"],
+      explain: "All I want is …" }
   ]
 }
 ];

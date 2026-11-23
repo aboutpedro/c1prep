@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Where is the cat?",
-  intro: "Choose the correct preposition.",
+  intro: "Choose or write the correct preposition.",
   items: [
     { s: "The cat is ___ the box. You can't see it.", options: ["in", "on", "under"], answer: 0,
       explain: "Inside the box: in." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "My keys are ___ my bag.", options: ["in", "on", "at"], answer: 0,
       explain: "Inside the bag: in." },
     { s: "There's a picture ___ the wall.", options: ["on", "in", "at"], answer: 0,
-      explain: "On the surface of the wall: on." }
+      explain: "On the surface of the wall: on." },
+    { s: "The ball is ___ the chair. (below it)", answers: ["under"],
+      explain: "Below something → under." },
+    { s: "My phone is ___ my pocket.", answers: ["in"],
+      explain: "Inside → in." },
+    { s: "The lamp is ___ the bed. (side by side)", answers: ["next to"],
+      explain: "Side by side → next to." },
+    { s: "The car is ___ the house. You can't see it from the street.", answers: ["behind"],
+      explain: "At the back of → behind." },
+    { s: "The bank is ___ the café and the bookshop.", answers: ["between"],
+      explain: "In the middle of two things → between." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Places: in, on, at",
-  intro: "Choose the correct preposition.",
+  intro: "Choose or write the correct preposition.",
   items: [
     { s: "She lives ___ Madrid.", options: ["in", "on", "at"], answer: 0,
       explain: "Cities and countries: in." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "My grandparents live ___ a small village.", options: ["in", "on", "at"], answer: 0,
       explain: "In + village, town, city." },
     { s: "Put the milk ___ the fridge.", options: ["in", "on", "at"], answer: 0,
-      explain: "Inside the fridge: in." }
+      explain: "Inside the fridge: in." },
+    { s: "We live ___ a big city.", answers: ["in"],
+      explain: "Cities and towns → in." },
+    { s: "My brother is ___ university now.", answers: ["at"],
+      explain: "at school, at university, at work." },
+    { s: "Your bag is ___ the floor.", answers: ["on"],
+      explain: "On a surface → on." },
+    { s: "They're ___ a party tonight.", answers: ["at"],
+      explain: "Events → at a party." },
+    { s: "I left my bag ___ the bus!", answers: ["on"],
+      explain: "Buses and trains → on." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Time: in, on, at",
-  intro: "Choose the correct preposition. at → clock times; on → days and dates; in → months, years, seasons and parts of the day.",
+  intro: "Choose or write the correct preposition. at → clock times; on → days and dates; in → months, years, seasons and parts of the day.",
   items: [
     { s: "The class starts ___ nine o'clock.", options: ["at", "on", "in"], answer: 0,
       explain: "Clock time: at." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I can't sleep ___ night.", options: ["at", "in", "on"], answer: 0,
       explain: "We say at night." },
     { s: "Christmas is ___ 25 December.", options: ["on", "in", "at"], answer: 0,
-      explain: "Date: on." }
+      explain: "Date: on." },
+    { s: "The film starts ___ 7.30.", answers: ["at"],
+      explain: "Clock times → at." },
+    { s: "We met ___ 2019.", answers: ["in"],
+      explain: "Years → in." },
+    { s: "My exam is ___ Friday.", answers: ["on"],
+      explain: "Days → on." },
+    { s: "It's very hot here ___ summer.", answers: ["in"],
+      explain: "Seasons → in." },
+    { s: "I always read ___ the evening.", answers: ["in"],
+      explain: "in the morning / afternoon / evening." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Before, after, from … to",
-  intro: "Choose the correct word.",
+  intro: "Choose or write the correct word.",
   items: [
     { s: "Wash your hands ___ dinner.", options: ["before", "between", "from"], answer: 0,
       explain: "First wash your hands, then have dinner: before." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I have a coffee ___ I get up.", options: ["after", "before", "between"], answer: 0,
       explain: "First I get up, then I have coffee: after." },
     { s: "We have classes ___ 8 a.m. to 1 p.m.", options: ["from", "between", "at"], answer: 0,
-      explain: "from … to …" }
+      explain: "from … to …" },
+    { s: "Brush your teeth ___ breakfast. (when you finish breakfast)", answers: ["after"],
+      explain: "When you finish → after." },
+    { s: "Wash the fruit ___ you eat it.", answers: ["before"],
+      explain: "First wash, then eat → before." },
+    { s: "The class is from 9 ___ 10.", answers: ["to", "until", "till"],
+      explain: "from … to." },
+    { s: "I sit ___ Ana and Leo in class.", answers: ["between"],
+      explain: "In the middle of two people → between." },
+    { s: "I'm at school ___ 8 a.m. to 3 p.m.", answers: ["from"],
+      explain: "from … to." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Mixed practice",
-  intro: "Write in, on, at, under or next to.",
+  intro: "Choose the correct option or write in, on, at, under or next to.",
   items: [
     { s: "Your dinner is ___ the table. Eat it before it gets cold!", answers: ["on"],
       explain: "On the surface of the table: on." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "My keys are ___ my pocket.", answers: ["in"],
       explain: "Inside the pocket: in." },
     { s: "I have English ___ the morning.", answers: ["in"],
-      explain: "Parts of the day: in the morning." }
+      explain: "Parts of the day: in the morning." },
+    { s: "I'll see you ___ Monday morning.", options: ["on", "in", "at"], answer: 0,
+      explain: "A day + morning → on Monday morning." },
+    { s: "There's a spider ___ your head!", options: ["on", "in", "at"], answer: 0,
+      explain: "On a surface → on." },
+    { s: "He's waiting ___ the station.", options: ["at", "on", "in"], answer: 0,
+      explain: "A point or place → at the station." },
+    { s: "The shop is ___ the bank and the pharmacy.", options: ["between", "next", "from"], answer: 0,
+      explain: "In the middle of two → between." },
+    { s: "My birthday is ___ 3 May.", options: ["on", "in", "at"], answer: 0,
+      explain: "Dates → on." }
   ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "will, going to, present continuous or present simple?",
-  intro: "Choose the most natural option.",
+  intro: "Choose the most natural option or write the missing words.",
   items: [
     { s: "'The phone's ringing.' 'Don't worry, I ___ it.'", options: ["'ll get", "'m going to get", "get"], answer: 0,
       explain: "A decision made at the moment of speaking: will." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I promise I ___ anyone your secret.", options: ["won't tell", "'m not telling", "don't tell"], answer: 0,
       explain: "Promises use will / won't." },
     { s: "Be careful! You ___ that glass!", options: ["'re going to drop", "will drop", "drop"], answer: 0,
-      explain: "Something we can see is about to happen: going to." }
+      explain: "Something we can see is about to happen: going to." },
+    { s: "'We've run out of milk.' 'I ___ some on the way home.' (get)", answers: ["will get", "'ll get"],
+      explain: "A decision at the moment of speaking: will." },
+    { s: "My sister ___ a baby in May. (have)", answers: ["is having", "'s having", "is going to have", "'s going to have"],
+      explain: "A planned future event: present continuous (or going to)." },
+    { s: "What time ___? (the film / start)", answers: ["does the film start"],
+      explain: "A timetable: present simple." },
+    { s: "I've decided. I ___ the job. (not / accept)", answers: ["am not going to accept", "'m not going to accept", "won't accept", "will not accept"],
+      explain: "A decision already made: going to." },
+    { s: "Everyone says the economy ___ next year. (improve)", answers: ["will improve", "'ll improve", "is going to improve", "'s going to improve"],
+      explain: "A prediction: will (or going to)." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Future continuous and future perfect",
-  intro: "Complete the sentences with the future continuous (will be doing) or the future perfect (will have done) of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the future continuous (will be doing) or the future perfect (will have done) of the verbs in brackets.",
   items: [
     { s: "Don't call at eight. We ___ (have) dinner then.", answers: ["will be having", "'ll be having"],
       explain: "An action in progress at a specific future time: future continuous." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I ___ (not / finish) the report by Monday. It's too long.", answers: ["will not have finished", "won't have finished"],
       explain: "Negative future perfect: won't have + past participle." },
     { s: "At midnight we ___ (still / drive). It's a long journey.", answers: ["will still be driving", "'ll still be driving"],
-      explain: "In progress at midnight: future continuous. still goes after will." }
+      explain: "In progress at midnight: future continuous. still goes after will." },
+    { s: "By 2040, scientists ___ a cure for the disease.", options: ["will be finding", "find", "will have found"], answer: 2,
+      explain: "Completed before a future time: future perfect." },
+    { s: "I can't come at six. I ___ my sister up from the airport.", options: ["'ll be picking", "'ll have picked", "pick"], answer: 0,
+      explain: "In progress at six: future continuous." },
+    { s: "Don't worry, I ___ the dishes by the time you get back.", options: ["'ll be doing", "do", "'ll have done"], answer: 2,
+      explain: "Completed before then: future perfect." },
+    { s: "In a few minutes, we ___ over the Alps.", options: ["'ll have flown", "'ll be flying", "fly"], answer: 1,
+      explain: "In progress then: future continuous." },
+    { s: "By the time she retires, she ___ here for forty years.", options: ["'ll be working", "'ll have worked", "works"], answer: 1,
+      explain: "Up to a future point: future perfect." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Future time clauses",
-  intro: "Complete the sentences with the correct form of the verbs in brackets. Think about which part of the sentence is the time clause.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verbs in brackets. Think about which part of the sentence is the time clause.",
   items: [
     { s: "I'll call you as soon as I ___ (arrive).", answers: ["arrive"],
       explain: "After as soon as, when, before, after, until: present simple, not will." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The moment the results ___ (come) out, I'll let you know.", answers: ["come"],
       explain: "the moment = as soon as: present simple." },
     { s: "We ___ (have) a party after the exams are over.", answers: ["will have", "'ll have", "are going to have", "'re going to have", "are having", "'re having"],
-      explain: "The main clause needs a future form; the time clause stays in the present." }
+      explain: "The main clause needs a future form; the time clause stays in the present." },
+    { s: "I'll let you know as soon as I ___ anything.", options: ["hear", "will hear", "am hearing"], answer: 0,
+      explain: "After as soon as: present simple." },
+    { s: "Don't go anywhere until I ___.", options: ["will get back", "get back", "got back"], answer: 1,
+      explain: "After until: present simple." },
+    { s: "After you ___ the form, send it to this address.", options: ["'ve completed", "'ll complete", "completed"], answer: 0,
+      explain: "After after: present perfect (or present simple)." },
+    { s: "I ___ you when I land.", options: ["text", "am texting", "'ll text"], answer: 2,
+      explain: "The main clause: will." },
+    { s: "Once the guests ___, we can start dinner.", options: ["arrive", "will arrive", "arrived"], answer: 0,
+      explain: "After once: present simple." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "be about to, be due to, be bound to…",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "Hurry up! The train is ___ leave.", options: ["about to", "bound for", "due"], answer: 0,
       explain: "be about to + verb = very soon, in a moment." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "We're unlikely ___ before ten. There's a lot of traffic.", options: ["to arrive", "arriving", "arrive"], answer: 0,
       explain: "be (un)likely + to-infinitive." },
     { s: "Shh! The concert is ___ to start.", options: ["about", "due for", "bound for"], answer: 0,
-      explain: "about to = in a moment." }
+      explain: "about to = in a moment." },
+    { s: "The film is ___ to begin. Turn off your phone.", answers: ["about"],
+      explain: "be about to = very soon." },
+    { s: "The new law is ___ to come into force in January.", answers: ["due", "set"],
+      explain: "be due to = planned for a time." },
+    { s: "She's ___ to be late. She always is.", answers: ["bound", "sure", "certain", "likely"],
+      explain: "be bound to = certain." },
+    { s: "Prices are ___ to rise again next month.", answers: ["likely", "set", "expected", "due", "going"],
+      explain: "be likely to = probably." },
+    { s: "I was ___ the point of calling you when you walked in.", answers: ["on"],
+      explain: "be on the point of + -ing = about to." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Rewrite the sentence",
-  intro: "Complete the second sentence so that it means the same as the first. Use the word in brackets and between two and five words.",
+  intro: "Choose the correct option or complete the second sentence so that it means the same as the first. Use the word in brackets and between two and five words.",
   items: [
     { s: "The meeting will begin in a moment. → The meeting ___ begin. (ABOUT)", answers: ["is about to"],
       explain: "be about to = very soon." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Next year will be our tenth year in this house. → By next year, we ___ here for ten years. (LIVED)", answers: ["will have lived", "'ll have lived"],
       explain: "Duration up to a future point: future perfect." },
     { s: "Don't leave before I come back. → Wait ___ back. (UNTIL)", answers: ["until I come", "until I get", "until I'm"],
-      explain: "until + present simple, not will." }
+      explain: "until + present simple, not will." },
+    { s: "The flight leaves at 6 a.m. tomorrow. → Our flight ___ at 6 a.m. tomorrow. (DUE)", options: ["is due to leave", "is about to leave", "is bound leaving"], answer: 0,
+      explain: "be due to + verb = scheduled." },
+    { s: "I'm sure he'll forget. → He ___ forget. (BOUND)", options: ["will bound to", "is about to", "is bound to"], answer: 2,
+      explain: "be bound to = certain." },
+    { s: "The workers will finish the road by June. → The road ___ by June. (FINISHED)", options: ["will have been finished", "will be finishing", "will have finishing"], answer: 0,
+      explain: "Future perfect passive." },
+    { s: "We're going to start at any moment. → We ___ start. (ABOUT)", options: ["are about to", "are due", "will about to"], answer: 0,
+      explain: "be about to = very soon." },
+    { s: "At 3 p.m. tomorrow I'll be in the middle of a meeting. → At 3 p.m. tomorrow I ___ a meeting. (HAVING)", options: ["'ll have had", "'ll be having", "have"], answer: 1,
+      explain: "In progress then: future continuous." }
   ]
 }
 ];

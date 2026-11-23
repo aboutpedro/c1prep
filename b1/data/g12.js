@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Third conditional: form",
-  intro: "Choose the correct option. Third conditional: if + had + past participle, would have + past participle. It's about an imaginary past.",
+  intro: "Choose the correct option or write the missing words. Third conditional: if + had + past participle, would have + past participle. It's about an imaginary past.",
   items: [
     { s: "If I ___ earlier, I wouldn't have missed the bus.", options: ["had left", "left", "would leave"], answer: 0,
       explain: "If + past perfect: if I had left. (In fact I left late and missed the bus.)" },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "If I'd known you were in hospital, I ___ you.", options: ["would have visited", "visited", "had visited"], answer: 0,
       explain: "I'd known = I had known. Result: would have visited." },
     { s: "He ___ the accident if he had been more careful.", options: ["wouldn't have had", "didn't have", "hadn't had"], answer: 0,
-      explain: "Result: wouldn't have had." }
+      explain: "Result: wouldn't have had." },
+    { s: "If I ___ about the traffic, I would have taken the train. (know)", answers: ["had known", "'d known"],
+      explain: "if + had + past participle." },
+    { s: "If you had come to the party, you ___ my cousin. (meet)", answers: ["would have met", "'d have met"],
+      explain: "would have + past participle." },
+    { s: "She wouldn't have fallen if she ___ where she was going. (look)", answers: ["had looked", "'d looked", "had been looking", "'d been looking"],
+      explain: "if + had + past participle." },
+    { s: "If we ___ for coffee, we wouldn't have been late. (not / stop)", answers: ["hadn't stopped", "had not stopped"],
+      explain: "if + hadn't + past participle." },
+    { s: "I ___ that if I had known she was listening. (not / say)", answers: ["wouldn't have said", "would not have said"],
+      explain: "wouldn't have + past participle." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Write the third conditional",
-  intro: "Write the correct form of the verb in brackets: had + past participle, or would have + past participle.",
+  intro: "Choose the correct option or write the correct form of the verb in brackets: had + past participle, or would have + past participle.",
   items: [
     { s: "If you had asked me, I ___ you. (help)", answers: ["would have helped", "'d have helped"], width: 18,
       explain: "Result: would have helped." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "We ___ the sunset if we had stayed a bit longer. (see)", answers: ["would have seen", "'d have seen"], width: 18,
       explain: "Result: would have seen." },
     { s: "If the weather ___ better, the flight wouldn't have been cancelled. (be)", answers: ["had been"], width: 18,
-      explain: "If + past perfect of be: had been." }
+      explain: "If + past perfect of be: had been." },
+    { s: "If I had seen you, I ___ hello.", options: ["would have said", "would say", "had said"], answer: 0,
+      explain: "Third conditional result: would have + past participle." },
+    { s: "If they ___ the tickets earlier, they would have paid less.", options: ["bought", "would have bought", "had bought"], answer: 2,
+      explain: "if + had + past participle." },
+    { s: "If you hadn't helped me, I ___ finished.", options: ["won't have", "wouldn't have", "hadn't"], answer: 1,
+      explain: "wouldn't have + past participle." },
+    { s: "She'd have got the job if she ___ late for the interview.", options: ["hadn't been", "wasn't", "wouldn't have been"], answer: 0,
+      explain: "if + hadn't been." },
+    { s: "If it hadn't rained, we ___ outside.", options: ["would eat", "had eaten", "would have eaten"], answer: 2,
+      explain: "The imaginary past result: would have eaten." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "I wish / If only: now",
-  intro: "Choose the correct option. To wish that the present was different, use wish / if only + past simple (or could / would).",
+  intro: "Choose the correct option or write the missing words. To wish that the present was different, use wish / if only + past simple (or could / would).",
   items: [
     { s: "I wish I ___ a car. Taking the bus every day is so slow.", options: ["had", "have", "will have"], answer: 0,
       explain: "A wish about now: wish + past simple: I wish I had a car (but I don't)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I wish you ___ stop interrupting me!", options: ["would", "will", "can"], answer: 0,
       explain: "Annoyed about someone's behaviour: I wish you would…" },
     { s: "Leo wishes he ___ taller. He wants to play basketball.", options: ["were", "is", "will be"], answer: 0,
-      explain: "wish + were (was is also used in informal English)." }
+      explain: "wish + were (was is also used in informal English)." },
+    { s: "I wish I ___ more free time. (have)", answers: ["had"],
+      explain: "A wish about now: past simple." },
+    { s: "If only I ___ sing! (can)", answers: ["could"],
+      explain: "can → could." },
+    { s: "I wish it ___ the weekend. (be)", answers: ["was", "were"],
+      explain: "A wish about now: was / were." },
+    { s: "I wish my brother ___ taking my things. (stop)", answers: ["would stop"],
+      explain: "Something annoying that you want to change: would." },
+    { s: "She wishes she ___ to work today. (not / have)", answers: ["didn't have"],
+      explain: "A wish about now: past simple." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "I wish / If only: the past",
-  intro: "Choose the correct option. To talk about regrets (things in the past you'd like to change), use wish / if only + had + past participle.",
+  intro: "Choose the correct option or write the missing words. To talk about regrets (things in the past you'd like to change), use wish / if only + had + past participle.",
   items: [
     { s: "I wish I ___ to your advice. You were right.", options: ["had listened", "listened", "would listen"], answer: 0,
       explain: "A regret about the past: wish + had + past participle." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I wish you ___ me. I would have helped.", options: ["had told", "told", "would tell"], answer: 0,
       explain: "A past regret: had told." },
     { s: "They wish they ___ the house when prices were lower.", options: ["had bought", "bought", "buy"], answer: 0,
-      explain: "When prices were lower = past: had bought." }
+      explain: "When prices were lower = past: had bought." },
+    { s: "I wish I ___ so much cake. (not / eat)", answers: ["hadn't eaten"],
+      explain: "A regret about the past: hadn't + past participle." },
+    { s: "If only I ___ more for the test. (study)", answers: ["had studied"],
+      explain: "A regret: had + past participle." },
+    { s: "He wishes he ___ the job in London. (take)", answers: ["had taken"],
+      explain: "A regret: had taken." },
+    { s: "I wish we ___ longer in Portugal. (stay)", answers: ["had stayed"],
+      explain: "A regret: had stayed." },
+    { s: "If only I ___ my phone! (not / lose)", answers: ["hadn't lost"],
+      explain: "A regret: hadn't lost." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Which conditional?",
-  intro: "Choose the correct option. Think: is it real or imaginary? Now, the future or the past?",
+  intro: "Choose the correct option or write the missing words. Think: is it real or imaginary? Now, the future or the past?",
   items: [
     { s: "If it rains tomorrow, we ___ the picnic.", options: ["'ll cancel", "'d cancel", "'d have cancelled"], answer: 0,
       explain: "A real possibility in the future: first conditional (will)." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "If I'd known it was your birthday, I ___ you a present.", options: ["'d have got", "'d get", "'ll get"], answer: 0,
       explain: "I'd known = I had known (past): third conditional: would have got." },
     { s: "If people ___ more, they would be healthier.", options: ["walked", "walk", "will walk"], answer: 0,
-      explain: "Imaginary present: second conditional (past simple + would)." }
+      explain: "Imaginary present: second conditional (past simple + would)." },
+    { s: "If you ___ water, it turns to ice. (freeze)", answers: ["freeze"],
+      explain: "Always true: zero conditional." },
+    { s: "If I ___ a million euros, I'd travel the world. (have)", answers: ["had"],
+      explain: "Imaginary now: second conditional." },
+    { s: "If I see her, I ___ her your message. (give)", answers: ["will give"],
+      explain: "A real possibility: first conditional." },
+    { s: "If he had been more careful, he ___ the vase. (not / break)", answers: ["wouldn't have broken"],
+      explain: "Imaginary past: third conditional." },
+    { s: "I wish I ___ better at maths. (be)", answers: ["was", "were"],
+      explain: "A wish about now: was / were." }
   ]
 }
 ];

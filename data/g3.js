@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Mixed conditionals",
-  intro: "Complete the mixed conditional sentences with the correct form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the mixed conditional sentences with the correct form of the verbs in brackets.",
   items: [
     { s: "If I ___ (accept) that job in New York, I would be living in Manhattan now.", answers: ["had accepted", "'d accepted"],
       explain: "Past condition (had + past participle) with a present result (would be living now)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "If the bridge ___ (not / collapse), we would be home by now.", answers: ["had not collapsed", "hadn't collapsed"],
       explain: "Past event (the collapse) with a present result (by now)." },
     { s: "If I were you, I ___ (book) the tickets weeks ago.", answers: ["would have booked", "'d have booked"],
-      explain: "If I were you (advice) can combine with a past result: I'd have booked them weeks ago." }
+      explain: "If I were you (advice) can combine with a past result: I'd have booked them weeks ago." },
+    { s: "If I hadn't missed the flight, I ___ in Paris now.", options: ["would be", "would have been", "will be"], answer: 0,
+      explain: "Past condition, present result: would + verb." },
+    { s: "If he were more organised, he ___ the deadline last week.", options: ["wouldn't have missed", "wouldn't miss", "hadn't missed"], answer: 0,
+      explain: "Present condition, past result: would have + past participle." },
+    { s: "If they had invested earlier, they ___ much richer today.", options: ["would be", "would have been", "are"], answer: 0,
+      explain: "Past condition, present result." },
+    { s: "If I spoke Japanese, I ___ that job in Tokyo last year.", options: ["would apply for", "would have applied for", "had applied for"], answer: 1,
+      explain: "Present condition, past result." },
+    { s: "We wouldn't be in this mess now if you ___ the instructions.", options: ["had followed", "followed", "would follow"], answer: 0,
+      explain: "Past condition: past perfect." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Inverted conditionals",
-  intro: "Write one word in each gap: Had, Should or Were.",
+  intro: "Choose the correct option or write one word in each gap: Had, Should or Were.",
   items: [
     { s: "___ I known about the traffic, I would have taken the train.", answers: ["Had"],
       explain: "Had I known… = If I had known… (third conditional)." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ we known how long the journey was, we'd have set off earlier.", answers: ["Had"],
       explain: "Had we known… = If we had known…" },
     { s: "___ the weather turn bad, the event will be moved indoors.", answers: ["Should"],
-      explain: "Should + subject + verb = If… (possible but not expected)." }
+      explain: "Should + subject + verb = If… (possible but not expected)." },
+    { s: "___ you require further information, please do not hesitate to contact us.", options: ["Had", "Should", "Were"], answer: 1,
+      explain: "Should + subject + verb = if." },
+    { s: "___ I realised how expensive it was, I'd never have booked it.", options: ["Should", "Were", "Had"], answer: 2,
+      explain: "Had + subject + past participle = if + past perfect." },
+    { s: "___ it not for the rain, we'd be outside now.", options: ["Had", "Were", "Should"], answer: 1,
+      explain: "Were it not for = if it weren't for." },
+    { s: "___ he to resign, the company would be in serious trouble.", options: ["Were", "Had", "Should"], answer: 0,
+      explain: "Were + subject + to-infinitive = if he resigned." },
+    { s: "___ they asked me, I would have told them everything.", options: ["Were", "Should", "Had"], answer: 2,
+      explain: "Had they asked = if they had asked." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Alternatives to if",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "You can borrow the car ___ you bring it back by six.", options: ["provided", "unless", "in case"], answer: 0,
       explain: "provided (that) = only if." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I'll come with you, ___ it's not too late.", options: ["assuming", "unless", "in case"], answer: 0,
       explain: "assuming (that) = if we accept that…" },
     { s: "___ if you apologise, she won't forgive you.", options: ["Even", "Only", "Unless"], answer: 0,
-      explain: "even if = whether or not; the result is the same." }
+      explain: "even if = whether or not; the result is the same." },
+    { s: "I'll go, ___ that you come with me.", answers: ["provided", "providing"],
+      explain: "provided that = only if." },
+    { s: "___ you were offered the job, would you accept it?", answers: ["Supposing", "Suppose", "If"],
+      explain: "Supposing = imagine that." },
+    { s: "I'm going to the beach ___ it rains or shines.", answers: ["whether"],
+      explain: "whether … or = it doesn't matter which." },
+    { s: "Make a copy ___ you lose the original.", answers: ["in case"],
+      explain: "in case = as a precaution." },
+    { s: "But ___ you, I'd never have got through it.", answers: ["for"],
+      explain: "But for = without." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "were to, if so, if not, if anything",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "If it ___ not been for the storm, the ship would have arrived on time.", answers: ["had"],
       explain: "If it hadn't been for… = without (past)." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "___ it rain tomorrow, the match will be cancelled.", answers: ["Should"],
       explain: "Should it rain… = If it rains…" },
     { s: "If only I ___ listened to your advice!", answers: ["had"],
-      explain: "If only + past perfect for a regret about the past." }
+      explain: "If only + past perfect for a regret about the past." },
+    { s: "Are you free on Friday? If ___, let's have lunch.", options: ["not", "so", "yes"], answer: 1,
+      explain: "If so = if yes." },
+    { s: "Is anyone still hungry? If ___, I'll put the food away.", options: ["so", "not", "no"], answer: 1,
+      explain: "If not = if the answer is no." },
+    { s: "The medicine hasn't helped. If ___, I feel worse.", options: ["anything", "so", "not"], answer: 0,
+      explain: "If anything = possibly the opposite." },
+    { s: "We'll eat outside, weather ___.", options: ["permitted", "permitting", "permits"], answer: 1,
+      explain: "weather permitting = if the weather is good." },
+    { s: "If it ___ been for the map, we'd have got lost.", options: ["hadn't", "weren't", "wouldn't have"], answer: 0,
+      explain: "If it hadn't been for = without." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Take a map because you might get lost. → Take a map ___ lost. (CASE)", answers: ["in case you get"],
       explain: "in case = as a precaution." },
     { s: "I'm only going to the party if you come too. → I'm not going to the party ___ too. (UNLESS)", answers: ["unless you come", "unless you go"],
-      explain: "not… unless = only if." }
+      explain: "not… unless = only if." },
+    { s: "If you see Paul, tell him to call me. → ___ Paul, tell him to call me. (SHOULD)", answers: ["Should you see", "Should you happen to see"],
+      explain: "Should + subject + verb = if." },
+    { s: "But for the traffic, we'd have arrived on time. → If it ___ traffic, we'd have arrived on time. (FOR)", answers: ["hadn't been for the", "had not been for the"],
+      explain: "If it hadn't been for = but for." },
+    { s: "We'll only go if it stops raining. → We won't go ___ raining. (UNLESS)", answers: ["unless it stops"],
+      explain: "unless = if … not." },
+    { s: "I didn't take the job, so I'm not living in Rome now. → If I ___ the job, I would be living in Rome now. (TAKEN)", answers: ["had taken", "'d taken"],
+      explain: "Mixed conditional: past condition." },
+    { s: "Things haven't improved – maybe they're worse. → The situation hasn't improved; ___, it has got worse. (ANYTHING)", answers: ["if anything"],
+      explain: "if anything = possibly the opposite is true." }
   ]
 }
 ];

@@ -143,5 +143,34 @@ window.SETS = [
     { s: "We had to ___ because the baby was sleeping.", answers: ["whisper"],
       explain: "Whisper = speak very quietly." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Relationships",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["argue", "break up", "close", "colleague", "divorced", "engaged", "fell out", "get on", "introduce", "partner", "relatives", "trust"],
+  items: [
+    { s: "My sister and I ___ really well. We like the same things.", answers: ["get on"],
+      explain: "get on (well) with someone = have a good relationship." },
+    { s: "They got ___ last month and the wedding is in June.", answers: ["engaged"],
+      explain: "get engaged = agree to marry." },
+    { s: "I'd like to ___ you to my friend Leo.", answers: ["introduce"],
+      explain: "introduce someone = tell people each other's names when they first meet." },
+    { s: "After ten years together, they decided to ___.", answers: ["break up", "split up"],
+      explain: "break up = end a relationship." },
+    { s: "My parents are ___. My dad lives in Porto now.", answers: ["divorced"],
+      explain: "divorced = no longer married." },
+    { s: "Ana is a ___ friend. I tell her everything.", answers: ["close"],
+      explain: "a close friend = a very good friend." },
+    { s: "I ___ him. He always keeps his promises.", answers: ["trust"],
+      explain: "trust = believe that someone is honest." },
+    { s: "We sometimes ___ about money, but we always make up.", answers: ["argue"],
+      explain: "argue = disagree angrily." },
+    { s: "We have lots of ___ in Brazil: aunts, uncles and cousins.", answers: ["relatives"],
+      explain: "relatives = people in your family." },
+    { s: "I ___ with my best friend over something stupid, and we didn't speak for a week.", answers: ["fell out"],
+      explain: "fall out with someone = stop being friends after an argument." }
+  ]
 }
 ];

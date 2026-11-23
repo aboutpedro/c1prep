@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Comparatives, superlatives and as … as",
-  intro: "Complete the sentences with the correct form of the words in brackets. Add than, the or as where needed.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the words in brackets. Add than, the or as where needed.",
   items: [
     { s: "This exercise is ___ (easy) the last one.", answers: ["easier than"],
       explain: "Short adjective ending in -y: easier than." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "My flat is ___ (far) from the station than yours.", answers: ["further", "farther"],
       explain: "far → further / farther." },
     { s: "This is ___ (expensive) restaurant in town. Even a coffee costs £8.", answers: ["the most expensive"],
-      explain: "the most + long adjective." }
+      explain: "the most + long adjective." },
+    { s: "This is ___ hotel in the city.", options: ["the older", "the oldest", "the most old"], answer: 1,
+      explain: "Superlative of old: the oldest." },
+    { s: "Your English is getting ___.", options: ["better and better", "more and better", "better than better"], answer: 0,
+      explain: "A continuing change: comparative + and + comparative." },
+    { s: "He's ___ driver I know.", options: ["the carefullest", "the most careful", "more careful"], answer: 1,
+      explain: "Long adjective: the most + adjective." },
+    { s: "The second exam was ___ than the first.", options: ["least difficult", "fewer difficult", "less difficult"], answer: 2,
+      explain: "less + adjective + than." },
+    { s: "She works ___ than anyone else.", options: ["more hard", "more harder", "harder"], answer: 2,
+      explain: "hard → harder." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Making comparisons stronger or weaker",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The second film was ___ better than the first. I loved it.", options: ["far", "very", "too"], answer: 0,
       explain: "far / much / a lot + comparative for a big difference. very can't go before a comparative." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "This hotel is ___ more comfortable than the last one we stayed in.", options: ["much", "very", "many"], answer: 0,
       explain: "much + comparative." },
     { s: "He isn't ___ as fit as he used to be.", options: ["nearly", "much", "far"], answer: 0,
-      explain: "not nearly as … as = much less." }
+      explain: "not nearly as … as = much less." },
+    { s: "My new job is ___ more interesting than my old one. (a big difference)", answers: ["much", "far", "a lot", "considerably"],
+      explain: "A big difference: much / far + comparative." },
+    { s: "The exam was ___ as hard as I thought. (it was much easier)", answers: ["nowhere near", "not nearly"],
+      explain: "nowhere near as … as = much less." },
+    { s: "This is ___ far the best restaurant in town.", answers: ["by"],
+      explain: "by far + superlative." },
+    { s: "The red dress is ___ cheaper than the blue one – only €2.", answers: ["slightly", "a bit", "a little"],
+      explain: "A small difference: slightly." },
+    { s: "He's ___ as tall as his father now. (the same height)", answers: ["just", "exactly"],
+      explain: "just as … as = exactly the same." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "The more …, the better",
-  intro: "Complete the sentences with the comparative form of the words in brackets. Add the or and where needed.",
+  intro: "Choose the correct option or complete the sentences with the comparative form of the words in brackets. Add the or and where needed.",
   items: [
     { s: "The more you practise, ___ (good) you'll get.", answers: ["the better"],
       explain: "the + comparative, the + comparative: one change causes another." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The traffic is getting ___ (bad) every year.", answers: ["worse and worse"],
       explain: "Comparative + and + comparative = it keeps changing." },
     { s: "Flights are becoming ___ (expensive).", answers: ["more and more expensive"],
-      explain: "more and more + long adjective: it keeps increasing." }
+      explain: "more and more + long adjective: it keeps increasing." },
+    { s: "The more you laugh, ___ you feel.", options: ["the best", "better", "the better"], answer: 2,
+      explain: "the + comparative, the + comparative." },
+    { s: "The ___ the day, the more tired I get.", options: ["long", "longer", "longest"], answer: 1,
+      explain: "the + comparative." },
+    { s: "The more I see him, ___ I like him.", options: ["less", "the less", "the least"], answer: 1,
+      explain: "the more …, the less." },
+    { s: "It's getting ___ to find a flat.", options: ["harder and harder", "more hard and hard", "hardest"], answer: 0,
+      explain: "comparative + and + comparative." },
+    { s: "The bigger the city, ___ the rents.", options: ["the higher", "higher", "the highest"], answer: 0,
+      explain: "the + comparative." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Other ways to compare",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "My house is twice ___ big as yours.", options: ["as", "so", "more"], answer: 0,
       explain: "twice / three times as … as." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "___ with last year, sales have improved.", options: ["Compared", "Comparing", "Comparison"], answer: 0,
       explain: "Compared with / to = in comparison with." },
     { s: "It was ___ least enjoyable holiday we've ever had.", options: ["the", "a", "more"], answer: 0,
-      explain: "the least + adjective: the opposite of the most." }
+      explain: "the least + adjective: the opposite of the most." },
+    { s: "Her flat is three times ___ big as mine.", answers: ["as"],
+      explain: "three times as … as." },
+    { s: "He looks just ___ his father.", answers: ["like"],
+      explain: "look like + noun." },
+    { s: "There's ___ traffic here than in the city.", answers: ["less"],
+      explain: "traffic is uncountable: less." },
+    { s: "___ to other students, she works really hard.", answers: ["Compared"],
+      explain: "compared to / with." },
+    { s: "She worked ___ a waitress when she was a student.", answers: ["as"],
+      explain: "as = in the role of." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,55 @@ window.SETS = [
     { s: "My bike and your bike are identical. → My bike is ___ yours. (SAME)", answers: ["the same as", "exactly the same as"],
       explain: "the same as." },
     { s: "Jo is much more patient than me. → I'm ___ as Jo. (NOWHERE)", answers: ["nowhere near as patient"],
-      explain: "nowhere near as … as = much less." }
+      explain: "nowhere near as … as = much less." },
+    { s: "I've never eaten such a good meal. → It's the ___ eaten. (BEST)", answers: ["best meal I have ever", "best meal I've ever"],
+      explain: "superlative + present perfect + ever." },
+    { s: "Our new flat is bigger than our old one. → Our old flat ___ our new one. (BIG)", answers: ["wasn't as big as", "isn't as big as", "was not as big as", "is not as big as"],
+      explain: "not as … as." },
+    { s: "If you exercise more, you'll feel better. → The more you exercise, ___ feel. (THE)", answers: ["the better you'll", "the better you will"],
+      explain: "the more …, the better." },
+    { s: "This car uses half the fuel of that one. → That car uses ___ fuel as this one. (TWICE)", answers: ["twice as much"],
+      explain: "twice as much (uncountable) as." },
+    { s: "The film was much better than the book. → The book wasn't ___ the film. (NEARLY)", answers: ["nearly as good as"],
+      explain: "not nearly as … as." }
+  ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Gradable and extreme adjectives; adverb position",
+  intro: "Choose the correct option or write the missing words.",
+  items: [
+    { s: "The view from the top was absolutely ___.", options: ["stunning", "beautiful", "nice"], answer: 0,
+      explain: "Absolutely goes with extreme adjectives like stunning, not with gradable ones like beautiful." },
+    { s: "It was ___ cold, so we stayed inside.", options: ["very", "absolutely", "completely"], answer: 0,
+      explain: "Cold is gradable: very cold. (But: absolutely freezing.)" },
+    { s: "I was ___ exhausted after the race.", options: ["absolutely", "very", "a bit"], answer: 0,
+      explain: "Exhausted is extreme: absolutely, completely or totally, not very." },
+    { s: "The film was ___ good, but not great.", options: ["fairly", "absolutely", "utterly"], answer: 0,
+      explain: "Good is gradable: fairly good. Absolutely and utterly go with extreme adjectives." },
+    { s: "This exercise is ___ impossible.", options: ["virtually", "very", "slightly"], answer: 0,
+      explain: "Impossible is extreme: virtually, almost or completely impossible, not very." },
+    { s: "Their new house is ___ enormous.", options: ["absolutely", "extremely", "very"], answer: 0,
+      explain: "Enormous already means very big: absolutely enormous." },
+    { s: "I ___ the news every morning.", options: ["always read", "read always", "always am reading"], answer: 0,
+      explain: "Frequency adverbs go before the main verb: I always read." },
+    { s: "She ___ late.", options: ["is never", "never is", "never does be"], answer: 0,
+      explain: "With be, the adverb goes after it: She is never late." },
+    { s: "He speaks ___.", options: ["French very well", "very well French", "French well very"], answer: 0,
+      explain: "Don't put an adverb between a verb and its object: speaks French very well." },
+    { s: "I ___ the report.", options: ["have just finished", "just have finished", "have finished just"], answer: 0,
+      explain: "Just, already and never go after the first auxiliary: have just finished." },
+    { s: "The water was ___ freezing!", answers: ["absolutely", "completely", "totally", "really"],
+      explain: "freezing is extreme: absolutely (or really)." },
+    { s: "I'm ___ tired after work.", answers: ["very", "really", "extremely", "quite", "a bit"],
+      explain: "tired is gradable: very." },
+    { s: "That's ___ ridiculous!", answers: ["absolutely", "completely", "totally", "utterly", "really"],
+      explain: "ridiculous is extreme: absolutely." },
+    { s: "She ___ checks her email before breakfast. (100%)", answers: ["always"],
+      explain: "Frequency adverb before the main verb." },
+    { s: "I've ___ seen him. (a moment ago)", answers: ["just"],
+      explain: "After the first auxiliary: have just seen." }
   ]
 }
 ];

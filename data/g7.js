@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Deduction: present and past",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The lights are off. They ___ out.", options: ["must have gone", "can't have gone", "should have gone"], answer: 0,
       explain: "must have + past participle: we are sure something happened." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "He ___ the answer – he's never studied chemistry.", options: ["can't know", "mustn't know", "needn't know"], answer: 0,
       explain: "can't + verb: a confident negative deduction about the present." },
     { s: "We ___ taken a wrong turn somewhere – this isn't the road to the coast.", options: ["must have", "can't have", "ought to have"], answer: 0,
-      explain: "must have: the evidence shows it happened." }
+      explain: "must have: the evidence shows it happened." },
+    { s: "She ___ early – her coat isn't here. (must / leave)", answers: ["must have left"],
+      explain: "A confident deduction about the past." },
+    { s: "He ___ asleep – I can hear him talking. (can't / be)", answers: ["can't be", "cannot be"],
+      explain: "Impossible now: can't be." },
+    { s: "They ___ the bus. That would explain why they're late. (might / miss)", answers: ["might have missed", "may have missed", "could have missed"],
+      explain: "A possible explanation: might have." },
+    { s: "You ___ joking! (must / be)", answers: ["must be"],
+      explain: "I'm sure: must be." },
+    { s: "She ___ the message, or she would have replied. (can't / see)", answers: ["can't have seen", "cannot have seen", "couldn't have seen"],
+      explain: "Impossible in the past: can't have." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "should have, needn't have, could have…",
-  intro: "Complete the sentences with the modal verb in brackets and the correct form of the verb.",
+  intro: "Choose the correct option or complete the sentences with the modal verb in brackets and the correct form of the verb.",
   items: [
     { s: "You ___ (should / tell) me you were coming – I'd have cooked.", answers: ["should have told"],
       explain: "should have + past participle: criticism of something that didn't happen." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "You ___ (ought to / check) the dates before booking.", answers: ["ought to have checked"],
       explain: "ought to have + past participle = should have." },
     { s: "I ___ (needn't / bring) an umbrella – it didn't rain at all.", answers: ["needn't have brought", "need not have brought"],
-      explain: "needn't have: I brought it, but it wasn't necessary." }
+      explain: "needn't have: I brought it, but it wasn't necessary." },
+    { s: "You ___ told me it was a formal party – I'm the only one in jeans!", options: ["must have", "could have", "needn't have"], answer: 1,
+      explain: "A reproach: could have (= you had the chance)." },
+    { s: "I ___ worried – everything turned out fine.", options: ["mustn't have", "can't have", "needn't have"], answer: 2,
+      explain: "It was unnecessary: needn't have." },
+    { s: "She ___ the job if she'd wanted it, but she turned it down.", options: ["must have had", "could have had", "should have"], answer: 1,
+      explain: "A possibility that didn't happen: could have." },
+    { s: "We ___ left earlier – now we're going to be late.", options: ["needn't have", "can't have", "should have"], answer: 2,
+      explain: "A regret: should have." },
+    { s: "He was ___ to call, but he forgot.", options: ["supposed", "should", "must"], answer: 0,
+      explain: "be supposed to = was expected to." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "be bound to, be supposed to, may well…",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The new drug is ___ to be available until next year.", options: ["unlikely", "bound", "supposed"], answer: 0,
       explain: "be unlikely to = probably won't." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "There ___ to be a problem with the server – nobody can log in.", options: ["seems", "must", "is supposed"], answer: 0,
       explain: "seem to be = appear to be." },
     { s: "Shall I bring anything? – You ___ bring a bottle of wine if you like, but it's not necessary.", options: ["could", "must", "should"], answer: 0,
-      explain: "could for a suggestion that isn't necessary." }
+      explain: "could for a suggestion that isn't necessary." },
+    { s: "With so many people applying, she's ___ to get the job. (it's not likely)", answers: ["unlikely"],
+      explain: "be unlikely to = probably won't." },
+    { s: "We might as ___ go home – nobody's coming.", answers: ["well"],
+      explain: "might as well = there's no reason not to." },
+    { s: "You're not ___ to use your phone in here.", answers: ["supposed", "allowed", "permitted"],
+      explain: "be supposed to = a rule." },
+    { s: "The train ___ well be delayed again, so leave early.", answers: ["may", "might", "could"],
+      explain: "may well = it's quite likely." },
+    { s: "My laptop ___ connect to the Wi-Fi this morning. (refused to)", answers: ["wouldn't", "would not"],
+      explain: "wouldn't = refused to." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "One modal verb",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "You ___ have seen him yesterday – he's been in Australia for a month.", answers: ["can't", "cannot", "couldn't"],
       explain: "can't / couldn't have: it's impossible." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "I ___ swim when I was five, but I only learned to ride a bike at ten.", answers: ["could"],
       explain: "could for general ability in the past." },
     { s: "The rescuers ___ able to reach the climbers before dark.", answers: ["were"],
-      explain: "was / were able to for success on one occasion (not could)." }
+      explain: "was / were able to for success on one occasion (not could)." },
+    { s: "You ___ have locked the door – it's still open!", options: ["mustn't", "needn't", "can't"], answer: 2,
+      explain: "Impossible: can't have." },
+    { s: "He ___ be at least 80, but he still runs every day.", options: ["can't", "should", "must"], answer: 2,
+      explain: "A confident guess: must." },
+    { s: "I ___ have known it would rain – I didn't bring an umbrella.", options: ["must", "should", "can't"], answer: 1,
+      explain: "A regret: should have known." },
+    { s: "___ I make a suggestion?", options: ["Must", "Would", "May"], answer: 2,
+      explain: "Formal permission: May I…?" },
+    { s: "We ___ have walked – the station was only five minutes away.", options: ["could", "must", "can't"], answer: 0,
+      explain: "A possibility we didn't take: could have." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "It's a pity you didn't tell me earlier. → You ___ me earlier. (OUGHT)", answers: ["ought to have told"],
       explain: "ought to have + past participle = should have." },
     { s: "The computer refused to turn on. → The computer ___ on. (WOULD)", answers: ["would not turn", "wouldn't turn", "would not come"],
-      explain: "wouldn't = refused to." }
+      explain: "wouldn't = refused to." },
+    { s: "I'm sure the thief got in through the window. → The thief ___ in through the window. (MUST)", answers: ["must have got", "must have gotten", "must have come"],
+      explain: "must have + past participle." },
+    { s: "It's possible that she's still at work. → She ___ at work. (MAY)", answers: ["may still be"],
+      explain: "may = it's possible." },
+    { s: "It wasn't necessary to cook, but we did. → We ___. (COOKED)", answers: ["needn't have cooked", "need not have cooked"],
+      explain: "needn't have = it was unnecessary." },
+    { s: "I'm certain they'll win. → They ___ win. (BOUND)", answers: ["are bound to"],
+      explain: "be bound to = certain." },
+    { s: "It would have been possible for you to fail. → You ___ failed. (COULD)", answers: ["could have"],
+      explain: "could have + past participle." }
   ]
 }
 ];

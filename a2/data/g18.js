@@ -1,9 +1,9 @@
 window.SETS = [
 /* ---------------- Set 1 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "The most common irregular verbs",
-  intro: "Write the past simple of the verb in brackets.",
+  intro: "Choose the correct option or write the past simple of the verb in brackets.",
   items: [
     { s: "We ___ (go) to Portugal last summer.", answers: ["went"],
       explain: "go → went." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I ___ (take) the bus to work.", answers: ["took"],
       explain: "take → took." },
     { s: "She ___ (say) goodbye and left.", answers: ["said"],
-      explain: "say → said (we say \"sed\")." }
+      explain: "say → said (we say \"sed\")." },
+    { s: "I ___ my keys on the table.", options: ["left", "leaved", "leave"], answer: 0,
+      explain: "leave → left." },
+    { s: "She ___ the answer to the question.", options: ["knew", "knowed", "know"], answer: 0,
+      explain: "know → knew." },
+    { s: "He ___ in the sea every morning.", options: ["swam", "swimmed", "swum"], answer: 0,
+      explain: "swim → swam." },
+    { s: "They ___ a big house by the lake.", options: ["found", "finded", "find"], answer: 0,
+      explain: "find → found." },
+    { s: "The children ___ a song for their mum.", options: ["sang", "singed", "sung"], answer: 0,
+      explain: "sing → sang." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Verbs with the same sound",
-  intro: "Write the past simple of the verb in brackets. Many past forms end in -ought, -aught or -ew.",
+  intro: "Choose the correct option or write the past simple of the verb in brackets. Many past forms end in -ought, -aught or -ew.",
   items: [
     { s: "I ___ (think) about you all day.", answers: ["thought"],
       explain: "think → thought." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "He ___ (fight) with his brother.", answers: ["fought"],
       explain: "fight → fought." },
     { s: "We ___ (throw) the ball to the dog.", answers: ["threw"],
-      explain: "throw → threw." }
+      explain: "throw → threw." },
+    { s: "I ___ a new jacket yesterday.", options: ["bought", "buyed", "brought"], answer: 0,
+      explain: "buy → bought. (brought is the past of bring.)" },
+    { s: "She ___ a picture of her dog.", options: ["drew", "drawed", "drawn"], answer: 0,
+      explain: "draw → drew." },
+    { s: "I ___ I was right, but I was wrong.", options: ["thought", "thinked", "taught"], answer: 0,
+      explain: "think → thought." },
+    { s: "The plane ___ over the mountains.", options: ["flew", "flied", "flown"], answer: 0,
+      explain: "fly → flew." },
+    { s: "He ___ his friend to the party.", options: ["brought", "bought", "bringed"], answer: 0,
+      explain: "bring → brought." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Same form or different?",
-  intro: "Choose the correct past simple form.",
+  intro: "Choose or write the correct past simple form.",
   items: [
     { s: "I ___ my finger on a knife.", options: ["cut", "cutted", "cuted"], answer: 0,
       explain: "cut → cut (no change)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I ___ my keys at home.", options: ["left", "leaved", "lefted"], answer: 0,
       explain: "leave → left." },
     { s: "We ___ down on the grass after lunch yesterday.", options: ["sat", "sitted", "sit"], answer: 0,
-      explain: "sit → sat." }
+      explain: "sit → sat." },
+    { s: "I ___ the ball very hard. (hit)", answers: ["hit"],
+      explain: "hit → hit (the same)." },
+    { s: "He ___ his job last month. (quit)", answers: ["quit"],
+      explain: "quit → quit (the same)." },
+    { s: "We ___ all our money on holiday. (spend)", answers: ["spent"],
+      explain: "spend → spent." },
+    { s: "I ___ my brother some money. (lend)", answers: ["lent"],
+      explain: "lend → lent." },
+    { s: "The baby ___ all afternoon. (sleep)", answers: ["slept"],
+      explain: "sleep → slept." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Negatives and questions",
-  intro: "Choose the correct option. With did and didn't, use the verb without -ed.",
+  intro: "Choose the correct option or write the missing words. With did and didn't, use the verb without -ed.",
   items: [
     { s: "I didn't ___ my homework.", options: ["do", "did", "done"], answer: 0,
       explain: "After didn't: do (not did)." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "We didn't ___ the film. It was boring.", options: ["understand", "understood", "understanded"], answer: 0,
       explain: "After didn't: understand." },
     { s: "Who did you ___ at the party?", options: ["meet", "met", "meeted"], answer: 0,
-      explain: "After did: meet (not met)." }
+      explain: "After did: meet (not met)." },
+    { s: "Did you ___ well? (sleep)", answers: ["sleep"],
+      explain: "After did: the verb without a past form." },
+    { s: "I didn't ___ the alarm. (hear)", answers: ["hear"],
+      explain: "After didn't: hear (not heard)." },
+    { s: "What did she ___ to the party? (wear)", answers: ["wear"],
+      explain: "After did: wear (not wore)." },
+    { s: "We didn't ___ a parking space. (find)", answers: ["find"],
+      explain: "After didn't: find (not found)." },
+    { s: "Where did you ___ to cook? (learn)", answers: ["learn"],
+      explain: "After did: learn." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "A story: my first day at work",
-  intro: "Write the verb in brackets in the past simple.",
+  intro: "Choose the correct option or write the verb in brackets in the past simple.",
   items: [
     { s: "I ___ (wake) up at five because I was nervous.", answers: ["woke"],
       explain: "wake → woke." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "At lunch we ___ (eat) in the park.", answers: ["ate"],
       explain: "eat → ate." },
     { s: "I ___ (feel) very happy when I got home.", answers: ["felt"],
-      explain: "feel → felt." }
+      explain: "feel → felt." },
+    { s: "In the afternoon I ___ my first report.", options: ["wrote", "writed", "written"], answer: 0,
+      explain: "write → wrote." },
+    { s: "I ___ the office at six o'clock.", options: ["left", "leaved", "lefted"], answer: 0,
+      explain: "leave → left." },
+    { s: "On the way home I ___ my bike very slowly.", options: ["rode", "rided", "ridden"], answer: 0,
+      explain: "ride → rode." },
+    { s: "That night I ___ for ten hours!", options: ["slept", "sleeped", "sleep"], answer: 0,
+      explain: "sleep → slept." },
+    { s: "The next day I ___ back to work with a smile.", options: ["went", "goed", "gone"], answer: 0,
+      explain: "go → went." }
   ]
 }
 ];

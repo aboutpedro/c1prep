@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Asking somebody to do something",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ you open the window, please?", options: ["Could", "Shall", "Would like"], answer: 0,
       explain: "Polite request: Could you…? (or Can you…?)" },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Would you mind ___ the door?", options: ["closing", "close", "to close"], answer: 0,
       explain: "Would you mind + -ing?" },
     { s: "Could you ___ that again, please?", options: ["repeat", "to repeat", "repeating"], answer: 0,
-      explain: "After could: verb without to." }
+      explain: "After could: verb without to." },
+    { s: "Could you ___ the door, please? It's cold.", answers: ["close", "shut"],
+      explain: "Could you + verb." },
+    { s: "Can you ___ me your pen? I'll give it back.", answers: ["lend", "give", "pass"],
+      explain: "lend = give for a short time." },
+    { s: "Would you mind ___ a minute? (wait)", answers: ["waiting"],
+      explain: "Would you mind + -ing?" },
+    { s: "___ you give me a hand with this?", answers: ["Could", "Can", "Would"],
+      explain: "A request: Could you…?" },
+    { s: "Can you turn ___ the TV? I want to watch the news.", answers: ["on"],
+      explain: "turn on = start a machine." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Asking for permission",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ I use your phone?", options: ["Can", "Shall", "Would"], answer: 0,
       explain: "Asking for permission: Can I…? (or Could I…?)" },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Can I try this on? – Of course. The changing rooms are ___ there.", options: ["over", "on", "at"], answer: 0,
       explain: "over there = in that place." },
     { s: "May I come in? – Yes, ___ come in.", options: ["please", "thanks", "sure to"], answer: 0,
-      explain: "Yes, please come in." }
+      explain: "Yes, please come in." },
+    { s: "___ I use the bathroom, please?", answers: ["Can", "Could", "May"],
+      explain: "Asking for permission: Can I…?" },
+    { s: "Is it OK if I ___ the window? (open)", answers: ["open"],
+      explain: "Is it OK if I + present simple." },
+    { s: "Do you mind ___ I bring my dog?", answers: ["if"],
+      explain: "Do you mind if I…?" },
+    { s: "Could I ___ a glass of water, please?", answers: ["have", "get"],
+      explain: "Could I have…?" },
+    { s: "Can I sit here? – Yes, of ___.", answers: ["course"],
+      explain: "Yes, of course." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Offers: I'll… / Shall I…?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "That bag looks heavy. ___ carry it for you.", options: ["I'll", "I'm", "I"], answer: 0,
       explain: "Offering help, decided now: I'll." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "___ I call you a taxi? – That would be great, thanks.", options: ["Shall", "Do", "Would"], answer: 0,
       explain: "Offering: Shall I…?" },
     { s: "Shall I carry that? – No, ___. I'm fine.", options: ["thanks", "please", "sorry"], answer: 0,
-      explain: "Saying no to an offer: No, thanks." }
+      explain: "Saying no to an offer: No, thanks." },
+    { s: "___ I help you with your homework?", answers: ["Shall", "Can", "Could", "May"],
+      explain: "An offer: Shall I…?" },
+    { s: "You look cold. I'll ___ the heating on.", answers: ["turn", "put", "switch"],
+      explain: "turn on / put on the heating." },
+    { s: "___ I make some tea?", answers: ["Shall", "Can", "Could", "Should"],
+      explain: "An offer: Shall I…?" },
+    { s: "The door's locked. – Don't worry, I ___ open it.", answers: ["'ll", "will", "can"],
+      explain: "An offer made now: I'll." },
+    { s: "Shall I call you later? – Yes, ___.", answers: ["please"],
+      explain: "Accepting an offer: Yes, please." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "would like",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ a cup of tea? – Yes, please.", options: ["Would you like", "Do you like", "Are you liking"], answer: 0,
       explain: "Offering: Would you like…?" },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Would you like some more soup? – No, thank you. I'm ___.", options: ["full", "empty", "hungry"], answer: 0,
       explain: "No more, thanks: I'm full." },
     { s: "We'd like ___ the bill, please.", options: ["to have", "have", "having"], answer: 0,
-      explain: "would like + to + verb." }
+      explain: "would like + to + verb." },
+    { s: "What ___ you like to drink?", answers: ["would"],
+      explain: "What would you like…?" },
+    { s: "I'd like ___ a ticket to Lisbon. (buy)", answers: ["to buy"],
+      explain: "would like + to + verb." },
+    { s: "___ you like to see the menu?", answers: ["Would"],
+      explain: "Would you like to…?" },
+    { s: "Would you like a sandwich? – Yes, I'd ___ one, thanks.", answers: ["love", "like"],
+      explain: "I'd love one." },
+    { s: "Do you like coffee? – Yes, I ___.", answers: ["do"],
+      explain: "Do you like…? is about what you like in general: Yes, I do." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Requests, offers and invitations",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "___ you help me with my homework?", answers: ["Can", "Could", "Would", "Will"],
       explain: "A request: Can you…? / Could you…?" },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Would you like ___ come to my party?", answers: ["to"],
       explain: "would like + to + verb." },
     { s: "Can I ___ the window? It's very hot.", answers: ["open"],
-      explain: "Asking for permission: Can I open…?" }
+      explain: "Asking for permission: Can I open…?" },
+    { s: "___ you like some help?", options: ["Would", "Do", "Shall"], answer: 0,
+      explain: "An offer: Would you like…?" },
+    { s: "___ I take your coat?", options: ["Shall", "Would", "Do"], answer: 0,
+      explain: "An offer: Shall I…?" },
+    { s: "Could you ___ me the way to the station?", options: ["tell", "say", "speak"], answer: 0,
+      explain: "tell somebody something." },
+    { s: "Would you mind ___ me later?", options: ["calling", "call", "to call"], answer: 0,
+      explain: "Would you mind + -ing?" },
+    { s: "I'd like ___ coffee, please.", options: ["a", "some of", "any"], answer: 0,
+      explain: "Ordering one coffee: a coffee." }
   ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "all, whole, every, each",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "She spent ___ talking on the phone.", options: ["the whole evening", "all evening the", "whole the evening"], answer: 0,
       explain: "the whole + singular noun (or all evening, all the evening)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Not ___ the guests stayed until the end.", options: ["all", "every", "each"], answer: 0,
       explain: "not all = some did, some didn't." },
     { s: "They gave ___ of us a small gift.", options: ["each", "every", "whole"], answer: 0,
-      explain: "each of us. (Every of us is not possible.)" }
+      explain: "each of us. (Every of us is not possible.)" },
+    { s: "I've been looking forward to this ___ week.", answers: ["all", "whole"],
+      explain: "all week / this whole week." },
+    { s: "___ child in the class received a book.", answers: ["Every", "Each"],
+      explain: "every + singular noun." },
+    { s: "We spent the ___ day at the beach.", answers: ["whole"],
+      explain: "the whole + singular noun." },
+    { s: "The tickets cost €15 ___.", answers: ["each", "apiece"],
+      explain: "each at the end = per person or thing." },
+    { s: "___ of the twins has their own room.", answers: ["Each"],
+      explain: "Each of the two." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "both, either, neither, none",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I've got two sisters, but ___ of them lives near me.", options: ["neither", "either", "none"], answer: 0,
       explain: "neither of + two people = not one and not the other." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ answer is correct: they are both wrong.", options: ["Neither", "Either", "Both"], answer: 0,
       explain: "Neither + singular noun." },
     { s: "There's ___ milk left. We'll have to buy some.", options: ["no", "none", "neither"], answer: 0,
-      explain: "no + noun; none stands alone (There's none left)." }
+      explain: "no + noun; none stands alone (There's none left)." },
+    { s: "___ of my parents speaks English. They're both monolingual.", answers: ["Neither"],
+      explain: "Not one of two: neither." },
+    { s: "You can pay ___ in cash or by card.", answers: ["either"],
+      explain: "either … or." },
+    { s: "I invited all my friends, but ___ of them came.", answers: ["none"],
+      explain: "More than two, not one: none." },
+    { s: "___ the bus and the train go to the airport.", answers: ["Both"],
+      explain: "both … and." },
+    { s: "I don't mind – ___ day is fine for me.", answers: ["either", "any"],
+      explain: "either = one or the other (of two); any (of several)." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "few, little, a few, a little",
-  intro: "Choose the correct option. few / little = not many / not much (negative); a few / a little = some (positive).",
+  intro: "Choose the correct option or write the missing words. few / little = not many / not much (negative); a few / a little = some (positive).",
   items: [
     { s: "Very ___ people came to the meeting, so it was cancelled.", options: ["few", "a few", "little"], answer: 0,
       explain: "Not many (negative result): very few people." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "There are ___ days left before the holidays. Can't wait!", options: ["only a few", "quite little", "a little"], answer: 0,
       explain: "only a few = a small number (but some)." },
     { s: "___ of what he said was true.", options: ["Little", "Few", "A few"], answer: 0,
-      explain: "Little of + uncountable or singular idea; what he said = one idea." }
+      explain: "Little of + uncountable or singular idea; what he said = one idea." },
+    { s: "There's ___ point in waiting any longer. (not much)", answers: ["little"],
+      explain: "little = not much (negative)." },
+    { s: "I've got a ___ questions about the contract.", answers: ["few"],
+      explain: "a few = some, countable." },
+    { s: "___ people realise how dangerous it is. (not many)", answers: ["Few"],
+      explain: "few = not many (negative)." },
+    { s: "Could I have a ___ more time to think?", answers: ["little"],
+      explain: "a little + uncountable." },
+    { s: "Only a ___ tickets are left, so book now.", answers: ["few"],
+      explain: "only a few = a small number." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Quantity expressions",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "They spent ___ money on the wedding.", options: ["a great deal of", "a large number of", "many"], answer: 0,
       explain: "a great deal of + uncountable noun." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "___ the information was out of date.", options: ["Much of", "Many of", "A large number of"], answer: 0,
       explain: "much of + uncountable noun." },
     { s: "There were ___ two hundred people at the concert.", options: ["some", "any", "several"], answer: 0,
-      explain: "some + number = about." }
+      explain: "some + number = about." },
+    { s: "We had ___ any trouble finding the house.", answers: ["hardly", "scarcely", "barely"],
+      explain: "hardly any = almost no." },
+    { s: "A great ___ of effort went into the project.", answers: ["deal"],
+      explain: "a great deal of + uncountable." },
+    { s: "___ of my colleagues work from home.", answers: ["Most", "Many", "Some", "Several", "Few"],
+      explain: "Quantifier + of + the/my + noun." },
+    { s: "There were ___ of seats on the train. (more than enough)", answers: ["plenty", "lots"],
+      explain: "plenty of = more than enough." },
+    { s: "A large ___ of people turned up.", answers: ["number", "crowd"],
+      explain: "a large number of + plural countable." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "The storm destroyed the entire forest. → ___ was destroyed by the storm. (WHOLE)", answers: ["The whole forest"],
       explain: "the whole + singular noun = all of it." },
     { s: "Many of the reports were inaccurate. → A large ___ were inaccurate. (NUMBER)", answers: ["number of the reports", "number of reports"],
-      explain: "a large number of + plural noun." }
+      explain: "a large number of + plural noun." },
+    { s: "Not many people came to the opening. → Very ___ to the opening. (CAME)", answers: ["few people came"],
+      explain: "very few = not many." },
+    { s: "Neither of the films was good. → I didn't like ___ films. (EITHER)", answers: ["either of the"],
+      explain: "not … either of." },
+    { s: "Every one of the students passed. → ___ passed. (ALL)", answers: ["All of the students", "All the students"],
+      explain: "all (of) the + plural." },
+    { s: "There's almost no milk left. → There's ___ left. (HARDLY)", answers: ["hardly any milk"],
+      explain: "hardly any = almost no." },
+    { s: "They spent a lot of money on the project. → They spent ___ money on the project. (DEAL)", answers: ["a great deal of"],
+      explain: "a great deal of + uncountable." }
   ]
 }
 ];

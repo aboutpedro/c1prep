@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Reported statements",
-  intro: "Complete the reported statements. Change the tense of the verb when the reporting verb is in the past.",
+  intro: "Choose the correct option or complete the reported statements. Change the tense of the verb when the reporting verb is in the past.",
   items: [
     { s: "'I'm really tired,' she said. → She said she ___ really tired.", answers: ["was"],
       explain: "Present simple → past simple: am → was." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "'The Earth goes round the Sun,' the teacher said. → The teacher said the Earth ___ round the Sun.", answers: ["goes", "went"],
       explain: "A fact that is still true: the tense doesn't have to change." },
     { s: "'I was sleeping when you called,' he said. → He said he ___ when I called.", answers: ["had been sleeping", "'d been sleeping", "was sleeping"],
-      explain: "Past continuous → past perfect continuous (or it can stay the same)." }
+      explain: "Past continuous → past perfect continuous (or it can stay the same)." },
+    { s: "'I don't like coffee,' he said. → He said he ___ coffee.", options: ["didn't like", "doesn't liked", "hadn't liked"], answer: 0,
+      explain: "don't like → didn't like." },
+    { s: "'We've finished,' they said. → They said they ___.", options: ["have finished", "had finished", "would finish"], answer: 1,
+      explain: "have finished → had finished." },
+    { s: "'I'm leaving tomorrow,' she said. → She said she was leaving ___.", options: ["tomorrow day", "the day before", "the next day"], answer: 2,
+      explain: "tomorrow → the next day." },
+    { s: "'I may be late,' he said. → He said he ___ be late.", options: ["might", "may to", "would may"], answer: 0,
+      explain: "may → might." },
+    { s: "'I was ill yesterday,' Ana said. → Ana said she ___ ill the day before.", options: ["has been", "is", "had been"], answer: 2,
+      explain: "was → had been." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Reported questions",
-  intro: "Complete the reported questions. Remember to use statement word order.",
+  intro: "Choose the correct option or complete the reported questions. Remember to use statement word order.",
   items: [
     { s: "'Where do you live?' she asked me. → She asked me where ___.", answers: ["I lived"],
       explain: "Statement order (I lived), no do/did." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "'Who are you waiting for?' the man asked. → The man asked who ___ for.", answers: ["I was waiting"],
       explain: "Statement order: I was waiting." },
     { s: "'Do you know where the station is?' → Could you tell me where ___?", answers: ["the station is"],
-      explain: "Indirect questions also use statement order: where the station is." }
+      explain: "Indirect questions also use statement order: where the station is." },
+    { s: "'Where are you going?' → She asked me where ___.", options: ["I was going", "was I going", "I am going"], answer: 0,
+      explain: "Statement word order, tense back." },
+    { s: "'Do you like jazz?' → He asked me ___ jazz.", options: ["if I liked", "did I like", "if did I like"], answer: 0,
+      explain: "Yes/no question: if + statement order." },
+    { s: "'When did you arrive?' → They asked when ___.", options: ["had I arrived", "did I arrive", "I had arrived"], answer: 2,
+      explain: "did arrive → had arrived, statement order." },
+    { s: "'What are you doing?' → He wanted to know what ___.", options: ["was I doing", "I was doing", "I did doing"], answer: 1,
+      explain: "Statement order: I was doing." },
+    { s: "'Can I sit here?' → She asked ___ sit there.", options: ["could she", "if she could", "if could she"], answer: 1,
+      explain: "if + subject + could." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Reported orders and requests",
-  intro: "Complete the sentences using the verb in brackets + object + (not) to-infinitive.",
+  intro: "Choose the correct option or complete the sentences using the verb in brackets + object + (not) to-infinitive.",
   items: [
     { s: "'Sit down, please,' the teacher said to us. → The teacher ___ (tell) sit down.", answers: ["told us to"],
       explain: "tell + person + to-infinitive." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "'Please, please come with us,' they said to her. → They ___ (beg) come with them.", answers: ["begged her to"],
       explain: "beg + person + to-infinitive: a very strong request." },
     { s: "'Remember to lock the door,' she said to me. → She ___ (remind) lock the door.", answers: ["reminded me to"],
-      explain: "remind + person + to-infinitive." }
+      explain: "remind + person + to-infinitive." },
+    { s: "'Don't forget to call,' she said to me. → She reminded me ___.", options: ["calling", "that call", "to call"], answer: 2,
+      explain: "remind + person + to-infinitive." },
+    { s: "'Please help me,' he said to her. → He asked her ___ him.", options: ["to help", "helping", "help"], answer: 0,
+      explain: "ask + person + to-infinitive." },
+    { s: "'Don't be late,' the teacher said to them. → The teacher warned them ___ late.", options: ["not to be", "to not being", "not being"], answer: 0,
+      explain: "warn + person + not to + verb." },
+    { s: "'You should rest,' the doctor said to me. → The doctor advised me ___.", options: ["resting", "to rest", "that rest"], answer: 1,
+      explain: "advise + person + to-infinitive." },
+    { s: "'Wait outside,' the guard said to us. → The guard ordered us ___ outside.", options: ["to wait", "waiting", "wait"], answer: 0,
+      explain: "order + person + to-infinitive." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Reporting verbs and their patterns",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "He denied ___ the money.", options: ["taking", "to take", "that take"], answer: 0,
       explain: "deny + -ing." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "He admitted ___ the window.", options: ["breaking", "to break", "for breaking"], answer: 0,
       explain: "admit + -ing (or admit to + -ing)." },
     { s: "She congratulated me ___ my exam.", options: ["on passing", "for passing", "to pass"], answer: 0,
-      explain: "congratulate somebody on + -ing." }
+      explain: "congratulate somebody on + -ing." },
+    { s: "She threatened ___ the police. (call)", answers: ["to call"],
+      explain: "threaten + to-infinitive." },
+    { s: "He agreed ___ us. (help)", answers: ["to help"],
+      explain: "agree + to-infinitive." },
+    { s: "I recommend ___ early. (book)", answers: ["booking"],
+      explain: "recommend + -ing." },
+    { s: "They warned us ___ there. (not / swim)", answers: ["not to swim"],
+      explain: "warn + person + not to." },
+    { s: "She admitted ___ a mistake. (make)", answers: ["making", "having made", "to making"],
+      explain: "admit (to) + -ing." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "'Yes, I took your pen,' said Lucy. → Lucy ___ my pen. (ADMITTED)", answers: ["admitted taking", "admitted having taken", "admitted to taking", "admitted that she had taken", "admitted she had taken", "admitted that she took", "admitted she took", "admitted she'd taken", "admitted that she'd taken"],
       explain: "admit + -ing, or admit (that) + clause." },
     { s: "'No, I won't lend you my car,' Dan said to me. → Dan ___ me his car. (REFUSED)", answers: ["refused to lend"],
-      explain: "refuse + to-infinitive." }
+      explain: "refuse + to-infinitive." },
+    { s: "'I'll help you with your homework,' Dad said to me. → Dad ___ me with my homework. (OFFERED)", answers: ["offered to help"],
+      explain: "offer + to-infinitive." },
+    { s: "'You should apply for the job,' she told me. → She ___ for the job. (ADVISED)", answers: ["advised me to apply"],
+      explain: "advise + person + to-infinitive." },
+    { s: "'Why don't we go out for dinner?' said Tom. → Tom ___ out for dinner. (SUGGESTED)", answers: ["suggested going", "suggested that we go", "suggested we go", "suggested that we went", "suggested we went", "suggested that we should go", "suggested we should go"],
+      explain: "suggest + -ing, or suggest (that) + clause." },
+    { s: "'It was you who broke the printer!' she said to him. → She ___ the printer. (ACCUSED)", answers: ["accused him of breaking", "accused him of having broken"],
+      explain: "accuse + person + of + -ing." },
+    { s: "'Do you want to come?' she asked me. → She asked me ___ to come. (WANTED)", answers: ["if I wanted", "whether I wanted"],
+      explain: "Yes/no question: if + statement order." }
   ]
 }
 ];

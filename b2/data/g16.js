@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "It was… that",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "It was my brother ___ broke the window, not me.", options: ["who", "which", "what"], answer: 0,
       explain: "It was + person + who (or that)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Was it you ___ called me last night?", options: ["who", "which", "what"], answer: 0,
       explain: "Was it + person + who…?" },
     { s: "It was because of the rain ___ the match was cancelled.", options: ["that", "why", "so"], answer: 0,
-      explain: "It was because of… that…" }
+      explain: "It was because of… that…" },
+    { s: "It was Ana ___ told me the news.", answers: ["who", "that"],
+      explain: "It was + person + who/that." },
+    { s: "It was in 2010 ___ we moved here.", answers: ["that"],
+      explain: "It was + time + that." },
+    { s: "It wasn't until I got home ___ I noticed the mistake.", answers: ["that"],
+      explain: "It wasn't until … that." },
+    { s: "___ was the noise that woke me up.", answers: ["It"],
+      explain: "It was + noun + that." },
+    { s: "It's my sister ___ you should thank, not me.", answers: ["who", "whom", "that"],
+      explain: "It's + person + who/that." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "What… is",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ I need is a long holiday.", options: ["What", "That", "Which"], answer: 0,
       explain: "What = the thing that: What I need is…" },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The reason I'm late ___ that the bus didn't come.", options: ["is", "it is", "why"], answer: 0,
       explain: "The reason… is that…" },
     { s: "What surprised everyone ___ how calm she was.", options: ["was", "it was", "that"], answer: 0,
-      explain: "What surprised everyone was…" }
+      explain: "What surprised everyone was…" },
+    { s: "___ I love about this city is the food.", answers: ["What"],
+      explain: "What = the thing that." },
+    { s: "What I need ___ a good night's sleep.", answers: ["is"],
+      explain: "What … is + noun." },
+    { s: "All I did ___ ask a question!", answers: ["was"],
+      explain: "All I did was + base verb." },
+    { s: "___ we need to do is book the tickets.", answers: ["What", "All"],
+      explain: "What we need to do is + base verb." },
+    { s: "What happened ___ that I missed the bus.", answers: ["was"],
+      explain: "What happened was that…" }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Inversion after negative words",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "Never ___ such a beautiful sunset.", options: ["have I seen", "I have seen", "I saw"], answer: 0,
       explain: "Never at the start of a sentence: auxiliary + subject." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Little ___ that he was being watched.", options: ["did he know", "he knew", "knew he"], answer: 0,
       explain: "Little did he know = he had no idea." },
     { s: "Seldom ___ so many people at the beach.", options: ["have I seen", "I have seen", "I saw"], answer: 0,
-      explain: "Seldom (= rarely) + inversion." }
+      explain: "Seldom (= rarely) + inversion." },
+    { s: "Never ___ I seen such a mess!", answers: ["have"],
+      explain: "Never + auxiliary + subject." },
+    { s: "Not only ___ she sing, but she also writes her own songs.", answers: ["does", "can"],
+      explain: "Not only + auxiliary + subject." },
+    { s: "Hardly had we sat down ___ the bell rang.", answers: ["when"],
+      explain: "Hardly … when." },
+    { s: "No sooner had I paid ___ I realised I'd been overcharged.", answers: ["than"],
+      explain: "No sooner … than." },
+    { s: "Only then ___ I understand what she meant.", answers: ["did"],
+      explain: "Only then + did + subject + verb." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Emphasis with do, so and such",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I ___ like your new haircut! It really suits you.", options: ["do", "am", "does"], answer: 0,
       explain: "do + verb for emphasis." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "___ come in and sit down!", options: ["Do", "Does", "Are"], answer: 0,
       explain: "Do + imperative is a warm, polite invitation." },
     { s: "I really ___ hope you can come.", options: ["do", "am", "does"], answer: 0,
-      explain: "do + verb for emphasis." }
+      explain: "do + verb for emphasis." },
+    { s: "I ___ remember locking the door! I'm sure!", answers: ["do"],
+      explain: "Emphatic do + base verb." },
+    { s: "She ___ call you yesterday, but you didn't answer.", answers: ["did"],
+      explain: "Emphatic did + base verb." },
+    { s: "It was ___ a hot day that we stayed indoors.", answers: ["such"],
+      explain: "such + a + adjective + noun." },
+    { s: "The music was ___ loud that I couldn't think.", answers: ["so"],
+      explain: "so + adjective + that." },
+    { s: "He ___ work hard, but he never gets promoted.", answers: ["does"],
+      explain: "Emphatic does + base verb." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I didn't understand until I saw the diagram. → Only when I saw the diagram ___. (DID)", answers: ["did I understand"],
       explain: "Only when… + did + subject + verb." },
     { s: "The thing that worries me is the cost. → What ___ the cost. (WORRIES)", answers: ["worries me is"],
-      explain: "What worries me is…" }
+      explain: "What worries me is…" },
+    { s: "I have rarely seen such a talented player. → Rarely ___ such a talented player. (SEEN)", answers: ["have I seen"],
+      explain: "Rarely + auxiliary + subject." },
+    { s: "Lucy found the keys, not Tom. → It ___ the keys, not Tom. (WHO)", answers: ["was Lucy who found"],
+      explain: "It was + person + who." },
+    { s: "She's a great singer, and she's also a talented actress. → Not only ___ singer, but she's also a talented actress. (IS)", answers: ["is she a great"],
+      explain: "Not only + be + subject." },
+    { s: "I only realised the truth when I read his diary. → Only when I read his diary ___ the truth. (DID)", answers: ["did I realise", "did I realize"],
+      explain: "Only when … + did + subject + verb." },
+    { s: "The thing that I want is some peace and quiet. → All ___ some peace and quiet. (IS)", answers: ["I want is"],
+      explain: "All I want is…" }
   ]
 }
 ];

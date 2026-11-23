@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Contrast",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ the rain, we enjoyed the match.", options: ["Despite", "Although", "However"], answer: 0,
       explain: "despite + noun. although needs a clause (subject + verb)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "She passed the exam, ___ she hadn't studied much.", options: ["although", "despite", "in spite"], answer: 0,
       explain: "although + clause." },
     { s: "The weather was awful. We had a great time, ___.", options: ["though", "although", "despite"], answer: 0,
-      explain: "though can go at the end of a sentence, meaning however." }
+      explain: "though can go at the end of a sentence, meaning however." },
+    { s: "___ the bad reviews, the film was a huge success.", answers: ["Despite", "In spite of"],
+      explain: "despite + noun." },
+    { s: "I didn't enjoy the party, ___ I stayed until the end.", answers: ["although", "though", "but", "yet"],
+      explain: "although + clause." },
+    { s: "The plan is risky. ___, it's our only option.", answers: ["However", "Nevertheless", "Still", "Nonetheless"],
+      explain: "A new sentence: However, …" },
+    { s: "He's very rich, ___ his brother has nothing.", answers: ["whereas", "while", "whilst", "but"],
+      explain: "A contrast between two people: whereas." },
+    { s: "In spite ___ the cold, they swam in the lake.", answers: ["of"],
+      explain: "in spite of + noun." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Purpose",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I went to the shop ___ buy some milk.", options: ["to", "for", "so that"], answer: 0,
       explain: "to + verb for purpose." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I wrote the address down ___ I wouldn't forget it.", options: ["so that", "in order to", "to"], answer: 0,
       explain: "so that + subject + would(n't)." },
     { s: "We whispered ___ not to disturb anyone.", options: ["so as", "so that", "in case"], answer: 0,
-      explain: "so as not to + verb." }
+      explain: "so as not to + verb." },
+    { s: "She took a taxi so ___ not to be late.", answers: ["as"],
+      explain: "so as not to + verb." },
+    { s: "I'm learning Spanish in ___ to work in Mexico.", answers: ["order"],
+      explain: "in order to + verb." },
+    { s: "Let's leave now ___ that we get a good seat.", answers: ["so"],
+      explain: "so that + clause." },
+    { s: "This tool is used ___ opening tins.", answers: ["for"],
+      explain: "for + -ing: what something is used for." },
+    { s: "I'll write it down in ___ I forget.", answers: ["case"],
+      explain: "in case + clause." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Reason and result",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The flight was cancelled ___ the storm.", options: ["because of", "because", "so"], answer: 0,
       explain: "because of + noun. because needs a clause." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "There were ___ many people that we couldn't get in.", options: ["so", "such", "too"], answer: 0,
       explain: "so many / so much + noun + that." },
     { s: "Prices have risen sharply. ___, many people are cutting back.", options: ["Consequently", "Because", "Since"], answer: 0,
-      explain: "Consequently = as a result." }
+      explain: "Consequently = as a result." },
+    { s: "The game was cancelled because ___ the snow.", answers: ["of"],
+      explain: "because of + noun." },
+    { s: "It was ___ a lovely day that we went to the beach.", answers: ["such"],
+      explain: "such + a + adjective + noun." },
+    { s: "___ we have time, let's visit the castle.", answers: ["Since", "As", "Because"],
+      explain: "since / as = because." },
+    { s: "He didn't train. As a ___, he lost the race.", answers: ["result"],
+      explain: "As a result = so." },
+    { s: "The shop closed ___ to the economic crisis.", answers: ["due", "owing"],
+      explain: "due to / owing to + noun." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "One missing word",
-  intro: "Write one word in each gap, as in Part 2 of the exam.",
+  intro: "Choose the correct option or write one word in each gap, as in Part 2 of the exam.",
   items: [
     { s: "___ spite of the traffic, we arrived on time.", answers: ["In"],
       explain: "in spite of + noun." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "I'll bring an umbrella in ___ it rains.", answers: ["case"],
       explain: "in case + present simple." },
     { s: "On the one hand, it's a great job. On the ___ hand, the pay is low.", answers: ["other"],
-      explain: "on the one hand… on the other hand…" }
+      explain: "on the one hand… on the other hand…" },
+    { s: "___ having a map, we got lost.", options: ["Although", "However", "Despite"], answer: 2,
+      explain: "despite + -ing." },
+    { s: "I'll call you later ___ you need anything.", options: ["so that", "despite", "in case"], answer: 2,
+      explain: "in case = because it's possible." },
+    { s: "The weather was terrible. ___, we had a great time.", options: ["Despite", "Nevertheless", "Although"], answer: 1,
+      explain: "A new sentence: Nevertheless, …" },
+    { s: "She went to the gym ___ to get fit.", options: ["so that", "for", "in order"], answer: 2,
+      explain: "in order to + verb." },
+    { s: "He was ___ tired that he fell asleep on the bus.", options: ["such", "too", "so"], answer: 2,
+      explain: "so + adjective + that." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,6 +176,16 @@ window.SETS = [
     { s: "Take your phone. You might need to call me. → Take your phone ___ to call me. (CASE)", answers: ["in case you need"],
       explain: "in case + present simple." },
     { s: "The flight was delayed because of fog. → The flight was delayed ___ fog. (DUE)", answers: ["due to", "due to the"],
+      explain: "due to + noun." },
+    { s: "Although the weather was bad, we went out. → Despite ___, we went out. (WEATHER)", answers: ["the bad weather"],
+      explain: "despite + noun phrase." },
+    { s: "We stayed at home because of the rain. → We stayed at home ___ raining. (WAS)", answers: ["because it was", "as it was", "since it was"],
+      explain: "because + clause." },
+    { s: "She wore a hat so that she wouldn't get sunburnt. → She wore a hat so ___ sunburnt. (AS)", answers: ["as not to get"],
+      explain: "so as not to + verb." },
+    { s: "The film was so long that I fell asleep. → It was ___ that I fell asleep. (SUCH)", answers: ["such a long film"],
+      explain: "such + a + adjective + noun." },
+    { s: "The concert was cancelled because the singer was ill. → The concert was cancelled ___ illness. (DUE)", answers: ["due to the singer's"],
       explain: "due to + noun." }
   ]
 }

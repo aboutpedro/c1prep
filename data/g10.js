@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Relative words",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "The man ___ car was stolen has offered a reward.", answers: ["whose"],
       explain: "whose for possession: the man's car." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "We visited several museums, none of ___ were open on Mondays.", answers: ["which"],
       explain: "none / all / some of which for things." },
     { s: "The reason ___ he resigned has never been made public.", answers: ["why", "that"],
-      explain: "the reason why / that…" }
+      explain: "the reason why / that…" },
+    { s: "The writer, ___ novels have sold millions, is giving a talk.", options: ["who's", "whom", "whose"], answer: 2,
+      explain: "Possession: whose." },
+    { s: "I have two sisters, neither of ___ lives nearby.", options: ["who", "them", "whom"], answer: 2,
+      explain: "After of, for people: whom." },
+    { s: "That was the year ___ everything changed.", options: ["which", "where", "when"], answer: 2,
+      explain: "Time: when." },
+    { s: "The company, ___ profits have doubled, is expanding.", options: ["which", "that", "whose"], answer: 2,
+      explain: "Possession (its profits): whose." },
+    { s: "The town ___ I was born has changed beyond recognition.", options: ["which", "that", "where"], answer: 2,
+      explain: "Place: where." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Defining, non-defining and prepositions",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "My brother, ___ lives in Rome, is coming to visit.", options: ["who", "that", "whom"], answer: 0,
       explain: "Non-defining clause about a person, as the subject: who. that is not used after a comma." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "There were 200 applicants, most of ___ had no experience.", options: ["whom", "who", "them"], answer: 0,
       explain: "most of whom for people." },
     { s: "I've lost the book ___ you lent me.", options: ["that", "what", "whose"], answer: 0,
-      explain: "Defining clause about a thing: that / which (or no pronoun)." }
+      explain: "Defining clause about a thing: that / which (or no pronoun)." },
+    { s: "The person with ___ I share an office is on holiday.", answers: ["whom"],
+      explain: "Preposition + whom." },
+    { s: "The town, ___ population has doubled, needs a new school.", answers: ["whose"],
+      explain: "its population → whose." },
+    { s: "She ignored my advice, ___ was a big mistake.", answers: ["which"],
+      explain: "which for the whole idea." },
+    { s: "There were ten candidates, three of ___ were shortlisted.", answers: ["whom"],
+      explain: "Quantity + of whom." },
+    { s: "The ease with ___ she solved it impressed everyone.", answers: ["which"],
+      explain: "Preposition + which." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Participle clauses",
-  intro: "Complete the sentences with the correct participle form of the verb in brackets (-ing, past participle, having + past participle or having been + past participle).",
+  intro: "Choose the correct option or complete the sentences with the correct participle form of the verb in brackets (-ing, past participle, having + past participle or having been + past participle).",
   items: [
     { s: "___ (not / know) what to do, I called my brother.", answers: ["Not knowing"],
       explain: "Not + -ing = because I didn't know." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Students ___ (hope) to study abroad should apply by May.", answers: ["hoping"],
       explain: "-ing = who hope." },
     { s: "___ (warn) about the storm, the fishermen stayed in port.", answers: ["Having been warned", "Warned"],
-      explain: "Passive: they had been warned. Having been warned (or simply Warned)." }
+      explain: "Passive: they had been warned. Having been warned (or simply Warned)." },
+    { s: "___ the house, they noticed the door was open.", options: ["Approached", "Having been approached", "Approaching"], answer: 2,
+      explain: "Active, same time: -ing." },
+    { s: "___ by the news, she sat down in silence.", options: ["Shocking", "Having shocked", "Shocked"], answer: 2,
+      explain: "Passive meaning: past participle." },
+    { s: "___ nothing about cars, I had to call a mechanic.", options: ["Knowing", "Known", "Having known"], answer: 0,
+      explain: "A reason (active): -ing." },
+    { s: "___ in a hurry, the letter was full of mistakes.", options: ["Written", "Writing", "Having written"], answer: 0,
+      explain: "Passive meaning: past participle." },
+    { s: "___ his homework, he went out to play.", options: ["Done", "Being done", "Having done"], answer: 2,
+      explain: "Completed first: having + past participle." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Shortened clauses",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The new law, ___ comes into force next month, has been heavily criticised.", options: ["which", "that", "what"], answer: 0,
       explain: "Non-defining clause about a thing: which." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "___ the instructions carefully, he assembled the shelves in minutes.", options: ["Having read", "Read", "Being read"], answer: 0,
       explain: "Having read = after he had read (active, completed first)." },
     { s: "He lent me £500, without ___ I couldn't have paid the rent.", options: ["which", "what", "that"], answer: 0,
-      explain: "preposition + which, referring to the money." }
+      explain: "preposition + which, referring to the money." },
+    { s: "The documents ___ to this email are confidential. (attach)", answers: ["attached"],
+      explain: "Passive meaning: past participle." },
+    { s: "Anyone ___ help should ask at reception. (need)", answers: ["needing"],
+      explain: "Active meaning: -ing." },
+    { s: "She was the last person ___ the building. (leave)", answers: ["to leave"],
+      explain: "After the last: to-infinitive." },
+    { s: "The bridge, ___ in 1932, is still in use. (complete)", answers: ["completed"],
+      explain: "Passive meaning: past participle." },
+    { s: "Not ___ to wake anyone, I crept upstairs. (want)", answers: ["wanting"],
+      explain: "A reason: not + -ing." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "She didn't know where the station was, so she asked a policeman. → Not ___, she asked a policeman. (WHERE)", answers: ["knowing where the station was"],
       explain: "Not knowing… = because she didn't know…" },
     { s: "There are thirty students in the class. Most of them are from Asia. → There are thirty students in the class, ___ from Asia. (MOST)", answers: ["most of whom are", "most of whom come"],
-      explain: "most of whom for people." }
+      explain: "most of whom for people." },
+    { s: "I met a writer. Her books have been translated into 40 languages. → I met a writer ___ translated into 40 languages. (WHOSE)", answers: ["whose books have been"],
+      explain: "her books → whose books." },
+    { s: "She had lived in Paris before, so she knew the city well. → ___ in Paris before, she knew the city well. (LIVED)", answers: ["Having lived"],
+      explain: "Earlier action as a reason: having + past participle." },
+    { s: "There are five bedrooms. Two of them have balconies. → There are five bedrooms, ___ balconies. (WHICH)", answers: ["two of which have"],
+      explain: "Quantity + of which." },
+    { s: "He lost his passport, so he couldn't fly. → He lost his passport, ___ unable to fly. (MEANT)", answers: ["which meant he was", "which meant that he was"],
+      explain: "which for the whole idea." },
+    { s: "The man who is sitting by the window is my boss. → The man ___ window is my boss. (SITTING)", answers: ["sitting by the"],
+      explain: "Shortened relative clause: -ing." }
   ]
 }
 ];

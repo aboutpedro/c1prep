@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "bored or boring?",
-  intro: "Choose the correct word. -ed = how a person feels; -ing = the thing that makes them feel it.",
+  intro: "Choose or write the correct word. -ed = how a person feels; -ing = the thing that makes them feel it.",
   items: [
     { s: "The film was really ___. I fell asleep.", options: ["boring", "bored", "bore"], answer: 0,
       explain: "The film makes people feel bored: it's boring." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "The children were ___ about the trip.", options: ["excited", "exciting", "excite"], answer: 0,
       explain: "How they felt: excited." },
     { s: "The football match was very ___!", options: ["exciting", "excited", "excite"], answer: 0,
-      explain: "The match made people excited: exciting." }
+      explain: "The match made people excited: exciting." },
+    { s: "I was ___ by the beautiful view. (amaze)", answers: ["amazed"],
+      explain: "How I felt: -ed." },
+    { s: "The weather was ___. It rained all week. (depress)", answers: ["depressing"],
+      explain: "What made us feel bad: -ing." },
+    { s: "He's ___ in old cars. (interest)", answers: ["interested"],
+      explain: "How he feels: -ed." },
+    { s: "The test results were very ___. (surprise)", answers: ["surprising"],
+      explain: "The thing that surprises: -ing." },
+    { s: "After the game, we were all ___. (exhaust)", answers: ["exhausted"],
+      explain: "How we felt: -ed." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "More -ed and -ing adjectives",
-  intro: "Write the correct form of the word in brackets: -ed or -ing.",
+  intro: "Choose the correct option or write the correct form of the word in brackets: -ed or -ing.",
   items: [
     { s: "I'm ___ (worry) about my exam.", answers: ["worried"],
       explain: "How I feel: worried. (worry → worried)" },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I'm ___ (confuse). Can you explain again?", answers: ["confused"],
       explain: "How I feel: confused." },
     { s: "These instructions are ___ (confuse).", answers: ["confusing"],
-      explain: "The instructions make people confused: confusing." }
+      explain: "The instructions make people confused: confusing." },
+    { s: "The view from the top was ___.", options: ["amazing", "amazed", "amaze"], answer: 0,
+      explain: "The thing that amazes: -ing." },
+    { s: "I felt ___ when my friend didn't call.", options: ["annoyed", "annoying", "annoy"], answer: 0,
+      explain: "How I felt: -ed." },
+    { s: "My little brother is so ___! He never stops talking.", options: ["annoying", "annoyed", "annoy"], answer: 0,
+      explain: "He makes people feel annoyed: -ing." },
+    { s: "We were ___ by the bad service.", options: ["shocked", "shocking", "shock"], answer: 0,
+      explain: "How we felt: -ed." },
+    { s: "The end of the film was ___.", options: ["shocking", "shocked", "shock"], answer: 0,
+      explain: "The thing that shocks: -ing." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Adjective + preposition",
-  intro: "Choose the correct preposition.",
+  intro: "Choose or write the correct preposition.",
   items: [
     { s: "She's very good ___ maths.", options: ["at", "in", "on"], answer: 0,
       explain: "good at / bad at." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "He's very different ___ his brother.", options: ["from", "of", "at"], answer: 0,
       explain: "different from." },
     { s: "Be nice ___ your little brother!", options: ["to", "with", "for"], answer: 0,
-      explain: "nice to / kind to." }
+      explain: "nice to / kind to." },
+    { s: "She's crazy ___ horses.", answers: ["about"],
+      explain: "crazy about." },
+    { s: "I'm really sorry ___ being late.", answers: ["for", "about"],
+      explain: "sorry for / about." },
+    { s: "He's keen ___ football.", answers: ["on"],
+      explain: "keen on." },
+    { s: "We're very pleased ___ our new flat.", answers: ["with"],
+      explain: "pleased with." },
+    { s: "Are you ready ___ the test?", answers: ["for"],
+      explain: "ready for." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "More adjective + preposition",
-  intro: "Write the correct preposition: at, of, in, about, for, to, from or with.",
+  intro: "Choose the correct option or write the correct preposition: at, of, in, about, for, to, from or with.",
   items: [
     { s: "I'm not very good ___ cooking.", answers: ["at"],
       explain: "good at." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "The town is famous ___ its beaches.", answers: ["for"],
       explain: "famous for." },
     { s: "My brother is scared ___ the dark.", answers: ["of"],
-      explain: "scared of." }
+      explain: "scared of." },
+    { s: "She's kind ___ everyone.", options: ["to", "with", "for"], answer: 0,
+      explain: "kind to someone." },
+    { s: "He's very jealous ___ his brother.", options: ["of", "from", "at"], answer: 0,
+      explain: "jealous of." },
+    { s: "The film is based ___ a true story.", options: ["on", "in", "at"], answer: 0,
+      explain: "based on." },
+    { s: "I'm not happy ___ my exam results.", options: ["with", "at", "of"], answer: 0,
+      explain: "happy with." },
+    { s: "We're late ___ the meeting!", options: ["for", "to", "at"], answer: 0,
+      explain: "late for." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Mixed practice",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I'm ___ football.", options: ["interested in", "interesting in", "interested on"], answer: 0,
       explain: "interested in." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "The children were ___ by the fireworks.", options: ["amazed", "amazing", "amaze"], answer: 0,
       explain: "How they felt: amazed." },
     { s: "It's ___ to watch the same film three times.", options: ["boring", "bored", "bore"], answer: 0,
-      explain: "The activity makes us bored: boring." }
+      explain: "The activity makes us bored: boring." },
+    { s: "I'm not ___ in politics. (interest)", answers: ["interested"],
+      explain: "How I feel: -ed, + in." },
+    { s: "The museum was really ___. (bore)", answers: ["boring"],
+      explain: "The thing that bores: -ing." },
+    { s: "She's afraid ___ flying.", answers: ["of"],
+      explain: "afraid of." },
+    { s: "I'm very ___ about the trip! (excite)", answers: ["excited"],
+      explain: "How I feel: -ed, + about." },
+    { s: "He's famous ___ his songs.", answers: ["for"],
+      explain: "famous for." }
   ]
 }
 ];

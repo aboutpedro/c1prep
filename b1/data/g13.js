@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "both, either or neither?",
-  intro: "Choose the correct word. Both = the two together; either = one or the other; neither = not one and not the other.",
+  intro: "Choose or write the correct word. Both = the two together; either = one or the other; neither = not one and not the other.",
   items: [
     { s: "I have two brothers. ___ of them live in Canada.", options: ["Both", "Either", "Neither"], answer: 0,
       explain: "The two together, with a positive plural verb (live): both of them." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Sit on ___ side of the table. There are free seats on both sides.", options: ["either", "neither", "both"], answer: 0,
       explain: "Either side = one side or the other (also: both sides)." },
     { s: "She's ___ clever and funny.", options: ["both", "either", "neither"], answer: 0,
-      explain: "both … and …: she is clever and she is funny." }
+      explain: "both … and …: she is clever and she is funny." },
+    { s: "___ of my grandparents are still alive. They're both 85.", answers: ["Both"],
+      explain: "The two together → Both." },
+    { s: "I don't like ___ of these songs.", answers: ["either"],
+      explain: "Negative, one or the other → not … either." },
+    { s: "___ my sister nor my brother can drive.", answers: ["Neither"],
+      explain: "neither … nor = not one and not the other." },
+    { s: "You can pay ___ by card or in cash.", answers: ["either"],
+      explain: "either … or = one or the other." },
+    { s: "My parents ___ work in a hospital.", answers: ["both"],
+      explain: "The two together → both." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "all, every or each?",
-  intro: "Choose the correct word. All + plural or uncountable nouns; every and each + singular nouns. Each is for a small group or for things one by one.",
+  intro: "Choose or write the correct word. All + plural or uncountable nouns; every and each + singular nouns. Each is for a small group or for things one by one.",
   items: [
     { s: "___ students must bring a pen to the exam.", options: ["All", "Every", "Each"], answer: 0,
       explain: "Students is plural, so we use all." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ of my friends came to my birthday party. Nobody stayed at home.", options: ["All", "Every", "Any"], answer: 0,
       explain: "All of + plural: all of my friends. Every of is not possible, and any doesn't fit a positive sentence like this." },
     { s: "The two boys had a sandwich in ___ hand.", options: ["each", "every", "all"], answer: 0,
-      explain: "We have only two hands. For two, use each, not every." }
+      explain: "We have only two hands. For two, use each, not every." },
+    { s: "I've eaten ___ the biscuits. Sorry!", answers: ["all"],
+      explain: "all + the + plural." },
+    { s: "We go to the beach ___ summer.", answers: ["every", "each"],
+      explain: "every + singular noun (each year)." },
+    { s: "The children got a present ___.", answers: ["each"],
+      explain: "each at the end = for every one of them." },
+    { s: "___ student has their own computer.", answers: ["Every", "Each"],
+      explain: "every / each + singular noun." },
+    { s: "I was busy ___ week.", answers: ["all"],
+      explain: "all week = the whole week." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "few, a few, little, a little",
-  intro: "Choose the correct option. A few / a little = some (positive). Few / little = not many / not much (negative). Few with countable nouns, little with uncountable.",
+  intro: "Choose the correct option or write the missing words. A few / a little = some (positive). Few / little = not many / not much (negative). Few with countable nouns, little with uncountable.",
   items: [
     { s: "I have ___ friends in London, so I'm not lonely there.", options: ["a few", "few", "a little"], answer: 0,
       explain: "Some friends (positive: I'm not lonely), countable: a few." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "___ tourists visit this village in winter. Most hotels are closed.", options: ["Few", "A few", "Little"], answer: 0,
       explain: "Not many (negative: hotels are closed), countable: few." },
     { s: "Add ___ salt and pepper, and the soup is ready.", options: ["a little", "a few", "few"], answer: 0,
-      explain: "Some salt, uncountable: a little." }
+      explain: "Some salt, uncountable: a little." },
+    { s: "I've got a ___ ideas for the party.", answers: ["few"],
+      explain: "a few + plural countable noun." },
+    { s: "There's ___ hope of finding the dog now. It's been a month.", answers: ["little"],
+      explain: "little (no a) = not much, negative." },
+    { s: "We had a ___ problems, but the trip was great.", answers: ["few"],
+      explain: "a few problems = some." },
+    { s: "Could you give me a ___ help with this box?", answers: ["little"],
+      explain: "a little + uncountable noun." },
+    { s: "___ people know the answer. It's very difficult.", answers: ["Few"],
+      explain: "Few (no a) = not many." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "no, none, any, most",
-  intro: "Choose the correct word.",
+  intro: "Choose or write the correct word.",
   items: [
     { s: "There's ___ milk in the fridge. Can you buy some?", options: ["no", "none", "any"], answer: 0,
       explain: "No + noun = not any: there's no milk." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I spent ___ of the day in bed. I felt terrible.", options: ["most", "the most", "almost"], answer: 0,
       explain: "Most of the day = the biggest part of the day." },
     { s: "___ of the food was left. We ate it all.", options: ["None", "No", "Any"], answer: 0,
-      explain: "None of + the + noun: none of the food." }
+      explain: "None of + the + noun: none of the food." },
+    { s: "There are ___ buses after midnight.", answers: ["no"],
+      explain: "no + noun = not any." },
+    { s: "I wanted some cake, but there was ___ left.", answers: ["none", "nothing"],
+      explain: "none = not any (without a noun)." },
+    { s: "___ people in my town speak two languages.", answers: ["Most", "Many"],
+      explain: "most + noun (no of, no the)." },
+    { s: "You can come ___ day this week.", answers: ["any"],
+      explain: "any = it doesn't matter which." },
+    { s: "___ of my friends live near me. They all live far away.", answers: ["None"],
+      explain: "none of = not one of them." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "I've got two sisters, and ___ of them are doctors.", answers: ["both"], width: 9,
       explain: "Two people, positive plural verb (are): both of them." },
@@ -136,7 +176,55 @@ window.SETS = [
     { s: "We stayed for a ___ days and then went home.", answers: ["few"], width: 9,
       explain: "Some days (positive), countable: a few." },
     { s: "I can't decide between the red one and the blue one. I like ___ of them.", answers: ["both"], width: 9,
-      explain: "Two things, and I like the two of them: both." }
+      explain: "Two things, and I like the two of them: both." },
+    { s: "I invited Ana and Leo, but ___ of them came.", options: ["neither", "either", "none"], answer: 0,
+      explain: "Two people, not one and not the other: neither." },
+    { s: "There's ___ coffee left. Shall I buy some?", options: ["none", "no", "any"], answer: 1,
+      explain: "no + noun." },
+    { s: "___ of the people at the party were students.", options: ["Most", "Most the", "The most"], answer: 0,
+      explain: "most of + the + noun." },
+    { s: "We visit my grandmother ___ Sunday.", options: ["all", "every", "each of"], answer: 1,
+      explain: "every + singular noun." },
+    { s: "I've got ___ friends here, so I'm not lonely.", options: ["few", "a little", "a few"], answer: 2,
+      explain: "a few = some (positive)." }
+  ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Articles with countable and uncountable nouns",
+  intro: "Choose the correct option or write the missing words. – means no article.",
+  items: [
+    { s: "Can you give me ___ advice?", options: ["some", "an", "a"], answer: 0,
+      explain: "Advice is uncountable: no a or an. Use some (or a piece of advice)." },
+    { s: "I need ___ information about the trains.", options: ["some", "an", "a"], answer: 0,
+      explain: "Information is uncountable: some information, never an information." },
+    { s: "___ water is essential for life.", options: ["–", "The", "A"], answer: 0,
+      explain: "An uncountable noun in general: no article." },
+    { s: "___ water in this bottle is cold.", options: ["The", "–", "A"], answer: 0,
+      explain: "Particular water (the water in this bottle): the." },
+    { s: "We had ___ terrible weather on holiday.", options: ["–", "a", "an"], answer: 0,
+      explain: "Weather is uncountable: no a. We had terrible weather." },
+    { s: "I bought ___ new furniture for my flat.", options: ["some", "a", "many"], answer: 0,
+      explain: "Furniture is uncountable: some furniture, not a furniture or many furnitures." },
+    { s: "She has ___ job in a bank.", options: ["a", "–", "some"], answer: 0,
+      explain: "Job is countable: a job. (Work is uncountable: She has work.)" },
+    { s: "I'm looking for ___ work at the moment.", options: ["–", "a", "an"], answer: 0,
+      explain: "Work meaning a job in general is uncountable: no a." },
+    { s: "___ news is good: you passed!", options: ["The", "A", "An"], answer: 0,
+      explain: "News is uncountable and takes a singular verb (news is). Here it's particular news: the." },
+    { s: "I'd like ___ glass of water, please.", options: ["a", "–", "some"], answer: 0,
+      explain: "Glass (a container) is countable: a glass of water." },
+    { s: "Can I ask you ___ question?", answers: ["a"],
+      explain: "question is countable: a question." },
+    { s: "We need to buy ___ bread for breakfast.", answers: ["some"],
+      explain: "bread is uncountable: some." },
+    { s: "___ information on this website is wrong.", answers: ["The", "Some"],
+      explain: "Particular information (on this website): the." },
+    { s: "She gave me ___ useful advice.", answers: ["some"],
+      explain: "advice is uncountable: some, never an." },
+    { s: "I've got ___ homework to do tonight.", answers: ["some", "a lot of", "lots of"],
+      explain: "homework is uncountable: some." }
   ]
 }
 ];

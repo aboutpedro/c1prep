@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Pointing back and forward",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "Both candidates were strong, but we chose the ___ because of her experience.", options: ["latter", "later", "lately", "last"], answer: 0,
       explain: "the former / the latter = the first / the second of two things mentioned." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "___ were the results that the project was cancelled.", options: ["Such", "So", "That", "This"], answer: 0,
       explain: "Such were the results that… = the results were so bad that…" },
     { s: "I've read his first novel, but not the ___ he wrote later.", options: ["ones", "it", "them", "those ones"], answer: 0,
-      explain: "ones replaces novels." }
+      explain: "ones replaces novels." },
+    { s: "We visited Rome and Venice; I preferred the ___.", answers: ["latter", "former"],
+      explain: "the former / the latter." },
+    { s: "Some guests left early; ___ stayed until dawn.", answers: ["others"],
+      explain: "others = other people." },
+    { s: "Unemployment fell, ___ surprised everyone.", answers: ["which"],
+      explain: "which refers to the whole clause." },
+    { s: "___ is what I suggest: we leave at six.", answers: ["This", "Here"],
+      explain: "this points forward." },
+    { s: "Of the two plans, the ___ seems cheaper but the latter is safer.", answers: ["former"],
+      explain: "the former = the first of two." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Substitution at C2",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "The government said it would cut taxes, and it has done ___.", answers: ["so"],
       explain: "done so = done that (cut taxes)." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I'd like to go to the concert, but I don't know if I'll be able ___.", answers: ["to"],
       explain: "Ellipsis: be able to (go). Keep to." },
     { s: "If ___, we'll have to change our plans.", answers: ["so"],
-      explain: "If so = if that is the case." }
+      explain: "If so = if that is the case." },
+    { s: "Do you think it will rain? – I hope ___.", options: ["not", "no", "don't"], answer: 0,
+      explain: "I hope not = I hope it won't." },
+    { s: "He said he would finish it, and he did ___.", options: ["so", "it so", "such"], answer: 0,
+      explain: "do so replaces the verb phrase." },
+    { s: "Her accent is more noticeable than ___ of her brother.", options: ["that", "this", "it"], answer: 0,
+      explain: "that of = the one of." },
+    { s: "I wanted to help but wasn't able ___.", options: ["to", "so", "it"], answer: 0,
+      explain: "Ellipsis: keep to." },
+    { s: "Is she coming? – I suppose ___.", options: ["so", "it", "that"], answer: 0,
+      explain: "suppose so = suppose she is." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Linking across sentences",
-  intro: "Choose the best option.",
+  intro: "Choose the best option or write the missing words.",
   items: [
     { s: "The plan was expensive. ___, it was approved.", options: ["Nevertheless", "Therefore", "Moreover", "Consequently"], answer: 0,
       explain: "Nevertheless = in spite of this." },
@@ -80,7 +100,17 @@ window.SETS = [
     { s: "I don't like the idea. ___, it's not my decision.", options: ["In any case", "In case", "Just in case", "In that case"], answer: 0,
       explain: "In any case = whatever happens, anyway." },
     { s: "The results were positive. ___, more research is needed.", options: ["That said", "That says", "Saying that is", "It said"], answer: 0,
-      explain: "That said = however (after what was just said)." }
+      explain: "That said = however (after what was just said)." },
+    { s: "The tickets were expensive. ___, the show was sold out.", answers: ["Nevertheless", "Nonetheless", "Even so", "Still", "However"],
+      explain: "Contrast." },
+    { s: "It was raining. ___, we stayed indoors.", answers: ["Consequently", "Therefore", "As a result", "So", "Hence", "Thus"],
+      explain: "Result." },
+    { s: "Take an umbrella ___ it rains.", answers: ["in case"],
+      explain: "in case = as a precaution." },
+    { s: "The job pays well. ___, the hours are long.", answers: ["On the other hand", "However", "Then again", "That said", "Mind you"],
+      explain: "Contrast." },
+    { s: "She's clever and, ___, very kind.", answers: ["moreover", "what's more", "what is more", "furthermore", "besides", "in addition", "above all"],
+      explain: "Addition." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "She can't drive, and ___ can her husband.", options: ["nor", "so", "either", "also"], answer: 0,
       explain: "nor + auxiliary + subject." },
     { s: "We need a new printer: the old ___ is broken.", options: ["one", "it", "ones", "that"], answer: 0,
-      explain: "the old one = the old printer." }
+      explain: "the old one = the old printer." },
+    { s: "I asked for a large coffee but got a small ___.", answers: ["one"],
+      explain: "one replaces a countable noun." },
+    { s: "He said he'd fix it, but he hasn't done ___ yet.", answers: ["so", "it"],
+      explain: "do so / do it." },
+    { s: "Tom likes jazz, and ___ does Ana.", answers: ["so"],
+      explain: "so + auxiliary + subject." },
+    { s: "I hope you can come. If you ___, bring a friend.", answers: ["can", "do"],
+      explain: "Ellipsis after the auxiliary." },
+    { s: "Few believed the rumours, but ___ who did were furious.", answers: ["those"],
+      explain: "those who = the people who." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Has the parcel arrived? – I don't think it has. → Has the parcel arrived? – I ___. (SO)", answers: ["don't think so", "do not think so"],
       explain: "think so / don't think so replace a clause." },
     { s: "Both options are good, but I prefer the second one. → Both options are good, but I ___ the former. (LATTER)", answers: ["prefer the latter to"],
-      explain: "the former / the latter = the first / the second of two." }
+      explain: "the former / the latter = the first / the second of two." },
+    { s: "Anna speaks French, and her sister speaks French too. → Anna speaks French, ___ sister. (DOES)", answers: ["and so does her", "as does her", "so does her"],
+      explain: "so / as + auxiliary + subject." },
+    { s: "Salaries in the city are higher than salaries in the country. → Salaries in the city are higher ___ country. (THOSE)", answers: ["than those in the", "than those of the"],
+      explain: "those replaces a plural noun." },
+    { s: "I didn't enjoy the film, and my friends didn't either. → I didn't enjoy the film, ___. (NEITHER)", answers: ["and neither did my friends", "neither did my friends"],
+      explain: "neither + auxiliary + subject." },
+    { s: "The second option is cheaper than the first. → The second option is cheaper ___. (ONE)", answers: ["than the first one"],
+      explain: "one replaces a countable noun." },
+    { s: "Prices went up, and this surprised everyone. → Prices went up, ___. (WHICH)", answers: ["which surprised everyone"],
+      explain: "which refers to the whole clause." }
   ]
 }
 ];

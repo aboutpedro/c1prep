@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Passive forms",
-  intro: "Complete the sentences with the correct passive form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct passive form of the verbs in brackets.",
   items: [
     { s: "The results ___ (announce) tomorrow at noon.", answers: ["will be announced", "are to be announced", "are being announced", "are going to be announced"],
       explain: "Future passive: will be + past participle (or are to be / are being announced for an arrangement)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "The bridge ___ (build) when the earthquake struck.", answers: ["was being built"],
       explain: "Past continuous passive: was being + past participle." },
     { s: "Our flight ___ (cancel) because of the strike, so we're stuck here.", answers: ["has been cancelled", "has been canceled", "was cancelled", "was canceled"],
-      explain: "A recent event with a present result: present perfect passive (past simple is also possible)." }
+      explain: "A recent event with a present result: present perfect passive (past simple is also possible)." },
+    { s: "The new hospital ___ by the end of next year.", options: ["will have completed", "will have been completed", "will be completing"], answer: 1,
+      explain: "Future perfect passive: will have been + past participle." },
+    { s: "I can't stand ___ while I'm working.", options: ["interrupting", "to interrupt", "being interrupted"], answer: 2,
+      explain: "-ing passive: being + past participle." },
+    { s: "The suspect ___ by police at the moment.", options: ["is questioning", "is being questioned", "has questioned"], answer: 1,
+      explain: "Present continuous passive." },
+    { s: "The report ___ until the minister had approved it.", options: ["didn't publish", "wasn't published", "wasn't publishing"], answer: 1,
+      explain: "The report didn't publish itself: passive." },
+    { s: "These figures need ___ before we publish them.", options: ["to be checked", "to check", "be checked"], answer: 0,
+      explain: "need + to be + past participle." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "It is said that… / He is said to…",
-  intro: "Complete the sentences with the correct form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verbs in brackets.",
   items: [
     { s: "The painting is believed ___ (be) stolen in the 1970s.", answers: ["to have been"],
       explain: "The theft happened earlier than the belief: perfect infinitive (to have been stolen)." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Ten people ___ (think) to have been injured in the explosion.", answers: ["are thought"],
       explain: "Subject + are thought + perfect infinitive." },
     { s: "It ___ (not / know) when the building was first constructed.", answers: ["is not known", "isn't known"],
-      explain: "It is not known + wh-clause." }
+      explain: "It is not known + wh-clause." },
+    { s: "The thieves are believed ___ the country.", options: ["to have left", "to leave", "having left"], answer: 0,
+      explain: "An earlier action: to have + past participle." },
+    { s: "It ___ that the economy will recover next year.", options: ["predicts", "is predicted", "is predicting"], answer: 1,
+      explain: "It is predicted that…" },
+    { s: "The actor is rumoured ___ married in secret.", options: ["to get", "to have got", "having got"], answer: 1,
+      explain: "Past event: to have + past participle." },
+    { s: "She is known ___ several languages fluently.", options: ["to have spoken", "to speak", "speaking"], answer: 1,
+      explain: "A present state: to + infinitive." },
+    { s: "Three climbers ___ to be missing on the mountain.", options: ["fear", "are fearing", "are feared"], answer: 2,
+      explain: "be feared to be = people fear that they are." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Passive infinitives and -ing forms",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "Nobody likes ___ in public.", options: ["being criticised", "criticising", "to criticise"], answer: 0,
       explain: "We are criticised by others: passive -ing (being + past participle)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The castle is said ___ in the 12th century.", options: ["to have been built", "to be built", "having been built"], answer: 0,
       explain: "A past event: perfect passive infinitive." },
     { s: "___ by the noise, the baby started crying.", options: ["Woken", "Waking", "Having woken"], answer: 0,
-      explain: "The baby was woken: a past participle clause has a passive meaning." }
+      explain: "The baby was woken: a past participle clause has a passive meaning." },
+    { s: "I don't remember ___ for my opinion. (ask)", answers: ["being asked"],
+      explain: "remember + passive -ing." },
+    { s: "The building appears ___ years ago. (abandon)", answers: ["to have been abandoned"],
+      explain: "Perfect passive infinitive for an earlier action." },
+    { s: "The application needs ___ by a parent. (sign)", answers: ["to be signed", "signing"],
+      explain: "need + passive infinitive (or -ing)." },
+    { s: "___ by enemies, the general decided to surrender. (surround)", answers: ["Surrounded"],
+      explain: "Past participle clause with passive meaning." },
+    { s: "No one enjoys ___ waiting. (keep)", answers: ["being kept"],
+      explain: "enjoy + passive -ing." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "have and get something done",
-  intro: "Complete the sentences with have or get in the correct form and the words in brackets.",
+  intro: "Choose the correct option or complete the sentences with have or get in the correct form and the words in brackets.",
   items: [
     { s: "I ___ (my hair / cut) yesterday – do you like it?", answers: ["had my hair cut", "got my hair cut"],
       explain: "have / get + object + past participle: someone else did it for me." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "They had the builders ___ (knock) down the wall.", answers: ["knock"],
       explain: "have + person + infinitive without to = arrange for someone to do something." },
     { s: "We'll ___ (the documents / translate) by a professional.", answers: ["have the documents translated", "get the documents translated"],
-      explain: "will + have / get + object + past participle." }
+      explain: "will + have / get + object + past participle." },
+    { s: "I'm going to ___ my teeth whitened.", options: ["had", "have", "having"], answer: 1,
+      explain: "have + object + past participle." },
+    { s: "She got her brother ___ her move house.", options: ["help", "to help", "helping"], answer: 1,
+      explain: "get + person + to-infinitive." },
+    { s: "We had our roof ___ off in the storm.", options: ["blow", "blown", "blowing"], answer: 1,
+      explain: "A bad experience: had + object + past participle." },
+    { s: "I'll have the receptionist ___ you a taxi.", options: ["call", "to call", "called"], answer: 0,
+      explain: "have + person + base verb." },
+    { s: "Where did you ___ your nails done?", options: ["got", "get", "getting"], answer: 1,
+      explain: "get + object + past participle." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Someone stole Maria's passport while she was abroad. → Maria ___ while she was abroad. (HAD)", answers: ["had her passport stolen"],
       explain: "have something + past participle for something bad that happened to you." },
     { s: "They made him pay for the damage. → He ___ for the damage. (MADE)", answers: ["was made to pay"],
-      explain: "In the passive, make takes to: was made to pay." }
+      explain: "In the passive, make takes to: was made to pay." },
+    { s: "People say the restaurant serves the best pizza in town. → The restaurant ___ the best pizza in town. (SAID)", answers: ["is said to serve"],
+      explain: "be said to + infinitive." },
+    { s: "Someone has broken into our car. → Our car ___ into. (BEEN)", answers: ["has been broken"],
+      explain: "Present perfect passive." },
+    { s: "I'll ask a professional to install the new boiler. → I'll ___ by a professional. (INSTALLED)", answers: ["have the new boiler installed", "get the new boiler installed"],
+      explain: "have/get + object + past participle." },
+    { s: "It is thought that the painting was destroyed in the war. → The painting ___ destroyed in the war. (THOUGHT)", answers: ["is thought to have been"],
+      explain: "be thought to have been + past participle." },
+    { s: "They forced the workers to accept a pay cut. → The workers ___ a pay cut. (MADE)", answers: ["were made to accept"],
+      explain: "be made to + verb." }
   ]
 }
 ];

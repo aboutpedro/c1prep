@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "am, is or are?",
-  intro: "Choose the correct form of be. I → am; he, she, it → is; you, we, they → are.",
+  intro: "Choose or write the correct form of be. I → am; he, she, it → is; you, we, they → are.",
   items: [
     { s: "I ___ a student.", options: ["am", "is", "are"], answer: 0,
       explain: "With I we always use am." },
@@ -24,7 +24,17 @@ window.SETS = [
     { s: "The coffee ___ hot.", options: ["is", "are", "am"], answer: 0,
       explain: "The coffee = it, so we use is." },
     { s: "My shoes ___ new.", options: ["are", "is", "am"], answer: 0,
-      explain: "My shoes = they (more than one), so we use are." }
+      explain: "My shoes = they (more than one), so we use are." },
+    { s: "My name ___ Lucas.", answers: ["is"],
+      explain: "My name = it, so is." },
+    { s: "Ana and I ___ in the same class.", answers: ["are"],
+      explain: "Ana and I = we, so are." },
+    { s: "The book ___ on the table.", answers: ["is"],
+      explain: "The book = it, so is." },
+    { s: "I ___ at the bus stop.", answers: ["am"],
+      explain: "I → am." },
+    { s: "Your keys ___ in the car.", answers: ["are"],
+      explain: "Your keys = they, so are." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ from Brazil.", options: ["We're", "We's", "Were"], answer: 0,
       explain: "We are → we're. Were (no apostrophe) is the past of are." },
     { s: "___ ten o'clock. Time for bed!", options: ["It's", "It're", "Its"], answer: 0,
-      explain: "It is → it's." }
+      explain: "It is → it's." },
+    { s: "Choose the right sentence (they are): ___", options: ["They're my friends.", "Their my friends.", "They's my friends."], answer: 0,
+      explain: "They are → They're. Their means 'belonging to them'." },
+    { s: "Choose the right sentence (it is): ___", options: ["It's a big house.", "Its a big house.", "It're a big house."], answer: 0,
+      explain: "It is → It's. Its (no apostrophe) means 'belonging to it'." },
+    { s: "Choose the right sentence (you are): ___", options: ["You're my best friend.", "Your my best friend.", "You's my best friend."], answer: 0,
+      explain: "You are → You're. Your means 'belonging to you'." },
+    { s: "Choose the right sentence (we are): ___", options: ["We're from Chile.", "Were from Chile.", "We's from Chile."], answer: 0,
+      explain: "We are → We're. Were is the past of are." },
+    { s: "Choose the right sentence (he is): ___", options: ["He's my uncle.", "His my uncle.", "He're my uncle."], answer: 0,
+      explain: "He is → He's. His means 'belonging to him'." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Negatives: not",
-  intro: "Make the sentence negative. Write am not, isn't or aren't.",
+  intro: "Make the sentence negative: choose the correct option or write am not, isn't or aren't.",
   items: [
     { s: "I ___ (be) tired.", answers: ["am not"],
       explain: "I am not → I'm not. (We don't say \"I amn't\".)" },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "These apples ___ (be) good.", answers: ["aren't", "'re not"],
       explain: "These apples = they: they are not → they aren't." },
     { s: "Sara ___ (be) a teacher. She's a student.", answers: ["isn't", "'s not"],
-      explain: "Sara = she: she is not → she isn't." }
+      explain: "Sara = she: she is not → she isn't." },
+    { s: "She ___ my sister. She's my cousin.", options: ["isn't", "aren't", "not"], answer: 0,
+      explain: "She → isn't (is not)." },
+    { s: "They ___ at school today. It's Sunday.", options: ["aren't", "isn't", "not"], answer: 0,
+      explain: "They → aren't (are not)." },
+    { s: "I ___ hungry, thanks.", options: ["am not", "amn't", "isn't"], answer: 0,
+      explain: "I → am not (I'm not). Amn't doesn't exist." },
+    { s: "My phone ___ new. It's very old.", options: ["isn't", "aren't", "am not"], answer: 0,
+      explain: "My phone = it, so isn't." },
+    { s: "We ___ late. We're early!", options: ["aren't", "isn't", "not"], answer: 0,
+      explain: "We → aren't." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Questions and short answers",
-  intro: "Choose the correct question or short answer.",
+  intro: "Choose or write the correct question or short answer.",
   items: [
     { s: "___ you a student? – Yes, I am.", options: ["Are", "Is", "Am"], answer: 0,
       explain: "Questions start with be: Are you…?" },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Are you and Ben friends? – Yes, ___.", options: ["we are", "you are", "they are"], answer: 0,
       explain: "\"You and Ben\" includes me, so I answer with we: Yes, we are." },
     { s: "Is the shop open? – No, ___.", options: ["it isn't", "it not", "isn't it"], answer: 0,
-      explain: "Short answer: No, it isn't." }
+      explain: "Short answer: No, it isn't." },
+    { s: "Is your brother at home? – No, he ___.", answers: ["isn't"],
+      explain: "Short answer: No, he isn't." },
+    { s: "Are you hungry? – Yes, I ___.", answers: ["am"],
+      explain: "Short answer: Yes, I am. (Not 'Yes, I'm'.)" },
+    { s: "Is it your birthday today? – Yes, it ___.", answers: ["is"],
+      explain: "Short answer: Yes, it is." },
+    { s: "Are the children asleep? – No, they ___.", answers: ["aren't"],
+      explain: "Short answer: No, they aren't." },
+    { s: "___ (you / be) from Canada? – Yes, I am.", answers: ["Are you"],
+      explain: "Question: Are + you…?" }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Questions with where, what, how old",
-  intro: "Write is or are.",
+  intro: "Choose the correct option or write is or are.",
   items: [
     { s: "Where ___ my keys?", answers: ["are"],
       explain: "My keys = they (more than one): Where are…?" },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "What time ___ it? – It's six o'clock.", answers: ["is"],
       explain: "With it: What time is it?" },
     { s: "Who ___ that man? – He's my uncle.", answers: ["is"],
-      explain: "That man = he: Who is…?" }
+      explain: "That man = he: Who is…?" },
+    { s: "___ is your birthday? – It's in June.", options: ["When", "Where", "Who"], answer: 0,
+      explain: "When asks about a time." },
+    { s: "___ is your teacher? – Mrs Silva.", options: ["Who", "What", "Where"], answer: 0,
+      explain: "Who asks about a person." },
+    { s: "___ are you? – I'm eleven.", options: ["How old", "How", "What"], answer: 0,
+      explain: "How old asks about age." },
+    { s: "___ is the station? – It's near the park.", options: ["Where", "When", "Who"], answer: 0,
+      explain: "Where asks about a place." },
+    { s: "___ is your phone number? – It's 555 0192.", options: ["What", "Who", "How"], answer: 0,
+      explain: "What asks about a thing or information." }
   ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Obligation and necessity",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "You ___ show your passport at the border.", options: ["have to", "don't have to", "needn't"], answer: 0,
       explain: "have to = it's necessary (a rule)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "You ___ park here. It's for ambulances only.", options: ["mustn't", "don't have to", "needn't"], answer: 0,
       explain: "It isn't allowed: mustn't." },
     { s: "She ___ cook tonight. We're going out for dinner.", options: ["doesn't have to", "mustn't", "has to"], answer: 0,
-      explain: "It isn't necessary for her: doesn't have to." }
+      explain: "It isn't necessary for her: doesn't have to." },
+    { s: "You ___ smoke on the plane. It's against the law.", answers: ["mustn't", "can't"],
+      explain: "Not allowed: mustn't." },
+    { s: "My car broke down, so I ___ take the bus yesterday.", answers: ["had to"],
+      explain: "Past obligation: had to." },
+    { s: "___ she have to wear a uniform at work?", answers: ["Does"],
+      explain: "Question: Does + she + have to…?" },
+    { s: "You ___ pay. The concert is free.", answers: ["don't have to", "needn't", "don't need to"],
+      explain: "Not necessary: don't have to." },
+    { s: "Visitors ___ sign in at reception.", answers: ["must", "have to"],
+      explain: "A rule: must." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "should, ought to, had better",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "You ___ see a doctor about that cough.", options: ["should", "ought", "had"], answer: 0,
       explain: "should + verb for advice. Ought needs to (ought to see) and had needs better." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "What do you think I ___ do?", options: ["should", "ought", "had better"], answer: 0,
       explain: "should + verb. (Ought would need to; had better is not usual in questions.)" },
     { s: "You ___ better hurry. The shop closes in five minutes.", options: ["had", "should", "would"], answer: 0,
-      explain: "had better (often shortened to 'd better)." }
+      explain: "had better (often shortened to 'd better)." },
+    { s: "You look exhausted. You ___ get some rest.", answers: ["should", "ought to", "had better", "'d better"],
+      explain: "Advice: should." },
+    { s: "You ___ better not tell Mum. She'll be angry.", answers: ["had", "'d"],
+      explain: "had better (not) + verb." },
+    { s: "I don't think you ___ buy it. It's too expensive.", answers: ["should"],
+      explain: "I don't think you should = advice." },
+    { s: "We ought ___ leave soon.", answers: ["to"],
+      explain: "ought to + verb." },
+    { s: "___ we take a present?", answers: ["Should", "Shall"],
+      explain: "Asking for advice: Should we…?" }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Possibility: may, might, could, will",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "Take a coat. It ___ get cold later.", options: ["might", "mustn't", "can't"], answer: 0,
       explain: "might = it's possible." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Be careful – that dog ___ bite.", options: ["may", "should", "must"], answer: 0,
       explain: "A possible danger: may." },
     { s: "I ___ be a bit late. I'll text you if I am.", options: ["might", "must", "will"], answer: 0,
-      explain: "'If I am' shows it's only possible: might." }
+      explain: "'If I am' shows it's only possible: might." },
+    { s: "I ___ come to the party. I'm not sure yet.", answers: ["might", "may"],
+      explain: "Possible, not sure: might." },
+    { s: "Bring your swimming things. We ___ go to the beach.", answers: ["might", "may", "could"],
+      explain: "A possibility: might." },
+    { s: "Don't worry. I'm sure everything ___ be fine.", answers: ["will"],
+      explain: "I'm sure → will." },
+    { s: "She ___ be in the kitchen. Have you looked there?", answers: ["might", "may", "could"],
+      explain: "A possibility: might." },
+    { s: "Take your phone. You ___ need it.", answers: ["might", "may", "could"],
+      explain: "Possible: might." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Deduction: must, might, can't",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "You've been travelling all day. You ___ be exhausted.", options: ["must", "can't", "might not"], answer: 0,
       explain: "must = I'm sure it's true (logical conclusion)." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "She isn't answering her phone. She ___ be asleep, or maybe she's driving.", options: ["might", "must", "can't"], answer: 0,
       explain: "Two possibilities, so we aren't sure: might." },
     { s: "You ___ be serious! That's a terrible idea.", options: ["can't", "must", "might"], answer: 0,
-      explain: "You can't be serious! = I'm sure you're joking." }
+      explain: "You can't be serious! = I'm sure you're joking." },
+    { s: "He's been running for two hours. He ___ be tired.", answers: ["must"],
+      explain: "I'm sure it's true: must." },
+    { s: "She ___ be at work. It's Sunday and her office is closed.", answers: ["can't", "couldn't"],
+      explain: "I'm sure it's not true: can't." },
+    { s: "I'm not sure where my keys are. They ___ be in my bag.", answers: ["might", "may", "could"],
+      explain: "Possible: might." },
+    { s: "You ___ be cold! You're not wearing a coat!", answers: ["must"],
+      explain: "I'm sure: must." },
+    { s: "That ___ be Lucy's car. She sold it last year.", answers: ["can't", "couldn't"],
+      explain: "Impossible: can't." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Same meaning",
-  intro: "Complete the second sentence so that it means the same as the first. Use a modal verb (must, mustn't, can't, might, should, have to, don't have to…).",
+  intro: "Choose the correct option or complete the second sentence so that it means the same as the first. Use a modal verb (must, mustn't, can't, might, should, have to, don't have to…).",
   items: [
     { s: "It isn't necessary for you to come. → You ___ come.", answers: ["don't have to", "needn't", "don't need to"],
       explain: "Not necessary = don't have to / needn't." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Is it necessary for me to bring my passport? → ___ I have to bring my passport?", answers: ["Do"],
       explain: "Question with have to: Do I have to…?" },
     { s: "I advise you not to tell him. → You ___ tell him.", answers: ["shouldn't", "ought not to", "had better not", "'d better not"],
-      explain: "Advice not to do something = shouldn't." }
+      explain: "Advice not to do something = shouldn't." },
+    { s: "I'm sure she's tired. → She ___ be tired.", options: ["can't", "should", "must"], answer: 2,
+      explain: "I'm sure it's true → must." },
+    { s: "It's possible he's lost. → He ___ be lost.", options: ["might", "must", "can't"], answer: 0,
+      explain: "Possible → might." },
+    { s: "It was necessary to leave early. → We ___ leave early.", options: ["must", "had to", "should have"], answer: 1,
+      explain: "Past necessity → had to." },
+    { s: "It's not necessary to bring food. → You ___ bring food.", options: ["mustn't", "can't", "don't have to"], answer: 2,
+      explain: "Not necessary → don't have to." },
+    { s: "I'm sure this isn't your bag. → This ___ be your bag.", options: ["can't", "mustn't", "might not"], answer: 0,
+      explain: "I'm sure it's not true → can't." }
   ]
 }
 ];

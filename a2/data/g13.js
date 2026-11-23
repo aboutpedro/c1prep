@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Adjective or adverb?",
-  intro: "Choose the correct word. Adjectives describe a noun (a quick lunch); adverbs describe a verb (eat quickly).",
+  intro: "Choose or write the correct word. Adjectives describe a noun (a quick lunch); adverbs describe a verb (eat quickly).",
   items: [
     { s: "Please drive ___. The roads are icy.", options: ["carefully", "careful"], answer: 0,
       explain: "It describes how you drive (a verb), so we need the adverb: carefully." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Don't walk so ___! I can't keep up with you.", options: ["fast", "fastly"], answer: 0,
       explain: "The adverb of fast is fast. There's no word fastly." },
     { s: "We got home ___ last night, after midnight.", options: ["late", "lately"], answer: 0,
-      explain: "The adverb of late is late. Lately means recently." }
+      explain: "The adverb of late is late. Lately means recently." },
+    { s: "She sang ___. Everyone clapped. (beautiful)", answers: ["beautifully"],
+      explain: "It describes the verb (sang): adverb." },
+    { s: "He's a ___ worker. (hard)", answers: ["hard"],
+      explain: "It describes the noun (worker): adjective. (hard is both.)" },
+    { s: "I feel ___ today. (happy)", answers: ["happy"],
+      explain: "After feel: adjective." },
+    { s: "The train moved very ___. (slow)", answers: ["slowly"],
+      explain: "It describes the verb (moved): adverb." },
+    { s: "Your English is really ___! (good)", answers: ["good"],
+      explain: "After be: adjective." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Write the adverb",
-  intro: "Write the adverb of the word in brackets.",
+  intro: "Choose the correct option or write the adverb of the word in brackets.",
   items: [
     { s: "The old man walked ___ up the hill. (slow)", answers: ["slowly"], width: 11,
       explain: "Most adverbs: adjective + -ly: slow → slowly." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The team trained ___ for the final. (hard)", answers: ["hard"], width: 11,
       explain: "hard → hard (no change). Hardly means almost not." },
     { s: "Lock the door ___ when you leave. (quiet)", answers: ["quietly"], width: 11,
-      explain: "quiet → quietly." }
+      explain: "quiet → quietly." },
+    { s: "She answered the question ___.", options: ["correct", "correctly", "correctily"], answer: 1,
+      explain: "correct → correctly." },
+    { s: "They're talking ___. I can't hear them.", options: ["quietly", "quiet", "quietely"], answer: 0,
+      explain: "quiet → quietly." },
+    { s: "He did ___ in the test.", options: ["badly", "bad", "badily"], answer: 0,
+      explain: "bad → badly." },
+    { s: "My dad drives ___. He never goes too fast.", options: ["safe", "safly", "safely"], answer: 2,
+      explain: "safe → safely." },
+    { s: "We finished the work ___.", options: ["quick", "quickly", "quickily"], answer: 1,
+      explain: "quick → quickly." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "always, usually, never: where do they go?",
-  intro: "Choose the correct sentence. Words like always, usually and never go before the main verb, but after be.",
+  intro: "Choose the correct sentence or write the missing words. Words like always, usually and never go before the main verb, but after be.",
   items: [
     { s: "___", options: ["I always get up at seven.", "I get up always at seven.", "Always I get up at seven."], answer: 0,
       explain: "Before the main verb: I always get up." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "___", options: ["I can never remember his name.", "I can remember never his name.", "Never I can remember his name."], answer: 0,
       explain: "With can, the adverb goes after can: I can never remember." },
     { s: "___", options: ["We hardly ever watch TV.", "We watch hardly ever TV.", "We hardly watch ever TV."], answer: 0,
-      explain: "Hardly ever (= almost never) goes before the main verb, like never." }
+      explain: "Hardly ever (= almost never) goes before the main verb, like never." },
+    { s: "She ___ tea. (drinks / usually)", answers: ["usually drinks"],
+      explain: "Before the main verb: usually drinks." },
+    { s: "We ___ busy on Mondays. (are / always)", answers: ["are always"],
+      explain: "After be: are always." },
+    { s: "I ___ to bed early. (go / hardly ever)", answers: ["hardly ever go"],
+      explain: "Before the main verb: hardly ever go." },
+    { s: "Do you ___ to the gym? (go / often)", answers: ["often go"],
+      explain: "In questions: Do you often go…?" },
+    { s: "He ___ late. (has been / never)", answers: ["has never been"],
+      explain: "After the first auxiliary: has never been." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "How often?",
-  intro: "Choose the word or phrase that fits the meaning.",
+  intro: "Choose or write the word or phrase that fits the meaning.",
   items: [
     { s: "I go swimming on Monday, Wednesday and Friday. I go swimming ___ a week.", options: ["three times", "three time", "thrice times"], answer: 0,
       explain: "We say once, twice, three times, four times… a week." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "My grandparents visit us ___ month.", options: ["once a", "one", "once in"], answer: 0,
       explain: "We say once a month." },
     { s: "___ do you go to the gym? – Three times a week.", options: ["How often", "How many", "How long"], answer: 0,
-      explain: "The answer is a frequency, so we ask How often." }
+      explain: "The answer is a frequency, so we ask How often." },
+    { s: "I eat fish once ___ week.", answers: ["a", "every"],
+      explain: "once a week." },
+    { s: "She checks her phone ___ five minutes.", answers: ["every"],
+      explain: "every five minutes." },
+    { s: "I go to the dentist ___ a year. (2 times)", answers: ["twice"],
+      explain: "two times → twice." },
+    { s: "We ___ eat meat. We're vegetarian. (0%)", answers: ["never"],
+      explain: "0% → never." },
+    { s: "How ___ do you see your cousins?", answers: ["often"],
+      explain: "How often asks how many times." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Word order: how, where, when",
-  intro: "Choose the correct sentence. Usually the order is: verb + object + how + where + when.",
+  intro: "Choose the correct sentence or write the missing words. Usually the order is: verb + object + how + where + when.",
   items: [
     { s: "___", options: ["I go to school by bus every day.", "I go every day to school by bus.", "I every day go to school by bus."], answer: 0,
       explain: "Place (to school), then how (by bus), then time (every day) at the end." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "___", options: ["I'll see you at the station at six.", "I'll see at the station you at six.", "I'll at six see you at the station."], answer: 0,
       explain: "Place (at the station), then time (at six)." },
     { s: "___", options: ["Please read the questions carefully.", "Please read carefully the questions.", "Please carefully the questions read."], answer: 0,
-      explain: "The adverb goes after the object: read the questions carefully." }
+      explain: "The adverb goes after the object: read the questions carefully." },
+    { s: "I ___. (every morning / coffee / drink)", answers: ["drink coffee every morning"],
+      explain: "verb + object + when." },
+    { s: "She ___. (well / plays / the piano)", answers: ["plays the piano well"],
+      explain: "verb + object + how." },
+    { s: "We ___. (at a restaurant / had dinner / last night)", answers: ["had dinner at a restaurant last night"],
+      explain: "verb + object + where + when." },
+    { s: "He ___. (his bike / to school / rides)", answers: ["rides his bike to school"],
+      explain: "verb + object + where." },
+    { s: "They ___. (in the evening / TV / watch)", answers: ["watch TV in the evening"],
+      explain: "verb + object + when." }
   ]
 }
 ];

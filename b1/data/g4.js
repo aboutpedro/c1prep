@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Present simple passive",
-  intro: "Complete the sentences with the present simple passive form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present simple passive form of the verbs in brackets.",
   items: [
     { s: "English ___ (speak) in many countries.", answers: ["is spoken"],
       explain: "Present simple passive: am/is/are + past participle." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Thousands of emails ___ (send) every second.", answers: ["are sent"],
       explain: "send – sent – sent." },
     { s: "The winners ___ (choose) by the public.", answers: ["are chosen"],
-      explain: "by + the person or people who do the action." }
+      explain: "by + the person or people who do the action." },
+    { s: "A lot of fruit ___ from Spain.", options: ["imports", "is import", "is imported"], answer: 2,
+      explain: "Present simple passive: is + past participle." },
+    { s: "These rooms ___ every day.", options: ["clean", "are cleaned", "is cleaned"], answer: 1,
+      explain: "Plural: are + cleaned." },
+    { s: "___ dogs allowed in the restaurant?", options: ["Do", "Are", "Is"], answer: 1,
+      explain: "Passive question: Are + subject + past participle." },
+    { s: "The museum ___ by thousands of tourists every year.", options: ["visits", "is visited", "are visited"], answer: 1,
+      explain: "Singular: is visited." },
+    { s: "Our milk ___ to the door every morning.", options: ["delivers", "delivered", "is delivered"], answer: 2,
+      explain: "is + delivered." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Past simple passive",
-  intro: "Complete the sentences with the past simple passive form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the past simple passive form of the verbs in brackets.",
   items: [
     { s: "This bridge ___ (build) in 1890.", answers: ["was built"],
       explain: "Past simple passive: was/were + past participle." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Two people ___ (hurt) in the accident.", answers: ["were hurt", "were injured"],
       explain: "hurt – hurt – hurt." },
     { s: "___ (you / give) any homework yesterday?", answers: ["Were you given"],
-      explain: "Question: Were you given…? (Someone gave you homework → you were given homework.)" }
+      explain: "Question: Were you given…? (Someone gave you homework → you were given homework.)" },
+    { s: "The radio ___ by Marconi.", options: ["invented", "was invented", "is invented"], answer: 1,
+      explain: "Past simple passive: was + invented." },
+    { s: "The children ___ home early because of the storm.", options: ["sent", "was sent", "were sent"], answer: 2,
+      explain: "Plural, past: were sent." },
+    { s: "My phone ___ in the taxi. I never saw it again.", options: ["was left", "left", "was leaving"], answer: 0,
+      explain: "The phone didn't leave anything: passive." },
+    { s: "___ the thieves caught?", options: ["Were", "Did", "Was"], answer: 0,
+      explain: "Plural passive question: Were…caught?" },
+    { s: "The house ___ by a famous architect.", options: ["was designed", "designed", "is designing"], answer: 0,
+      explain: "was + designed." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Active or passive?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The letter ___ yesterday.", options: ["arrived", "was arrived"], answer: 0,
       explain: "Arrive has no object, so it can't be passive." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Our flight ___ two hours late.", options: ["left", "was left"], answer: 0,
       explain: "The flight left (no object): active." },
     { s: "This song ___ by millions of people every day.", options: ["hears", "is heard"], answer: 1,
-      explain: "People hear the song: passive." }
+      explain: "People hear the song: passive." },
+    { s: "The accident ___ at 6 p.m. (happen)", answers: ["happened"],
+      explain: "happen has no passive." },
+    { s: "The new bridge ___ by the president last week. (open)", answers: ["was opened"],
+      explain: "The bridge didn't open itself: passive." },
+    { s: "My sister ___ her arm last year. (break)", answers: ["broke"],
+      explain: "She did it (by accident): active." },
+    { s: "When I got to the party, the cake ___. (eat)", answers: ["had been eaten", "was eaten"],
+      explain: "Done before I arrived: past perfect passive." },
+    { s: "The film ___ by over a million people on its first day. (watch)", answers: ["was watched"],
+      explain: "The film didn't watch: passive." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Passives in other tenses",
-  intro: "Complete the sentences with the correct passive form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct passive form of the verbs in brackets.",
   items: [
     { s: "The road ___ (repair) at the moment, so there's a lot of traffic.", answers: ["is being repaired"],
       explain: "Present continuous passive: am/is/are being + past participle." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "You ___ (meet) at the airport by our driver.", answers: ["will be met"],
       explain: "will be + past participle." },
     { s: "Phones ___ (must not / use) during the exam.", answers: ["must not be used", "mustn't be used"],
-      explain: "must not be + past participle." }
+      explain: "must not be + past participle." },
+    { s: "Our kitchen ___ at the moment.", options: ["is being painted", "is painting", "has been painting"], answer: 0,
+      explain: "Present continuous passive: is being + past participle." },
+    { s: "The meeting ___ until next week.", options: ["has postponed", "is postponing", "has been postponed"], answer: 2,
+      explain: "Present perfect passive: has been + past participle." },
+    { s: "The new stadium ___ in 2028.", options: ["will finish", "will be finished", "will be finish"], answer: 1,
+      explain: "Future passive: will be + past participle." },
+    { s: "This form ___ in black ink.", options: ["must complete", "must be completed", "must be complete"], answer: 1,
+      explain: "Modal passive: must be + past participle." },
+    { s: "Don't worry. Your car ___.", options: ["is repairing", "repairs", "is being repaired"], answer: 2,
+      explain: "Happening now: is being repaired." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Rewrite in the passive",
-  intro: "Complete the second sentence so that it means the same as the first. Use a passive form.",
+  intro: "Choose the correct option or complete the second sentence so that it means the same as the first. Use a passive form.",
   items: [
     { s: "Someone cleans the classrooms every day. → The classrooms ___ every day.", answers: ["are cleaned"],
       explain: "Present simple passive, plural: are cleaned." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Did they invite you to the party? → ___ to the party?", answers: ["Were you invited"],
       explain: "Past simple passive question: Were you invited?" },
     { s: "Nobody told me about the meeting. → I ___ about the meeting.", answers: ["wasn't told", "was not told"],
-      explain: "Nobody told me = I wasn't told." }
+      explain: "Nobody told me = I wasn't told." },
+    { s: "They sell tickets online. → Tickets ___ online.", options: ["sell", "are sold", "are selling"], answer: 1,
+      explain: "Present simple → are sold." },
+    { s: "Someone is following us. → We ___.", options: ["are following", "have followed", "are being followed"], answer: 2,
+      explain: "Present continuous → are being followed." },
+    { s: "They have closed the road. → The road ___.", options: ["has closed", "was closing", "has been closed"], answer: 2,
+      explain: "Present perfect → has been closed." },
+    { s: "People will forget this song soon. → This song ___ soon.", options: ["will forget", "will be forget", "will be forgotten"], answer: 2,
+      explain: "will → will be forgotten." },
+    { s: "They didn't tell us the truth. → We ___ the truth.", options: ["didn't tell", "weren't told", "weren't telling"], answer: 1,
+      explain: "Past simple → weren't told." }
   ]
 }
 ];

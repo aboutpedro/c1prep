@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "in, on or at? Time",
-  intro: "Choose in, on or at. At + clock times, on + days and dates, in + months, years, seasons and parts of the day.",
+  intro: "Choose or write in, on or at. At + clock times, on + days and dates, in + months, years, seasons and parts of the day.",
   items: [
     { s: "The film starts ___ eight o'clock.", options: ["at", "on", "in"], answer: 0,
       explain: "At + a clock time: at eight o'clock." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "It often snows here ___ winter.", options: ["in", "on", "at"], answer: 0,
       explain: "In + seasons: in winter, in the summer." },
     { s: "Let's meet ___ Saturday morning.", options: ["on", "in", "at"], answer: 0,
-      explain: "With a day + part of the day, we use on: on Saturday morning." }
+      explain: "With a day + part of the day, we use on: on Saturday morning." },
+    { s: "The concert is ___ Friday.", answers: ["on"],
+      explain: "Days → on." },
+    { s: "I always feel sleepy ___ the afternoon.", answers: ["in"],
+      explain: "in the morning / afternoon / evening." },
+    { s: "We met ___ 2018.", answers: ["in"],
+      explain: "Years → in." },
+    { s: "The train leaves ___ 7.45.", answers: ["at"],
+      explain: "Clock times → at." },
+    { s: "My parents got married ___ 12 June.", answers: ["on"],
+      explain: "Dates → on." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "in, on or at? Place",
-  intro: "Choose in, on or at. In = inside an area or a space, on = on a surface, at = at a point or a place where something happens.",
+  intro: "Choose or write in, on or at. In = inside an area or a space, on = on a surface, at = at a point or a place where something happens.",
   items: [
     { s: "Your keys are ___ the table, next to the lamp.", options: ["on", "in", "at"], answer: 0,
       explain: "On a surface: on the table." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Turn left ___ the end of the street.", options: ["at", "in", "on"], answer: 0,
       explain: "We say at the end of the street (a point)." },
     { s: "I read about it ___ the newspaper.", options: ["in", "on", "at"], answer: 0,
-      explain: "We say in the newspaper, in a book, in a magazine (but on the internet, on TV)." }
+      explain: "We say in the newspaper, in a book, in a magazine (but on the internet, on TV)." },
+    { s: "There's a spider ___ the ceiling!", answers: ["on"],
+      explain: "On a surface → on." },
+    { s: "I'll meet you ___ the entrance.", answers: ["at"],
+      explain: "A point → at." },
+    { s: "My sister lives ___ a small flat.", answers: ["in"],
+      explain: "Inside a space → in." },
+    { s: "Is there any money ___ your wallet?", answers: ["in"],
+      explain: "Inside → in." },
+    { s: "We sat ___ the back of the bus.", answers: ["at", "in"],
+      explain: "at the back / at the front." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Where is it?",
-  intro: "Choose the correct preposition.",
+  intro: "Choose or write the correct preposition.",
   items: [
     { s: "The bank is ___ the café and the cinema. There are shops on both sides of it.", options: ["between", "opposite", "behind"], answer: 0,
       explain: "Between = with one thing on each side." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "There was a long queue ___ the ticket office.", options: ["in front of", "behind of", "between"], answer: 0,
       explain: "In front of = facing the front of something. (We don't say behind of.)" },
     { s: "He jumped ___ the swimming pool.", options: ["into", "on", "at"], answer: 0,
-      explain: "Into = movement from outside to inside." }
+      explain: "Into = movement from outside to inside." },
+    { s: "The cat jumped ___ the wall into the garden.", answers: ["over"],
+      explain: "From one side to the other, above it → over." },
+    { s: "My house is ___ the bank, on the other side of the street.", answers: ["opposite"],
+      explain: "Facing, on the other side → opposite." },
+    { s: "I parked my car ___ the shop. It's at the back.", answers: ["behind"],
+      explain: "At the back of → behind." },
+    { s: "The shoes are ___ the table, on the floor.", answers: ["under"],
+      explain: "Below → under." },
+    { s: "There were lots of people ___ the theatre, waiting to go in.", answers: ["outside", "in front of"],
+      explain: "Not inside → outside." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "before, after, during, until, ago…",
-  intro: "Choose the correct word.",
+  intro: "Choose or write the correct word.",
   items: [
     { s: "Wash your hands ___ dinner.", options: ["before", "ago", "since"], answer: 0,
       explain: "Before = earlier than something." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I didn't see Leo ___ the holidays. He was in Italy.", options: ["during", "while", "ago"], answer: 0,
       explain: "During + a noun: during the holidays." },
     { s: "The museum is closed ___ Monday to Wednesday.", options: ["from", "since", "for"], answer: 0,
-      explain: "From Monday to Wednesday: the start and the end." }
+      explain: "From Monday to Wednesday: the start and the end." },
+    { s: "I started this job two years ___.", answers: ["ago"],
+      explain: "A time in the past from now: two years ago." },
+    { s: "Don't use your phone ___ the exam.", answers: ["during", "in"],
+      explain: "during + a noun (the exam)." },
+    { s: "I'll wait here ___ you come back.", answers: ["until", "till"],
+      explain: "Up to the time when → until." },
+    { s: "We lived in Rome ___ six months.", answers: ["for"],
+      explain: "for + a period of time." },
+    { s: "Please finish the report ___ Monday.", answers: ["by", "before"],
+      explain: "Not later than → by." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Write one preposition in each gap.",
+  intro: "Choose the correct option or write one preposition in each gap.",
   items: [
     { s: "My sister works ___ a hospital in the city centre.", answers: ["in", "at"], width: 9,
       explain: "We say work in a hospital (inside the building) or at a hospital (the place where she works). Both are fine." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I'm staying in bed ___ ten o'clock tomorrow. It's Sunday!", answers: ["until", "till"], width: 9,
       explain: "Until (or till) = up to that time." },
     { s: "My bedroom is ___ the second floor.", answers: ["on"], width: 9,
-      explain: "On + floors: on the second floor." }
+      explain: "On + floors: on the second floor." },
+    { s: "I'll call you ___ the evening.", options: ["on", "in", "at"], answer: 1,
+      explain: "in the evening." },
+    { s: "She was born ___ 4 July.", options: ["in", "on", "at"], answer: 1,
+      explain: "Dates → on." },
+    { s: "The keys are ___ my bag.", options: ["in", "on", "at"], answer: 0,
+      explain: "Inside → in." },
+    { s: "I've been waiting ___ two hours!", options: ["for", "since", "during"], answer: 0,
+      explain: "for + a period of time." },
+    { s: "Turn right ___ the traffic lights.", options: ["at", "in", "on"], answer: 0,
+      explain: "A point on the road → at." }
   ]
 }
 ];

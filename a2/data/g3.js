@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Present perfect: form",
-  intro: "Complete the sentences with the present perfect form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present perfect form of the verbs in brackets.",
   items: [
     { s: "I ___ (finish) my homework. Can I go out now?", answers: ["have finished"],
       explain: "Present perfect: have/has + past participle. The result is important now (I can go out)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "They ___ (go) out. They'll be back at six.", answers: ["have gone"],
       explain: "Have gone = they went and are not here now. (Have been = they went and came back.)" },
     { s: "Someone ___ (take) my umbrella!", answers: ["has taken"],
-      explain: "Someone + has + taken (take – took – taken)." }
+      explain: "Someone + has + taken (take – took – taken)." },
+    { s: "My sister ___ a new job.", options: ["have found", "has find", "has found"], answer: 2,
+      explain: "She → has + found." },
+    { s: "___ you seen my glasses?", options: ["Has", "Have", "Did"], answer: 1,
+      explain: "You → Have…seen?" },
+    { s: "We ___ to the new restaurant yet.", options: ["haven't went", "hasn't been", "haven't been"], answer: 2,
+      explain: "We → haven't + been." },
+    { s: "He ___ his leg. He can't walk.", options: ["has broke", "have broken", "has broken"], answer: 2,
+      explain: "has + broken (past participle)." },
+    { s: "I ___ this book three times!", options: ["have read", "has read", "have readed"], answer: 0,
+      explain: "I → have + read." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "ever, never, just, already, yet",
-  intro: "Choose the correct word.",
+  intro: "Choose or write the correct word.",
   items: [
     { s: "Have you ___ been to a music festival?", options: ["ever", "never", "yet"], answer: 0,
       explain: "Ever = at any time in your life. We use it in questions." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "My brother has ___ been on a plane. He's scared of flying.", options: ["never", "ever", "yet"], answer: 0,
       explain: "Never makes the sentence negative: he has not been on a plane at any time." },
     { s: "The train has ___ arrived. Let's go!", options: ["just", "yet", "ever"], answer: 0,
-      explain: "Just = a moment ago." }
+      explain: "Just = a moment ago." },
+    { s: "Have you finished your lunch ___?", answers: ["yet"],
+      explain: "yet: at the end of questions and negatives." },
+    { s: "I've ___ seen snow. I'd love to see it one day.", answers: ["never"],
+      explain: "Not at any time in my life: never." },
+    { s: "'Where's the bus?' 'It's ___ left. Run!'", answers: ["just"],
+      explain: "A very short time ago: just." },
+    { s: "She's ___ booked the tickets, so we don't need to.", answers: ["already"],
+      explain: "Before now, maybe sooner than expected: already." },
+    { s: "Have you ___ eaten octopus?", answers: ["ever"],
+      explain: "At any time in your life: ever." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "for or since?",
-  intro: "Choose for or since.",
+  intro: "Choose or write for or since.",
   items: [
     { s: "I've lived here ___ 2019.", options: ["for", "since"], answer: 1,
       explain: "Since + the point when something started (2019, Monday, I was a child)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "We haven't seen Ana ___ her birthday party.", options: ["for", "since"], answer: 1,
       explain: "Her birthday party is the starting point: since." },
     { s: "My parents have had a dog ___ I was a child.", options: ["for", "since"], answer: 1,
-      explain: "Since + a past event (I was a child)." }
+      explain: "Since + a past event (I was a child)." },
+    { s: "I've had this phone ___ two years.", answers: ["for"],
+      explain: "for + a period of time." },
+    { s: "She's been ill ___ last Friday.", answers: ["since"],
+      explain: "since + a starting point." },
+    { s: "We've lived in this house ___ I was born.", answers: ["since"],
+      explain: "since + a starting point (I was born)." },
+    { s: "They've been at the airport ___ hours!", answers: ["for"],
+      explain: "for + a period of time." },
+    { s: "He hasn't called me ___ March.", answers: ["since"],
+      explain: "since + a starting point." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Present perfect or past simple?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I ___ to Rome in 2022.", options: ["went", "have been"], answer: 0,
       explain: "In 2022 is a finished time, so we use the past simple." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Two days ago I ___ an email from my old teacher.", options: ["got", "have got"], answer: 0,
       explain: "Ago always goes with the past simple." },
     { s: "Mozart ___ more than 600 pieces of music.", options: ["wrote", "has written"], answer: 0,
-      explain: "Mozart is dead, so his life is a finished time: past simple." }
+      explain: "Mozart is dead, so his life is a finished time: past simple." },
+    { s: "I ___ my keys yesterday. (lose)", answers: ["lost"],
+      explain: "Yesterday is a finished time: past simple." },
+    { s: "I ___ my keys. I can't open the door. (lose)", answers: ["have lost"],
+      explain: "A past action with a result now: present perfect." },
+    { s: "___ the new superhero film yet? (you / see)", answers: ["Have you seen"],
+      explain: "yet → present perfect." },
+    { s: "She ___ to Mexico twice. (be)", answers: ["has been"],
+      explain: "Experience, no finished time: present perfect." },
+    { s: "When ___ learning English? (you / start)", answers: ["did you start"],
+      explain: "When asks about a finished time: past simple." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Complete the sentences with the present perfect or the past simple form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present perfect or the past simple form of the verbs in brackets.",
   items: [
     { s: "I ___ (never / try) Thai food.", answers: ["have never tried"],
       explain: "An experience in your life up to now: present perfect with never." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Last year we ___ (not / go) on holiday.", answers: ["didn't go"],
       explain: "Last year is a finished time: past simple negative." },
     { s: "___ (Peter / ever / win) a competition?", answers: ["Has Peter ever won"],
-      explain: "Has + Peter + ever + won (win – won – won)." }
+      explain: "Has + Peter + ever + won (win – won – won)." },
+    { s: "I ___ a great book last month.", options: ["read", "have read", "am reading"], answer: 0,
+      explain: "Last month is finished: past simple." },
+    { s: "My brother ___ in Canada since 2020.", options: ["lived", "has lived", "lives"], answer: 1,
+      explain: "since → present perfect." },
+    { s: "We ___ dinner yet.", options: ["didn't have", "haven't had", "don't have"], answer: 1,
+      explain: "yet → present perfect." },
+    { s: "She ___ her homework an hour ago.", options: ["has finished", "finishes", "finished"], answer: 2,
+      explain: "ago → past simple." },
+    { s: "I ___ him since we were children.", options: ["have known", "knew", "know"], answer: 0,
+      explain: "since → present perfect." }
   ]
 }
 ];

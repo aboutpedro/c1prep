@@ -1,9 +1,9 @@
 window.SETS = [
 /* ---------------- Set 1 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "One or more? -s and -es",
-  intro: "Write the plural of the word in brackets.",
+  intro: "Choose the correct option or write the plural of the word in brackets.",
   items: [
     { s: "I've got two ___ (brother).", answers: ["brothers"],
       explain: "Most words: add -s. brother → brothers." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I've got three ___ (class) today.", answers: ["classes"],
       explain: "Words ending in -ss: add -es. class → classes." },
     { s: "She's got two ___ (watch).", answers: ["watches"],
-      explain: "Words ending in -ch: add -es. watch → watches." }
+      explain: "Words ending in -ch: add -es. watch → watches." },
+    { s: "There are two ___ on the table.", options: ["boxes", "boxs", "box"], answer: 0,
+      explain: "Words ending in -x: add -es." },
+    { s: "We've got five ___ in our classroom.", options: ["computers", "computer", "computeres"], answer: 0,
+      explain: "Most words: just add -s." },
+    { s: "I wash the ___ after dinner.", options: ["dishes", "dishs", "dish"], answer: 0,
+      explain: "Words ending in -sh: add -es." },
+    { s: "She has two ___ in her bag.", options: ["brushes", "brushs", "brush"], answer: 0,
+      explain: "brush ends in -sh: brushes." },
+    { s: "Those ___ are very old.", options: ["churches", "churchs", "church"], answer: 0,
+      explain: "Words ending in -ch: add -es." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "-y, -f and other plurals",
-  intro: "Write the plural of the word in brackets.",
+  intro: "Choose the correct option or write the plural of the word in brackets.",
   items: [
     { s: "Three ___ (family) live in our building.", answers: ["families"],
       explain: "Consonant + y: y → ies. family → families." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "We saw two ___ (wolf) at the zoo.", answers: ["wolves"],
       explain: "wolf → wolves (like knife → knives)." },
     { s: "My little brother has a lot of ___ (toy).", answers: ["toys"],
-      explain: "Vowel + y: just add -s. toy → toys." }
+      explain: "Vowel + y: just add -s. toy → toys." },
+    { s: "The ___ in this town are very friendly.", options: ["ladies", "ladys", "ladyes"], answer: 0,
+      explain: "Consonant + y: y → ies." },
+    { s: "Cats have nine ___!", options: ["lives", "lifes", "life"], answer: 0,
+      explain: "-fe → -ves: life → lives." },
+    { s: "Cut the bread into two ___.", options: ["halves", "halfs", "halfes"], answer: 0,
+      explain: "-f → -ves: half → halves." },
+    { s: "Our neighbours have three ___.", options: ["boys", "boies", "boyes"], answer: 0,
+      explain: "Vowel + y: just add -s." },
+    { s: "Put the cups on the ___.", options: ["shelves", "shelfs", "shelf"], answer: 0,
+      explain: "-f → -ves: shelf → shelves." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Irregular plurals",
-  intro: "Choose the correct plural.",
+  intro: "Choose or write the correct plural.",
   items: [
     { s: "There are 25 ___ in my class.", options: ["children", "childs", "childrens"], answer: 0,
       explain: "child → children." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "We've got three ___ in our aquarium.", options: ["fish", "fishs", "fishies"], answer: 0,
       explain: "fish → fish (no change, like sheep)." },
     { s: "My ___ are wet.", options: ["jeans", "jean", "jeanses"], answer: 0,
-      explain: "Jeans is always plural: my jeans are…" }
+      explain: "Jeans is always plural: my jeans are…" },
+    { s: "one child, two ___", answers: ["children"],
+      explain: "child → children." },
+    { s: "one man, three ___", answers: ["men"],
+      explain: "man → men." },
+    { s: "one foot, two ___", answers: ["feet"],
+      explain: "foot → feet." },
+    { s: "one tooth, many ___", answers: ["teeth"],
+      explain: "tooth → teeth." },
+    { s: "one person, ten ___", answers: ["people"],
+      explain: "person → people." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "this, that, these, those",
-  intro: "Choose the correct word. this/these = near me; that/those = not near me. this/that = one; these/those = more than one.",
+  intro: "Choose or write the correct word. this/these = near me; that/those = not near me. this/that = one; these/those = more than one.",
   items: [
     { s: "___ is my bedroom. Come in!", options: ["This", "These", "Those"], answer: 0,
       explain: "One room, here: this." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I don't like ___ shirt. Show me the blue one.", options: ["this", "these", "those"], answer: 0,
       explain: "One thing: this (or that)." },
     { s: "What are ___ lights over there?", options: ["those", "that", "this"], answer: 0,
-      explain: "More than one, far away: those." }
+      explain: "More than one, far away: those." },
+    { s: "___ is my brother, Tom. (near me, one)", answers: ["This"],
+      explain: "One, near me → this." },
+    { s: "Look at ___ mountains! (far, more than one)", answers: ["those"],
+      explain: "More than one, not near → those." },
+    { s: "___ cookies are delicious. (near me, more than one)", answers: ["These"],
+      explain: "More than one, near me → these." },
+    { s: "Who lives in ___ house? (far, one)", answers: ["that"],
+      explain: "One, not near → that." },
+    { s: "Are ___ your glasses? (near me, more than one)", answers: ["these"],
+      explain: "More than one, near me → these." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Adjectives and nouns",
-  intro: "Choose the correct sentence part. Adjectives go before the noun and don't change: two big dogs.",
+  intro: "Choose or write the correct sentence part. Adjectives go before the noun and don't change: two big dogs.",
   items: [
     { s: "I've got two ___.", options: ["big dogs", "bigs dogs", "dogs bigs"], answer: 0,
       explain: "Adjectives don't take -s: big dogs." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "This is ___.", options: ["an easy question", "a easy question", "an question easy"], answer: 0,
       explain: "easy starts with a vowel sound: an easy question." },
     { s: "I like ___.", options: ["hot drinks", "hots drinks", "drinks hot"], answer: 0,
-      explain: "Adjectives don't take -s: hot drinks." }
+      explain: "Adjectives don't take -s: hot drinks." },
+    { s: "She's got a ___. (bag / black)", answers: ["black bag"],
+      explain: "The adjective goes before the noun: a black bag." },
+    { s: "They live in a ___. (house / big)", answers: ["big house"],
+      explain: "Adjective + noun: a big house." },
+    { s: "My sister has got two ___. (cats / small)", answers: ["small cats"],
+      explain: "The adjective doesn't change: small cats (not smalls)." },
+    { s: "He's a ___. (man / tall)", answers: ["tall man"],
+      explain: "Adjective + noun: a tall man." },
+    { s: "These are ___. (questions / difficult)", answers: ["difficult questions"],
+      explain: "Adjective + noun, and no -s on the adjective." }
   ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "who, which or where?",
-  intro: "Choose who, which or where.",
+  intro: "Choose or write who, which or where.",
   items: [
     { s: "The woman ___ lives next door is a doctor.", options: ["who", "which", "where"], answer: 0,
       explain: "A person: who." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Did you see the film ___ won the Oscar this year?", options: ["who", "which", "where"], answer: 1,
       explain: "A thing: which (or that)." },
     { s: "This is the drawer ___ I keep my passport.", options: ["who", "which", "where"], answer: 2,
-      explain: "A place (in the drawer), so where. You could also say the drawer which I keep my passport in." }
+      explain: "A place (in the drawer), so where. You could also say the drawer which I keep my passport in." },
+    { s: "The film ___ we saw last night was brilliant.", answers: ["which", "that"],
+      explain: "A thing → which / that." },
+    { s: "The man ___ sold me this phone was very helpful.", answers: ["who", "that"],
+      explain: "A person → who / that." },
+    { s: "This is the beach ___ we spent our holiday.", answers: ["where"],
+      explain: "A place → where." },
+    { s: "Have you got a pen ___ works?", answers: ["which", "that"],
+      explain: "A thing → which / that." },
+    { s: "I know a doctor ___ can help you.", answers: ["who", "that"],
+      explain: "A person → who / that." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "whose, when, where or which?",
-  intro: "Choose the correct word.",
+  intro: "Choose or write the correct word.",
   items: [
     { s: "That's the man ___ dog bit me.", options: ["whose", "when", "where", "which"], answer: 0,
       explain: "His dog → whose dog. Whose shows possession." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The restaurant ___ we had dinner was very expensive.", options: ["whose", "when", "where", "which"], answer: 2,
       explain: "We had dinner there: where." },
     { s: "The students ___ phones rang had to leave the room.", options: ["whose", "when", "where", "which"], answer: 0,
-      explain: "Their phones → whose phones." }
+      explain: "Their phones → whose phones." },
+    { s: "That's the actor ___ films I love.", answers: ["whose"],
+      explain: "Belonging to him → whose." },
+    { s: "I remember the summer ___ we went to Italy.", answers: ["when", "that"],
+      explain: "A time → when." },
+    { s: "This is the village ___ my grandfather was born.", answers: ["where"],
+      explain: "A place → where." },
+    { s: "She's a writer ___ books have sold millions.", answers: ["whose"],
+      explain: "Her books → whose." },
+    { s: "Midnight is the time ___ the party ends.", answers: ["when", "that"],
+      explain: "A time → when." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Choose the correct sentence",
-  intro: "Choose the correct sentence. Think about commas, about where you can use that, and about when you can leave out the relative word.",
+  intro: "Choose the correct sentence or write the missing words. Think about commas, about where you can use that, and about when you can leave out the relative word.",
   items: [
     { s: "I have one brother. ___", options: ["My brother, who lives in Rome, is a chef.", "My brother who lives in Rome is a chef."], answer: 0,
       explain: "I have only one brother, so who lives in Rome is extra information: use commas." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "___", options: ["Lisbon, where I was born, is a beautiful city.", "Lisbon where I was born is a beautiful city."], answer: 0,
       explain: "There's only one Lisbon, so where I was born is extra information: use commas." },
     { s: "___", options: ["She lent me some money, which was really kind.", "She lent me some money, that was really kind."], answer: 0,
-      explain: "Which can refer to the whole idea before it. That isn't possible after a comma." }
+      explain: "Which can refer to the whole idea before it. That isn't possible after a comma." },
+    { s: "My grandmother, ___ is 90, still drives.", answers: ["who"],
+      explain: "Extra information about a person, with commas: who (not that)." },
+    { s: "The Amazon, ___ is in South America, is a huge river.", answers: ["which"],
+      explain: "Extra information about a thing: which (not that)." },
+    { s: "My car, ___ I bought last year, has already broken down.", answers: ["which"],
+      explain: "With commas you can't leave the word out or use that: which." },
+    { s: "Our teacher, ___ name is Mr Silva, is very funny.", answers: ["whose"],
+      explain: "His name → whose." },
+    { s: "Rio, ___ I lived for three years, is an amazing city.", answers: ["where"],
+      explain: "A place → where." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Join the sentences",
-  intro: "Join the two sentences. Write one word in each gap.",
+  intro: "Join the two sentences: choose the correct option or write one word in each gap.",
   items: [
     { s: "I met a man. His dog is famous on Instagram. → I met a man ___ dog is famous on Instagram.", answers: ["whose"],
       explain: "His dog → whose dog." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Rome is a city. Everyone should visit it once. → Rome is a city ___ everyone should visit once.", answers: ["which", "that"],
       explain: "A thing, the object of visit: which or that. (You could also leave it out.)" },
     { s: "Our neighbour is very friendly. Her garden is full of roses. → Our neighbour, ___ garden is full of roses, is very friendly.", answers: ["whose"],
-      explain: "Her garden → whose garden." }
+      explain: "Her garden → whose garden." },
+    { s: "I have a friend. Her father is an actor. → I have a friend ___ father is an actor.", options: ["whose", "who's", "who"], answer: 0,
+      explain: "Her father → whose father. (Who's = who is.)" },
+    { s: "That's the restaurant. We had our wedding there. → That's the restaurant ___ we had our wedding.", options: ["where", "which", "when"], answer: 0,
+      explain: "there → where." },
+    { s: "I'll never forget that day. I passed my driving test then. → I'll never forget the day ___ I passed my driving test.", options: ["where", "which", "when"], answer: 2,
+      explain: "A time → when." },
+    { s: "The bike was stolen. It was new. → The bike ___ was stolen was new.", options: ["who", "where", "which"], answer: 2,
+      explain: "A thing → which." },
+    { s: "My brother is a doctor. He works in London. → My brother, ___ works in London, is a doctor.", options: ["that", "which", "who"], answer: 2,
+      explain: "Extra information with commas: who, not that." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Complete the sentences with one word: who, which, that, whose, where or when.",
+  intro: "Choose the correct option or complete the sentences with one word: who, which, that, whose, where or when.",
   items: [
     { s: "The man ___ fixed my car was really helpful.", answers: ["who", "that"],
       explain: "A person, the subject of fixed: who (or that)." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "He told me a story ___ made me laugh.", answers: ["that", "which"],
       explain: "A thing, the subject of made: that or which." },
     { s: "The neighbours ___ car was stolen called the police.", answers: ["whose"],
-      explain: "Their car → whose car." }
+      explain: "Their car → whose car." },
+    { s: "The girl ___ bag was stolen went to the police.", options: ["whose", "who", "which"], answer: 0,
+      explain: "Her bag → whose." },
+    { s: "I love the café ___ is next to the station.", options: ["where", "which", "whose"], answer: 1,
+      explain: "The café is the subject of the clause (it is next to…): which." },
+    { s: "I love the café ___ we met.", options: ["which", "where", "whose"], answer: 1,
+      explain: "We met there: where." },
+    { s: "My boss, ___ is very kind, let me go home early.", options: ["who", "that", "which"], answer: 0,
+      explain: "Extra information about a person: who." },
+    { s: "Do you remember the time ___ we got lost in London?", options: ["where", "when", "which"], answer: 1,
+      explain: "A time → when." }
   ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "I work, she works",
-  intro: "Choose the correct form. With he, she and it, the verb ends in -s.",
+  intro: "Choose or write the correct form. With he, she and it, the verb ends in -s.",
   items: [
     { s: "I ___ in a bank.", options: ["work", "works", "working"], answer: 0,
       explain: "With I: work (no -s)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "My parents ___ TV in the evening.", options: ["watch", "watches", "watchs"], answer: 0,
       explain: "My parents = they: watch." },
     { s: "Ben ___ to school by bike.", options: ["goes", "go", "gos"], answer: 0,
-      explain: "Ben = he: go → goes." }
+      explain: "Ben = he: go → goes." },
+    { s: "My brother ___ football. (love)", answers: ["loves"],
+      explain: "He → loves." },
+    { s: "We ___ at seven. (get up)", answers: ["get up"],
+      explain: "We → get up (no -s)." },
+    { s: "The bus ___ at 8.15. (leave)", answers: ["leaves"],
+      explain: "The bus = it → leaves." },
+    { s: "My friends ___ Spanish. (speak)", answers: ["speak"],
+      explain: "My friends = they → speak (no -s)." },
+    { s: "Sara ___ to school. (walk)", answers: ["walks"],
+      explain: "Sara = she → walks." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Spelling: -s, -es, -ies",
-  intro: "Write the verb in brackets with he, she or it.",
+  intro: "Choose the correct option or write the verb in brackets with he, she or it.",
   items: [
     { s: "She ___ (watch) a lot of films.", answers: ["watches"],
       explain: "Verbs ending in -ch: add -es. watch → watches." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "My dad ___ (fix) computers.", answers: ["fixes"],
       explain: "Verbs ending in -x: add -es. fix → fixes." },
     { s: "Laura ___ (have) two cats.", answers: ["has"],
-      explain: "have → has." }
+      explain: "have → has." },
+    { s: "My uncle ___ in a bank.", options: ["works", "workes", "workies"], answer: 0,
+      explain: "Most verbs: add -s." },
+    { s: "She ___ her hands before lunch.", options: ["washes", "washs", "washies"], answer: 0,
+      explain: "Verbs ending in -sh: add -es." },
+    { s: "The bird ___ over the house.", options: ["flies", "flys", "flyes"], answer: 0,
+      explain: "Consonant + y: y → ies." },
+    { s: "He ___ his homework in the evening.", options: ["does", "dos", "doies"], answer: 0,
+      explain: "do → does." },
+    { s: "My sister ___ the bus at seven.", options: ["catches", "catchs", "catchies"], answer: 0,
+      explain: "Verbs ending in -ch: add -es." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "don't and doesn't",
-  intro: "Choose the correct negative. I, you, we, they → don't; he, she, it → doesn't.",
+  intro: "Choose or write the correct negative. I, you, we, they → don't; he, she, it → doesn't.",
   items: [
     { s: "I ___ like fish.", options: ["don't", "doesn't", "not"], answer: 0,
       explain: "With I: don't." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "My grandmother doesn't ___ a computer.", options: ["have", "has", "haves"], answer: 0,
       explain: "After doesn't we use have, not has." },
     { s: "Tom and Ana ___ watch TV.", options: ["don't", "doesn't", "aren't"], answer: 0,
-      explain: "Tom and Ana = they: don't." }
+      explain: "Tom and Ana = they: don't." },
+    { s: "My parents ___ meat. (not / eat)", answers: ["don't eat"],
+      explain: "They → don't + eat." },
+    { s: "The shop ___ on Sundays. (not / open)", answers: ["doesn't open"],
+      explain: "The shop = it → doesn't + open." },
+    { s: "I ___ milk. (not / drink)", answers: ["don't drink"],
+      explain: "I → don't + drink." },
+    { s: "Pedro ___ TV. (not / watch)", answers: ["doesn't watch"],
+      explain: "He → doesn't + watch (no -es)." },
+    { s: "We ___ the answer. (not / know)", answers: ["don't know"],
+      explain: "We → don't + know." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Positive or negative?",
-  intro: "Write the verb in the present simple. Use don't or doesn't for the negatives (not).",
+  intro: "Choose the correct option or write the verb in the present simple. Use don't or doesn't for the negatives (not).",
   items: [
     { s: "I ___ (not / eat) breakfast. I'm never hungry in the morning.", answers: ["don't eat"],
       explain: "I → don't + verb: don't eat." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "My mum ___ (teach) maths.", answers: ["teaches"],
       explain: "Verbs ending in -ch: add -es. teach → teaches." },
     { s: "You ___ (not / understand)! Listen to me!", answers: ["don't understand"],
-      explain: "You → don't + verb: don't understand." }
+      explain: "You → don't + verb: don't understand." },
+    { s: "Choose the right sentence (she / not like): ___", options: ["She doesn't like tea.", "She don't like tea.", "She doesn't likes tea."], answer: 0,
+      explain: "doesn't + the verb with no -s." },
+    { s: "Choose the right sentence (he / not play): ___", options: ["He doesn't play golf.", "He doesn't plays golf.", "He not plays golf."], answer: 0,
+      explain: "doesn't + play." },
+    { s: "Choose the right sentence (they / not have): ___", options: ["They don't have a car.", "They doesn't have a car.", "They don't has a car."], answer: 0,
+      explain: "They → don't have." },
+    { s: "Choose the right sentence (it / not work): ___", options: ["The lift doesn't work.", "The lift don't work.", "The lift doesn't works."], answer: 0,
+      explain: "The lift = it → doesn't work." },
+    { s: "Choose the right sentence (I / not understand): ___", options: ["I don't understand.", "I doesn't understand.", "I not understand."], answer: 0,
+      explain: "I → don't understand." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "like, love, hate + -ing",
-  intro: "Choose the correct option. After like, love and hate we often use verb + -ing: I love swimming.",
+  intro: "Choose the correct option or write the missing words. After like, love and hate we often use verb + -ing: I love swimming.",
   items: [
     { s: "I love ___ to music.", options: ["dancing", "dance", "dances"], answer: 0,
       explain: "After love: verb + -ing. dance → dancing (no e)." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "They hate ___ for the bus.", options: ["waiting", "wait", "waits"], answer: 0,
       explain: "After hate: verb + -ing." },
     { s: "My brother likes ___ photos.", options: ["taking", "take", "takes"], answer: 0,
-      explain: "After like: verb + -ing. take → taking (no e)." }
+      explain: "After like: verb + -ing. take → taking (no e)." },
+    { s: "I love ___ in the shower. (sing)", answers: ["singing", "to sing"],
+      explain: "love + verb-ing." },
+    { s: "She hates ___. (run)", answers: ["running", "to run"],
+      explain: "run → running (double the n)." },
+    { s: "Do you like ___? (cook)", answers: ["cooking", "to cook"],
+      explain: "like + verb-ing." },
+    { s: "My brother loves ___ his bike. (ride)", answers: ["riding", "to ride"],
+      explain: "ride → riding (no e)." },
+    { s: "We like ___ films on Fridays. (watch)", answers: ["watching", "to watch"],
+      explain: "like + verb-ing." }
   ]
 }
 ];

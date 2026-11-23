@@ -24,14 +24,24 @@ window.SETS = [
     { s: "How long ___ you known Marta?", options: ["did", "have", "are"], answer: 1,
       explain: "How long + known = present perfect: How long have you known…?" },
     { s: "___ you help me with this box, please?", options: ["Can", "Do", "Are"], answer: 0,
-      explain: "Asking for help: Can you help me…?" }
+      explain: "Asking for help: Can you help me…?" },
+    { s: "___ your parents speak English?", answers: ["Do"],
+      explain: "Present simple with they: Do." },
+    { s: "___ you enjoy the film last night?", answers: ["Did"],
+      explain: "Last night → past: Did." },
+    { s: "What ___ you doing at the moment?", answers: ["are"],
+      explain: "Present continuous: are you doing." },
+    { s: "___ he finished his homework yet?", answers: ["Has"],
+      explain: "Present perfect with he: Has." },
+    { s: "___ you swim? – Yes, I can.", answers: ["Can"],
+      explain: "The answer uses can: Can you…?" }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Question words",
-  intro: "Look at the answer and choose the correct question word.",
+  intro: "Look at the answer and choose or write the correct question word.",
   items: [
     { s: "___ do you live? – In a small town near Porto.", options: ["Where", "When", "What"], answer: 0,
       explain: "The answer is a place, so we ask Where." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ does the film start? – At half past eight.", options: ["What time", "How long", "Which"], answer: 0,
       explain: "The answer is a clock time, so we ask What time." },
     { s: "___ is it from here to the beach? – About two kilometres.", options: ["How far", "How long", "How much"], answer: 0,
-      explain: "The answer is a distance, so we ask How far." }
+      explain: "The answer is a distance, so we ask How far." },
+    { s: "___ is your favourite actor? – Tom Hanks.", answers: ["Who"],
+      explain: "A person → Who." },
+    { s: "How ___ is the film? – Two hours.", answers: ["long"],
+      explain: "Time → How long." },
+    { s: "___ way is the station? – Turn left.", answers: ["Which"],
+      explain: "A choice of ways → Which." },
+    { s: "___ did you arrive? – Yesterday morning.", answers: ["When"],
+      explain: "A time → When." },
+    { s: "___ do you spell your surname? – S-I-L-V-A.", answers: ["How"],
+      explain: "How do you spell…?" }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Subject or object question?",
-  intro: "Choose the correct option. Remember: when who or what is the subject, there's no do, does or did.",
+  intro: "Choose the correct option or write the missing words. Remember: when who or what is the subject, there's no do, does or did.",
   items: [
     { s: "Who ___ you this present?", options: ["gave", "did give"], answer: 0,
       explain: "Who is the subject (someone gave you the present), so there's no did: Who gave you this?" },
@@ -80,7 +100,17 @@ window.SETS = [
     { s: "What ___ your brother do? – He's a nurse.", options: ["does", "is"], answer: 0,
       explain: "To ask about someone's job: What does he do? (present simple question)." },
     { s: "Who ___ this cake? It's delicious!", options: ["made", "did make"], answer: 0,
-      explain: "Who is the subject (someone made the cake), so we say Who made…?" }
+      explain: "Who is the subject (someone made the cake), so we say Who made…?" },
+    { s: "Who ___ the phone? – My sister did. (answer)", answers: ["answered"],
+      explain: "Who is the subject: no did. Who answered…?" },
+    { s: "What ___ you buy at the market? – Some fruit.", answers: ["did"],
+      explain: "What is the object: What did you buy?" },
+    { s: "Who ___ you meet at the café? – Ana.", answers: ["did"],
+      explain: "Who is the object: Who did you meet?" },
+    { s: "What ___ at the end of the film? – The hero died! (happen)", answers: ["happened"],
+      explain: "What is the subject: What happened?" },
+    { s: "Who ___ the World Cup in 2022? (win)", answers: ["won"],
+      explain: "Who is the subject: Who won…?" }
   ]
 },
 /* ---------------- Set 4 ---------------- */
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Who is this present ___? – It's for you!", options: ["for", "to", "of"], answer: 0,
       explain: "A present is for someone: Who is it for?" },
     { s: "What are you afraid ___? – Spiders!", options: ["of", "from", "about"], answer: 0,
-      explain: "We say afraid of something: What are you afraid of?" }
+      explain: "We say afraid of something: What are you afraid of?" },
+    { s: "Who did you speak ___? – The manager.", answers: ["to", "with"],
+      explain: "speak to someone → Who did you speak to?" },
+    { s: "What are you listening ___? – A new song.", answers: ["to"],
+      explain: "listen to something." },
+    { s: "Where do you come ___? – Peru.", answers: ["from"],
+      explain: "come from a place." },
+    { s: "What's the food ___ in that restaurant? – Excellent!", answers: ["like"],
+      explain: "What … like? asks for a description." },
+    { s: "What are you thinking ___? – My holiday.", answers: ["about", "of"],
+      explain: "think about something." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Write the questions",
-  intro: "Write the question for each answer. Use the words in brackets in the same order, and add any words you need (do, did, are, have…).",
+  intro: "Choose the correct option or write the question for each answer. Use the words in brackets in the same order, and add any words you need (do, did, are, have…).",
   items: [
     { s: "___ – I live in Lisbon. (where / you / live)", answers: ["Where do you live?"], width: 26,
       explain: "Present simple: question word + do + you + base verb." },
@@ -136,7 +176,55 @@ window.SETS = [
     { s: "___ – It costs twenty euros. (how much / this jacket / cost)", answers: ["How much does this jacket cost?"], width: 26,
       explain: "This jacket = it, so we use does + cost." },
     { s: "___ – I'm going to visit my grandparents. (what / you / do / this weekend)", answers: ["What are you going to do this weekend?", "What are you doing this weekend?"], width: 26,
-      explain: "The answer uses going to, so the question does too: What are you going to do…? (What are you doing this weekend? is also correct.)" }
+      explain: "The answer uses going to, so the question does too: What are you going to do…? (What are you doing this weekend? is also correct.)" },
+    { s: "Choose the right question (– I was at home.): ___", options: ["Where did you were last night?", "Where you were last night?", "Where were you last night?"], answer: 2,
+      explain: "be: Where + were + you…?" },
+    { s: "Choose the right question (– Pizza.): ___", options: ["What you want for dinner?", "What do you want for dinner?", "What does you want for dinner?"], answer: 1,
+      explain: "What + do + you + want?" },
+    { s: "Choose the right question (– My dad.): ___", options: ["Who did make breakfast?", "Who made breakfast?", "Who did made breakfast?"], answer: 1,
+      explain: "Who is the subject: no did." },
+    { s: "Choose the right question (– For two years.): ___", options: ["How long do you live here?", "How long you have lived here?", "How long have you lived here?"], answer: 2,
+      explain: "From the past until now: How long have you…?" },
+    { s: "Choose the right question (– No, he isn't.): ___", options: ["Does your brother married?", "Is your brother married?", "Is married your brother?"], answer: 1,
+      explain: "be + subject + adjective: Is your brother married?" }
+  ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "have got and have: questions",
+  intro: "Choose the correct option or write the missing words.",
+  items: [
+    { s: "___ you got a pen?", options: ["Have", "Do", "Are"], answer: 0,
+      explain: "Questions with have got: Have + you + got." },
+    { s: "___ she got any brothers or sisters?", options: ["Has", "Have", "Does"], answer: 0,
+      explain: "With she: Has she got…?" },
+    { s: "Do you have a car? – Yes, I ___.", options: ["do", "have", "have got"], answer: 0,
+      explain: "A question with Do gets a short answer with do: Yes, I do." },
+    { s: "Have you got a laptop? – No, I ___.", options: ["haven't", "don't", "haven't got"], answer: 0,
+      explain: "Short answers with have got don't repeat got: No, I haven't." },
+    { s: "___ your flat have a balcony?", options: ["Does", "Has", "Is"], answer: 0,
+      explain: "With have (no got), the question uses Does: Does your flat have a balcony?" },
+    { s: "Has he got a dog? – Yes, he ___.", options: ["has", "does", "is"], answer: 0,
+      explain: "Short answer to Has he got…?: Yes, he has." },
+    { s: "How many cousins ___ you got?", options: ["have", "do", "are"], answer: 0,
+      explain: "Question word + have + you + got." },
+    { s: "What time ___ you have lunch?", options: ["do", "have", "are"], answer: 0,
+      explain: "Have lunch is an action, so the question uses do. Actions never use have got." },
+    { s: "Have they got a garden? – No, they ___.", options: ["haven't", "don't", "aren't"], answer: 0,
+      explain: "Short answer to Have they got…?: No, they haven't." },
+    { s: "___ your sister have long hair?", options: ["Does", "Has", "Is"], answer: 0,
+      explain: "Does + your sister + have. (Or: Has your sister got long hair?)" },
+    { s: "___ you got any brothers? – Yes, two.", answers: ["Have"],
+      explain: "have got question: Have you got…?" },
+    { s: "___ your house have a garden? – No, it doesn't.", answers: ["Does"],
+      explain: "have (no got) uses Does." },
+    { s: "Have you got a bike? – Yes, I ___.", answers: ["have"],
+      explain: "Short answer: Yes, I have." },
+    { s: "Do you have a dog? – No, I ___.", answers: ["don't"],
+      explain: "Short answer to Do…?: No, I don't." },
+    { s: "What ___ she got in her hand?", answers: ["has"],
+      explain: "She → What has she got…?" }
   ]
 }
 ];

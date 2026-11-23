@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "a or an?",
-  intro: "Choose a or an. Listen to the first sound of the next word, not the first letter.",
+  intro: "Choose or write a or an. Listen to the first sound of the next word, not the first letter.",
   items: [
     { s: "I'm reading ___ interesting book about space.", options: ["a", "an"], answer: 1,
       explain: "Interesting starts with a vowel sound, so we use an." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "She needs ___ uniform for her new job.", options: ["a", "an"], answer: 0,
       explain: "Uniform starts with a 'y' sound, like university: a uniform." },
     { s: "It was ___ honest mistake.", options: ["a", "an"], answer: 1,
-      explain: "The h in honest is silent, so we say an honest mistake." }
+      explain: "The h in honest is silent, so we say an honest mistake." },
+    { s: "She's ___ amazing singer.", answers: ["an"],
+      explain: "amazing starts with a vowel sound: an." },
+    { s: "It's ___ one-way street.", answers: ["a"],
+      explain: "one starts with a 'w' sound: a." },
+    { s: "He's got ___ unusual name.", answers: ["an"],
+      explain: "unusual starts with a vowel sound: an." },
+    { s: "It's ___ useful app.", answers: ["a"],
+      explain: "useful starts with a 'you' sound: a." },
+    { s: "Can you give me ___ example?", answers: ["an"],
+      explain: "example starts with a vowel sound: an." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "a, an or the?",
-  intro: "Choose a, an or the.",
+  intro: "Choose or write a, an or the.",
   items: [
     { s: "I've got ___ dog and two cats.", options: ["a", "an", "the"], answer: 0,
       explain: "We mention the dog for the first time, and it's one dog: a dog." },
@@ -52,7 +62,17 @@ window.SETS = [
     { s: "I had ___ egg for breakfast.", options: ["a", "an", "the"], answer: 1,
       explain: "One egg, and egg starts with a vowel sound: an egg." },
     { s: "Who's ___ best player in your team?", options: ["a", "an", "the"], answer: 2,
-      explain: "Superlatives (the best, the tallest) always take the." }
+      explain: "Superlatives (the best, the tallest) always take the." },
+    { s: "I bought a shirt and a jumper. ___ shirt was cheap.", answers: ["The"],
+      explain: "The second time we mention it: the." },
+    { s: "Have you got ___ pen I can borrow?", answers: ["a"],
+      explain: "Any pen, one of many: a." },
+    { s: "Close ___ window, please. It's cold.", answers: ["the"],
+      explain: "We both know which window: the." },
+    { s: "What's ___ capital of Australia?", answers: ["the"],
+      explain: "There's only one capital: the." },
+    { s: "My brother is ___ artist.", answers: ["an"],
+      explain: "Jobs: a/an. artist starts with a vowel: an." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "They live in ___ Italy.", options: ["the", "–"], answer: 1,
       explain: "Most country names have no article: Italy, Brazil, Japan." },
     { s: "I think I left my bag in ___ car.", options: ["the", "–"], answer: 0,
-      explain: "We both know which car (our car), so we use the." }
+      explain: "We both know which car (our car), so we use the." },
+    { s: "Choose the right sentence (in general): ___", options: ["I love animals.", "I love the animals.", "I love an animals."], answer: 0,
+      explain: "Things in general: no article." },
+    { s: "Choose the right sentence (meals): ___", options: ["What time do you have the dinner?", "What time do you have dinner?", "What time do you have a dinner?"], answer: 1,
+      explain: "Meals: no article." },
+    { s: "Choose the right sentence (countries): ___", options: ["She's from United States.", "She's from the United States.", "She's from a United States."], answer: 1,
+      explain: "Names with States, Kingdom, Republic: the." },
+    { s: "Choose the right sentence (a particular one): ___", options: ["Pizza we had last night was great.", "A pizza we had last night was great.", "The pizza we had last night was great."], answer: 2,
+      explain: "A particular pizza (the one we had): the." },
+    { s: "Choose the right sentence (home): ___", options: ["I stayed at the home all day.", "I stayed at a home all day.", "I stayed at home all day."], answer: 2,
+      explain: "at home: no article." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "a, an, the or –?",
-  intro: "Choose a, an, the, or – if you don't need an article.",
+  intro: "Choose or write a, an or the, or choose – if you don't need an article.",
   items: [
     { s: "___ life is short, so enjoy it!", options: ["A", "An", "The", "–"], answer: 3,
       explain: "Life in general, so no article. Not 'The life is short'." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I go to the gym three times ___ week.", options: ["a", "an", "the", "–"], answer: 0,
       explain: "For frequency we say three times a week, twice a day." },
     { s: "There's ___ apple and a banana in my bag.", options: ["a", "an", "the", "–"], answer: 1,
-      explain: "First mention, and apple starts with a vowel sound: an apple." }
+      explain: "First mention, and apple starts with a vowel sound: an apple." },
+    { s: "Shall we meet in front of ___ museum?", answers: ["the"],
+      explain: "We both know which museum: the." },
+    { s: "She has ___ hour for lunch.", answers: ["an"],
+      explain: "hour: the h is silent, so an." },
+    { s: "It's ___ coldest day of the year.", answers: ["the"],
+      explain: "Superlatives: the." },
+    { s: "My dad drives ___ taxi.", answers: ["a"],
+      explain: "One of many: a." },
+    { s: "He's ___ only person who knows the answer.", answers: ["the"],
+      explain: "the only: there's just one." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice: a weekend in Lisbon",
-  intro: "The sentences tell a story. Choose a, an, the, or – if you don't need an article.",
+  intro: "The sentences tell a story. Choose or write a, an or the, or choose – if you don't need an article.",
   items: [
     { s: "Last month I went on ___ short trip to Lisbon with my sister.", options: ["a", "an", "the", "–"], answer: 0,
       explain: "First mention, and one of many trips: a short trip." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "On Sunday it rained, so we stayed at ___ home and read.", options: ["a", "an", "the", "–"], answer: 3,
       explain: "We say at home, with no article." },
     { s: "We're going back to ___ Portugal next summer.", options: ["a", "an", "the", "–"], answer: 3,
-      explain: "Most country names have no article: Portugal." }
+      explain: "Most country names have no article: Portugal." },
+    { s: "In the evening we took ___ tram up the hill.", answers: ["a", "the"],
+      explain: "One tram (a), or the famous tram everyone takes (the)." },
+    { s: "___ view from the top was amazing.", answers: ["The"],
+      explain: "A particular view (from the top): the." },
+    { s: "We bought ___ umbrella because it started to rain again.", answers: ["an"],
+      explain: "One umbrella; umbrella starts with a vowel: an." },
+    { s: "___ flight home on Monday was late.", answers: ["The"],
+      explain: "A particular flight (ours): the." },
+    { s: "Next time I'd like to spend ___ week there, not just two days.", answers: ["a"],
+      explain: "One week: a." }
   ]
 }
 ];

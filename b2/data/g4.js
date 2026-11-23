@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Zero, first, second and third conditionals",
-  intro: "Complete the sentences with the correct form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verbs in brackets.",
   items: [
     { s: "If you ___ (press) this button, the machine switches off.", answers: ["press"],
       explain: "Zero conditional: if + present, present, for something that always happens." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "You ___ (feel) better if you get some sleep.", answers: ["will feel", "'ll feel"],
       explain: "First conditional result: will + verb." },
     { s: "If they ___ (know) you were coming, they would have prepared a room.", answers: ["had known", "'d known"],
-      explain: "Third conditional: if + past perfect." }
+      explain: "Third conditional: if + past perfect." },
+    { s: "If you ___ ice, it melts.", options: ["heat", "will heat", "heated"], answer: 0,
+      explain: "Zero conditional: if + present, present." },
+    { s: "If I ___ you, I'd take the job.", options: ["were", "am", "had been"], answer: 0,
+      explain: "Advice: If I were you." },
+    { s: "We'd have caught the train if we ___ five minutes earlier.", options: ["left", "would leave", "had left"], answer: 2,
+      explain: "Third conditional: if + past perfect." },
+    { s: "If it ___ tomorrow, the match will be cancelled.", options: ["will snow", "snows", "snowed"], answer: 1,
+      explain: "First conditional: if + present." },
+    { s: "I ___ you if I had known you were in town.", options: ["would call", "would have called", "had called"], answer: 1,
+      explain: "Third conditional result: would have + past participle." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "The third conditional",
-  intro: "Complete the sentences with the third conditional form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the third conditional form of the verbs in brackets.",
   items: [
     { s: "If you had told me about the party, I ___ (come).", answers: ["would have come", "'d have come"],
       explain: "would have + past participle in the result." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "If you ___ (ask) me, I would have helped you.", answers: ["had asked", "'d asked"],
       explain: "if + past perfect: had asked." },
     { s: "They ___ (could / save) money if they had booked earlier.", answers: ["could have saved"],
-      explain: "could have + past participle = it would have been possible." }
+      explain: "could have + past participle = it would have been possible." },
+    { s: "If we'd known about the strike, we ___ by car.", options: ["would go", "would have gone", "had gone"], answer: 1,
+      explain: "would have + past participle." },
+    { s: "She ___ the job if she'd been more confident.", options: ["might get", "had got", "might have got"], answer: 2,
+      explain: "might have = would possibly have." },
+    { s: "If you ___ the instructions, you wouldn't have broken it.", options: ["read", "had read", "would have read"], answer: 1,
+      explain: "if + past perfect." },
+    { s: "The party would have been better if more people ___.", options: ["had come", "came", "would have come"], answer: 0,
+      explain: "if + past perfect." },
+    { s: "If I'd set my alarm, I ___ late this morning.", options: ["wouldn't have been", "wouldn't be", "hadn't been"], answer: 0,
+      explain: "A past result: wouldn't have been." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed conditionals",
-  intro: "Complete the mixed conditional sentences with the correct form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the mixed conditional sentences with the correct form of the verbs in brackets.",
   items: [
     { s: "If I had studied medicine, I ___ (be) a doctor now.", answers: ["would be", "'d be"],
       explain: "Past condition (had studied) with a present result (now): would + verb." },
@@ -80,7 +100,17 @@ window.SETS = [
     { s: "If I ___ (win) the lottery last year, I would be living on a beach now.", answers: ["had won", "'d won"],
       explain: "Past condition: if + past perfect." },
     { s: "If she weren't afraid of flying, she ___ (come) with us to Japan last summer.", answers: ["would have come", "'d have come"],
-      explain: "Present characteristic (she's afraid of flying) with a past result." }
+      explain: "Present characteristic (she's afraid of flying) with a past result." },
+    { s: "If I hadn't eaten so much, I ___ so sick now.", options: ["wouldn't have felt", "wouldn't feel", "won't feel"], answer: 1,
+      explain: "Past condition, present result: would + verb." },
+    { s: "If he were taller, he ___ for the basketball team last year.", options: ["would be chosen", "was chosen", "would have been chosen"], answer: 2,
+      explain: "Present condition, past result: would have + past participle." },
+    { s: "We would be rich now if we ___ that house in 2010.", options: ["bought", "would buy", "had bought"], answer: 2,
+      explain: "Past condition: had + past participle." },
+    { s: "If I'd taken that job in London, I ___ there now.", options: ["would have lived", "will live", "would be living"], answer: 2,
+      explain: "Present result: would be + -ing." },
+    { s: "If you weren't so lazy, you ___ the exam last week.", options: ["would have passed", "would pass", "had passed"], answer: 0,
+      explain: "Present condition, past result." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "I'll write down the address ___ I forget it.", options: ["in case", "unless", "provided"], answer: 0,
       explain: "in case I forget = because it's possible that I'll forget." },
     { s: "___ you hear from me by Friday, assume the plan is still on.", options: ["Unless", "As long as", "In case"], answer: 0,
-      explain: "Unless you hear from me = if you don't hear from me." }
+      explain: "Unless you hear from me = if you don't hear from me." },
+    { s: "You can't go in ___ you have a ticket.", answers: ["unless"],
+      explain: "unless = if … not." },
+    { s: "I'll come, ___ long as I finish work on time.", answers: ["as", "so"],
+      explain: "as long as = only if." },
+    { s: "Put the number in your phone in ___ you need it.", answers: ["case"],
+      explain: "in case = because it's possible." },
+    { s: "___ that you pay in advance, you'll get a discount.", answers: ["Provided", "Providing"],
+      explain: "provided that = only if." },
+    { s: "We need to leave now, ___ we'll miss the start.", answers: ["otherwise", "or"],
+      explain: "otherwise = if not." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "We got lost because we didn't have a map. → If we ___, we wouldn't have got lost. (HAD)", answers: ["had had a map", "'d had a map"],
       explain: "Third conditional: had had (past perfect of have)." },
     { s: "Leave now, or you'll be late. → Leave now, ___ late. (OTHERWISE)", answers: ["otherwise you will be", "otherwise you'll be"],
-      explain: "otherwise = if not." }
+      explain: "otherwise = if not." },
+    { s: "I didn't hear the alarm, so I was late. → If I ___ the alarm, I wouldn't have been late. (HEARD)", answers: ["had heard", "'d heard"],
+      explain: "Third conditional: if + had + past participle." },
+    { s: "You can stay if you don't make any noise. → You can stay ___ no noise. (LONG)", answers: ["as long as you make", "so long as you make"],
+      explain: "as long as = only if." },
+    { s: "I'll take a jacket because it might get cold. → I'll take a jacket ___ cold. (CASE)", answers: ["in case it gets", "in case it turns"],
+      explain: "in case + present simple." },
+    { s: "She isn't here now because she missed the bus. → If she ___ the bus, she would be here now. (MISSED)", answers: ["hadn't missed", "had not missed"],
+      explain: "Mixed: past condition, present result." },
+    { s: "If you don't apologise, she won't forgive you. → She won't forgive you ___. (UNLESS)", answers: ["unless you apologise", "unless you apologize", "unless you say sorry"],
+      explain: "unless = if … not." }
   ]
 }
 ];

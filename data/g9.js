@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "-ing or to? A change in meaning",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I'll never forget ___ the Grand Canyon for the first time.", options: ["seeing", "to see"], answer: 0,
       explain: "forget + -ing = forget a memory of something you did." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "He went on ___ for over an hour, and everyone was bored.", options: ["talking", "to talk"], answer: 0,
       explain: "go on + -ing = continue." },
     { s: "I regret ___ to her like that – I was out of order.", options: ["speaking", "to speak"], answer: 0,
-      explain: "regret + -ing = be sorry about something you did." }
+      explain: "regret + -ing = be sorry about something you did." },
+    { s: "I remember ___ the door, so someone else must have opened it. (lock)", answers: ["locking"],
+      explain: "remember + -ing = a memory of the action." },
+    { s: "Please remember ___ off the lights when you leave. (switch)", answers: ["to switch"],
+      explain: "remember + to = don't forget to." },
+    { s: "He stopped ___ years ago. (smoke)", answers: ["smoking"],
+      explain: "stop + -ing = give up." },
+    { s: "After a short pause, she went on ___ the second point. (explain)", answers: ["to explain"],
+      explain: "go on + to = move on to something new." },
+    { s: "I tried ___ the window, but it was stuck. (open)", answers: ["to open"],
+      explain: "try + to = make an effort." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Perfect and passive forms",
-  intro: "Complete the sentences with the correct form of the verb in brackets: to do, to have done, to be done, doing, having done or being done.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verb in brackets: to do, to have done, to be done, doing, having done or being done.",
   items: [
     { s: "She seems ___ (forget) all about our arrangement.", answers: ["to have forgotten"],
       explain: "seem + perfect infinitive for something that happened earlier." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "They appear ___ (work) on the problem for weeks.", answers: ["to have been working"],
       explain: "Perfect continuous infinitive for an activity over a period up to now." },
     { s: "___ (finish) her work, she went for a walk.", answers: ["Having finished"],
-      explain: "Having + past participle: one action completed before another." }
+      explain: "Having + past participle: one action completed before another." },
+    { s: "She appears ___ a lot of weight.", options: ["to have lost", "to lose", "having lost"], answer: 0,
+      explain: "An earlier change: perfect infinitive." },
+    { s: "I hate ___ what to do.", options: ["to tell", "being told", "telling"], answer: 1,
+      explain: "Passive -ing: being + past participle." },
+    { s: "He's thought ___ the country last week.", options: ["to leave", "leaving", "to have left"], answer: 2,
+      explain: "A past action: to have + past participle." },
+    { s: "___ the letter, she burst into tears.", options: ["Having read", "Being read", "To have read"], answer: 0,
+      explain: "One action completed before another: having + past participle." },
+    { s: "I don't remember ___ about the change.", options: ["telling", "to be told", "being told"], answer: 2,
+      explain: "remember + passive -ing." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "make, let, help, advise…",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "My parents made me ___ the piano for years.", options: ["practise", "to practise", "practising"], answer: 0,
       explain: "make + person + infinitive without to." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The police warned residents not ___ their homes.", options: ["to leave", "leave", "leaving"], answer: 0,
       explain: "warn + person + not to + verb." },
     { s: "What made you ___ your mind?", options: ["change", "to change", "changing"], answer: 0,
-      explain: "make + person + infinitive without to." }
+      explain: "make + person + infinitive without to." },
+    { s: "The teacher let us ___ early. (leave)", answers: ["leave"],
+      explain: "let + object + base verb." },
+    { s: "We were made ___ outside for an hour. (wait)", answers: ["to wait"],
+      explain: "Passive make: be made to." },
+    { s: "She got her sister ___ her the car. (lend)", answers: ["to lend"],
+      explain: "get + object + to-infinitive." },
+    { s: "The news made her ___ into tears. (burst)", answers: ["burst"],
+      explain: "make + object + base verb." },
+    { s: "I'll have my assistant ___ you the details. (send)", answers: ["send"],
+      explain: "have + person + base verb." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "worth, no point, look forward to…",
-  intro: "Complete the sentences with the correct form of the verbs in brackets. Add a preposition if it is needed.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verbs in brackets. Add a preposition if it is needed.",
   items: [
     { s: "The museum is well worth ___ (visit).", answers: ["visiting"],
       explain: "be worth + -ing." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "It's not easy ___ (concentrate) with all this noise.", answers: ["to concentrate"],
       explain: "It's + adjective + to-infinitive." },
     { s: "I object to ___ (treat) like a child.", answers: ["being treated"],
-      explain: "object to + -ing; passive: being treated." }
+      explain: "object to + -ing; passive: being treated." },
+    { s: "It's no good ___ about it now.", options: ["worrying", "to worry", "worry"], answer: 0,
+      explain: "It's no good + -ing." },
+    { s: "I can't help ___ sorry for him.", options: ["feeling", "to feel", "feel"], answer: 0,
+      explain: "can't help + -ing." },
+    { s: "The film isn't worth ___.", options: ["to watch", "watching", "watch"], answer: 1,
+      explain: "worth + -ing." },
+    { s: "She's accustomed ___ in a busy office.", options: ["to work", "to working", "working"], answer: 1,
+      explain: "be accustomed to + -ing." },
+    { s: "I'd rather ___ at home tonight.", options: ["stay", "to stay", "staying"], answer: 0,
+      explain: "would rather + base verb." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Getting to the summit was impossible because of the weather. → The weather ___ the summit. (PREVENTED)", answers: ["prevented us from reaching", "prevented us reaching", "prevented us from getting to", "prevented us from climbing"],
       explain: "prevent someone (from) + -ing." },
     { s: "I find it hard to get up early. → I ___ up early. (DIFFICULTY)", answers: ["have difficulty getting", "have difficulty in getting"],
-      explain: "have difficulty (in) + -ing." }
+      explain: "have difficulty (in) + -ing." },
+    { s: "It seems that she forgot about our meeting. → She ___ about our meeting. (SEEMS)", answers: ["seems to have forgotten"],
+      explain: "seem + perfect infinitive." },
+    { s: "I'm sorry I didn't call you. → I regret ___ you. (CALLED)", answers: ["not having called"],
+      explain: "regret + not having + past participle." },
+    { s: "They let us use the pool. → We ___ the pool. (ALLOWED)", answers: ["were allowed to use"],
+      explain: "let is not used in the passive: be allowed to." },
+    { s: "It's pointless to complain. → It's ___. (USE)", answers: ["no use complaining"],
+      explain: "It's no use + -ing." },
+    { s: "I remember that my grandmother took me to the circus. → I remember ___ the circus by my grandmother. (TAKEN)", answers: ["being taken to"],
+      explain: "remember + passive -ing." }
   ]
 }
 ];

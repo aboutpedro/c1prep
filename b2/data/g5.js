@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Wishes about the present",
-  intro: "Complete the wishes with the correct form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the wishes with the correct form of the verbs in brackets.",
   items: [
     { s: "I don't have a car. I wish I ___ (have) one.", answers: ["had"],
       explain: "wish + past simple for a present situation we'd like to be different." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I wish I ___ (not / feel) so nervous about the exam.", answers: ["did not feel", "didn't feel"],
       explain: "wish + past simple negative." },
     { s: "If only we ___ (be) on holiday right now!", answers: ["were", "was"],
-      explain: "If only + were/was." }
+      explain: "If only + were/was." },
+    { s: "I wish I ___ more patient with my kids.", options: ["am", "would be", "were"], answer: 2,
+      explain: "A wish about now: were (past form)." },
+    { s: "If only I ___ how to fix this!", options: ["know", "will know", "knew"], answer: 2,
+      explain: "A wish about now: past simple." },
+    { s: "She wishes she ___ drive.", options: ["can", "would", "could"], answer: 2,
+      explain: "can → could." },
+    { s: "I wish we ___ to move house.", options: ["don't have", "didn't have", "won't have"], answer: 1,
+      explain: "A wish about now: past simple." },
+    { s: "I wish I ___ in a city with a beach.", options: ["lived", "live", "would live"], answer: 0,
+      explain: "A wish about now: past simple." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Regrets about the past",
-  intro: "Complete the sentences with the correct form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verbs in brackets.",
   items: [
     { s: "I wish I ___ (study) harder for my exams.", answers: ["had studied", "'d studied"],
       explain: "wish + past perfect for a past regret." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "We ___ (should / not / leave) the window open. Everything got wet.", answers: ["should not have left", "shouldn't have left"],
       explain: "shouldn't have + past participle: it was a mistake." },
     { s: "I wish I ___ (be) there to see it. It sounds amazing.", answers: ["had been", "'d been"],
-      explain: "wish + had been: I wasn't there." }
+      explain: "wish + had been: I wasn't there." },
+    { s: "I wish I ___ my phone at home. I can't call anyone.", options: ["hadn't left", "didn't leave", "wouldn't leave"], answer: 0,
+      explain: "A regret about the past: past perfect." },
+    { s: "If only we ___ the earlier train.", options: ["had caught", "caught", "would catch"], answer: 0,
+      explain: "A regret: had + past participle." },
+    { s: "She regrets ___ the job offer.", options: ["turning down", "to turn down", "turned down"], answer: 0,
+      explain: "regret + -ing = sorry about something you did." },
+    { s: "You ___ have told him! It was a secret.", options: ["mustn't", "wouldn't", "shouldn't"], answer: 2,
+      explain: "Criticism of a past action: shouldn't have." },
+    { s: "I wish I ___ so rude to her yesterday.", options: ["wasn't", "hadn't been", "wouldn't be"], answer: 1,
+      explain: "A regret about yesterday: past perfect." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "wish + would or wish + past?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I wish you ___ leaving your clothes on the floor!", options: ["would stop", "stopped", "had stopped"], answer: 0,
       explain: "wish + would for annoying behaviour we want someone to change." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I wish people ___ more careful when they drive past the school.", options: ["would be", "are", "will be"], answer: 0,
       explain: "A wish about other people's behaviour: would." },
     { s: "I wish I ___ to that party last night. It was boring.", options: ["hadn't gone", "wouldn't go", "didn't go"], answer: 0,
-      explain: "A past regret: wish + past perfect." }
+      explain: "A past regret: wish + past perfect." },
+    { s: "I wish my brother ___ borrowing my things without asking. (stop)", answers: ["would stop", "'d stop"],
+      explain: "Annoyance at someone's behaviour: wish + would." },
+    { s: "I wish I ___ a bit more confident. (be)", answers: ["were", "was"],
+      explain: "A wish about yourself now: past form." },
+    { s: "I wish you ___ interrupting me. (not / keep)", answers: ["wouldn't keep", "would not keep"],
+      explain: "Annoyance: wish + wouldn't." },
+    { s: "I wish I ___ a bigger kitchen. (have)", answers: ["had"],
+      explain: "A wish about a present situation: past simple." },
+    { s: "I wish the phone ___ ringing. (stop)", answers: ["would stop", "'d stop"],
+      explain: "Wanting something to change: wish + would." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "would rather, it's time, had better",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I'd rather ___ at home tonight. I'm exhausted.", options: ["stay", "to stay", "staying"], answer: 0,
       explain: "would rather + verb without to (same subject)." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "It's high time the government ___ something about pollution.", options: ["did", "does", "will do"], answer: 0,
       explain: "It's high time + past simple: it should have happened already." },
     { s: "I'd rather go by bus ___ walk in this rain.", options: ["than", "to", "that"], answer: 0,
-      explain: "would rather do X than do Y." }
+      explain: "would rather do X than do Y." },
+    { s: "I'd rather ___ about it, if you don't mind. (not / talk)", answers: ["not talk"],
+      explain: "would rather (not) + base verb." },
+    { s: "It's time you ___ taking your studies seriously. (start)", answers: ["started"],
+      explain: "It's time + subject + past simple." },
+    { s: "You'd better ___ anyone. (not / tell)", answers: ["not tell"],
+      explain: "had better (not) + base verb." },
+    { s: "I'd rather you ___ by card. (pay)", answers: ["paid"],
+      explain: "would rather + another person + past simple." },
+    { s: "Would you rather ___ in the city or the countryside? (live)", answers: ["live"],
+      explain: "would rather + base verb." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "My advice is to see a doctor. → You ___ a doctor. (BETTER)", answers: ["had better see", "'d better see", "had better go and see"],
       explain: "had better + verb without to: strong advice." },
     { s: "I didn't know about the problem, and I'm sorry. → I wish ___ about the problem. (KNOWN)", answers: ["I had known", "I'd known"],
-      explain: "wish + past perfect." }
+      explain: "wish + past perfect." },
+    { s: "I'm sorry I didn't call you. → I wish ___ you. (CALLED)", answers: ["I had called", "I'd called"],
+      explain: "A regret: wish + past perfect." },
+    { s: "It annoys me that he always arrives late. → I wish he ___ late. (WOULDN'T)", answers: ["wouldn't always arrive", "wouldn't arrive", "would not always arrive", "would not arrive"],
+      explain: "Annoyance: wish + wouldn't." },
+    { s: "We should leave now. → It's ___ left. (TIME)", answers: ["time we", "high time we", "about time we"],
+      explain: "It's time + subject + past simple." },
+    { s: "I'd prefer to walk than take the bus. → I'd ___ take the bus. (RATHER)", answers: ["rather walk than"],
+      explain: "would rather + verb + than + verb." },
+    { s: "I regret buying this car. → I wish ___ this car. (BOUGHT)", answers: ["I hadn't bought", "I had not bought"],
+      explain: "A regret: wish + hadn't + past participle." }
   ]
 }
 ];

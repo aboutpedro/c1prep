@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Present, past and perfect participles",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ in 1890, the bridge is still in use today.", options: ["Built", "Building", "Having built", "To build"], answer: 0,
       explain: "Passive meaning (the bridge was built): past participle." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "___ his keys, he couldn't get into the house.", options: ["Having lost", "Losing", "Lost", "Being lost"], answer: 0,
       explain: "A cause completed before: having + past participle." },
     { s: "___ in a hurry, she forgot her phone.", options: ["Being", "Been", "Having", "Be"], answer: 0,
-      explain: "Being in a hurry = because she was in a hurry." }
+      explain: "Being in a hurry = because she was in a hurry." },
+    { s: "___ (finish) her homework, she went out to play.", answers: ["Having finished"],
+      explain: "One action before another: having + past participle." },
+    { s: "___ (write) in 1605, the play is still performed today.", answers: ["Written"],
+      explain: "Passive meaning: past participle." },
+    { s: "___ (not / want) to wake the baby, we whispered.", answers: ["Not wanting"],
+      explain: "The reason, negative: not + -ing." },
+    { s: "___ (feel) tired, I went to bed early.", answers: ["Feeling"],
+      explain: "The reason: present participle." },
+    { s: "___ (tell) the news, he rang his mother. (passive, earlier)", answers: ["Having been told"],
+      explain: "Passive and earlier: having been + past participle." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Participles with conjunctions and prepositions",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ cooking, always wash your hands first.", options: ["Before", "Until", "Despite", "Since"], answer: 0,
       explain: "before + -ing." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ warned about the risks, she went ahead.", options: ["Although", "Despite", "However", "Even"], answer: 0,
       explain: "Although + past participle = although she had been warned." },
     { s: "___ being tired, she finished the race.", options: ["Despite", "Although", "However", "Even though"], answer: 0,
-      explain: "Despite + -ing." }
+      explain: "Despite + -ing." },
+    { s: "___ arriving at the hotel, we checked in immediately.", answers: ["On", "Upon", "After"],
+      explain: "On + -ing = as soon as." },
+    { s: "Never use this machine ___ reading the safety rules.", answers: ["without", "before"],
+      explain: "without + -ing." },
+    { s: "___ walking home, I bumped into an old friend.", answers: ["While", "Whilst", "When"],
+      explain: "While + -ing = during." },
+    { s: "___ signed, the contract cannot be changed.", answers: ["Once"],
+      explain: "Once + past participle = after it is." },
+    { s: "She was fined ___ parking in a disabled bay.", answers: ["for"],
+      explain: "for + -ing gives the reason." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Verbless and absolute clauses",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ the exams over, the students went on holiday.", options: ["With", "As", "By", "Since"], answer: 0,
       explain: "With + noun + adjective/participle = because…" },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "___ speaking, the plan is sound.", options: ["Generally", "General", "In general", "Generalising of"], answer: 0,
       explain: "Generally speaking = in general." },
     { s: "___ alone, she began to cry.", options: ["Left", "Leaving", "Having left", "Leave"], answer: 0,
-      explain: "Left alone = when she was left alone." }
+      explain: "Left alone = when she was left alone." },
+    { s: "___ the meeting over, we went for lunch.", answers: ["With"],
+      explain: "With + noun + adjective / adverb." },
+    { s: "Dinner ___ (be) over, the guests moved to the garden.", answers: ["being"],
+      explain: "An absolute clause with its own subject." },
+    { s: "___ necessary, we can postpone the meeting.", answers: ["If", "Where", "When"],
+      explain: "If necessary = if it is necessary." },
+    { s: "___ in mind the cost, it's a great deal.", answers: ["Bearing", "Keeping"],
+      explain: "Bearing in mind = considering." },
+    { s: "Strictly ___, the deadline was yesterday.", answers: ["speaking"],
+      explain: "Strictly speaking = to be exact." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Reduced relative clauses",
-  intro: "Write the verb in brackets as a participle (-ing or past participle).",
+  intro: "Choose the correct option or write the verb in brackets as a participle (-ing or past participle).",
   items: [
     { s: "The man ___ (stand) by the door is my uncle.", answers: ["standing"],
       explain: "Active, in progress: -ing (= who is standing)." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "I found a note ___ (say) that the meeting was cancelled.", answers: ["saying"],
       explain: "-ing (= which said)." },
     { s: "The first person ___ (reach) the summit will win a prize.", answers: ["to reach"],
-      explain: "After the first / last / only we often use to + infinitive." }
+      explain: "After the first / last / only we often use to + infinitive." },
+    { s: "The letter ___ this morning was from the bank.", options: ["delivered", "delivering", "to deliver"], answer: 0,
+      explain: "Passive meaning: past participle." },
+    { s: "Anyone ___ information about the crime should call the police.", options: ["having", "had", "to have"], answer: 0,
+      explain: "Active meaning: -ing." },
+    { s: "She was the youngest player ever ___ the title.", options: ["to win", "winning", "won"], answer: 0,
+      explain: "After superlatives: to-infinitive." },
+    { s: "The questions ___ in the survey were too personal.", options: ["asked", "asking", "to ask"], answer: 0,
+      explain: "Passive meaning: past participle." },
+    { s: "People ___ near the airport complain about the noise.", options: ["living", "lived", "to live"], answer: 0,
+      explain: "Active meaning: -ing." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "When everything is taken into account, the trip was a success. → All ___ was a success. (CONSIDERED)", answers: ["things considered, the trip", "things considered the trip"],
       explain: "All things considered = taking everything into account." },
     { s: "She was the first woman who won the prize. → She was the first woman ___ prize. (WIN)", answers: ["to win the"],
-      explain: "the first + to + infinitive." }
+      explain: "the first + to + infinitive." },
+    { s: "As I didn't have any money, I walked home. → Not ___ I walked home. (HAVING)", answers: ["having any money,", "having any money"],
+      explain: "Not + -ing gives the reason." },
+    { s: "After she had read the letter, she burst into tears. → Having ___ she burst into tears. (READ)", answers: ["read the letter,", "read the letter"],
+      explain: "Having + past participle." },
+    { s: "The bridge, which was built in 1890, is still in use. → The bridge, ___ in use. (BUILT)", answers: ["built in 1890, is still", "built in 1890 is still"],
+      explain: "A reduced relative clause." },
+    { s: "If it is stored correctly, the cheese will keep for weeks. → If ___ keep for weeks. (STORED)", answers: ["stored correctly, the cheese will", "stored correctly the cheese will"],
+      explain: "If + past participle." },
+    { s: "Because the weather was bad, the match was cancelled. → The weather ___ was cancelled. (BEING)", answers: ["being bad, the match", "being bad the match"],
+      explain: "An absolute clause." }
   ]
 }
 ];

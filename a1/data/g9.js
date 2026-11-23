@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "always, usually, sometimes, never",
-  intro: "Choose the word that matches the sentence after the dash.",
+  intro: "Choose or write the word that matches the sentence after the dash.",
   items: [
     { s: "I ___ drink coffee. – I drink it every day.", options: ["always", "never", "sometimes"], answer: 0,
       explain: "Every day = always." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "She ___ calls her mum. – Four or five times a week.", options: ["often", "never", "hardly ever"], answer: 0,
       explain: "Four or five times a week = often." },
     { s: "We ___ have pizza on Fridays. – It's our Friday tradition!", options: ["always", "never", "hardly ever"], answer: 0,
-      explain: "A tradition = every Friday: always." }
+      explain: "A tradition = every Friday: always." },
+    { s: "I ___ eat breakfast. – Every day, at 7 o'clock.", answers: ["always"],
+      explain: "Every day → always." },
+    { s: "He ___ goes to the gym. – Not one time in his life!", answers: ["never"],
+      explain: "Not one time → never." },
+    { s: "We ___ go out on Fridays. – Most Fridays, but not all.", answers: ["usually", "often"],
+      explain: "Most times → usually." },
+    { s: "She ___ watches TV. – Maybe twice a month.", answers: ["sometimes", "occasionally"],
+      explain: "Not often, not never → sometimes." },
+    { s: "They ___ take the train. – Five or six days a week.", answers: ["usually", "often"],
+      explain: "Most days → usually (or often)." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Where does the word go?",
-  intro: "Choose the correct words. always, often, never… go before the main verb, but after am, is, are.",
+  intro: "Choose or write the correct words. always, often, never… go before the main verb, but after am, is, are.",
   items: [
     { s: "I ___ at seven.", options: ["always get up", "get always up", "get up always"], answer: 0,
       explain: "Before the main verb: I always get up." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "We ___ out on Mondays.", options: ["don't usually go", "don't go usually", "usually go don't"], answer: 0,
       explain: "After don't and before the main verb: We don't usually go out." },
     { s: "___ eat fish?", options: ["Do you often", "Do often you", "Often do you"], answer: 0,
-      explain: "In questions: Do + you + often + verb." }
+      explain: "In questions: Do + you + often + verb." },
+    { s: "I ___ breakfast. (have / always)", answers: ["always have"],
+      explain: "The adverb goes before the main verb: always have." },
+    { s: "She ___ happy. (is / always)", answers: ["is always"],
+      explain: "After be, the adverb comes after it: is always." },
+    { s: "We ___ to the cinema. (go / sometimes)", answers: ["sometimes go"],
+      explain: "Before the main verb: sometimes go." },
+    { s: "He ___ late for school. (is / never)", answers: ["is never"],
+      explain: "After be: is never." },
+    { s: "My parents ___ TV. (watch / hardly ever)", answers: ["hardly ever watch"],
+      explain: "Before the main verb: hardly ever watch." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Time phrases: every, on, in, at",
-  intro: "Choose the correct word.",
+  intro: "Choose or write the correct word.",
   items: [
     { s: "I play football ___ Saturdays.", options: ["on", "in", "at"], answer: 0,
       explain: "Days: on Saturdays." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I check my phone every ___.", options: ["day", "days", "the day"], answer: 0,
       explain: "every + singular noun: every day." },
     { s: "I go to the gym ___ a week.", options: ["twice", "two", "two times every"], answer: 0,
-      explain: "twice a week = two times a week." }
+      explain: "twice a week = two times a week." },
+    { s: "I get up ___ 7 a.m.", answers: ["at"],
+      explain: "Clock times → at." },
+    { s: "We go skiing ___ winter.", answers: ["in"],
+      explain: "Seasons → in." },
+    { s: "The shop is closed ___ Sundays.", answers: ["on"],
+      explain: "Days → on." },
+    { s: "I do my homework ___ the afternoon.", answers: ["in"],
+      explain: "in the morning / afternoon / evening." },
+    { s: "She drinks coffee ___ morning.", answers: ["every", "each"],
+      explain: "every + day, morning, week…" }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "How often?",
-  intro: "Write one or two words in each gap.",
+  intro: "Choose the correct option or write one or two words in each gap.",
   items: [
     { s: "I go to the dentist ___ a year. (1 time)", answers: ["once"],
       explain: "1 time = once." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "The magazine comes out once a ___.", answers: ["month", "week", "year"],
       explain: "once a month (or a week, a year)." },
     { s: "I have English classes ___ a week. (3 times)", answers: ["three times"],
-      explain: "3 times a week. After two, we say three times, four times…" }
+      explain: "3 times a week. After two, we say three times, four times…" },
+    { s: "I see my grandparents ___ a month.", options: ["once", "one", "one time every"], answer: 0,
+      explain: "one time → once." },
+    { s: "He goes swimming three ___ a week.", options: ["times", "time", "days"], answer: 0,
+      explain: "three times a week." },
+    { s: "We have a test ___ Friday.", options: ["every", "all", "each the"], answer: 0,
+      explain: "every + Friday." },
+    { s: "She calls me ___ a day.", options: ["twice", "two", "double"], answer: 0,
+      explain: "two times → twice." },
+    { s: "How ___ do you play tennis? – Twice a week.", options: ["often", "many", "much"], answer: 0,
+      explain: "How often asks how many times." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "How often? Use the percentages",
-  intro: "Write always (100%), usually (90%), often (70%), sometimes (50%), hardly ever (10%) or never (0%).",
+  intro: "Choose the correct option or write always (100%), usually (90%), often (70%), sometimes (50%), hardly ever (10%) or never (0%).",
   items: [
     { s: "I ___ (100%) brush my teeth before bed.", answers: ["always"],
       explain: "100% = always." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "My parents ___ (90%) get up at six.", answers: ["usually"],
       explain: "90% = usually." },
     { s: "Is your teacher ___ (70%) angry?", answers: ["often"],
-      explain: "70% = often." }
+      explain: "70% = often." },
+    { s: "I ___ walk my dog after dinner. (100%)", options: ["always", "never", "sometimes"], answer: 0,
+      explain: "100% → always." },
+    { s: "She ___ goes to bed before midnight. (0%)", options: ["never", "always", "often"], answer: 0,
+      explain: "0% → never." },
+    { s: "We ___ eat at that restaurant. (50%)", options: ["sometimes", "always", "never"], answer: 0,
+      explain: "50% → sometimes." },
+    { s: "He ___ remembers my birthday! (10%)", options: ["hardly ever", "usually", "always"], answer: 0,
+      explain: "10% → hardly ever." },
+    { s: "It ___ rains in April here. (90%)", options: ["usually", "never", "hardly ever"], answer: 0,
+      explain: "90% → usually." }
   ]
 }
 ];

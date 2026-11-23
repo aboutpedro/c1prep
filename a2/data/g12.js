@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "there is or there are?",
-  intro: "Choose the correct option. Use there is with a singular or uncountable noun, and there are with a plural noun.",
+  intro: "Choose the correct option or write the missing words. Use there is with a singular or uncountable noun, and there are with a plural noun.",
   items: [
     { s: "___ a supermarket near my house.", options: ["There's", "There are", "It's"], answer: 0,
       explain: "A supermarket is singular: there's (= there is)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "How many people ___ in your family?", options: ["are there", "there are", "is there"], answer: 0,
       explain: "In a question, are comes before there: How many people are there…?" },
     { s: "___ a problem with my computer. It won't turn on.", options: ["There's", "It's", "There are"], answer: 0,
-      explain: "We use there's to say that something exists or happens: There's a problem." }
+      explain: "We use there's to say that something exists or happens: There's a problem." },
+    { s: "___ a big park near my school.", answers: ["There's", "There is"],
+      explain: "One thing → There's." },
+    { s: "___ any cafés in your street?", answers: ["Are there"],
+      explain: "Plural question → Are there any…?" },
+    { s: "___ some letters for you on the table.", answers: ["There are"],
+      explain: "Plural → There are." },
+    { s: "___ any sugar in this tea?", answers: ["Is there"],
+      explain: "Uncountable question → Is there any…?" },
+    { s: "___ fifty students in the school orchestra.", answers: ["There are"],
+      explain: "Plural → There are." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "there was, there were, there will be",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ a big storm last night.", options: ["There was", "There were", "It was"], answer: 0,
       explain: "Last night = past, and a storm is singular: there was." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ a party at Leo's house on Saturday. Do you want to come?", options: ["There's going to be", "There going to be", "It's going to be"], answer: 0,
       explain: "A planned future event: there's going to be." },
     { s: "How many people ___ at the wedding? – About a hundred.", options: ["were there", "there were", "was there"], answer: 0,
-      explain: "Past question with a plural noun: How many people were there?" }
+      explain: "Past question with a plural noun: How many people were there?" },
+    { s: "___ any good shows on TV last night?", answers: ["Were there"],
+      explain: "Past, plural question → Were there…?" },
+    { s: "When I was young, ___ no mobile phones.", answers: ["there were"],
+      explain: "Past, plural → there were." },
+    { s: "___ a meeting at nine tomorrow. Don't be late!", answers: ["There'll be", "There will be", "There's", "There is"],
+      explain: "Future → There'll be (a fixed plan can also use There's)." },
+    { s: "___ a lot of snow last winter.", answers: ["There was"],
+      explain: "Past, uncountable → There was." },
+    { s: "___ a café here before?", answers: ["Was there"],
+      explain: "Past, singular question → Was there…?" }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "something, anything or nothing?",
-  intro: "Choose the correct word. Something in positive sentences, anything in questions and negatives, nothing = not anything.",
+  intro: "Choose or write the correct word. Something in positive sentences, anything in questions and negatives, nothing = not anything.",
   items: [
     { s: "I'm hungry. I want ___ to eat.", options: ["something", "anything", "nothing"], answer: 0,
       explain: "Positive sentence: something." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "There's ___ in the box. It's empty.", options: ["nothing", "anything", "something"], answer: 0,
       explain: "It's empty: there's nothing in it." },
     { s: "Don't say ___ to Mum about the present. It's a surprise.", options: ["anything", "nothing", "something"], answer: 0,
-      explain: "Negative sentence (don't): anything." }
+      explain: "Negative sentence (don't): anything." },
+    { s: "I can't hear ___. Can you speak louder?", answers: ["anything"],
+      explain: "Negative → anything." },
+    { s: "There's ___ wrong with my car. It's making a strange noise.", answers: ["something"],
+      explain: "Positive → something." },
+    { s: "Did you buy ___ for Mum's birthday?", answers: ["anything", "something"],
+      explain: "Question → anything (something if you expect yes)." },
+    { s: "I'm not hungry. I don't want ___.", answers: ["anything"],
+      explain: "Negative → anything." },
+    { s: "___ is impossible if you work hard!", answers: ["Nothing"],
+      explain: "Not anything → Nothing." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "somebody, anywhere, nobody, everywhere…",
-  intro: "Choose the correct word. -body / -one = people, -where = places.",
+  intro: "Choose or write the correct word. -body / -one = people, -where = places.",
   items: [
     { s: "___ called you while you were out. I didn't ask for their name.", options: ["Somebody", "Anybody", "Nobody"], answer: 0,
       explain: "A person, in a positive sentence: somebody (or someone)." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Does ___ want more coffee?", options: ["anyone", "no one", "anywhere"], answer: 0,
       explain: "A person, in a question: anyone." },
     { s: "I'm sorry, there's ___ called Smith on our list.", options: ["no one", "anyone", "everyone"], answer: 0,
-      explain: "There's + no one = there isn't anyone." }
+      explain: "There's + no one = there isn't anyone." },
+    { s: "I can't find my phone ___.", answers: ["anywhere"],
+      explain: "Negative, a place → anywhere." },
+    { s: "Is ___ at home? The lights are on.", answers: ["anybody", "anyone", "somebody", "someone"],
+      explain: "Question, a person → anybody (somebody if you expect yes)." },
+    { s: "___ came to the meeting. The room was empty.", answers: ["Nobody", "No one"],
+      explain: "Not anybody → Nobody." },
+    { s: "I want to go ___ hot for my holiday.", answers: ["somewhere"],
+      explain: "A place, positive → somewhere." },
+    { s: "___ in my class has a phone. We all have one!", answers: ["Everybody", "Everyone"],
+      explain: "All the people → Everybody." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "There ___ a lot of people at the beach yesterday.", answers: ["were"], width: 10,
       explain: "Past (yesterday) and plural (people): there were." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "How ___ people are there in your class?", answers: ["many"], width: 10,
       explain: "People is plural: how many." },
     { s: "___ in my family likes football. We all watch it on Sundays.", answers: ["Everybody", "Everyone"], width: 10,
-      explain: "We all watch it: everybody / everyone (+ singular verb likes)." }
+      explain: "We all watch it: everybody / everyone (+ singular verb likes)." },
+    { s: "There ___ many people in the shop, so we were quick.", options: ["wasn't", "aren't", "weren't"], answer: 2,
+      explain: "Past, plural → weren't." },
+    { s: "___ there going to be a party?", options: ["Are", "Will", "Is"], answer: 2,
+      explain: "Is there going to be…?" },
+    { s: "I knocked, but ___ opened the door.", options: ["nobody", "anybody", "everybody"], answer: 0,
+      explain: "but → no person did it: nobody." },
+    { s: "Have you got ___ to say?", options: ["nothing", "anyone", "anything"], answer: 2,
+      explain: "Question about things → anything." },
+    { s: "There ___ be a test next week, so study!", options: ["is", "will", "are"], answer: 1,
+      explain: "Future → there will be." }
   ]
 }
 ];

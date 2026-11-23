@@ -5,7 +5,7 @@
    - Offline, on a page never opened here: offline.html.
    Requests to other sites (the teacher's sheet) are left alone. */
 "use strict";
-const CACHE = "c1prep-6b62b6f0";
+const CACHE = "c1prep-c92b9e86";
 const CORE = ["offline.html", "style.css?v=21", "theme.js?v=11", "favicon.svg?v=2", "favicon.ico?v=2", "fp-icon.svg?v=2", "fp-icon.ico?v=2", "manifest.webmanifest", "fonts/inter-latin.woff2?v=1"];
 
 self.addEventListener("install", (e) => {

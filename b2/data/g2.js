@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Narrative tenses",
-  intro: "Complete the sentences with the past simple, past continuous or past perfect of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the past simple, past continuous or past perfect of the verbs in brackets.",
   items: [
     { s: "While I ___ (wait) for the bus, I saw an old friend.", answers: ["was waiting"],
       explain: "A longer action in progress (past continuous) interrupted by a short one (past simple)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "As soon as she ___ (hear) the news, she called her parents.", answers: ["heard"],
       explain: "One action immediately after another: past simple for both." },
     { s: "It was the first time I ___ (ever / see) snow.", answers: ["had ever seen", "'d ever seen"],
-      explain: "It was the first time + past perfect (compare It's the first time + present perfect)." }
+      explain: "It was the first time + past perfect (compare It's the first time + present perfect)." },
+    { s: "I ___ my keys, so I had to wait outside.", options: ["had lost", "was losing", "have lost"], answer: 0,
+      explain: "Earlier than the waiting: past perfect." },
+    { s: "We ___ dinner when the power went off.", options: ["had had", "were having", "had"], answer: 1,
+      explain: "In progress when it happened: past continuous." },
+    { s: "She ___ the letter, put it in an envelope and posted it.", options: ["had been writing", "wrote", "was writing"], answer: 1,
+      explain: "Actions in order: past simple." },
+    { s: "The streets were empty because everyone ___ home.", options: ["was going", "went", "had gone"], answer: 2,
+      explain: "Before that moment: past perfect." },
+    { s: "By the time I arrived, the meeting ___.", options: ["was finishing", "had finished", "has finished"], answer: 1,
+      explain: "By the time…: past perfect." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Past perfect simple or continuous?",
-  intro: "Complete the sentences with the past perfect simple or continuous of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the past perfect simple or continuous of the verbs in brackets.",
   items: [
     { s: "Her eyes were red because she ___ (cry).", answers: ["had been crying", "'d been crying"],
       explain: "An activity before a past moment that explains how things looked: past perfect continuous." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "How long ___ (you / wait) when the doctor finally saw you?", answers: ["had you been waiting"],
       explain: "How long + past perfect continuous: the length of an activity up to a past moment." },
     { s: "When I got home, I realised I ___ (leave) my wallet at work.", answers: ["had left", "'d left"],
-      explain: "A single completed action before another past action: past perfect simple." }
+      explain: "A single completed action before another past action: past perfect simple." },
+    { s: "They were exhausted because they ___ all day.", options: ["had travelled", "travelled", "had been travelling"], answer: 2,
+      explain: "A long activity before a past moment: past perfect continuous." },
+    { s: "I ___ the book by the time the film came out.", options: ["had been reading", "was reading", "had read"], answer: 2,
+      explain: "A finished action before a past time: past perfect simple." },
+    { s: "How many countries ___ before you turned 30?", options: ["had you been visiting", "had you visited", "were you visiting"], answer: 1,
+      explain: "How many: past perfect simple." },
+    { s: "She ___ in the garden, so her hands were dirty.", options: ["had been working", "had worked", "was worked"], answer: 0,
+      explain: "An activity that explains a past result: past perfect continuous." },
+    { s: "He ___ the same car for twenty years when he finally sold it.", options: ["had had", "had been having", "was having"], answer: 0,
+      explain: "have (own) is a state verb: simple, not continuous." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "used to, would or past simple?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "When I was a child, I ___ have long hair.", options: ["used to", "would"], answer: 0,
       explain: "have long hair is a state, not a repeated action. would can only be used for repeated actions, so use used to." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "My parents ___ married in 1995.", options: ["got", "used to get"], answer: 0,
       explain: "A single event at a specific time: past simple." },
     { s: "She ___ be very shy, but she's much more confident now.", options: ["used to", "would"], answer: 0,
-      explain: "be shy is a state: used to, not would." }
+      explain: "be shy is a state: used to, not would." },
+    { s: "When I was a teenager, I ___ hours on the phone. (spend)", answers: ["used to spend", "would spend"],
+      explain: "A repeated past habit: used to or would." },
+    { s: "We ___ to Paris twice last year. (go)", answers: ["went"],
+      explain: "A number of times in a finished period: past simple." },
+    { s: "There ___ so many cars when my parents were young. (not / be)", answers: ["didn't use to be", "did not use to be", "weren't", "were not"],
+      explain: "A past state: used to (not would)." },
+    { s: "My grandmother ___ us stories every night. (tell)", answers: ["used to tell", "would tell"],
+      explain: "A past habit: used to or would." },
+    { s: "I ___ a vegetarian for five years, but now I eat meat. (be)", answers: ["was", "used to be"],
+      explain: "A finished period: past simple (or used to be)." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "used to, be used to, get used to",
-  intro: "Complete the sentences with the correct form of used to, be used to or get used to and the verb in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct form of used to, be used to or get used to and the verb in brackets.",
   items: [
     { s: "I ___ (live) in London, but I moved back home last year.", answers: ["used to live"],
       explain: "used to + verb: a past situation that is no longer true." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "Are you ___ (eat) spicy food, or should I make it milder?", answers: ["used to eating"],
       explain: "Are you used to + -ing? = Is it normal for you?" },
     { s: "It took me months to ___ (wear) glasses.", answers: ["get used to wearing"],
-      explain: "take time to get used to + -ing." }
+      explain: "take time to get used to + -ing." },
+    { s: "I'll never ___ the noise in this city.", options: ["be used to", "get used to", "use to"], answer: 1,
+      explain: "It will never become normal: get used to." },
+    { s: "She ___ working nights, so it doesn't bother her.", options: ["used to", "is used to", "uses to"], answer: 1,
+      explain: "It's normal for her: be used to + -ing." },
+    { s: "My dad ___ smoke, but he gave up years ago.", options: ["used to", "was used to", "got used to"], answer: 0,
+      explain: "A past habit: used to + verb." },
+    { s: "Have you ___ your new job yet?", options: ["used to", "been used", "got used to"], answer: 2,
+      explain: "Has it become normal?: get used to." },
+    { s: "I'm not used to ___ in such a big office.", options: ["work", "working", "have worked"], answer: 1,
+      explain: "be used to + -ing." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I ___ such a strange day before.", options: ["had never had", "never have had", "was never having"], answer: 0,
       explain: "Experience up to a past moment: past perfect with never." },
     { s: "A week later, a card arrived. The woman ___ to thank me.", options: ["had written", "has written", "was writing"], answer: 0,
-      explain: "She wrote the card before it arrived: past perfect." }
+      explain: "She wrote the card before it arrived: past perfect." },
+    { s: "Inside the card there was a photo she ___ of the ring. (take)", answers: ["had taken", "'d taken"],
+      explain: "Before she sent the card: past perfect." },
+    { s: "She explained that the ring ___ to her grandmother. (belong)", answers: ["had belonged", "belonged", "'d belonged"],
+      explain: "Earlier: past perfect (or past simple)." },
+    { s: "While I ___ the card, my phone rang. (read)", answers: ["was reading"],
+      explain: "In progress when the phone rang: past continuous." },
+    { s: "It was the woman. She ___ my number through a friend. (find)", answers: ["had found", "'d found", "found"],
+      explain: "Before the call: past perfect." },
+    { s: "We ___ for coffee the next day and became good friends. (meet)", answers: ["met"],
+      explain: "The next event: past simple." }
   ]
 }
 ];

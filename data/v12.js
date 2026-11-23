@@ -139,5 +139,34 @@ window.SETS = [
     { s: "The decision was taken ___ (DEMOCRACY).", answers: ["democratically"],
       explain: "democracy → democratic → democratically." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Crime and the law",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["acquitted", "arson", "bail", "burglary", "convicted", "evidence", "fraud", "parole", "sentenced", "suspect", "verdict", "witness"],
+  items: [
+    { s: "After a three-week trial, he was ___ of murder and sent to prison.", answers: ["convicted"],
+      explain: "be convicted of = be found guilty of." },
+    { s: "She was ___ to five years in prison.", answers: ["sentenced"],
+      explain: "be sentenced to = be given a punishment by a judge." },
+    { s: "The jury reached a ___ after two days.", answers: ["verdict"],
+      explain: "a verdict = the decision: guilty or not guilty." },
+    { s: "There wasn't enough ___ to prove he was guilty.", answers: ["evidence"],
+      explain: "evidence = facts that show something is true." },
+    { s: "The police are questioning a ___ in connection with the robbery.", answers: ["suspect"],
+      explain: "a suspect = a person thought to have committed a crime." },
+    { s: "A ___ saw a man running from the scene.", answers: ["witness"],
+      explain: "a witness = someone who sees a crime." },
+    { s: "He was ___ of all charges and walked free.", answers: ["acquitted"],
+      explain: "be acquitted = be found not guilty." },
+    { s: "The fire wasn't an accident: police suspect ___.", answers: ["arson"],
+      explain: "arson = setting fire to property on purpose." },
+    { s: "There has been a rise in ___ – three houses on our street were broken into.", answers: ["burglary"],
+      explain: "burglary = entering a building to steal." },
+    { s: "He was jailed for ___ after cheating investors out of millions.", answers: ["fraud"],
+      explain: "fraud = getting money by deceiving people." }
+  ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Perfect or not?",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "By the time the firefighters arrived, the building ___ to the ground.", options: ["had burnt", "burnt", "has burnt"], answer: 0,
       explain: "An action completed before another past event: past perfect." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "She claims ___ the painting in a market in Paris.", options: ["to have found", "to find", "finding to"], answer: 0,
       explain: "claim + perfect infinitive for an earlier action." },
     { s: "___ the report, she sent it to her manager.", options: ["Having finished", "Finishing", "To have finished"], answer: 0,
-      explain: "Perfect participle: one action completed before another." }
+      explain: "Perfect participle: one action completed before another." },
+    { s: "By the time the guests arrived, we ___ everything. (prepare)", answers: ["had prepared", "'d prepared"],
+      explain: "Completed before a past moment: past perfect." },
+    { s: "She ___ abroad for most of her adult life. (live)", answers: ["has lived", "has been living", "'s lived", "'s been living"],
+      explain: "A period up to now: present perfect." },
+    { s: "Scarcely ___ my eyes when the alarm went off. (I / close)", answers: ["had I closed"],
+      explain: "Scarcely + past perfect inversion." },
+    { s: "By the end of this month, I ___ enough for a deposit. (save)", answers: ["will have saved", "'ll have saved"],
+      explain: "Completed by a future point: future perfect." },
+    { s: "He's said ___ years in the Amazon before he started writing. (spend)", answers: ["to have spent"],
+      explain: "An earlier action: perfect infinitive." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Simple or continuous?",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "I ___ the book you lent me, but I haven't finished it yet.", options: ["'ve been reading", "'ve read", "read"], answer: 0,
       explain: "Activity not completed: present perfect continuous." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I ___ what you mean, but I don't agree.", options: ["see", "'m seeing", "have been seeing"], answer: 0,
       explain: "see (= understand) is a state: simple." },
     { s: "When I got home, I could tell that someone ___ my computer.", options: ["had been using", "has been using", "was used"], answer: 0,
-      explain: "Evidence of an earlier activity: past perfect continuous." }
+      explain: "Evidence of an earlier activity: past perfect continuous." },
+    { s: "She ___ about the noise – it's getting tiresome. (always / complain)", answers: ["is always complaining", "'s always complaining"],
+      explain: "always + continuous for an irritating habit." },
+    { s: "I ___ well lately. (not / sleep)", answers: ["haven't been sleeping", "have not been sleeping", "haven't slept", "have not slept"],
+      explain: "A recent, ongoing situation: present perfect continuous." },
+    { s: "The witness ___ nervous throughout the trial. (appear)", answers: ["appeared"],
+      explain: "appear = seem: a state, not continuous." },
+    { s: "They ___ your application and will reply shortly. (consider)", answers: ["are considering", "'re considering", "have been considering", "'ve been considering"],
+      explain: "consider = think about: an activity, so continuous." },
+    { s: "How many times ___ that film? (you / watch)", answers: ["have you watched", "have you seen"],
+      explain: "How many times: present perfect simple." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Perfect infinitives and participles",
-  intro: "Write the verb in brackets in the correct perfect form.",
+  intro: "Choose the correct option or write the verb in brackets in the correct perfect form.",
   items: [
     { s: "He's believed ___ (leave) the country last week.", answers: ["to have left"],
       explain: "Passive reporting about an earlier action: be believed + to have + past participle." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I regret ___ (not / study) harder at school.", answers: ["not having studied", "not studying"],
       explain: "regret + perfect gerund for an earlier action." },
     { s: "She appears ___ (work) here for years: everyone knows her.", answers: ["to have been working", "to have worked"],
-      explain: "appear + perfect continuous infinitive for a long earlier activity." }
+      explain: "appear + perfect continuous infinitive for a long earlier activity." },
+    { s: "She's rumoured ___ a fortune on the stock market.", options: ["to have made", "to make", "having made"], answer: 0,
+      explain: "An earlier action: perfect infinitive." },
+    { s: "___ the job, he decided to travel for a year.", options: ["Having turned down", "Turning down", "To have turned down"], answer: 0,
+      explain: "One action before another: having + past participle." },
+    { s: "I'd hate ___ that opportunity.", options: ["to have missed", "missing", "to miss having"], answer: 0,
+      explain: "A hypothetical past: perfect infinitive." },
+    { s: "He admitted ___ the documents.", options: ["having destroyed", "to have destroyed", "to destroy"], answer: 0,
+      explain: "admit + (perfect) -ing." },
+    { s: "They appear ___ the wrong address.", options: ["to have been given", "to give", "having given"], answer: 0,
+      explain: "Perfect passive infinitive." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Time expressions and tense",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "It's been ages ___ we last spoke.", options: ["since", "for", "from"], answer: 0,
       explain: "It's been + time + since + past simple." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "Once you ___ the form, hand it to reception.", options: ["have completed", "will complete", "had completed"], answer: 0,
       explain: "After once / when / as soon as for a future action completed first: present perfect." },
     { s: "She ___ for the company for five years next month.", options: ["will have worked", "has worked", "will work"], answer: 0,
-      explain: "Up to a future time: future perfect." }
+      explain: "Up to a future time: future perfect." },
+    { s: "It's over a decade ___ I last set foot in that school.", answers: ["since"],
+      explain: "It's + time + since + past simple." },
+    { s: "I'd only just walked in ___ the phone rang.", answers: ["when"],
+      explain: "had just … when." },
+    { s: "By this time next year, I ___. (graduate)", answers: ["will have graduated", "'ll have graduated"],
+      explain: "Completed by a future point." },
+    { s: "This time last week, we ___ around the Greek islands. (sail)", answers: ["were sailing"],
+      explain: "In progress at a past time." },
+    { s: "___ had the curtain gone up than the lights failed.", answers: ["No sooner"],
+      explain: "No sooner … than." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "It seems that he has lost his way. → He ___ his way. (SEEMS)", answers: ["seems to have lost"],
       explain: "seem + perfect infinitive." },
     { s: "By the time we got to the cinema, the film had started. → The film ___ we got to the cinema. (ALREADY)", answers: ["had already started by the time", "had already begun by the time", "had already started when"],
-      explain: "past perfect + already." }
+      explain: "past perfect + already." },
+    { s: "It's years since I last rode a bike. → I ___ years. (RIDDEN)", answers: ["haven't ridden a bike for", "have not ridden a bike for", "haven't ridden a bike in"],
+      explain: "present perfect negative + for." },
+    { s: "People think the painting was stolen in the 1980s. → The painting ___ in the 1980s. (THOUGHT)", answers: ["is thought to have been stolen"],
+      explain: "be thought + perfect passive infinitive." },
+    { s: "As soon as I'd sat down, someone knocked on the door. → Hardly ___ someone knocked on the door. (WHEN)", answers: ["had I sat down when"],
+      explain: "Hardly + inversion … when." },
+    { s: "I'm sorry I didn't listen to your advice. → I wish ___ your advice. (LISTENED)", answers: ["I had listened to", "I'd listened to"],
+      explain: "A regret: wish + past perfect." },
+    { s: "She has been playing tennis since she was six. → She started ___ six. (WHEN)", answers: ["playing tennis when she was", "to play tennis when she was"],
+      explain: "start + -ing / to-infinitive." }
   ]
 }
 ];

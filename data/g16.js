@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "so and not instead of a clause",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "Is the shop open on Sunday? – I think ___.", options: ["so", "it", "that"], answer: 0,
       explain: "think so = think that it is." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "He said the exam was easy. – If ___, why did so many people fail?", options: ["so", "it", "that so"], answer: 0,
       explain: "If so = if that is true." },
     { s: "Can I leave early today? – I'm afraid ___. We're too busy.", options: ["not", "no", "don't"], answer: 0,
-      explain: "I'm afraid not = I'm sorry, but no." }
+      explain: "I'm afraid not = I'm sorry, but no." },
+    { s: "Will he pass? – I hope ___.", answers: ["so"],
+      explain: "I hope so = I hope he will." },
+    { s: "Is the restaurant open? – I don't think ___.", answers: ["so"],
+      explain: "I don't think so." },
+    { s: "Has she left? – I'm afraid ___.", answers: ["so"],
+      explain: "I'm afraid so = unfortunately, yes." },
+    { s: "Is it going to snow? – I hope ___. I want to drive home.", answers: ["not"],
+      explain: "I hope not." },
+    { s: "Did they cancel the trip? – Apparently ___.", answers: ["so", "not"],
+      explain: "Apparently so / not." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "so do I, neither do I, do so",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I love jazz. – ___. Let's go to the festival.", options: ["So do I", "So I do", "So am I"], answer: 0,
       explain: "Agreeing with a positive statement: So + auxiliary + subject." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "You should apologise, and the sooner you ___, the better.", options: ["do so", "so do", "do it so"], answer: 0,
       explain: "do so = apologise." },
     { s: "Tom has finished the report. – ___? That was quick!", options: ["Has he", "Does he", "Is he"], answer: 0,
-      explain: "A short question to show interest uses the same auxiliary." }
+      explain: "A short question to show interest uses the same auxiliary." },
+    { s: "I'm exhausted. – So ___ I.", answers: ["am"],
+      explain: "So + auxiliary + I." },
+    { s: "She hasn't seen the film, and neither ___ I.", answers: ["have"],
+      explain: "neither + auxiliary + subject." },
+    { s: "He can't swim, and ___ can his brother.", answers: ["neither", "nor"],
+      explain: "neither / nor + auxiliary + subject." },
+    { s: "They promised to call, but they didn't do ___.", answers: ["so"],
+      explain: "do so replaces a verb phrase." },
+    { s: "I've never been to Peru. – ___ have I.", answers: ["Neither", "Nor"],
+      explain: "Neither have I." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "one, ones, that, those",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I don't like this jacket. Have you got a darker ___?", options: ["one", "it", "ones"], answer: 0,
       explain: "one replaces a singular countable noun." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The population of Tokyo is larger than ___ of London.", options: ["that", "it", "the one"], answer: 0,
       explain: "that of + place in comparisons." },
     { s: "I've lost my umbrella. I'll have to buy ___.", options: ["one", "it", "ones"], answer: 0,
-      explain: "one = an umbrella (any one, not the lost one)." }
+      explain: "one = an umbrella (any one, not the lost one)." },
+    { s: "This laptop is slow. I need a faster ___.", answers: ["one"],
+      explain: "one replaces a singular countable noun." },
+    { s: "The red apples are sweeter than the green ___.", answers: ["ones"],
+      explain: "ones replaces a plural noun." },
+    { s: "The prices here are higher than ___ in the supermarket.", answers: ["those"],
+      explain: "those replaces a plural noun + of/in." },
+    { s: "___ who want to join should sign up today.", answers: ["Those"],
+      explain: "Those who = the people who." },
+    { s: "Her salary is higher than ___ of her boss.", answers: ["that"],
+      explain: "that replaces a singular noun." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Leaving words out",
-  intro: "Choose the correct option. We often leave out words that the listener can understand.",
+  intro: "Choose the correct option or write the missing words. We often leave out words that the listener can understand.",
   items: [
     { s: "Would you like to come with us? – I'd love ___!", options: ["to", "it", "to come it"], answer: 0,
       explain: "I'd love to (= to come with you). Keep to." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "He promised he'd fix it, but he still ___.", options: ["hasn't", "hasn't it", "didn't yet"], answer: 0,
       explain: "hasn't (= hasn't fixed it)." },
     { s: "You don't have to stay if you don't want ___.", options: ["to", "it", "so"], answer: 0,
-      explain: "if you don't want to (= to stay)." }
+      explain: "if you don't want to (= to stay)." },
+    { s: "I'd like to help, but I can't afford ___.", answers: ["to", "it"],
+      explain: "to replaces the infinitive." },
+    { s: "Are you coming tonight? – I'm hoping ___.", answers: ["to"],
+      explain: "to = to come." },
+    { s: "She runs faster than I ___.", answers: ["do"],
+      explain: "do replaces the verb." },
+    { s: "He said he'd call, and he ___.", answers: ["did"],
+      explain: "did = called." },
+    { s: "I didn't want to go, but I felt I ought ___.", answers: ["to"],
+      explain: "ought to (go)." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "If that is true, we need to act now. → ___ need to act now. (SO)", answers: ["If so we", "If so, we"],
       explain: "If so = if that is true." },
     { s: "She sings better than her sister sings. → She sings better ___. (DOES)", answers: ["than her sister does"],
-      explain: "The auxiliary does replaces sings." }
+      explain: "The auxiliary does replaces sings." },
+    { s: "I don't like coffee and my sister doesn't either. → I don't like coffee and ___. (NEITHER)", answers: ["neither does my sister"],
+      explain: "neither + auxiliary + subject." },
+    { s: "He said he would apologise, but he hasn't apologised. → He said he would apologise, but he ___. (SO)", answers: ["hasn't done so", "has not done so"],
+      explain: "do so replaces the verb phrase." },
+    { s: "Unfortunately, we can't come. → I'm ___ come. (AFRAID)", answers: ["afraid we can't", "afraid we cannot", "afraid that we can't", "afraid that we cannot"],
+      explain: "I'm afraid = unfortunately." },
+    { s: "People who want to leave early should tell me. → ___ leave early should tell me. (THOSE)", answers: ["Those who want to", "Those wishing to"],
+      explain: "Those who = the people who." },
+    { s: "The food in Italy is better than the food in England. → The food in Italy is better than ___. (THAT)", answers: ["that in England"],
+      explain: "that replaces the food." }
   ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "What, Where, Who?",
-  intro: "Choose the correct question word. What → a thing; Where → a place; Who → a person.",
+  intro: "Choose or write the correct question word. What → a thing; Where → a place; Who → a person.",
   items: [
     { s: "___ is your name? – Sofia.", options: ["What", "Where", "Who"], answer: 0,
       explain: "We ask about a thing (a name): What." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "___ do you sit next to in class? – Marta.", options: ["Who", "What", "Where"], answer: 0,
       explain: "The answer is a person: Who." },
     { s: "___ are you from? – I'm from Chile.", options: ["Where", "What", "Who"], answer: 0,
-      explain: "The answer is a place: Where." }
+      explain: "The answer is a place: Where." },
+    { s: "___ is your best friend? – Carla.", answers: ["Who"],
+      explain: "A person → Who." },
+    { s: "___ is your school? – In the city centre.", answers: ["Where"],
+      explain: "A place → Where." },
+    { s: "___ is that? – It's a new kind of phone.", answers: ["What"],
+      explain: "A thing → What." },
+    { s: "___ do you work? – In a hotel.", answers: ["Where"],
+      explain: "A place → Where." },
+    { s: "___ makes dinner in your house? – My dad.", answers: ["Who"],
+      explain: "A person → Who." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "When, What time, How?",
-  intro: "Choose the correct question word. When → a day or a time; What time → a clock time; How → the way, or how somebody is.",
+  intro: "Choose or write the correct question word. When → a day or a time; What time → a clock time; How → the way, or how somebody is.",
   items: [
     { s: "___ is your birthday? – In March.", options: ["When", "What time", "How"], answer: 0,
       explain: "The answer is a month: When." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ do you get up? – At 6.30.", options: ["What time", "How", "Where"], answer: 0,
       explain: "The answer is a clock time: What time." },
     { s: "___ does the summer holiday start? – In July.", options: ["When", "How", "Who"], answer: 0,
-      explain: "The answer is a month: When." }
+      explain: "The answer is a month: When." },
+    { s: "___ do you go to work? – On foot.", answers: ["How"],
+      explain: "The way → How." },
+    { s: "___ is the party? – On Saturday.", answers: ["When"],
+      explain: "A day → When." },
+    { s: "___ does the bus leave? – At 6.20.", answers: ["What time", "When"],
+      explain: "A clock time → What time (or When)." },
+    { s: "___ is your mum? – She's very well, thanks.", answers: ["How"],
+      explain: "How somebody is → How." },
+    { s: "___ is your English exam? – Next week.", answers: ["When"],
+      explain: "A time → When." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "How old, How many, How much?",
-  intro: "Choose the correct question.",
+  intro: "Choose or write the correct question.",
   items: [
     { s: "___ is your brother? – He's sixteen.", options: ["How old", "How many", "How much"], answer: 0,
       explain: "We ask about age: How old." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "___ is the building? – About 200 years old.", options: ["How old", "How many", "How much"], answer: 0,
       explain: "Age: How old." },
     { s: "___ rooms are in the hotel? – Fifty.", options: ["How many", "How much", "How old"], answer: 0,
-      explain: "Rooms can be counted: How many." }
+      explain: "Rooms can be counted: How many." },
+    { s: "How ___ is your car? – Ten years old.", answers: ["old"],
+      explain: "Age → How old." },
+    { s: "How ___ eggs do we need? – Four.", answers: ["many"],
+      explain: "Things we can count → How many." },
+    { s: "How ___ is a ticket? – €5.", answers: ["much"],
+      explain: "Price → How much." },
+    { s: "How ___ cousins have you got? – Eleven!", answers: ["many"],
+      explain: "Cousins can be counted → How many." },
+    { s: "How ___ sugar do you want in your tea? – A little.", answers: ["much"],
+      explain: "Sugar can't be counted → How much." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Which, Whose, Why, How often?",
-  intro: "Choose the correct question word.",
+  intro: "Choose or write the correct question word.",
   items: [
     { s: "___ do you study English? – Because I want to travel.", options: ["Why", "Which", "Whose"], answer: 0,
       explain: "The answer starts with because: Why." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "___ do you wear glasses? – I can't see well without them.", options: ["Why", "Which", "Whose"], answer: 0,
       explain: "We ask for the reason: Why." },
     { s: "___ do you eat fish? – Once a week.", options: ["How often", "How much", "Which"], answer: 0,
-      explain: "The answer says how often: How often." }
+      explain: "The answer says how often: How often." },
+    { s: "___ do you go to the cinema? – Once a month.", answers: ["How often"],
+      explain: "How many times → How often." },
+    { s: "___ shoes are these? – My brother's.", answers: ["Whose"],
+      explain: "Who they belong to → Whose." },
+    { s: "___ are you happy? – Because it's my birthday!", answers: ["Why"],
+      explain: "A reason (because…) → Why." },
+    { s: "___ train goes to Oxford, this one or that one? – That one.", answers: ["Which"],
+      explain: "A choice → Which." },
+    { s: "___ do you check your email? – Every hour.", answers: ["How often"],
+      explain: "How many times → How often." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Write the question word",
-  intro: "Write one question word in each gap: what, where, who, when, why, how, which or whose.",
+  intro: "Choose the correct option or write one question word in each gap: what, where, who, when, why, how, which or whose.",
   items: [
     { s: "___ is your teacher? – Mr Kim.", answers: ["Who"],
       explain: "A person: Who." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "___ do you say \"obrigado\" in English? – Thank you.", answers: ["How"],
       explain: "How do you say…?" },
     { s: "___ does \"huge\" mean? – Very big.", answers: ["What"],
-      explain: "What does … mean?" }
+      explain: "What does … mean?" },
+    { s: "___ is it? – It's three o'clock.", options: ["What time", "When", "How"], answer: 0,
+      explain: "A clock time → What time." },
+    { s: "___ is your sister? – She's twenty.", options: ["How old", "How much", "How many"], answer: 0,
+      explain: "Age → How old." },
+    { s: "___ do you like, tea or coffee? – Coffee.", options: ["Which", "Whose", "Who"], answer: 0,
+      explain: "A choice between two → Which." },
+    { s: "___ is this pen? – It's Tom's.", options: ["Whose", "Who's", "Who"], answer: 0,
+      explain: "Who it belongs to → Whose. Who's = who is." },
+    { s: "___ are you? – I'm at the station.", options: ["Where", "How", "Who"], answer: 0,
+      explain: "A place → Where." }
   ]
 }
 ];

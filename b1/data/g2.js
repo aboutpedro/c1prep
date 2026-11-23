@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Present perfect continuous",
-  intro: "Complete the sentences with the present perfect continuous form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present perfect continuous form of the verbs in brackets.",
   items: [
     { s: "I ___ (wait) for the bus for half an hour!", answers: ["have been waiting"],
       explain: "have/has been + verb-ing, for an activity that started in the past and is still going on." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I ___ (not / feel) very well lately.", answers: ["haven't been feeling"],
       explain: "Lately = recently, up to now." },
     { s: "What ___ (you / do)? You're covered in paint!", answers: ["have you been doing"],
-      explain: "We see the result (paint) of a recent activity." }
+      explain: "We see the result (paint) of a recent activity." },
+    { s: "You look hot. ___ you been running?", options: ["Has", "Did", "Have"], answer: 2,
+      explain: "Present perfect continuous question: Have you been…?" },
+    { s: "She ___ learning Japanese for two years.", options: ["have been", "is", "has been"], answer: 2,
+      explain: "She → has been + -ing." },
+    { s: "We've been ___ for you for ages!", options: ["waited", "waiting", "wait"], answer: 1,
+      explain: "have been + -ing." },
+    { s: "I haven't ___ sleeping well.", options: ["being", "been", "be"], answer: 1,
+      explain: "haven't been + -ing." },
+    { s: "How long has it ___ raining?", options: ["being", "be", "been"], answer: 2,
+      explain: "has it been + -ing." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Simple or continuous?",
-  intro: "Choose the present perfect simple or the present perfect continuous.",
+  intro: "Choose or write the present perfect simple or the present perfect continuous.",
   items: [
     { s: "I ___ three emails this morning.", options: ["have written", "have been writing"], answer: 0,
       explain: "We say how many (three emails), so the action is finished: present perfect simple." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "They ___ the house. It looks great now!", options: ["have painted", "have been painting"], answer: 0,
       explain: "The job is finished and we see the result: present perfect simple." },
     { s: "I ___ that song before. It's really catchy.", options: ["have heard", "have been hearing"], answer: 0,
-      explain: "An experience (before now), and hear is a state-like verb: present perfect simple." }
+      explain: "An experience (before now), and hear is a state-like verb: present perfect simple." },
+    { s: "I ___ three books this month. (read)", answers: ["have read"],
+      explain: "How many: present perfect simple." },
+    { s: "She ___ for you since 3 o'clock. (wait)", answers: ["has been waiting"],
+      explain: "An activity that is still going on: continuous." },
+    { s: "How many cups of coffee ___ today? (you / drink)", answers: ["have you drunk", "have you had"],
+      explain: "How many: simple." },
+    { s: "They ___ all morning. I'm tired of it! (argue)", answers: ["have been arguing"],
+      explain: "A long activity: continuous." },
+    { s: "We ___ a new car. Do you want to see it? (buy)", answers: ["have bought"],
+      explain: "A finished action with a result now: simple." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "still, yet, already, just, ever, for, since",
-  intro: "Choose the correct word.",
+  intro: "Choose or write the correct word.",
   items: [
     { s: "I've ___ finished my essay. Now I'm going to bed.", options: ["just", "yet", "still"], answer: 0,
       explain: "just = a very short time ago." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "It's ten o'clock and Max is ___ asleep.", options: ["still", "yet", "already"], answer: 0,
       explain: "still = continuing longer than expected." },
     { s: "I've had this phone ___ two years.", options: ["for", "since", "yet"], answer: 0,
-      explain: "for + a period of time." }
+      explain: "for + a period of time." },
+    { s: "The bus ___ hasn't arrived. We've been waiting for 30 minutes.", answers: ["still"],
+      explain: "still before a negative: it's later than expected." },
+    { s: "Have you booked the hotel ___?", answers: ["yet"],
+      explain: "yet at the end of questions." },
+    { s: "We've known each other ___ we were at school.", answers: ["since"],
+      explain: "since + a starting point." },
+    { s: "She's ___ had lunch, so she isn't hungry.", answers: ["already", "just"],
+      explain: "Before now: already." },
+    { s: "I've been here ___ two hours.", answers: ["for"],
+      explain: "for + a period." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Present perfect or past simple?",
-  intro: "Complete the sentences with the present perfect or the past simple form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present perfect or the past simple form of the verbs in brackets.",
   items: [
     { s: "I ___ (live) in Madrid when I was a student.", answers: ["lived"],
       explain: "When I was a student = a finished time: past simple." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I ___ (never / be) so tired in my life!", answers: ["have never been"],
       explain: "In my life (up to now): present perfect." },
     { s: "Yesterday I ___ (go) to bed at nine.", answers: ["went"],
-      explain: "Yesterday = finished time: past simple." }
+      explain: "Yesterday = finished time: past simple." },
+    { s: "I ___ Ana in 2015.", options: ["have met", "have been meeting", "met"], answer: 2,
+      explain: "in 2015: past simple." },
+    { s: "How long ___ in this city? – Since 2019.", options: ["have you lived", "did you live", "do you live"], answer: 0,
+      explain: "From the past until now: present perfect." },
+    { s: "She ___ her job last month.", options: ["has left", "left", "has been leaving"], answer: 1,
+      explain: "Last month: past simple." },
+    { s: "Look! I ___ a new bike.", options: ["buy", "was buying", "'ve bought"], answer: 2,
+      explain: "A past action with a result now: present perfect." },
+    { s: "My grandfather ___ in 2010.", options: ["has died", "died", "has been dying"], answer: 1,
+      explain: "in 2010: past simple." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Complete the sentences with the present perfect simple, the present perfect continuous or the past simple.",
+  intro: "Choose the correct option or complete the sentences with the present perfect simple, the present perfect continuous or the past simple.",
   items: [
     { s: "I ___ (study) for three hours. I need a break!", answers: ["have been studying"],
       explain: "An activity continuing up to now, with focus on how long: continuous." },
@@ -136,7 +176,55 @@ window.SETS = [
     { s: "I ___ (know) Lucy since we were five.", answers: ["have known"],
       explain: "Know is a state verb: present perfect simple, not continuous." },
     { s: "Sorry, I ___ (not / finish) the report yet.", answers: ["haven't finished"],
-      explain: "yet + present perfect simple." }
+      explain: "yet + present perfect simple." },
+    { s: "Oh no! Someone ___ my car!", options: ["has stolen", "has been stealing", "steals"], answer: 0,
+      explain: "A finished action with a result now: simple." },
+    { s: "I ___ my keys! I can't find them anywhere.", options: ["'ve lost", "'ve been losing", "lose"], answer: 0,
+      explain: "A result now: present perfect simple." },
+    { s: "She ___ to Paris last summer.", options: ["has been", "went", "has gone"], answer: 1,
+      explain: "Last summer: past simple." },
+    { s: "I ___ this song since I was a child.", options: ["'ve been loving", "'ve loved", "love"], answer: 1,
+      explain: "love is a state verb: simple, not continuous." },
+    { s: "He's tired because he ___ football all afternoon.", options: ["plays", "has been playing", "is playing"], answer: 1,
+      explain: "An activity that explains how he is now: continuous." }
+  ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Present simple or present continuous",
+  intro: "Choose the correct option or complete the sentences with the present simple or the present continuous form of the verbs in brackets.",
+  items: [
+    { s: "I usually ___ (drive) to work, but this week I'm taking the bus.", answers: ["drive"],
+      explain: "Usually = a habit: present simple. This week is the temporary change." },
+    { s: "My sister ___ (stay) with us until she finds a flat.", answers: ["is staying"],
+      explain: "A temporary situation: present continuous." },
+    { s: "___ (you / know) what time the film starts?", answers: ["Do you know"],
+      explain: "Know is a state verb: present simple, even when we mean now." },
+    { s: "We ___ (think) of moving to Lisbon next year.", answers: ["are thinking"],
+      explain: "Think = consider, an activity in your mind: the continuous is fine." },
+    { s: "I ___ (think) you're right.", answers: ["think"],
+      explain: "Think = believe, an opinion: a state, so the present simple." },
+    { s: "The climate ___ (get) warmer every year.", answers: ["is getting"],
+      explain: "A situation that is changing: present continuous." },
+    { s: "This cake ___ (taste) amazing. Did you make it?", answers: ["tastes"],
+      explain: "Taste = have a flavour: a state, so the present simple." },
+    { s: "He ___ (always / lose) his keys! It's so annoying.", answers: ["is always losing", "always loses"],
+      explain: "Always + continuous shows that a habit annoys you. (Always loses is also correct, without that feeling.)" },
+    { s: "We ___ (have) dinner at the moment. Can I call you back?", answers: ["are having"],
+      explain: "Have = eat, an action: the continuous is fine. Have = own is a state." },
+    { s: "This bag ___ (belong) to my brother.", answers: ["belongs"],
+      explain: "Belong is a state verb: present simple." },
+    { s: "I ___ what you mean.", options: ["am understanding", "understand", "understanding"], answer: 1,
+      explain: "understand is a state verb: present simple." },
+    { s: "Look! The river ___ very fast today.", options: ["flows", "is flowing", "flow"], answer: 1,
+      explain: "Look! + today: present continuous." },
+    { s: "She ___ two cars and a motorbike.", options: ["is owning", "own", "owns"], answer: 2,
+      explain: "own is a state verb: present simple." },
+    { s: "Why ___ at me? Is something wrong?", options: ["are you looking", "do you look", "you look"], answer: 0,
+      explain: "Happening now: present continuous." },
+    { s: "Most people in my town ___ by bus.", options: ["travel", "are travelling", "travels"], answer: 0,
+      explain: "A general fact: present simple." }
   ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Question tags with be, can, will and have",
-  intro: "Choose the correct question tag. A positive sentence usually has a negative tag, and a negative sentence has a positive tag.",
+  intro: "Choose or write the correct question tag. A positive sentence usually has a negative tag, and a negative sentence has a positive tag.",
   items: [
     { s: "You're from Brazil, ___?", options: ["aren't you", "isn't it", "don't you"], answer: 0,
       explain: "Positive sentence with are → negative tag: aren't you?" },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "We should leave soon, ___?", options: ["shouldn't we", "don't we", "aren't we"], answer: 0,
       explain: "Should → shouldn't we?" },
     { s: "That's your car, ___?", options: ["isn't it", "isn't that", "doesn't it"], answer: 0,
-      explain: "With this or that as the subject, the tag uses it: isn't it?" }
+      explain: "With this or that as the subject, the tag uses it: isn't it?" },
+    { s: "She's your sister, ___?", answers: ["isn't she"],
+      explain: "Positive with is → negative tag: isn't she." },
+    { s: "You can't swim, ___?", answers: ["can you"],
+      explain: "Negative with can't → positive tag: can you." },
+    { s: "They've left, ___?", answers: ["haven't they"],
+      explain: "Positive with have → haven't they." },
+    { s: "It wasn't expensive, ___?", answers: ["was it"],
+      explain: "Negative with wasn't → was it." },
+    { s: "You'll help me, ___?", answers: ["won't you"],
+      explain: "Positive with will → won't you." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Question tags with do, does and did",
-  intro: "Choose the correct question tag. When there's no auxiliary verb in the sentence, use do, does or did.",
+  intro: "Choose or write the correct question tag. When there's no auxiliary verb in the sentence, use do, does or did.",
   items: [
     { s: "You live near here, ___?", options: ["don't you", "aren't you", "doesn't you"], answer: 0,
       explain: "Present simple (live) → do: don't you?" },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The film started at eight, ___?", options: ["didn't it", "wasn't it", "doesn't it"], answer: 0,
       explain: "Past simple (started) → didn't it?" },
     { s: "Let's order a pizza, ___?", options: ["shall we", "don't we", "will we"], answer: 0,
-      explain: "The tag after Let's is shall we?" }
+      explain: "The tag after Let's is shall we?" },
+    { s: "You like football, ___?", answers: ["don't you"],
+      explain: "No auxiliary, present: don't you." },
+    { s: "He didn't come, ___?", answers: ["did he"],
+      explain: "Negative past → did he." },
+    { s: "She lives in Paris, ___?", answers: ["doesn't she"],
+      explain: "Present with she: doesn't she." },
+    { s: "They bought a new car, ___?", answers: ["didn't they"],
+      explain: "Positive past: didn't they." },
+    { s: "Open the window, ___?", answers: ["will you", "would you", "could you", "can you"],
+      explain: "After an imperative: will you?" }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Write the question tag",
-  intro: "Write the question tag.",
+  intro: "Choose the correct option or write the question tag.",
   items: [
     { s: "It's a beautiful day, ___?", answers: ["isn't it"], width: 12,
       explain: "It's = it is → isn't it?" },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Nobody called, ___?", answers: ["did they"], width: 12,
       explain: "Nobody makes the sentence negative, and we use they for nobody / somebody: did they?" },
     { s: "You were at home last night, ___?", answers: ["weren't you"], width: 12,
-      explain: "Were → weren't you?" }
+      explain: "Were → weren't you?" },
+    { s: "Everyone's here, ___?", options: ["aren't they", "isn't it", "isn't he"], answer: 0,
+      explain: "After everyone: they." },
+    { s: "You'd like some tea, ___?", options: ["didn't you", "wouldn't you", "hadn't you"], answer: 1,
+      explain: "You'd like = you would like → wouldn't you." },
+    { s: "She'd already left, ___?", options: ["wouldn't she", "didn't she", "hadn't she"], answer: 2,
+      explain: "She'd left = she had left → hadn't she." },
+    { s: "There's a bank near here, ___?", options: ["isn't there", "isn't it", "hasn't there"], answer: 0,
+      explain: "There is → isn't there." },
+    { s: "I'm right, ___?", options: ["aren't I", "amn't I", "isn't I"], answer: 0,
+      explain: "I am → aren't I." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Indirect questions",
-  intro: "Choose the correct sentence. After Could you tell me…? or Do you know…?, use normal word order (subject + verb), with no do, does or did.",
+  intro: "Choose the correct sentence or write the missing words. After Could you tell me…? or Do you know…?, use normal word order (subject + verb), with no do, does or did.",
   items: [
     { s: "___", options: ["Could you tell me where the station is?", "Could you tell me where is the station?"], answer: 0,
       explain: "Indirect question: subject (the station) + verb (is)." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "___", options: ["Do you know whether there's a pharmacy near here?", "Do you know is there a pharmacy near here?"], answer: 0,
       explain: "Yes/no question → whether (or if) + there is." },
     { s: "___", options: ["Can you tell me who that man is?", "Can you tell me who is that man?"], answer: 0,
-      explain: "Subject (that man) + verb (is)." }
+      explain: "Subject (that man) + verb (is)." },
+    { s: "Could you tell me where ___? (the toilets / be)", answers: ["the toilets are"],
+      explain: "Normal word order: subject + verb." },
+    { s: "Do you know how ___ to the airport? (I / get)", answers: ["I get", "I can get"],
+      explain: "Normal word order: I get." },
+    { s: "I wonder what ___ about my idea. (she / think)", answers: ["she thinks"],
+      explain: "No does: she thinks." },
+    { s: "Can you tell me when ___? (the shop / close)", answers: ["the shop closes"],
+      explain: "No does: the shop closes." },
+    { s: "Do you know ___ a parking space here? (there / be)", answers: ["if there is", "whether there is"],
+      explain: "Yes/no question: if + normal word order." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Write the indirect question",
-  intro: "Complete the indirect question. Use normal word order, and if for yes/no questions.",
+  intro: "Choose the correct option or complete the indirect question. Use normal word order, and if for yes/no questions.",
   items: [
     { s: "Where is the toilet? → Could you tell me where ___?", answers: ["the toilet is"], width: 22,
       explain: "Subject + verb: where the toilet is." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Who is that woman? → Do you know who ___?", answers: ["that woman is"], width: 22,
       explain: "Subject (that woman) + verb (is)." },
     { s: "Has the bus left? → Do you know ___ left?", answers: ["if the bus has", "whether the bus has"], width: 22,
-      explain: "Yes/no question → if + subject + has: if the bus has left." }
+      explain: "Yes/no question → if + subject + has: if the bus has left." },
+    { s: "\"Where's the bank?\" → Excuse me, could you tell me where ___?", options: ["is the bank", "the bank is", "the bank"], answer: 1,
+      explain: "Normal word order: the bank is." },
+    { s: "\"Does this bus go to the centre?\" → Do you know ___ to the centre?", options: ["does this bus go", "if this bus goes", "this bus goes"], answer: 1,
+      explain: "Yes/no question: if + subject + verb." },
+    { s: "\"What time is it?\" → Do you know what time ___?", options: ["it is", "is it", "it"], answer: 0,
+      explain: "Normal word order: it is." },
+    { s: "\"Why did she leave?\" → I'd like to know why ___.", options: ["did she leave", "she left", "she did leave"], answer: 1,
+      explain: "No did: she left." },
+    { s: "\"Can I pay by card?\" → Could you tell me ___ by card?", options: ["if I can pay", "can I pay", "if can I pay"], answer: 0,
+      explain: "if + subject + can." }
   ]
 }
 ];

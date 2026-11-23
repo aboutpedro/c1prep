@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Degrees of likelihood",
-  intro: "Choose the option that best matches the meaning in brackets.",
+  intro: "Choose the option that best matches the meaning in brackets, or write the missing words.",
   items: [
     { s: "The result ___ be announced tomorrow. (= it's quite possible)", options: ["may well", "is bound to", "can't", "must"], answer: 0,
       explain: "may well = it is quite likely." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "She's ___ to forget: remind her tomorrow. (= she often does)", options: ["liable", "bound", "sure", "due"], answer: 0,
       explain: "be liable to = tend to (often something bad)." },
     { s: "It's a foregone ___: they're going to win. (= certain)", options: ["conclusion", "end", "result", "decision"], answer: 0,
-      explain: "a foregone conclusion = an outcome that is certain." }
+      explain: "a foregone conclusion = an outcome that is certain." },
+    { s: "There's every ___ that the merger will go ahead.", answers: ["likelihood", "chance", "possibility", "probability"],
+      explain: "There's every likelihood = it's very likely." },
+    { s: "The odds are ___ of the champion winning again.", answers: ["in favour", "in favor"],
+      explain: "The odds are in favour of = it's likely." },
+    { s: "In all ___, the trial will last several weeks.", answers: ["likelihood", "probability"],
+      explain: "In all likelihood = very probably." },
+    { s: "It's a ___ conclusion that she'll get the job.", answers: ["foregone"],
+      explain: "a foregone conclusion = certain." },
+    { s: "He's ___ to lose his temper when he's tired. (= he often does)", answers: ["liable", "apt", "inclined", "likely", "prone"],
+      explain: "be liable to = tend to." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Deduction about the past",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "The ground is wet. It ___ in the night.", options: ["must have rained", "must rain", "can't have rained", "should rain"], answer: 0,
       explain: "A confident deduction about the past: must have + past participle." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "He ___ the answer, but he didn't say anything.", options: ["might have known", "must know", "should know", "can have known"], answer: 0,
       explain: "might have known = it's possible he knew." },
     { s: "You ___ cooked so much. There are only four of us!", options: ["needn't have", "mustn't have", "couldn't have", "wouldn't"], answer: 0,
-      explain: "needn't have = it wasn't necessary (but you did)." }
+      explain: "needn't have = it wasn't necessary (but you did)." },
+    { s: "The car isn't here. Someone ___ it. (must / borrow)", answers: ["must have borrowed"],
+      explain: "A confident deduction about the past." },
+    { s: "She ___ what she said – she was just upset. (can't / mean)", answers: ["can't have meant", "cannot have meant", "couldn't have meant"],
+      explain: "Impossible: can't have." },
+    { s: "They ___ out – the lights are off. (might / go)", answers: ["might have gone", "may have gone", "could have gone"],
+      explain: "A possible explanation." },
+    { s: "You ___ anything – we had plenty. (needn't / bring)", answers: ["needn't have brought", "need not have brought"],
+      explain: "It was unnecessary." },
+    { s: "The parcel ___ yesterday, but it didn't. (should / arrive)", answers: ["should have arrived", "ought to have arrived"],
+      explain: "An expectation that wasn't met." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Obligation and advice",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "You ___ wear a suit; the dinner is informal.", options: ["don't have to", "mustn't", "can't", "shouldn't have"], answer: 0,
       explain: "don't have to = it isn't necessary." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "He ___ apologise, but he refused.", options: ["was meant to", "must", "needed", "ought"], answer: 0,
       explain: "was meant to = was supposed to." },
     { s: "It is ___ that you bring your passport.", options: ["essential", "must", "necessity", "obligatory to"], answer: 0,
-      explain: "It is essential that + subject (+ should) + verb." }
+      explain: "It is essential that + subject (+ should) + verb." },
+    { s: "You ___ hand in the form by Friday – there's no flexibility.", answers: ["must", "have to"],
+      explain: "A firm obligation." },
+    { s: "We ___ have taken a taxi – the walk was only ten minutes.", answers: ["needn't"],
+      explain: "needn't have = it was unnecessary." },
+    { s: "You had ___ not mention this to anyone.", answers: ["better"],
+      explain: "had better (not) = strong advice." },
+    { s: "Passengers ___ required to show ID.", answers: ["are"],
+      explain: "be required to = must." },
+    { s: "Staff are ___ to wear protective clothing. (it's compulsory)", answers: ["required", "obliged"],
+      explain: "be required / obliged to." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Modal expressions",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "You ___ as well come with us; you've got nothing else to do.", answers: ["may", "might"],
       explain: "may / might as well = there's no better option." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "He's ___ to be at home; his car is outside.", answers: ["bound", "sure", "certain"],
       explain: "be bound to = be certain to." },
     { s: "You ___ not have paid: it was free!", answers: ["need"],
-      explain: "need not have + past participle = it wasn't necessary." }
+      explain: "need not have + past participle = it wasn't necessary." },
+    { s: "You might as ___ tell me the truth now.", options: ["well", "good", "soon"], answer: 0,
+      explain: "might as well = there's no reason not to." },
+    { s: "Try as she ___, she couldn't get the door open.", options: ["might", "would", "could not"], answer: 0,
+      explain: "Try as I might = however hard I tried." },
+    { s: "I can ___ blame her for leaving.", options: ["hardly", "nearly", "scarcely not"], answer: 0,
+      explain: "can hardly = it's not reasonable to." },
+    { s: "He's ___ to turn up late – he always does.", options: ["bound", "due", "about"], answer: 0,
+      explain: "be bound to = certain." },
+    { s: "You ___ to have warned us!", options: ["ought", "should", "must"], answer: 0,
+      explain: "ought to have = criticism." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "It's possible that they missed the train. → They ___ the train. (MAY)", answers: ["may have missed", "may well have missed"],
       explain: "may have + past participle." },
     { s: "There's very little chance that he'll win. → He ___ win. (UNLIKELY)", answers: ["is highly unlikely to", "is very unlikely to", "is extremely unlikely to"],
-      explain: "be unlikely to." }
+      explain: "be unlikely to." },
+    { s: "I'm certain he was lying. → He ___ lying. (MUST)", answers: ["must have been"],
+      explain: "must have been + -ing." },
+    { s: "It's quite possible that she'll be promoted. → She ___ promoted. (WELL)", answers: ["may well be", "might well be", "could well be"],
+      explain: "may well = quite possibly." },
+    { s: "We didn't need to hurry, but we did. → We ___. (HURRIED)", answers: ["needn't have hurried", "need not have hurried"],
+      explain: "needn't have + past participle." },
+    { s: "It's very unlikely that they'll accept the offer. → There's ___ they'll accept the offer. (CHANCE)", answers: ["little chance that", "very little chance that", "a slim chance that", "only a slim chance that", "hardly any chance that"],
+      explain: "little chance = unlikely." },
+    { s: "You were meant to tell me first. → You ___ me first. (SUPPOSED)", answers: ["were supposed to tell", "were supposed to have told"],
+      explain: "be supposed to = be expected to." }
   ]
 }
 ];

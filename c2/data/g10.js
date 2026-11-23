@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Advanced passive forms",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "The proposal is currently ___ by the committee.", options: ["being considered", "considered", "been considering"], answer: 0,
       explain: "Present continuous passive: is being + past participle." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "The meeting ___ until further notice.", options: ["has been put off", "has put off", "is putting off"], answer: 0,
       explain: "put off = postpone; passive: has been put off." },
     { s: "It ___ that the minister will resign.", options: ["is rumoured", "rumours", "is rumouring"], answer: 0,
-      explain: "It is rumoured that… = people are saying." }
+      explain: "It is rumoured that… = people are saying." },
+    { s: "The bridge ___ (repair) at the moment, so use the other road.", answers: ["is being repaired", "'s being repaired"],
+      explain: "Present continuous passive." },
+    { s: "The letter should ___ (send) yesterday.", answers: ["have been sent"],
+      explain: "should + perfect passive." },
+    { s: "This room ___ (not / clean) for weeks.", answers: ["hasn't been cleaned", "has not been cleaned"],
+      explain: "Present perfect passive." },
+    { s: "Nobody likes ___ (laugh) at.", answers: ["being laughed"],
+      explain: "Passive -ing." },
+    { s: "By the time we arrived, the food ___ (eat).", answers: ["had been eaten", "'d been eaten"],
+      explain: "Past perfect passive." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "get, have and causatives",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I'm going to ___ my hair cut tomorrow.", options: ["have", "make", "let", "do"], answer: 0,
       explain: "have something done = arrange for someone to do it." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "She had the documents ___ to her lawyer.", options: ["sent", "send", "sending", "to send"], answer: 0,
       explain: "have + object + past participle." },
     { s: "I won't ___ you speak to me like that!", options: ["have", "get", "make", "let to"], answer: 0,
-      explain: "I won't have you + -ing / + infinitive = I won't allow it." }
+      explain: "I won't have you + -ing / + infinitive = I won't allow it." },
+    { s: "I need to get my eyes ___ (test).", answers: ["tested"],
+      explain: "get + object + past participle." },
+    { s: "We're having a new kitchen ___ (fit) next month.", answers: ["fitted", "installed"],
+      explain: "have + object + past participle." },
+    { s: "She had her assistant ___ (book) the flights.", answers: ["book"],
+      explain: "have + person + infinitive without to." },
+    { s: "He got his sister ___ (help) him with the move.", answers: ["to help"],
+      explain: "get + person + to-infinitive." },
+    { s: "Be careful not to get ___ (catch) in the rain.", answers: ["caught"],
+      explain: "get + past participle." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Passive reporting structures",
-  intro: "Write the words in brackets in the correct passive form.",
+  intro: "Choose the correct option or write the words in brackets in the correct passive form.",
   items: [
     { s: "The suspect ___ (think / be) armed.", answers: ["is thought to be"],
       explain: "be thought + to + infinitive." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The singer ___ (consider / be) one of the greatest of all time.", answers: ["is considered to be"],
       explain: "be considered + to be." },
     { s: "It ___ (claim) that the drug has no side effects.", answers: ["is claimed", "has been claimed"],
-      explain: "It is claimed that…" }
+      explain: "It is claimed that…" },
+    { s: "The thief ___ to have escaped through the window.", options: ["is thought", "thinks", "is thinking"], answer: 0,
+      explain: "be thought + perfect infinitive." },
+    { s: "It ___ that the bank will raise interest rates.", options: ["is widely believed", "widely believes", "is widely believing"], answer: 0,
+      explain: "It + passive reporting verb + that." },
+    { s: "The minister ___ to have known about the scandal.", options: ["is alleged", "alleges", "has alleged"], answer: 0,
+      explain: "be alleged + perfect infinitive." },
+    { s: "The castle ___ to date from the 11th century.", options: ["is said", "says", "is saying"], answer: 0,
+      explain: "be said + to-infinitive." },
+    { s: "Three climbers ___ to be missing.", options: ["are feared", "fear", "are fearing"], answer: 0,
+      explain: "be feared + to-infinitive." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Choosing active or passive",
-  intro: "Choose the more natural option.",
+  intro: "Choose the more natural option or write the missing words.",
   items: [
     { s: "(in a news report) ___", options: ["A man has been arrested.", "The police has arrested a man.", "Someone arrested a man by police."], answer: 0,
       explain: "The passive is natural when the agent is obvious (the police)." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "I ___ by a strange noise in the night.", options: ["was woken up", "woke up by", "got woken by up", "have woke up"], answer: 0,
       explain: "Passive phrasal verb: be woken up." },
     { s: "This bridge ___ in 1890 and is still in use.", options: ["was built", "built", "has built", "is built"], answer: 0,
-      explain: "Past simple passive." }
+      explain: "Past simple passive." },
+    { s: "(a recipe) The onions should ___ (fry) gently.", answers: ["be fried"],
+      explain: "Instructions: modal + passive." },
+    { s: "(a sign) English ___ (speak) here.", answers: ["is spoken"],
+      explain: "The doer doesn't matter: passive." },
+    { s: "Our flight ___ (cancel), so we're stuck here.", answers: ["has been cancelled", "'s been cancelled", "was cancelled", "has been canceled", "was canceled"],
+      explain: "The result matters: passive." },
+    { s: "All applications ___ (must / submit) by Friday.", answers: ["must be submitted"],
+      explain: "A rule: modal + passive." },
+    { s: "He ___ (bring up) by his grandparents.", answers: ["was brought up"],
+      explain: "Phrasal verb in the passive." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "It is reported that the president is seriously ill. → The president ___ seriously ill. (REPORTED)", answers: ["is reported to be"],
       explain: "be reported + to be." },
     { s: "I don't like it when people tell me what to do. → I don't ___ what to do. (BEING)", answers: ["like being told", "enjoy being told"],
-      explain: "Passive -ing: being told." }
+      explain: "Passive -ing: being told." },
+    { s: "Experts think the fire was started deliberately. → The fire ___ deliberately. (THOUGHT)", answers: ["is thought to have been started"],
+      explain: "be thought + perfect passive infinitive." },
+    { s: "A professional photographer took our wedding photos. → We ___ by a professional photographer. (HAD)", answers: ["had our wedding photos taken"],
+      explain: "have + object + past participle." },
+    { s: "They are building a new stadium. → A new stadium ___. (BUILT)", answers: ["is being built"],
+      explain: "Present continuous passive." },
+    { s: "Somebody must clean this carpet. → This carpet ___. (CLEANED)", answers: ["must be cleaned"],
+      explain: "Modal passive." },
+    { s: "I'll ask the hairdresser to cut my hair. → I'll ___ cut. (HAVE)", answers: ["have my hair"],
+      explain: "have + object + past participle." }
   ]
 }
 ];

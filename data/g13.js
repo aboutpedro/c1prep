@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Countable or uncountable?",
-  intro: "Choose the correct option. Some nouns that are countable in other languages are uncountable in English.",
+  intro: "Choose the correct option or write the missing words. Some nouns that are countable in other languages are uncountable in English.",
   items: [
     { s: "Could you give me some ___ about which course to choose?", options: ["advice", "advices", "an advice"], answer: 0,
       explain: "advice is uncountable: some advice, a piece of advice." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I need some ___ to wrap this present.", options: ["paper", "papers", "a paper"], answer: 0,
       explain: "paper (the material) is uncountable. a paper = a newspaper or a document." },
     { s: "We've made good ___ this week.", options: ["progress", "progresses", "a progress"], answer: 0,
-      explain: "progress is uncountable." }
+      explain: "progress is uncountable." },
+    { s: "The news ___ better than we expected.", answers: ["is", "was"],
+      explain: "news is uncountable and singular." },
+    { s: "Your hair ___ lovely today.", answers: ["looks"],
+      explain: "hair (on your head) is uncountable: singular verb." },
+    { s: "Mathematics ___ never been my strong point.", answers: ["has"],
+      explain: "Subjects ending in -s take a singular verb." },
+    { s: "The furniture in this room ___ very expensive.", answers: ["is", "was"],
+      explain: "furniture is uncountable." },
+    { s: "Some of the information you gave us ___ incorrect.", answers: ["is", "was"],
+      explain: "information is uncountable." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Articles: generic, unique and zero",
-  intro: "Choose a, an, the or – (no article).",
+  intro: "Choose or write a, an or the, or choose – (no article).",
   items: [
     { s: "___ Netherlands is famous for its flowers.", options: ["The", "A", "– (nothing)"], answer: 0,
       explain: "Countries with plural or \"union/kingdom/republic\" names take the: the Netherlands, the UK." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "He's in ___ hospital with a broken leg.", options: ["– (nothing)", "an", "a"], answer: 0,
       explain: "in hospital (as a patient): no article in British English." },
     { s: "Mozart composed his first symphony at ___ age of eight.", options: ["the", "an", "– (nothing)"], answer: 0,
-      explain: "at the age of + number." }
+      explain: "at the age of + number." },
+    { s: "She earns about €30 ___ hour.", answers: ["an"],
+      explain: "Rates: an hour (the h is silent)." },
+    { s: "___ Hague is the seat of the Dutch government.", answers: ["The"],
+      explain: "The Hague always has the." },
+    { s: "She's ___ only person who can help us.", answers: ["the"],
+      explain: "the only." },
+    { s: "I'd like to learn to play ___ piano.", answers: ["the"],
+      explain: "play the + instrument." },
+    { s: "What ___ shame you can't come!", answers: ["a"],
+      explain: "What a + singular noun." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Collective nouns and agreement",
-  intro: "Choose the correct verb.",
+  intro: "Choose or write the correct verb.",
   items: [
     { s: "The police ___ looking into the matter.", options: ["are", "is", "has"], answer: 0,
       explain: "police always takes a plural verb." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Everyone in the office ___ to finish early on Fridays.", options: ["wants", "want", "are wanting"], answer: 0,
       explain: "everyone, everybody, someone… take a singular verb." },
     { s: "The majority of the residents ___ against the plan.", options: ["are", "is", "has"], answer: 0,
-      explain: "the majority of + plural noun usually takes a plural verb." }
+      explain: "the majority of + plural noun usually takes a plural verb." },
+    { s: "The audience ___ clapping enthusiastically.", answers: ["was", "were"],
+      explain: "Collective nouns: singular or plural verb." },
+    { s: "Two hours ___ not enough time to see the whole museum.", answers: ["is", "was"],
+      explain: "An amount of time as one unit: singular." },
+    { s: "Each of the rooms ___ its own bathroom.", answers: ["has"],
+      explain: "each of + plural noun + singular verb." },
+    { s: "The United States ___ a federal system.", answers: ["has"],
+      explain: "The country as one unit: singular." },
+    { s: "A lot of people ___ complained about the noise.", answers: ["have", "had"],
+      explain: "a lot of + plural noun: plural verb." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Possession and compound nouns",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I'll meet you at ___.", options: ["the bus stop", "the stop of the bus", "the bus's stop"], answer: 0,
       explain: "Compound noun: bus stop (not the stop of the bus)." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "I need a new ___.", options: ["toothbrush", "brush of teeth", "teeth brush"], answer: 0,
       explain: "Compound nouns usually use the singular first noun: toothbrush, shoe shop." },
     { s: "What's ___?", options: ["the name of the film", "the film's name of", "the film name's"], answer: 0,
-      explain: "We usually use of with things: the name of the film." }
+      explain: "We usually use of with things: the name of the film." },
+    { s: "It's only a ___ walk from here. (five minutes)", answers: ["five-minute", "five minute"],
+      explain: "A compound adjective is singular: a five-minute walk." },
+    { s: "I'm going to the ___ tomorrow to get my teeth checked. (dentist)", answers: ["dentist's", "dentist"],
+      explain: "the dentist's = the dentist's surgery." },
+    { s: "She's a colleague ___ mine.", answers: ["of"],
+      explain: "a colleague of mine." },
+    { s: "We're having lunch at my ___ house. (my parents)", answers: ["parents'"],
+      explain: "Plural with -s: add only an apostrophe." },
+    { s: "We need a new ___ for the kitchen. (an opener for tins)", answers: ["tin opener", "can opener"],
+      explain: "Noun + noun compound." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Every member of the team was given a medal. → ___ given a medal. (WHOLE)", answers: ["The whole team was"],
       explain: "The whole + singular noun + singular verb." },
     { s: "I've never had such a frightening time. → It was the most frightening ___ had. (EXPERIENCE)", answers: ["experience I have ever", "experience I've ever"],
-      explain: "an experience (= something that happens to you) is countable." }
+      explain: "an experience (= something that happens to you) is countable." },
+    { s: "Could you tell me something about the course? → Could you give me ___ about the course? (BIT)", answers: ["a bit of information", "a little bit of information"],
+      explain: "information is uncountable: a bit of information." },
+    { s: "The flight from London to Lisbon takes three hours. → It's ___ from London to Lisbon. (FLIGHT)", answers: ["a three-hour flight", "a three hour flight", "three hours' flight"],
+      explain: "A compound adjective: a three-hour flight." },
+    { s: "He is one of my colleagues. → He's ___. (MINE)", answers: ["a colleague of mine"],
+      explain: "a colleague of mine." },
+    { s: "Most of the employees work from home. → The ___ work from home. (MAJORITY)", answers: ["majority of employees", "majority of the employees"],
+      explain: "the majority of + plural noun." },
+    { s: "This is the first time I've had such an amazing experience. → I've never had ___ before. (EXPERIENCE)", answers: ["such an amazing experience"],
+      explain: "experience (an event) is countable." }
   ]
 }
 ];

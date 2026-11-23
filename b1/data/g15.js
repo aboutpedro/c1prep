@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "but, although, however",
-  intro: "Choose the correct word. Look at the punctuation: however usually starts a new sentence and has a comma after it.",
+  intro: "Choose or write the correct word. Look at the punctuation: however usually starts a new sentence and has a comma after it.",
   items: [
     { s: "It was cold. ___, we went swimming.", options: ["However", "Although", "But,"], answer: 0,
       explain: "At the start of a new sentence, followed by a comma: However." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I don't really like football. My kids love it, ___.", options: ["though", "but", "although"], answer: 0,
       explain: "At the end of a sentence in conversation, we use though = however." },
     { s: "___ the weather was bad, the match wasn't cancelled.", options: ["Although", "However", "Despite"], answer: 0,
-      explain: "Although + subject + verb (the weather was bad)." }
+      explain: "Although + subject + verb (the weather was bad)." },
+    { s: "I tried my best. ___, I didn't win.", answers: ["However", "Nevertheless", "Still"],
+      explain: "A new sentence + comma: However." },
+    { s: "___ the flat is small, it's very comfortable.", answers: ["Although", "Though", "Even though"],
+      explain: "Although + subject + verb." },
+    { s: "I like her, ___ I don't trust her.", answers: ["but", "although", "though", "yet"],
+      explain: "Joining two ideas with a comma: but." },
+    { s: "He's very friendly. His brother, ___, is quite rude.", answers: ["however", "though"],
+      explain: "however in the middle, between commas." },
+    { s: "She didn't call me, ___ she promised.", answers: ["although", "though", "even though"],
+      explain: "although + subject + verb." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "despite, in spite of, although",
-  intro: "Choose the correct option. Although + subject + verb. Despite / in spite of + noun or -ing.",
+  intro: "Choose the correct option or write the missing words. Although + subject + verb. Despite / in spite of + noun or -ing.",
   items: [
     { s: "___ the rain, we went for a walk.", options: ["Despite", "Although", "However"], answer: 0,
       explain: "Despite + noun (the rain)." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ the fact that it was expensive, we bought it.", options: ["Despite", "Although", "However"], answer: 0,
       explain: "Despite the fact that + subject + verb. This is a useful way to use despite with a clause." },
     { s: "In spite of ___ hard, I didn't pass.", options: ["studying", "I studied", "study"], answer: 0,
-      explain: "In spite of + -ing: in spite of studying." }
+      explain: "In spite of + -ing: in spite of studying." },
+    { s: "___ the bad weather, the flight left on time.", answers: ["Despite", "In spite of"],
+      explain: "Despite + noun." },
+    { s: "We went out ___ we were tired.", answers: ["although", "though", "even though"],
+      explain: "although + subject + verb." },
+    { s: "In ___ of the noise, I fell asleep.", answers: ["spite"],
+      explain: "in spite of + noun." },
+    { s: "Despite ___ a lot of money, he isn't happy. (have)", answers: ["having"],
+      explain: "despite + -ing." },
+    { s: "She went to work ___ feeling ill.", answers: ["despite", "in spite of"],
+      explain: "despite + -ing." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Purpose: to, in order to, so that",
-  intro: "Choose the correct option. To / in order to + verb. So that + subject + can / will / could / would.",
+  intro: "Choose the correct option or write the missing words. To / in order to + verb. So that + subject + can / will / could / would.",
   items: [
     { s: "I'm learning English ___ get a better job.", options: ["to", "for", "so that"], answer: 0,
       explain: "to + verb for purpose: to get a better job." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "He turned on the light ___ he could read.", options: ["so that", "to", "in order"], answer: 0,
       explain: "so that + subject + could (past)." },
     { s: "They moved to the city ___ be closer to their work.", options: ["in order to", "so that", "for"], answer: 0,
-      explain: "in order to + verb." }
+      explain: "in order to + verb." },
+    { s: "I'm saving money in ___ to buy a car.", answers: ["order"],
+      explain: "in order to + verb." },
+    { s: "Speak slowly so ___ everyone can understand.", answers: ["that"],
+      explain: "so that + subject + can." },
+    { s: "I went to the market ___ buy some fruit.", answers: ["to"],
+      explain: "to + verb for purpose." },
+    { s: "Take an umbrella so that you ___ get wet.", answers: ["don't", "won't"],
+      explain: "so that + subject + verb." },
+    { s: "She got up early so as ___ to miss the bus.", answers: ["not"],
+      explain: "so as not to + verb." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Reason and result: because, because of, so, as",
-  intro: "Choose the correct option. Because / as / since + subject + verb; because of / due to + noun; so introduces a result.",
+  intro: "Choose the correct option or write the missing words. Because / as / since + subject + verb; because of / due to + noun; so introduces a result.",
   items: [
     { s: "The match was cancelled ___ the rain.", options: ["because of", "because", "so"], answer: 0,
       explain: "because of + noun (the rain)." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I couldn't sleep ___ the noise.", options: ["because of", "because", "since"], answer: 0,
       explain: "because of + noun (the noise)." },
     { s: "He was ill, ___ he stayed at home.", options: ["so", "because", "as"], answer: 0,
-      explain: "so + the result: he stayed at home." }
+      explain: "so + the result: he stayed at home." },
+    { s: "The game was stopped because ___ the storm.", answers: ["of"],
+      explain: "because of + noun." },
+    { s: "___ I was tired, I went to bed early.", answers: ["As", "Because", "Since"],
+      explain: "As + subject + verb (a reason)." },
+    { s: "The road was closed due ___ an accident.", answers: ["to"],
+      explain: "due to + noun." },
+    { s: "I'd forgotten my keys, ___ I couldn't get in.", answers: ["so"],
+      explain: "A result: so." },
+    { s: "I stayed at home ___ I had a cold.", answers: ["because", "as", "since"],
+      explain: "A reason: because." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Adding and contrasting ideas",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The hotel was cheap. It was ___ very comfortable.", options: ["also", "too", "as well"], answer: 0,
       explain: "Also goes before the adjective or main verb (after be). Too and as well go at the end." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "___ the price, everything about the hotel was perfect.", options: ["Apart from", "Although", "Whereas"], answer: 0,
       explain: "Apart from + noun = except: the price wasn't good, but everything else was." },
     { s: "Tom speaks French and he ___ speaks German.", options: ["also", "too", "as well"], answer: 0,
-      explain: "Also goes before the main verb (speaks)." }
+      explain: "Also goes before the main verb (speaks)." },
+    { s: "She speaks Spanish. She speaks Italian ___.", answers: ["too", "as well"],
+      explain: "too / as well at the end." },
+    { s: "My brother loves sport, ___ I prefer reading.", answers: ["whereas", "while", "but"],
+      explain: "A contrast between two people: whereas." },
+    { s: "___ from the weather, it was a perfect holiday.", answers: ["Apart", "Aside"],
+      explain: "Apart from = except." },
+    { s: "He doesn't drink coffee, and I don't ___.", answers: ["either"],
+      explain: "Negative: not … either." },
+    { s: "The course is cheap. In ___, it's very well organised.", answers: ["addition"],
+      explain: "In addition = also." }
   ]
 }
 ];

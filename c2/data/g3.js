@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Mixed and inverted conditionals",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "If I ___ harder at school, I'd have a better job now.", options: ["had worked", "worked", "would work"], answer: 0,
       explain: "Past condition, present result: if + past perfect, would + infinitive." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "___ you require further information, please contact us.", options: ["Should", "Would", "Had"], answer: 0,
       explain: "Should you… = If you… (formal letters)." },
     { s: "If I ___ you, I'd apologise.", options: ["were", "am", "would be"], answer: 0,
-      explain: "If I were you…" }
+      explain: "If I were you…" },
+    { s: "___ you were coming, I would have baked a cake. (I / know)", answers: ["Had I known"],
+      explain: "Inverted third conditional." },
+    { s: "If he ___ so lazy, he'd have finished by now. (not / be)", answers: ["weren't", "wasn't", "were not", "was not"],
+      explain: "Mixed: present condition, past result." },
+    { s: "___ assistance, press the red button. (you / require)", answers: ["Should you require"],
+      explain: "Should + subject + verb = if." },
+    { s: "___ it not for the language barrier, I'd move there tomorrow.", answers: ["Were"],
+      explain: "Were it not for = if it weren't for." },
+    { s: "If we'd left on time, we ___ there by now. (be)", answers: ["would be", "'d be"],
+      explain: "Mixed: past condition, present result." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Alternatives to if",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I'll lend you the money ___ you pay it back next month.", options: ["provided that", "unless", "in case", "otherwise"], answer: 0,
       explain: "provided that = only if." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ no one objects, we'll start now.", options: ["Assuming", "Unless", "Otherwise", "In case"], answer: 0,
       explain: "Assuming (that) = if we accept that." },
     { s: "___ of fire, do not use the lift.", options: ["In case", "On account", "Unless", "Provided"], answer: 0,
-      explain: "In case of + noun = if there is (on notices)." }
+      explain: "In case of + noun = if there is (on notices)." },
+    { s: "___ your help, I'd never have managed.", answers: ["But for", "Without"],
+      explain: "But for = without." },
+    { s: "I'll go ___ long as you come with me.", answers: ["as", "so"],
+      explain: "as long as = only if." },
+    { s: "___ we miss the last train, we can always get a taxi.", answers: ["If", "Should", "Supposing", "Suppose"],
+      explain: "A condition." },
+    { s: "Pack a jumper ___ it gets cold in the evening.", answers: ["in case"],
+      explain: "in case = as a precaution." },
+    { s: "___ that everyone agrees, we'll proceed.", answers: ["Provided", "Providing", "Assuming", "Supposing"],
+      explain: "Provided that = on condition that." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Implied and other conditionals",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "Without your help, I ___ never have managed.", answers: ["would", "could"],
       explain: "without = if it hadn't been for; would / could + have." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "She'll come, ___ long as she finishes work in time.", answers: ["so", "as"],
       explain: "so long as / as long as." },
     { s: "Even ___ I had the money, I wouldn't buy that car.", answers: ["if"],
-      explain: "even if = whether or not." }
+      explain: "even if = whether or not." },
+    { s: "I would have phoned, ___ my battery died.", options: ["but", "if", "unless"], answer: 0,
+      explain: "but = except that (an implied condition)." },
+    { s: "With a bit more effort, you ___ have passed.", options: ["could", "can", "must"], answer: 0,
+      explain: "An implied condition: could have." },
+    { s: "I'm not sure he'll come. If ___, we'll start without him.", options: ["not", "so", "otherwise"], answer: 0,
+      explain: "If not = if he doesn't." },
+    { s: "___ it not been for the delay, we'd be home by now.", options: ["Had", "Were", "Should"], answer: 0,
+      explain: "Had it not been for = without." },
+    { s: "Given the chance, I ___ do it all again.", options: ["would", "will", "had"], answer: 0,
+      explain: "Given the chance = if I were given the chance." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "What would have happened?",
-  intro: "Write the verb in brackets in the correct form.",
+  intro: "Choose the correct option or write the verb in brackets in the correct form.",
   items: [
     { s: "If I hadn't missed the bus, I ___ (not / meet) my wife.", answers: ["wouldn't have met", "would not have met"],
       explain: "Past condition, past result." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "Supposing the bridge ___ (collapse), what would happen?", answers: ["collapsed"],
       explain: "Supposing + past simple for an imaginary situation." },
     { s: "If I'd known you were vegetarian, I ___ (cook) something else.", answers: ["would have cooked", "'d have cooked"],
-      explain: "Past condition, past result." }
+      explain: "Past condition, past result." },
+    { s: "If I ___ the train, I wouldn't have met you.", options: ["hadn't missed", "didn't miss", "wouldn't miss"], answer: 0,
+      explain: "Third conditional: past perfect." },
+    { s: "___ you to change your mind, let us know.", options: ["Were", "Should", "Had"], answer: 0,
+      explain: "Were + subject + to-infinitive = if." },
+    { s: "Supposing you ___ to retire tomorrow, what would you do?", options: ["were", "are", "had"], answer: 0,
+      explain: "Supposing + past (or were to)." },
+    { s: "If only I ___ the truth sooner!", options: ["had known", "knew", "would know"], answer: 0,
+      explain: "A past regret: past perfect." },
+    { s: "Unless he ___ soon, we'll leave without him.", options: ["arrives", "will arrive", "doesn't arrive"], answer: 0,
+      explain: "unless + present (unless already means if not)." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I'm not tall enough to reach the shelf. → If ___ reach the shelf. (TALLER)", answers: ["I were taller, I could", "I was taller, I could", "I were taller, I would"],
       explain: "If + past simple for an unreal present." },
     { s: "I'll take a map because we might get lost. → I'll take a map ___ lost. (CASE)", answers: ["in case we get"],
-      explain: "in case = as a precaution." }
+      explain: "in case = as a precaution." },
+    { s: "If it hadn't been for the map, we would have got lost. → But ___ would have got lost. (FOR)", answers: ["for the map, we", "for the map we"],
+      explain: "But for + noun." },
+    { s: "I'll lend you my car if you promise to drive carefully. → I'll lend you my car ___ to drive carefully. (PROVIDED)", answers: ["provided that you promise", "provided you promise"],
+      explain: "provided (that) = only if." },
+    { s: "If you should need help, call me. → Should ___ call me. (HELP)", answers: ["you need help,", "you need help", "you need any help,", "you need any help"],
+      explain: "Should + subject + verb." },
+    { s: "I didn't take the job, so I'm still living here. → If I ___ I wouldn't still be living here. (TAKEN)", answers: ["had taken the job,", "had taken the job"],
+      explain: "Mixed conditional." },
+    { s: "We'll go ahead unless it rains. → We'll go ahead ___ rain. (PROVIDED)", answers: ["provided it doesn't", "provided that it doesn't", "provided there's no", "provided that there's no", "provided there is no"],
+      explain: "provided (that) + negative = unless." }
   ]
 }
 ];

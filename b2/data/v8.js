@@ -139,5 +139,33 @@ window.SETS = [
     { s: "Rising temperatures caused by ___ are melting the ice.", answers: ["global warming"],
       explain: "global warming = the rise in the Earth's temperature." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Cities and the countryside",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "Traffic ___ is a huge problem in the city centre at rush hour.", options: ["congestion", "crowd", "queue"], answer: 0,
+      explain: "traffic congestion = too many vehicles on the roads." },
+    { s: "They left the city and moved to a quiet village in the ___.", options: ["countryside", "nature", "landscape"], answer: 0,
+      explain: "the countryside = the land outside towns and cities." },
+    { s: "Many young people leave rural areas to look for work in ___ areas.", options: ["urban", "rural", "suburb"], answer: 0,
+      explain: "urban = of towns and cities. rural = of the countryside." },
+    { s: "We live in the ___, about half an hour from the centre by train.", options: ["suburbs", "outskirt", "downtowns"], answer: 0,
+      explain: "the suburbs = the areas where people live around a city." },
+    { s: "The council plans to ___ the run-down area with new homes and parks.", options: ["regenerate", "regret", "renovation"], answer: 0,
+      explain: "regenerate an area = make it better and more active again." },
+    { s: "Our village has a strong ___ spirit – everyone helps each other.", options: ["community", "communal", "common"], answer: 0,
+      explain: "community spirit = people in a place caring for each other." },
+    { s: "The city's ___ can't cope with the growing population: the roads and trains are always full.", options: ["infrastructure", "instruction", "interior"], answer: 0,
+      explain: "infrastructure = roads, transport, water and power systems." },
+    { s: "Exhaust ___ from cars make it hard to breathe in some big cities.", options: ["fumes", "smokes", "steams"], answer: 0,
+      explain: "exhaust fumes = the gas that comes out of cars." },
+    { s: "The area is ___ populated: there are only a few farms.", options: ["sparsely", "sparse", "spare"], answer: 0,
+      explain: "sparsely populated = with very few people." },
+    { s: "The old factory is being turned into ___ flats.", options: ["luxury", "luxuriously", "luxuriate"], answer: 0,
+      explain: "luxury flats = very comfortable, expensive flats (luxury as an adjective)." }
+  ]
 }
 ];

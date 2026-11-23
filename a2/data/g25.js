@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Present simple or present continuous?",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "My sister ___ in a bank. It's her job.", options: ["works", "work", "working"], answer: 0,
       explain: "A permanent job: present simple." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I can't talk now. I ___ a meeting.", options: ["'m having", "have", "has"], answer: 0,
       explain: "Happening now: present continuous." },
     { s: "This soup ___ delicious!", options: ["tastes", "is tasting", "taste"], answer: 0,
-      explain: "taste (= have a flavour) is a state verb: present simple." }
+      explain: "taste (= have a flavour) is a state verb: present simple." },
+    { s: "My brother ___ in Canada this year. (study)", answers: ["is studying"],
+      explain: "A temporary situation: present continuous." },
+    { s: "I ___ meat. I'm vegetarian. (not / eat)", answers: ["don't eat"],
+      explain: "A habit: present simple." },
+    { s: "Why ___? (you / smile)", answers: ["are you smiling"],
+      explain: "Happening now: present continuous." },
+    { s: "The train ___ at six every morning. (leave)", answers: ["leaves"],
+      explain: "A timetable / every morning: present simple." },
+    { s: "I ___ the question now. (understand)", answers: ["understand"],
+      explain: "understand is a state verb: present simple." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Past simple or past continuous?",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "I ___ TV when the phone rang.", options: ["was watching", "watched", "am watching"], answer: 0,
       explain: "A longer action in progress: past continuous." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "While I ___ a shower, the doorbell rang.", options: ["was having", "had", "have"], answer: 0,
       explain: "The longer action in progress: past continuous." },
     { s: "When I arrived, everyone ___.", options: ["was dancing", "danced yesterday", "dances"], answer: 0,
-      explain: "In progress when I arrived: past continuous." }
+      explain: "In progress when I arrived: past continuous." },
+    { s: "I ___ when the lights went out. (read)", answers: ["was reading"],
+      explain: "In progress: past continuous." },
+    { s: "We ___ a whale on our holiday. (see)", answers: ["saw"],
+      explain: "A finished event: past simple." },
+    { s: "What ___ when I called? (you / do)", answers: ["were you doing"],
+      explain: "In progress when I called: past continuous." },
+    { s: "She ___ her finger while she was cooking. (cut)", answers: ["cut"],
+      explain: "The short action: past simple. cut → cut." },
+    { s: "The sun ___ when we arrived at the beach. (shine)", answers: ["was shining"],
+      explain: "The background: past continuous." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Present perfect or past simple?",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "I ___ to Mexico. It was fantastic.", options: ["'ve been", "went yet", "go"], answer: 0,
       explain: "An experience, no time given: present perfect." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I ___ him yesterday.", options: ["saw", "'ve seen", "see"], answer: 0,
       explain: "yesterday: past simple." },
     { s: "They ___ married for twenty years.", options: ["'ve been", "were for", "are"], answer: 0,
-      explain: "for + now: present perfect." }
+      explain: "for + now: present perfect." },
+    { s: "I ___ my phone. Have you seen it? (lose)", answers: ["have lost"],
+      explain: "A result now: present perfect." },
+    { s: "She ___ me last night. (call)", answers: ["called"],
+      explain: "Last night: past simple." },
+    { s: "We ___ each other for years. (know)", answers: ["have known"],
+      explain: "for + until now: present perfect." },
+    { s: "___ in a tent? (you / ever / sleep)", answers: ["Have you ever slept"],
+      explain: "ever: present perfect." },
+    { s: "They ___ to Rio in 2015. (move)", answers: ["moved"],
+      explain: "in 2015: past simple." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Talking about the future",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "I ___ visit my aunt this weekend. I bought the train ticket yesterday.", options: ["'m going to", "will", "visit"], answer: 0,
       explain: "A plan, decided before: going to." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "___ you come to my party on Saturday?", options: ["Will", "Are", "Do"], answer: 0,
       explain: "A question about the future: Will you…?" },
     { s: "She ___ a baby in May!", options: ["'s having", "has", "will having"], answer: 0,
-      explain: "An arrangement / fixed plan: present continuous." }
+      explain: "An arrangement / fixed plan: present continuous." },
+    { s: "I think it ___ sunny tomorrow. (be)", answers: ["will be"],
+      explain: "A prediction with I think: will." },
+    { s: "We ___ a party on Saturday. Everything is ready. (have)", answers: ["are having", "are going to have"],
+      explain: "An arrangement: present continuous." },
+    { s: "'There's no bread.' 'I ___ some.' (buy)", answers: ["will buy"],
+      explain: "A decision now: will." },
+    { s: "Look out! You ___ the plates! (drop)", answers: ["are going to drop"],
+      explain: "We can see it coming: going to." },
+    { s: "The film ___ at 8 p.m. (start)", answers: ["starts", "will start", "is starting"],
+      explain: "A timetable: present simple." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Which tense?",
-  intro: "Write the verb in brackets in the correct form.",
+  intro: "Choose the correct option or write the verb in brackets in the correct form.",
   items: [
     { s: "I usually ___ (walk) to work, but today I'm taking the bus.", answers: ["walk"],
       explain: "A habit (usually): present simple." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "The shop ___ (open) at 9 every day.", answers: ["opens"],
       explain: "A timetable / habit: present simple." },
     { s: "I'm hungry. – I ___ (make) you a sandwich.", answers: ["will make"],
-      explain: "A decision / offer now: will." }
+      explain: "A decision / offer now: will." },
+    { s: "I ___ English for three years.", options: ["'ve studied", "study", "'m studying"], answer: 0,
+      explain: "for + until now: present perfect." },
+    { s: "Yesterday it ___ all day.", options: ["rained", "has rained", "rains"], answer: 0,
+      explain: "Yesterday: past simple." },
+    { s: "She ___ to work every day.", options: ["walks", "is walking", "walk"], answer: 0,
+      explain: "every day: present simple." },
+    { s: "I'm tired. I ___ to bed.", options: ["'m going", "go", "went"], answer: 0,
+      explain: "Now / right now: present continuous." },
+    { s: "When I was young, I ___ in a small town.", options: ["lived", "have lived", "live"], answer: 0,
+      explain: "When I was young: past simple." }
   ]
 }
 ];

@@ -1,9 +1,9 @@
 window.SETS = [
 /* ---------------- Set 1 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Regular verbs: -ed",
-  intro: "Write the past simple of the verb in brackets.",
+  intro: "Choose the correct option or write the past simple of the verb in brackets.",
   items: [
     { s: "I ___ (watch) a film last night.", answers: ["watched"],
       explain: "Regular verbs: add -ed. watch → watched." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "We ___ (dance) all night.", answers: ["danced"],
       explain: "Verbs ending in -e: add -d. dance → danced." },
     { s: "The baby ___ (cry) a lot last night.", answers: ["cried"],
-      explain: "Consonant + y: y → ied. cry → cried." }
+      explain: "Consonant + y: y → ied. cry → cried." },
+    { s: "I ___ my grandmother on Sunday.", options: ["phoned", "phoneed", "phonned"], answer: 0,
+      explain: "Verbs ending in -e: add -d." },
+    { s: "We ___ all morning.", options: ["worked", "workd", "workked"], answer: 0,
+      explain: "Most verbs: add -ed." },
+    { s: "He ___ the door.", options: ["opened", "openned", "opend"], answer: 0,
+      explain: "open → opened." },
+    { s: "She ___ to music.", options: ["listened", "listend", "listenned"], answer: 0,
+      explain: "listen → listened." },
+    { s: "They ___ the bus.", options: ["missed", "misst", "missd"], answer: 0,
+      explain: "miss → missed." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Irregular verbs",
-  intro: "Choose the correct past form.",
+  intro: "Choose or write the correct past form.",
   items: [
     { s: "I ___ to the cinema on Saturday.", options: ["went", "goed", "go"], answer: 0,
       explain: "go → went." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "She ___ the bus to work.", options: ["took", "taked", "take"], answer: 0,
       explain: "take → took." },
     { s: "I ___ my keys under the sofa.", options: ["found", "finded", "find"], answer: 0,
-      explain: "find → found." }
+      explain: "find → found." },
+    { s: "I ___ a lot of water. (drink)", answers: ["drank"],
+      explain: "drink → drank." },
+    { s: "She ___ me a present. (give)", answers: ["gave"],
+      explain: "give → gave." },
+    { s: "We ___ in the garden. (sit)", answers: ["sat"],
+      explain: "sit → sat." },
+    { s: "He ___ me a funny story. (tell)", answers: ["told"],
+      explain: "tell → told." },
+    { s: "They ___ at six. (leave)", answers: ["left"],
+      explain: "leave → left." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "didn't",
-  intro: "Make the sentence negative. Write didn't + verb.",
+  intro: "Make the sentence negative: choose the correct option or write didn't + verb.",
   items: [
     { s: "I went out. → I ___ (go) out.", answers: ["didn't go"],
       explain: "Negative: didn't + verb (go, not went)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "He came to school. → He ___ (come) to school.", answers: ["didn't come"],
       explain: "didn't + come." },
     { s: "I liked the book. → I ___ (like) the book.", answers: ["didn't like"],
-      explain: "didn't + like (no -d)." }
+      explain: "didn't + like (no -d)." },
+    { s: "I ___ breakfast this morning.", options: ["didn't have", "didn't had", "don't had"], answer: 0,
+      explain: "didn't + verb (not the past form)." },
+    { s: "She ___ to the party.", options: ["didn't go", "didn't went", "not went"], answer: 0,
+      explain: "didn't + go." },
+    { s: "We ___ the answer.", options: ["didn't know", "didn't knew", "not know"], answer: 0,
+      explain: "didn't + know." },
+    { s: "He ___ his homework.", options: ["didn't do", "didn't did", "doesn't did"], answer: 0,
+      explain: "didn't + do." },
+    { s: "They ___ me.", options: ["didn't call", "didn't called", "not called"], answer: 0,
+      explain: "didn't + call (no -ed)." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Questions with did",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ you see Tom yesterday?", options: ["Did", "Do", "Were"], answer: 0,
       explain: "Past questions: Did + you + verb." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "What time did you ___ up?", options: ["get", "got", "getting"], answer: 0,
       explain: "After did: get (not got)." },
     { s: "Did it rain yesterday? – No, ___.", options: ["it didn't", "it wasn't", "it don't"], answer: 0,
-      explain: "Short answer: No, it didn't." }
+      explain: "Short answer: No, it didn't." },
+    { s: "___ the film? (you / like)", answers: ["Did you like"],
+      explain: "Question: Did + you + like." },
+    { s: "Where ___ last night? (she / go)", answers: ["did she go"],
+      explain: "Where + did + she + go." },
+    { s: "What ___? (they / buy)", answers: ["did they buy"],
+      explain: "What + did + they + buy." },
+    { s: "Did you see the match? – Yes, I ___.", answers: ["did"],
+      explain: "Short answer: Yes, I did." },
+    { s: "Did he win? – No, he ___.", answers: ["didn't"],
+      explain: "Short answer: No, he didn't." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "My weekend",
-  intro: "Write the verb in brackets in the past simple. Some are negative (not).",
+  intro: "Choose the correct option or write the verb in brackets in the past simple. Some are negative (not).",
   items: [
     { s: "On Saturday I ___ (get) up at ten.", answers: ["got"],
       explain: "get → got." },
@@ -136,7 +176,55 @@ window.SETS = [
     { s: "I ___ (read) a book and relaxed.", answers: ["read"],
       explain: "read → read (same spelling, but we say \"red\")." },
     { s: "___ (you / have) a good weekend?", answers: ["Did you have"],
-      explain: "Question: Did + you + have?" }
+      explain: "Question: Did + you + have?" },
+    { s: "On Sunday morning we ___ to the market.", options: ["went", "goed", "go"], answer: 0,
+      explain: "go → went." },
+    { s: "I ___ some fruit and bread.", options: ["bought", "buyed", "buy"], answer: 0,
+      explain: "buy → bought." },
+    { s: "My sister ___ a new book.", options: ["found", "finded", "find"], answer: 0,
+      explain: "find → found." },
+    { s: "We ___ go to the cinema. It was too expensive.", options: ["didn't", "don't", "wasn't"], answer: 0,
+      explain: "Past negative: didn't + go." },
+    { s: "What ___ you do on Sunday?", options: ["did", "do you", "were"], answer: 0,
+      explain: "Past question: What did you do?" }
+  ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Present or past?",
+  intro: "Choose the correct option or write the verb in brackets in the present simple, the present continuous or the past simple.",
+  items: [
+    { s: "I ___ (go) to school every day.", answers: ["go"],
+      explain: "Every day: a habit, so the present simple." },
+    { s: "I ___ (go) to the park yesterday.", answers: ["went"],
+      explain: "Yesterday: the past simple. go → went." },
+    { s: "Look! The baby ___ (sleep).", answers: ["is sleeping"],
+      explain: "Look! means now: the present continuous, is + sleeping." },
+    { s: "My brother ___ (work) in a bank. He loves his job.", answers: ["works"],
+      explain: "His job, in general: the present simple, with -s for he." },
+    { s: "We ___ (watch) a film last night.", answers: ["watched"],
+      explain: "Last night: the past simple. watch → watched." },
+    { s: "They ___ (not / like) fish. They never eat it.", answers: ["don't like"],
+      explain: "The present simple negative: don't + like." },
+    { s: "I ___ (not / see) Tom last week.", answers: ["didn't see"],
+      explain: "Last week: the past simple negative, didn't + see." },
+    { s: "What ___ (you / do) now?", answers: ["are you doing"],
+      explain: "Now: a present continuous question, are + you + doing." },
+    { s: "___ (you / have) breakfast this morning?", answers: ["Did you have"],
+      explain: "This morning is finished: a past simple question, Did + you + have." },
+    { s: "My grandparents ___ (be) in Italy in 2010.", answers: ["were"],
+      explain: "In 2010: the past of be. They → were." },
+    { s: "Shh! I ___ on the phone.", options: ["'m talking", "talk", "talked"], answer: 0,
+      explain: "Shh! → now: present continuous." },
+    { s: "We ___ our cousins last summer.", options: ["visited", "visit", "are visiting"], answer: 0,
+      explain: "Last summer → past simple." },
+    { s: "Look! It ___.", options: ["'s raining", "rains", "rained"], answer: 0,
+      explain: "Look! → now: present continuous." },
+    { s: "Two days ago I ___ my keys.", options: ["lost", "lose", "am losing"], answer: 0,
+      explain: "Ago → past simple. lose → lost." },
+    { s: "I ___ sugar in my coffee. I never have it.", options: ["don't have", "didn't have", "'m not having"], answer: 0,
+      explain: "Never is a habit → present simple." }
   ]
 }
 ];

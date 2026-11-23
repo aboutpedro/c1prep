@@ -139,5 +139,34 @@ window.SETS = [
     { s: "You can find some great ___ at the market.", answers: ["bargains"],
       explain: "bargains = things sold cheaply." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Clothes and fashion",
+  intro: "Complete the sentences with the words in the box. There are two words you don't need.",
+  bank: ["designer", "fit", "label", "old-fashioned", "outfit", "pattern", "second-hand", "sleeves", "suits", "trendy", "try on", "wardrobe"],
+  items: [
+    { s: "These trousers don't ___ me – they're too big round the waist.", answers: ["fit"],
+      explain: "fit = be the right size." },
+    { s: "That colour really ___ you – you should wear it more often.", answers: ["suits"],
+      explain: "suit = look good on someone." },
+    { s: "Can I ___ these jeans? Where are the changing rooms?", answers: ["try on"],
+      explain: "try on = put on clothes to see if they fit." },
+    { s: "She spent ages choosing her ___ for the party.", answers: ["outfit"],
+      explain: "an outfit = a set of clothes worn together." },
+    { s: "He only buys ___ clothes – he thinks expensive brands are worth it.", answers: ["designer"],
+      explain: "designer clothes = made by a famous, expensive brand." },
+    { s: "I got this jacket ___ from a charity shop for €5.", answers: ["second-hand", "second hand", "secondhand"],
+      explain: "second-hand = owned by someone else before." },
+    { s: "Flared jeans looked ___ ten years ago, but they're back in fashion now.", answers: ["old-fashioned"],
+      explain: "old-fashioned = no longer modern." },
+    { s: "The shop sells cheap but ___ clothes for teenagers.", answers: ["trendy"],
+      explain: "trendy = fashionable." },
+    { s: "It's warm – wear a shirt with short ___.", answers: ["sleeves"],
+      explain: "sleeves = the parts that cover your arms." },
+    { s: "Check the ___ before you wash it – some things need cold water.", answers: ["label"],
+      explain: "a label = a piece of material with washing instructions." }
+  ]
 }
 ];

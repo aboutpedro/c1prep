@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Obligation and necessity",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "You ___ smoke in here. It's against the law.", options: ["mustn't", "don't have to", "needn't"], answer: 0,
       explain: "mustn't = it is not allowed." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Students ___ use dictionaries in the exam. They're not allowed.", options: ["can't", "don't have to", "needn't"], answer: 0,
       explain: "can't = not allowed." },
     { s: "We ___ hurry. The train doesn't leave for another hour.", options: ["don't need to", "mustn't", "can't"], answer: 0,
-      explain: "don't need to = it isn't necessary." }
+      explain: "don't need to = it isn't necessary." },
+    { s: "You ___ pay for the drinks. They're free.", answers: ["don't have to", "needn't", "don't need to", "do not have to"],
+      explain: "Not necessary: don't have to." },
+    { s: "You ___ park here. It's a fire exit.", answers: ["mustn't", "can't", "cannot", "must not"],
+      explain: "Not allowed: mustn't." },
+    { s: "Last year I ___ work every Saturday.", answers: ["had to"],
+      explain: "Past obligation: had to." },
+    { s: "Do I ___ to bring anything?", answers: ["need", "have"],
+      explain: "Do I need to / have to…?" },
+    { s: "Passengers ___ keep their seatbelts on during take-off.", answers: ["must", "have to"],
+      explain: "A rule: must." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Ability and permission",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The fire spread quickly, but everyone ___ get out of the building.", options: ["was able to", "could", "can"], answer: 0,
       explain: "For one specific success in the past, use was able to or managed to, not could." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "She hates not ___ speak the language when she travels.", options: ["being able to", "can", "could"], answer: 0,
       explain: "After a verb like hate we need -ing: being able to." },
     { s: "We ___ to use our phones during the meeting.", options: ["weren't allowed", "couldn't", "didn't let"], answer: 0,
-      explain: "be allowed to: we weren't allowed to use them." }
+      explain: "be allowed to: we weren't allowed to use them." },
+    { s: "After a long search, we ___ to find the keys.", answers: ["managed"],
+      explain: "manage to = succeed in doing something difficult." },
+    { s: "I'd love to ___ able to play the piano.", answers: ["be"],
+      explain: "to be able to: the infinitive of can." },
+    { s: "We weren't ___ to leave until the exam finished.", answers: ["allowed", "permitted"],
+      explain: "be allowed to = have permission." },
+    { s: "She ___ swim when she was three.", answers: ["could"],
+      explain: "General ability in the past: could." },
+    { s: "My boss ___ me leave early on Fridays.", answers: ["lets", "let"],
+      explain: "let + person + base verb." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Deduction: present and past",
-  intro: "Complete the sentences with must, might or can't + the correct form of the verb in brackets.",
+  intro: "Choose the correct option or complete the sentences with must, might or can't + the correct form of the verb in brackets.",
   items: [
     { s: "The lights are on. They ___ (be) at home.", answers: ["must be"],
       explain: "must = I'm sure it's true." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "That ___ (be) Jack on the phone. He's in a meeting all afternoon.", answers: ["can't be", "cannot be"],
       explain: "I'm sure it isn't true: can't be." },
     { s: "She ___ (wait) for hours. She looks really fed up.", answers: ["must have been waiting", "must have waited"],
-      explain: "must have been + -ing: an action in progress over a period up to now." }
+      explain: "must have been + -ing: an action in progress over a period up to now." },
+    { s: "He ___ at home. His car isn't outside.", options: ["mustn't be", "must be", "can't be"], answer: 2,
+      explain: "I'm sure it's not true: can't." },
+    { s: "They ___ lost. They should have been here an hour ago.", options: ["can't have got", "should be got", "must have got"], answer: 2,
+      explain: "A confident guess about the past: must have." },
+    { s: "She ___ very busy – she hasn't answered any of my messages.", options: ["can't be", "must be", "mustn't be"], answer: 1,
+      explain: "A confident guess about now: must." },
+    { s: "I ___ my keys in the car. Let me check.", options: ["might have left", "must leave", "can't have left"], answer: 0,
+      explain: "A possibility about the past: might have." },
+    { s: "You ___ hungry already – you've just had lunch!", options: ["can't be", "mustn't be", "must be"], answer: 0,
+      explain: "Impossible: can't." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "needn't have, didn't need to, should have",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I ___ cooked so much food. Only three people came.", options: ["needn't have", "didn't need to", "mustn't have"], answer: 0,
       explain: "needn't have + past participle: I did it, but it wasn't necessary." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "You ___ have asked first before borrowing my car.", options: ["should", "must", "need"], answer: 0,
       explain: "should have + past participle: you didn't ask, and that was wrong." },
     { s: "She ___ to show her passport because she's an EU citizen.", options: ["didn't need", "needn't have", "mustn't"], answer: 0,
-      explain: "didn't need to + verb." }
+      explain: "didn't need to + verb." },
+    { s: "I ___ an umbrella. It didn't rain. (needn't / take)", answers: ["needn't have taken", "need not have taken"],
+      explain: "I took one, but it wasn't necessary: needn't have." },
+    { s: "We ___ tickets because entry was free. (not need / buy)", answers: ["didn't need to buy", "did not need to buy"],
+      explain: "Not necessary, so we didn't: didn't need to." },
+    { s: "You ___ me earlier! (should / tell)", answers: ["should have told"],
+      explain: "Criticism: should have + past participle." },
+    { s: "He ___ all his money. (shouldn't / spend)", answers: ["shouldn't have spent", "should not have spent"],
+      explain: "Criticism: shouldn't have." },
+    { s: "I ___. The film started late. (needn't / hurry)", answers: ["needn't have hurried", "need not have hurried"],
+      explain: "I hurried, but it wasn't necessary." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "My parents never allowed me to watch TV in the evening. → My parents never ___ TV in the evening. (LET)", answers: ["let me watch"],
       explain: "let + person + verb without to." },
     { s: "I'm sure she was feeling nervous. → She ___ nervous. (MUST)", answers: ["must have been feeling", "must have felt", "must have been"],
-      explain: "must have (been) + past participle / -ing for a past deduction." }
+      explain: "must have (been) + past participle / -ing for a past deduction." },
+    { s: "I'm sure they've left already. → They ___ already. (MUST)", answers: ["must have left"],
+      explain: "A confident guess about the past." },
+    { s: "It wasn't necessary for us to wait, but we did. → We ___. (WAITED)", answers: ["needn't have waited", "need not have waited"],
+      explain: "needn't have + past participle." },
+    { s: "Perhaps she didn't get my message. → She ___ my message. (MIGHT)", answers: ["might not have got", "might not have gotten", "might not have received"],
+      explain: "A possibility: might not have." },
+    { s: "We weren't permitted to use calculators. → We ___ calculators. (ALLOWED)", answers: ["weren't allowed to use", "were not allowed to use"],
+      explain: "be allowed to = be permitted to." },
+    { s: "It was a mistake not to book a table. → We ___ a table. (SHOULD)", answers: ["should have booked"],
+      explain: "A regret: should have + past participle." }
   ]
 }
 ];

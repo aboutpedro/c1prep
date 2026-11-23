@@ -143,5 +143,34 @@ window.SETS = [
     { s: "The ___ on the front page was about the storm.", answers: ["headline"],
       explain: "headline = the title of a newspaper article, in large letters." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Travel and holidays",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["accommodation", "book", "cancelled", "check in", "delayed", "destination", "excursion", "luggage", "passport", "resort", "sightseeing", "souvenir"],
+  items: [
+    { s: "Our flight was ___ for three hours because of the fog.", answers: ["delayed"],
+      explain: "delayed = later than planned." },
+    { s: "We need to ___ the hotel early because it's a busy weekend.", answers: ["book"],
+      explain: "book = reserve a room, a table or a ticket." },
+    { s: "You can't leave the country without a valid ___.", answers: ["passport"],
+      explain: "passport = the document you need to travel abroad." },
+    { s: "Please ___ at least two hours before your flight.", answers: ["check in", "check-in"],
+      explain: "check in = show your ticket and give your bags at the airport." },
+    { s: "How much ___ are you taking? – Just one suitcase.", answers: ["luggage"],
+      explain: "luggage = your bags and suitcases (uncountable)." },
+    { s: "We spent the morning ___ in the old town and took lots of photos.", answers: ["sightseeing"],
+      explain: "go sightseeing = visit the famous places." },
+    { s: "I bought a small ___ for my mum: a mug with a picture of the city.", answers: ["souvenir"],
+      explain: "souvenir = something you buy to remember a place." },
+    { s: "The price includes flights and ___ in a four-star hotel.", answers: ["accommodation"],
+      explain: "accommodation = a place to stay." },
+    { s: "Rome is a popular ___ for weekend breaks.", answers: ["destination"],
+      explain: "destination = the place you are travelling to." },
+    { s: "On the third day we went on an ___ to a volcano.", answers: ["excursion"],
+      explain: "excursion = a short trip, often organised for tourists." }
+  ]
 }
 ];

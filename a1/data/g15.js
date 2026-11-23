@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "was or were?",
-  intro: "Choose was or were. I, he, she, it → was; you, we, they → were.",
+  intro: "Choose or write was or were. I, he, she, it → was; you, we, they → were.",
   items: [
     { s: "I ___ at home yesterday.", options: ["was", "were", "am"], answer: 0,
       explain: "With I: was." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Ana and I ___ in the same class last year.", options: ["were", "was", "are"], answer: 0,
       explain: "Ana and I = we: were." },
     { s: "My first phone ___ very small.", options: ["was", "were", "is"], answer: 0,
-      explain: "My first phone = it: was." }
+      explain: "My first phone = it: was." },
+    { s: "My birthday party ___ great!", answers: ["was"],
+      explain: "It → was." },
+    { s: "The children ___ very tired.", answers: ["were"],
+      explain: "The children = they → were." },
+    { s: "I ___ at the doctor's this morning.", answers: ["was"],
+      explain: "I → was." },
+    { s: "Where ___ your keys? – In the car.", answers: ["were"],
+      explain: "Your keys = they → were." },
+    { s: "Mr Silva ___ my teacher last year.", answers: ["was"],
+      explain: "He → was." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "wasn't and weren't",
-  intro: "Write wasn't or weren't.",
+  intro: "Choose the correct option or write wasn't or weren't.",
   items: [
     { s: "I ___ hungry, so I didn't eat.", answers: ["wasn't"],
       explain: "With I: wasn't." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The tickets ___ expensive.", answers: ["weren't"],
       explain: "The tickets = they: weren't." },
     { s: "She ___ in the photo.", answers: ["wasn't"],
-      explain: "With she: wasn't." }
+      explain: "With she: wasn't." },
+    { s: "The food ___ good. I didn't like it.", options: ["wasn't", "weren't", "didn't"], answer: 0,
+      explain: "The food = it → wasn't." },
+    { s: "My friends ___ at school. They were ill.", options: ["weren't", "wasn't", "didn't"], answer: 0,
+      explain: "My friends = they → weren't." },
+    { s: "I ___ at home. I was at work.", options: ["wasn't", "weren't", "not was"], answer: 0,
+      explain: "I → wasn't." },
+    { s: "The doors ___ open. They were closed.", options: ["weren't", "wasn't", "aren't"], answer: 0,
+      explain: "The doors = they → weren't." },
+    { s: "Sorry, it ___ me! It was my brother!", options: ["wasn't", "weren't", "didn't"], answer: 0,
+      explain: "It → wasn't." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Questions and short answers",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ you at the party? – Yes, I was.", options: ["Were", "Was", "Did"], answer: 0,
       explain: "Question with you: Were you…?" },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Were you and your brother good at school? – Yes, ___.", options: ["we were", "they were", "you were"], answer: 0,
       explain: "You and your brother includes me: Yes, we were." },
     { s: "Who ___ that man with you?", options: ["was", "were", "did"], answer: 0,
-      explain: "That man = he: Who was…?" }
+      explain: "That man = he: Who was…?" },
+    { s: "___ at the match? (you) – Yes, I was.", answers: ["Were you"],
+      explain: "Question: Were + you…?" },
+    { s: "___ good? (the film) – No, it wasn't.", answers: ["Was the film"],
+      explain: "Question: Was + the film…?" },
+    { s: "Was she at home? – No, she ___.", answers: ["wasn't"],
+      explain: "Short answer: No, she wasn't." },
+    { s: "Were your parents happy? – Yes, they ___.", answers: ["were"],
+      explain: "Short answer: Yes, they were." },
+    { s: "Where ___ yesterday? (he)", answers: ["was he"],
+      explain: "Where + was + he?" }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Present or past?",
-  intro: "Choose the correct form. Look at the time words: now, today → present; yesterday, last week, in 2010 → past.",
+  intro: "Choose or write the correct form. Look at the time words: now, today → present; yesterday, last week, in 2010 → past.",
   items: [
     { s: "I ___ tired now.", options: ["am", "was", "were"], answer: 0,
       explain: "now → present: am." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "The weather ___ terrible last week.", options: ["was", "is", "were"], answer: 0,
       explain: "last week → past: was." },
     { s: "My sisters ___ students now. They're at university.", options: ["are", "were", "was"], answer: 0,
-      explain: "now → present: are." }
+      explain: "now → present: are." },
+    { s: "I ___ at home now.", answers: ["am"],
+      explain: "Now → present: am." },
+    { s: "I ___ at home last night.", answers: ["was"],
+      explain: "Last night → past: was." },
+    { s: "They ___ in London yesterday.", answers: ["were"],
+      explain: "Yesterday → past: were." },
+    { s: "She ___ twenty now.", answers: ["is"],
+      explain: "Now → present: is." },
+    { s: "We ___ very happy today!", answers: ["are"],
+      explain: "Today → present: are." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "was, were, wasn't, weren't",
-  intro: "Write was, were, wasn't or weren't.",
+  intro: "Choose the correct option or write was, were, wasn't or weren't.",
   items: [
     { s: "Yesterday ___ Sunday, so the shops were closed.", answers: ["was"],
       explain: "Yesterday = it: was." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Sorry, we ___ at the meeting. We didn't know about it.", answers: ["weren't"],
       explain: "We didn't know about it, so we weren't there." },
     { s: "How ___ the concert? – Amazing!", answers: ["was"],
-      explain: "The concert = it: How was…?" }
+      explain: "The concert = it: How was…?" },
+    { s: "___ it cold in Moscow? – Yes, very cold!", options: ["Was", "Were", "Did"], answer: 0,
+      explain: "It → Was it…?" },
+    { s: "The questions ___ easy.", options: ["were", "was", "did"], answer: 0,
+      explain: "The questions = they → were." },
+    { s: "I ___ in the park all afternoon.", options: ["was", "were", "did"], answer: 0,
+      explain: "I → was." },
+    { s: "My grandparents ___ born in Italy.", options: ["were", "was", "are"], answer: 0,
+      explain: "We say was/were born: they were born." },
+    { s: "Why ___ you at school yesterday?", options: ["weren't", "wasn't", "didn't"], answer: 0,
+      explain: "You → weren't." }
   ]
 }
 ];

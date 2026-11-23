@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "can or can't?",
-  intro: "Choose can or can't. Read the whole sentence first.",
+  intro: "Choose or write can or can't. Read the whole sentence first.",
   items: [
     { s: "I ___ swim. I learned when I was six.", options: ["can", "can't", "cans"], answer: 0,
       explain: "I learned to swim, so I can swim." },
@@ -24,7 +24,17 @@ window.SETS = [
     { s: "You ___ park here. It's for buses only.", options: ["can't", "can", "cans"], answer: 0,
       explain: "It's for buses only: you can't park." },
     { s: "Can you see the sea from your window? – Yes, I ___.", options: ["can", "can't", "cans"], answer: 0,
-      explain: "Yes → can. Yes, I can." }
+      explain: "Yes → can. Yes, I can." },
+    { s: "My baby sister is one. She ___ talk.", answers: ["can't"],
+      explain: "She is too young: can't." },
+    { s: "I ___ ride a horse. I have lessons every week.", answers: ["can"],
+      explain: "I have lessons, so I can." },
+    { s: "We ___ see the mountains from here. They're beautiful!", answers: ["can"],
+      explain: "We see them: can." },
+    { s: "Sorry, I ___ help you now. I'm very busy.", answers: ["can't"],
+      explain: "I'm busy: can't." },
+    { s: "Most dogs ___ swim.", answers: ["can"],
+      explain: "Dogs are able to swim: can." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Tom can ___ really fast.", options: ["run", "runs", "running"], answer: 0,
       explain: "After can: run (no -s, even with he)." },
     { s: "Can I ___ the window? It's hot.", options: ["open", "opens", "to open"], answer: 0,
-      explain: "After can: open." }
+      explain: "After can: open." },
+    { s: "Choose the right sentence (play): ___", options: ["She can play the piano.", "She can plays the piano.", "She can to play the piano."], answer: 0,
+      explain: "can + verb: no -s and no to." },
+    { s: "Choose the right sentence (swim): ___", options: ["My dog can swim.", "My dog cans swim.", "My dog can swimming."], answer: 0,
+      explain: "can never changes: can + swim." },
+    { s: "Choose the right sentence (help): ___", options: ["Can you help me?", "Do you can help me?", "Can you to help me?"], answer: 0,
+      explain: "Questions: Can + you + verb (no do)." },
+    { s: "Choose the right sentence (come): ___", options: ["He can't come today.", "He doesn't can come today.", "He can't comes today."], answer: 0,
+      explain: "Negative: can't + verb (no doesn't)." },
+    { s: "Choose the right sentence (speak): ___", options: ["I can speak French.", "I can speaking French.", "I can to speak French."], answer: 0,
+      explain: "can + speak." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Questions and short answers",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ you dance? – Yes, I can.", options: ["Can", "Do can", "Are"], answer: 0,
       explain: "Questions: Can + you + verb." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "How many languages ___ speak?", options: ["can you", "you can", "do can you"], answer: 0,
       explain: "How many languages + can + you + speak?" },
     { s: "Can I sit here? – Yes, ___.", options: ["of course", "you sit", "I can sit"], answer: 0,
-      explain: "Asking for permission. A friendly answer: Yes, of course." }
+      explain: "Asking for permission. A friendly answer: Yes, of course." },
+    { s: "___? (you / ski) – Yes, I can.", answers: ["Can you ski"],
+      explain: "Question: Can + you + verb." },
+    { s: "___? (your sister / drive) – No, she can't.", answers: ["Can your sister drive"],
+      explain: "Can + your sister + drive." },
+    { s: "Can your friends come? – Yes, they ___.", answers: ["can"],
+      explain: "Short answer: Yes, they can." },
+    { s: "Can he swim? – No, he ___.", answers: ["can't"],
+      explain: "Short answer: No, he can't." },
+    { s: "Where ___ a ticket? (I / buy)", answers: ["can I buy"],
+      explain: "Question word + can + I + verb." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Asking and answering",
-  intro: "Write can or can't.",
+  intro: "Choose the correct option or write can or can't.",
   items: [
     { s: "___ you help me with my bags, please?", answers: ["Can"],
       explain: "A question asking for help: Can you…?" },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Cats ___ see very well at night.", answers: ["can"],
       explain: "Cats see well in the dark: they can." },
     { s: "Can you swim? – No, I ___.", answers: ["can't"],
-      explain: "Short answer: No, I can't." }
+      explain: "Short answer: No, I can't." },
+    { s: "It's very dark. I ___ see anything!", options: ["can't", "can", "cans"], answer: 0,
+      explain: "It's dark, so I can't see." },
+    { s: "You ___ take photos in the museum. It's OK.", options: ["can", "can't", "cans"], answer: 0,
+      explain: "It's OK: can." },
+    { s: "___ you pass me the salt, please?", options: ["Can", "Do", "Are"], answer: 0,
+      explain: "Asking for something: Can you…?" },
+    { s: "Sorry, we ___ go out tonight. We have an exam tomorrow.", options: ["can't", "can", "don't can"], answer: 0,
+      explain: "Negative: can't (not don't can)." },
+    { s: "My grandpa is 90, but he ___ still walk to the shops.", options: ["can", "can't", "cans"], answer: 0,
+      explain: "He is able to: can." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "What can you do?",
-  intro: "Choose the best answer.",
+  intro: "Choose the best answer or write the missing words.",
   items: [
     { s: "Can I have a glass of water, please? – ___", options: ["Yes, of course.", "Yes, I can have.", "Yes, you have."], answer: 0,
       explain: "A polite answer to a request: Yes, of course." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Can I pay by card? – ___", options: ["Yes, of course.", "Yes, I can pay.", "Yes, you are."], answer: 0,
       explain: "In a shop: Yes, of course." },
     { s: "Can you spell your name? – ___", options: ["Yes, it's L-U-C-A-S.", "Yes, I spell.", "Yes, it can."], answer: 0,
-      explain: "We answer by spelling the name." }
+      explain: "We answer by spelling the name." },
+    { s: "Can I borrow your pen? – Yes, of ___.", answers: ["course"],
+      explain: "Yes, of course." },
+    { s: "Can you help me? – Yes, ___ problem.", answers: ["no"],
+      explain: "Yes, no problem." },
+    { s: "Can you come to my party? – Sorry, I ___. I'm on holiday.", answers: ["can't"],
+      explain: "Sorry, I can't." },
+    { s: "Can I sit here? – Yes, ___ can.", answers: ["you"],
+      explain: "Can I…? – Yes, you can." },
+    { s: "Can your brother speak English? – Yes, he ___.", answers: ["can"],
+      explain: "Short answer: Yes, he can." }
   ]
 }
 ];

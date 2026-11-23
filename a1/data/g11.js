@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "am, is or are + -ing",
-  intro: "Choose the correct form. The present continuous is am / is / are + verb-ing.",
+  intro: "Choose or write the correct form. The present continuous is am / is / are + verb-ing.",
   items: [
     { s: "I ___ reading a good book.", options: ["am", "is", "are"], answer: 0,
       explain: "With I: am reading." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Tom ___ sleeping. Be quiet!", options: ["is", "are", "am"], answer: 0,
       explain: "Tom = he: is sleeping." },
     { s: "Look! The children ___ dancing.", options: ["are", "is", "am"], answer: 0,
-      explain: "The children = they: are dancing." }
+      explain: "The children = they: are dancing." },
+    { s: "My brother ___ a video game. (play)", answers: ["is playing"],
+      explain: "He → is + playing." },
+    { s: "We ___ to the station. (walk)", answers: ["are walking"],
+      explain: "We → are + walking." },
+    { s: "I ___ my new shoes today. (wear)", answers: ["am wearing"],
+      explain: "I → am + wearing." },
+    { s: "The dogs ___. (bark)", answers: ["are barking"],
+      explain: "The dogs = they → are + barking." },
+    { s: "Look! Dad ___ the car. (wash)", answers: ["is washing"],
+      explain: "Dad = he → is + washing." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Spelling: -ing",
-  intro: "Write the verb in brackets + -ing.",
+  intro: "Choose the correct option or write the verb in brackets + -ing.",
   items: [
     { s: "She's ___ (make) a cake.", answers: ["making"],
       explain: "Verb ending in -e: take away the e. make → making." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I'm ___ (get) dressed. Wait a minute!", answers: ["getting"],
       explain: "get → getting (double t)." },
     { s: "She's ___ (dance) with her friends.", answers: ["dancing"],
-      explain: "Verb ending in -e: take away the e. dance → dancing." }
+      explain: "Verb ending in -e: take away the e. dance → dancing." },
+    { s: "The bus is ___. Run!", options: ["coming", "comeing", "comming"], answer: 0,
+      explain: "Verbs ending in -e: drop the e, add -ing." },
+    { s: "I'm ___ for my keys.", options: ["looking", "lookking", "lookeing"], answer: 0,
+      explain: "Most verbs: just add -ing." },
+    { s: "We're ___ a game.", options: ["playing", "plaing", "playying"], answer: 0,
+      explain: "play → playing (the y stays)." },
+    { s: "The bus is ___ here.", options: ["stopping", "stoping", "stopeing"], answer: 0,
+      explain: "Short verb, one vowel + one consonant: double it. stop → stopping." },
+    { s: "We're ___ a photo.", options: ["taking", "takeing", "takking"], answer: 0,
+      explain: "take → taking (drop the e)." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Negatives and questions",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I ___ watching TV. You can turn it off.", options: ["'m not", "isn't", "don't"], answer: 0,
       explain: "With I: I'm not watching." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Are you having fun? – Yes, ___!", options: ["we are", "we're", "we do"], answer: 0,
       explain: "Short answer: Yes, we are." },
     { s: "The phone ___ working. Can I use yours?", options: ["isn't", "aren't", "doesn't"], answer: 0,
-      explain: "The phone = it: isn't working." }
+      explain: "The phone = it: isn't working." },
+    { s: "I ___. I'm just resting. (not / sleep)", answers: ["am not sleeping"],
+      explain: "I → am not + sleeping." },
+    { s: "___ to the party? (they / come)", answers: ["Are they coming"],
+      explain: "Question: Are + they + coming." },
+    { s: "She ___ a coat. She's cold! (not / wear)", answers: ["isn't wearing"],
+      explain: "She → isn't + wearing." },
+    { s: "What ___? (he / eat)", answers: ["is he eating"],
+      explain: "What + is + he + eating." },
+    { s: "Are you working today? – No, I ___.", answers: ["am not"],
+      explain: "Short answer: No, I'm not." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Present simple or present continuous?",
-  intro: "Choose the correct form. Present simple → habits (every day, usually). Present continuous → now, at the moment.",
+  intro: "Choose or write the correct form. Present simple → habits (every day, usually). Present continuous → now, at the moment.",
   items: [
     { s: "I ___ to school every day.", options: ["walk", "'m walking", "walks"], answer: 0,
       explain: "every day = a habit: present simple." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "He ___ football on Saturdays.", options: ["plays", "is playing", "play"], answer: 0,
       explain: "on Saturdays = a habit: present simple." },
     { s: "Where's Ana? – She ___ a shower.", options: ["'s having", "has", "have"], answer: 0,
-      explain: "Where is she now? Present continuous." }
+      explain: "Where is she now? Present continuous." },
+    { s: "She ___ dinner now. Come and eat soon! (cook)", answers: ["is cooking"],
+      explain: "Now → present continuous." },
+    { s: "He ___ a book every night. (read)", answers: ["reads"],
+      explain: "Every night is a habit → present simple." },
+    { s: "Listen! Someone ___. (sing)", answers: ["is singing"],
+      explain: "Listen! → it's happening now: present continuous." },
+    { s: "We usually ___ lunch at one. (have)", answers: ["have"],
+      explain: "Usually is a habit → present simple." },
+    { s: "Shh! The children ___ their homework. (do)", answers: ["are doing"],
+      explain: "Shh! → now: present continuous." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Write the present continuous",
-  intro: "Write the verb in brackets in the present continuous: am / is / are + -ing.",
+  intro: "Choose the correct option or write the verb in brackets in the present continuous: am / is / are + -ing.",
   items: [
     { s: "Shh! I ___ (watch) a film.", answers: ["am watching"],
       explain: "I + am + watching." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "___ (he / sleep)? Is he OK?", answers: ["Is he sleeping"],
       explain: "Question: Is + he + sleeping?" },
     { s: "Mum ___ (make) pancakes!", answers: ["is making", "'s making"],
-      explain: "Mum = she: is making. make → making." }
+      explain: "Mum = she: is making. make → making." },
+    { s: "Look! The boy ___ the tree.", options: ["is climbing", "climbs", "climbing"], answer: 0,
+      explain: "Look! → now: is climbing." },
+    { s: "Why ___ you wearing a coat? It's hot!", options: ["are", "do", "is"], answer: 0,
+      explain: "Present continuous question: are you wearing." },
+    { s: "I ___ eating meat today.", options: ["'m not", "don't", "isn't"], answer: 0,
+      explain: "I → I'm not eating." },
+    { s: "___ she working at home this week?", options: ["Is", "Does", "Are"], answer: 0,
+      explain: "She → Is she working…?" },
+    { s: "They ___ talking. They're listening.", options: ["aren't", "don't", "isn't"], answer: 0,
+      explain: "They → aren't talking." }
   ]
 }
 ];

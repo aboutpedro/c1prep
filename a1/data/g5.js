@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "have got or has got?",
-  intro: "Choose the correct form. I, you, we, they → have got; he, she, it → has got.",
+  intro: "Choose or write the correct form. I, you, we, they → have got; he, she, it → has got.",
   items: [
     { s: "I ___ two sisters.", options: ["have got", "has got", "am got"], answer: 0,
       explain: "With I: have got." },
@@ -24,7 +24,17 @@ window.SETS = [
     { s: "My grandparents ___ a small flat.", options: ["have got", "has got", "is got"], answer: 0,
       explain: "My grandparents = they: have got." },
     { s: "It ___ four legs.", options: ["has got", "have got", "is got"], answer: 0,
-      explain: "With it: has got." }
+      explain: "With it: has got." },
+    { s: "Mr and Mrs Lee ___ a shop.", answers: ["have got"],
+      explain: "Mr and Mrs Lee = they → have got." },
+    { s: "This phone ___ a good camera.", answers: ["has got"],
+      explain: "This phone = it → has got." },
+    { s: "I ___ a lot of friends.", answers: ["have got"],
+      explain: "I → have got." },
+    { s: "My cat ___ green eyes.", answers: ["has got"],
+      explain: "My cat = it → has got." },
+    { s: "Ana and I ___ the same jacket.", answers: ["have got"],
+      explain: "Ana and I = we → have got." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ two cats.", options: ["My aunt's got", "My aunt've got", "My aunts got"], answer: 0,
       explain: "My aunt has got → my aunt's got." },
     { s: "___ a car, but we've got bikes.", options: ["We haven't got", "We hasn't got", "We aren't got"], answer: 0,
-      explain: "The negative of we have got: we haven't got." }
+      explain: "The negative of we have got: we haven't got." },
+    { s: "I have got a cold. → ___ a cold.", options: ["I've got", "I's got", "I'm got"], answer: 0,
+      explain: "I have got → I've got." },
+    { s: "She has got a new bike. → ___ a new bike.", options: ["She's got", "She've got", "She're got"], answer: 0,
+      explain: "She has got → She's got." },
+    { s: "They have got two dogs. → ___ two dogs.", options: ["They've got", "They's got", "They're got"], answer: 0,
+      explain: "They have got → They've got." },
+    { s: "He has got a cousin in Canada. → ___ a cousin in Canada.", options: ["He's got", "He've got", "He got's"], answer: 0,
+      explain: "He has got → He's got." },
+    { s: "We have got a big family. → ___ a big family.", options: ["We've got", "We's got", "We're got"], answer: 0,
+      explain: "We have got → We've got." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Negatives",
-  intro: "Write the negative: haven't got or hasn't got.",
+  intro: "Choose the correct option or write the negative: haven't got or hasn't got.",
   items: [
     { s: "I ___ a car. I go to work by bus.", answers: ["haven't got"],
       explain: "I → haven't got." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "My parents ___ a TV in their bedroom.", answers: ["haven't got"],
       explain: "My parents = they → haven't got." },
     { s: "Sorry, I ___ any money.", answers: ["haven't got"],
-      explain: "I → haven't got." }
+      explain: "I → haven't got." },
+    { s: "My brother ___ a phone. He's only eight.", options: ["hasn't got", "haven't got", "hasn't"], answer: 0,
+      explain: "He → hasn't got." },
+    { s: "We ___ any bread. Can you buy some?", options: ["haven't got", "hasn't got", "don't got"], answer: 0,
+      explain: "We → haven't got." },
+    { s: "This room ___ a window. It's very dark.", options: ["hasn't got", "haven't got", "isn't got"], answer: 0,
+      explain: "This room = it → hasn't got." },
+    { s: "I ___ a brother, but I've got two sisters.", options: ["haven't got", "hasn't got", "not got"], answer: 0,
+      explain: "I → haven't got." },
+    { s: "The children ___ their books today.", options: ["haven't got", "hasn't got", "aren't got"], answer: 0,
+      explain: "The children = they → haven't got." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Questions and short answers",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ you got a pet? – Yes, I have.", options: ["Have", "Has", "Are"], answer: 0,
       explain: "Questions: Have you got…?" },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Have you and Pedro got a car? – Yes, ___.", options: ["we have", "they have", "you have"], answer: 0,
       explain: "You and Pedro includes me: Yes, we have." },
     { s: "What ___ you got in your bag?", options: ["have", "has", "are"], answer: 0,
-      explain: "With you: What have you got…?" }
+      explain: "With you: What have you got…?" },
+    { s: "___ a bike? (you) – Yes, I have.", answers: ["Have you got"],
+      explain: "Question: Have + you + got." },
+    { s: "___ a cat? (she) – No, she hasn't.", answers: ["Has she got"],
+      explain: "Question: Has + she + got." },
+    { s: "Has your school got a library? – Yes, it ___.", answers: ["has"],
+      explain: "Short answer: Yes, it has." },
+    { s: "Have your cousins got a car? – No, they ___.", answers: ["haven't"],
+      explain: "Short answer: No, they haven't." },
+    { s: "How many brothers ___? (Leo) – Three.", answers: ["has Leo got"],
+      explain: "Question word + has + Leo + got." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "have got: mixed practice",
-  intro: "Write one word in each gap: have, has, haven't, hasn't or got.",
+  intro: "Choose the correct option or write one word in each gap: have, has, haven't, hasn't or got.",
   items: [
     { s: "I've ___ a cold.", answers: ["got"],
       explain: "have got → I've got." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Has she got a sister? – Yes, she ___.", answers: ["has"],
       explain: "Short answer: Yes, she has." },
     { s: "Have you got a car? – No, I ___.", answers: ["haven't"],
-      explain: "Short answer: No, I haven't." }
+      explain: "Short answer: No, I haven't." },
+    { s: "My sister ___ got a new job! She's very happy.", options: ["has", "have", "is"], answer: 0,
+      explain: "She → has got." },
+    { s: "They haven't got a car, but they've ___ two bikes.", options: ["got", "get", "gotten"], answer: 0,
+      explain: "have got: they've got." },
+    { s: "___ your parents got a garden?", options: ["Have", "Has", "Do"], answer: 0,
+      explain: "Your parents = they → Have…got?" },
+    { s: "I'm sorry, I haven't ___ a pen.", options: ["got", "get", "have"], answer: 0,
+      explain: "haven't got." },
+    { s: "Has the hotel got a pool? – No, it ___.", options: ["hasn't", "haven't", "isn't"], answer: 0,
+      explain: "Short answer: No, it hasn't." }
   ]
 }
 ];

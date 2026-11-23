@@ -1,9 +1,9 @@
 window.SETS = [
 /* ---------------- Set 1 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "a or an?",
-  intro: "Write a or an. We use an before a vowel sound (a, e, i, o, u): an apple, an hour.",
+  intro: "Choose the correct option or write a or an. We use an before a vowel sound (a, e, i, o, u): an apple, an hour.",
   items: [
     { s: "I've got ___ brother and a sister.", answers: ["a"],
       explain: "brother starts with a consonant sound: a brother." },
@@ -24,7 +24,17 @@ window.SETS = [
     { s: "Do you want ___ ice cream?", answers: ["an"],
       explain: "ice starts with a vowel sound: an ice cream." },
     { s: "My dad is ___ taxi driver.", answers: ["a"],
-      explain: "taxi starts with a consonant sound: a taxi driver." }
+      explain: "taxi starts with a consonant sound: a taxi driver." },
+    { s: "I need ___ umbrella. It's raining!", options: ["an", "a"], answer: 0,
+      explain: "Umbrella starts with a vowel sound: an." },
+    { s: "He's ___ honest man.", options: ["an", "a"], answer: 0,
+      explain: "In honest, the h is silent, so it starts with a vowel sound: an." },
+    { s: "It's ___ uniform.", options: ["a", "an"], answer: 0,
+      explain: "Uniform starts with a 'you' sound: a." },
+    { s: "I've got ___ idea!", options: ["an", "a"], answer: 0,
+      explain: "Idea starts with a vowel sound: an." },
+    { s: "Wait ___ minute, please.", options: ["a", "an"], answer: 0,
+      explain: "Minute starts with a consonant sound: a." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "We live in ___ Brazil.", options: ["– (nothing)", "a", "an"], answer: 0,
       explain: "No a/an before the names of countries." },
     { s: "He's got ___ umbrella.", options: ["an", "a", "– (nothing)"], answer: 0,
-      explain: "umbrella starts with a vowel sound: an umbrella." }
+      explain: "umbrella starts with a vowel sound: an umbrella." },
+    { s: "Choose the right sentence about a job: ___", options: ["She's a doctor.", "She's doctor.", "She's an doctor."], answer: 0,
+      explain: "Jobs need a/an: She's a doctor." },
+    { s: "Choose the right sentence with a plural: ___", options: ["I've got two cats.", "I've got a two cats.", "I've got an two cats."], answer: 0,
+      explain: "No a/an with plurals." },
+    { s: "Choose the right sentence with a name: ___", options: ["This is Lucas.", "This is a Lucas.", "This is an Lucas."], answer: 0,
+      explain: "No a/an before a name." },
+    { s: "Choose the right sentence with a country: ___", options: ["I'm from Spain.", "I'm from a Spain.", "I'm from the Spain."], answer: 0,
+      explain: "No article with most countries." },
+    { s: "Choose the right sentence about one thing: ___", options: ["I've got an apple.", "I've got apple.", "I've got a apple."], answer: 0,
+      explain: "One thing needs a/an; apple starts with a vowel: an apple." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "a/an or the?",
-  intro: "Choose a/an or the. We use a/an the first time we talk about something, and the when we know which one.",
+  intro: "Choose or write a/an or the. We use a/an the first time we talk about something, and the when we know which one.",
   items: [
     { s: "I've got ___ cat. The cat's name is Kiki.", options: ["a", "the", "an"], answer: 0,
       explain: "The first time we talk about the cat: a cat." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I bought a shirt and ___ jacket. The jacket is blue.", options: ["a", "the", "an"], answer: 0,
       explain: "The first time we talk about the jacket: a jacket." },
     { s: "Can you turn off ___ TV?", options: ["the", "a", "an"], answer: 0,
-      explain: "The TV in this room. We know which one: the TV." }
+      explain: "The TV in this room. We know which one: the TV." },
+    { s: "I've got ___ new phone. The phone is black.", answers: ["a"],
+      explain: "The first time we talk about it: a." },
+    { s: "There's ___ old man at the door.", answers: ["an"],
+      explain: "The first time, and old starts with a vowel: an." },
+    { s: "___ sky is very blue today.", answers: ["The"],
+      explain: "There is only one sky: the." },
+    { s: "Can you pass me ___ salt, please?", answers: ["the"],
+      explain: "We both know which salt (on the table): the." },
+    { s: "I want ___ egg for breakfast.", answers: ["an"],
+      explain: "One egg, and egg starts with a vowel: an." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Phrases with and without the",
-  intro: "Choose the correct option. Some phrases have no article: at home, at work, by bus, have breakfast.",
+  intro: "Choose the correct option or write the missing words. Some phrases have no article: at home, at work, by bus, have breakfast.",
   items: [
     { s: "I go to work ___.", options: ["by bus", "by the bus", "by a bus"], answer: 0,
       explain: "With transport we say by + no article: by bus, by car, by train." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I listen to ___ in the car.", options: ["the radio", "radio", "a radio"], answer: 0,
       explain: "We say listen to the radio." },
     { s: "My dad goes to ___ at 7 a.m.", options: ["work", "the work", "a work"], answer: 0,
-      explain: "go to work, be at work (no article)." }
+      explain: "go to work, be at work (no article)." },
+    { s: "We go to work ___. (car)", answers: ["by car"],
+      explain: "by + transport, no article: by car." },
+    { s: "My children go ___ at 8 a.m. (school)", answers: ["to school"],
+      explain: "go to school, no article." },
+    { s: "Is your dad ___? (home)", answers: ["at home"],
+      explain: "at home, no article." },
+    { s: "I'm tired. I go ___ at ten o'clock. (bed)", answers: ["to bed"],
+      explain: "go to bed, no article." },
+    { s: "My sister plays ___. (violin)", answers: ["the violin"],
+      explain: "Musical instruments: play the violin." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "a, an, the or nothing",
-  intro: "Choose a, an, the or – (no word).",
+  intro: "Choose or write a, an or the, or choose – (no word).",
   items: [
     { s: "There's ___ bird in the garden.", options: ["a", "an", "the", "– (nothing)"], answer: 0,
       explain: "The first time we talk about it, one bird: a." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "___ Tokyo is a very big city.", options: ["– (nothing)", "A", "An", "The"], answer: 0,
       explain: "No article before the names of cities." },
     { s: "I play ___ piano.", options: ["the", "a", "an"], answer: 0,
-      explain: "Musical instruments: play the piano." }
+      explain: "Musical instruments: play the piano." },
+    { s: "I'm reading ___ good book.", answers: ["a"],
+      explain: "One book, first time: a." },
+    { s: "She's got ___ old bike.", answers: ["an"],
+      explain: "Old starts with a vowel sound: an." },
+    { s: "Where's ___ remote control?", answers: ["the"],
+      explain: "We both know which one: the." },
+    { s: "My uncle is ___ artist.", answers: ["an"],
+      explain: "A job, and artist starts with a vowel: an." },
+    { s: "We stayed at ___ hotel near the beach.", answers: ["a", "the"],
+      explain: "One hotel, first time: a." }
   ]
 }
 ];

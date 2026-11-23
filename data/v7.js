@@ -139,5 +139,33 @@ window.SETS = [
     { s: "The changes were ___ (VIRTUAL) unnoticed by the public.", answers: ["virtually"],
       explain: "virtual → virtually (= almost)." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Science and research",
+  intro: "Choose the word or phrase that best fits the gap.",
+  items: [
+    { s: "The researchers ___ an experiment to test the theory.", options: ["carried out", "made out", "carried on", "put out"], answer: 0,
+      explain: "carry out an experiment = do it." },
+    { s: "The results ___ the hypothesis that sleep improves memory.", options: ["support", "hold", "stand", "lean"], answer: 0,
+      explain: "support a hypothesis = show it may be true." },
+    { s: "Scientists have made a major ___ in cancer research.", options: ["breakthrough", "breakdown", "break-in", "outbreak"], answer: 0,
+      explain: "a breakthrough = an important discovery." },
+    { s: "The findings were published in a ___ journal.", options: ["peer-reviewed", "peer-checked", "well-viewed", "self-reviewed"], answer: 0,
+      explain: "peer-reviewed = checked by other experts before publication." },
+    { s: "More research is needed before we can ___ any firm conclusions.", options: ["draw", "make up", "pull", "take out"], answer: 0,
+      explain: "draw a conclusion." },
+    { s: "The study ___ 2,000 participants over ten years.", options: ["involved", "consisted", "included in", "composed"], answer: 0,
+      explain: "involve = include as a part." },
+    { s: "There is no ___ evidence that the drug works.", options: ["conclusive", "concluding", "concluded", "conclusion"], answer: 0,
+      explain: "conclusive evidence = evidence that proves something." },
+    { s: "The theory was later ___ by new evidence.", options: ["disproved", "disapproved", "disagreed", "displaced"], answer: 0,
+      explain: "disprove = show something is false. disapprove = not like." },
+    { s: "The team is ___ the effects of climate change on coral reefs.", options: ["investigating", "inventing", "interviewing", "involving"], answer: 0,
+      explain: "investigate = study carefully to find out the facts." },
+    { s: "The experiment had to be ___ because the samples were contaminated.", options: ["repeated", "reminded", "replaced", "renewed"], answer: 0,
+      explain: "repeat an experiment = do it again." }
+  ]
 }
 ];

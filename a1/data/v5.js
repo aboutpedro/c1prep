@@ -140,5 +140,34 @@ window.SETS = [
     { s: "I ___ a film on my laptop.", options: ["watch", "look", "see at"], answer: 0,
       explain: "We watch a film." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Sports",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["basketball", "chess", "cycling", "football", "golf", "gym", "running", "skiing", "surfing", "swimming", "tennis", "volleyball"],
+  items: [
+    { s: "You play ___ with a ball and your feet.", answers: ["football"],
+      explain: "Football: you kick the ball." },
+    { s: "You need a pool or the sea for ___.", answers: ["swimming"],
+      explain: "Swimming: in the water." },
+    { s: "You play ___ with a racket and a ball, over a net.", answers: ["tennis"],
+      explain: "Tennis: a racket, a ball and a net." },
+    { s: "In ___, you throw the ball into a high basket.", answers: ["basketball"],
+      explain: "Basketball: a ball and a basket." },
+    { s: "You need a bike for ___.", answers: ["cycling"],
+      explain: "Cycling = riding a bike." },
+    { s: "You need snow and mountains for ___.", answers: ["skiing"],
+      explain: "Skiing: on snow." },
+    { s: "In ___, you stand on a board and ride big waves.", answers: ["surfing"],
+      explain: "Surfing: a board and waves." },
+    { s: "In ___, you hit a small white ball into a hole.", answers: ["golf"],
+      explain: "Golf: a small ball and a hole." },
+    { s: "My dad goes ___ in the park every morning. He's very fast!", answers: ["running"],
+      explain: "go running = run for exercise." },
+    { s: "In ___, you hit the ball over a high net with your hands.", answers: ["volleyball"],
+      explain: "Volleyball: your hands and a high net." }
+  ]
 }
 ];

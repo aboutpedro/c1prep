@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "who or which?",
-  intro: "Choose who or which. Who is for people; which is for things and animals.",
+  intro: "Choose or write who or which. Who is for people; which is for things and animals.",
   items: [
     { s: "The woman ___ lives next door is a doctor.", options: ["who", "which"], answer: 0,
       explain: "A woman is a person: who." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Where's the cake ___ was on the table?", options: ["which", "who"], answer: 0,
       explain: "A cake is a thing: which." },
     { s: "I have a friend ___ speaks four languages.", options: ["who", "which"], answer: 0,
-      explain: "A friend is a person: who." }
+      explain: "A friend is a person: who." },
+    { s: "The man ___ sold me the car was very friendly.", answers: ["who", "that"],
+      explain: "A person → who (or that)." },
+    { s: "I like music ___ makes me dance.", answers: ["which", "that"],
+      explain: "A thing → which (or that)." },
+    { s: "The dog ___ lives next door barks all night.", answers: ["which", "that", "who"],
+      explain: "An animal → which (or that)." },
+    { s: "Do you know anyone ___ can fix computers?", answers: ["who", "that"],
+      explain: "A person → who." },
+    { s: "She's got a cat ___ sleeps all day.", answers: ["which", "that", "who"],
+      explain: "An animal → which." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "who, which or where?",
-  intro: "Choose who, which or where. Where is for places: the town where I live.",
+  intro: "Choose or write who, which or where. Where is for places: the town where I live.",
   items: [
     { s: "This is the restaurant ___ we had our first date.", options: ["where", "which", "who"], answer: 0,
       explain: "We had our date in the restaurant (a place where something happens): where." },
@@ -52,7 +62,17 @@ window.SETS = [
     { s: "This is the key ___ opens the front door.", options: ["which", "where", "who"], answer: 0,
       explain: "A key is a thing: which." },
     { s: "I'd like to live in a place ___ it's sunny all year.", options: ["where", "which", "who"], answer: 0,
-      explain: "A place where something is true: where." }
+      explain: "A place where something is true: where." },
+    { s: "This is the park ___ I learned to ride a bike.", answers: ["where"],
+      explain: "A place → where." },
+    { s: "He's the boy ___ broke the window.", answers: ["who", "that"],
+      explain: "A person → who." },
+    { s: "Is that the shop ___ sells cheap phones?", answers: ["which", "that"],
+      explain: "The shop does something (sells) → which." },
+    { s: "The beach ___ we went last summer was beautiful.", answers: ["where"],
+      explain: "A place → where." },
+    { s: "Lisbon is a city ___ you can eat great fish.", answers: ["where"],
+      explain: "A place → where." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "She's the friend ___ I went to Spain with.", options: ["that", "what", "which"], answer: 0,
       explain: "That (or who) for a person." },
     { s: "There's something ___ I need to tell you.", options: ["that", "what", "who"], answer: 0,
-      explain: "After something, everything, nothing, we use that." }
+      explain: "After something, everything, nothing, we use that." },
+    { s: "Choose the right sentence (the film): ___", options: ["The film that we saw was great.", "The film what we saw was great.", "The film where we saw was great."], answer: 0,
+      explain: "that (not what) after a noun." },
+    { s: "Choose the right sentence (a friend): ___", options: ["I have a friend what plays the drums.", "I have a friend that plays the drums.", "I have a friend which plays the drums."], answer: 1,
+      explain: "A person: that or who, never what." },
+    { s: "Choose the right sentence (the bag): ___", options: ["Where's the bag what I bought?", "Where's the bag who I bought?", "Where's the bag that I bought?"], answer: 2,
+      explain: "A thing: that or which." },
+    { s: "Choose the right sentence (all): ___", options: ["All what I want is a holiday.", "All that I want is a holiday.", "All who I want is a holiday."], answer: 1,
+      explain: "After all: that, not what." },
+    { s: "Choose the right sentence (the town): ___", options: ["This is the town what I grew up.", "This is the town where I grew up.", "This is the town that I grew up."], answer: 1,
+      explain: "A place: where." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Join the sentences",
-  intro: "Join the two sentences. Write who, which, that or where in the gap.",
+  intro: "Join the two sentences: choose the correct option or write who, which, that or where in the gap.",
   items: [
     { s: "I have a cousin. She lives in Canada. → I have a cousin ___ lives in Canada.", answers: ["who", "that"], width: 8,
       explain: "She becomes who (or that). Don't repeat she." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "That's the park. I go running there. → That's the park ___ I go running.", answers: ["where"], width: 8,
       explain: "There becomes where." },
     { s: "The woman was very kind. She helped me. → The woman ___ helped me was very kind.", answers: ["who", "that"], width: 8,
-      explain: "She becomes who (or that), and the clause goes after the woman." }
+      explain: "She becomes who (or that), and the clause goes after the woman." },
+    { s: "That's the cinema. We saw the film there. → That's the cinema ___ we saw the film.", options: ["where", "which", "who"], answer: 0,
+      explain: "there → where." },
+    { s: "I have a neighbour. He plays the trumpet. → I have a neighbour ___ plays the trumpet.", options: ["which", "where", "who"], answer: 2,
+      explain: "A person → who." },
+    { s: "She bought a dress. It was too small. → She bought a dress ___ was too small.", options: ["which", "who", "where"], answer: 0,
+      explain: "A thing → which." },
+    { s: "I know a café. They make great cakes there. → I know a café ___ they make great cakes.", options: ["which", "where", "who"], answer: 1,
+      explain: "there → where." },
+    { s: "We saw a man. He was singing in the street. → We saw a man ___ was singing in the street.", options: ["which", "who", "where"], answer: 1,
+      explain: "A person → who." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "What is it?",
-  intro: "Complete the definitions with who, which, that or where.",
+  intro: "Choose the correct option or complete the definitions with who, which, that or where.",
   items: [
     { s: "A teacher is a person ___ works in a school.", answers: ["who", "that"], width: 8,
       explain: "A person: who (or that)." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "An umbrella is something ___ keeps you dry in the rain.", answers: ["which", "that"], width: 8,
       explain: "A thing: which (or that)." },
     { s: "A bakery is a shop ___ you can buy bread and cakes.", answers: ["where"], width: 8,
-      explain: "You buy bread there: where." }
+      explain: "You buy bread there: where." },
+    { s: "A pilot is a person ___ flies planes.", options: ["which", "where", "who"], answer: 2,
+      explain: "A person → who." },
+    { s: "A museum is a place ___ you can see old things.", options: ["where", "which", "who"], answer: 0,
+      explain: "A place → where." },
+    { s: "A clock is something ___ tells the time.", options: ["who", "which", "where"], answer: 1,
+      explain: "A thing → which." },
+    { s: "A chef is someone ___ cooks in a restaurant.", options: ["where", "who", "which"], answer: 1,
+      explain: "A person → who." },
+    { s: "A beach is a place ___ people swim and sunbathe.", options: ["which", "who", "where"], answer: 2,
+      explain: "A place → where." }
   ]
 }
 ];

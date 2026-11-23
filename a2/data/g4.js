@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "going to",
-  intro: "Complete the sentences with the correct form of going to and the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct form of going to and the verbs in brackets.",
   items: [
     { s: "We ___ (visit) my grandparents this weekend.", answers: ["are going to visit"],
       explain: "Plans and intentions: am/is/are + going to + verb." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Leo ___ (learn) to play the drums.", answers: ["is going to learn"],
       explain: "An intention: is going to + learn." },
     { s: "Where ___ (they / stay) in New York?", answers: ["are they going to stay"],
-      explain: "Where + are + they + going to + stay?" }
+      explain: "Where + are + they + going to + stay?" },
+    { s: "Look! The bus ___ leave without us!", options: ["will going to", "is going to", "going to"], answer: 1,
+      explain: "You can see it coming: is going to." },
+    { s: "We ___ have a party on Saturday.", options: ["is going to", "are going to", "going"], answer: 1,
+      explain: "We → are going to." },
+    { s: "I'm not ___ to bed late tonight.", options: ["go to", "going to go", "going go"], answer: 1,
+      explain: "not + going to + verb." },
+    { s: "___ you going to buy that dress?", options: ["Do", "Will", "Are"], answer: 2,
+      explain: "Question: Are you going to…?" },
+    { s: "She ___ going to play tennis today. Her arm hurts.", options: ["doesn't", "isn't", "won't"], answer: 1,
+      explain: "She → isn't going to." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "will and won't",
-  intro: "Complete the sentences with will or won't and the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with will or won't and the verbs in brackets.",
   items: [
     { s: "I'm sure you ___ (pass) the exam.", answers: ["will pass"],
       explain: "Predictions with I'm sure / I think: will + verb." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Hurry up! We ___ (not / get) there on time.", answers: ["won't get"],
       explain: "A prediction: won't + verb." },
     { s: "I promise I ___ (call) you when I arrive.", answers: ["will call"],
-      explain: "Promises: will + verb." }
+      explain: "Promises: will + verb." },
+    { s: "I think Brazil ___ win the match.", options: ["are", "is going", "will"], answer: 2,
+      explain: "A prediction with I think: will." },
+    { s: "'I'm hungry.' 'I ___ make you a sandwich.'", options: ["'m", "do", "'ll"], answer: 2,
+      explain: "A decision at the moment of speaking: I'll." },
+    { s: "Don't worry. It ___ hurt.", options: ["doesn't will", "isn't", "won't"], answer: 2,
+      explain: "Negative: won't + verb." },
+    { s: "___ you open the door for me, please?", options: ["Are", "Do", "Will"], answer: 2,
+      explain: "A request: Will you…?" },
+    { s: "I'm sure she ___ like the present.", options: ["is", "'ll", "does"], answer: 1,
+      explain: "I'm sure + will." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "will or going to?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "'There's no milk.' 'Oh, I ___ get some.'", options: ["will", "am going to"], answer: 0,
       explain: "The speaker decides now, at the moment of speaking: will." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "'What are your plans for the summer?' 'We ___ visit our cousins in Chile.'", options: ["will", "are going to"], answer: 1,
       explain: "Plans: going to." },
     { s: "'I can't open this jar.' 'Give it to me. I ___ do it.'", options: ["will", "am going to"], answer: 0,
-      explain: "An offer made at the moment of speaking: will ('ll)." }
+      explain: "An offer made at the moment of speaking: will ('ll)." },
+    { s: "'I've got a headache.' 'Sit down. I ___ you some water.' (get)", answers: ["will get"],
+      explain: "A decision now, an offer: will." },
+    { s: "We've booked the hotel. We ___ for a week. (stay)", answers: ["are going to stay", "are staying"],
+      explain: "A plan we made before: going to." },
+    { s: "Watch out! You ___ that car! (hit)", answers: ["are going to hit"],
+      explain: "We can see it is about to happen: going to." },
+    { s: "'Shall we go to the beach?' 'Good idea! I ___ the drinks.' (bring)", answers: ["will bring"],
+      explain: "A decision now: will." },
+    { s: "I've made up my mind. I ___ medicine. (study)", answers: ["am going to study"],
+      explain: "A decision made before: going to." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Present continuous for arrangements",
-  intro: "These are fixed plans with a time and place. Complete the sentences with the present continuous form of the verbs in brackets.",
+  intro: "These are fixed plans with a time and place. Choose the correct option or complete the sentences with the present continuous form of the verbs in brackets.",
   items: [
     { s: "I ___ (meet) Julia for lunch tomorrow.", answers: ["am meeting"],
       explain: "Arrangements (we know when and with whom): present continuous." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "The new students ___ (arrive) next Monday.", answers: ["are arriving"],
       explain: "The new students = they: are arriving." },
     { s: "We ___ (see) the dentist at 4.30 this afternoon.", answers: ["are seeing"],
-      explain: "An appointment: present continuous." }
+      explain: "An appointment: present continuous." },
+    { s: "What time ___ you meeting Ana tomorrow?", options: ["do", "are", "will"], answer: 1,
+      explain: "Arrangement: present continuous, are you meeting." },
+    { s: "I ___ to the dentist on Tuesday at 10.", options: ["go", "will going", "'m going"], answer: 2,
+      explain: "A fixed arrangement: I'm going." },
+    { s: "We ___ dinner with my parents tonight. It's all arranged.", options: ["'re having", "have", "are have"], answer: 0,
+      explain: "Arranged plan: present continuous." },
+    { s: "___ your brother coming to the wedding?", options: ["Does", "Will", "Is"], answer: 2,
+      explain: "Present continuous question: Is he coming…?" },
+    { s: "They ___ playing on Saturday because the pitch is closed.", options: ["don't", "aren't", "won't"], answer: 1,
+      explain: "Present continuous negative: aren't playing." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Mixed practice",
-  intro: "Choose the best option.",
+  intro: "Choose the best option or write the missing words.",
   items: [
     { s: "'Can you come to dinner on Friday?' 'Sorry, I ___ my grandmother.'", options: ["will visit", "am visiting", "visit"], answer: 1,
       explain: "A fixed arrangement for Friday: present continuous." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "'This bag is very heavy.' 'I ___ it for you.'", options: ["will carry", "am carrying", "carry"], answer: 0,
       explain: "An offer: will ('ll) carry." },
     { s: "Mia has saved lots of money. She ___ a new laptop.", options: ["is going to buy", "will buy", "buys"], answer: 0,
-      explain: "An intention she already has (she has saved the money): going to." }
+      explain: "An intention she already has (she has saved the money): going to." },
+    { s: "I think it ___ tomorrow. (snow)", answers: ["will snow"],
+      explain: "A prediction with I think: will." },
+    { s: "We ___ to Rome next Friday. Our tickets are here. (fly)", answers: ["are flying", "are going to fly"],
+      explain: "A fixed arrangement: present continuous (going to is also fine)." },
+    { s: "'I can't do this sum.' 'I ___ you.' (show)", answers: ["will show"],
+      explain: "An offer made now: will." },
+    { s: "Look at that car! It ___! (crash)", answers: ["is going to crash"],
+      explain: "We can see it is about to happen: going to." },
+    { s: "___ to my party on Saturday? (you / come)", answers: ["Are you coming", "Will you come", "Are you going to come"],
+      explain: "Asking about a plan: Are you coming…? (Will you come…? is also fine.)" }
   ]
 }
 ];

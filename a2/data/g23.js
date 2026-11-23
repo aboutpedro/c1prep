@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Let's, Shall we, Why don't we, How about",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ go to the beach!", options: ["Let's", "Shall", "How about"], answer: 0,
       explain: "Let's + verb." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Why don't we ___ by train?", options: ["go", "going", "to go"], answer: 0,
       explain: "Why don't we + verb." },
     { s: "What shall we ___ tonight?", options: ["do", "doing", "to do"], answer: 0,
-      explain: "What shall we + verb?" }
+      explain: "What shall we + verb?" },
+    { s: "___ we go to the beach?", answers: ["Shall", "Why don't", "Should"],
+      explain: "Shall we…? (or Why don't we…?)" },
+    { s: "How about ___ lunch in the garden? (have)", answers: ["having"],
+      explain: "How about + -ing." },
+    { s: "Let's ___ a game. (play)", answers: ["play"],
+      explain: "Let's + verb." },
+    { s: "Why don't we ___ Dad? (ask)", answers: ["ask"],
+      explain: "Why don't we + verb." },
+    { s: "What about ___ a film tonight? (watch)", answers: ["watching"],
+      explain: "What about + -ing." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Answering suggestions",
-  intro: "Choose the best answer.",
+  intro: "Choose the best answer or write the missing words.",
   items: [
     { s: "Let's go swimming. – ___ It's a lovely day.", options: ["Good idea!", "Yes, I let.", "No, let's."], answer: 0,
       explain: "Agreeing: Good idea! / Great idea!" },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "How about a coffee? – ___", options: ["That sounds nice.", "Yes, let's not.", "How about no."], answer: 0,
       explain: "Agreeing politely." },
     { s: "Why don't we go by bike? – ___ It's too far.", options: ["Hmm, I'm not sure.", "Great idea!", "Yes, why not?"], answer: 0,
-      explain: "There's a problem (too far), so not yes." }
+      explain: "There's a problem (too far), so not yes." },
+    { s: "Let's go to the cinema. – Good ___!", answers: ["idea"],
+      explain: "Good idea!" },
+    { s: "How about a pizza? – That ___ great!", answers: ["sounds"],
+      explain: "That sounds great!" },
+    { s: "Shall we take the bus? – Yes, ___.", answers: ["let's"],
+      explain: "Yes, let's." },
+    { s: "Why don't we go to the park? – Yes, why ___?", answers: ["not"],
+      explain: "Yes, why not?" },
+    { s: "Let's go out. – I'd ___ not. I'm tired.", answers: ["rather"],
+      explain: "I'd rather not = I don't want to." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Make the suggestion",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "___ go to the park.", answers: ["Let's"],
       explain: "Let's + verb." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Let's ___ (meet) outside the cinema.", answers: ["meet"],
       explain: "Let's + verb." },
     { s: "Why don't we ___ (have) a party?", answers: ["have"],
-      explain: "Why don't we + verb." }
+      explain: "Why don't we + verb." },
+    { s: "___ go to the museum on Sunday.", options: ["Let's", "Shall", "How about"], answer: 0,
+      explain: "Let's + verb." },
+    { s: "___ we go by car or by train?", options: ["Shall", "Let's", "How about"], answer: 0,
+      explain: "Shall we…?" },
+    { s: "How about ___ a cake for Mum?", options: ["making", "make", "to make"], answer: 0,
+      explain: "How about + -ing." },
+    { s: "Why ___ we start now?", options: ["don't", "not", "shall"], answer: 0,
+      explain: "Why don't we…?" },
+    { s: "What about ___ tennis on Saturday?", options: ["playing", "play", "to play"], answer: 0,
+      explain: "What about + -ing." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Suggestions with should and could",
-  intro: "Choose the correct option. could = a possible idea; should = I think this is the right thing.",
+  intro: "Choose the correct option or write the missing words. could = a possible idea; should = I think this is the right thing.",
   items: [
     { s: "You look tired. You ___ go to bed early.", options: ["should", "shall", "let's"], answer: 0,
       explain: "Advice: You should…" },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "You ___ take an umbrella. It might rain.", options: ["should", "shall", "let's"], answer: 0,
       explain: "Advice: You should…" },
     { s: "We ___ try the Italian restaurant. It's new.", options: ["could", "shouldn't", "let's to"], answer: 0,
-      explain: "A possible idea: We could…" }
+      explain: "A possible idea: We could…" },
+    { s: "You ___ wear a coat. It's freezing!", answers: ["should"],
+      explain: "I think it's the right thing: should." },
+    { s: "If it rains, we ___ go to the museum instead.", answers: ["could", "can"],
+      explain: "A possible idea: could." },
+    { s: "You ___ drink so much coffee.", answers: ["shouldn't"],
+      explain: "Not a good idea: shouldn't." },
+    { s: "What ___ I buy my brother for his birthday?", answers: ["should", "could", "shall"],
+      explain: "Asking for ideas: What should I…?" },
+    { s: "You ___ ask Ana. She knows a lot about computers.", answers: ["could", "should"],
+      explain: "An idea: could." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "A: Let's meet at ten. – B: Hmm, ___ about eleven?", options: ["what", "let's", "shall"], answer: 0,
       explain: "What about…? suggests another idea." },
     { s: "A: OK, eleven it is. ___ forget the sun cream!", options: ["Let's not", "Let's no", "Don't let"], answer: 0,
-      explain: "Negative: Let's not forget." }
+      explain: "Negative: Let's not forget." },
+    { s: "A: What shall we do tonight? – B: ___ go to the new café.", answers: ["Let's"],
+      explain: "A suggestion: Let's + verb." },
+    { s: "A: Good idea. Shall we ___ Sam too? (ask)", answers: ["ask"],
+      explain: "Shall we + verb." },
+    { s: "B: Yes, why ___? He's free tonight.", answers: ["not"],
+      explain: "Yes, why not?" },
+    { s: "A: How about ___ there at seven? (meet)", answers: ["meeting"],
+      explain: "How about + -ing." },
+    { s: "B: Perfect. I ___ send him a message now.", answers: ["'ll", "will", "can"],
+      explain: "A decision now: I'll." }
   ]
 }
 ];

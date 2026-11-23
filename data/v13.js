@@ -139,5 +139,33 @@ window.SETS = [
     { s: "The exhibition attracted a record number of ___ (VISIT).", answers: ["visitors"],
       explain: "visit → visitor → visitors." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Sport and competition",
+  intro: "Choose the word that best fits the gap.",
+  items: [
+    { s: "The two teams are evenly ___, so it should be a close game.", options: ["matched", "equal", "balanced", "paired"], answer: 0,
+      explain: "evenly matched = equally good." },
+    { s: "She ___ the gold medal at her first Olympics.", options: ["won", "gained", "beat", "achieved"], answer: 0,
+      explain: "win a medal." },
+    { s: "He's a keen player, but he's a bad ___ – he hates losing.", options: ["loser", "looser", "winner", "player"], answer: 0,
+      explain: "a bad loser = someone who gets angry when they lose." },
+    { s: "The match was ___ off because of the storm.", options: ["called", "put", "taken", "set"], answer: 0,
+      explain: "call off = cancel." },
+    { s: "Our team was knocked ___ of the competition in the first round.", options: ["out", "off", "down", "over"], answer: 0,
+      explain: "be knocked out = lose and leave a competition." },
+    { s: "They're ___ the lead with ten minutes to go.", options: ["in", "on", "at", "by"], answer: 0,
+      explain: "in the lead = winning." },
+    { s: "The striker scored an ___ goal in the last minute.", options: ["equalising", "equal", "equality", "equalled"], answer: 0,
+      explain: "an equaliser / equalising goal makes the score level." },
+    { s: "The fans gave the players a ___ ovation.", options: ["standing", "rising", "stood", "upright"], answer: 0,
+      explain: "a standing ovation = the audience stands and claps." },
+    { s: "She has ___ every record in women's swimming.", options: ["broken", "crashed", "cracked", "torn"], answer: 0,
+      explain: "break a record." },
+    { s: "The coach told the team to ___ their game in the second half.", options: ["raise", "rise", "arise", "lift up"], answer: 0,
+      explain: "raise your game = play better." }
+  ]
 }
 ];

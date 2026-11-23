@@ -140,5 +140,62 @@ window.SETS = [
     { s: "Lucía is from Argentina. She's ___.", answers: ["Argentinian", "Argentine"],
       explain: "Argentina → Argentinian (also Argentine)." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Feelings",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["angry", "bored", "cold", "excited", "happy", "hot", "hungry", "ill", "sad", "scared", "thirsty", "tired"],
+  items: [
+    { s: "It's my birthday today! I'm very ___.", answers: ["happy"],
+      explain: "happy = feeling good." },
+    { s: "I didn't sleep last night. I'm really ___.", answers: ["tired"],
+      explain: "tired = you need to sleep or rest." },
+    { s: "Can I have a sandwich? I'm ___.", answers: ["hungry"],
+      explain: "hungry = you want to eat." },
+    { s: "Can I have some water? I'm ___.", answers: ["thirsty"],
+      explain: "thirsty = you want to drink." },
+    { s: "There's nothing to do. I'm ___.", answers: ["bored"],
+      explain: "bored = nothing is interesting." },
+    { s: "My dog is ill. I'm ___.", answers: ["sad"],
+      explain: "sad = the opposite of happy." },
+    { s: "Put on a jumper if you're ___.", answers: ["cold"],
+      explain: "cold = the opposite of hot." },
+    { s: "I'm ___ of big dogs.", answers: ["scared"],
+      explain: "scared of = afraid of." },
+    { s: "He's ___ because his brother broke his phone.", answers: ["angry"],
+      explain: "angry = very unhappy with someone." },
+    { s: "Open the window, please. I'm ___.", answers: ["hot"],
+      explain: "hot = the opposite of cold." }
+  ]
+},
+/* ---------------- Set 7 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "At the doctor's",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "I've got a ___. My head hurts.", options: ["headache", "backache", "toothache"], answer: 0,
+      explain: "A pain in your head = a headache." },
+    { s: "I've got ___. I need to see the dentist.", options: ["toothache", "a headache", "a stomach ache"], answer: 0,
+      explain: "A pain in a tooth = toothache." },
+    { s: "I ate too much. Now I've got a ___.", options: ["stomach ache", "headache", "earache"], answer: 0,
+      explain: "A pain in your stomach = a stomach ache." },
+    { s: "Your head is very hot. You've got a ___.", options: ["temperature", "headache", "cold"], answer: 0,
+      explain: "a temperature = your body is hotter than normal." },
+    { s: "Atishoo! I think I've got a ___.", options: ["cold", "toothache", "temperature"], answer: 0,
+      explain: "a cold = you sneeze and your nose runs." },
+    { s: "My throat hurts. I've got a ___ throat.", options: ["sore", "bad", "ill"], answer: 0,
+      explain: "a sore throat = it hurts when you swallow." },
+    { s: "Take this ___ three times a day.", options: ["medicine", "doctor", "hospital"], answer: 0,
+      explain: "medicine = what you take when you're ill." },
+    { s: "You're ill. Stay in ___ today.", options: ["bed", "the bed", "a bed"], answer: 0,
+      explain: "stay in bed (no article)." },
+    { s: "My leg ___. I can't walk.", options: ["hurts", "is pain", "ill"], answer: 0,
+      explain: "It hurts = it gives me pain." },
+    { s: "I feel ___. I think I've got flu.", options: ["ill", "illness", "badly"], answer: 0,
+      explain: "feel ill = feel sick, not well." }
+  ]
 }
 ];

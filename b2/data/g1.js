@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Present simple or present continuous?",
-  intro: "Complete the sentences with the present simple or present continuous form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present simple or present continuous form of the verbs in brackets.",
   items: [
     { s: "Water ___ (boil) at 100 degrees Celsius.", answers: ["boils"],
       explain: "A scientific fact: present simple." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "This soup ___ (taste) a bit salty.", answers: ["tastes"],
       explain: "taste = have a flavour is a state: present simple." },
     { s: "We ___ (not / use) the car much these days, so we might sell it.", answers: ["are not using", "aren't using", "'re not using"],
-      explain: "these days: a temporary situation around now, so present continuous." }
+      explain: "these days: a temporary situation around now, so present continuous." },
+    { s: "I ___ what you're saying, but I don't agree.", options: ["am seeing", "see", "seeing"], answer: 1,
+      explain: "see = understand: a state, so present simple." },
+    { s: "My sister ___ for a law firm this summer, but she's still a student.", options: ["is working", "works", "work"], answer: 0,
+      explain: "A temporary situation: present continuous." },
+    { s: "How often ___ your hair cut?", options: ["do you get", "are you getting", "you get"], answer: 0,
+      explain: "How often → a habit: present simple." },
+    { s: "He ___ to be honest, but I don't trust him.", options: ["is seeming", "seems", "seem"], answer: 1,
+      explain: "seem is a state verb: present simple." },
+    { s: "Why ___ so many questions today? You're usually so quiet.", options: ["do you ask", "are you asking", "you are asking"], answer: 1,
+      explain: "Around now, unusual behaviour: present continuous." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "State verbs",
-  intro: "Choose the correct option. Some verbs change their meaning in the continuous.",
+  intro: "Choose the correct option or write the missing words. Some verbs change their meaning in the continuous.",
   items: [
     { s: "I ___ you're right about the new manager.", options: ["think", "am thinking"], answer: 0,
       explain: "think = have an opinion is a state: present simple." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The chef ___ the sauce to check the salt.", options: ["is tasting", "tastes"], answer: 0,
       explain: "taste = try the flavour is an action happening now: continuous." },
     { s: "These shoes ___ me perfectly.", options: ["fit", "are fitting"], answer: 0,
-      explain: "fit (be the right size) is a state: present simple." }
+      explain: "fit (be the right size) is a state: present simple." },
+    { s: "I ___ a word he says. (not / believe)", answers: ["don't believe", "do not believe"],
+      explain: "believe is a state verb: present simple." },
+    { s: "What ___ at? (you / look)", answers: ["are you looking"],
+      explain: "look at = an action: continuous is fine." },
+    { s: "This perfume ___ wonderful. (smell)", answers: ["smells"],
+      explain: "smell = have a smell: a state." },
+    { s: "She ___ the flour for the cake. (weigh)", answers: ["is weighing", "'s weighing"],
+      explain: "weigh = measure the weight: an action, so continuous." },
+    { s: "I ___ tea to coffee. (prefer)", answers: ["prefer"],
+      explain: "prefer is a state verb." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Present perfect simple or continuous?",
-  intro: "Complete the sentences with the present perfect simple or continuous form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present perfect simple or continuous form of the verbs in brackets.",
   items: [
     { s: "I ___ (write) three emails this morning.", answers: ["have written", "'ve written"],
       explain: "A number of finished results (three emails): present perfect simple." },
@@ -80,7 +100,17 @@ window.SETS = [
     { s: "We ___ (not / decide) where to go on holiday yet.", answers: ["have not decided", "haven't decided"],
       explain: "yet: present perfect simple for something not completed." },
     { s: "I ___ (wait) for over an hour! Where have you been?", answers: ["have been waiting", "'ve been waiting"],
-      explain: "for + period, emphasising the length of the activity: continuous." }
+      explain: "for + period, emphasising the length of the activity: continuous." },
+    { s: "I ___ this book three times.", options: ["have been reading", "read", "have read"], answer: 2,
+      explain: "How many times: present perfect simple." },
+    { s: "My hands are dirty because I ___ in the garden.", options: ["'ve been working", "'ve worked", "worked"], answer: 0,
+      explain: "An activity that explains a present result: continuous." },
+    { s: "How long ___ each other?", options: ["have you been knowing", "do you know", "have you known"], answer: 2,
+      explain: "know is a state verb: simple, not continuous." },
+    { s: "She ___ her driving test! Let's celebrate.", options: ["has passed", "has been passing", "passes"], answer: 0,
+      explain: "A completed result: simple." },
+    { s: "They ___ about the plans for hours and still haven't agreed.", options: ["argue", "'ve been arguing", "'re arguing"], answer: 1,
+      explain: "A long activity up to now: continuous." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "It's the best book I've ___ read.", options: ["ever", "never", "yet"], answer: 0,
       explain: "superlative + present perfect + ever." },
     { s: "How long is it ___ you last saw your cousins?", options: ["since", "for", "ago"], answer: 0,
-      explain: "How long is it since …? = How much time has passed since …?" }
+      explain: "How long is it since …? = How much time has passed since …?" },
+    { s: "I haven't had a holiday ___ ages.", answers: ["for", "in"],
+      explain: "for + a period." },
+    { s: "He's ___ been to Asia. He'd love to go.", answers: ["never"],
+      explain: "Not at any time: never." },
+    { s: "Has the post arrived ___?", answers: ["yet"],
+      explain: "yet at the end of questions." },
+    { s: "It's been years ___ I last played tennis.", answers: ["since"],
+      explain: "It's been + time + since." },
+    { s: "She's only ___ started, so give her time.", answers: ["just"],
+      explain: "A moment ago: just." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Present perfect or past simple?",
-  intro: "Complete the sentences with the present perfect or the past simple of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present perfect or the past simple of the verbs in brackets.",
   items: [
     { s: "I ___ (lose) my phone. Have you seen it anywhere?", answers: ["have lost", "'ve lost"],
       explain: "The result matters now (I don't have it): present perfect." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "___ (you / ever / be) to a music festival?", answers: ["Have you ever been"],
       explain: "Life experience with ever: present perfect. been = gone and come back." },
     { s: "They ___ (move) house twice since 2020.", answers: ["have moved", "'ve moved"],
-      explain: "since 2020: a period up to now, so present perfect." }
+      explain: "since 2020: a period up to now, so present perfect." },
+    { s: "I ___ that film when it came out.", options: ["have seen", "have been seeing", "saw"], answer: 2,
+      explain: "A finished time (when it came out): past simple." },
+    { s: "She ___ three jobs since she left university.", options: ["has had", "had", "has been having"], answer: 0,
+      explain: "since → present perfect simple (how many)." },
+    { s: "My grandparents ___ in 1960.", options: ["got married", "have got married", "have been married"], answer: 0,
+      explain: "in 1960: past simple." },
+    { s: "This is the most expensive meal I ___.", options: ["was ever having", "have ever been having", "'ve ever had"], answer: 2,
+      explain: "superlative + present perfect + ever." },
+    { s: "When ___ you learn to swim?", options: ["did", "have", "were"], answer: 0,
+      explain: "When asks about a finished time: past simple." }
   ]
 }
 ];

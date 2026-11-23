@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Present simple: positive and negative",
-  intro: "Complete the sentences with the present simple form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present simple form of the verbs in brackets.",
   items: [
     { s: "My brother ___ (live) in a small flat near the station.", answers: ["lives"],
       explain: "With he, she and it, add -s to the verb: live → lives." },
@@ -24,7 +24,17 @@ window.SETS = [
     { s: "Lucas ___ (go) to the gym every Monday and Thursday.", answers: ["goes"],
       explain: "Go and do add -es: goes, does. 'Every Monday' tells us it's a habit, so we use the present simple." },
     { s: "My parents ___ (not / work) at the weekend.", answers: ["don't work"],
-      explain: "My parents = they, so we use don't (not doesn't)." }
+      explain: "My parents = they, so we use don't (not doesn't)." },
+    { s: "My cousin ___ in a restaurant.", options: ["works", "work", "working"], answer: 0,
+      explain: "He/she → works." },
+    { s: "We ___ much money, so we cook at home.", options: ["doesn't have", "don't have", "haven't"], answer: 1,
+      explain: "We → don't have." },
+    { s: "The sun always ___ in the east.", options: ["rise", "rises", "is rising"], answer: 1,
+      explain: "A fact that is always true: present simple." },
+    { s: "My dad ___ fishing at weekends.", options: ["go", "goes", "gos"], answer: 1,
+      explain: "go → goes with he." },
+    { s: "She ___ meat. She's a vegetarian.", options: ["don't eat", "doesn't eat", "doesn't eats"], answer: 1,
+      explain: "She → doesn't + eat." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Why ___ (they / not / like) the new teacher?", answers: ["don't they like", "do they not like"],
       explain: "Negative question: Why don't + they + verb?" },
     { s: "Who ___ (cook) dinner in your house?", answers: ["cooks"],
-      explain: "When who is the subject of the question, we don't use do/does: Who cooks dinner? (= Which person cooks dinner?)." }
+      explain: "When who is the subject of the question, we don't use do/does: Who cooks dinner? (= Which person cooks dinner?)." },
+    { s: "Choose the right question (work): ___", options: ["Where your father works?", "Where does your father works?", "Where does your father work?"], answer: 2,
+      explain: "Question word + does + subject + verb (no -s)." },
+    { s: "Choose the right question (play): ___", options: ["How often you play tennis?", "How often do you plays tennis?", "How often do you play tennis?"], answer: 2,
+      explain: "How often + do + you + verb." },
+    { s: "Choose the right question (mean): ___", options: ["What does this word mean?", "What means this word?", "What does mean this word?"], answer: 0,
+      explain: "What + does + this word + mean?" },
+    { s: "Choose the right question (live): ___", options: ["Who lives next door?", "Who does live next door?", "Who do live next door?"], answer: 0,
+      explain: "Who is the subject, so there is no do: Who lives…?" },
+    { s: "Choose the right question (like): ___", options: ["Do your sister like jazz?", "Does your sister likes jazz?", "Does your sister like jazz?"], answer: 2,
+      explain: "Does + your sister + like." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Present continuous",
-  intro: "Complete the sentences with the present continuous form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present continuous form of the verbs in brackets.",
   items: [
     { s: "Be quiet! The baby ___ (sleep).", answers: ["is sleeping"],
       explain: "Present continuous: am/is/are + verb-ing, for something happening now." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "They ___ (swim) in the sea.", answers: ["are swimming"],
       explain: "Short verbs ending in one vowel + one consonant double the consonant: swim → swimming." },
     { s: "Why ___ (you / laugh)?", answers: ["are you laughing"],
-      explain: "Why + are + you + verb-ing?" }
+      explain: "Why + are + you + verb-ing?" },
+    { s: "Why ___ you looking at me like that?", options: ["do", "are", "is"], answer: 1,
+      explain: "Present continuous: are + you + looking." },
+    { s: "My brother ___ for his exams at the moment.", options: ["is studying", "studies", "study"], answer: 0,
+      explain: "At the moment → present continuous." },
+    { s: "I ___ for my glasses. Have you seen them?", options: ["look", "'m looking", "looking"], answer: 1,
+      explain: "Happening now: I'm looking." },
+    { s: "They ___ dinner right now.", options: ["cook", "cooks", "'re cooking"], answer: 2,
+      explain: "Right now → present continuous." },
+    { s: "___ she wearing her new dress?", options: ["Does", "Is", "Are"], answer: 1,
+      explain: "She → Is she wearing…?" }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Present simple or present continuous?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I usually ___ to work by bus, but today I'm walking.", options: ["go", "am going"], answer: 0,
       explain: "'Usually' shows a habit, so we use the present simple." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Look at those clouds! It ___ dark.", options: ["gets", "is getting"], answer: 1,
       explain: "Something that is changing now: present continuous (is getting dark)." },
     { s: "___ this jacket? It's 20% off today.", options: ["Do you like", "Are you liking"], answer: 0,
-      explain: "Like is a state verb, so we use the present simple: Do you like…?" }
+      explain: "Like is a state verb, so we use the present simple: Do you like…?" },
+    { s: "My brother ___ to school. (usually / walk)", answers: ["usually walks"],
+      explain: "Usually = a habit: present simple, usually before the verb." },
+    { s: "Please be quiet. I ___ to sleep. (try)", answers: ["am trying"],
+      explain: "Happening now: present continuous." },
+    { s: "___ in ghosts? (you / believe)", answers: ["Do you believe"],
+      explain: "Believe is a state verb: present simple." },
+    { s: "My grandparents ___ with us this week. (stay)", answers: ["are staying"],
+      explain: "A temporary situation: present continuous." },
+    { s: "He ___ three cars. (own)", answers: ["owns"],
+      explain: "Own is a state verb: present simple." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Complete the sentences with the present simple or the present continuous form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present simple or the present continuous form of the verbs in brackets.",
   items: [
     { s: "My sister ___ (want) a new phone for her birthday.", answers: ["wants"],
       explain: "Want is a state verb: present simple, even when we talk about now." },
@@ -136,7 +176,55 @@ window.SETS = [
     { s: "___ (you / need) any help with your bags?", answers: ["Do you need"],
       explain: "Need is a state verb, so the question uses Do + you + need." },
     { s: "The children ___ (play) in the garden right now.", answers: ["are playing"],
-      explain: "'Right now' = at this moment: present continuous." }
+      explain: "'Right now' = at this moment: present continuous." },
+    { s: "I ___ this song. It's my favourite!", options: ["am loving", "loves", "love"], answer: 2,
+      explain: "Love is a state verb: present simple." },
+    { s: "Where's Dad? – He ___ the car.", options: ["washes", "wash", "is washing"], answer: 2,
+      explain: "Happening now: present continuous." },
+    { s: "It ___ much in summer here.", options: ["doesn't rain", "isn't raining", "don't rain"], answer: 0,
+      explain: "In general: present simple, doesn't + rain." },
+    { s: "How often ___ your room?", options: ["are you cleaning", "do you clean", "you clean"], answer: 1,
+      explain: "How often asks about a habit: present simple." },
+    { s: "This box ___ to my sister.", options: ["is belonging", "belongs", "belong"], answer: 1,
+      explain: "Belong is a state verb: present simple." }
+  ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "be or do?",
+  intro: "Choose the correct option or write the missing words.",
+  items: [
+    { s: "___ you like coffee?", options: ["Do", "Are", "Is"], answer: 0,
+      explain: "Like is a normal verb, so the question uses Do, not Are." },
+    { s: "I ___ with you.", options: ["agree", "am agree", "am agreeing"], answer: 0,
+      explain: "Agree is a normal verb: I agree. Not 'I am agree'." },
+    { s: "She ___ in a hospital.", options: ["works", "is work", "work"], answer: 0,
+      explain: "Present simple with she: works. Don't put is before a normal verb." },
+    { s: "___ your brother at home now?", options: ["Is", "Does", "Do"], answer: 0,
+      explain: "At home is a place, not a verb, so the question uses be: Is your brother at home?" },
+    { s: "We ___ tired today.", options: ["are", "do", "have"], answer: 0,
+      explain: "Tired is an adjective, so we use be: We are tired." },
+    { s: "Where ___ your parents from?", options: ["are", "do", "does"], answer: 0,
+      explain: "With from + a place and no other verb, use be: Where are they from? (But: Where do they come from?)" },
+    { s: "He ___ like vegetables.", options: ["doesn't", "isn't", "not"], answer: 0,
+      explain: "The negative of a normal verb: doesn't + like. Not 'He isn't like'." },
+    { s: "I ___ 25 years old.", options: ["am", "have", "do"], answer: 0,
+      explain: "Age uses be in English: I am 25. Not 'I have 25 years'." },
+    { s: "___ it rain a lot in your city?", options: ["Does", "Is", "Do"], answer: 0,
+      explain: "Rain is a verb here, so the question uses Does with it: Does it rain…?" },
+    { s: "The museum ___ closed today.", options: ["is", "does", "do"], answer: 0,
+      explain: "Closed is an adjective here, so we use be: The museum is closed." },
+    { s: "___ you from Spain? – No, I'm from Portugal.", answers: ["Are"],
+      explain: "from + a place, no other verb: be." },
+    { s: "___ your brother play any sports?", answers: ["Does"],
+      explain: "play is a verb: Does + your brother + play." },
+    { s: "I ___ hungry. Let's eat!", answers: ["am"],
+      explain: "hungry is an adjective: be." },
+    { s: "She ___ like spiders.", answers: ["doesn't"],
+      explain: "like is a verb: doesn't + like." },
+    { s: "___ the children at school today?", answers: ["Are"],
+      explain: "at school is a place: Are + the children…?" }
   ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Indirect questions",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "Could you tell me where ___?", options: ["the station is", "is the station", "does the station"], answer: 0,
       explain: "Indirect questions use normal word order: where the station is." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Do you remember what ___?", options: ["she said", "did she say", "said she"], answer: 0,
       explain: "Normal word order after Do you remember…" },
     { s: "Would you mind telling me ___ you're from?", options: ["where", "that", "which"], answer: 0,
-      explain: "where for a place." }
+      explain: "where for a place." },
+    { s: "Where's the nearest bank? → Could you tell me where ___?", answers: ["the nearest bank is"],
+      explain: "Indirect question: statement word order." },
+    { s: "When does the course start? → Do you know when ___?", answers: ["the course starts"],
+      explain: "No does in indirect questions." },
+    { s: "Did he pass the test? → I wonder whether ___ the test.", answers: ["he passed"],
+      explain: "No did: he passed." },
+    { s: "What's her name? → Do you remember what ___?", answers: ["her name is", "her name was"],
+      explain: "Statement word order: her name is." },
+    { s: "Is the museum free? → Do you know if ___ free?", answers: ["the museum is"],
+      explain: "if + statement word order." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Question tags",
-  intro: "Choose the correct question tag.",
+  intro: "Choose or write the correct question tag.",
   items: [
     { s: "You're coming tomorrow, ___?", options: ["aren't you", "don't you", "won't you"], answer: 0,
       explain: "Positive sentence with be: negative tag with be (aren't you)." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "She went to the party, ___?", options: ["didn't she", "wasn't she", "doesn't she"], answer: 0,
       explain: "Past simple: the tag uses did." },
     { s: "There's a bank near here, ___?", options: ["isn't there", "isn't it", "hasn't there"], answer: 0,
-      explain: "There is → isn't there." }
+      explain: "There is → isn't there." },
+    { s: "You've met my sister, ___?", answers: ["haven't you"],
+      explain: "Positive with have → haven't you." },
+    { s: "He wasn't at the party, ___?", answers: ["was he"],
+      explain: "Negative → positive tag." },
+    { s: "She'll call us, ___?", answers: ["won't she"],
+      explain: "will → won't." },
+    { s: "They live in Rome, ___?", answers: ["don't they"],
+      explain: "No auxiliary, present: don't." },
+    { s: "Pass me the salt, ___?", answers: ["will you", "would you", "could you", "can you"],
+      explain: "After an imperative: will you?" }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Question words and prepositions",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "What are you looking ___?", options: ["at", "to", "on"], answer: 0,
       explain: "look at something; the preposition goes at the end of the question." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Whose ___ are these?", options: ["keys", "key", "the keys"], answer: 0,
       explain: "Whose + noun: Whose keys are these?" },
     { s: "Who ___ this cake? It's delicious!", options: ["made", "did made", "did you make"], answer: 0,
-      explain: "Who is the subject (the person who made it), so there is no did." }
+      explain: "Who is the subject (the person who made it), so there is no did." },
+    { s: "What does she look ___? – Tall, with dark hair.", answers: ["like"],
+      explain: "What does she look like? = describe her appearance." },
+    { s: "___ often do you go to the gym?", answers: ["How"],
+      explain: "How often = how many times." },
+    { s: "___ car is this? It's blocking the road.", answers: ["Whose"],
+      explain: "Asking who owns it: Whose." },
+    { s: "Who are you waiting ___?", answers: ["for"],
+      explain: "wait for: the preposition goes at the end." },
+    { s: "___ long does it take to get there?", answers: ["How"],
+      explain: "How long = how much time." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Short answers, so and neither",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "\"___ you hungry? You haven't eaten all day.\"", options: ["Aren't", "Don't", "Haven't"], answer: 0,
       explain: "A negative question can show surprise: Aren't you hungry?" },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "\"Is it going to rain tomorrow?\" \"I hope ___.\"", options: ["not", "no", "don't"], answer: 0,
       explain: "I hope not = I hope it won't." },
     { s: "\"She can't drive.\" \"___ can her husband.\"", options: ["Neither", "So", "Either"], answer: 0,
-      explain: "Neither + auxiliary + subject, after a negative sentence." }
+      explain: "Neither + auxiliary + subject, after a negative sentence." },
+    { s: "\"I love chocolate.\" \"So ___ I.\"", answers: ["do"],
+      explain: "So + auxiliary + I: So do I." },
+    { s: "\"I haven't finished.\" \"Neither ___ I.\"", answers: ["have"],
+      explain: "Neither + auxiliary + I." },
+    { s: "\"Can you swim?\" \"Yes, I ___.\"", answers: ["can"],
+      explain: "Short answer with the same auxiliary." },
+    { s: "\"Are you coming?\" \"I think ___.\"", answers: ["so"],
+      explain: "I think so = I think yes." },
+    { s: "\"I wasn't at home.\" \"Neither ___ Tom.\"", answers: ["was"],
+      explain: "Neither + was + subject." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Rewrite the question",
-  intro: "Complete the second sentence so that it means the same as the first. Use between two and five words.",
+  intro: "Choose the correct option or complete the second sentence so that it means the same as the first. Use between two and five words.",
   items: [
     { s: "Where is the post office? → Could you tell me ___?", answers: ["where the post office is"],
       explain: "Indirect question: normal word order." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Is there a pharmacy near here? → Do you know ___ near here?", answers: ["if there is a pharmacy", "whether there is a pharmacy", "if there's a pharmacy", "whether there's a pharmacy"],
       explain: "if or whether + there is." },
     { s: "What are they talking about? → I can't hear ___ about.", answers: ["what they are talking", "what they're talking"],
-      explain: "Normal word order: they are talking." }
+      explain: "Normal word order: they are talking." },
+    { s: "What time is it? → Do you know ___?", options: ["what time it is", "what time is it", "what time it be"], answer: 0,
+      explain: "Statement word order: it is." },
+    { s: "Why did she leave? → I wonder ___.", options: ["why she left", "why did she leave", "why she did leave"], answer: 0,
+      explain: "No did: she left." },
+    { s: "Is Leo coming? → Do you know ___?", options: ["if Leo is coming", "is Leo coming", "if is Leo coming"], answer: 0,
+      explain: "if + statement word order." },
+    { s: "Where do they live? → Can you tell me ___?", options: ["where they live", "where do they live", "where they do live"], answer: 0,
+      explain: "No do: they live." },
+    { s: "How much did it cost? → Would you mind telling me ___?", options: ["how much it cost", "how much did it cost", "how much it did cost"], answer: 0,
+      explain: "No did: it cost." }
   ]
 }
 ];

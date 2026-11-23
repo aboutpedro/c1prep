@@ -143,5 +143,34 @@ window.SETS = [
     { s: "He wore a dark ___ and tie to the wedding.", answers: ["suit"],
       explain: "A suit is a jacket and trousers (or skirt) made of the same material." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences",
+  textTitle: "Money",
+  intro: "Complete the sentences with words from the box. There are two words you don't need.",
+  bank: ["afford", "borrow", "cash", "change", "debt", "discount", "lend", "owe", "receipt", "refund", "save", "waste"],
+  items: [
+    { s: "We'd love a bigger flat, but we can't ___ it.", answers: ["afford"],
+      explain: "afford = have enough money for something." },
+    { s: "Could you ___ me twenty euros? I'll pay you back tomorrow.", answers: ["lend"],
+      explain: "lend = give for a short time. (borrow = take for a short time.)" },
+    { s: "I ___ my brother €50. I must pay him back.", answers: ["owe"],
+      explain: "owe = need to pay back money you borrowed." },
+    { s: "The shoes were too small, so I took them back to the shop and got a ___.", answers: ["refund"],
+      explain: "refund = money the shop gives back to you." },
+    { s: "Do you take cards, or do I have to pay in ___?", answers: ["cash"],
+      explain: "cash = notes and coins." },
+    { s: "Can I have a ___, please? I need to show my boss what I spent.", answers: ["receipt"],
+      explain: "receipt = the piece of paper that shows what you paid." },
+    { s: "Students get a 10% ___ on train tickets.", answers: ["discount"],
+      explain: "discount = a lower price." },
+    { s: "I'm trying to ___ money for a holiday.", answers: ["save"],
+      explain: "save money = keep it to use later." },
+    { s: "Here's €20 for the €18 pizza. You can keep the ___.", answers: ["change"],
+      explain: "change = the money you get back when you pay too much." },
+    { s: "Don't ___ your money on things you don't need.", answers: ["waste"],
+      explain: "waste money = spend it badly." }
+  ]
 }
 ];

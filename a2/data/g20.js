@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "very or too?",
-  intro: "Choose very or too. too = more than is good, so there's a problem.",
+  intro: "Choose or write very or too. too = more than is good, so there's a problem.",
   items: [
     { s: "This coffee is ___ hot. I can't drink it.", options: ["too", "very", "enough"], answer: 0,
       explain: "There's a problem (I can't drink it): too." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "This bag is ___ heavy. I can't carry it.", options: ["too", "very", "enough"], answer: 0,
       explain: "A problem (I can't carry it): too." },
     { s: "The hotel was ___ nice. We had a great time.", options: ["very", "too", "enough"], answer: 0,
-      explain: "No problem: very." }
+      explain: "No problem: very." },
+    { s: "The soup is ___ salty. I can't eat it.", answers: ["too"],
+      explain: "There's a problem (I can't eat it): too." },
+    { s: "She sings ___ well.", answers: ["very"],
+      explain: "No problem, just a lot: very." },
+    { s: "It's ___ cold to go swimming today.", answers: ["too"],
+      explain: "too + adjective + to: a problem." },
+    { s: "My new phone is ___ fast. I love it.", answers: ["very"],
+      explain: "A good thing: very." },
+    { s: "The music is ___ loud! Please turn it down.", answers: ["too"],
+      explain: "There's a problem: too." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "too much or too many?",
-  intro: "Choose the correct option. too many + plural nouns; too much + nouns we can't count.",
+  intro: "Choose the correct option or write the missing words. too many + plural nouns; too much + nouns we can't count.",
   items: [
     { s: "There are ___ people here. Let's go somewhere quieter.", options: ["too many", "too much", "enough of"], answer: 0,
       explain: "people is plural: too many." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "It's ___ noise! I can't hear you.", options: ["too much", "too many", "very"], answer: 0,
       explain: "noise can't be counted: too much." },
     { s: "She has ___ clothes. Her wardrobe is full!", options: ["too many", "too much", "too"], answer: 0,
-      explain: "clothes is plural: too many." }
+      explain: "clothes is plural: too many." },
+    { s: "There are too ___ chairs in this room.", answers: ["many"],
+      explain: "Plural noun: too many." },
+    { s: "I've got too ___ homework this week.", answers: ["much"],
+      explain: "homework can't be counted: too much." },
+    { s: "Don't eat too ___ sweets.", answers: ["many"],
+      explain: "Plural noun: too many." },
+    { s: "There's too ___ sugar in this coffee.", answers: ["much"],
+      explain: "sugar can't be counted: too much." },
+    { s: "Too ___ people want tickets for the concert.", answers: ["many"],
+      explain: "people is plural: too many." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "enough",
-  intro: "Choose the correct option. enough goes after adjectives (old enough) and before nouns (enough money).",
+  intro: "Choose the correct option or write the missing words. enough goes after adjectives (old enough) and before nouns (enough money).",
   items: [
     { s: "I'm not ___ to go on this ride.", options: ["tall enough", "enough tall", "too tall"], answer: 0,
       explain: "After an adjective: tall enough." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "She speaks English ___ to work in London.", options: ["well enough", "enough well", "too well"], answer: 0,
       explain: "After an adverb: well enough." },
     { s: "We've got ___ eggs for the cake.", options: ["enough", "too", "very"], answer: 0,
-      explain: "Before a noun: enough eggs." }
+      explain: "Before a noun: enough eggs." },
+    { s: "I can't reach it. I'm not ___. (tall / enough)", answers: ["tall enough"],
+      explain: "Adjective + enough." },
+    { s: "We don't have ___ to buy a house. (enough / money)", answers: ["enough money"],
+      explain: "enough + noun." },
+    { s: "Is the room ___ for ten people? (big / enough)", answers: ["big enough"],
+      explain: "Adjective + enough." },
+    { s: "He didn't study ___. (hard / enough)", answers: ["hard enough"],
+      explain: "Adverb + enough." },
+    { s: "Are there ___ for everyone? (enough / plates)", answers: ["enough plates"],
+      explain: "enough + noun." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "too or not … enough?",
-  intro: "Choose the sentence that means the same.",
+  intro: "Choose the sentence that means the same, or write the missing words.",
   items: [
     { s: "The box is too heavy for me. = The box isn't ___ for me.", options: ["light enough", "heavy enough", "enough light"], answer: 0,
       explain: "too heavy = not light enough." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "It's too cold to swim. = It isn't ___ to swim.", options: ["warm enough", "cold enough", "enough warm"], answer: 0,
       explain: "too cold = not warm enough." },
     { s: "The shirt is too big for me. = The shirt isn't ___ for me.", options: ["small enough", "big enough", "enough small"], answer: 0,
-      explain: "too big = not small enough." }
+      explain: "too big = not small enough." },
+    { s: "The bus is too slow. = The bus isn't fast ___.", answers: ["enough"],
+      explain: "not + opposite adjective + enough." },
+    { s: "The water is too cold. = The water isn't ___ enough.", answers: ["warm"],
+      explain: "Opposite of cold: warm enough." },
+    { s: "The bag is too small. = The bag isn't ___ enough.", answers: ["big"],
+      explain: "Opposite of small: big enough." },
+    { s: "He isn't old enough to drive. = He's ___ young to drive.", answers: ["too"],
+      explain: "not old enough = too young." },
+    { s: "It isn't warm enough to sit outside. = It's ___ cold to sit outside.", answers: ["too"],
+      explain: "not warm enough = too cold." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Write too, very or enough",
-  intro: "Write one word in each gap: too, very, much, many or enough.",
+  intro: "Choose the correct option or write one word in each gap: too, very, much, many or enough.",
   items: [
     { s: "I can't buy it. It's ___ expensive.", answers: ["too"],
       explain: "A problem (I can't buy it): too." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "We didn't have ___ time to visit the museum.", answers: ["enough"],
       explain: "Before a noun: enough time." },
     { s: "I'm not old ___ to drive.", answers: ["enough"],
-      explain: "After an adjective: old enough." }
+      explain: "After an adjective: old enough." },
+    { s: "I can't sleep. There's ___ noise outside.", options: ["too much", "too many", "enough of"], answer: 0,
+      explain: "noise can't be counted: too much." },
+    { s: "She isn't ___ to reach the top shelf.", options: ["tall enough", "enough tall", "too tall"], answer: 0,
+      explain: "Adjective + enough." },
+    { s: "This is a ___ good restaurant.", options: ["very", "too", "enough"], answer: 0,
+      explain: "A good thing: very." },
+    { s: "There aren't ___ seats on the bus.", options: ["enough", "too", "very"], answer: 0,
+      explain: "enough + noun." },
+    { s: "You're driving ___ fast! Slow down!", options: ["too", "very much", "enough"], answer: 0,
+      explain: "There's a problem: too." }
   ]
 }
 ];

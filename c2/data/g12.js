@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Modifying comparisons",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "This book is ___ better than his last one.", options: ["far", "very", "too", "so"], answer: 0,
       explain: "far / much / a lot + comparative." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "He earns ___ as I do.", options: ["twice as much", "twice more", "double as much", "two times much"], answer: 0,
       explain: "twice / three times as much as." },
     { s: "It's not ___ difficult as I expected.", options: ["quite as", "quite so much", "so quite", "as quite"], answer: 0,
-      explain: "not quite as… as = slightly less." }
+      explain: "not quite as… as = slightly less." },
+    { s: "This exam was ___ harder than the last one.", answers: ["much", "far", "a lot", "considerably", "significantly", "a great deal", "a good deal"],
+      explain: "A big difference." },
+    { s: "He's ___ the most talented player in the team.", answers: ["by far", "easily", "undoubtedly", "much"],
+      explain: "Strengthening a superlative." },
+    { s: "The film wasn't ___ as good as the book.", answers: ["nearly", "quite", "anywhere near", "half"],
+      explain: "not nearly / not quite as … as." },
+    { s: "The ___ you eat, the healthier you'll be.", answers: ["less", "better", "healthier"],
+      explain: "The + comparative, the + comparative." },
+    { s: "She earns three ___ as much as I do.", answers: ["times"],
+      explain: "three times as much as." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Comparative structures",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "The film was ___ more interesting than I'd expected.", answers: ["much", "far"],
       explain: "much / far + comparative (a lot is also possible, but it's two words)." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "She ran as fast as she ___.", answers: ["could"],
       explain: "as… as + subject + could." },
     { s: "Nothing is ___ important than your health.", answers: ["more"],
-      explain: "Nothing is more… than…" }
+      explain: "Nothing is more… than…" },
+    { s: "The harder you work, ___ you'll get.", options: ["the further", "further", "the furthest"], answer: 0,
+      explain: "The + comparative, the + comparative." },
+    { s: "It's ___ more expensive than I thought.", options: ["a great deal", "a great many", "very"], answer: 0,
+      explain: "a great deal + comparative." },
+    { s: "She's twice ___ old as her cousin.", options: ["as", "so", "more"], answer: 0,
+      explain: "twice as … as." },
+    { s: "Things are getting ___.", options: ["worse and worse", "more and more bad", "worst and worst"], answer: 0,
+      explain: "Comparative + and + comparative." },
+    { s: "He's not so much lazy ___ unmotivated.", options: ["as", "than", "like"], answer: 0,
+      explain: "not so much X as Y." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Gradable and ungradable",
-  intro: "Choose the correct modifier.",
+  intro: "Choose or write the correct modifier.",
   items: [
     { s: "The view from the top was ___ breathtaking.", options: ["utterly", "very", "fairly", "slightly"], answer: 0,
       explain: "breathtaking is extreme: utterly / absolutely." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The plan is ___ flawed.", options: ["fundamentally", "fundamental", "fundament", "fundamentalist"], answer: 0,
       explain: "fundamentally flawed = wrong at its base." },
     { s: "She's ___ talented.", options: ["exceptionally", "exception", "exceptional", "excepting"], answer: 0,
-      explain: "exceptionally + adjective = unusually." }
+      explain: "exceptionally + adjective = unusually." },
+    { s: "The film was ___ brilliant – you must see it.", answers: ["absolutely", "utterly", "truly", "simply", "really", "quite"],
+      explain: "Ungradable adjective: absolutely, not very." },
+    { s: "We were ___ moved by her speech. (deep)", answers: ["deeply"],
+      explain: "deeply moved = very moved." },
+    { s: "The two plans are ___ different. (complete)", answers: ["completely"],
+      explain: "completely different." },
+    { s: "It's ___ impossible to get tickets now. (virtual)", answers: ["virtually"],
+      explain: "virtually = almost." },
+    { s: "I'm ___ sorry for the delay. (terrible)", answers: ["terribly"],
+      explain: "terribly sorry = very sorry." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Adverb position",
-  intro: "Choose the sentence with the most natural word order.",
+  intro: "Choose the sentence with the most natural word order, or write the missing words.",
   items: [
     { s: "(only) ___", options: ["I only realised later what she meant.", "I realised only later what she meant only.", "I realised later only what she meant."], answer: 0,
       explain: "only usually goes before the main verb in speech; position changes meaning (only I = nobody else)." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "(frankly) ___", options: ["Frankly, I don't care.", "I don't frankly care, frankly.", "I frankly don't, care."], answer: 0,
       explain: "Comment adverbs usually go at the start." },
     { s: "(just) ___", options: ["I've just finished.", "I've finished just.", "Just I've finished it now."], answer: 0,
-      explain: "just between have and the past participle." }
+      explain: "just between have and the past participle." },
+    { s: "She ___ (still / not / have) replied to my email.", answers: ["still hasn't", "still has not"],
+      explain: "still goes before a negative auxiliary." },
+    { s: "I ___ (hardly / can) believe it.", answers: ["can hardly"],
+      explain: "hardly goes after the modal." },
+    { s: "We ___ (already / have) booked the tickets.", answers: ["have already", "'ve already"],
+      explain: "already goes after the auxiliary." },
+    { s: "He ___ (even / didn't) say thank you.", answers: ["didn't even", "did not even"],
+      explain: "even goes after the negative auxiliary." },
+    { s: "They ___ (never / have) been to Asia.", answers: ["have never", "'ve never"],
+      explain: "never goes after the auxiliary." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "The house is much smaller than I expected. → The house is ___ I expected. (LOT)", answers: ["a lot smaller than"],
       explain: "a lot + comparative." },
     { s: "I've never eaten such delicious food. → This is ___ food I've ever eaten. (MOST)", answers: ["the most delicious"],
-      explain: "superlative + ever." }
+      explain: "superlative + ever." },
+    { s: "Tom isn't as tall as his brother. → Tom's brother ___ Tom. (THAN)", answers: ["is taller than"],
+      explain: "Comparative + than." },
+    { s: "The film was far less exciting than the book. → The film was ___ the book. (NOWHERE)", answers: ["nowhere near as exciting as"],
+      explain: "nowhere near as … as." },
+    { s: "If you start early, you'll finish early. → The ___ you'll finish. (EARLIER)", answers: ["earlier you start, the earlier", "earlier you start the earlier"],
+      explain: "The + comparative, the + comparative." },
+    { s: "She's a much better cook than I am. → I'm not ___ she is. (NEARLY)", answers: ["nearly as good a cook as", "nearly such a good cook as"],
+      explain: "not nearly as … as." },
+    { s: "Rents here are double what they were. → Rents here are ___ they were. (TWICE)", answers: ["twice as high as"],
+      explain: "twice as … as." }
   ]
 }
 ];

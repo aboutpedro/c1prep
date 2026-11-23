@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "who, which, whose, where, when",
-  intro: "Choose the correct relative pronoun or adverb.",
+  intro: "Choose or write the correct relative pronoun or adverb.",
   items: [
     { s: "That's the woman ___ son won the competition.", options: ["whose", "who", "who's"], answer: 0,
       explain: "whose = of whom: her son." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "My grandfather, ___ is 90, still drives.", options: ["who", "that", "which"], answer: 0,
       explain: "Non-defining clause (with commas): who for people. that is not possible." },
     { s: "She's the only person ___ really understands me.", options: ["who", "whom", "whose"], answer: 0,
-      explain: "who is the subject of understands. whom is only for objects." }
+      explain: "who is the subject of understands. whom is only for objects." },
+    { s: "That's the shop ___ I bought my bike.", answers: ["where"],
+      explain: "A place → where." },
+    { s: "He's the man ___ car was stolen.", answers: ["whose"],
+      explain: "His car → whose." },
+    { s: "I'll never forget the moment ___ she said yes.", answers: ["when"],
+      explain: "A time → when." },
+    { s: "Everything ___ she told me was true.", answers: ["that"],
+      explain: "After everything: that." },
+    { s: "The reason ___ I called is to invite you.", answers: ["why", "that"],
+      explain: "the reason why." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Defining and non-defining clauses",
-  intro: "Choose the correct option. Some sentences have commas, which means the clause gives extra information.",
+  intro: "Choose the correct option or write the missing words. Some sentences have commas, which means the clause gives extra information.",
   items: [
     { s: "Paris, ___ is the capital of France, attracts millions of tourists.", options: ["which", "that", "what"], answer: 0,
       explain: "Non-defining (commas): which, not that." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The keys ___ I lost turned up in my coat pocket.", options: ["that", "what", "who"], answer: 0,
       explain: "Defining clause: that or which (or no pronoun)." },
     { s: "We stayed in Kyoto, ___ we visited lots of temples.", options: ["where", "which", "that"], answer: 0,
-      explain: "where = in which place." }
+      explain: "where = in which place." },
+    { s: "The book, ___ was published in 1950, is still popular.", answers: ["which"],
+      explain: "Non-defining, a thing: which (not that)." },
+    { s: "The people ___ live next door are very noisy.", answers: ["who", "that"],
+      explain: "Defining, people: who / that." },
+    { s: "My boss, ___ wife is a doctor, is very understanding.", answers: ["whose"],
+      explain: "His wife → whose." },
+    { s: "The town ___ I was born is very small.", answers: ["where"],
+      explain: "A place → where." },
+    { s: "Our neighbours, ___ we've known for years, are moving.", answers: ["who", "whom"],
+      explain: "Non-defining, people: who / whom." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Prepositions and which for a whole idea",
-  intro: "Complete each sentence with one word: which, whom, whose, what or where.",
+  intro: "Choose the correct option or complete each sentence with one word: which, whom, whose, what or where.",
   items: [
     { s: "The person to ___ I spoke was very helpful.", answers: ["whom"],
       explain: "After a preposition, use whom for people (formal)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The writer, ___ latest novel has just come out, is giving a talk.", answers: ["whose"],
       explain: "whose + noun." },
     { s: "That's the restaurant ___ we had our first date.", answers: ["where"],
-      explain: "where = in which." }
+      explain: "where = in which." },
+    { s: "The friend with ___ I travelled is from Peru.", options: ["who", "whom", "which"], answer: 1,
+      explain: "After a preposition, for people: whom." },
+    { s: "He lost his job, ___ was a shock to everyone.", options: ["that", "which", "what"], answer: 1,
+      explain: "which for the whole idea." },
+    { s: "I have two cars, neither of ___ is new.", options: ["them", "that", "which"], answer: 2,
+      explain: "neither of which." },
+    { s: "___ surprised me was how friendly everyone was.", options: ["Which", "What", "That"], answer: 1,
+      explain: "What = the thing that." },
+    { s: "The town in ___ I grew up has changed a lot.", options: ["where", "which", "that"], answer: 1,
+      explain: "preposition + which." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Shortened relative clauses",
-  intro: "Complete the sentences with the -ing form or the past participle of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the -ing form or the past participle of the verbs in brackets.",
   items: [
     { s: "The man ___ (stand) by the door is my uncle.", answers: ["standing"],
       explain: "standing = who is standing (active)." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "I found a note ___ (say) that the meeting had been cancelled.", answers: ["saying"],
       explain: "saying = which said." },
     { s: "Products ___ (make) in this factory are sold all over Europe.", answers: ["made"],
-      explain: "made = which are made." }
+      explain: "made = which are made." },
+    { s: "The woman ___ in the corner is my aunt.", options: ["sits", "sitting", "to sit"], answer: 1,
+      explain: "Active meaning: -ing." },
+    { s: "The letters ___ last week haven't arrived.", options: ["sending", "send", "sent"], answer: 2,
+      explain: "Passive meaning: past participle." },
+    { s: "People ___ in old houses often have high heating bills.", options: ["lived", "living", "live"], answer: 1,
+      explain: "Active meaning: -ing." },
+    { s: "The bridge ___ in the storm is being rebuilt.", options: ["damaged", "damaging", "damage"], answer: 0,
+      explain: "Passive meaning: past participle." },
+    { s: "Anyone ___ to join should sign up today.", options: ["wished", "wishing", "wish"], answer: 1,
+      explain: "Active meaning: -ing." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I don't remember the year when we moved here. → I don't remember the year ___ here. (WHICH)", answers: ["in which we moved"],
       explain: "when = in which." },
     { s: "Tell me the thing that is worrying you. → Tell me ___ you. (WHAT)", answers: ["what is worrying", "what's worrying"],
-      explain: "what = the thing that." }
+      explain: "what = the thing that." },
+    { s: "I know a man. His daughter is an astronaut. → I know a man ___ an astronaut. (WHOSE)", answers: ["whose daughter is"],
+      explain: "his daughter → whose daughter." },
+    { s: "She passed all her exams, and this pleased her parents. → She passed all her exams, ___ her parents. (WHICH)", answers: ["which pleased"],
+      explain: "which for the whole idea." },
+    { s: "The cake that was made by Ana was delicious. → The cake ___ Ana was delicious. (MADE)", answers: ["made by"],
+      explain: "Shortened passive clause." },
+    { s: "I have three cousins. None of them live here. → I have three cousins, ___ live here. (WHOM)", answers: ["none of whom"],
+      explain: "none of whom." },
+    { s: "The thing that annoys me is the noise. → ___ the noise. (WHAT)", answers: ["What annoys me is"],
+      explain: "What = the thing that." }
   ]
 }
 ];

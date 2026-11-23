@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Verbs + -ing",
-  intro: "Choose the correct form. After enjoy, finish, don't mind, can't stand and go (for activities), we use the -ing form.",
+  intro: "Choose or write the correct form. After enjoy, finish, don't mind, can't stand and go (for activities), we use the -ing form.",
   items: [
     { s: "I enjoy ___ to music in the car.", options: ["listening", "to listen", "listen"], answer: 0,
       explain: "enjoy + -ing: I enjoy listening." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I've finished ___ the book you lent me. It was great.", options: ["reading", "to read", "read"], answer: 0,
       explain: "finish + -ing." },
     { s: "Would you mind ___ the window?", options: ["closing", "to close", "close"], answer: 0,
-      explain: "Would you mind + -ing is a polite request." }
+      explain: "Would you mind + -ing is a polite request." },
+    { s: "I can't stand ___ in the rain. (walk)", answers: ["walking"],
+      explain: "can't stand + -ing." },
+    { s: "She doesn't mind ___ late. (work)", answers: ["working"],
+      explain: "don't mind + -ing." },
+    { s: "Let's go ___ on Saturday. (run)", answers: ["running"],
+      explain: "go + -ing for activities. run → running." },
+    { s: "Have you finished ___ the car? (clean)", answers: ["cleaning"],
+      explain: "finish + -ing." },
+    { s: "We enjoyed ___ to you. (talk)", answers: ["talking"],
+      explain: "enjoy + -ing." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Verbs + to",
-  intro: "Choose the correct form. After want, would like, need, decide, hope, plan, learn and forget, we use to + verb.",
+  intro: "Choose or write the correct form. After want, would like, need, decide, hope, plan, learn and forget, we use to + verb.",
   items: [
     { s: "I want ___ a new phone.", options: ["to buy", "buying", "buy"], answer: 0,
       explain: "want + to: I want to buy." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "He promised ___ me with my homework.", options: ["to help", "helping", "help"], answer: 0,
       explain: "promise + to: promised to help." },
     { s: "My little brother wants ___ a doctor when he grows up.", options: ["to be", "being", "be"], answer: 0,
-      explain: "want + to: wants to be." }
+      explain: "want + to: wants to be." },
+    { s: "I need ___ some money. (save)", answers: ["to save"],
+      explain: "need + to + verb." },
+    { s: "She decided ___ a new job. (look for)", answers: ["to look for"],
+      explain: "decide + to + verb." },
+    { s: "They're hoping ___ the match. (win)", answers: ["to win"],
+      explain: "hope + to + verb." },
+    { s: "We forgot ___ the door. (lock)", answers: ["to lock"],
+      explain: "forget + to + verb." },
+    { s: "He's learning ___. (drive)", answers: ["to drive"],
+      explain: "learn + to + verb." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "-ing after prepositions",
-  intro: "Write the correct form of the verb in brackets. After a preposition (at, in, of, about, for, before, after…) we use the -ing form.",
+  intro: "Choose the correct option or write the correct form of the verb in brackets. After a preposition (at, in, of, about, for, before, after…) we use the -ing form.",
   items: [
     { s: "I'm not very good at ___ pictures. (draw)", answers: ["drawing"], width: 11,
       explain: "good at + -ing: good at drawing." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I'm tired of ___ for the bus every morning. (wait)", answers: ["waiting"], width: 11,
       explain: "tired of + -ing: tired of waiting." },
     { s: "He left without ___ goodbye. (say)", answers: ["saying"], width: 11,
-      explain: "without + -ing: without saying." }
+      explain: "without + -ing: without saying." },
+    { s: "I'm looking forward to ___ you.", options: ["see", "to see", "seeing"], answer: 2,
+      explain: "look forward to + -ing (to is a preposition here)." },
+    { s: "She's good at ___ languages.", options: ["learn", "to learn", "learning"], answer: 2,
+      explain: "After at: -ing." },
+    { s: "Instead of ___ a taxi, we walked.", options: ["taking", "take", "to take"], answer: 0,
+      explain: "After of: -ing." },
+    { s: "He's worried about ___ his exam.", options: ["failing", "fail", "to fail"], answer: 0,
+      explain: "After about: -ing." },
+    { s: "What about ___ to the beach?", options: ["going", "go", "to go"], answer: 0,
+      explain: "What about + -ing? = a suggestion." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Why? to + verb",
-  intro: "Choose the correct option. To say why we do something, we use to + verb.",
+  intro: "Choose the correct option or write the missing words. To say why we do something, we use to + verb.",
   items: [
     { s: "I went to the shop ___ some bread.", options: ["to buy", "for buy", "for to buy"], answer: 0,
       explain: "Purpose (why?): to + verb: to buy some bread." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "We stopped at a café ___ a coffee.", options: ["for", "to", "for to"], answer: 0,
       explain: "With a noun (a coffee), we use for: for a coffee. With a verb: to have a coffee." },
     { s: "I went to the doctor ___ a check-up.", options: ["for", "to", "for to"], answer: 0,
-      explain: "With a noun (a check-up), we use for." }
+      explain: "With a noun (a check-up), we use for." },
+    { s: "I went to the bakery ___ some bread. (buy)", answers: ["to buy"],
+      explain: "Why? to + verb." },
+    { s: "She called me ___ hello. (say)", answers: ["to say"],
+      explain: "Why? to + verb." },
+    { s: "He opened the window ___ some fresh air. (get)", answers: ["to get"],
+      explain: "Why? to + verb." },
+    { s: "I'm going to the station ___ my uncle. (meet)", answers: ["to meet"],
+      explain: "Why? to + verb." },
+    { s: "They went to the park ___ a picnic. (have)", answers: ["to have"],
+      explain: "Why? to + verb." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Write the correct form of the verb in brackets: the -ing form or to + verb.",
+  intro: "Choose the correct option or write the correct form of the verb in brackets: the -ing form or to + verb.",
   items: [
     { s: "I'd like ___ a coffee, please. (order)", answers: ["to order"], width: 12,
       explain: "would like + to: I'd like to order." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "She left the party without ___ to anyone. (speak)", answers: ["speaking"], width: 12,
       explain: "without + -ing." },
     { s: "I hope ___ my driving test next week. (pass)", answers: ["to pass"], width: 12,
-      explain: "hope + to." }
+      explain: "hope + to." },
+    { s: "I'd love ___ Japan one day.", options: ["visiting", "to visit", "visit"], answer: 1,
+      explain: "would love + to + verb." },
+    { s: "He stopped ___ when he saw the police.", options: ["to running", "run", "running"], answer: 2,
+      explain: "stop + -ing = not do it any more." },
+    { s: "Don't forget ___ milk!", options: ["buying", "to buy", "buy"], answer: 1,
+      explain: "forget + to + verb." },
+    { s: "They're thinking of ___ house.", options: ["move", "to move", "moving"], answer: 2,
+      explain: "After of: -ing." },
+    { s: "We went to the beach ___ in the sun.", options: ["for relax", "relaxing", "to relax"], answer: 2,
+      explain: "Why? to + verb." }
   ]
 }
 ];

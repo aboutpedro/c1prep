@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Zero and first conditional",
-  intro: "Complete the sentences with the correct form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verbs in brackets.",
   items: [
     { s: "If you heat ice, it ___ (melt).", answers: ["melts"],
       explain: "Zero conditional (if + present, present) for things that are always true." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "If you mix red and yellow, you ___ (get) orange.", answers: ["get"],
       explain: "A fact: zero conditional." },
     { s: "If I ___ (see) Paul, I'll tell him to call you.", answers: ["see"],
-      explain: "if + present simple, even though we're talking about the future." }
+      explain: "if + present simple, even though we're talking about the future." },
+    { s: "If you ___ water to 100°C, it boils.", options: ["heat", "will heat", "heated"], answer: 0,
+      explain: "Zero conditional: if + present, present." },
+    { s: "If I ___ enough money, I'll buy a new laptop.", options: ["save", "will save", "saved"], answer: 0,
+      explain: "First conditional: if + present simple." },
+    { s: "You'll feel better if you ___ some sleep.", options: ["get", "will get", "got"], answer: 0,
+      explain: "if + present simple, even about the future." },
+    { s: "If the weather ___ bad, the match will be cancelled.", options: ["will be", "was", "is"], answer: 2,
+      explain: "if + present simple." },
+    { s: "What will you do if the bus ___ late?", options: ["is", "will be", "was"], answer: 0,
+      explain: "if + present simple." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Second conditional",
-  intro: "Complete the sentences with the correct form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verbs in brackets.",
   items: [
     { s: "If I ___ (have) more money, I'd buy a new car.", answers: ["had"],
       explain: "Second conditional: if + past simple, would + verb, for imaginary situations now or in the future." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ (you / tell) me if you had a problem?", answers: ["Would you tell"],
       explain: "Question: Would + subject + verb?" },
     { s: "If it ___ (not / be) so expensive, I'd buy it.", answers: ["wasn't", "weren't"],
-      explain: "if + past of be: wasn't (or weren't, which is more formal)." }
+      explain: "if + past of be: wasn't (or weren't, which is more formal)." },
+    { s: "If I ___ a car, I'd drive to work.", options: ["have", "would have", "had"], answer: 2,
+      explain: "Second conditional: if + past simple." },
+    { s: "She'd be happier if she ___ a better job.", options: ["has", "had", "would have"], answer: 1,
+      explain: "if + past simple." },
+    { s: "If I ___ you, I'd accept the offer.", options: ["am", "would be", "were"], answer: 2,
+      explain: "If I were you = my advice." },
+    { s: "We ___ go out more if we lived in the city.", options: ["will", "did", "would"], answer: 2,
+      explain: "The result: would + verb." },
+    { s: "What would you do if someone ___ your wallet?", options: ["steals", "would steal", "stole"], answer: 2,
+      explain: "if + past simple." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "First or second conditional?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "If I ___ time tomorrow, I'll help you.", options: ["have", "had"], answer: 0,
       explain: "A real possibility in the future (I'll help): first conditional, present simple after if." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "If you ___ to the shops later, can you buy some milk?", options: ["go", "went"], answer: 0,
       explain: "A real possibility: if + present simple." },
     { s: "If I ___ the head teacher, I'd make the lunch break longer.", options: ["am", "were"], answer: 1,
-      explain: "Imaginary: if I were…" }
+      explain: "Imaginary: if I were…" },
+    { s: "If I ___ your keys, I'll call you. (find)", answers: ["find"],
+      explain: "A real possibility: first conditional." },
+    { s: "If I ___ the president, I'd make public transport free. (be)", answers: ["were", "was"],
+      explain: "Imaginary: second conditional." },
+    { s: "If you ___ talking, the teacher will get angry. (not / stop)", answers: ["don't stop"],
+      explain: "First conditional: if + present." },
+    { s: "If we ___ by the sea, we'd go swimming every day. (live)", answers: ["lived"],
+      explain: "Imaginary: if + past simple." },
+    { s: "She ___ you if you ask her. (help)", answers: ["will help"],
+      explain: "First conditional result: will." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "if, unless, when, as soon as, in case",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I'll call you ___ I arrive.", options: ["when", "unless", "in case"], answer: 0,
       explain: "when = at the time that (we're sure it will happen)." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Write down my number ___ you need it.", options: ["in case", "unless", "when"], answer: 0,
       explain: "in case = because you might need it." },
     { s: "___ you're hungry, there's some pizza in the fridge.", options: ["If", "Unless", "As soon as"], answer: 0,
-      explain: "If you're hungry = in the situation that you're hungry." }
+      explain: "If you're hungry = in the situation that you're hungry." },
+    { s: "I won't go ___ you go too.", answers: ["unless"],
+      explain: "unless = if … not." },
+    { s: "Take some water ___ you get thirsty.", answers: ["in case"],
+      explain: "in case = because it's possible." },
+    { s: "Call me as ___ as you get home.", answers: ["soon"],
+      explain: "as soon as = immediately when." },
+    { s: "___ I finish work, I'll come to your house.", answers: ["When", "As soon as", "After", "Once"],
+      explain: "When (it will happen)." },
+    { s: "You can't come in ___ you have a ticket.", answers: ["unless"],
+      explain: "unless = if you don't." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Complete the sentences with the correct form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verbs in brackets.",
   items: [
     { s: "If you ___ (press) this button, the machine starts.", answers: ["press"],
       explain: "Zero conditional: a general rule." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "If the shop ___ (be) closed, we'll go to the one in the next street.", answers: ["is"],
       explain: "Real possibility: if + present simple." },
     { s: "What would happen if everyone ___ (stop) using cars?", answers: ["stopped"],
-      explain: "Imaginary situation: if + past simple." }
+      explain: "Imaginary situation: if + past simple." },
+    { s: "If you ___ me, I'd tell you the truth.", options: ["asked", "ask", "would ask"], answer: 0,
+      explain: "Second conditional: if + past." },
+    { s: "I'll be really surprised if they ___.", options: ["win", "will win", "won"], answer: 0,
+      explain: "First conditional: if + present." },
+    { s: "___ you leave now, you'll be late.", options: ["Unless", "If", "When"], answer: 0,
+      explain: "Unless = if you don't." },
+    { s: "If it ___ so cold, we could go for a walk.", options: ["isn't", "wouldn't be", "weren't"], answer: 2,
+      explain: "Imaginary now: if + past (weren't)." },
+    { s: "Bring a jacket ___ it gets cold later.", options: ["unless", "if not", "in case"], answer: 2,
+      explain: "in case = because it's possible." }
   ]
 }
 ];

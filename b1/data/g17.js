@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "should have / shouldn't have",
-  intro: "Choose the correct option. Should have + past participle = it was a good idea, but you didn't do it. Shouldn't have = you did it, but it was a bad idea.",
+  intro: "Choose the correct option or write the missing words. Should have + past participle = it was a good idea, but you didn't do it. Shouldn't have = you did it, but it was a bad idea.",
   items: [
     { s: "I failed the test. I ___ harder.", options: ["should have studied", "should study", "shouldn't have studied"], answer: 0,
       explain: "It was a good idea to study harder, but I didn't: should have studied." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I ___ to the party. It was really boring.", options: ["shouldn't have gone", "should have gone", "shouldn't go"], answer: 0,
       explain: "I went, and I regret it: shouldn't have gone." },
     { s: "You ___ your passport! How are we going to fly now?", options: ["should have checked", "should check", "shouldn't have checked"], answer: 0,
-      explain: "You didn't check it, and that was a mistake: should have checked." }
+      explain: "You didn't check it, and that was a mistake: should have checked." },
+    { s: "I'm so tired. I ___ to bed earlier. (go)", answers: ["should have gone"],
+      explain: "A good idea that I didn't do: should have + past participle." },
+    { s: "You ___ him my secret! (not / tell)", answers: ["shouldn't have told", "should not have told"],
+      explain: "You did it, and it was wrong: shouldn't have." },
+    { s: "We ___ an umbrella. It's raining. (bring)", answers: ["should have brought"],
+      explain: "should have + past participle." },
+    { s: "She ___ so fast. (not / drive)", answers: ["shouldn't have driven", "should not have driven"],
+      explain: "shouldn't have + past participle." },
+    { s: "I ___ to your advice. (listen)", answers: ["should have listened"],
+      explain: "should have + past participle." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "could have",
-  intro: "Choose the correct option. Could have + past participle = it was possible, but it didn't happen.",
+  intro: "Choose the correct option or write the missing words. Could have + past participle = it was possible, but it didn't happen.",
   items: [
     { s: "Why did you walk home alone? You ___ a taxi.", options: ["could have taken", "can take", "could take"], answer: 0,
       explain: "A taxi was possible, but you didn't take one: could have taken." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I ___ the answer, but I didn't want to show off.", options: ["could have said", "could say", "can say"], answer: 0,
       explain: "It was possible, but I didn't: could have said." },
     { s: "You ___ me you were in town! We could have met for lunch.", options: ["could have told", "could tell", "can tell"], answer: 0,
-      explain: "Criticism: it was possible to tell me, but you didn't: could have told." }
+      explain: "Criticism: it was possible to tell me, but you didn't: could have told." },
+    { s: "You ___ me. I would have picked you up. (call)", answers: ["could have called"],
+      explain: "It was possible, but you didn't: could have." },
+    { s: "He ___ a doctor, but he became a musician. (be)", answers: ["could have been"],
+      explain: "A possibility that didn't happen." },
+    { s: "We ___ to the beach, but it rained. (go)", answers: ["could have gone"],
+      explain: "could have + past participle." },
+    { s: "Be careful! You ___! (fall)", answers: ["could have fallen"],
+      explain: "It was possible: could have fallen." },
+    { s: "They ___ the game, but they made too many mistakes. (win)", answers: ["could have won"],
+      explain: "could have + past participle." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "must have, might have, can't have",
-  intro: "Choose the correct option. These are guesses about the past: must have = I'm sure it happened; might / may / could have = maybe; can't / couldn't have = I'm sure it didn't happen.",
+  intro: "Choose the correct option or write the missing words. These are guesses about the past: must have = I'm sure it happened; might / may / could have = maybe; can't / couldn't have = I'm sure it didn't happen.",
   items: [
     { s: "The streets are wet. It ___ in the night.", options: ["must have rained", "can't have rained", "should have rained"], answer: 0,
       explain: "I'm sure it rained (the streets are wet): must have rained." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "They ___ the house already. It was only on sale yesterday.", options: ["can't have sold", "must have sold", "should have sold"], answer: 0,
       explain: "I'm sure they didn't (it's too soon): can't have sold." },
     { s: "Someone ___ my sandwich. It was here five minutes ago!", options: ["must have eaten", "can't have eaten", "should have eaten"], answer: 0,
-      explain: "I'm sure someone ate it (it's gone): must have eaten." }
+      explain: "I'm sure someone ate it (it's gone): must have eaten." },
+    { s: "She's not here. I'm sure she ___ home. (go)", answers: ["must have gone"],
+      explain: "I'm sure: must have." },
+    { s: "I'm not sure where Tom is. He ___ out. (go)", answers: ["might have gone", "may have gone", "could have gone"],
+      explain: "Maybe: might have." },
+    { s: "He ___ the film. It isn't out yet! (see)", answers: ["can't have seen", "couldn't have seen", "cannot have seen"],
+      explain: "Impossible: can't have." },
+    { s: "You ___ so happy when you heard the news! (be)", answers: ["must have been"],
+      explain: "I'm sure: must have been." },
+    { s: "I can't find my glasses. I ___ them at work. (leave)", answers: ["might have left", "may have left", "could have left"],
+      explain: "Maybe: might have." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Write the modal perfect",
-  intro: "Write the modal and have + the past participle of the verb in brackets.",
+  intro: "Choose the correct option or write the modal and have + the past participle of the verb in brackets.",
   items: [
     { s: "I'm sure she was surprised. She ___ (must / be) very surprised.", answers: ["must have been"], width: 18,
       explain: "must + have + been." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I'm sure it wasn't easy. It ___ (can't / be) easy.", answers: ["can't have been", "cannot have been", "couldn't have been", "could not have been"], width: 18,
       explain: "can't (or couldn't) + have + been." },
     { s: "You didn't need to come, but it was possible. You ___ (could / come) with us.", answers: ["could have come"], width: 18,
-      explain: "could + have + come (come – came – come)." }
+      explain: "could + have + come (come – came – come)." },
+    { s: "I'm sure she knew the answer. → She ___ the answer.", options: ["should have known", "must have known", "can't have known"], answer: 1,
+      explain: "I'm sure → must have." },
+    { s: "It was a bad idea to buy that car. → I ___ that car.", options: ["can't have bought", "shouldn't have bought", "couldn't have bought"], answer: 1,
+      explain: "A bad idea in the past → shouldn't have." },
+    { s: "Maybe he didn't hear you. → He ___ you.", options: ["can't have heard", "might not have heard", "shouldn't have heard"], answer: 1,
+      explain: "Maybe not → might not have." },
+    { s: "It was possible for you to hurt yourself. → You ___ yourself.", options: ["could have hurt", "must have hurt", "should have hurt"], answer: 0,
+      explain: "Possible → could have." },
+    { s: "I'm sure they didn't see us. → They ___ us.", options: ["shouldn't have seen", "mustn't have seen", "can't have seen"], answer: 2,
+      explain: "I'm sure it didn't happen → can't have." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Mixed practice",
-  intro: "Choose the best option.",
+  intro: "Choose the best option or write the missing words.",
   items: [
     { s: "Leo didn't come to class. He ___ ill.", options: ["might have been", "should have been", "should be"], answer: 0,
       explain: "A guess about the past: maybe he was ill: might have been." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "They ___ a great time in Rome. They loved it.", options: ["must have had", "should have had", "can't have had"], answer: 0,
       explain: "A sure guess from what you know (they loved it): must have had." },
     { s: "We ___ the bigger flat. This one is too small.", options: ["should have rented", "must have rented", "can't have rented"], answer: 0,
-      explain: "A regret: renting the bigger flat was a better idea: should have rented." }
+      explain: "A regret: renting the bigger flat was a better idea: should have rented." },
+    { s: "The ground is wet. It ___ last night. (rain)", answers: ["must have rained"],
+      explain: "I'm sure: must have." },
+    { s: "I failed. I ___ more. (study)", answers: ["should have studied"],
+      explain: "A regret: should have." },
+    { s: "She didn't reply. She ___ my message. (not / get)", answers: ["might not have got", "may not have got", "might not have gotten", "may not have gotten"],
+      explain: "Maybe not: might not have." },
+    { s: "Why did you walk? You ___ the bus. (take)", answers: ["could have taken"],
+      explain: "Possible, but you didn't: could have." },
+    { s: "You ___ all the cake! I wanted some! (not / eat)", answers: ["shouldn't have eaten", "should not have eaten"],
+      explain: "A criticism: shouldn't have." }
   ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Which way?",
-  intro: "Choose the correct preposition.",
+  intro: "Choose or write the correct preposition.",
   items: [
     { s: "The cat jumped ___ the box. Now you can't see it.", options: ["into", "out of", "along"], answer: 0,
       explain: "Movement to the inside: into." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "The plane flew ___ the mountains.", options: ["over", "under", "through"], answer: 0,
       explain: "Higher than: over." },
     { s: "The boat went ___ the bridge.", options: ["under", "over", "across"], answer: 0,
-      explain: "Lower than the bridge: under." }
+      explain: "Lower than the bridge: under." },
+    { s: "Come ___ the room! It's cold outside.", answers: ["into", "in"],
+      explain: "From outside to inside → into." },
+    { s: "She swam ___ the river to the other side.", answers: ["across"],
+      explain: "From one side to the other → across." },
+    { s: "We drove ___ the tunnel.", answers: ["through"],
+      explain: "In one end and out of the other → through." },
+    { s: "He walked ___ the stairs to the second floor.", answers: ["up"],
+      explain: "To a higher place → up." },
+    { s: "The ball rolled ___ the car. (below it)", answers: ["under"],
+      explain: "Below → under." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Directions",
-  intro: "Choose the correct word.",
+  intro: "Choose or write the correct word.",
   items: [
     { s: "Go ___ this street to the end.", options: ["along", "across", "into"], answer: 0,
       explain: "Follow the street: along." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Get ___ the train at platform 3.", options: ["on", "in", "into"], answer: 0,
       explain: "We get on a bus, train or plane." },
     { s: "Walk ___ the river until you see the bridge.", options: ["along", "across", "over"], answer: 0,
-      explain: "Follow the river: along." }
+      explain: "Follow the river: along." },
+    { s: "Go ___ the stairs to the first floor.", answers: ["up"],
+      explain: "To a higher floor → up." },
+    { s: "Walk ___ the shop. The station is just after it.", answers: ["past"],
+      explain: "Go by it without stopping → past." },
+    { s: "Get ___ the bus at the next stop.", answers: ["off"],
+      explain: "Leave a bus → get off." },
+    { s: "Go ___ the square to the other side.", answers: ["across", "through"],
+      explain: "To the other side → across." },
+    { s: "Get ___ the taxi. I'll take you home.", answers: ["into", "in"],
+      explain: "Cars and taxis → get into / get in." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Get on, get off, get in, get out",
-  intro: "Write on, off, into or out of.",
+  intro: "Choose the correct option or write on, off, into or out of.",
   items: [
     { s: "We got ___ the plane and found our seats.", answers: ["on"],
       explain: "get on a plane, bus or train." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "When the train stops, get ___ quickly.", answers: ["off"],
       explain: "get off a train." },
     { s: "Get ___ bed! It's nine o'clock!", answers: ["out of"],
-      explain: "Leave the bed: get out of bed." }
+      explain: "Leave the bed: get out of bed." },
+    { s: "She got ___ the train at Oxford.", options: ["off", "out of", "down"], answer: 0,
+      explain: "Leave a train → get off." },
+    { s: "Get ___ the car, please. We're leaving.", options: ["into", "on", "onto"], answer: 0,
+      explain: "Cars → get into." },
+    { s: "I got ___ my horse and rode away.", options: ["on", "in", "into"], answer: 0,
+      explain: "Horses and bikes → get on." },
+    { s: "We got ___ the taxi at the hotel.", options: ["out of", "off", "down"], answer: 0,
+      explain: "Leave a taxi → get out of." },
+    { s: "Get ___ the bus here for the museum.", options: ["off", "out", "down of"], answer: 0,
+      explain: "Leave a bus → get off." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Movement or place?",
-  intro: "Choose the correct option. into / out of / onto = movement; in / on = place.",
+  intro: "Choose the correct option or write the missing words. into / out of / onto = movement; in / on = place.",
   items: [
     { s: "The keys are ___ the drawer.", options: ["in", "into", "out of"], answer: 0,
       explain: "Place, no movement: in." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "She walked ___ the shop and bought some milk.", options: ["into", "in to", "on"], answer: 0,
       explain: "Movement to the inside: into." },
     { s: "They are ___ the garden.", options: ["in", "into", "onto"], answer: 0,
-      explain: "Place: in." }
+      explain: "Place: in." },
+    { s: "She put the milk ___ the fridge.", answers: ["into", "in"],
+      explain: "Movement → into (in is also used)." },
+    { s: "There's some milk ___ the fridge.", answers: ["in"],
+      explain: "Place → in." },
+    { s: "He climbed ___ the roof.", answers: ["onto", "on"],
+      explain: "Movement to a surface → onto." },
+    { s: "The books are ___ the shelf.", answers: ["on"],
+      explain: "Place, on a surface → on." },
+    { s: "She walked ___ the house and sat down in the kitchen.", answers: ["into"],
+      explain: "Movement to inside → into." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Tell the story",
-  intro: "Write the correct preposition: up, down, across, along, through, into, out of, past, over or under.",
+  intro: "Choose the correct option or write the correct preposition: up, down, across, along, through, into, out of, past, over or under.",
   items: [
     { s: "I left the house and walked ___ the street to the corner.", answers: ["along", "down"],
       explain: "Following the street: along (or down)." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I went ___ the café and ordered a coffee.", answers: ["into"],
       explain: "Movement to the inside: into." },
     { s: "When it started to rain, I ran ___ the café and home!", answers: ["out of"],
-      explain: "Movement from the inside: out of." }
+      explain: "Movement from the inside: out of." },
+    { s: "I ran ___ the street to the bus stop.", options: ["along", "into", "under"], answer: 0,
+      explain: "Following the street → along." },
+    { s: "I got ___ the bus.", options: ["on", "in", "at"], answer: 0,
+      explain: "Buses → get on." },
+    { s: "The bus went ___ the river on a big bridge.", options: ["over", "under", "through"], answer: 0,
+      explain: "Above the river → over." },
+    { s: "I got ___ the bus near my house.", options: ["off", "out", "down"], answer: 0,
+      explain: "Leave a bus → get off." },
+    { s: "I walked ___ my front door and sat down.", options: ["through", "across", "along"], answer: 0,
+      explain: "Through a door." }
   ]
 }
 ];

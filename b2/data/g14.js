@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "some, any, no, none",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "Would you like ___ more coffee?", options: ["some", "any", "no"], answer: 0,
       explain: "some in offers and requests." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "If you have ___ questions, please ask.", options: ["any", "no", "none"], answer: 0,
       explain: "any after if." },
     { s: "Can I have ___ water, please?", options: ["some", "any", "none"], answer: 0,
-      explain: "some in requests." }
+      explain: "some in requests." },
+    { s: "There's ___ point in waiting. The shop is closed.", answers: ["no"],
+      explain: "no + noun = not any." },
+    { s: "Have you got ___ plans for the summer?", answers: ["any"],
+      explain: "Questions: any." },
+    { s: "I wanted some cake, but there was ___ left.", answers: ["none", "nothing"],
+      explain: "none = not any, without a noun." },
+    { s: "Could you lend me ___ money?", answers: ["some"],
+      explain: "Requests: some." },
+    { s: "___ of my friends could come, so I went alone.", answers: ["None"],
+      explain: "none of = not one of." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "much, many, a lot of, plenty of",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "How ___ money did you spend?", options: ["much", "many", "lot"], answer: 0,
       explain: "much + uncountable noun." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "How ___ times have you been to London?", options: ["many", "much", "lot"], answer: 0,
       explain: "many + plural noun (times)." },
     { s: "There's too ___ traffic in the city centre.", options: ["much", "many", "lot"], answer: 0,
-      explain: "too much + uncountable noun." }
+      explain: "too much + uncountable noun." },
+    { s: "How ___ people work here?", answers: ["many"],
+      explain: "Countable: How many." },
+    { s: "We don't have ___ time. Hurry up!", answers: ["much"],
+      explain: "Uncountable, negative: much." },
+    { s: "There's ___ of food for everyone. Help yourself.", answers: ["plenty", "lots"],
+      explain: "plenty of = more than enough." },
+    { s: "I haven't got ___ friends here yet.", answers: ["many", "any"],
+      explain: "Countable, negative: many." },
+    { s: "She spends a ___ of money on clothes.", answers: ["lot"],
+      explain: "a lot of." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "few, a few, little, a little",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I've got ___ good friends here, so I'm never lonely.", options: ["a few", "few", "a little"], answer: 0,
       explain: "a few = some (a positive idea)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I'll be ready in ___ minutes.", options: ["a few", "few", "a little"], answer: 0,
       explain: "a few + plural noun = a small number." },
     { s: "There were quite ___ mistakes in the report, so I had to rewrite it.", options: ["a few", "few", "little"], answer: 0,
-      explain: "quite a few = quite a lot." }
+      explain: "quite a few = quite a lot." },
+    { s: "There's ___ point arguing. She won't change her mind.", answers: ["little", "no"],
+      explain: "little = not much (negative)." },
+    { s: "Can I ask you a ___ questions?", answers: ["few"],
+      explain: "a few + countable." },
+    { s: "___ people understand how it works. It's very complicated.", answers: ["Few"],
+      explain: "Few = not many (negative)." },
+    { s: "I need a ___ more time.", answers: ["little", "bit"],
+      explain: "a little + uncountable." },
+    { s: "Quite a ___ people complained about the noise.", answers: ["few"],
+      explain: "quite a few = a fairly large number." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "each, every, all, whole, both, either, neither",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ student gets a certificate at the end of the course.", options: ["Every", "All", "Both"], answer: 0,
       explain: "every + singular noun." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "___ team has eleven players on the pitch.", options: ["Each", "All", "Both"], answer: 0,
       explain: "each + singular noun." },
     { s: "I didn't like ___ of the films. They were both boring.", options: ["either", "neither", "both"], answer: 0,
-      explain: "not… either = neither (with a negative verb)." }
+      explain: "not… either = neither (with a negative verb)." },
+    { s: "I've read ___ book in the series.", answers: ["every", "each"],
+      explain: "every / each + singular noun." },
+    { s: "She ate the ___ cake by herself!", answers: ["whole"],
+      explain: "the whole + singular noun." },
+    { s: "___ of my sisters live abroad. They're both in Canada.", answers: ["Both"],
+      explain: "Two together: both." },
+    { s: "___ of the answers is correct. Both are wrong.", answers: ["Neither"],
+      explain: "Not one of two: neither." },
+    { s: "I check my email ___ day.", answers: ["every", "each"],
+      explain: "every day." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Every student in the class has a laptop. → ___ in the class has a laptop. (EACH)", answers: ["Each student", "Each of the students"],
       explain: "each + singular noun, or each of the + plural noun." },
     { s: "Every room in the hotel has a sea view. → ___ the hotel have a sea view. (ALL)", answers: ["All the rooms in", "All of the rooms in"],
-      explain: "all (of) the + plural noun + plural verb (have)." }
+      explain: "all (of) the + plural noun + plural verb (have)." },
+    { s: "There aren't any eggs. → There ___ eggs. (NO)", answers: ["are no"],
+      explain: "no = not any." },
+    { s: "Not many students passed. → Only a ___ passed. (FEW)", answers: ["few students", "few of the students"],
+      explain: "only a few = not many." },
+    { s: "I didn't like either of the films. → I liked ___ films. (NEITHER)", answers: ["neither of the"],
+      explain: "neither of + the + plural." },
+    { s: "We have a lot of time. → We have ___ time. (PLENTY)", answers: ["plenty of"],
+      explain: "plenty of = a lot of." },
+    { s: "The whole class went on the trip. → ___ the class went on the trip. (ALL)", answers: ["All of"],
+      explain: "all (of) the + noun." }
   ]
 }
 ];

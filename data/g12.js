@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Contrast and concession",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ the heavy rain, the match went ahead.", options: ["Despite", "Although", "However"], answer: 0,
       explain: "despite / in spite of + noun. although needs a clause." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "The results were disappointing. ___, there were some positive signs.", options: ["Even so", "Even though", "Even if"], answer: 0,
       explain: "Even so links two sentences = nevertheless." },
     { s: "___ his age, he still runs marathons.", options: ["Notwithstanding", "Nonetheless", "Although"], answer: 0,
-      explain: "Notwithstanding + noun = despite (formal). Nonetheless links two sentences." }
+      explain: "Notwithstanding + noun = despite (formal). Nonetheless links two sentences." },
+    { s: "___ the cost, they decided to go ahead.", answers: ["Despite", "Notwithstanding"],
+      explain: "despite + noun." },
+    { s: "___ much I'd like to come, I can't.", answers: ["However"],
+      explain: "However much = no matter how much." },
+    { s: "The room was clean, ___ a little small.", answers: ["albeit", "if", "though", "although", "but"],
+      explain: "albeit = although (before an adjective or phrase)." },
+    { s: "She agreed, ___ reluctantly.", answers: ["albeit", "although", "though", "if"],
+      explain: "albeit + adverb." },
+    { s: "___ I admire her courage, I think she's wrong.", answers: ["While", "Although", "Though", "Whilst"],
+      explain: "While = although." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Reason, purpose and result",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The flight was delayed ___ bad weather.", options: ["owing to", "because", "since"], answer: 0,
       explain: "owing to / due to / because of + noun." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ the lack of evidence, the case was dropped.", options: ["Given", "Since", "As"], answer: 0,
       explain: "Given + noun = considering." },
     { s: "She whispered ___ wake the baby.", options: ["so as not to", "for fear of", "in case"], answer: 0,
-      explain: "so as not to + verb. (for fear of would need -ing: for fear of waking.)" }
+      explain: "so as not to + verb. (for fear of would need -ing: for fear of waking.)" },
+    { s: "He left early so ___ not to miss his train.", answers: ["as"],
+      explain: "so as not to + verb." },
+    { s: "The game was postponed on ___ of the weather.", answers: ["account"],
+      explain: "on account of = because of." },
+    { s: "She was promoted. ___, she earns much more now.", answers: ["Consequently", "Therefore", "Hence", "Thus"],
+      explain: "A result: Consequently." },
+    { s: "___ that it's raining, we'd better take the car.", answers: ["Seeing", "Given", "Now"],
+      explain: "Seeing that = since." },
+    { s: "We spoke quietly for ___ of waking the baby.", answers: ["fear"],
+      explain: "for fear of + -ing = to avoid." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Discourse markers",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "The flat is small. ___, it's in a great location.", answers: ["However", "Nevertheless", "Nonetheless", "Still"],
       explain: "A word that contrasts with the previous sentence." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "He's very talented. ___ that as it may, he still needs to work harder.", answers: ["Be"],
       explain: "Be that as it may = even so (formal)." },
     { s: "The tickets are expensive; ___, they're worth every penny.", answers: ["however", "nevertheless", "nonetheless", "still"],
-      explain: "A contrast linker after a semicolon." }
+      explain: "A contrast linker after a semicolon." },
+    { s: "The hotel was dirty and, to make ___ worse, the staff were rude.", options: ["things", "matters", "it"], answer: 1,
+      explain: "to make matters worse." },
+    { s: "___ the whole, the conference was a success.", options: ["In", "On", "At"], answer: 1,
+      explain: "On the whole = generally." },
+    { s: "___ from the price, I loved the restaurant.", options: ["Apart", "Except", "Besides of"], answer: 0,
+      explain: "Apart from = except for." },
+    { s: "In ___ words, we need to cut costs.", options: ["another", "other", "others"], answer: 1,
+      explain: "In other words = to put it differently." },
+    { s: "Needless to ___, I was furious.", options: ["tell", "say", "speak"], answer: 1,
+      explain: "Needless to say = obviously." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Linkers in context",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "___ though she was exhausted, she kept working.", answers: ["Even"],
       explain: "Even though = although (stronger)." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "He apologised, ___ he didn't seem to mean it.", answers: ["but", "though", "although", "yet"],
       explain: "A contrast linker between two clauses." },
     { s: "___ as I'd like to help, I simply don't have time.", answers: ["Much"],
-      explain: "Much as = although (with like, admire, want…)." }
+      explain: "Much as = although (with like, admire, want…)." },
+    { s: "She kept working ___ she was exhausted.", options: ["even", "even though", "despite"], answer: 1,
+      explain: "even though + clause." },
+    { s: "I'll come ___ that I can leave by ten.", options: ["provided", "unless", "in case"], answer: 0,
+      explain: "provided that = on condition that." },
+    { s: "___ though it was late, the shop was still open.", options: ["Despite", "Even", "However"], answer: 1,
+      explain: "Even though + clause." },
+    { s: "We left early ___ as to avoid the traffic.", options: ["such", "in order", "so"], answer: 2,
+      explain: "so as to + verb." },
+    { s: "___ the bad reviews, the film did well.", options: ["Despite", "Although", "Even though"], answer: 0,
+      explain: "Despite + noun." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "The film was so dull that I fell asleep. → It was ___ that I fell asleep. (SUCH)", answers: ["such a dull film", "such a boring film"],
       explain: "such + a + adjective + noun + that." },
     { s: "However hard he tried, he couldn't open the door. → No ___, he couldn't open the door. (MATTER)", answers: ["matter how hard he tried"],
-      explain: "No matter how + adjective / adverb = however." }
+      explain: "No matter how + adjective / adverb = however." },
+    { s: "Although she was tired, she kept going. → Tired ___, she kept going. (AS)", answers: ["as she was", "though she was"],
+      explain: "Adjective + as + clause = although." },
+    { s: "The concert was cancelled because of the storm. → The concert was cancelled ___ the storm. (ACCOUNT)", answers: ["on account of"],
+      explain: "on account of = because of." },
+    { s: "No matter how much he earns, he's never satisfied. → However ___, he's never satisfied. (EARNS)", answers: ["much he earns"],
+      explain: "However much = no matter how much." },
+    { s: "I'll bring a jacket because it might get cold. → I'll bring a jacket ___ cold. (CASE)", answers: ["in case it gets", "in case it turns"],
+      explain: "in case + present simple." },
+    { s: "She studied abroad so that she could improve her French. → She studied abroad ___ her French. (ORDER)", answers: ["in order to improve"],
+      explain: "in order to + verb." }
   ]
 }
 ];

@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Past simple: regular verbs",
-  intro: "Complete the sentences with the past simple form of the verbs in brackets. Be careful with the spelling.",
+  intro: "Choose the correct option or complete the sentences with the past simple form of the verbs in brackets. Be careful with the spelling.",
   items: [
     { s: "We ___ (stay) at a lovely hotel last summer.", answers: ["stayed"],
       explain: "Regular verbs add -ed. Vowel + y keeps the y: stay → stayed." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "We ___ (enjoy) the concert very much.", answers: ["enjoyed"],
       explain: "Vowel + y: enjoy → enjoyed." },
     { s: "I ___ (drop) my phone and the screen broke.", answers: ["dropped"],
-      explain: "Double the consonant: drop → dropped." }
+      explain: "Double the consonant: drop → dropped." },
+    { s: "I ___ for the bus for an hour.", options: ["waitted", "waitd", "waited"], answer: 2,
+      explain: "wait → waited." },
+    { s: "She ___ when she saw the photo.", options: ["smileed", "smiled", "smilled"], answer: 1,
+      explain: "Verbs ending in -e: add -d." },
+    { s: "We ___ our bags and left.", options: ["packked", "packd", "packed"], answer: 2,
+      explain: "pack → packed." },
+    { s: "The baby ___ all night.", options: ["cried", "cryed", "criyed"], answer: 0,
+      explain: "Consonant + y: y → ied." },
+    { s: "He ___ the box carefully.", options: ["carryed", "carryied", "carried"], answer: 2,
+      explain: "carry → carried." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Past simple: irregular verbs",
-  intro: "Complete the sentences with the past simple form of the verbs in brackets. All the verbs are irregular.",
+  intro: "Choose the correct option or complete the sentences with the past simple form of the verbs in brackets. All the verbs are irregular.",
   items: [
     { s: "I ___ (buy) these shoes in the sales.", answers: ["bought"],
       explain: "buy → bought." },
@@ -52,7 +62,17 @@ window.SETS = [
     { s: "The phone ___ (ring) in the middle of the night.", answers: ["rang"],
       explain: "ring → rang (past participle: rung)." },
     { s: "She ___ (feel) tired after the long journey.", answers: ["felt"],
-      explain: "feel → felt." }
+      explain: "feel → felt." },
+    { s: "I ___ a strange noise last night.", options: ["heard", "heared", "hear"], answer: 0,
+      explain: "hear → heard." },
+    { s: "We ___ our friends at the café.", options: ["meeted", "met", "meet"], answer: 1,
+      explain: "meet → met." },
+    { s: "She ___ me a postcard from Italy.", options: ["sended", "send", "sent"], answer: 2,
+      explain: "send → sent." },
+    { s: "They ___ a new house last year.", options: ["builded", "built", "build"], answer: 1,
+      explain: "build → built." },
+    { s: "He ___ the answer, but he didn't say it.", options: ["knew", "knowed", "know"], answer: 0,
+      explain: "know → knew." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "___ the museum open on Monday?", options: ["Was", "Did", "Were"], answer: 0,
       explain: "Questions with be: Was + it/the museum…? The museum is singular, so was (not were)." },
     { s: "Who ___ you that book?", options: ["gave", "did give", "give"], answer: 0,
-      explain: "When who is the subject, we don't use did: Who gave you that book?" }
+      explain: "When who is the subject, we don't use did: Who gave you that book?" },
+    { s: "Choose the right question (go): ___", options: ["Where did you went last night?", "Where did you go last night?", "Where you went last night?"], answer: 1,
+      explain: "did + subject + verb (not the past form)." },
+    { s: "Choose the right question (happen): ___", options: ["What did happen?", "What happened?", "What did happened?"], answer: 1,
+      explain: "What is the subject, so there is no did: What happened?" },
+    { s: "Choose the right sentence (not like): ___", options: ["She didn't liked the film.", "She not liked the film.", "She didn't like the film."], answer: 2,
+      explain: "didn't + like." },
+    { s: "Choose the right question (finish): ___", options: ["When finished the match?", "When did the match finished?", "When did the match finish?"], answer: 2,
+      explain: "When + did + the match + finish?" },
+    { s: "Choose the right question (be): ___", options: ["Did you be tired yesterday?", "Was you tired yesterday?", "Were you tired yesterday?"], answer: 2,
+      explain: "be has its own question: Were you…?" }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Past continuous",
-  intro: "Complete the sentences with the past continuous form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the past continuous form of the verbs in brackets.",
   items: [
     { s: "At 8 o'clock last night I ___ (watch) a film.", answers: ["was watching"],
       explain: "Past continuous: was/were + verb-ing, for an action in progress at a time in the past." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "My friends ___ (wait) for me at the station.", answers: ["were waiting"],
       explain: "My friends = they: were + waiting." },
     { s: "Why ___ (you / run) when I saw you this morning?", answers: ["were you running"],
-      explain: "Why + were + you + running? Run doubles the n: running." }
+      explain: "Why + were + you + running? Run doubles the n: running." },
+    { s: "At midnight I ___ still working.", options: ["was", "were", "did"], answer: 0,
+      explain: "I → was working." },
+    { s: "What ___ you doing when I called?", options: ["was", "did", "were"], answer: 2,
+      explain: "You → were you doing." },
+    { s: "The children ___ making a lot of noise.", options: ["was", "did", "were"], answer: 2,
+      explain: "The children = they → were." },
+    { s: "It ___ raining, so we took a taxi.", options: ["were", "was", "did"], answer: 1,
+      explain: "It → was raining." },
+    { s: "I ___ sleeping. I was reading.", options: ["weren't", "didn't", "wasn't"], answer: 2,
+      explain: "I → wasn't sleeping." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Past simple or past continuous?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I ___ a shower when the phone rang.", options: ["had", "was having"], answer: 1,
       explain: "The shower was in progress when the phone rang (short action): past continuous." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "The children were playing in the park when it ___ to rain.", options: ["started", "was starting"], answer: 0,
       explain: "The short action that interrupted the longer one: past simple." },
     { s: "I ___ a strange dream when my alarm went off.", options: ["had", "was having"], answer: 1,
-      explain: "The dream was in progress when the alarm went off: past continuous." }
+      explain: "The dream was in progress when the alarm went off: past continuous." },
+    { s: "While we ___ in the park, it started to rain. (walk)", answers: ["were walking"],
+      explain: "The longer action in progress: past continuous." },
+    { s: "I ___ a famous actor when I was shopping yesterday. (see)", answers: ["saw"],
+      explain: "The short action that happened: past simple." },
+    { s: "The lights went out while I ___. (cook)", answers: ["was cooking"],
+      explain: "The action in progress: past continuous." },
+    { s: "When the teacher came in, the students ___. (talk)", answers: ["were talking"],
+      explain: "In progress when she came in: past continuous." },
+    { s: "She ___ off her bike when she was going down the hill. (fall)", answers: ["fell"],
+      explain: "The short action: past simple. fall → fell." }
   ]
 }
 ];

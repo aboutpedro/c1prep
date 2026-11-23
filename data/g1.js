@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Present perfect simple or continuous?",
-  intro: "Complete the sentences with the present perfect simple or continuous of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the present perfect simple or continuous of the verbs in brackets.",
   items: [
     { s: "I ___ (read) your report three times, and I still can't find the figures you mentioned.", answers: ["have read", "'ve read"],
       explain: "A number of times means a completed result you can count: present perfect simple." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Prices ___ (rise) by 12% since January.", answers: ["have risen", "'ve risen"],
       explain: "A measured result (by 12%) is a completed amount: present perfect simple." },
     { s: "I ___ (try) to get through to the bank all afternoon, but the line is always busy.", answers: ["have been trying", "'ve been trying"],
-      explain: "Repeated attempts over a period that are not finished: present perfect continuous." }
+      explain: "Repeated attempts over a period that are not finished: present perfect continuous." },
+    { s: "I ___ to contact him for days, but he never answers.", options: ["'ve tried", "'ve been trying", "tried"], answer: 1,
+      explain: "A repeated activity up to now, not finished: continuous." },
+    { s: "She ___ four novels, all of them bestsellers.", options: ["has been writing", "wrote", "has written"], answer: 2,
+      explain: "How many: present perfect simple." },
+    { s: "You ___ that same song all morning – please play something else!", options: ["'ve played", "'ve been playing", "play"], answer: 1,
+      explain: "An activity that has been annoying for a while: continuous." },
+    { s: "How long ___ that she was leaving?", options: ["have you been knowing", "have you known", "do you know"], answer: 1,
+      explain: "know is a state verb: simple." },
+    { s: "The kids ___ the whole cake – there's nothing left!", options: ["have been eating", "have eaten", "had eaten"], answer: 1,
+      explain: "A completed action with a result now: simple." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Narrative tenses",
-  intro: "Complete the sentences with the past simple, past continuous, past perfect simple or past perfect continuous of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the past simple, past continuous, past perfect simple or past perfect continuous of the verbs in brackets.",
   items: [
     { s: "By the time the rescue team reached them, the climbers ___ (be) trapped for over two days.", answers: ["had been", "'d been"],
       explain: "A state that lasted up to a past moment (by the time…): past perfect." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "He ___ (not / sleep) properly for weeks, which explains why he made so many mistakes.", answers: ["had not been sleeping", "hadn't been sleeping", "had not slept", "hadn't slept"],
       explain: "A situation lasting up to a past moment: past perfect continuous stresses the ongoing problem; the simple form is also correct." },
     { s: "The moment I ___ (open) the door, I knew something was wrong.", answers: ["opened"],
-      explain: "One completed action in a sequence: past simple." }
+      explain: "One completed action in a sequence: past simple." },
+    { s: "He ___ for the company for thirty years when he finally retired.", options: ["was working", "had worked", "has worked"], answer: 1,
+      explain: "Duration up to a past point: past perfect." },
+    { s: "We ___ along the coast when the engine started making a strange noise.", options: ["had driven", "drove", "were driving"], answer: 2,
+      explain: "In progress when something happened: past continuous." },
+    { s: "By the time the firefighters arrived, the building ___ for over an hour.", options: ["was burning", "has burned", "had been burning"], answer: 2,
+      explain: "An activity continuing up to a past point: past perfect continuous." },
+    { s: "Hardly ___ the house when it began to pour.", options: ["we had left", "had we left", "did we leave"], answer: 1,
+      explain: "Hardly + inversion with the past perfect." },
+    { s: "She ___ the letter, sealed it and handed it to the courier.", options: ["had been writing", "wrote", "was writing"], answer: 1,
+      explain: "A sequence of completed actions: past simple." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "State verbs used dynamically",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I ___ about selling the flat, but I haven't made up my mind yet.", options: ["'m thinking", "think"], answer: 0,
       explain: "think about = consider, an activity, so it can be continuous." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "This bag ___ a ton! What have you got in it?", options: ["weighs", "is weighing"], answer: 0,
       explain: "weigh + amount describes how heavy something is, a state: present simple." },
     { s: "Hold still – the nurse ___ the baby to see how much weight it has put on.", options: ["is weighing", "weighs"], answer: 0,
-      explain: "weigh = put on the scales, an action in progress: present continuous." }
+      explain: "weigh = put on the scales, an action in progress: present continuous." },
+    { s: "I really ___ all your help – thank you. (appreciate)", answers: ["appreciate"],
+      explain: "appreciate is a state verb: simple." },
+    { s: "He ___ a shower, so he can't come to the phone. (have)", answers: ["is having", "'s having"],
+      explain: "have a shower = an action: continuous." },
+    { s: "What ___ of the new manager? (you / think)", answers: ["do you think"],
+      explain: "think = have an opinion: simple." },
+    { s: "I ___ what you mean now. (see)", answers: ["see"],
+      explain: "see = understand: a state." },
+    { s: "She ___ moving abroad – it's still early days. (consider)", answers: ["is considering", "'s considering"],
+      explain: "consider = think about (an activity): continuous." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Talking about habits",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "When we were children, my grandfather ___ take us fishing every Sunday.", options: ["would", "will", "was used to"], answer: 0,
       explain: "would + verb for repeated actions in the past (not for states)." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "I'm sorry, I'm not ___ getting up this early.", options: ["used to", "use to", "usually"], answer: 0,
       explain: "be used to + -ing = be accustomed to." },
     { s: "He ___ forgetting his keys, so we've hidden a spare set in the garden.", options: ["keeps", "is used to", "would"], answer: 0,
-      explain: "keep + -ing: it happens repeatedly." }
+      explain: "keep + -ing: it happens repeatedly." },
+    { s: "My neighbour ___ parking in my space – it's infuriating! (keep)", answers: ["keeps"],
+      explain: "keep + -ing for an annoying repeated action." },
+    { s: "As a teenager, I ___ whole weekends reading in my room. (spend)", answers: ["would spend", "used to spend"],
+      explain: "A past habit: would / used to." },
+    { s: "He's always ___ people – it's so rude. (interrupt)", answers: ["interrupting"],
+      explain: "always + continuous for an irritating habit." },
+    { s: "It took her a while to get ___ to working nights.", answers: ["used", "accustomed"],
+      explain: "get used to + -ing." },
+    { s: "Every evening, my grandmother ___ on the porch and watch the sunset. (sit)", answers: ["would sit", "used to sit"],
+      explain: "A past routine: would." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "It's the first time I've driven abroad. → I ___ abroad before. (DRIVEN)", answers: ["have never driven", "have not driven", "haven't driven"],
       explain: "It's the first time I've… = I have never… before." },
     { s: "Living alone was strange for me at first, but now it's normal. → I've ___ alone. (GOT)", answers: ["got used to living"],
-      explain: "get used to + -ing = become accustomed to something." }
+      explain: "get used to + -ing = become accustomed to something." },
+    { s: "I started this job in 2019 and I still work here. → I ___ 2019. (SINCE)", answers: ["have worked here since", "'ve worked here since", "have been working here since", "'ve been working here since"],
+      explain: "From the past until now: present perfect + since." },
+    { s: "She had never been on a plane before that trip. → That trip was the first time ___ on a plane. (BEEN)", answers: ["she had ever been", "she'd ever been", "she had been", "she'd been"],
+      explain: "the first time + past perfect." },
+    { s: "My grandfather often told us stories about the war. → My grandfather ___ us stories about the war. (WOULD)", answers: ["would often tell", "would tell"],
+      explain: "A past habit: would." },
+    { s: "I haven't been to the cinema for months. → It's months ___ to the cinema. (SINCE)", answers: ["since I last went", "since I went", "since I have been", "since I've been"],
+      explain: "It's + time + since + past simple." },
+    { s: "His habit of interrupting me is really annoying. → It's really annoying that he ___ me. (KEEPS)", answers: ["keeps interrupting", "keeps on interrupting"],
+      explain: "keep (on) + -ing for a repeated action." }
   ]
 }
 ];

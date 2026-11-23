@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Present simple passive",
-  intro: "Choose the correct option. Present simple passive: am / is / are + past participle.",
+  intro: "Choose the correct option or write the missing words. Present simple passive: am / is / are + past participle.",
   items: [
     { s: "English ___ in many countries.", options: ["is spoken", "speaks", "is speak"], answer: 0,
       explain: "English doesn't speak; people speak it. Passive: is + past participle (spoken)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I ___ to school by my mum every day.", options: ["am taken", "take", "am take"], answer: 0,
       explain: "My mum takes me, so with I as the subject: am + past participle: I am taken (by my mum)." },
     { s: "Where ___? – They're made in China.", options: ["are these phones made", "do these phones make", "are these phones make"], answer: 0,
-      explain: "Passive question: Where are + subject + past participle?" }
+      explain: "Passive question: Where are + subject + past participle?" },
+    { s: "Most of our vegetables ___ in the garden. (grow)", answers: ["are grown"],
+      explain: "Plural: are + grown." },
+    { s: "This film ___ on TV every Christmas. (show)", answers: ["is shown"],
+      explain: "Singular: is + shown." },
+    { s: "The doors ___ at 10 p.m. every night. (lock)", answers: ["are locked"],
+      explain: "Plural: are + locked." },
+    { s: "Portuguese ___ in Brazil. (speak)", answers: ["is spoken"],
+      explain: "Singular: is + spoken." },
+    { s: "Tickets ___ at the entrance. (sell)", answers: ["are sold"],
+      explain: "Plural: are + sold." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Past simple passive",
-  intro: "Choose the correct option. Past simple passive: was / were + past participle.",
+  intro: "Choose the correct option or write the missing words. Past simple passive: was / were + past participle.",
   items: [
     { s: "This bridge ___ in 1890.", options: ["was built", "built", "was build"], answer: 0,
       explain: "The bridge didn't build anything: was + past participle (built)." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Three people ___ in the accident.", options: ["were hurt", "was hurt", "hurted"], answer: 0,
       explain: "Three people is plural: were hurt. (hurt – hurt – hurt: there's no form hurted.)" },
     { s: "I ___ born in 2005.", options: ["was", "am", "did"], answer: 0,
-      explain: "We always say I was born (past simple passive)." }
+      explain: "We always say I was born (past simple passive)." },
+    { s: "The window ___ by a football. (break)", answers: ["was broken"],
+      explain: "Singular, past: was + broken." },
+    { s: "These houses ___ in the 1960s. (build)", answers: ["were built"],
+      explain: "Plural, past: were + built." },
+    { s: "The thief ___ by a neighbour. (see)", answers: ["was seen"],
+      explain: "Singular, past: was + seen." },
+    { s: "We ___ to wait outside. (tell)", answers: ["were told"],
+      explain: "We, past: were + told." },
+    { s: "The film ___ in New Zealand. (make)", answers: ["was made"],
+      explain: "Singular, past: was + made." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Active or passive?",
-  intro: "Choose the correct option. Is the subject doing the action (active), or is something done to it (passive)?",
+  intro: "Choose the correct option or write the missing words. Is the subject doing the action (active), or is something done to it (passive)?",
   items: [
     { s: "My grandfather ___ this house in 1960.", options: ["built", "was built"], answer: 0,
       explain: "My grandfather did the action: active (built)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The letter ___ yesterday, so it should arrive today.", options: ["was sent", "sent"], answer: 0,
       explain: "Someone sent the letter: passive." },
     { s: "I ___ the letter yesterday, so it should arrive today.", options: ["sent", "was sent"], answer: 0,
-      explain: "I did the action: active." }
+      explain: "I did the action: active." },
+    { s: "A lot of rice ___ in Japan. (eat)", answers: ["is eaten"],
+      explain: "Rice doesn't eat: passive." },
+    { s: "My mum ___ a cake yesterday. (make)", answers: ["made"],
+      explain: "My mum does the action: active." },
+    { s: "The cake ___ by my mum. (make)", answers: ["was made"],
+      explain: "The cake doesn't make anything: passive." },
+    { s: "Somebody ___ my bike last week. (steal)", answers: ["stole"],
+      explain: "Somebody does the action: active." },
+    { s: "My bike ___ last week. (steal)", answers: ["was stolen"],
+      explain: "Something was done to the bike: passive." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Write the past participle",
-  intro: "Write the past participle of the verb in brackets.",
+  intro: "Choose the correct option or write the past participle of the verb in brackets.",
   items: [
     { s: "This castle was ___ more than 500 years ago. (build)", answers: ["built"], width: 11,
       explain: "build – built – built." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "The winners will be ___ a prize. (give)", answers: ["given"], width: 11,
       explain: "give – gave – given." },
     { s: "Thousands of tickets were ___ in one hour. (sell)", answers: ["sold"], width: 11,
-      explain: "sell – sold – sold." }
+      explain: "sell – sold – sold." },
+    { s: "The tickets were ___ online.", options: ["bought", "buyed", "buy"], answer: 0,
+      explain: "buy → bought." },
+    { s: "The song is ___ in English.", options: ["sung", "sang", "singed"], answer: 0,
+      explain: "sing → sang → sung." },
+    { s: "The room was ___ blue.", options: ["paint", "painting", "painted"], answer: 2,
+      explain: "paint → painted." },
+    { s: "The letters were ___ by hand.", options: ["wrote", "writed", "written"], answer: 2,
+      explain: "write → wrote → written." },
+    { s: "The glass was ___ into pieces.", options: ["broke", "broken", "breaked"], answer: 1,
+      explain: "break → broke → broken." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Write the passive",
-  intro: "Write the verb in brackets in the passive: present simple (is / are + past participle) or past simple (was / were + past participle).",
+  intro: "Choose the correct option or write the verb in brackets in the passive: present simple (is / are + past participle) or past simple (was / were + past participle).",
   items: [
     { s: "Rice ___ in many parts of Asia. (grow)", answers: ["is grown"], width: 14,
       explain: "A general fact: present simple passive: is grown." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Many languages ___ in India. (speak)", answers: ["are spoken"], width: 14,
       explain: "Plural, a general fact: are spoken." },
     { s: "The thief ___ by the police the next day. (catch)", answers: ["was caught"], width: 14,
-      explain: "Past: was caught (catch – caught – caught)." }
+      explain: "Past: was caught (catch – caught – caught)." },
+    { s: "When ___?", options: ["was this photo taken", "did this photo take", "was this photo took"], answer: 0,
+      explain: "Passive question: was + subject + past participle." },
+    { s: "Paper ___ from wood.", options: ["makes", "is make", "is made"], answer: 2,
+      explain: "is + made." },
+    { s: "The streets ___ every morning.", options: ["are cleaned", "clean", "is cleaned"], answer: 0,
+      explain: "Plural: are cleaned." },
+    { s: "The match ___ on TV last night.", options: ["showed", "was shown", "is shown"], answer: 1,
+      explain: "Past passive: was shown." },
+    { s: "All the cakes ___ by the end of the party.", options: ["ate", "were eaten", "was eaten"], answer: 1,
+      explain: "Plural, past: were eaten." }
   ]
 }
 ];

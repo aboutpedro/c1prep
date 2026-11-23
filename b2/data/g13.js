@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "a, an or the?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I've just had ___ idea: let's have a picnic!", options: ["an", "a", "the"], answer: 0,
       explain: "an before a vowel sound; we mention the idea for the first time." },
@@ -24,7 +24,17 @@ window.SETS = [
     { s: "I see her about twice ___ week.", options: ["a", "the", "an"], answer: 0,
       explain: "a = per: twice a week, 50 km an hour." },
     { s: "He works for ___ European company.", options: ["a", "an", "– (nothing)"], answer: 0,
-      explain: "European starts with a \"you\" sound, so a, like a university." }
+      explain: "European starts with a \"you\" sound, so a, like a university." },
+    { s: "She's ___ architect.", answers: ["an"],
+      explain: "A job, and architect starts with a vowel sound: an." },
+    { s: "I'll meet you outside ___ station.", answers: ["the"],
+      explain: "We both know which station: the." },
+    { s: "It's ___ useful skill to have.", answers: ["a"],
+      explain: "useful starts with a 'you' sound: a." },
+    { s: "___ moon was full last night.", answers: ["The"],
+      explain: "There's only one: the." },
+    { s: "He's got ___ unusual name.", answers: ["an"],
+      explain: "unusual starts with a vowel sound: an." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "She's interested in ___ history of Japan.", options: ["the", "– (nothing)", "a"], answer: 0,
       explain: "A particular history (of Japan): the. History in general has no article." },
     { s: "Children learn ___ languages more easily than adults.", options: ["– (nothing)", "the", "a"], answer: 0,
-      explain: "Plural nouns in general: no article." }
+      explain: "Plural nouns in general: no article." },
+    { s: "Choose the right sentence (in general): ___", options: ["Money doesn't buy happiness.", "The money doesn't buy happiness.", "A money doesn't buy the happiness."], answer: 0,
+      explain: "Uncountable nouns in general: no article." },
+    { s: "Choose the right sentence (a species): ___", options: ["The elephant is the largest land animal.", "Elephant is the largest land animal.", "An elephant are the largest land animal."], answer: 0,
+      explain: "the + singular noun for a whole species." },
+    { s: "Choose the right sentence (abstract idea): ___", options: ["Life is too short to worry.", "The life is too short to worry.", "A life is too short to worry."], answer: 0,
+      explain: "Abstract nouns in general: no article." },
+    { s: "Choose the right sentence (a group of people): ___", options: ["The elderly need more support.", "Elderly need more support.", "An elderly need more support."], answer: 0,
+      explain: "the + adjective for a group of people." },
+    { s: "Choose the right sentence (a particular one): ___", options: ["The coffee I bought yesterday is delicious.", "Coffee I bought yesterday is delicious.", "A coffee I bought yesterday is delicious."], answer: 0,
+      explain: "A particular thing (the one I bought): the." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Places, meals and routines",
-  intro: "Choose the correct option. – means no article.",
+  intro: "Choose the correct option or write the missing words. – means no article.",
   items: [
     { s: "My dad goes to ___ work by train.", options: ["– (nothing)", "the", "a"], answer: 0,
       explain: "go to work, be at work: no article." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "She plays ___ tennis every Saturday.", options: ["– (nothing)", "the", "a"], answer: 0,
       explain: "Sports and games: no article." },
     { s: "We travelled around Spain by ___ car.", options: ["– (nothing)", "the", "a"], answer: 0,
-      explain: "by + transport: no article (by car, by train)." }
+      explain: "by + transport: no article (by car, by train)." },
+    { s: "I went to ___ school to talk to my son's teacher.", answers: ["the"],
+      explain: "Visiting the building, not studying there: the." },
+    { s: "We had ___ lovely dinner at that new restaurant.", answers: ["a"],
+      explain: "Adjective + meal: a lovely dinner." },
+    { s: "He's at ___ hospital visiting his grandmother.", answers: ["the"],
+      explain: "Visiting, not a patient: the hospital." },
+    { s: "What's ___ best way to get to the airport?", answers: ["the"],
+      explain: "Superlatives: the." },
+    { s: "I usually sleep well, but ___ night before the exam I couldn't sleep.", answers: ["the"],
+      explain: "A particular night: the." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Names of places",
-  intro: "Choose the correct option. – means no article.",
+  intro: "Choose the correct option or write the missing words. – means no article.",
   items: [
     { s: "They spent their holiday in ___ Greece.", options: ["– (nothing)", "the", "a"], answer: 0,
       explain: "Most countries: no article." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "___ Amazon flows through several countries.", options: ["The", "– (nothing)", "An"], answer: 0,
       explain: "Rivers take the: the Amazon, the Nile." },
     { s: "The museum is on ___ Oxford Street.", options: ["– (nothing)", "the", "an"], answer: 0,
-      explain: "Most street names: no article." }
+      explain: "Most street names: no article." },
+    { s: "___ Netherlands is famous for its flowers.", answers: ["The"],
+      explain: "Plural country names: the." },
+    { s: "They sailed across ___ Atlantic.", answers: ["the"],
+      explain: "Oceans: the." },
+    { s: "Have you ever been to ___ Philippines?", answers: ["the"],
+      explain: "Groups of islands: the." },
+    { s: "___ Thames flows through London.", answers: ["The"],
+      explain: "Rivers: the." },
+    { s: "___ Sahara is the largest hot desert in the world.", answers: ["The"],
+      explain: "Deserts: the." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "a, an or the: write it",
-  intro: "Complete the sentences with a, an or the.",
+  intro: "Choose the correct option or complete the sentences with a, an or the.",
   items: [
     { s: "It's ___ shame you can't come to the party.", answers: ["a"], width: 6,
       explain: "It's a shame = it's a pity." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Have you seen ___ news today?", answers: ["the"], width: 6,
       explain: "the news (the latest information)." },
     { s: "___ internet has changed the way we work.", answers: ["the"], width: 6,
-      explain: "the internet." }
+      explain: "the internet." },
+    { s: "What ___ awful day!", options: ["an", "a", "the"], answer: 0,
+      explain: "What + a/an + adjective + singular noun." },
+    { s: "I play ___ guitar in a band.", options: ["the", "a", "– (nothing)"], answer: 0,
+      explain: "play the + instrument." },
+    { s: "He's ___ youngest in his family.", options: ["the", "a", "an"], answer: 0,
+      explain: "Superlatives: the." },
+    { s: "She works three days ___ week.", options: ["a", "the", "an"], answer: 0,
+      explain: "Rates and frequencies: a week." },
+    { s: "I think ___ honesty is very important.", options: ["– (nothing)", "the", "an"], answer: 0,
+      explain: "Abstract nouns in general: no article." }
   ]
 }
 ];

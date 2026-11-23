@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Wishes and regrets",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "I wish I ___ the truth from the start.", options: ["had known", "knew", "would know"], answer: 0,
       explain: "Regret about the past: wish + past perfect." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I wish I ___ so much yesterday. I feel terrible.", options: ["hadn't eaten", "didn't eat", "wouldn't eat"], answer: 0,
       explain: "Past regret: past perfect." },
     { s: "He wishes he ___ more time with his children.", options: ["could spend", "can spend", "will spend"], answer: 0,
-      explain: "wish + could." }
+      explain: "wish + could." },
+    { s: "I wish I ___ (not / say) that to her last night.", answers: ["hadn't said", "had not said"],
+      explain: "A past regret: wish + past perfect." },
+    { s: "If only it ___ (be) the weekend already!", answers: ["were", "was"],
+      explain: "A present wish: past (were)." },
+    { s: "I wish my neighbours ___ (not / play) loud music every night.", answers: ["wouldn't play", "would not play"],
+      explain: "Annoyance: wish + would." },
+    { s: "She wishes she ___ (speak) Spanish – it would help at work.", answers: ["could speak", "spoke"],
+      explain: "A present ability: could / past." },
+    { s: "I wish I ___ (go) to university when I had the chance.", answers: ["had gone", "'d gone"],
+      explain: "A past regret: past perfect." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Preferences and unreal past",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "I'd rather you ___ smoke in here.", options: ["didn't", "don't", "won't"], answer: 0,
       explain: "would rather + another person + past simple." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "It's about time you ___ a job.", options: ["got", "get", "will get"], answer: 0,
       explain: "It's about time + past simple." },
     { s: "She talks as though she ___ everything.", options: ["knew", "knows a", "had known being"], answer: 0,
-      explain: "as though = as if." }
+      explain: "as though = as if." },
+    { s: "It's high time the government ___ (do) something about it.", answers: ["did"],
+      explain: "It's high time + past." },
+    { s: "I'd rather ___ (not / talk) about it, if you don't mind.", answers: ["not talk"],
+      explain: "would rather + infinitive without to." },
+    { s: "He looks as if he ___ (see) a ghost.", answers: ["has seen", "'s seen", "had seen"],
+      explain: "as if + present perfect (likely) or past perfect (unreal)." },
+    { s: "What if she ___ (find) out? She'd be furious.", answers: ["found"],
+      explain: "What if + past for an imagined situation." },
+    { s: "I'd prefer you ___ (not / mention) it to anyone.", answers: ["not to mention", "didn't mention", "did not mention"],
+      explain: "prefer + object + to-infinitive." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "The subjunctive",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "The doctor recommended that she ___ more rest.", options: ["take", "takes", "took"], answer: 0,
       explain: "recommend that + subject + base form (subjunctive)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "It is vital that he ___ told about the party.", options: ["not be", "be not", "is not being", "not is"], answer: 0,
       explain: "Negative subjunctive: not + base form (not be told)." },
     { s: "God ___ the King!", options: ["save", "saves", "saved", "saving"], answer: 0,
-      explain: "A fixed subjunctive expression." }
+      explain: "A fixed subjunctive expression." },
+    { s: "The board recommended that the CEO ___ (resign).", answers: ["resign", "should resign"],
+      explain: "recommend that + subjunctive." },
+    { s: "It is imperative that the data ___ (keep) secure.", answers: ["be kept", "should be kept"],
+      explain: "Passive subjunctive: be + past participle." },
+    { s: "She requested that the meeting ___ (hold) on Monday.", answers: ["be held", "should be held"],
+      explain: "request that + passive subjunctive." },
+    { s: "If need ___, we can work at the weekend.", answers: ["be"],
+      explain: "If need be = if necessary." },
+    { s: "Far ___ it from me to criticise, but …", answers: ["be"],
+      explain: "Far be it from me = I don't want to." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "should and alternatives",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "It's important that she ___ informed at once.", answers: ["be", "is"],
       explain: "be (subjunctive) or is (more informal)." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "I wish you ___ be so negative.", answers: ["wouldn't"],
       explain: "wish + wouldn't for annoying habits." },
     { s: "___ what may, I'm going to finish this race.", answers: ["Come"],
-      explain: "Come what may." }
+      explain: "Come what may." },
+    { s: "It's essential that he ___ on time.", options: ["be", "being", "to be"], answer: 0,
+      explain: "essential that + subjunctive." },
+    { s: "I'd sooner you ___ me in cash.", options: ["paid", "would pay", "will pay"], answer: 0,
+      explain: "would sooner + subject + past." },
+    { s: "If only you ___ told me earlier!", options: ["had", "would", "have"], answer: 0,
+      explain: "If only + past perfect for a past regret." },
+    { s: "It's about time the children ___ to bed.", options: ["went", "go", "will go"], answer: 0,
+      explain: "It's about time + past." },
+    { s: "She insisted that her son ___ his room.", options: ["tidy", "to tidy", "tidying"], answer: 0,
+      explain: "insist that + subjunctive." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I regret saying that. → If only ___ that. (SAID)", answers: ["I hadn't said", "I had not said"],
       explain: "If only + past perfect." },
     { s: "They should make a decision soon. → It's high ___ a decision. (MADE)", answers: ["time they made"],
-      explain: "It's high time + past simple." }
+      explain: "It's high time + past simple." },
+    { s: "I'm sorry I didn't call you. → I wish ___ you. (CALLED)", answers: ["I had called", "I'd called"],
+      explain: "wish + past perfect." },
+    { s: "You ought to start saving. → It's about ___ saving. (STARTED)", answers: ["time you started"],
+      explain: "It's about time + past." },
+    { s: "I'd prefer to stay in tonight. → I'd ___ tonight. (RATHER)", answers: ["rather stay in", "rather stay at home"],
+      explain: "would rather + infinitive." },
+    { s: "It's important that all visitors sign in. → It's important ___ sign in. (SHOULD)", answers: ["that all visitors should"],
+      explain: "that + should + infinitive." },
+    { s: "Unfortunately, I don't have more free time. → I wish ___ free time. (HAD)", answers: ["I had more", "I had some more"],
+      explain: "A present wish: past." }
   ]
 }
 ];

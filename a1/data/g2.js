@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "I, you, he, she, it, we, they",
-  intro: "Choose the correct word for the person or thing in the sentence.",
+  intro: "Choose or write the correct word for the person or thing in the sentence.",
   items: [
     { s: "This is Maria. ___ is from Peru.", options: ["She", "He", "It"], answer: 0,
       explain: "Maria is a woman: she." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "This is my phone. ___ is new.", options: ["It", "He", "She"], answer: 0,
       explain: "A phone is a thing: it." },
     { s: "My name is Tom. ___ am fifteen.", options: ["I", "He", "It"], answer: 0,
-      explain: "We are talking about me: I am." }
+      explain: "We are talking about me: I am." },
+    { s: "My mum and dad are at work. ___ are busy.", answers: ["They"],
+      explain: "Two people (not you or me) → they." },
+    { s: "Look at that cat! ___ is so small.", answers: ["It"],
+      explain: "An animal or a thing → it." },
+    { s: "Leo is my cousin. ___ is ten.", answers: ["He"],
+      explain: "A boy or a man → he." },
+    { s: "My friends and I like music. ___ go to concerts.", answers: ["We"],
+      explain: "My friends and I → we." },
+    { s: "Hi, Ana! ___ are late!", answers: ["You"],
+      explain: "The person you talk to → you." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "me, him, her, us, them",
-  intro: "Choose the correct word. After a verb or after for, with, to, we use me, you, him, her, it, us, them.",
+  intro: "Choose or write the correct word. After a verb or after for, with, to, we use me, you, him, her, it, us, them.",
   items: [
     { s: "Can you help ___?", options: ["me", "I", "my"], answer: 0,
       explain: "After the verb help we use me." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "My keys! I always lose ___.", options: ["them", "it", "they"], answer: 0,
       explain: "Keys = more than one thing after a verb: them." },
     { s: "Ana is my friend. I talk to ___ every day.", options: ["her", "she", "hers"], answer: 0,
-      explain: "After to we use her." }
+      explain: "After to we use her." },
+    { s: "I can't see the board. Can you read it to ___? (I)", answers: ["me"],
+      explain: "After to: me, not I." },
+    { s: "Where are my glasses? I need ___.", answers: ["them"],
+      explain: "Glasses is plural → them." },
+    { s: "Our teacher is great. We all love ___.", answers: ["her", "him"],
+      explain: "After a verb: her (a woman) or him (a man)." },
+    { s: "Call ___ when you get home! (we)", answers: ["us"],
+      explain: "After a verb: us, not we." },
+    { s: "That's Mr Silva. Do you know ___?", answers: ["him"],
+      explain: "After a verb: him, not he." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "my, your, his, her, its, our, their",
-  intro: "Choose the correct word to say who something belongs to.",
+  intro: "Choose or write the correct word to say who something belongs to.",
   items: [
     { s: "I'm Paulo. ___ name is Paulo.", options: ["My", "Me", "I"], answer: 0,
       explain: "I → my: my name." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Hello! What's ___ name?", options: ["your", "you", "you're"], answer: 0,
       explain: "Your name. You're = you are." },
     { s: "I have two sisters. ___ names are Bia and Lia.", options: ["Their", "Her", "They"], answer: 0,
-      explain: "Two sisters → their names." }
+      explain: "Two sisters → their names." },
+    { s: "He's my friend. ___ name is Daniel.", answers: ["His"],
+      explain: "He → his." },
+    { s: "We've got a cat. ___ name is Mimi.", answers: ["Its", "Her", "His"],
+      explain: "For an animal we say its (or her/his for a pet we love)." },
+    { s: "My sister and her husband love ___ new car.", answers: ["their"],
+      explain: "They → their." },
+    { s: "I'm sorry, I don't know ___ name. What is it?", answers: ["your"],
+      explain: "You → your." },
+    { s: "Look at the bird! ___ wings are blue.", answers: ["Its"],
+      explain: "The bird = it → its." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Tom's, my sister's",
-  intro: "Choose the correct form. We use 's to say who something belongs to: Tom's bike = the bike of Tom.",
+  intro: "Choose or write the correct form. We use 's to say who something belongs to: Tom's bike = the bike of Tom.",
   items: [
     { s: "This is ___ bike.", options: ["Tom's", "Toms", "Tom"], answer: 0,
       explain: "Tom's bike = the bike of Tom." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "___ office is on the first floor.", options: ["The teacher's", "The teachers", "The teacher"], answer: 0,
       explain: "One teacher: the teacher's office." },
     { s: "Is this ___ phone or yours?", options: ["Maria's", "Marias", "Maria"], answer: 0,
-      explain: "Maria's phone = the phone of Maria." }
+      explain: "Maria's phone = the phone of Maria." },
+    { s: "This is the bag of my mum. → This is my ___ bag.", answers: ["mum's"],
+      explain: "One person + 's: my mum's bag." },
+    { s: "The car of my parents is old. → My ___ car is old.", answers: ["parents'"],
+      explain: "A plural with -s: just add ': my parents' car." },
+    { s: "The toys of the children are everywhere. → The ___ toys are everywhere.", answers: ["children's"],
+      explain: "Children has no -s, so add 's: children's." },
+    { s: "The name of my dog is Rex. → My ___ name is Rex.", answers: ["dog's"],
+      explain: "One dog + 's: my dog's name." },
+    { s: "The house of Pedro is big. → ___ house is big.", answers: ["Pedro's"],
+      explain: "A name + 's: Pedro's house." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Whose…? mine, yours",
-  intro: "Write one word: whose, mine, yours, his, hers, ours or theirs.",
+  intro: "Choose the correct option or write one word: whose, mine, yours, his, hers, ours or theirs.",
   items: [
     { s: "___ is this coat? – It's Ana's.", answers: ["Whose"],
       explain: "We ask about the owner with whose." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Can I use your pencil? I can't find ___.", answers: ["mine"],
       explain: "mine = my pencil." },
     { s: "Is this your seat or ___? (we)", answers: ["ours"],
-      explain: "ours = our seat." }
+      explain: "ours = our seat." },
+    { s: "This isn't my coffee. Mine is the big one. Is it ___?", options: ["yours", "your", "you"], answer: 0,
+      explain: "Is it yours? Yours = your coffee." },
+    { s: "These books aren't ours. They're ___. (Ana and Leo)", options: ["theirs", "their", "them"], answer: 0,
+      explain: "Ana and Leo → theirs (their books)." },
+    { s: "Is that your brother's car? – Yes, it's ___.", options: ["his", "him", "he's"], answer: 0,
+      explain: "his = his car." },
+    { s: "___ jacket is this? – It's mine.", options: ["Whose", "Who's", "Who"], answer: 0,
+      explain: "Whose asks who something belongs to. Who's = who is." },
+    { s: "The red bike is ___. (my sister)", options: ["hers", "her", "she's"], answer: 0,
+      explain: "My sister → hers (her bike)." }
   ]
 }
 ];

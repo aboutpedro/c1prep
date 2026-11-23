@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "-ing or to-infinitive?",
-  intro: "Complete the sentences with the -ing form or the to-infinitive of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the -ing form or the to-infinitive of the verbs in brackets.",
   items: [
     { s: "I can't afford ___ (go) on holiday this year.", answers: ["to go"],
       explain: "afford + to-infinitive." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I can't help ___ (laugh) when I see him dance.", answers: ["laughing"],
       explain: "can't help + -ing = I can't stop myself." },
     { s: "She tends ___ (get) nervous before exams.", answers: ["to get"],
-      explain: "tend + to-infinitive." }
+      explain: "tend + to-infinitive." },
+    { s: "She refused ___ the bill.", options: ["paying", "pay", "to pay"], answer: 2,
+      explain: "refuse + to-infinitive." },
+    { s: "I don't mind ___ for a few minutes.", options: ["to wait", "waiting", "wait"], answer: 1,
+      explain: "mind + -ing." },
+    { s: "He pretended ___ me.", options: ["not seeing", "not to see", "to not seeing"], answer: 1,
+      explain: "pretend + (not) to-infinitive." },
+    { s: "Do you fancy ___ out tonight?", options: ["to go", "go", "going"], answer: 2,
+      explain: "fancy + -ing." },
+    { s: "We hope ___ next year.", options: ["moving", "move", "to move"], answer: 2,
+      explain: "hope + to-infinitive." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "remember, stop, try, regret…",
-  intro: "These verbs change meaning with -ing or to. Choose the correct option.",
+  intro: "These verbs change meaning with -ing or to. Choose the correct option or write the missing words.",
   items: [
     { s: "Did you remember ___ the door when you left?", options: ["to lock", "locking", "lock"], answer: 0,
       explain: "remember to do: remember first, then do it." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I meant ___ you, but I forgot.", options: ["to call", "calling", "call"], answer: 0,
       explain: "mean to do: intend to do." },
     { s: "Taking the job would mean ___ to another city.", options: ["moving", "to move", "move"], answer: 0,
-      explain: "mean doing: involve, have as a result." }
+      explain: "mean doing: involve, have as a result." },
+    { s: "I remember ___ the door, so I don't know how the burglar got in. (lock)", answers: ["locking"],
+      explain: "remember + -ing = a memory of doing it." },
+    { s: "Please remember ___ me the file. (send)", answers: ["to send"],
+      explain: "remember + to = don't forget to do it." },
+    { s: "He stopped ___ his phone and then carried on walking. (check)", answers: ["to check"],
+      explain: "stop + to = stop in order to do something." },
+    { s: "I regret ___ to university. (not / go)", answers: ["not going", "not having gone"],
+      explain: "regret + -ing = be sorry about the past." },
+    { s: "Try ___ it off and on again. (turn)", answers: ["turning"],
+      explain: "try + -ing = do it as an experiment." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Verb + object + infinitive",
-  intro: "Complete the sentences with the correct form of the verbs in brackets: to-infinitive or infinitive without to.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verbs in brackets: to-infinitive or infinitive without to.",
   items: [
     { s: "My parents want me ___ (study) law.", answers: ["to study"],
       explain: "want + person + to-infinitive." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Don't let the children ___ (play) near the road.", answers: ["play"],
       explain: "let + person + infinitive without to." },
     { s: "The doctor advised her ___ (take) more exercise.", answers: ["to take"],
-      explain: "advise + person + to-infinitive." }
+      explain: "advise + person + to-infinitive." },
+    { s: "My mum made me ___ my room.", options: ["to tidy", "tidy", "tidying"], answer: 1,
+      explain: "make + object + base verb." },
+    { s: "The teacher told us ___ quiet.", options: ["be", "to be", "being"], answer: 1,
+      explain: "tell + object + to-infinitive." },
+    { s: "They wouldn't let us ___ in.", options: ["to go", "go", "going"], answer: 1,
+      explain: "let + object + base verb." },
+    { s: "I want you ___ the truth.", options: ["tell", "telling", "to tell"], answer: 2,
+      explain: "want + object + to-infinitive." },
+    { s: "She was made ___ an apology.", options: ["to write", "write", "writing"], answer: 0,
+      explain: "In the passive, make takes to: be made to + verb." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Prepositions and expressions + -ing",
-  intro: "Complete the sentences with the correct form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verbs in brackets.",
   items: [
     { s: "I'm looking forward to ___ (see) you next week.", answers: ["seeing"],
       explain: "look forward to + -ing: to is a preposition here." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "There's no point ___ (wait). The shop is closed.", answers: ["waiting", "in waiting"],
       explain: "There's no point (in) + -ing." },
     { s: "She objected to ___ (pay) for something she hadn't ordered.", answers: ["paying"],
-      explain: "object to + -ing." }
+      explain: "object to + -ing." },
+    { s: "I'm thinking of ___ my job.", options: ["to change", "change", "changing"], answer: 2,
+      explain: "After a preposition: -ing." },
+    { s: "She's interested in ___ abroad.", options: ["to study", "study", "studying"], answer: 2,
+      explain: "After in: -ing." },
+    { s: "It's not worth ___ about.", options: ["to worry", "worry", "worrying"], answer: 2,
+      explain: "worth + -ing." },
+    { s: "He's capable of ___ much better.", options: ["doing", "to do", "do"], answer: 0,
+      explain: "capable of + -ing." },
+    { s: "Thanks for ___ me.", options: ["to invite", "inviting", "invite"], answer: 1,
+      explain: "After for: -ing." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "The film isn't good enough to watch twice. → The film isn't ___ twice. (WORTH)", answers: ["worth watching", "worth seeing"],
       explain: "worth + -ing." },
     { s: "Why don't you take an aspirin? It might help. → You could ___ an aspirin. (TRY)", answers: ["try taking"],
-      explain: "try doing: an experiment to see if it helps." }
+      explain: "try doing: an experiment to see if it helps." },
+    { s: "I'm sorry I said that to her. → I regret ___ that to her. (SAYING)", answers: ["saying", "having said"],
+      explain: "regret + -ing." },
+    { s: "They made us leave the building. → We ___ leave the building. (MADE)", answers: ["were made to"],
+      explain: "Passive: be made to + verb." },
+    { s: "She didn't want to answer my question. → She refused ___ question. (ANSWER)", answers: ["to answer my"],
+      explain: "refuse + to-infinitive." },
+    { s: "It's not a good idea to buy a new car now. → It's not ___ a new car now. (WORTH)", answers: ["worth buying"],
+      explain: "worth + -ing." },
+    { s: "I really want to see the new exhibition. → I'm really ___ the new exhibition. (KEEN)", answers: ["keen to see", "keen on seeing"],
+      explain: "keen to + verb / keen on + -ing." }
   ]
 }
 ];

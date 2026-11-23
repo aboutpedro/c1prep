@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "The passive in different tenses",
-  intro: "Complete the sentences with the passive form of the verbs in brackets. Use the tense shown by the time words.",
+  intro: "Choose the correct option or complete the sentences with the passive form of the verbs in brackets. Use the tense shown by the time words.",
   items: [
     { s: "English ___ (speak) in many countries around the world.", answers: ["is spoken"],
       explain: "Present simple passive: is/are + past participle." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "___ (the windows / clean) every week?", answers: ["Are the windows cleaned"],
       explain: "Question in the present simple passive: Are + subject + past participle?" },
     { s: "By the time the police arrived, the money ___ (take).", answers: ["had been taken"],
-      explain: "Past perfect passive for an earlier action." }
+      explain: "Past perfect passive for an earlier action." },
+    { s: "The road ___ at the moment, so expect delays.", options: ["is being repaired", "is repaired", "has repaired"], answer: 0,
+      explain: "In progress now: present continuous passive." },
+    { s: "The decision ___ yet.", options: ["hasn't made", "wasn't been made", "hasn't been made"], answer: 2,
+      explain: "With yet: present perfect passive." },
+    { s: "By the time we arrived, all the tickets ___.", options: ["were selling", "had been sold", "had sold"], answer: 1,
+      explain: "Before a past time: past perfect passive." },
+    { s: "The new stadium ___ by the president next year.", options: ["will open", "will be opened", "is opened"], answer: 1,
+      explain: "A future passive: will be + past participle." },
+    { s: "Dinner ___ when the guests arrived.", options: ["was being prepared", "was preparing", "had prepared"], answer: 0,
+      explain: "In progress then: past continuous passive." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Passives with modals, infinitives and -ing",
-  intro: "Complete the sentences with the passive form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the passive form of the verbs in brackets.",
   items: [
     { s: "This medicine must ___ (keep) in the fridge.", answers: ["be kept"],
       explain: "Modal + be + past participle." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I remember ___ (take) to the zoo as a child.", answers: ["being taken"],
       explain: "remember + -ing for a past memory, passive: being taken." },
     { s: "Applications have to ___ (send) before 30 June.", answers: ["be sent"],
-      explain: "have to + be + past participle." }
+      explain: "have to + be + past participle." },
+    { s: "The rules must ___ by everyone.", options: ["be followed", "follow", "be follow"], answer: 0,
+      explain: "Modal passive: must be + past participle." },
+    { s: "I don't like ___ at.", options: ["laughing", "to laugh", "being laughed"], answer: 2,
+      explain: "-ing passive: being + past participle." },
+    { s: "The report should ___ yesterday.", options: ["be sent", "have been sent", "have sent"], answer: 1,
+      explain: "Past modal passive: should have been + past participle." },
+    { s: "She expects ___ soon.", options: ["to be promoted", "being promoted", "to promote"], answer: 0,
+      explain: "Infinitive passive: to be + past participle." },
+    { s: "This form needs ___ in capital letters.", options: ["to complete", "to be completed", "be completed"], answer: 1,
+      explain: "need + to be + past participle." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "It is said that… / He is said to…",
-  intro: "Complete the second sentence so that it means the same as the first.",
+  intro: "Choose the correct option or complete the second sentence so that it means the same as the first.",
   items: [
     { s: "People say that the castle is haunted. → The castle ___ haunted.", answers: ["is said to be"],
       explain: "subject + is said + to-infinitive." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "People claim that the drug cures headaches. → The drug ___ headaches.", answers: ["is claimed to cure"],
       explain: "is claimed + to-infinitive." },
     { s: "Police believe the man is living abroad. → The man ___ living abroad.", answers: ["is believed to be"],
-      explain: "Continuous: to be + -ing." }
+      explain: "Continuous: to be + -ing." },
+    { s: "People say she is a brilliant cook. → She ___ a brilliant cook.", options: ["is said to be", "says to be", "is said being"], answer: 0,
+      explain: "be said to + infinitive." },
+    { s: "It is thought that the plane crashed in the sea. → The plane ___ crashed in the sea.", options: ["is thought to", "thinks to have", "is thought to have"], answer: 2,
+      explain: "An earlier action: to have + past participle." },
+    { s: "Everyone knows that he works hard. → He ___ hard.", options: ["knows to work", "is known working", "is known to work"], answer: 2,
+      explain: "be known to + infinitive." },
+    { s: "People believe that the company is in trouble. → It ___ that the company is in trouble.", options: ["is believed", "believes", "is believing"], answer: 0,
+      explain: "It is believed that…" },
+    { s: "They expect the minister to resign. → The minister ___ resign.", options: ["is expected to", "expects to", "is expected"], answer: 0,
+      explain: "be expected to + infinitive." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "have / get something done",
-  intro: "Complete the sentences with the correct form of have or get + object + past participle. Use the words in brackets.",
+  intro: "Choose the correct option or complete the sentences with the correct form of have or get + object + past participle. Use the words in brackets.",
   items: [
     { s: "I ___ (my hair / cut) yesterday.", answers: ["had my hair cut", "got my hair cut"],
       explain: "have/get + object + past participle: someone else did it for me." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "They're ___ (a swimming pool / build) in the garden.", answers: ["having a swimming pool built", "getting a swimming pool built"],
       explain: "Present continuous: are having + object + past participle." },
     { s: "I'm going to ___ (my photo / take) for my new passport.", answers: ["have my photo taken", "get my photo taken"],
-      explain: "going to + have + object + past participle." }
+      explain: "going to + have + object + past participle." },
+    { s: "We're ___ our roof repaired next week.", options: ["had", "have", "having"], answer: 2,
+      explain: "An arrangement: present continuous of have." },
+    { s: "She ___ her purse stolen at the market.", options: ["was", "had", "did"], answer: 1,
+      explain: "A bad experience: had + object + past participle." },
+    { s: "How often do you ___ your car serviced?", options: ["had", "having", "have"], answer: 2,
+      explain: "have + object + past participle." },
+    { s: "I must get my eyes ___.", options: ["test", "testing", "tested"], answer: 2,
+      explain: "get + object + past participle." },
+    { s: "They had the whole house ___ before they moved in.", options: ["redecorate", "redecorating", "redecorated"], answer: 2,
+      explain: "had + object + past participle." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Active or passive?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The thief ___ by a security guard as he was leaving the shop.", options: ["was caught", "caught", "has caught"], answer: 0,
       explain: "The thief didn't do the catching: passive." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Many old buildings ___ in the earthquake.", options: ["were destroyed", "destroyed", "were destroying"], answer: 0,
       explain: "Passive: the earthquake destroyed them." },
     { s: "The prices ___ since last year.", options: ["have gone up", "have been gone up", "are gone up"], answer: 0,
-      explain: "go up has no object, so it is always active." }
+      explain: "go up has no object, so it is always active." },
+    { s: "The documents ___ by both parties yesterday. (sign)", answers: ["were signed"],
+      explain: "Something done to the documents: passive." },
+    { s: "The bus ___ twenty minutes late. (arrive)", answers: ["arrived"],
+      explain: "arrive can't be passive." },
+    { s: "The meeting ___ until next week. (postpone)", answers: ["has been postponed", "'s been postponed", "was postponed", "is postponed", "'s postponed"],
+      explain: "Something done to the meeting: passive." },
+    { s: "She ___ a place at Oxford. (offer)", answers: ["was offered", "has been offered", "'s been offered"],
+      explain: "Someone offered her a place: passive." },
+    { s: "The house ___ into while they were on holiday. (break)", answers: ["was broken"],
+      explain: "be broken into = be entered by thieves." }
   ]
 }
 ];

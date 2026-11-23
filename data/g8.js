@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Inversion after negative adverbials",
-  intro: "Complete the sentences with the words in brackets, using inversion.",
+  intro: "Choose the correct option or complete the sentences with the words in brackets, using inversion.",
   items: [
     { s: "Never ___ (I / see) such a beautiful sunset.", answers: ["have I seen"],
       explain: "Never + auxiliary + subject: Never have I seen…" },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Not only ___ (she / win) the race, but she also broke the record.", answers: ["did she win"],
       explain: "Not only + auxiliary + subject…, but… also…" },
     { s: "Seldom ___ (a first novel / receive) such praise.", answers: ["has a first novel received", "does a first novel receive"],
-      explain: "Seldom + auxiliary + subject + verb." }
+      explain: "Seldom + auxiliary + subject + verb." },
+    { s: "Not once ___ he say thank you.", options: ["has", "was", "did"], answer: 2,
+      explain: "Not once + did + subject + verb." },
+    { s: "No sooner had she left ___ the phone rang.", options: ["when", "than", "that"], answer: 1,
+      explain: "No sooner … than." },
+    { s: "Only by working together ___ solve this problem.", options: ["can we", "we can", "we will"], answer: 0,
+      explain: "Only by … + inversion." },
+    { s: "Hardly ___ started when the power went off.", options: ["had the film", "the film had", "did the film"], answer: 0,
+      explain: "Hardly + had + subject + past participle." },
+    { s: "In no way ___ responsible for what happened.", options: ["I am", "am I", "do I"], answer: 1,
+      explain: "In no way + inversion." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Which expression?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ had I opened the door than the cat ran out.", options: ["No sooner", "Hardly", "Only"], answer: 0,
       explain: "No sooner… than. (Hardly goes with when.)" },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ was the demand that the tickets sold out in minutes.", options: ["Such", "So", "Very"], answer: 0,
       explain: "Such + be + noun + that… (Such was the demand that…)." },
     { s: "___ strong was the wind that trees were uprooted.", options: ["So", "Such", "Too"], answer: 0,
-      explain: "So + adjective + be + subject + that…" }
+      explain: "So + adjective + be + subject + that…" },
+    { s: "Not ___ did she pass, but she came top of the class.", answers: ["only"],
+      explain: "Not only + inversion." },
+    { s: "No ___ had I sat down than the doorbell rang.", answers: ["sooner"],
+      explain: "No sooner … than." },
+    { s: "On no ___ should you sign without reading it.", answers: ["account"],
+      explain: "On no account = never." },
+    { s: "Only ___ did I realise what had happened.", answers: ["then", "later", "afterwards"],
+      explain: "Only then + inversion." },
+    { s: "___ had we started eating when the guests arrived.", answers: ["Hardly", "Barely", "Scarcely"],
+      explain: "Hardly … when." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Cleft sentences and emphatic do",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "___ I need right now is a long holiday.", answers: ["What"],
       explain: "What + clause + is… puts the focus on the end of the sentence." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "___ was in 1969 that humans first walked on the Moon.", answers: ["It"],
       explain: "It was + time + that…" },
     { s: "She ___ talk a lot, doesn't she?", answers: ["does"],
-      explain: "Emphatic do / does / did + verb for emphasis." }
+      explain: "Emphatic do / does / did + verb for emphasis." },
+    { s: "___ annoys me most is his attitude.", options: ["That", "Which", "What"], answer: 2,
+      explain: "What = the thing that." },
+    { s: "It was only when I saw the bill ___ I realised how expensive it was.", options: ["when", "which", "that"], answer: 2,
+      explain: "It was only when … that." },
+    { s: "All she wanted ___ to be left alone.", options: ["is that", "was", "it was"], answer: 1,
+      explain: "All + clause + was." },
+    { s: "I ___ enjoy your cooking – it's always delicious.", options: ["am", "did be", "do"], answer: 2,
+      explain: "Emphatic do." },
+    { s: "The person ___ you should thank is Maria.", options: ["which", "who", "what"], answer: 1,
+      explain: "A person: who." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "so, such and other ways to emphasise",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "So ___ was the noise that we couldn't hear ourselves think.", options: ["loud", "loudly", "louder"], answer: 0,
       explain: "So + adjective + be + subject + that…" },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "Not once ___ she thank me for my help.", options: ["did", "had", "was"], answer: 0,
       explain: "Not once + did + subject + verb." },
     { s: "Here ___ the bus at last!", options: ["comes", "come", "is coming"], answer: 0,
-      explain: "After Here / There, a noun subject comes after the verb: Here comes the bus." }
+      explain: "After Here / There, a noun subject comes after the verb: Here comes the bus." },
+    { s: "So ___ was the film that half the audience walked out. (it was very dull)", answers: ["boring", "dull", "bad", "tedious"],
+      explain: "So + adjective + was + subject." },
+    { s: "Such ___ his anger that nobody dared speak.", answers: ["was"],
+      explain: "Such + be + noun = it was so great." },
+    { s: "Tired ___ she was, she kept working.", answers: ["as", "though"],
+      explain: "Adjective + as + subject + verb = although." },
+    { s: "Not ___ did I imagine I'd win. (not even one time)", answers: ["once"],
+      explain: "Not once + inversion." },
+    { s: "Here ___ the taxi – let's go!", answers: ["comes"],
+      explain: "Here + verb + noun." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "They didn't know they were being watched. → Little ___ being watched. (DID)", answers: ["did they know they were", "did they realise they were", "did they suspect they were"],
       explain: "Little did they know…" },
     { s: "The heat was so intense that we stayed indoors. → Such ___ we stayed indoors. (THAT)", answers: ["was the heat that"],
-      explain: "Such + was + subject + that…" }
+      explain: "Such + was + subject + that…" },
+    { s: "I have never been so embarrassed. → Never ___ so embarrassed. (HAVE)", answers: ["have I been", "before have I been"],
+      explain: "Never + have + subject." },
+    { s: "He didn't realise his mistake until later. → Not until later ___ his mistake. (DID)", answers: ["did he realise", "did he realize"],
+      explain: "Not until … + did + subject." },
+    { s: "The exam was so hard that nobody finished. → So ___ that nobody finished. (WAS)", answers: ["hard was the exam", "difficult was the exam"],
+      explain: "So + adjective + was + subject." },
+    { s: "His rudeness really surprised me. → What ___ his rudeness. (SURPRISED)", answers: ["really surprised me was", "surprised me was"],
+      explain: "What + clause + was." },
+    { s: "Although it may seem strange, I prefer winter. → Strange ___, I prefer winter. (AS)", answers: ["as it may seem", "as it might seem", "as it seems"],
+      explain: "Adjective + as + clause = although." }
   ]
 }
 ];

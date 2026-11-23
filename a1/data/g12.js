@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "there is or there are?",
-  intro: "Choose the correct form. there is (there's) + one thing; there are + more than one.",
+  intro: "Choose or write the correct form. there is (there's) + one thing; there are + more than one.",
   items: [
     { s: "___ a bank in my street.", options: ["There's", "There are", "It's"], answer: 0,
       explain: "One bank: there's." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "___ twenty students in my class.", options: ["There are", "There's", "There is"], answer: 0,
       explain: "Twenty students: there are." },
     { s: "___ some milk in the fridge.", options: ["There's", "There are", "It are"], answer: 0,
-      explain: "Milk can't be counted: there's some milk." }
+      explain: "Milk can't be counted: there's some milk." },
+    { s: "___ a big window in my room.", answers: ["There's", "There is"],
+      explain: "One thing → There's (There is)." },
+    { s: "___ five people in my family.", answers: ["There are"],
+      explain: "More than one → There are." },
+    { s: "___ a swimming pool at the hotel.", answers: ["There's", "There is"],
+      explain: "One thing → There's." },
+    { s: "___ two cafés on this street.", answers: ["There are"],
+      explain: "Two → There are." },
+    { s: "___ a man at the door.", answers: ["There's", "There is"],
+      explain: "One person → There's." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Negatives and questions",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ a supermarket near here?", options: ["Is there", "There is", "Are there"], answer: 0,
       explain: "Questions: Is there + one thing?" },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "There ___ any sugar. Can you buy some?", options: ["isn't", "aren't", "not"], answer: 0,
       explain: "Sugar can't be counted: there isn't any sugar." },
     { s: "Is there a hospital in your town? – No, ___.", options: ["there isn't", "there aren't", "it isn't"], answer: 0,
-      explain: "Short answer, one thing: No, there isn't." }
+      explain: "Short answer, one thing: No, there isn't." },
+    { s: "___ a park near your house?", answers: ["Is there"],
+      explain: "Question with one thing: Is there…?" },
+    { s: "___ any good shops here?", answers: ["Are there"],
+      explain: "Question with more than one: Are there any…?" },
+    { s: "There ___ any tomatoes. Let's buy some.", answers: ["aren't"],
+      explain: "Plural negative: There aren't any." },
+    { s: "Is there a lift? – No, there ___.", answers: ["isn't"],
+      explain: "Short answer: No, there isn't." },
+    { s: "Are there any questions? – Yes, there ___.", answers: ["are"],
+      explain: "Short answer: Yes, there are." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "some or any?",
-  intro: "Choose some or any. some → positive sentences; any → negatives and questions.",
+  intro: "Choose or write some or any. some → positive sentences; any → negatives and questions.",
   items: [
     { s: "There are ___ apples on the table.", options: ["some", "any", "a"], answer: 0,
       explain: "Positive sentence: some." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Have you got ___ brothers or sisters?", options: ["any", "some", "a"], answer: 0,
       explain: "Question: any." },
     { s: "There isn't ___ cheese in the fridge.", options: ["any", "some", "a"], answer: 0,
-      explain: "Negative: any." }
+      explain: "Negative: any." },
+    { s: "There are ___ new students in our class.", answers: ["some"],
+      explain: "Positive sentence → some." },
+    { s: "Is there ___ juice in the fridge?", answers: ["any"],
+      explain: "Question → any." },
+    { s: "I'd like ___ chips, please.", answers: ["some"],
+      explain: "Asking for something politely → some." },
+    { s: "There aren't ___ chairs in the room.", answers: ["any"],
+      explain: "Negative → any." },
+    { s: "Have you got ___ pets?", answers: ["any"],
+      explain: "Question → any." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "a, an, some or any?",
-  intro: "Write a, an, some or any.",
+  intro: "Choose the correct option or write a, an, some or any.",
   items: [
     { s: "There's ___ apple in my bag.", answers: ["an"],
       explain: "One apple, vowel sound: an apple." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "There's ___ cat in the garden.", answers: ["a"],
       explain: "One cat: a." },
     { s: "Can I have ___ sugar in my tea, please?", answers: ["some"],
-      explain: "A request (we expect yes): some." }
+      explain: "A request (we expect yes): some." },
+    { s: "Choose the right sentence (egg): ___", options: ["There's an egg in the fridge.", "There's a egg in the fridge.", "There's any egg in the fridge."], answer: 0,
+      explain: "One egg, and egg starts with a vowel: an egg." },
+    { s: "Choose the right question (chairs): ___", options: ["Are there any chairs?", "Are there some chair?", "Is there any chairs?"], answer: 0,
+      explain: "Plural question: Are there any + plural." },
+    { s: "Choose the right negative (water): ___", options: ["There isn't any water.", "There isn't some water.", "There aren't any water."], answer: 0,
+      explain: "Water can't be counted: There isn't any water." },
+    { s: "Choose the right sentence (cups): ___", options: ["There are some cups on the table.", "There are any cups on the table.", "There is some cups on the table."], answer: 0,
+      explain: "Plural, positive: There are some." },
+    { s: "Choose the right question (toilet): ___", options: ["Is there a toilet here?", "Are there a toilet here?", "Is there toilet here?"], answer: 0,
+      explain: "One thing: Is there a…?" }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Describe the room",
-  intro: "Write is, are, isn't or aren't.",
+  intro: "Choose the correct option or write is, are, isn't or aren't.",
   items: [
     { s: "There ___ a big bed in my room.", answers: ["is"],
       explain: "One bed: there is." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "There ___ a carpet on the floor. It's blue.", answers: ["is"],
       explain: "One carpet: there is." },
     { s: "There ___ any curtains, so the sun wakes me up!", answers: ["aren't"],
-      explain: "Negative, plural: there aren't." }
+      explain: "Negative, plural: there aren't." },
+    { s: "There ___ a lot of trees in our street.", options: ["are", "is", "has"], answer: 0,
+      explain: "A lot of trees = more than one → are." },
+    { s: "___ there a shower in the bathroom?", options: ["Is", "Are", "Has"], answer: 0,
+      explain: "One shower → Is there…?" },
+    { s: "There ___ any shops in my village. We go to town.", options: ["aren't", "isn't", "not"], answer: 0,
+      explain: "Plural negative → aren't." },
+    { s: "There ___ a big supermarket near my flat. It's great.", options: ["is", "are", "aren't"], answer: 0,
+      explain: "One supermarket → is." },
+    { s: "___ there any good films on TV tonight?", options: ["Are", "Is", "Do"], answer: 0,
+      explain: "Plural question → Are there any…?" }
   ]
 }
 ];

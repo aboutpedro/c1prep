@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Past perfect",
-  intro: "Complete the sentences with the past perfect form of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the past perfect form of the verbs in brackets.",
   items: [
     { s: "When we arrived at the station, the train ___ (already / leave).", answers: ["had already left"],
       explain: "Past perfect (had + past participle) for an action that happened before another past action. Already goes between had and the participle." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "When I got home, I realised I ___ (leave) my umbrella on the bus.", answers: ["had left"],
       explain: "I left it on the bus before I realised: had left." },
     { s: "They ___ (just / finish) dinner when the doorbell rang.", answers: ["had just finished"],
-      explain: "Just = a short time before: had just finished." }
+      explain: "Just = a short time before: had just finished." },
+    { s: "I was late because I ___ the bus.", options: ["had missed", "have missed", "was missing"], answer: 0,
+      explain: "The earlier past event: past perfect." },
+    { s: "She ___ the book before she saw the film.", options: ["had read", "has read", "had readed"], answer: 0,
+      explain: "First the book, then the film: had read." },
+    { s: "The room was a mess. Someone ___ a party.", options: ["has had", "had have", "had had"], answer: 2,
+      explain: "The party happened before we saw the mess: had had." },
+    { s: "We ___ dinner, so we weren't hungry.", options: ["have eaten", "had ate", "had eaten"], answer: 2,
+      explain: "Before the time we're talking about: had eaten." },
+    { s: "___ she left when you called?", options: ["Has", "Did", "Had"], answer: 2,
+      explain: "Past perfect question: Had she left…?" }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Past simple or past perfect?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "When I got to the party, Ana ___ home, so I didn't see her.", options: ["went", "had gone"], answer: 1,
       explain: "Ana left before I arrived: had gone." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Last summer we ___ to Greece for two weeks.", options: ["went", "had gone"], answer: 0,
       explain: "A simple finished event at a past time: past simple." },
     { s: "When I turned on my computer, I saw that someone ___ it.", options: ["used", "had used"], answer: 1,
-      explain: "Someone used it before I turned it on: had used." }
+      explain: "Someone used it before I turned it on: had used." },
+    { s: "When I opened the fridge, I saw that somebody ___ my yoghurt. (eat)", answers: ["had eaten"],
+      explain: "It happened before I opened the fridge: past perfect." },
+    { s: "I ___ my homework and then I watched TV. (finish)", answers: ["finished"],
+      explain: "Events in order (and then): past simple." },
+    { s: "He ___ to London before, so he got lost. (not / be)", answers: ["hadn't been"],
+      explain: "Before that time: past perfect negative." },
+    { s: "When she ___ the news, she called her mum. (hear)", answers: ["heard", "had heard"],
+      explain: "One event after another: past simple." },
+    { s: "I couldn't pay because I ___ my wallet. (forget)", answers: ["had forgotten"],
+      explain: "It happened before the moment of paying: past perfect." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "used to",
-  intro: "Complete the sentences with used to or didn't use to and the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with used to or didn't use to and the verbs in brackets.",
   items: [
     { s: "I ___ (live) in a small village, but now I live in the city.", answers: ["used to live"],
       explain: "used to + verb = a past habit or situation that isn't true now." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "My grandparents ___ (write) letters to each other every week.", answers: ["used to write"],
       explain: "A repeated action in the past: used to write." },
     { s: "He ___ (not / speak) English, but now he's fluent.", answers: ["didn't use to speak"],
-      explain: "didn't use to + verb." }
+      explain: "didn't use to + verb." },
+    { s: "I ___ play the violin, but I stopped when I was ten.", options: ["used to", "use to", "was used to"], answer: 0,
+      explain: "A past habit that stopped: used to." },
+    { s: "Did you ___ wear glasses?", options: ["used to", "using to", "use to"], answer: 2,
+      explain: "Questions: did … use to (no d)." },
+    { s: "My grandparents ___ have a TV.", options: ["didn't use to", "didn't used to", "not used to"], answer: 0,
+      explain: "Negative: didn't use to." },
+    { s: "This building ___ be a school. Now it's a hotel.", options: ["uses to", "was use to", "used to"], answer: 2,
+      explain: "A past state: used to be." },
+    { s: "We ___ go camping every summer when I was a kid.", options: ["were used to", "used to", "use"], answer: 1,
+      explain: "A past habit: used to." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Past simple, past continuous or past perfect?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "While I ___ dinner, I cut my finger.", options: ["made", "was making", "had made"], answer: 1,
       explain: "While + the longer action in progress: past continuous." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "I didn't want to see the film again because I ___ it twice.", options: ["have seen", "was seeing", "had seen"], answer: 2,
       explain: "Before that moment I had seen it twice: past perfect." },
     { s: "Suddenly, the lights ___ out and everyone screamed.", options: ["went", "were going", "had gone"], answer: 0,
-      explain: "A sudden short action in a story: past simple." }
+      explain: "A sudden short action in a story: past simple." },
+    { s: "I ___ home when I saw the accident. (walk)", answers: ["was walking"],
+      explain: "In progress at that moment: past continuous." },
+    { s: "When we got to the restaurant, they ___ the kitchen, so we couldn't eat. (close)", answers: ["had closed"],
+      explain: "Before we got there: past perfect." },
+    { s: "She ___ her bag and ran. (drop)", answers: ["dropped"],
+      explain: "One event after another: past simple." },
+    { s: "They ___ in Spain before they moved here. (live)", answers: ["had lived", "lived"],
+      explain: "Before another past event: past perfect (past simple is also possible with before)." },
+    { s: "What ___ when the fire alarm went off? (you / do)", answers: ["were you doing"],
+      explain: "In progress when it went off: past continuous." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "A story: Julia goes skiing",
-  intro: "The sentences tell a story. Complete them with the past simple, past continuous or past perfect form of the verbs in brackets.",
+  intro: "The sentences tell a story. Choose the correct option or complete them with the past simple, past continuous or past perfect form of the verbs in brackets.",
   items: [
     { s: "Last winter, Julia ___ (decide) to go skiing for the first time.", answers: ["decided"],
       explain: "A finished event in the past: past simple." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "On the last day, while everyone ___ (watch), she skied down the whole mountain without falling.", answers: ["was watching"],
       explain: "Everyone = singular verb: was watching (in progress)." },
     { s: "When she ___ (get) home, she booked another trip for next year.", answers: ["got"],
-      explain: "When + past simple, then the next action in the past simple." }
+      explain: "When + past simple, then the next action in the past simple." },
+    { s: "The next year, Julia ___ to the same mountain.", options: ["had gone back", "was going back", "went back"], answer: 2,
+      explain: "The next event in the story: past simple." },
+    { s: "Her old instructor ___ her immediately.", options: ["had recognised", "was recognising", "recognised"], answer: 2,
+      explain: "A single event: past simple." },
+    { s: "She showed him the photos she ___ the year before.", options: ["has taken", "was taking", "had taken"], answer: 2,
+      explain: "Earlier than the story time: past perfect." },
+    { s: "While they ___ to the top, it started to snow.", options: ["went up", "had gone up", "were going up"], answer: 2,
+      explain: "In progress when it started: past continuous." },
+    { s: "By the end of that holiday, she ___ the best skier in her group.", options: ["had become", "has become", "was becoming"], answer: 0,
+      explain: "By the end of… → past perfect." }
   ]
 }
 ];

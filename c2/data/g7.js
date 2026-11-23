@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "-ing or infinitive: a change in meaning",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "I'll never forget ___ the Grand Canyon for the first time.", options: ["seeing", "to see", "to have see"], answer: 0,
       explain: "forget + -ing = a memory of the past." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "We stopped ___ a coffee on the way.", options: ["to have", "having", "had"], answer: 0,
       explain: "stop + to = stop in order to do something." },
     { s: "This job means ___ a lot of weekends.", options: ["working", "to work", "work"], answer: 0,
-      explain: "mean + -ing = involve." }
+      explain: "mean + -ing = involve." },
+    { s: "Did you remember ___ (lock) the back door before we left?", answers: ["to lock"],
+      explain: "remember + to = not forget to do." },
+    { s: "We stopped ___ (talk) when the teacher came in.", answers: ["talking"],
+      explain: "stop + -ing = no longer do." },
+    { s: "I mean ___ (call) her, but I keep forgetting.", answers: ["to call"],
+      explain: "mean + to = intend." },
+    { s: "Have you tried ___ (add) a little salt? It might taste better.", answers: ["adding"],
+      explain: "try + -ing = experiment." },
+    { s: "I regret ___ (not / study) harder at school.", answers: ["not studying", "not having studied"],
+      explain: "regret + -ing = be sorry about the past." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Perfect and passive forms",
-  intro: "Write the verb in brackets in the correct form.",
+  intro: "Choose the correct option or write the verb in brackets in the correct form.",
   items: [
     { s: "She hates ___ (tell) what to do.", answers: ["being told"],
       explain: "Passive -ing: being + past participle." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The work is believed ___ (complete) last year.", answers: ["to have been completed"],
       explain: "Perfect passive infinitive." },
     { s: "She objects to ___ (call) by her first name at work.", answers: ["being called"],
-      explain: "object to + passive -ing." }
+      explain: "object to + passive -ing." },
+    { s: "He hates ___ in public.", options: ["being criticised", "be criticised", "to criticised"], answer: 0,
+      explain: "hate + passive -ing." },
+    { s: "She appears ___ for hours – her eyes are red.", options: ["to have been crying", "having been crying", "to crying"], answer: 0,
+      explain: "Perfect continuous infinitive." },
+    { s: "The windows want ___.", options: ["cleaning", "to clean", "clean"], answer: 0,
+      explain: "want / need + -ing has a passive meaning." },
+    { s: "He's thought ___ the country last week.", options: ["to have left", "to leave", "having left"], answer: 0,
+      explain: "An earlier action: perfect infinitive." },
+    { s: "I'm tired of ___ what to do.", options: ["being told", "to be told", "be told"], answer: 0,
+      explain: "Preposition + passive -ing." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Adjectives, nouns and prepositions",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "There's no point ___ about it now.", options: ["worrying", "to worry", "in worry"], answer: 0,
       explain: "There's no point (in) + -ing." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I object ___ like this.", options: ["to being spoken to", "to be spoken", "being spoken to"], answer: 0,
       explain: "object to + -ing (to is a preposition)." },
     { s: "He has difficulty ___ names.", options: ["remembering", "to remember", "in remember"], answer: 0,
-      explain: "have difficulty (in) + -ing." }
+      explain: "have difficulty (in) + -ing." },
+    { s: "She's looking forward ___ (see) her family.", answers: ["to seeing"],
+      explain: "look forward to + -ing." },
+    { s: "I'm thinking ___ (change) jobs.", answers: ["of changing", "about changing"],
+      explain: "think of / about + -ing." },
+    { s: "He's capable ___ (do) much better.", answers: ["of doing"],
+      explain: "capable of + -ing." },
+    { s: "It's not worth ___ (wait) for the bus.", answers: ["waiting"],
+      explain: "worth + -ing." },
+    { s: "They succeeded ___ (raise) the money.", answers: ["in raising"],
+      explain: "succeed in + -ing." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Object + verb patterns",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I can't imagine ___ in an office all day.", options: ["him working", "he working", "him to work"], answer: 0,
       explain: "imagine + object + -ing." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "He was heard ___ for help.", options: ["to shout", "shout", "shouted"], answer: 0,
       explain: "In the passive, hear takes to." },
     { s: "I'd rather you ___ here.", options: ["didn't smoke", "not smoke", "not smoking"], answer: 0,
-      explain: "would rather + subject + past simple." }
+      explain: "would rather + subject + past simple." },
+    { s: "I heard someone ___ (call) my name.", answers: ["call", "calling"],
+      explain: "hear + object + infinitive / -ing." },
+    { s: "She was seen ___ (enter) the building at midnight.", answers: ["to enter", "entering"],
+      explain: "Passive see + to-infinitive or -ing." },
+    { s: "My boss won't let me ___ (work) from home.", answers: ["work"],
+      explain: "let + object + infinitive without to." },
+    { s: "I'd rather you ___ (not / tell) anyone.", answers: ["didn't tell", "did not tell"],
+      explain: "would rather + subject + past." },
+    { s: "Would you mind ___ (I / sit) here?", answers: ["my sitting", "me sitting"],
+      explain: "mind + possessive / object + -ing." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "People say she was a brilliant pianist. → She is said ___ pianist. (HAVE)", answers: ["to have been a brilliant"],
       explain: "be said + perfect infinitive for the past." },
     { s: "I'm sure I locked the door; I remember doing it. → I ___ the door. (CLEARLY)", answers: ["clearly remember locking", "clearly remember having locked"],
-      explain: "remember + -ing = a memory of the past." }
+      explain: "remember + -ing = a memory of the past." },
+    { s: "I'd prefer you not to come. → I'd ___ come. (RATHER)", answers: ["rather you didn't", "rather you did not"],
+      explain: "would rather + subject + past." },
+    { s: "They say the castle was built in the 12th century. → The castle ___ in the 12th century. (SAID)", answers: ["is said to have been built"],
+      explain: "be said + perfect passive infinitive." },
+    { s: "Somebody saw him leave the bank. → He ___ the bank. (SEEN)", answers: ["was seen to leave", "was seen leaving"],
+      explain: "Passive see + to-infinitive." },
+    { s: "Getting up early isn't something I'm used to. → I'm not ___ early. (GETTING)", answers: ["used to getting up", "accustomed to getting up"],
+      explain: "be used to + -ing." },
+    { s: "She managed to finish the marathon. → She ___ the marathon. (SUCCEEDED)", answers: ["succeeded in finishing"],
+      explain: "succeed in + -ing." }
   ]
 }
 ];

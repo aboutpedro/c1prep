@@ -139,5 +139,33 @@ window.SETS = [
     { s: "Don't believe that ___ about her; it isn't true.", answers: ["gossip"],
       explain: "gossip = talk about other people's private lives." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Feelings and emotions",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "I was ___ when I heard I'd passed – I'd been sure I'd failed!", options: ["thrilled", "thrilling", "thrill"], answer: 0,
+      explain: "thrilled = very happy and excited. -ed adjectives describe how you feel." },
+    { s: "She felt ___ about her exam and couldn't sleep.", options: ["anxious", "eager", "keen"], answer: 0,
+      explain: "anxious about = worried about." },
+    { s: "He was ___ that his best friend hadn't invited him.", options: ["hurt", "injured", "wounded"], answer: 0,
+      explain: "hurt = upset by what someone did. injured and wounded are about the body." },
+    { s: "I'm ___ of spiders – I can't even look at them.", options: ["terrified", "terrifying", "terror"], answer: 0,
+      explain: "terrified of = very afraid of." },
+    { s: "After the long journey, we were completely ___.", options: ["exhausted", "exhausting", "exhaust"], answer: 0,
+      explain: "exhausted = very tired. The journey was exhausting." },
+    { s: "He gets ___ when his girlfriend talks to other men.", options: ["jealous", "envy", "jealousy"], answer: 0,
+      explain: "jealous = upset because you're afraid someone you love likes another person more." },
+    { s: "I was really ___ when I tripped on stage.", options: ["embarrassed", "embarrassing", "embarrassment"], answer: 0,
+      explain: "embarrassed = feeling silly in front of others." },
+    { s: "He's very ___ about his new job – he can't wait to start.", options: ["enthusiastic", "enthusiasm", "eager on"], answer: 0,
+      explain: "enthusiastic about = excited and interested." },
+    { s: "I'm ___ up with his excuses.", options: ["fed", "bored", "tired"], answer: 0,
+      explain: "fed up with = annoyed and bored with." },
+    { s: "We were ___ to hear that everyone was safe.", options: ["relieved", "relief", "relieving"], answer: 0,
+      explain: "relieved = happy because a worry has gone." }
+  ]
 }
 ];

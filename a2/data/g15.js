@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "and, but, or, so, because",
-  intro: "Choose the best word to join the two parts of the sentence.",
+  intro: "Choose or write the best word to join the two parts of the sentence.",
   items: [
     { s: "I was tired, ___ I went to bed early.", options: ["so", "because", "but"], answer: 0,
       explain: "So introduces a result: I was tired → I went to bed early." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Hurry up, ___ we'll miss the train!", options: ["or", "and", "because"], answer: 0,
       explain: "Or here means if not: hurry up; if not, we'll miss the train." },
     { s: "The shop was closed, ___ I went to the one next to the station.", options: ["so", "because", "or"], answer: 0,
-      explain: "Result: it was closed → I went to another one." }
+      explain: "Result: it was closed → I went to another one." },
+    { s: "I like tea, ___ I don't like coffee.", answers: ["but"],
+      explain: "A contrast → but." },
+    { s: "She was ill, ___ she stayed at home.", answers: ["so"],
+      explain: "A result → so." },
+    { s: "We stayed inside ___ it was too cold.", answers: ["because", "as", "since"],
+      explain: "A reason → because." },
+    { s: "Do you want to walk ___ take a taxi?", answers: ["or"],
+      explain: "A choice → or." },
+    { s: "I had a sandwich ___ an apple for lunch.", answers: ["and"],
+      explain: "Adding → and." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "when, before, after, until, while",
-  intro: "Choose the correct word.",
+  intro: "Choose or write the correct word.",
   items: [
     { s: "Call me ___ you arrive at the airport.", options: ["when", "until", "while"], answer: 0,
       explain: "When = at the time that: call me at the moment you arrive." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "My phone rang ___ I was driving, so I didn't answer.", options: ["while", "until", "before"], answer: 0,
       explain: "While + continuous: while I was driving." },
     { s: "Put on some sun cream ___ you go out. The sun is very strong.", options: ["before", "until", "while"], answer: 0,
-      explain: "First the sun cream, then go out: before." }
+      explain: "First the sun cream, then go out: before." },
+    { s: "I was cooking ___ my brother was watching TV.", answers: ["while", "as", "when"],
+      explain: "Two things at the same time → while." },
+    { s: "Brush your teeth ___ you go to bed.", answers: ["before"],
+      explain: "First teeth, then bed → before." },
+    { s: "Don't move ___ I say so.", answers: ["until", "till"],
+      explain: "Up to the time when → until." },
+    { s: "___ the film finished, we went for a pizza.", answers: ["After", "When"],
+      explain: "First the film, then pizza → After." },
+    { s: "I'll call you ___ I get home.", answers: ["when", "after"],
+      explain: "At the time → when." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "when, before, after, until + present",
-  intro: "Write the correct form of the verb in brackets. When we talk about the future, we use the present simple after when, before, after, until and as soon as.",
+  intro: "Choose the correct option or write the correct form of the verb in brackets. When we talk about the future, we use the present simple after when, before, after, until and as soon as.",
   items: [
     { s: "I'll call you when I ___ home. (get)", answers: ["get"], width: 11,
       explain: "The future, but after when we use the present: when I get home. Not when I will get." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "I ___ you the money when I see you tomorrow. (give)", answers: ["will give"], width: 11,
       explain: "The main part is about the future: I'll give. The present (see) goes after when." },
     { s: "Can you feed the cat while we ___ on holiday? (be)", answers: ["are"], width: 11,
-      explain: "While + present simple for the future: while we are on holiday." }
+      explain: "While + present simple for the future: while we are on holiday." },
+    { s: "I'll tell you when he ___.", options: ["will arrive", "arrive", "arrives"], answer: 2,
+      explain: "After when, for the future: present simple." },
+    { s: "As soon as I ___ my work, I'll come.", options: ["will finish", "finish", "finished"], answer: 1,
+      explain: "After as soon as: present simple." },
+    { s: "We'll wait here until you ___ ready.", options: ["are", "will be", "were"], answer: 0,
+      explain: "After until: present simple." },
+    { s: "She ___ happy when she hears the news.", options: ["'ll be", "is", "be"], answer: 0,
+      explain: "The main part of the sentence uses will." },
+    { s: "Before you ___ the house, close the windows.", options: ["will leave", "leave", "left"], answer: 1,
+      explain: "After before: present simple." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "if + present, will",
-  intro: "Choose the correct option. For a possible situation in the future: if + present simple, will + verb.",
+  intro: "Choose the correct option or write the missing words. For a possible situation in the future: if + present simple, will + verb.",
   items: [
     { s: "If it ___ tomorrow, we'll stay at home.", options: ["rains", "will rain", "rained"], answer: 0,
       explain: "If + present simple: if it rains. Not if it will rain." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "If you heat ice, it ___.", options: ["melts", "melted", "is melt"], answer: 0,
       explain: "Something that is always true: if + present, present: it melts." },
     { s: "If I ___ time this weekend, I'll paint the kitchen.", options: ["have", "will have", "had"], answer: 0,
-      explain: "If + present simple: if I have time." }
+      explain: "If + present simple: if I have time." },
+    { s: "If you ___, you'll be late. (not / hurry)", answers: ["don't hurry"],
+      explain: "if + present simple." },
+    { s: "If it's sunny tomorrow, we ___ to the beach. (go)", answers: ["will go", "are going to go"],
+      explain: "The result: will + verb." },
+    { s: "If I ___ your book, I'll call you. (find)", answers: ["find"],
+      explain: "if + present simple." },
+    { s: "What ___ if the shop is closed? (you / do)", answers: ["will you do"],
+      explain: "The result question: will + you + do." },
+    { s: "If you mix red and white, you ___ pink. (get)", answers: ["get"],
+      explain: "Always true: if + present, present." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Mixed practice",
-  intro: "Choose the correct word or phrase.",
+  intro: "Choose or write the correct word or phrase.",
   items: [
     { s: "First, cut the onions. ___, put them in a pan with some oil.", options: ["Then", "Because", "Until"], answer: 0,
       explain: "Then = next, after that. It's useful for giving instructions and telling stories." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "We had a great holiday. ___ we went to Rome, and then we went to Florence.", options: ["First", "Finally", "Until"], answer: 0,
       explain: "First starts a list of events in order." },
     { s: "My brother was cooking ___ I was doing my homework.", options: ["while", "until", "so"], answer: 0,
-      explain: "While = at the same time as." }
+      explain: "While = at the same time as." },
+    { s: "I'm hungry ___ I didn't have breakfast.", answers: ["because", "as", "since"],
+      explain: "A reason → because." },
+    { s: "First, make the cake mix. ___, put it in the oven for 30 minutes.", answers: ["Then", "Next", "After that"],
+      explain: "The next step → Then." },
+    { s: "Wear a hat, ___ you'll get burnt.", answers: ["or", "otherwise"],
+      explain: "or = if you don't." },
+    { s: "I'll wait ___ you're ready.", answers: ["until", "till"],
+      explain: "Up to the time when → until." },
+    { s: "___ we were walking home, it started to snow.", answers: ["While", "When", "As"],
+      explain: "During the walk → While." }
   ]
 }
 ];

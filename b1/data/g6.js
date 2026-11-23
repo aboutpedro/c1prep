@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Verb + -ing or to-infinitive",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I enjoy ___ in the sea.", options: ["swimming", "to swim"], answer: 0,
       explain: "enjoy + -ing." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Have you considered ___ abroad?", options: ["studying", "to study"], answer: 0,
       explain: "consider + -ing." },
     { s: "I can't afford ___ a new laptop.", options: ["buying", "to buy"], answer: 1,
-      explain: "afford + to-infinitive." }
+      explain: "afford + to-infinitive." },
+    { s: "She managed ___ the race. (finish)", answers: ["to finish"],
+      explain: "manage + to-infinitive." },
+    { s: "I can't stand ___ in queues. (wait)", answers: ["waiting"],
+      explain: "can't stand + -ing." },
+    { s: "They offered ___ us home. (drive)", answers: ["to drive"],
+      explain: "offer + to-infinitive." },
+    { s: "He admitted ___ the money. (take)", answers: ["taking"],
+      explain: "admit + -ing." },
+    { s: "We expect ___ at 6. (arrive)", answers: ["to arrive"],
+      explain: "expect + to-infinitive." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Write the correct form",
-  intro: "Complete the sentences with the -ing form or the to-infinitive of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the -ing form or the to-infinitive of the verbs in brackets.",
   items: [
     { s: "My brother keeps ___ (borrow) my clothes without asking.", answers: ["borrowing"],
       explain: "keep + -ing = do something again and again." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "She's planning ___ (start) her own business.", answers: ["to start"],
       explain: "plan + to-infinitive." },
     { s: "I miss ___ (live) near the sea.", answers: ["living"],
-      explain: "miss + -ing." }
+      explain: "miss + -ing." },
+    { s: "I really enjoy ___ new people.", options: ["meeting", "to meet", "meet"], answer: 0,
+      explain: "enjoy + -ing." },
+    { s: "She seems ___ happy in her new job.", options: ["being", "to be", "be"], answer: 1,
+      explain: "seem + to-infinitive." },
+    { s: "Would you mind ___ me a hand?", options: ["giving", "to give", "give"], answer: 0,
+      explain: "mind + -ing." },
+    { s: "He pretended ___ asleep.", options: ["being", "be", "to be"], answer: 2,
+      explain: "pretend + to-infinitive." },
+    { s: "I gave up ___ meat two years ago.", options: ["to eat", "eat", "eating"], answer: 2,
+      explain: "give up + -ing." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "After prepositions, adjectives and as subjects",
-  intro: "Complete the sentences with the -ing form or the to-infinitive of the verbs in brackets.",
+  intro: "Choose the correct option or complete the sentences with the -ing form or the to-infinitive of the verbs in brackets.",
   items: [
     { s: "I'm interested in ___ (learn) Japanese.", answers: ["learning"],
       explain: "After a preposition (in), we use -ing." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "It's easy ___ (get) lost in this city.", answers: ["to get"],
       explain: "It's + adjective + to-infinitive." },
     { s: "Before ___ (leave), please turn off the lights.", answers: ["leaving", "you leave"],
-      explain: "before + -ing (or before you leave)." }
+      explain: "before + -ing (or before you leave)." },
+    { s: "I'm tired of ___ the same food every day.", options: ["eating", "to eat", "eat"], answer: 0,
+      explain: "After of: -ing." },
+    { s: "It's difficult ___ a flat in this city.", options: ["finding", "to find", "find"], answer: 1,
+      explain: "It's + adjective + to-infinitive." },
+    { s: "She's excited about ___ to Canada.", options: ["to move", "move", "moving"], answer: 2,
+      explain: "After about: -ing." },
+    { s: "___ a foreign language takes time.", options: ["Learn", "Learning", "To learning"], answer: 1,
+      explain: "-ing as the subject." },
+    { s: "After ___ dinner, we watched a film.", options: ["having", "to have", "have"], answer: 0,
+      explain: "After after: -ing." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Purpose: to or for?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "I went to the shop ___ some milk.", options: ["to buy", "for buying", "for buy"], answer: 0,
       explain: "To give a reason for an action: to + verb (not for + verb)." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "We stopped at a café ___ a coffee.", options: ["for", "to", "for to"], answer: 0,
       explain: "for + noun (a coffee). Compare: to have a coffee." },
     { s: "It was kind of you ___ me.", options: ["to help", "helping", "for helping"], answer: 0,
-      explain: "It was kind of you + to-infinitive. (Compare: Thank you for helping me.)" }
+      explain: "It was kind of you + to-infinitive. (Compare: Thank you for helping me.)" },
+    { s: "I went to the library ___ a book. (borrow)", answers: ["to borrow"],
+      explain: "Purpose of an action: to-infinitive." },
+    { s: "This button is ___ turning the machine off.", answers: ["for"],
+      explain: "What a thing is used for: for + -ing." },
+    { s: "She went out ___ some fresh air. (get)", answers: ["to get"],
+      explain: "Purpose: to-infinitive." },
+    { s: "We need a box ___ these books.", answers: ["for"],
+      explain: "for + noun." },
+    { s: "I came here ___ to you, not to argue. (talk)", answers: ["to talk"],
+      explain: "Purpose: to-infinitive." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "stop, remember, forget, try",
-  intro: "These verbs change their meaning with -ing or to. Choose the correct option.",
+  intro: "These verbs change their meaning with -ing or to. Choose the correct option or write the missing words.",
   items: [
     { s: "On the way to work I stopped ___ a coffee. (= I stopped walking so that I could have one)", options: ["to have", "having"], answer: 0,
       explain: "stop to do something = stop one activity in order to do another." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "He went on ___ after the bell rang. (= he didn't stop)", options: ["talking", "to talk"], answer: 0,
       explain: "go on doing = continue the same activity." },
     { s: "I regret ___ him my secret.", options: ["telling", "to tell"], answer: 0,
-      explain: "regret doing = be sorry you did it. (Regret to tell = formal, for bad news.)" }
+      explain: "regret doing = be sorry you did it. (Regret to tell = formal, for bad news.)" },
+    { s: "I remember ___ her at a party years ago. (meet)", answers: ["meeting"],
+      explain: "remember + -ing = a memory of the past." },
+    { s: "Please remember ___ off the lights. (turn)", answers: ["to turn"],
+      explain: "remember + to = don't forget to do it." },
+    { s: "We stopped ___ at the view. It was amazing. (look)", answers: ["to look"],
+      explain: "stop + to = stop in order to do something." },
+    { s: "He stopped ___ last year. (smoke)", answers: ["smoking"],
+      explain: "stop + -ing = not do it any more." },
+    { s: "Try ___ some warm milk. It might help you sleep. (drink)", answers: ["drinking"],
+      explain: "try + -ing = do it and see if it helps." }
   ]
 }
 ];

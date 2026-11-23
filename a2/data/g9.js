@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "a, an or some?",
-  intro: "Choose a, an or some. Is the noun countable or uncountable?",
+  intro: "Choose or write a, an or some. Is the noun countable or uncountable?",
   items: [
     { s: "Can I have ___ glass of water, please?", options: ["a", "an", "some"], answer: 0,
       explain: "Glass is countable and we want one: a glass of water." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Let's listen to ___ music.", options: ["a", "an", "some"], answer: 2,
       explain: "Music is uncountable, so we use some (not a music)." },
     { s: "He's got ___ interesting job.", options: ["a", "an", "some"], answer: 1,
-      explain: "Job is countable, and interesting starts with a vowel sound: an interesting job." }
+      explain: "Job is countable, and interesting starts with a vowel sound: an interesting job." },
+    { s: "Can I have ___ piece of cake?", answers: ["a"],
+      explain: "piece is countable: a piece." },
+    { s: "We need ___ rice for dinner.", answers: ["some"],
+      explain: "rice is uncountable: some." },
+    { s: "She's got ___ umbrella.", answers: ["an"],
+      explain: "One umbrella, vowel sound: an." },
+    { s: "There's ___ cheese in the fridge.", answers: ["some"],
+      explain: "cheese is uncountable here: some." },
+    { s: "I'd like ___ cup of tea, please.", answers: ["a"],
+      explain: "cup is countable: a cup." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "some or any?",
-  intro: "Choose some or any.",
+  intro: "Choose or write some or any.",
   items: [
     { s: "There are ___ good restaurants in this street.", options: ["some", "any"], answer: 0,
       explain: "Positive sentence: some." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "There aren't ___ trains on Sundays.", options: ["some", "any"], answer: 1,
       explain: "Negative sentence (aren't): any." },
     { s: "I need ___ help with my homework.", options: ["some", "any"], answer: 0,
-      explain: "Positive sentence: some." }
+      explain: "Positive sentence: some." },
+    { s: "Are there ___ shops near your hotel?", answers: ["any"],
+      explain: "Question → any." },
+    { s: "I'd like ___ chips with my burger.", answers: ["some"],
+      explain: "Asking for something → some." },
+    { s: "She didn't buy ___ bread.", answers: ["any"],
+      explain: "Negative → any." },
+    { s: "Have you got ___ plans for the weekend?", answers: ["any"],
+      explain: "Question → any." },
+    { s: "There's ___ cake in the kitchen. Help yourself!", answers: ["some"],
+      explain: "Positive → some." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "much, many or a lot of?",
-  intro: "Choose much, many or a lot of.",
+  intro: "Choose or write much, many or a lot of.",
   items: [
     { s: "How ___ people live in your house?", options: ["much", "many", "a lot of"], answer: 1,
       explain: "People is a plural countable noun: How many?" },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "We had ___ fun at the party.", options: ["much", "many", "a lot of"], answer: 2,
       explain: "Fun is uncountable, and this is a positive sentence: a lot of fun." },
     { s: "I ate too ___ chocolate yesterday.", options: ["much", "many", "a lot of"], answer: 0,
-      explain: "Chocolate is uncountable here: too much chocolate." }
+      explain: "Chocolate is uncountable here: too much chocolate." },
+    { s: "How ___ brothers have you got?", answers: ["many"],
+      explain: "brothers can be counted: many." },
+    { s: "There isn't ___ food in the fridge.", answers: ["much", "a lot of"],
+      explain: "food is uncountable: much." },
+    { s: "We don't have ___ time. Hurry up!", answers: ["much", "a lot of"],
+      explain: "time is uncountable: much." },
+    { s: "She doesn't have ___ friends at her new school.", answers: ["many", "a lot of"],
+      explain: "friends can be counted: many." },
+    { s: "How ___ is this jacket?", answers: ["much"],
+      explain: "Price → How much." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "a few or a little?",
-  intro: "Choose a few (with plural countable nouns) or a little (with uncountable nouns).",
+  intro: "Choose or write a few (with plural countable nouns) or a little (with uncountable nouns).",
   items: [
     { s: "I've got ___ questions for you.", options: ["a few", "a little"], answer: 0,
       explain: "Questions is plural and countable: a few questions." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "She bought ___ things at the market.", options: ["a few", "a little"], answer: 0,
       explain: "Things is plural and countable: a few things." },
     { s: "We've got ___ money left, so let's get a taxi.", options: ["a few", "a little"], answer: 1,
-      explain: "Money is uncountable: a little money." }
+      explain: "Money is uncountable: a little money." },
+    { s: "I've only got a ___ money left.", answers: ["little"],
+      explain: "money is uncountable: a little." },
+    { s: "We met a ___ people from Brazil.", answers: ["few"],
+      explain: "people can be counted: a few." },
+    { s: "Could you wait a ___ minutes?", answers: ["few"],
+      explain: "minutes can be counted: a few." },
+    { s: "Put a ___ sugar in the cake.", answers: ["little"],
+      explain: "sugar is uncountable: a little." },
+    { s: "I know a ___ English words.", answers: ["few"],
+      explain: "words can be counted: a few." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Complete the sentences with words from the box. Use each one once. There are two you don't need.",
+  intro: "Choose the correct option or complete the sentences with words from the box. Use each one once. There are two you don't need.",
   bank: ["some", "any", "much", "many", "a lot of", "a few", "a little", "a piece of", "a bottle of", "how much", "how many", "too"],
   items: [
     { s: "___ water is there in the bottle?", answers: ["how much"],
@@ -137,7 +177,17 @@ window.SETS = [
     { s: "There's only ___ coffee left. Do you want it?", answers: ["a little"],
       explain: "Coffee is uncountable, and it's a small amount: a little coffee." },
     { s: "There are ___ nice shops near my house.", answers: ["some", "a few", "a lot of", "many"],
-      explain: "Positive sentence with a plural noun: some nice shops (a few or a lot of are also possible)." }
+      explain: "Positive sentence with a plural noun: some nice shops (a few or a lot of are also possible)." },
+    { s: "How ___ chairs do we need?", options: ["many", "much", "a lot"], answer: 0,
+      explain: "chairs can be counted: How many." },
+    { s: "There's too ___ salt in this soup!", options: ["many", "much", "few"], answer: 1,
+      explain: "salt is uncountable: too much." },
+    { s: "I'd like ___ cup of coffee, please.", options: ["a", "some", "any"], answer: 0,
+      explain: "One cup: a." },
+    { s: "We've got ___ cheese, but no bread.", options: ["some", "any", "many"], answer: 0,
+      explain: "Positive, uncountable: some." },
+    { s: "Only ___ people came to the meeting, so we finished early.", options: ["a few", "a little", "much"], answer: 0,
+      explain: "people can be counted: a few." }
   ]
 }
 ];

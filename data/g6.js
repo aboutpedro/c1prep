@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Verb patterns after reporting verbs",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "She denied ___ the documents.", options: ["taking", "to take", "that take"], answer: 0,
       explain: "deny + -ing (or deny that + clause)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "They congratulated her ___ the award.", options: ["on winning", "for winning", "to win"], answer: 0,
       explain: "congratulate someone on + -ing / noun." },
     { s: "He admitted ___ the money.", options: ["having stolen", "to have stolen", "to steal"], answer: 0,
-      explain: "admit + -ing (here the perfect -ing, having stolen), or admit to + -ing." }
+      explain: "admit + -ing (here the perfect -ing, having stolen), or admit to + -ing." },
+    { s: "She refused ___ any questions. (answer)", answers: ["to answer"],
+      explain: "refuse + to-infinitive." },
+    { s: "He admitted ___ a serious error. (make)", answers: ["making", "having made", "to making"],
+      explain: "admit (to) + -ing." },
+    { s: "I recommend ___ well in advance. (book)", answers: ["booking"],
+      explain: "recommend + -ing." },
+    { s: "They warned us ___ the tap water. (not / drink)", answers: ["not to drink"],
+      explain: "warn + object + not to." },
+    { s: "She offered ___ me her car. (lend)", answers: ["to lend"],
+      explain: "offer + to-infinitive." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Prepositions and verb forms",
-  intro: "Complete the sentences with the correct form of the verb in brackets and any preposition or other word that is needed.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verb in brackets and any preposition or other word that is needed.",
   items: [
     { s: "She blamed her brother ___ (break) the vase.", answers: ["for breaking", "for having broken"],
       explain: "blame someone for + -ing." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The thief confessed ___ (take) the jewels.", answers: ["to taking", "to having taken"],
       explain: "confess to + -ing." },
     { s: "We were discouraged ___ (apply) for the post.", answers: ["from applying"],
-      explain: "discourage someone from + -ing." }
+      explain: "discourage someone from + -ing." },
+    { s: "The judge accused the witness ___ lying.", options: ["of", "for", "about"], answer: 0,
+      explain: "accuse someone of + -ing." },
+    { s: "Nothing will stop me ___ trying again.", options: ["of", "to", "from"], answer: 2,
+      explain: "stop someone from + -ing." },
+    { s: "She apologised ___ the delay.", options: ["about", "of", "for"], answer: 2,
+      explain: "apologise for." },
+    { s: "He was praised ___ his quick thinking.", options: ["of", "for", "on"], answer: 1,
+      explain: "praise someone for." },
+    { s: "They criticised the government ___ failing to act.", options: ["of", "for", "about"], answer: 1,
+      explain: "criticise someone for + -ing." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Choosing the reporting verb",
-  intro: "Choose the verb that reports the words in quotation marks.",
+  intro: "Choose or write the verb that reports the words in quotation marks.",
   items: [
     { s: "'I'll definitely pay you back next week.' → He ___ to pay me back the following week.", options: ["promised", "denied", "insisted"], answer: 0,
       explain: "promise + to-infinitive." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "'Well done on getting the job!' → She ___ me on getting the job.", options: ["congratulated", "praised", "thanked"], answer: 0,
       explain: "congratulate someone on something." },
     { s: "'No, I won't sign the contract.' → She ___ to sign the contract.", options: ["refused", "denied", "rejected"], answer: 0,
-      explain: "refuse + to-infinitive. (reject takes a noun: reject an offer.)" }
+      explain: "refuse + to-infinitive. (reject takes a noun: reject an offer.)" },
+    { s: "'Yes, I lied to you.' → He ___ lying to me.", answers: ["admitted"],
+      explain: "admit + -ing." },
+    { s: "'I'll call you every day, I promise.' → She ___ to call me every day.", answers: ["promised"],
+      explain: "promise + to-infinitive." },
+    { s: "'You should take a few days off.' → My boss ___ me to take a few days off.", answers: ["advised", "told", "urged", "encouraged"],
+      explain: "advise + object + to-infinitive." },
+    { s: "'Be careful – the floor is wet.' → He ___ us that the floor was wet.", answers: ["warned", "told"],
+      explain: "warn + object + that." },
+    { s: "'Thanks so much for your help.' → She ___ me for my help.", answers: ["thanked"],
+      explain: "thank someone for." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "Reported questions and that (should)…",
-  intro: "Complete the reported sentences. Use the verb in brackets where one is given.",
+  intro: "Choose the correct option or complete the reported sentences. Use the verb in brackets where one is given.",
   items: [
     { s: "'Where have you been?' → She asked me where ___.", answers: ["I had been", "I'd been"],
       explain: "Reported question: normal word order (subject + verb) and a tense change." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "'Will you be at the meeting tomorrow?' → She asked if I would be at the meeting ___.", answers: ["the next day", "the following day", "the day after"],
       explain: "tomorrow → the next day / the following day." },
     { s: "It is essential that every applicant ___ (submit) the form by Friday.", answers: ["submit", "submits", "should submit"],
-      explain: "essential that + (should) + base form (submits is also common)." }
+      explain: "essential that + (should) + base form (submits is also common)." },
+    { s: "The doctor advised that she ___ more exercise.", options: ["take", "will take", "taking"], answer: 0,
+      explain: "The subjunctive after advise that: base verb." },
+    { s: "'Have you finished?' → She asked whether ___.", options: ["I had finished", "had I finished", "did I finish"], answer: 0,
+      explain: "Statement word order, tense back." },
+    { s: "'Who are you?' → He demanded to know who ___.", options: ["was I", "am I", "I was"], answer: 2,
+      explain: "Statement word order." },
+    { s: "It's vital that he ___ told immediately.", options: ["being", "be", "to be"], answer: 1,
+      explain: "The subjunctive after vital that: be." },
+    { s: "'Don't be late.' → She warned me ___ late.", options: ["not being", "to not being", "not to be"], answer: 2,
+      explain: "warn + object + not to." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "'I'll pay for the meal, and that's final,' said my uncle. → My uncle ___ for the meal. (INSISTED)", answers: ["insisted on paying"],
       explain: "insist on + -ing." },
     { s: "'Remember to water the plants,' Mum told me. → Mum ___ the plants. (REMINDED)", answers: ["reminded me to water"],
-      explain: "remind + person + to-infinitive." }
+      explain: "remind + person + to-infinitive." },
+    { s: "'I really think you should apply,' my teacher said. → My teacher ___ apply. (URGED)", answers: ["urged me to"],
+      explain: "urge + object + to-infinitive." },
+    { s: "'I'm afraid I broke your vase,' said Paul. → Paul ___ my vase. (ADMITTED)", answers: ["admitted breaking", "admitted having broken", "admitted to breaking", "admitted that he had broken", "admitted he had broken"],
+      explain: "admit + -ing." },
+    { s: "'Well done on your promotion,' she said to me. → She ___ promoted. (CONGRATULATED)", answers: ["congratulated me on being", "congratulated me on getting"],
+      explain: "congratulate someone on + -ing." },
+    { s: "'Don't touch the wires!' the electrician told us. → The electrician ___ the wires. (WARNED)", answers: ["warned us not to touch", "warned us against touching"],
+      explain: "warn + object + not to." },
+    { s: "'It's your fault the project failed,' the manager told Sara. → The manager ___ the project's failure. (BLAMED)", answers: ["blamed Sara for", "blamed her for"],
+      explain: "blame someone for." }
   ]
 }
 ];

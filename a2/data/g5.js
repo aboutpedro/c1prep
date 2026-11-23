@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "Comparatives",
-  intro: "Complete the sentences with the comparative form of the adjectives in brackets.",
+  intro: "Choose the correct option or complete the sentences with the comparative form of the adjectives in brackets.",
   items: [
     { s: "My bag is ___ (heavy) than yours.", answers: ["heavier"],
       explain: "Consonant + y: change y to -ier (heavy → heavier)." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Their garden is ___ (big) than ours.", answers: ["bigger"],
       explain: "One vowel + one consonant: double the consonant (big → bigger)." },
     { s: "The second film was ___ (interesting) than the first.", answers: ["more interesting"],
-      explain: "Long adjective: more interesting." }
+      explain: "Long adjective: more interesting." },
+    { s: "My new phone is ___ than my old one.", options: ["more light", "lighter", "lightier"], answer: 1,
+      explain: "Short adjective: add -er." },
+    { s: "This road is ___ than the motorway.", options: ["more dangerous", "dangerouser", "most dangerous"], answer: 0,
+      explain: "Long adjective: more + adjective." },
+    { s: "Is your town ___ than mine?", options: ["smaller", "more small", "smallest"], answer: 0,
+      explain: "One-syllable adjective: add -er." },
+    { s: "My dog is ___ than my cat.", options: ["thinner", "thiner", "more thin"], answer: 0,
+      explain: "One vowel + one consonant: double it. thin → thinner." },
+    { s: "Today the traffic is ___ than usual.", options: ["badder", "more bad", "worse"], answer: 2,
+      explain: "bad → worse (irregular)." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "Superlatives",
-  intro: "Complete the sentences with the superlative form of the adjectives in brackets.",
+  intro: "Choose the correct option or complete the sentences with the superlative form of the adjectives in brackets.",
   items: [
     { s: "It's the ___ (cold) day of the year so far.", answers: ["coldest"],
       explain: "Short adjectives: the + -est (cold → the coldest)." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Maths is the ___ (difficult) subject for me.", answers: ["most difficult"],
       explain: "Long adjective: the most difficult." },
     { s: "December is the ___ (busy) month for shops.", answers: ["busiest"],
-      explain: "busy → the busiest." }
+      explain: "busy → the busiest." },
+    { s: "It's the ___ hotel in town.", options: ["most cheap", "cheapest", "cheaper"], answer: 1,
+      explain: "Short adjective: the + -est." },
+    { s: "Who is the ___ singer in the world?", options: ["famousest", "more famous", "most famous"], answer: 2,
+      explain: "Long adjective: the most + adjective." },
+    { s: "This is the ___ street in the city.", options: ["longest", "most long", "longer"], answer: 0,
+      explain: "Short adjective: the + -est." },
+    { s: "That's the ___ idea I've heard all day!", options: ["goodest", "best", "better"], answer: 1,
+      explain: "good → better → the best." },
+    { s: "July is the ___ month of the year here.", options: ["driest", "dryest", "most dry"], answer: 0,
+      explain: "Consonant + y: y → iest. dry → driest." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Comparative or superlative?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "Rome is ___ than my town.", options: ["bigger", "the biggest", "more big"], answer: 0,
       explain: "Than tells us to use the comparative: bigger than." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "That's ___ joke I've ever heard!", options: ["the funniest", "funnier", "the most funny"], answer: 0,
       explain: "funny → the funniest (y → -iest)." },
     { s: "Today is ___ than yesterday.", options: ["hotter", "the hottest", "more hot"], answer: 0,
-      explain: "hot → hotter (double the t)." }
+      explain: "hot → hotter (double the t)." },
+    { s: "My sister is ___ than me. (young)", answers: ["younger"],
+      explain: "Comparing two people: comparative." },
+    { s: "Canada is one of the ___ countries in the world. (big)", answers: ["biggest"],
+      explain: "one of the + superlative. big → biggest." },
+    { s: "Which is ___ animal in Africa? (dangerous)", answers: ["the most dangerous"],
+      explain: "The whole group: the most + long adjective." },
+    { s: "Walking is ___ than driving. (healthy)", answers: ["healthier"],
+      explain: "Comparing two things; healthy → healthier." },
+    { s: "This is the ___ I've ever run! (far)", answers: ["farthest", "furthest"],
+      explain: "far → farther/further → the farthest/furthest." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "as … as, too and enough",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "My sister is as tall ___ my mum.", options: ["as", "than", "like"], answer: 0,
       explain: "as + adjective + as = the same: as tall as." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Is the water warm ___ for swimming?", options: ["enough", "too", "as"], answer: 0,
       explain: "adjective + enough: warm enough." },
     { s: "My new phone is ___ expensive as my old one.", options: ["as", "more", "the most"], answer: 0,
-      explain: "as expensive as = the same price." }
+      explain: "as expensive as = the same price." },
+    { s: "I can't reach the shelf. I'm not tall ___.", answers: ["enough"],
+      explain: "adjective + enough." },
+    { s: "This bag is ___ heavy. I can't carry it.", answers: ["too"],
+      explain: "too + adjective = more than is OK." },
+    { s: "My brother is ___ old as your brother.", answers: ["as"],
+      explain: "as + adjective + as = the same." },
+    { s: "The film was not as long ___ I thought.", answers: ["as"],
+      explain: "not as … as." },
+    { s: "Is the soup hot ___?", answers: ["enough"],
+      explain: "adjective + enough." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Complete the sentences. Use the adjective in brackets and add any other words you need (than, the, as, too…).",
+  intro: "Choose the correct option or complete the sentences. Use the adjective in brackets and add any other words you need (than, the, as, too…).",
   items: [
     { s: "A car is ___ (expensive) a bike.", answers: ["more expensive than"],
       explain: "Comparative of a long adjective + than: more expensive than." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "She's ___ (friendly) person I know.", answers: ["the friendliest", "the most friendly"],
       explain: "friendly → the friendliest (the most friendly is also possible)." },
     { s: "This box is ___ (heavy) for me to carry.", answers: ["too heavy"],
-      explain: "too + adjective + for me = I can't carry it." }
+      explain: "too + adjective + for me = I can't carry it." },
+    { s: "My new laptop is ___ my old one.", options: ["much faster than", "more faster than", "fastest than"], answer: 0,
+      explain: "much + comparative + than." },
+    { s: "Is Lima ___ Bogotá?", options: ["as bigger as", "big as", "as big as"], answer: 2,
+      explain: "as + adjective + as." },
+    { s: "This exam is ___ difficult for A2 students.", options: ["enough", "too", "as"], answer: 1,
+      explain: "too + adjective." },
+    { s: "She isn't ___ to watch that film. She's only nine.", options: ["enough old", "old enough", "too old"], answer: 1,
+      explain: "adjective + enough." },
+    { s: "He's ___ person in our family.", options: ["the most tall", "taller", "the tallest"], answer: 2,
+      explain: "The whole family: the tallest." }
   ]
 }
 ];

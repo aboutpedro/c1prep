@@ -139,5 +139,33 @@ window.SETS = [
     { s: "The illness is ___ (CURE), but it can be controlled.", answers: ["incurable"],
       explain: "cure → curable → incurable." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Food and diet",
+  intro: "Choose the word that best fits the gap.",
+  items: [
+    { s: "I've been trying to cut ___ on red meat.", options: ["down", "off", "away", "up"], answer: 0,
+      explain: "cut down on = eat less of." },
+    { s: "Avocados are rich ___ healthy fats.", options: ["in", "with", "of", "at"], answer: 0,
+      explain: "rich in = containing a lot of." },
+    { s: "Fast food is often ___ in salt and sugar.", options: ["high", "big", "heavy", "tall"], answer: 0,
+      explain: "high in ≠ low in." },
+    { s: "She follows a strict gluten-___ diet.", options: ["free", "less", "without", "out"], answer: 0,
+      explain: "gluten-free = with no gluten." },
+    { s: "The sauce was so ___ that I felt full after a few bites.", options: ["rich", "wealthy", "thick", "strong"], answer: 0,
+      explain: "rich food = full of butter, cream or sugar." },
+    { s: "I'm ___ to peanuts, so I always check the label.", options: ["allergic", "allergy", "allergen", "sensitivity"], answer: 0,
+      explain: "allergic to." },
+    { s: "He has a sweet ___ – he can't resist chocolate.", options: ["tooth", "mouth", "tongue", "taste"], answer: 0,
+      explain: "have a sweet tooth = love sweet food." },
+    { s: "Eating a wide ___ of fruit and vegetables is key to good health.", options: ["variety", "diversion", "varied", "various"], answer: 0,
+      explain: "a (wide) variety of = many different kinds of." },
+    { s: "Many people reach for comfort food when they're feeling ___.", options: ["low", "short", "small", "thin"], answer: 0,
+      explain: "feel low = feel sad, depressed." },
+    { s: "The doctor told him to ___ his intake of salt.", options: ["reduce", "lower down", "decrease of", "lessen down"], answer: 0,
+      explain: "reduce your intake = have less." }
+  ]
 }
 ];

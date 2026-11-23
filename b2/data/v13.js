@@ -139,5 +139,33 @@ window.SETS = [
     { s: "What do you do in your ___?", answers: ["spare time"],
       explain: "spare time = free time." }
   ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Sport",
+  intro: "Choose the correct word.",
+  items: [
+    { s: "The match ended in a ___: 1–1.", options: ["draw", "tie up", "equal"], answer: 0,
+      explain: "a draw = both teams have the same score." },
+    { s: "Our team ___ the final 3–0.", options: ["won", "beat", "earned"], answer: 0,
+      explain: "win a match, a final or a prize." },
+    { s: "We ___ the other team easily.", options: ["beat", "won", "gained"], answer: 0,
+      explain: "beat a person or a team." },
+    { s: "Thousands of ___ watched the game from the stands.", options: ["spectators", "viewers", "audience"], answer: 0,
+      explain: "spectators = people watching a sports event live." },
+    { s: "The ___ blew his whistle and showed a red card.", options: ["referee", "umpire", "judge"], answer: 0,
+      explain: "a referee controls a football match. An umpire controls tennis or cricket." },
+    { s: "The tennis players walked onto the ___.", options: ["court", "pitch", "track"], answer: 0,
+      explain: "a tennis court. A football pitch. A running track." },
+    { s: "The football ___ was muddy after the rain.", options: ["pitch", "court", "ring"], answer: 0,
+      explain: "a football pitch (or field)." },
+    { s: "She ___ a new world record in the 100 metres.", options: ["set", "made", "did"], answer: 0,
+      explain: "set a record = do something better than anyone before." },
+    { s: "He goes ___ every weekend – he loves the mountains.", options: ["climbing", "to climb", "climb"], answer: 0,
+      explain: "go + -ing for activities: go climbing, go skiing." },
+    { s: "I ___ judo twice a week.", options: ["do", "play", "go"], answer: 0,
+      explain: "do for martial arts and individual activities: do judo, do yoga." }
+  ]
 }
 ];

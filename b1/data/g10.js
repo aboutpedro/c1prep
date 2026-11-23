@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "will, going to or present continuous?",
-  intro: "Choose the best option. Will: decisions made now, offers, predictions. Going to: plans and predictions from what we can see. Present continuous: fixed arrangements.",
+  intro: "Choose the best option or write the missing words. Will: decisions made now, offers, predictions. Going to: plans and predictions from what we can see. Present continuous: fixed arrangements.",
   items: [
     { s: "The phone's ringing. – OK, I ___ it.", options: ["'ll get", "'m going to get", "'m getting"], answer: 0,
       explain: "A decision made at the moment of speaking: will." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "I promise I ___ anyone your secret.", options: ["won't tell", "'m not telling", "don't tell"], answer: 0,
       explain: "Promises: will / won't." },
     { s: "Sara and Tom ___ married in June. The invitations have gone out.", options: ["are getting", "will get", "get"], answer: 0,
-      explain: "A fixed arrangement (the invitations have gone out): present continuous." }
+      explain: "A fixed arrangement (the invitations have gone out): present continuous." },
+    { s: "I've already decided. I ___ medicine. (study)", answers: ["am going to study"],
+      explain: "A plan decided before: going to." },
+    { s: "It's hot in here. – I ___ the window. (open)", answers: ["will open"],
+      explain: "A decision now: will." },
+    { s: "We ___ to Lisbon on Monday. The tickets are booked. (fly)", answers: ["are flying", "are going to fly"],
+      explain: "An arrangement: present continuous." },
+    { s: "I think you ___ this book. (like)", answers: ["will like"],
+      explain: "A prediction with I think: will." },
+    { s: "Look! The bus ___! Run! (leave)", answers: ["is going to leave", "is leaving"],
+      explain: "We can see it happening: going to." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Timetables and time clauses",
-  intro: "Choose the correct option. Use the present simple for timetables, and after when, as soon as, until, before and after.",
+  intro: "Choose the correct option or write the missing words. Use the present simple for timetables, and after when, as soon as, until, before and after.",
   items: [
     { s: "Hurry up! The train ___ at 6.15.", options: ["leaves", "will leaving", "leave"], answer: 0,
       explain: "A timetable: present simple: the train leaves at 6.15." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I'm going to have a long holiday after I ___ my exams.", options: ["finish", "will finish", "am finishing"], answer: 0,
       explain: "After after, present simple for the future." },
     { s: "The bus ___ every twenty minutes, so you won't wait long.", options: ["comes", "is coming", "come"], answer: 0,
-      explain: "A regular timetable: present simple." }
+      explain: "A regular timetable: present simple." },
+    { s: "The film ___ at 9 p.m. (start)", answers: ["starts"],
+      explain: "A timetable: present simple." },
+    { s: "I'll call you as soon as I ___ any news. (hear)", answers: ["hear"],
+      explain: "After as soon as: present simple." },
+    { s: "We won't leave until everyone ___ ready. (be)", answers: ["is"],
+      explain: "After until: present simple." },
+    { s: "What time ___? (the plane / land)", answers: ["does the plane land"],
+      explain: "A timetable question: present simple." },
+    { s: "After you ___, please hand in your paper. (finish)", answers: ["finish", "have finished"],
+      explain: "After after: present simple." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "will be doing (future continuous)",
-  intro: "Choose the correct option. Will be + -ing is for something in progress at a time in the future.",
+  intro: "Choose the correct option or write the missing words. Will be + -ing is for something in progress at a time in the future.",
   items: [
     { s: "Don't call me at 8. We ___ dinner then.", options: ["'ll be having", "'ll have had", "are having had"], answer: 0,
       explain: "In progress at 8 o'clock: we'll be having dinner." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "At this time tomorrow, my plane ___ over the Atlantic.", options: ["will be flying", "flies", "will have flown"], answer: 0,
       explain: "In progress at this time tomorrow: will be flying." },
     { s: "Can you call back later? Mum ___ a shower right now, so she can't answer.", options: ["is having", "will have", "has"], answer: 0,
-      explain: "Right now = present continuous, not future: Mum is having a shower." }
+      explain: "Right now = present continuous, not future: Mum is having a shower." },
+    { s: "This time tomorrow, I ___ on a plane. (sit)", answers: ["will be sitting"],
+      explain: "In progress at a future time: will be + -ing." },
+    { s: "Don't call at nine. We ___ the match. (watch)", answers: ["will be watching"],
+      explain: "In progress then: future continuous." },
+    { s: "In 2050, people ___ on Mars, maybe. (live)", answers: ["will be living", "will live"],
+      explain: "A situation in progress in the future." },
+    { s: "I ___ for you outside the cinema at 7. (wait)", answers: ["will be waiting", "will wait"],
+      explain: "In progress at 7: future continuous." },
+    { s: "Next summer, we ___ around Asia. (travel)", answers: ["will be travelling", "will be traveling", "will travel", "are travelling", "are traveling", "are going to travel"],
+      explain: "In progress next summer." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "will be doing or will have done?",
-  intro: "Choose the correct option. Will be + -ing: in progress at a future time. Will have + past participle: finished before a future time.",
+  intro: "Choose the correct option or write the missing words. Will be + -ing: in progress at a future time. Will have + past participle: finished before a future time.",
   items: [
     { s: "By the time you arrive, I ___ dinner, so we can eat straight away.", options: ["'ll have cooked", "'ll be cooking", "cook"], answer: 0,
       explain: "Finished before you arrive: will have cooked." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "By the end of the year, we ___ enough money for a holiday.", options: ["'ll have saved", "'ll be saving", "save"], answer: 0,
       explain: "By the end of the year = finished before then: will have saved." },
     { s: "This time next month, I ___ in my new job.", options: ["'ll be working", "'ll have worked", "work"], answer: 0,
-      explain: "In progress at that time: will be working." }
+      explain: "In progress at that time: will be working." },
+    { s: "By Friday, I ___ the project. (finish)", answers: ["will have finished"],
+      explain: "Finished before Friday: will have + past participle." },
+    { s: "At 8 tonight, I ___ dinner. (cook)", answers: ["will be cooking"],
+      explain: "In progress at 8: will be + -ing." },
+    { s: "By the time you wake up, we ___. (leave)", answers: ["will have left"],
+      explain: "Finished before then: future perfect." },
+    { s: "By 2030, I ___ here for twenty years. (live)", answers: ["will have lived", "will have been living"],
+      explain: "Up to a future time: future perfect." },
+    { s: "Don't come at 3. We ___ lunch. (have)", answers: ["will be having"],
+      explain: "In progress at 3: future continuous." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Write the correct future form of the verb in brackets. Sometimes more than one form is possible.",
+  intro: "Choose the correct option or write the correct future form of the verb in brackets. Sometimes more than one form is possible.",
   items: [
     { s: "I've bought the paint. I ___ the bedroom this weekend. (paint)", answers: ["am going to paint", "am painting"], width: 18,
       explain: "A plan (you've bought the paint): going to. The present continuous is also fine for a plan." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I don't think it ___ tomorrow. (snow)", answers: ["will snow", "is going to snow", "'s going to snow"], width: 18,
       explain: "A prediction with I think / I don't think: will is the most common (going to is also fine)." },
     { s: "By the end of this course, you ___ over 2,000 new words. (learn)", answers: ["will have learned", "will have learnt"], width: 18,
-      explain: "Finished before a future time: will have learned (or learnt)." }
+      explain: "Finished before a future time: will have learned (or learnt)." },
+    { s: "I'm sure you ___ the exam.", options: ["'re passing", "'ll pass", "pass"], answer: 1,
+      explain: "A prediction with I'm sure: will." },
+    { s: "My sister ___ a baby in March.", options: ["will have had", "'s having", "has"], answer: 1,
+      explain: "A planned future event: present continuous." },
+    { s: "Wait until the light ___ green.", options: ["turns", "will turn", "is turning"], answer: 0,
+      explain: "After until: present simple." },
+    { s: "By next year, the bridge ___.", options: ["will be finishing", "will have been finished", "finishes"], answer: 1,
+      explain: "Finished before next year: future perfect (passive)." },
+    { s: "I ___ Leo tonight. We're having dinner at eight.", options: ["'m seeing", "'ll have seen", "see"], answer: 0,
+      explain: "An arrangement: present continuous." }
   ]
 }
 ];

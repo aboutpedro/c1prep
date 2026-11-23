@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "much, far, a bit + comparative",
-  intro: "Choose the correct word. Use much, far or a lot for a big difference, and a bit, a little or slightly for a small difference. Don't use very with comparatives.",
+  intro: "Choose or write the correct word. Use much, far or a lot for a big difference, and a bit, a little or slightly for a small difference. Don't use very with comparatives.",
   items: [
     { s: "This phone is ___ cheaper than that one. It's half the price.", options: ["much", "very", "more"], answer: 0,
       explain: "A big difference: much cheaper. We can't say very cheaper." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "It's ___ colder today than it was yesterday.", options: ["even", "very", "too"], answer: 0,
       explain: "Even colder = yesterday was cold, and today is colder still." },
     { s: "The second film was ___ worse than the first one. I nearly fell asleep.", options: ["far", "very", "more"], answer: 0,
-      explain: "A big difference: far worse. (Worse is already a comparative, so not more worse.)" }
+      explain: "A big difference: far worse. (Worse is already a comparative, so not more worse.)" },
+    { s: "This test was ___ easier than last week's. I finished in ten minutes.", answers: ["much", "far", "a lot"],
+      explain: "A big difference: much + comparative." },
+    { s: "The new car is ___ more expensive than the old one, but only by €500.", answers: ["slightly", "a bit", "a little"],
+      explain: "A small difference: slightly." },
+    { s: "I'm feeling a ___ better today, but I'm still not well.", answers: ["bit", "little"],
+      explain: "a bit / a little = a small difference." },
+    { s: "Rome is ___ older than New York.", answers: ["much", "far", "a lot"],
+      explain: "A big difference: much older." },
+    { s: "Could you come a ___ earlier tomorrow?", answers: ["bit", "little"],
+      explain: "a bit earlier." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "as … as, not as … as, the same as",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "Ana is 1.70 m and Leo is 1.70 m. Ana is ___ Leo.", options: ["as tall as", "taller than", "as tall than"], answer: 0,
       explain: "The same height: as tall as." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "He earns ___ money as his boss!", options: ["as much", "as many", "so many"], answer: 0,
       explain: "Money is uncountable: as much money as." },
     { s: "There weren't ___ people at the party as we expected.", options: ["as many", "as much", "so much"], answer: 0,
-      explain: "People is plural and countable: as many people as." }
+      explain: "People is plural and countable: as many people as." },
+    { s: "My brother isn't ___ tall as me.", answers: ["as", "so"],
+      explain: "not as … as." },
+    { s: "This film is the same ___ the book.", answers: ["as"],
+      explain: "the same as." },
+    { s: "Your phone is very similar ___ mine.", answers: ["to"],
+      explain: "similar to." },
+    { s: "He doesn't work as hard ___ his sister.", answers: ["as"],
+      explain: "as … as." },
+    { s: "I'll call you as soon ___ I can.", answers: ["as"],
+      explain: "as soon as." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "The more…, the better",
-  intro: "Write the comparative of the word in brackets.",
+  intro: "Choose the correct option or write the comparative of the word in brackets.",
   items: [
     { s: "The more you practise, the ___ you'll get. (good)", answers: ["better"], width: 14,
       explain: "the + comparative, the + comparative: the better you'll get." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "The older he gets, the ___ he looks like his father. (much)", answers: ["more"], width: 14,
       explain: "much → more: the more he looks like his father." },
     { s: "The longer you wait, the ___ it will be. (bad)", answers: ["worse"], width: 14,
-      explain: "bad → worse (irregular)." }
+      explain: "bad → worse (irregular)." },
+    { s: "The more you eat, the ___ you'll get.", options: ["more fat", "fatter", "fat"], answer: 1,
+      explain: "the + comparative: fatter." },
+    { s: "The ___ the weather, the happier I am.", options: ["more hot", "hotter", "hottest"], answer: 1,
+      explain: "the + comparative: hotter." },
+    { s: "The less you sleep, the more ___ you feel.", options: ["tireder", "tiring", "tired"], answer: 2,
+      explain: "the more + adjective: the more tired." },
+    { s: "The ___ you start, the sooner you'll finish.", options: ["more early", "earliest", "earlier"], answer: 2,
+      explain: "early → earlier." },
+    { s: "The more I know him, the ___ I like him.", options: ["most", "more", "much"], answer: 1,
+      explain: "the more …, the more." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "so or such?",
-  intro: "Choose so or such. So + adjective / adverb; such + (a / an) + (adjective +) noun.",
+  intro: "Choose or write so or such. So + adjective / adverb; such + (a / an) + (adjective +) noun.",
   items: [
     { s: "The film was ___ boring that I fell asleep.", options: ["so", "such"], answer: 0,
       explain: "so + adjective (boring)." },
@@ -108,6 +138,16 @@ window.SETS = [
     { s: "She speaks English ___ well that people think she's British.", options: ["so", "such"], answer: 0,
       explain: "so + adverb (well)." },
     { s: "He's ___ an interesting person. You'll love him.", options: ["such", "so"], answer: 0,
+      explain: "such + an + adjective + noun." },
+    { s: "It was ___ a long journey that we stopped twice.", answers: ["such"],
+      explain: "such + a + adjective + noun." },
+    { s: "The music was ___ loud that I couldn't hear you.", answers: ["so"],
+      explain: "so + adjective." },
+    { s: "She has ___ beautiful eyes!", answers: ["such"],
+      explain: "such + adjective + plural noun." },
+    { s: "I've never seen ___ much snow!", answers: ["so"],
+      explain: "so much / so many." },
+    { s: "It's ___ an expensive restaurant that we only go on birthdays.", answers: ["such"],
       explain: "such + an + adjective + noun." }
   ]
 },
@@ -115,7 +155,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "too or enough?",
-  intro: "Choose the correct option. Too + adjective = more than is good. Adjective + enough = as much as is needed.",
+  intro: "Choose the correct option or write the missing words. Too + adjective = more than is good. Adjective + enough = as much as is needed.",
   items: [
     { s: "This coffee is ___ hot to drink. I'll wait a minute.", options: ["too", "enough", "very enough"], answer: 0,
       explain: "More than is good: too hot (to drink)." },
@@ -136,7 +176,55 @@ window.SETS = [
     { s: "There were ___ people on the bus, so I waited for the next one.", options: ["too many", "too much", "enough"], answer: 0,
       explain: "Countable (people): too many." },
     { s: "She didn't study ___, so she failed the test.", options: ["enough", "too", "so"], answer: 0,
-      explain: "verb + enough: didn't study enough." }
+      explain: "verb + enough: didn't study enough." },
+    { s: "The box is ___ heavy for me. Can you help?", answers: ["too"],
+      explain: "More than is OK: too." },
+    { s: "Are you old ___ to watch this film?", answers: ["enough"],
+      explain: "adjective + enough." },
+    { s: "We haven't got ___ time to finish today.", answers: ["enough"],
+      explain: "enough + noun." },
+    { s: "It's ___ cold to go to the beach.", answers: ["too"],
+      explain: "too + adjective + to." },
+    { s: "He's not strong ___ to lift it.", answers: ["enough"],
+      explain: "adjective + enough." }
+  ]
+},
+/* ---------------- Set 6 ---------------- */
+{
+  type: "sentences", shuffle: true,
+  textTitle: "Adjective or adverb?",
+  intro: "Choose the correct option or write the missing words.",
+  items: [
+    { s: "She speaks English very ___.", options: ["well", "good", "goodly"], answer: 0,
+      explain: "Speak is a verb, so we need the adverb: well. (Good is an adjective.)" },
+    { s: "Your English is very ___.", options: ["good", "well", "goodly"], answer: 0,
+      explain: "After be, use an adjective: good." },
+    { s: "He drives too ___.", options: ["fast", "fastly", "speedy"], answer: 0,
+      explain: "Fast is both an adjective and an adverb: fastly doesn't exist." },
+    { s: "I was really ___ by the end of the film.", options: ["bored", "boring", "bore"], answer: 0,
+      explain: "-ed adjectives describe how you feel: bored." },
+    { s: "The lesson was so ___ that I fell asleep.", options: ["boring", "bored", "bore"], answer: 0,
+      explain: "-ing adjectives describe what causes the feeling: boring." },
+    { s: "She arrived ___ for the meeting.", options: ["late", "lately", "latest"], answer: 0,
+      explain: "Late is also an adverb. Lately means recently." },
+    { s: "I've been working very ___ this week.", options: ["hard", "hardly", "hardy"], answer: 0,
+      explain: "Hard is also an adverb. Hardly means almost not." },
+    { s: "Could you speak more ___, please?", options: ["slowly", "slow", "slowlier"], answer: 0,
+      explain: "The comparative of the adverb slowly: more slowly." },
+    { s: "This soup smells ___.", options: ["delicious", "deliciously", "delicacy"], answer: 0,
+      explain: "After sense verbs (smell, taste, look, sound, feel), use an adjective." },
+    { s: "She sings ___ than her sister.", options: ["better", "more good", "gooder"], answer: 0,
+      explain: "Well → better: the comparative of the adverb well." },
+    { s: "He's a very ___ driver. (careful)", answers: ["careful"],
+      explain: "It describes a noun (driver): adjective." },
+    { s: "She smiled ___ at me. (happy)", answers: ["happily"],
+      explain: "It describes a verb (smiled): adverb." },
+    { s: "I did ___ in the exam. (bad)", answers: ["badly"],
+      explain: "It describes a verb (did): adverb." },
+    { s: "You look ___ today. Are you OK? (tired)", answers: ["tired"],
+      explain: "After look: adjective." },
+    { s: "The children were playing ___. (quiet)", answers: ["quietly"],
+      explain: "It describes a verb (playing): adverb." }
   ]
 }
 ];

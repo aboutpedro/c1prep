@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Gradable and ungradable adjectives",
-  intro: "Choose the correct modifier. very goes with gradable adjectives (cold, good); absolutely goes with extreme ones (freezing, fantastic).",
+  intro: "Choose or write the correct modifier. very goes with gradable adjectives (cold, good); absolutely goes with extreme ones (freezing, fantastic).",
   items: [
     { s: "It was ___ freezing on the mountain.", options: ["absolutely", "very", "fairly"], answer: 0,
       explain: "freezing is extreme (ungradable): absolutely freezing." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "The hotel was ___ expensive, but it was worth it.", options: ["rather", "absolutely", "utterly"], answer: 0,
       explain: "rather + gradable adjective: a little more than expected." },
     { s: "It's ___ essential that you bring your passport.", options: ["absolutely", "very", "quite a"], answer: 0,
-      explain: "essential is ungradable: absolutely essential." }
+      explain: "essential is ungradable: absolutely essential." },
+    { s: "The view was ___ breathtaking.", answers: ["absolutely", "utterly", "quite", "truly", "simply"],
+      explain: "breathtaking is extreme: absolutely." },
+    { s: "I'm ___ tired today.", answers: ["very", "really", "extremely", "rather", "quite", "fairly", "a bit"],
+      explain: "tired is gradable: very." },
+    { s: "Your essay is ___ brilliant!", answers: ["absolutely", "truly", "simply", "quite"],
+      explain: "brilliant is extreme: absolutely." },
+    { s: "That's ___ ridiculous.", answers: ["absolutely", "completely", "totally", "utterly", "quite", "simply"],
+      explain: "ridiculous is extreme: absolutely." },
+    { s: "The water was ___ warm, so we went in.", answers: ["quite", "fairly", "pretty", "reasonably", "very", "really", "nice and"],
+      explain: "warm is gradable: quite / fairly." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "quite, rather, fairly, pretty",
-  intro: "Choose the best option.",
+  intro: "Choose the best option or write the missing words.",
   items: [
     { s: "The test was ___ easy. I finished in ten minutes.", options: ["pretty", "rather a", "quite a"], answer: 0,
       explain: "pretty (informal) = fairly, quite." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The town was ___ peaceful than I expected.", options: ["rather more", "more rather", "quite more"], answer: 0,
       explain: "rather + comparative: rather more peaceful." },
     { s: "I ___ enjoyed the show.", options: ["quite", "quite a", "pretty a"], answer: 0,
-      explain: "quite + verb: I quite enjoyed it = I enjoyed it a fair amount." }
+      explain: "quite + verb: I quite enjoyed it = I enjoyed it a fair amount." },
+    { s: "It was ___ a good party – everyone enjoyed it.", answers: ["quite", "rather"],
+      explain: "quite / rather + a + adjective + noun." },
+    { s: "I'm ___ tired, so I think I'll go to bed.", answers: ["rather", "quite", "fairly", "pretty", "a bit"],
+      explain: "A moderate degree." },
+    { s: "The film was ___ boring, to be honest.", answers: ["rather", "pretty", "quite", "fairly", "a bit"],
+      explain: "rather is common with negative ideas." },
+    { s: "She's a ___ good cook.", answers: ["pretty", "fairly", "very", "really"],
+      explain: "a + modifier + adjective + noun." },
+    { s: "That was ___ a surprise!", answers: ["quite", "rather", "such"],
+      explain: "quite a surprise = a real surprise." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Adverbs with two forms",
-  intro: "Choose the correct adverb.",
+  intro: "Choose or write the correct adverb.",
   items: [
     { s: "She works very ___. She's always the last to leave.", options: ["hard", "hardly", "harder"], answer: 0,
       explain: "hard = with a lot of effort. hardly = almost not." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Children under five travel ___.", options: ["free", "freely", "freedom"], answer: 0,
       explain: "free = without paying. freely = without limits (speak freely)." },
     { s: "The idea was ___ criticised.", options: ["widely", "wide", "widen"], answer: 0,
-      explain: "widely = by many people. wide = fully (wide open)." }
+      explain: "widely = by many people. wide = fully (wide open)." },
+    { s: "He ___ ever goes out these days.", answers: ["hardly"],
+      explain: "hardly ever = almost never." },
+    { s: "She's ___ regarded as one of the best in her field.", answers: ["highly", "widely"],
+      explain: "highly regarded = respected." },
+    { s: "Have you been busy ___?", answers: ["lately", "recently"],
+      explain: "lately = recently." },
+    { s: "Hold the baby ___ to you.", answers: ["close"],
+      explain: "close = near (adverb without -ly)." },
+    { s: "The two events are ___ connected.", answers: ["closely"],
+      explain: "closely = strongly, in a close way." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Adjective order and compound adjectives",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "She bought ___.", options: ["a beautiful old Italian table", "an Italian beautiful old table", "an old beautiful Italian table"], answer: 0,
       explain: "Order: opinion, age, origin, noun." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "He wore ___.", options: ["a smart new grey suit", "a grey new smart suit", "a new grey smart suit"], answer: 0,
       explain: "Opinion, age, colour." },
     { s: "She gave a ___ answer.", options: ["thought-provoking", "thought-provoked", "thinking-provoking"], answer: 0,
-      explain: "thought-provoking = making people think." }
+      explain: "thought-provoking = making people think." },
+    { s: "It was a ___ flight. (ten hours)", answers: ["ten-hour", "ten hour"],
+      explain: "A compound adjective is singular." },
+    { s: "She has ___ hair. (long, brown)", answers: ["long brown"],
+      explain: "Size before colour." },
+    { s: "It's a ___ decision. (it breaks your heart)", answers: ["heartbreaking", "heart-breaking"],
+      explain: "A compound adjective: heartbreaking." },
+    { s: "He's a ___ man. (he looks good)", answers: ["good-looking", "good looking"],
+      explain: "A compound adjective: good-looking." },
+    { s: "They bought a ___ sofa. (leather, comfortable)", answers: ["comfortable leather"],
+      explain: "Opinion before material." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I expected the exam to be harder. → The exam was ___ I expected. (EASIER)", answers: ["much easier than", "far easier than", "a lot easier than"],
       explain: "comparative + than. much / far makes it stronger." },
     { s: "The meeting lasted two hours. → It was ___. (HOUR)", answers: ["a two-hour meeting"],
-      explain: "number + noun as a compound adjective is singular: a two-hour meeting." }
+      explain: "number + noun as a compound adjective is singular: a two-hour meeting." },
+    { s: "I've had a lot of work recently. → I've been ___. (LATELY)", answers: ["very busy lately", "really busy lately", "extremely busy lately"],
+      explain: "lately = recently." },
+    { s: "The view was extremely beautiful. → It was ___ view. (ABSOLUTELY)", answers: ["an absolutely stunning", "an absolutely breathtaking", "an absolutely amazing", "an absolutely gorgeous", "an absolutely magnificent"],
+      explain: "absolutely + extreme adjective." },
+    { s: "The trip took three days. → It was ___. (TRIP)", answers: ["a three-day trip", "a three day trip"],
+      explain: "A compound adjective is singular." },
+    { s: "I almost never see my cousins. → I ___ my cousins. (EVER)", answers: ["hardly ever see", "scarcely ever see"],
+      explain: "hardly ever = almost never." },
+    { s: "The hotel was fairly expensive. → It was ___ hotel. (RATHER)", answers: ["rather an expensive", "a rather expensive"],
+      explain: "rather a/an + adjective or a rather + adjective." }
   ]
 }
 ];

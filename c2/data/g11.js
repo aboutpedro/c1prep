@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Concession",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ hard she tried, she couldn't open the jar.", options: ["However", "Whatever", "Although", "Despite"], answer: 0,
       explain: "However + adverb + clause = no matter how." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "___ the fact that it was raining, we went out.", options: ["Despite", "Although", "Even", "However"], answer: 0,
       explain: "Despite the fact that + clause." },
     { s: "Even ___ she apologised, he didn't forgive her.", options: ["though", "despite", "so", "however"], answer: 0,
-      explain: "even though + clause." }
+      explain: "even though + clause." },
+    { s: "___ the heavy traffic, we arrived on time.", answers: ["Despite", "In spite of", "Notwithstanding"],
+      explain: "Despite + noun." },
+    { s: "Hard ___ he tried, he failed the test.", answers: ["as", "though"],
+      explain: "Adverb + as / though = although." },
+    { s: "___ you go, you'll find the people friendly.", answers: ["Wherever"],
+      explain: "Wherever = no matter where." },
+    { s: "She went to work ___ feeling ill.", answers: ["despite", "in spite of"],
+      explain: "despite + -ing." },
+    { s: "___ her age, she still runs marathons.", answers: ["Despite", "In spite of", "Notwithstanding", "For all"],
+      explain: "Despite + noun." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Purpose",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "She whispered ___ not to wake the baby.", options: ["so as", "in order", "so that", "for"], answer: 0,
       explain: "so as not to + infinitive." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "___ to avoid the traffic, we left at dawn.", options: ["In order", "So as that", "So that", "For"], answer: 0,
       explain: "In order to." },
     { s: "They locked the door ___ nobody could get in.", options: ["so that", "so as", "in order to", "for"], answer: 0,
-      explain: "so that + clause." }
+      explain: "so that + clause." },
+    { s: "I'm writing it down ___ that I don't forget.", answers: ["so"],
+      explain: "so that + clause." },
+    { s: "Bring a map ___ case we get lost.", answers: ["in"],
+      explain: "in case = as a precaution." },
+    { s: "He trained hard ___ order to make the team.", answers: ["in"],
+      explain: "in order to + infinitive." },
+    { s: "She kept quiet ___ as not to upset anyone.", answers: ["so"],
+      explain: "so as not to." },
+    { s: "He moved closer ___ he could hear better.", answers: ["so that", "so"],
+      explain: "so that + can / could." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Reason and result",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "___ you're here, you might as well help.", options: ["Seeing that", "Owing", "Due", "Because of"], answer: 0,
       explain: "Seeing that / Seeing as = because (informal)." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "She was ___ tired that she fell asleep at her desk.", options: ["so", "such", "too", "very"], answer: 0,
       explain: "so + adjective + that." },
     { s: "It was ___ a boring film that we left.", options: ["such", "so", "too", "very"], answer: 0,
-      explain: "such + a + adjective + noun + that." }
+      explain: "such + a + adjective + noun + that." },
+    { s: "The game was postponed ___ to heavy snow.", answers: ["due", "owing"],
+      explain: "due / owing to + noun." },
+    { s: "___ that you've finished, you can go home.", answers: ["Now"],
+      explain: "Now that = because now." },
+    { s: "It was ___ a lovely day that we went to the beach.", answers: ["such"],
+      explain: "such + a + adjective + noun + that." },
+    { s: "The bridge was closed; ___, we had to take a detour.", answers: ["consequently", "therefore", "as a result", "hence", "thus"],
+      explain: "A result." },
+    { s: "We managed it ___ to your support.", answers: ["thanks", "due", "owing"],
+      explain: "thanks to = because of (positive)." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Linkers in context",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "___ though he's rich, he lives very simply.", answers: ["Even"],
       explain: "Even though + clause." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "Try ___ she might, she couldn't remember.", answers: ["as"],
       explain: "Try as she might." },
     { s: "He took the job, ___ reluctantly.", answers: ["albeit"],
-      explain: "albeit + adverb/adjective." }
+      explain: "albeit + adverb/adjective." },
+    { s: "___ he had no experience, they gave him the job.", options: ["Although", "Despite", "However"], answer: 0,
+      explain: "Although + clause." },
+    { s: "Speak clearly ___ that everyone can hear.", options: ["so", "such", "as"], answer: 0,
+      explain: "so that + clause." },
+    { s: "The meeting was cancelled ___ a lack of interest.", options: ["owing to", "owing", "because"], answer: 0,
+      explain: "owing to + noun." },
+    { s: "The book is useful ___ it explains complex ideas simply.", options: ["in that", "so that", "such that"], answer: 0,
+      explain: "in that = because." },
+    { s: "___ the rain, the festival went ahead.", options: ["Notwithstanding", "Although", "Even though"], answer: 0,
+      explain: "Notwithstanding + noun = despite." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "The plan is unrealistic because it ignores the cost. → The plan is unrealistic ___ the cost. (THAT)", answers: ["in that it ignores", "in that it doesn't consider"],
       explain: "in that = because." },
     { s: "It rained so heavily that the match was cancelled. → Such ___ that the match was cancelled. (RAIN)", answers: ["was the rain", "was the heavy rain", "was the heaviness of the rain"],
-      explain: "Such was + noun + that." }
+      explain: "Such was + noun + that." },
+    { s: "Although she was nervous, she gave a great speech. → Nervous ___ she gave a great speech. (AS)", answers: ["as she was,", "as she was"],
+      explain: "Adjective + as + clause = although." },
+    { s: "He wore a disguise because he didn't want to be recognised. → He wore a disguise so ___ recognised. (AS)", answers: ["as not to be"],
+      explain: "so as not to." },
+    { s: "In spite of the cost, they bought the house. → They bought the house ___ expensive. (FACT)", answers: ["despite the fact that it was", "in spite of the fact that it was"],
+      explain: "despite the fact that + clause." },
+    { s: "The match was cancelled because of the snow. → The snow ___ cancelled. (LED)", answers: ["led to the match being"],
+      explain: "lead to + noun + -ing." },
+    { s: "I'll take an umbrella because it might rain. → I'll take an umbrella ___ rains. (CASE)", answers: ["in case it"],
+      explain: "in case = as a precaution." }
   ]
 }
 ];

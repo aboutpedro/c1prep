@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences",
   textTitle: "used to: positive, negative and questions",
-  intro: "Complete the sentences with the correct form of used to and the words in brackets. Use didn't for negatives and did for questions.",
+  intro: "Choose the correct option or complete the sentences with the correct form of used to and the words in brackets. Use didn't for negatives and did for questions.",
   items: [
     { s: "When I was a child, I ___ (live) in a small village.", answers: ["used to live"],
       explain: "Positive: used to + base verb." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "My grandparents ___ (not / own) a TV.", answers: ["didn't use to own", "did not use to own", "never used to own"],
       explain: "Negative: didn't use to own." },
     { s: "He ___ (have) long hair, but now he's completely bald.", answers: ["used to have"],
-      explain: "A past state that has changed: used to have." }
+      explain: "A past state that has changed: used to have." },
+    { s: "I ___ have a bike, but someone stole it.", options: ["used to", "use to", "was used to"], answer: 0,
+      explain: "A past state: used to." },
+    { s: "Did your mum ___ work in a shop?", options: ["used to", "use to", "using to"], answer: 1,
+      explain: "Questions: did … use to." },
+    { s: "We ___ go on holiday abroad. We always stayed in Brazil.", options: ["didn't used to", "not use to", "never used to"], answer: 2,
+      explain: "never used to = didn't use to." },
+    { s: "This café ___ be a bookshop.", options: ["was used to", "used to", "got used to"], answer: 1,
+      explain: "A past state: used to be." },
+    { s: "My brother ___ hate school, but now he loves it.", options: ["is used to", "uses to", "used to"], answer: 2,
+      explain: "Not true any more: used to." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "be used to or get used to?",
-  intro: "Choose the correct option. Is it already normal (be used to), or is it becoming normal (get used to)?",
+  intro: "Choose the correct option or write the missing words. Is it already normal (be used to), or is it becoming normal (get used to)?",
   items: [
     { s: "I've lived next to the airport for twenty years, so ___ the noise.", options: ["I'm used to", "I'm getting used to"], answer: 0,
       explain: "Twenty years: the noise is already normal for me, so I'm used to it." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "My new glasses felt strange, but I ___ them after a few days.", options: ["got used to", "was used to"], answer: 0,
       explain: "After a few days describes the change: I got used to them." },
     { s: "We moved to London last month and we're still ___ the weather.", options: ["getting used to", "used to"], answer: 0,
-      explain: "Still + last month: the process isn't finished, so we're still getting used to it." }
+      explain: "Still + last month: the process isn't finished, so we're still getting used to it." },
+    { s: "I'm slowly ___ used to the new timetable.", answers: ["getting"],
+      explain: "Becoming normal: getting used to." },
+    { s: "She's lived in Russia for years, so she's ___ to the cold.", answers: ["used"],
+      explain: "Already normal: be used to." },
+    { s: "It's my first week, so I'm not used to the job ___.", answers: ["yet"],
+      explain: "not … yet." },
+    { s: "You'll ___ used to it. Everyone does.", answers: ["get"],
+      explain: "It will become normal: get used to." },
+    { s: "Have you got ___ to your new glasses?", answers: ["used"],
+      explain: "get used to: have you got used to…?" }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Base verb or -ing?",
-  intro: "Complete the sentences with the correct form of the verb in brackets. After used to, use the base verb. After be used to and get used to, use -ing.",
+  intro: "Choose the correct option or complete the sentences with the correct form of the verb in brackets. After used to, use the base verb. After be used to and get used to, use -ing.",
   items: [
     { s: "I'm not used to ___ (work) at weekends.", answers: ["working"],
       explain: "be used to + -ing: I'm not used to working." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Did you use to ___ (be) shy at school?", answers: ["be"],
       explain: "Did you use to + base verb: Did you use to be…?" },
     { s: "Is she getting used to ___ (drive) an electric car?", answers: ["driving"],
-      explain: "getting used to + -ing: getting used to driving." }
+      explain: "getting used to + -ing: getting used to driving." },
+    { s: "I used to ___ in a bank.", options: ["work", "working", "worked"], answer: 0,
+      explain: "used to + base verb." },
+    { s: "I'm used to ___ in a bank.", options: ["work", "working", "worked"], answer: 1,
+      explain: "be used to + -ing." },
+    { s: "He can't get used to ___ alone.", options: ["live", "lived", "living"], answer: 2,
+      explain: "get used to + -ing." },
+    { s: "Did you use to ___ to the beach a lot?", options: ["going", "went", "go"], answer: 2,
+      explain: "use to + base verb." },
+    { s: "We're not used to ___ so much rain.", options: ["have", "had", "having"], answer: 2,
+      explain: "be used to + -ing." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "used to, be used to or get used to?",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "There ___ a park here, but now it's a car park.", options: ["used to be", "is used to being", "got used to being"], answer: 0,
       explain: "A past state that has changed: There used to be a park." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Moving to a new country is hard. It takes time to ___ everything.", options: ["get used to", "used to", "use to"], answer: 0,
       explain: "The process of things becoming normal: it takes time to get used to everything." },
     { s: "We ___ have a dog when I was little.", options: ["used to", "were used to", "got used to"], answer: 0,
-      explain: "A past situation that is no longer true: we used to have a dog." }
+      explain: "A past situation that is no longer true: we used to have a dog." },
+    { s: "I ___ coffee, but now I drink three cups a day. (not / like)", answers: ["didn't use to like", "never used to like"],
+      explain: "A past state that changed: didn't use to." },
+    { s: "She's a nurse, so she's used to ___ blood. (see)", answers: ["seeing"],
+      explain: "be used to + -ing." },
+    { s: "It took me a while to get used to ___ for myself. (cook)", answers: ["cooking"],
+      explain: "get used to + -ing." },
+    { s: "There ___ lots of trees here before they built the road. (be)", answers: ["used to be"],
+      explain: "A past state: used to be." },
+    { s: "Are you ___ to the noise yet?", answers: ["used"],
+      explain: "be used to." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Same meaning",
-  intro: "Complete the second sentence so that it means the same as the first. Use used to, be used to or get used to.",
+  intro: "Choose the correct option or complete the second sentence so that it means the same as the first. Use used to, be used to or get used to.",
   items: [
     { s: "I played tennis every week when I was younger, but I don't now. → I ___ tennis every week when I was younger.", answers: ["used to play"],
       explain: "A past habit that has stopped: used to play." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Sleeping in a tent is new for me, and it still feels strange. → I'm not ___ sleeping in a tent.", answers: ["used to"],
       explain: "It isn't normal for me: I'm not used to sleeping in a tent." },
     { s: "My grandfather walked to school every day when he was a boy. → My grandfather ___ to school every day.", answers: ["used to walk", "would walk"],
-      explain: "A regular past habit: used to walk (would walk is also possible for past habits)." }
+      explain: "A regular past habit: used to walk (would walk is also possible for past habits)." },
+    { s: "Living alone isn't strange for me any more. → I ___ living alone.", options: ["used to", "'m used to", "use to"], answer: 1,
+      explain: "Already normal: I'm used to." },
+    { s: "When I was a kid, I swam every day. → I ___ swim every day.", options: ["was used to", "got used to", "used to"], answer: 2,
+      explain: "A past habit: used to." },
+    { s: "The heat is still strange for him. → He isn't ___ the heat yet.", options: ["used to", "use to", "using to"], answer: 0,
+      explain: "be used to + noun." },
+    { s: "After a few weeks, the job felt normal. → After a few weeks, I ___ the job.", options: ["used to", "was using to", "got used to"], answer: 2,
+      explain: "It became normal: got used to." },
+    { s: "In the past, there were no shops here. → There ___ be any shops here.", options: ["didn't use to", "wasn't used to", "didn't get used to"], answer: 0,
+      explain: "A past state, negative: didn't use to." }
   ]
 }
 ];

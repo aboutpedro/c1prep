@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Who did it?",
-  intro: "Choose the correct sentence. I cut my hair = I did it myself. I had my hair cut = someone did it for me.",
+  intro: "Choose the correct sentence or write the missing words. I cut my hair = I did it myself. I had my hair cut = someone did it for me.",
   items: [
     { s: "I went to the hairdresser's yesterday. ___", options: ["I had my hair cut.", "I cut my hair."], answer: 0,
       explain: "The hairdresser cut it: I had my hair cut." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Leo's suit was too long, so he took it to a tailor and ___", options: ["had it shortened.", "shortened it."], answer: 0,
       explain: "A tailor did it: he had it shortened." },
     { s: "The photos look really professional. A photographer took them. ___", options: ["We had them taken in a studio.", "We took them in a studio."], answer: 0,
-      explain: "A photographer took them: we had them taken." }
+      explain: "A photographer took them: we had them taken." },
+    { s: "I didn't cut my hair myself. I ___ it cut at the hairdresser's.", answers: ["had", "got"],
+      explain: "Someone did it for me: had it cut." },
+    { s: "My dad repaired the car himself. He didn't have it ___.", answers: ["repaired"],
+      explain: "have + object + past participle." },
+    { s: "We ___ our windows cleaned once a month.", answers: ["have", "get"],
+      explain: "A regular service: have something done." },
+    { s: "She ___ her photo taken by a professional.", answers: ["had", "got"],
+      explain: "Someone did it for her: had." },
+    { s: "I painted the room ___. Nobody helped me.", answers: ["myself"],
+      explain: "I did it: myself." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "have something done: the form",
-  intro: "Choose the correct option. Have + object + past participle. Have changes for the tense; the past participle stays the same.",
+  intro: "Choose the correct option or write the missing words. Have + object + past participle. Have changes for the tense; the past participle stays the same.",
   items: [
     { s: "I ___ my car serviced last week.", options: ["had", "have", "was"], answer: 0,
       explain: "Last week = past: had + my car + serviced." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "How often do you ___ your windows cleaned?", options: ["have", "has", "having"], answer: 0,
       explain: "Present simple question: do you have…?" },
     { s: "My watch stopped, so I ___ the battery replaced.", options: ["had", "did", "was"], answer: 0,
-      explain: "A finished past action: had the battery replaced." }
+      explain: "A finished past action: had the battery replaced." },
+    { s: "I'm ___ my hair cut tomorrow.", answers: ["having", "getting"],
+      explain: "An arrangement: present continuous of have." },
+    { s: "She had her car ___ yesterday. (wash)", answers: ["washed"],
+      explain: "have + object + past participle." },
+    { s: "We've ___ our kitchen redesigned. It looks great.", answers: ["had"],
+      explain: "Present perfect: have had + object + past participle." },
+    { s: "You should have your eyes ___. (check)", answers: ["checked"],
+      explain: "have + object + past participle." },
+    { s: "How much did it cost to have your phone ___? (fix)", answers: ["fixed"],
+      explain: "have + object + past participle." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences",
   textTitle: "Write the sentence",
-  intro: "Complete the second sentence with have something done. Use the words in brackets.",
+  intro: "Choose the correct option or complete the second sentence with have something done. Use the words in brackets.",
   items: [
     { s: "A mechanic repaired my car yesterday. → I ___ yesterday. (my car)", answers: ["had my car repaired"], width: 22,
       explain: "Past: had + my car + repaired." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "An electrician should check the wires. → You should ___. (the wires)", answers: ["have the wires checked"], width: 22,
       explain: "should + have + the wires + checked." },
     { s: "A technician installed the new software. → I ___. (the new software)", answers: ["had the new software installed"], width: 22,
-      explain: "Past: had + the new software + installed." }
+      explain: "Past: had + the new software + installed." },
+    { s: "A mechanic is checking my car. → I'm ___.", options: ["having checked my car", "checking my car", "having my car checked"], answer: 2,
+      explain: "have + object + past participle." },
+    { s: "A painter painted our house. → We ___.", options: ["had painted our house", "painted our house", "had our house painted"], answer: 2,
+      explain: "had + object + past participle." },
+    { s: "Someone will cut my hair tomorrow. → I'll ___ tomorrow.", options: ["have my hair cut", "cut my hair", "have cut my hair"], answer: 0,
+      explain: "will have + object + past participle." },
+    { s: "Someone stole his bike. → He ___.", options: ["stole his bike", "had his bike stolen", "had stolen his bike"], answer: 1,
+      explain: "A bad experience: had + object + past participle." },
+    { s: "A tailor shortened my trousers. → I ___.", options: ["had shortened my trousers", "shortened my trousers", "had my trousers shortened"], answer: 2,
+      explain: "The object comes before the past participle." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "get something done, and bad experiences",
-  intro: "Choose the correct option. In informal English, get something done = have something done. Have something stolen / broken is used for bad experiences.",
+  intro: "Choose the correct option or write the missing words. In informal English, get something done = have something done. Have something stolen / broken is used for bad experiences.",
   items: [
     { s: "Where did you get your phone ___? – At the shop near the station.", options: ["fixed", "fix", "to fix"], answer: 0,
       explain: "get + object + past participle: get it fixed." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Can you get these documents ___ by tomorrow?", options: ["translated", "translate", "translating"], answer: 0,
       explain: "get + object + past participle: get them translated." },
     { s: "My grandad had his driving licence ___ because of his eyesight.", options: ["taken away", "take away", "took away"], answer: 0,
-      explain: "Bad experience: had it taken away." }
+      explain: "Bad experience: had it taken away." },
+    { s: "She had her phone ___ at the concert. (steal)", answers: ["stolen"],
+      explain: "A bad experience: had + object + past participle." },
+    { s: "I need to get my car ___. (service)", answers: ["serviced"],
+      explain: "get + object + past participle." },
+    { s: "We got our roof ___ after the storm. (repair)", answers: ["repaired"],
+      explain: "get + object + past participle." },
+    { s: "He had his nose ___ in a football match. (break)", answers: ["broken"],
+      explain: "A bad experience: had his nose broken." },
+    { s: "Where can I get my shoes ___? (clean)", answers: ["cleaned"],
+      explain: "get + object + past participle." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences",
   textTitle: "Mixed practice",
-  intro: "Write the correct form of have and the past participle of the verb in brackets.",
+  intro: "Choose the correct option or write the correct form of have and the past participle of the verb in brackets.",
   items: [
     { s: "I ___ (my eyes / test) yesterday.", answers: ["had my eyes tested", "got my eyes tested"], width: 26,
       explain: "Past: had my eyes tested." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I'm going to ___ (my photo / take) for my ID card.", answers: ["have my photo taken", "get my photo taken"], width: 26,
       explain: "going to + have + my photo + taken." },
     { s: "Did you ___ (the pizza / deliver) or did you collect it?", answers: ["have the pizza delivered", "get the pizza delivered"], width: 26,
-      explain: "Past question: did you have the pizza delivered?" }
+      explain: "Past question: did you have the pizza delivered?" },
+    { s: "I ___ my teeth checked twice a year.", options: ["had", "have", "am having"], answer: 1,
+      explain: "A regular habit: present simple of have." },
+    { s: "They're ___ a swimming pool built in their garden.", options: ["had", "have", "having"], answer: 2,
+      explain: "Present continuous: are having." },
+    { s: "We should get the windows ___.", options: ["cleaned", "clean", "cleaning"], answer: 0,
+      explain: "get + object + past participle." },
+    { s: "She ___ her car stolen last week.", options: ["has", "was", "had"], answer: 2,
+      explain: "Past: had + object + past participle." },
+    { s: "Did you have the pizza ___?", options: ["deliver", "delivering", "delivered"], answer: 2,
+      explain: "have + object + past participle." }
   ]
 }
 ];

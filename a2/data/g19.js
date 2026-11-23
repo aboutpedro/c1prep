@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Experience or finished time?",
-  intro: "Choose the correct form. Present perfect = sometime in your life, no time given. Past simple = a finished time (yesterday, in 2019, last week).",
+  intro: "Choose or write the correct form. Present perfect = sometime in your life, no time given. Past simple = a finished time (yesterday, in 2019, last week).",
   items: [
     { s: "I ___ to Japan three times in my life.", options: ["'ve been", "went", "go"], answer: 0,
       explain: "in my life = up to now, an experience: present perfect." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "They ___ in Madrid two years ago.", options: ["lived", "have lived", "live"], answer: 0,
       explain: "ago is a finished time: past simple." },
     { s: "___ a famous person?", options: ["Have you ever met", "Have you ever meet", "Has you ever met"], answer: 0,
-      explain: "ever: present perfect." }
+      explain: "ever: present perfect." },
+    { s: "I ___ the sea. (never / see)", answers: ["have never seen"],
+      explain: "Experience, no time: present perfect." },
+    { s: "We ___ to the beach yesterday. (go)", answers: ["went"],
+      explain: "Yesterday: past simple." },
+    { s: "___ golf? (you / ever / play)", answers: ["Have you ever played"],
+      explain: "ever → present perfect." },
+    { s: "She ___ to Mexico three times. (be)", answers: ["has been"],
+      explain: "Experience: present perfect." },
+    { s: "I ___ my best friend in 2012. (meet)", answers: ["met"],
+      explain: "in 2012: past simple." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Questions and answers",
-  intro: "Choose the correct form. Often we ask with the present perfect, and give details with the past simple.",
+  intro: "Choose or write the correct form. Often we ask with the present perfect, and give details with the past simple.",
   items: [
     { s: "Have you ever been to London? – Yes, I ___ there last year.", options: ["went", "'ve been", "go"], answer: 0,
       explain: "The detail (last year) is a finished time: past simple." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "I've broken my arm. – Oh no! How ___?", options: ["did it happen", "has it happened", "does it happen"], answer: 0,
       explain: "How did it happen? asks about the finished event: past simple." },
     { s: "Have you ever won a prize? – Yes, I ___ a drawing competition when I was ten.", options: ["won", "'ve won", "win"], answer: 0,
-      explain: "when I was ten: past simple." }
+      explain: "when I was ten: past simple." },
+    { s: "Have you ever been to a concert? – Yes, I ___ to one last week. (go)", answers: ["went"],
+      explain: "The detail (last week): past simple." },
+    { s: "___ Leo today? (you / see) – Yes, I saw him this morning.", answers: ["Have you seen"],
+      explain: "Asking with today (not finished): present perfect." },
+    { s: "Have you read this book? – Yes, I ___ it on holiday. (read)", answers: ["read"],
+      explain: "The detail (on holiday): past simple." },
+    { s: "Where ___ last night? (you / go)", answers: ["did you go"],
+      explain: "Last night: past simple." },
+    { s: "Has she ever been to China? – Yes, she ___ there in 2018. (go)", answers: ["went"],
+      explain: "in 2018: past simple." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "just, already, yet or a time?",
-  intro: "Choose the correct form.",
+  intro: "Choose or write the correct form.",
   items: [
     { s: "I ___ my homework. Can I go out now?", options: ["'ve just finished", "just finished yesterday", "finish"], answer: 0,
       explain: "just = a short time ago, the result is important now: present perfect." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "He ___ in London since 2018.", options: ["'s lived", "lived", "lives"], answer: 0,
       explain: "since 2018 = from 2018 until now: present perfect." },
     { s: "My grandmother ___ in 2015.", options: ["died", "has died", "dies"], answer: 0,
-      explain: "in 2015: past simple." }
+      explain: "in 2015: past simple." },
+    { s: "Have you finished ___?", answers: ["yet"],
+      explain: "Questions: yet at the end." },
+    { s: "I've ___ eaten. I'm not hungry.", answers: ["already", "just"],
+      explain: "Before now → already." },
+    { s: "She left two hours ___.", answers: ["ago"],
+      explain: "A finished time: two hours ago." },
+    { s: "We've lived here ___ 2016.", answers: ["since"],
+      explain: "since + a starting point." },
+    { s: "He's ___ arrived. He's taking his coat off.", answers: ["just"],
+      explain: "A moment ago → just." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "for, since and ago",
-  intro: "Write for, since or ago.",
+  intro: "Choose the correct option or write for, since or ago.",
   items: [
     { s: "I've known Maria ___ ten years.", answers: ["for"],
       explain: "for + a period of time: for ten years." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "We've had our dog ___ three months.", answers: ["for"],
       explain: "for + a period: for three months." },
     { s: "I've lived in this city ___ I was a child.", answers: ["since"],
-      explain: "since + a time in the past: since I was a child." }
+      explain: "since + a time in the past: since I was a child." },
+    { s: "I've had this bike ___ I was twelve.", options: ["since", "for", "ago"], answer: 0,
+      explain: "since + a starting point." },
+    { s: "We arrived an hour ___.", options: ["ago", "for", "since"], answer: 0,
+      explain: "A finished time → ago." },
+    { s: "She's been a teacher ___ twenty years.", options: ["for", "since", "ago"], answer: 0,
+      explain: "for + a period." },
+    { s: "I haven't eaten ___ this morning.", options: ["since", "for", "ago"], answer: 0,
+      explain: "since + a starting point." },
+    { s: "They got married a long time ___.", options: ["ago", "for", "since"], answer: 0,
+      explain: "A finished time → ago." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
-  type: "sentences",
+  type: "sentences", shuffle: true,
   textTitle: "Write the correct form",
-  intro: "Write the verb in brackets in the present perfect or the past simple.",
+  intro: "Choose the correct option or write the verb in brackets in the present perfect or the past simple.",
   items: [
     { s: "I ___ (never / be) to Africa.", answers: ["have never been"],
       explain: "never = in my whole life: present perfect." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "I ___ (not / finish) my essay yet.", answers: ["haven't finished"],
       explain: "yet: present perfect." },
     { s: "Shakespeare ___ (write) Romeo and Juliet.", answers: ["wrote"],
-      explain: "Shakespeare is dead; it's a finished time: past simple." }
+      explain: "Shakespeare is dead; it's a finished time: past simple." },
+    { s: "I ___ that film twice. It's great.", options: ["'ve seen", "seen", "have saw"], answer: 0,
+      explain: "Experience: have + seen." },
+    { s: "We ___ in Paris last year.", options: ["were", "have been", "are"], answer: 0,
+      explain: "Last year: past simple." },
+    { s: "___ to the new café yet?", options: ["Have you been", "Did you go", "Were you go"], answer: 0,
+      explain: "yet → present perfect." },
+    { s: "He ___ his job in 2021.", options: ["left", "has left", "leaves"], answer: 0,
+      explain: "in 2021: past simple." },
+    { s: "I ___ here since 2019.", options: ["'ve worked", "worked", "work"], answer: 0,
+      explain: "since → present perfect." }
   ]
 }
 ];

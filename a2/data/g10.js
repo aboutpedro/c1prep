@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Subject or object pronoun?",
-  intro: "Choose the correct pronoun. Subject pronouns (I, he, she, we, they) come before the verb; object pronouns (me, him, her, us, them) come after a verb or a preposition.",
+  intro: "Choose or write the correct pronoun. Subject pronouns (I, he, she, we, they) come before the verb; object pronouns (me, him, her, us, them) come after a verb or a preposition.",
   items: [
     { s: "My brother is in Canada. ___ works in a hotel there.", options: ["He", "Him", "His"], answer: 0,
       explain: "The pronoun is the subject of works, so we use he." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "Mr Lopez is very nice. Everyone likes ___.", options: ["him", "he", "his"], answer: 0,
       explain: "After the verb likes we use the object pronoun him." },
     { s: "Ana and Tom are getting married. ___ met at university.", options: ["They", "Them", "Their"], answer: 0,
-      explain: "Ana and Tom are the subject of met, so we use they." }
+      explain: "Ana and Tom are the subject of met, so we use they." },
+    { s: "My parents are coming to dinner. I'm cooking for ___. (they)", answers: ["them"],
+      explain: "After a preposition: object pronoun, them." },
+    { s: "My sister and ___ are twins. (I)", answers: ["I"],
+      explain: "Before the verb: subject pronoun, I." },
+    { s: "Is that Pedro? I need to talk to ___. (he)", answers: ["him"],
+      explain: "After to: him." },
+    { s: "The teacher gave ___ a lot of homework. (we)", answers: ["us"],
+      explain: "After the verb: us." },
+    { s: "Where's Ana? ___ was here a minute ago. (she)", answers: ["She"],
+      explain: "Before the verb: She." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "my or mine? your or yours?",
-  intro: "Choose the correct word. We use my, your, his, her, our, their before a noun, and mine, yours, his, hers, ours, theirs without a noun.",
+  intro: "Choose or write the correct word. We use my, your, his, her, our, their before a noun, and mine, yours, his, hers, ours, theirs without a noun.",
   items: [
     { s: "Is this ___ bag? – Yes, thanks!", options: ["your", "yours"], answer: 0,
       explain: "There's a noun after the gap (bag), so we use your." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "Leo forgot his book, so I gave him ___.", options: ["mine", "my"], answer: 0,
       explain: "No noun after the gap: mine = my book." },
     { s: "My parents sold ___ house and moved to the coast.", options: ["their", "theirs", "there"], answer: 0,
-      explain: "There's a noun after the gap (house), so we use their. There is for places." }
+      explain: "There's a noun after the gap (house), so we use their. There is for places." },
+    { s: "This isn't my phone. ___ is black. (I)", answers: ["Mine"],
+      explain: "Without a noun: mine." },
+    { s: "Is this book ___? (you)", answers: ["yours"],
+      explain: "Without a noun: yours." },
+    { s: "That's not our car. ___ is the blue one. (we)", answers: ["Ours"],
+      explain: "Without a noun: ours." },
+    { s: "Those bikes are ___. (they)", answers: ["theirs"],
+      explain: "Without a noun: theirs." },
+    { s: "Leo has lost ___ keys again. (he)", answers: ["his"],
+      explain: "Before a noun: his." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "'s or s'? Whose?",
-  intro: "Choose the correct option. We add 's to a person (my sister's car) and only ' after a plural that ends in -s (my parents' house).",
+  intro: "Choose the correct option or write the missing words. We add 's to a person (my sister's car) and only ' after a plural that ends in -s (my parents' house).",
   items: [
     { s: "This is ___ bike. She rides it to school.", options: ["my sister's", "my sisters", "my sister"], answer: 0,
       explain: "One sister, and the bike belongs to her: my sister's bike." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "Is this ___ coat or yours?", options: ["Maria's", "Marias", "Maria"], answer: 0,
       explain: "The coat belongs to Maria: Maria's coat." },
     { s: "___ the girl with the long hair? – That's my cousin.", options: ["Who's", "Whose", "Who"], answer: 0,
-      explain: "Who's = who is: Who is the girl…?" }
+      explain: "Who's = who is: Who is the girl…?" },
+    { s: "The bags of the students are in the corridor. → The ___ bags are in the corridor.", answers: ["students'"],
+      explain: "Plural with -s: add only '." },
+    { s: "The cat of my neighbour is very fat. → My ___ cat is very fat.", answers: ["neighbour's", "neighbor's"],
+      explain: "One person: add 's." },
+    { s: "The room of the girls is upstairs. → The ___ room is upstairs.", answers: ["girls'"],
+      explain: "Plural with -s: add only '." },
+    { s: "The shoes of the women are on sale. → The ___ shoes are on sale.", answers: ["women's"],
+      explain: "Irregular plural without -s: add 's." },
+    { s: "___ umbrella is this? – It's mine.", answers: ["Whose"],
+      explain: "Asking who something belongs to: Whose." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "myself, yourself, themselves…",
-  intro: "Complete each sentence with a reflexive pronoun: myself, yourself, himself, herself, itself, ourselves, yourselves or themselves.",
+  intro: "Choose the correct option or complete each sentence with a reflexive pronoun: myself, yourself, himself, herself, itself, ourselves, yourselves or themselves.",
   items: [
     { s: "Be careful with that knife! Don't cut ___.", answers: ["yourself"], width: 12,
       explain: "We use a reflexive pronoun when the subject and the object are the same person: you → yourself." },
@@ -108,14 +138,24 @@ window.SETS = [
     { s: "Did you paint the kitchen ___? It looks great!", answers: ["yourself", "yourselves"], width: 12,
       explain: "you → yourself (one person) or yourselves (more than one person)." },
     { s: "I live by ___ in a small flat.", answers: ["myself"], width: 12,
-      explain: "by myself = alone." }
+      explain: "by myself = alone." },
+    { s: "Did you enjoy ___ at the party, Sam?", options: ["yourselves", "you", "yourself"], answer: 2,
+      explain: "One person (Sam): yourself." },
+    { s: "The door closes by ___.", options: ["its", "it", "itself"], answer: 2,
+      explain: "The door = it → itself." },
+    { s: "My parents built the house ___.", options: ["themselves", "theirselves", "them"], answer: 0,
+      explain: "They → themselves." },
+    { s: "I cut ___ while I was cooking.", options: ["me", "mine", "myself"], answer: 2,
+      explain: "I → myself." },
+    { s: "She taught ___ French.", options: ["hers", "her", "herself"], answer: 2,
+      explain: "She → herself." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "Mixed practice",
-  intro: "Choose the correct word.",
+  intro: "Choose or write the correct word.",
   items: [
     { s: "Is this your jacket? – No, it isn't ___.", options: ["mine", "me", "my", "myself"], answer: 0,
       explain: "No noun after the gap: mine = my jacket." },
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "Can you give this letter to ___? He's in the office.", options: ["him", "he", "his", "himself"], answer: 0,
       explain: "After the preposition to we use the object pronoun him." },
     { s: "That's not your seat. It's ___. Her name is on it.", options: ["hers", "her", "she", "herself"], answer: 0,
-      explain: "No noun after the gap: hers = her seat." }
+      explain: "No noun after the gap: hers = her seat." },
+    { s: "That isn't my coffee. ___ is the one with milk. (I)", answers: ["Mine"],
+      explain: "Without a noun: Mine." },
+    { s: "My friends and ___ went to the cinema. (I)", answers: ["I"],
+      explain: "Part of the subject: I." },
+    { s: "Mr and Mrs Lee are nice. We often visit ___. (they)", answers: ["them"],
+      explain: "After the verb: them." },
+    { s: "Is this ___ dog? (Tom)", answers: ["Tom's"],
+      explain: "Belonging to Tom: Tom's." },
+    { s: "Ana looked at ___ in the window. (she)", answers: ["herself"],
+      explain: "The same person as the subject: herself." }
   ]
 }
 ];

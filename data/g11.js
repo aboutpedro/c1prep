@@ -3,7 +3,7 @@ window.SETS = [
 {
   type: "sentences", shuffle: true,
   textTitle: "Big and small differences",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "The second test was ___ harder than the first.", options: ["far", "very", "too"], answer: 0,
       explain: "far / much / a lot + comparative for a big difference. very can't modify a comparative." },
@@ -24,14 +24,24 @@ window.SETS = [
     { s: "The sequel was every ___ as good as the original.", options: ["bit", "part", "piece"], answer: 0,
       explain: "every bit as… as = just as… as." },
     { s: "It's ___ cheaper to travel by train than by plane.", options: ["significantly", "significant", "signify"], answer: 0,
-      explain: "An adverb (significantly) modifies the comparative." }
+      explain: "An adverb (significantly) modifies the comparative." },
+    { s: "This is ___ far the most expensive car I've ever bought.", answers: ["by"],
+      explain: "by far + superlative." },
+    { s: "The new version is ___ near as good as the old one. (much worse)", answers: ["nowhere"],
+      explain: "nowhere near as … as." },
+    { s: "Today is ___ better than yesterday – just a little warmer.", answers: ["slightly", "marginally", "a bit", "a little"],
+      explain: "A small difference: slightly." },
+    { s: "She's ___ more confident than she used to be. (a big difference)", answers: ["much", "far", "a lot", "considerably", "significantly"],
+      explain: "A big difference: much / far." },
+    { s: "The house was every ___ as beautiful as I'd imagined.", answers: ["bit"],
+      explain: "every bit as … as = just as." }
   ]
 },
 /* ---------------- Set 2 ---------------- */
 {
   type: "sentences",
   textTitle: "the more…, the better; twice as… as",
-  intro: "Write one word in each gap. Use the word in brackets in the correct form where one is given.",
+  intro: "Choose the correct option or write one word in each gap. Use the word in brackets in the correct form where one is given.",
   items: [
     { s: "The more you practise, the ___ (good) you'll get.", answers: ["better"],
       explain: "the + comparative…, the + comparative." },
@@ -52,14 +62,24 @@ window.SETS = [
     { s: "The ___ (little) you worry about it, the better.", answers: ["less"],
       explain: "little → less → least." },
     { s: "The situation is even worse ___ we feared.", answers: ["than"],
-      explain: "comparative + than." }
+      explain: "comparative + than." },
+    { s: "The harder you work, ___ you'll be.", options: ["more successful", "the more successful", "the most successful"], answer: 1,
+      explain: "the + comparative, the + comparative." },
+    { s: "She earns ___ as much as I do.", options: ["double", "twice", "two times as"], answer: 1,
+      explain: "twice as much as." },
+    { s: "The ___ you know, the better.", options: ["least", "less", "fewer"], answer: 1,
+      explain: "the less …, the better." },
+    { s: "Things are getting ___.", options: ["worst and worst", "worse and worse", "badder and badder"], answer: 1,
+      explain: "comparative + and + comparative." },
+    { s: "It's ___ more expensive than I thought.", options: ["a great many", "very", "a great deal"], answer: 2,
+      explain: "a great deal + comparative." }
   ]
 },
 /* ---------------- Set 3 ---------------- */
 {
   type: "sentences", shuffle: true,
   textTitle: "so, such, too and enough",
-  intro: "Choose the correct option.",
+  intro: "Choose the correct option or write the missing words.",
   items: [
     { s: "It was ___ a boring lecture that half the audience fell asleep.", options: ["such", "so", "too"], answer: 0,
       explain: "such + a + adjective + noun + that." },
@@ -80,14 +100,24 @@ window.SETS = [
     { s: "We had ___ fun that we didn't want to leave.", options: ["so much", "so many", "too much"], answer: 0,
       explain: "so much + uncountable noun + that." },
     { s: "There are ___ many people here that I can't find my friends.", options: ["so", "such", "too"], answer: 0,
-      explain: "so many + plural noun + that." }
+      explain: "so many + plural noun + that." },
+    { s: "It was ___ a beautiful day that we went to the coast.", answers: ["such"],
+      explain: "such + a + adjective + noun." },
+    { s: "The suitcase was ___ heavy for her to lift.", answers: ["too"],
+      explain: "too + adjective + for + to-infinitive." },
+    { s: "She didn't have ___ money for the ticket.", answers: ["enough"],
+      explain: "enough + noun." },
+    { s: "There were ___ many people that we couldn't get in.", answers: ["so"],
+      explain: "so many + plural noun." },
+    { s: "He was ___ nervous that he forgot his lines.", answers: ["so"],
+      explain: "so + adjective + that." }
   ]
 },
 /* ---------------- Set 4 ---------------- */
 {
   type: "sentences",
   textTitle: "More comparing structures",
-  intro: "Write one word in each gap.",
+  intro: "Choose the correct option or write one word in each gap.",
   items: [
     { s: "Your guess is as good as ___.", answers: ["mine"],
       explain: "Your guess is as good as mine = I don't know either." },
@@ -108,7 +138,17 @@ window.SETS = [
     { s: "The more I read about it, the ___ I understand.", answers: ["less"],
       explain: "the more…, the less…" },
     { s: "He's a ___ better cook than I am.", answers: ["much", "far"],
-      explain: "a much / far better + noun." }
+      explain: "a much / far better + noun." },
+    { s: "It's not so much a holiday ___ an adventure.", options: ["as", "than", "like"], answer: 0,
+      explain: "not so much A as B." },
+    { s: "She's nothing ___ her mother.", options: ["like", "as", "than"], answer: 0,
+      explain: "nothing like = completely different from." },
+    { s: "This is the ___ interesting book I've read this year.", options: ["most", "more", "much"], answer: 0,
+      explain: "Superlative: the most." },
+    { s: "The film was no ___ than the book – both were dull.", options: ["best", "good", "better"], answer: 2,
+      explain: "no better than = equally bad." },
+    { s: "They're as different ___ chalk and cheese.", options: ["than", "from", "as"], answer: 2,
+      explain: "as different as chalk and cheese (an idiom)." }
   ]
 },
 /* ---------------- Set 5 ---------------- */
@@ -136,7 +176,17 @@ window.SETS = [
     { s: "She's a much more patient teacher than he is. → He's ___ she is. (PATIENT)", answers: ["not nearly as patient as", "nowhere near as patient as", "much less patient than", "far less patient than", "a lot less patient than"],
       explain: "not nearly as… as / much less… than." },
     { s: "The bag was so heavy that I couldn't carry it. → The bag was ___ to carry. (TOO)", answers: ["too heavy for me", "far too heavy for me", "much too heavy for me"],
-      explain: "too + adjective + for + person + to-infinitive." }
+      explain: "too + adjective + for + person + to-infinitive." },
+    { s: "I've never had such a good holiday. → It was the ___ ever had. (BEST)", answers: ["best holiday I have", "best holiday I've"],
+      explain: "superlative + present perfect + ever." },
+    { s: "The more you practise, the easier it gets. → It gets easier ___ you practise. (MORE)", answers: ["the more"],
+      explain: "It gets easier the more…" },
+    { s: "This phone is half the price of that one. → That phone costs ___ this one. (TWICE)", answers: ["twice as much as"],
+      explain: "twice as much as." },
+    { s: "The film wasn't as good as I'd hoped. → The film ___ my expectations. (UP)", answers: ["didn't live up to", "did not live up to"],
+      explain: "live up to = be as good as expected." },
+    { s: "The tea was so hot that I couldn't drink it. → The tea was ___ drink. (TOO)", answers: ["too hot for me to", "far too hot for me to", "much too hot for me to"],
+      explain: "too + adjective + for + object + to." }
   ]
 }
 ];
