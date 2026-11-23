@@ -3,7 +3,7 @@
    The set shown is chosen with the set menu at the top, or with #set-N in the URL.
    Answers are saved as they are typed and finished sets are remembered (progress.js).
    Exam mode and "My weak spots" build single sets themselves with window.c1Quiz.build().
-   Listening pages (type "listening") use the audio player below; listening.css styles it. */
+   Listening pages (type "listening") use the audio player below and drag-and-drop matching; listening.css styles them. */
 (function () {
   "use strict";
   const SETS = window.SETS || (window.EX ? [window.EX] : null);
@@ -203,6 +203,7 @@
     const notes = [];       // {n, answer, explain, state} for the explanations panel
     let notesBox = null;
     const onShow = [];      // called with true when the set is marked or the answers are shown, false on reset
+    const onRestore = [];   // called after saved answers are put back (drag-and-drop answers redraw themselves)
 
     if (EX.intro) root.appendChild(el("p", { class: "lead" }, esc(EX.intro)));
 
@@ -773,26 +774,126 @@
         reset() { input.value = ""; input.classList.remove("ok", "bad"); ex.innerHTML = ""; q.classList.remove("checked"); },
       });
     }
+    /* Multiple matching under a recording (B2 Part 3, C1 Part 4): drag and drop, as in the digital exam since
+       November 2025. Each answer can be used once in a task. Ways to place one:
+         · drag it onto a speaker (with a mouse; on a touch screen, press and hold it, then drag);
+         · tap or click it, then tap a speaker (Enter or Space does the same from the keyboard; Escape cancels).
+       Placing an answer on a speaker that already has one sends the old one back to the list, or swaps the two
+       when the new one came from another speaker. A placed answer can be dragged or tapped again to move it;
+       × (or Delete on the speaker) takes it off; dragging it back onto the list does the same.
+       Each speaker keeps a hidden <select> with its letter, so drafts, marking and results work as for other sets. */
+    let dndSay = null;
     function matchTask(t, n) {
       const card = el("div", { class: "card match-task" });
       const first = n, last = n + t.answers.length - 1;
       card.appendChild(el("h3", null, (t.title ? esc(t.title) + " · " : "") + "Questions " + first + "–" + last));
       if (t.intro) card.appendChild(el("p", { class: "q-intro" }, esc(t.intro)));
-      const list = el("ul", { class: "match-options" });
-      t.options.forEach((o) => list.appendChild(el("li", null, "<b>" + esc(o[0]) + "</b>" + esc(o[1]))));
-      card.appendChild(list);
+      card.appendChild(el("p", { class: "dnd-hint" }, "Drag each answer to a speaker, or tap an answer and then a speaker. You can use each answer once."));
+      if (!dndSay) {
+        const live = el("div", { class: "sr-only", "aria-live": "polite" });
+        root.appendChild(live);
+        dndSay = (s) => { live.textContent = ""; setTimeout(() => { live.textContent = s; }, 30); };
+      }
+      const say = dndSay;
       const text = {};
       t.options.forEach((o) => { text[o[0]] = o[1]; });
+      const dnd = el("div", { class: "dnd" });
+      const pool = el("ul", { class: "dnd-pool", "aria-label": "Answers for questions " + first + "–" + last });
+      const spk = el("div", { class: "dnd-speakers" });
+      dnd.append(pool, spk);
+      card.appendChild(dnd);
+
+      const chips = {};
+      t.options.forEach((o) => {
+        const li = el("li");
+        const b = el("button", { type: "button", class: "dnd-chip", "data-letter": o[0], "aria-pressed": "false" },
+          "<b>" + esc(o[0]) + '</b><span class="t">' + esc(o[1]) + '</span><span class="where"></span>');
+        li.appendChild(b);
+        pool.appendChild(li);
+        chips[o[0]] = b;
+      });
+
+      const zones = [];
+      let picked = null;           // the letter picked up by a tap, waiting for a speaker
+      const where = (L) => zones.findIndex((z) => z.sel.value === L);
+      const setZone = (k, L) => {
+        const s = zones[k].sel;
+        if (s.value === L) return;
+        s.value = L;
+        s.dispatchEvent(new Event("change", { bubbles: true }));
+      };
+      function place(L, k) {
+        const from = where(L), old = zones[k].sel.value;
+        picked = null;
+        if (from === k) { render(); return; }
+        if (from >= 0) setZone(from, old);
+        setZone(k, L);
+        render();
+        say(L + " placed for Speaker " + (k + 1) + (old ? (from >= 0 ? ". " + old + " moved to Speaker " + (from + 1) : ". " + old + " is back in the list") : "") + ".");
+      }
+      function unplace(k) {
+        const old = zones[k].sel.value;
+        if (!old) return;
+        picked = null;
+        setZone(k, "");
+        render();
+        say(old + " taken off Speaker " + (k + 1) + ".");
+      }
+      function pick(L) {
+        picked = picked === L ? null : L;
+        render();
+        say(picked ? "Answer " + L + " picked up. Now choose a speaker." : "Cancelled.");
+      }
+      function render() {
+        zones.forEach((z, k) => {
+          const L = z.sel.value;
+          z.zone.innerHTML = L ? "<b>" + esc(L) + '</b><span class="t">' + esc(text[L]) + "</span>"
+            : '<span class="ph">' + (picked ? "Place " + esc(picked) + " here" : "Drop an answer here") + "</span>";
+          z.zone.classList.toggle("filled", !!L);
+          z.zone.classList.toggle("ok", z.sel.classList.contains("ok"));
+          z.zone.classList.toggle("bad", z.sel.classList.contains("bad"));
+          z.zone.setAttribute("aria-label", "Question " + z.num + ", Speaker " + (k + 1) + ": " + (L ? "answer " + L + ", " + text[L] : "no answer yet") +
+            (picked && picked !== L ? ". Press to place " + picked + " here" : ""));
+          z.clear.hidden = !L;
+        });
+        Object.keys(chips).forEach((L) => {
+          const at = where(L), c = chips[L];
+          c.classList.toggle("used", at >= 0);
+          c.querySelector(".where").textContent = at >= 0 ? "Speaker " + (at + 1) : "";
+          c.setAttribute("aria-pressed", picked === L ? "true" : "false");
+          c.setAttribute("aria-label", "Answer " + L + ": " + text[L] + (at >= 0 ? ", placed for Speaker " + (at + 1) : ""));
+        });
+        card.classList.toggle("picking", !!picked);
+      }
+
       t.answers.forEach((ans, k) => {
         const num = n + k;
-        const row = el("div", { class: "match-row" });
+        const row = el("div", { class: "match-row dnd-row" });
         row.appendChild(el("span", { class: "n" }, String(num)));
-        row.appendChild(el("span", { class: "stmt" }, "Speaker " + (k + 1)));
-        const sel = el("select", { class: "choice", "aria-label": "Question " + num + ", Speaker " + (k + 1) });
+        const body = el("div", { class: "dnd-body" });
+        body.appendChild(el("span", { class: "stmt" }, "Speaker " + (k + 1)));
+        const slot = el("div", { class: "dnd-slot" });
+        body.appendChild(slot);
+        const zone = el("button", { type: "button", class: "dnd-zone", "data-k": String(k) });
+        const clear = el("button", { type: "button", class: "dnd-clear", "aria-label": "Take the answer off Speaker " + (k + 1), hidden: "" }, "×");
+        const sel = el("select", { class: "choice dnd-src", hidden: "", "aria-label": "Question " + num + ", Speaker " + (k + 1) });
         sel.appendChild(el("option", { value: "" }, "—"));
         t.options.forEach((o) => sel.appendChild(el("option", { value: o[0] }, o[0])));
-        row.appendChild(sel);
-        card.appendChild(row);
+        slot.append(zone, clear);
+        row.append(body, sel);
+        spk.appendChild(row);
+        zones.push({ zone, clear, sel, num });
+        sel.addEventListener("change", render);   // also when a test or a restore sets the value directly
+        zone.addEventListener("click", () => {
+          if (picked) place(picked, k);
+          else if (sel.value) pick(sel.value);
+          else say("Choose an answer first, then this speaker.");
+        });
+        zone.addEventListener("keydown", (e) => {
+          if ((e.key === "Delete" || e.key === "Backspace") && sel.value) { e.preventDefault(); unplace(k); }
+        });
+        clear.addEventListener("click", () => { unplace(k); zone.focus(); });
+        zone.addEventListener("pointerdown", (e) => { if (sel.value) grab(e, sel.value, zone); });
         const note = addNote(num, ans + " · " + text[ans], t.explain && t.explain[k]);
         items.push({
           info() { return { n: num, given: sel.value, correct: ans }; },
@@ -800,12 +901,123 @@
             const ok = sel.value === ans;
             sel.classList.toggle("ok", ok); sel.classList.toggle("bad", !ok);
             note.ok = ok;
+            render();
             return ok;
           },
           reveal() {},
-          reset() { sel.value = ""; sel.classList.remove("ok", "bad"); note.ok = null; },
+          reset() { sel.value = ""; sel.classList.remove("ok", "bad"); note.ok = null; picked = null; render(); },
         });
       });
+
+      Object.keys(chips).forEach((L) => {
+        chips[L].addEventListener("click", () => pick(L));
+        chips[L].addEventListener("pointerdown", (e) => grab(e, L, chips[L]));
+      });
+      card.addEventListener("keydown", (e) => { if (e.key === "Escape" && picked) { picked = null; render(); say("Cancelled."); } });
+
+      /* Dragging. A mouse drag starts after a few pixels; a touch drag after holding still for a moment, so a
+         finger on an answer can still scroll the page. While dragging, the page scrolls near the top and bottom. */
+      function grab(e, L, src) {
+        if (e.button > 0 || !e.isPrimary) return;
+        const touch = e.pointerType !== "mouse";
+        const g = { L, src, x: e.clientX, y: e.clientY, x0: e.clientX, y0: e.clientY, on: false, ghost: null, over: null, timer: 0, raf: 0 };
+        const from = () => where(L);
+        const stopScroll = (ev) => { if (g.on) ev.preventDefault(); };
+        const target = () => {
+          const hit = document.elementFromPoint(g.x, g.y);
+          if (!hit) return null;
+          const z = hit.closest(".dnd-zone");
+          if (z && spk.contains(z)) return z;
+          if (hit.closest(".dnd-pool") && pool === hit.closest(".dnd-pool")) return pool;
+          return null;
+        };
+        const begin = () => {
+          g.on = true;
+          picked = null;
+          render();
+          g.ghost = el("div", { class: "dnd-ghost", "aria-hidden": "true" }, "<b>" + esc(L) + '</b><span class="t">' + esc(text[L]) + "</span>");
+          g.ghost.style.width = Math.min(src.getBoundingClientRect().width, 320) + "px";
+          document.body.appendChild(g.ghost);
+          src.classList.add("lifted");
+          card.classList.add("dragging");
+          if (touch && navigator.vibrate) { try { navigator.vibrate(8); } catch (err) {} }
+          follow();
+          const tick = () => {
+            if (!g.on) return;
+            // scroll only when the answer has been moved towards an edge; the edges are inside the sticky header and action bar
+            const edge = 56, h = window.innerHeight;
+            let top = 0, bottom = h;
+            const hd = document.querySelector("header.site"), ab = root.querySelector(".bar");
+            if (hd && getComputedStyle(hd).position === "sticky") top = Math.max(0, Math.min(h / 3, hd.getBoundingClientRect().bottom));
+            if (ab) { const r = ab.getBoundingClientRect(); if (r.top > h / 2 && r.top < h) bottom = r.top; }
+            if (g.y < top + edge && g.y < g.y0 - 16) window.scrollBy(0, -Math.min(14, Math.ceil((top + edge - g.y) / 4)));
+            else if (g.y > bottom - edge && g.y > g.y0 + 16) window.scrollBy(0, Math.min(14, Math.ceil((g.y - (bottom - edge)) / 4)));
+            mark();
+            g.raf = requestAnimationFrame(tick);
+          };
+          g.raf = requestAnimationFrame(tick);
+        };
+        const follow = () => { if (g.ghost) g.ghost.style.transform = "translate(" + (g.x + 12) + "px," + (g.y - 18) + "px)"; };
+        const mark = () => {
+          const tg = target();
+          if (tg === g.over) return;
+          if (g.over) g.over.classList.remove("over");
+          g.over = tg;
+          if (tg) tg.classList.add("over");
+        };
+        const move = (ev) => {
+          if (ev.pointerId !== e.pointerId) return;
+          g.x = ev.clientX; g.y = ev.clientY;
+          if (!g.on) {
+            const far = Math.abs(g.x - g.x0) + Math.abs(g.y - g.y0) > (touch ? 10 : 5);
+            if (far && touch) { end(); return; }        // the finger moved before the hold: it's a scroll
+            if (far) begin();
+            return;
+          }
+          ev.preventDefault();
+          follow();
+          mark();
+        };
+        const up = (ev) => {
+          if (ev.pointerId !== e.pointerId) return;
+          if (g.on) {
+            g.x = ev.clientX; g.y = ev.clientY;
+            const tg = target();
+            // the click that follows this pointerup is part of the drag, not a tap
+            const kill = (ev) => { ev.stopPropagation(); ev.preventDefault(); };
+            window.addEventListener("click", kill, true);
+            setTimeout(() => window.removeEventListener("click", kill, true), 0);
+            if (tg && tg !== pool) place(L, +tg.getAttribute("data-k"));
+            else if (tg === pool && from() >= 0) unplace(from());
+          }
+          end();
+        };
+        const end = () => {
+          clearTimeout(g.timer);
+          cancelAnimationFrame(g.raf);
+          g.on = false;
+          if (g.ghost) g.ghost.remove();
+          if (g.over) g.over.classList.remove("over");
+          src.classList.remove("lifted");
+          card.classList.remove("dragging");
+          window.removeEventListener("pointermove", move);
+          window.removeEventListener("pointerup", up);
+          window.removeEventListener("pointercancel", cancel);
+          document.removeEventListener("touchmove", stopScroll);
+          document.removeEventListener("contextmenu", noMenu, true);
+        };
+        const cancel = (ev) => { if (ev.pointerId === e.pointerId) end(); };
+        const noMenu = (ev) => { if (g.on || touch) ev.preventDefault(); };
+        window.addEventListener("pointermove", move, { passive: false });
+        window.addEventListener("pointerup", up);
+        window.addEventListener("pointercancel", cancel);
+        document.addEventListener("touchmove", stopScroll, { passive: false });
+        document.addEventListener("contextmenu", noMenu, true);
+        if (touch) g.timer = setTimeout(begin, 280);
+      }
+
+      onRestore.push(render);
+      render();
       root.appendChild(card);
       return n + t.answers.length;
     }
@@ -860,6 +1072,7 @@
         if (!Array.isArray(v) || v.length !== cs.length) return false;
         cs.forEach((c, i) => { if (c.type === "radio") c.checked = !!v[i]; else c.value = v[i]; });
         cs.forEach((c) => { if (c.type === "radio" && c.checked) c.dispatchEvent(new Event("change", { bubbles: true })); });
+        onRestore.forEach((f) => f());
         return true;
       }
     };

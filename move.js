@@ -3,6 +3,7 @@
    name (log.js). This page packs all of it into a link, so a student can carry on from another phone or computer:
      code = "C1P1." + base64url(deflate-raw(JSON))   or "C1P1j." + base64url(JSON) where the browser can't compress
      link = this page + "#code=" + code
+   Pages at the old address (c1prep.duckdns.org) bring progress across with #moved=<code>&to=<page>: see below.
    Adding a code never deletes anything: it is merged with what is already saved here, and adding the same code
    twice changes nothing the second time. Nothing is sent anywhere. */
 (function () {
@@ -202,6 +203,26 @@
   }
   const canShare = typeof navigator.share === "function";
   const pageUrl = () => location.href.split("#")[0];
+
+  /* Arriving from the old address (c1prep.duckdns.org): its pages send this browser's progress along once, as
+     #moved=<code>&to=<page> (generator/moving.py). It is added here without asking, as "Add to this device" would,
+     with the name and settings if this browser has none yet; then the page the student was going to opens. */
+  const moved = /^#moved=(C1P1j?\.[A-Za-z0-9_-]+)&to=([^&]*)$/.exec(location.hash || "");
+  if (moved) {
+    let to = "/";
+    try { to = decodeURIComponent(moved[2]); } catch (e) {}
+    if (!/^\/(?![\/\\])/.test(to)) to = "/";
+    host.innerHTML = '<p class="lead">C1 Prep is now Future Perfect English. Bringing your progress across…</p>';
+    unpack(moved[1]).then((b) => {
+      const L = collect(), M = merge(L, b.d);
+      Object.keys(M).forEach((k) => { if (JSON.stringify(M[k]) !== JSON.stringify(L[k])) ls.set(P + k, JSON.stringify(M[k])); });
+      if (b.n && !getName()) ls.set(NAME_KEY, b.n);
+      if (isObj(b.s)) Object.keys(b.s).forEach((k) => {
+        if (/^c1prep-(theme|skin|twice|placement|queue)$/.test(k) && typeof b.s[k] === "string" && ls.get(k) === null) ls.set(k, b.s[k]);
+      });
+    }).catch(() => {}).then(() => location.replace(to));
+    return;
+  }
 
   host.innerHTML =
     '<p class="lead">Your answers and scores are saved on this phone or computer only. To carry on somewhere else, send your progress to your other device and open it there.</p>' +

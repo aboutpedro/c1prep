@@ -43,14 +43,66 @@
 .player.missing input[type="range"] { cursor: default; }
 .player.missing .pnote { font-weight: 600; color: var(--text); }
 
-/* multiple matching: the option list, then one row per speaker */
+/* multiple matching: drag and drop (as in the digital exam). The answers, then one row per speaker with a drop box.
+   Phones: answers above the speakers. Wider: speakers on the left, answers on the right, staying in view. */
 .match-task h3 { margin-top: 0; }
-.match-options { list-style: none; margin: 0 0 var(--s4); padding: 0; display: grid; gap: 6px; }
-.match-options li { display: flex; gap: var(--s3); align-items: baseline; font-size: 15px; }
-.match-options b {
-  display: inline-grid; place-items: center; flex: none; width: 26px; height: 26px; border-radius: var(--r-sm);
-  background: var(--primary-soft); color: var(--primary); font-size: 13px;
+.dnd-hint { margin: 0 0 var(--s3); font-size: 14px; color: var(--muted); }
+.dnd { display: grid; gap: var(--s4); }
+.dnd-pool {
+  list-style: none; margin: 0; padding: var(--s2); display: grid; gap: 6px; align-content: start;
+  background: var(--surface-2); border: 2px dashed transparent; border-radius: var(--r-md);
 }
+.dnd-pool.over { border-color: var(--primary); }
+.dnd-chip, .dnd-zone, .dnd-ghost {
+  display: flex; align-items: flex-start; justify-content: flex-start; gap: 10px; width: 100%; min-height: 44px; padding: 9px 10px;
+  font-size: 15px; font-weight: 500; line-height: 1.35; white-space: normal; text-align: left;
+  color: var(--text); background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--r-md);
+}
+.dnd-chip b, .dnd-zone b, .dnd-ghost b {
+  display: inline-grid; place-items: center; flex: none; width: 26px; height: 26px; margin-top: -2px; border-radius: var(--r-sm);
+  background: var(--primary-soft); color: var(--primary); font-size: 13px; font-weight: 700;
+}
+.dnd-chip .t, .dnd-zone .t, .dnd-ghost .t { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.dnd-chip, .dnd-zone { cursor: pointer; touch-action: manipulation; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+.dnd-chip { cursor: grab; }
+.dnd-chip:hover, .dnd-zone:hover { background: var(--surface); border-color: var(--primary); }
+.dnd-chip .where { flex: none; align-self: center; font-size: 12px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.dnd-chip.used { background: transparent; border-style: dashed; color: var(--muted); }
+.dnd-chip.used b { background: transparent; color: var(--muted); box-shadow: inset 0 0 0 1px var(--border-strong); }
+.dnd-chip[aria-pressed="true"] { border: 2px solid var(--primary); padding: 8px 9px; background: var(--primary-soft); color: var(--text); }
+.dnd-chip.lifted { opacity: .4; }
+
+.dnd-row { align-items: flex-start; }
+.dnd-body { flex: 1; min-width: 0; display: grid; gap: 6px; }
+.dnd-row .stmt { flex: none; font-size: 14px; font-weight: 600; line-height: 28px; color: var(--muted); }
+.dnd-slot { position: relative; }
+.dnd-zone { min-width: 0; border-style: dashed; color: var(--muted); }
+.dnd-zone .ph { align-self: center; font-size: 14px; }
+.dnd-zone.filled { border-style: solid; color: var(--text); padding-right: 44px; }
+.match-task.picking .dnd-zone { border-color: var(--primary); }
+.match-task.picking .dnd-zone .ph { color: var(--primary); font-weight: 600; }
+.dnd-zone.over { border: 2px solid var(--primary) !important; padding: 8px 9px; background: var(--primary-soft); }
+.dnd-zone.filled.over { color: var(--text); padding-right: 43px; }
+.dnd-clear {
+  position: absolute; top: 4px; right: 4px; width: 36px; min-height: 36px; height: 36px; padding: 0; border-radius: 50%;
+  font-size: 20px; font-weight: 500; line-height: 1; color: var(--muted); background: transparent; border-color: transparent;
+}
+.dnd-clear:hover { color: var(--text); background: var(--surface-2); border-color: transparent; }
+.dnd-row:has(.ok)::after, .dnd-row:has(.bad)::after { margin: 4px 0 0; width: 14px; }
+.match-task.dragging, .match-task.dragging * { cursor: grabbing; }
+
+.dnd-ghost {
+  position: fixed; left: 0; top: 0; z-index: 1000; pointer-events: none; color: var(--text);
+  border: 2px solid var(--primary); box-shadow: 0 10px 28px rgba(0, 0, 0, .22); opacity: .96;
+}
+
+@media (min-width: 680px) {
+  .dnd { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: start; }
+  .dnd-speakers { grid-column: 1; grid-row: 1; }
+  .dnd-pool { grid-column: 2; grid-row: 1; position: sticky; top: var(--s4); }
+}
+@media (max-width: 379px) { .dnd-row { gap: var(--s2); } }
+@media (prefers-reduced-motion: no-preference) { .dnd-chip, .dnd-zone { transition: border-color .15s var(--ease), background-color .15s var(--ease), opacity .15s var(--ease); } }
 
 /* transcript: shown after checking, closed until opened */
 .transcript { padding: 0; }
@@ -66,4 +118,4 @@
   .transcript .tr-body { padding: 0 var(--s4) var(--s4); font-size: 16px; }
   .player { padding: var(--s3); }
 }
-@media print { .player, .twice { display: none !important; } .transcript { display: block !important; } }
+@media print { .player, .twice, .dnd-hint, .dnd-clear { display: none !important; } .transcript { display: block !important; } .dnd-pool { position: static; } }

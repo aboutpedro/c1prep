@@ -1,0 +1,14 @@
+# Kept off the website (Cloudflare): the repo's own files. Written by generator/moving.py.
+.git
+.github
+.DS_Store
+**/.DS_Store
+.assetsignore
+.nojekyll
+wrangler.jsonc
+worker.js
+node_modules
+docs
+README.md
+DESIGN.md
+CNAME

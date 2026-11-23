@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://c1prep.duckdns.org/sitemap.xml
+Sitemap: https://futureperfectenglish.com/sitemap.xml

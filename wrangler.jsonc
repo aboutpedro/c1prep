@@ -1,0 +1,27 @@
+// Cloudflare: how futureperfectenglish.com is served. Written by generator/moving.py.
+{
+  "name": "futureperfectenglish",
+  "compatibility_date": "2026-11-23",
+  "main": "worker.js",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "404-page",
+    "run_worker_first": [
+      "/",
+      "/a1",
+      "/a2",
+      "/b1",
+      "/b2",
+      "/c2",
+      "/kids",
+      "/a1/",
+      "/a2/",
+      "/b1/",
+      "/b2/",
+      "/c2/",
+      "/kids/"
+    ]
+  }
+}
