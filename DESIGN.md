@@ -350,26 +350,45 @@ inline (chevrons, sun/moon, reset), in `currentColor`.
 
 ## Logo
 
-One mark per level, same construction: the level in Inter Display Bold,
+**Future Perfect English** (the site). Drawn from Pedro's sketch (23 Nov 2026): an F whose top bar rises into
+an arrow, and whose middle bar flows into the bowl of an upright P with a D-shaped bowl (option 3 "Upright" of the
+five he was shown). Heavy strokes like the level letters (11 units on a 100-unit grid at 70 high), ends cut flat with
+both stems square on the baseline, sharp corners, a solid triangular arrowhead. On the navy (`#1f4e79`) tile the
+letters are cream (`#f7f5f0`) and the arrowhead light blue (`#a9c9eb`), as the numbers in the level marks. Corner
+radius 22. The name beside it is Inter Display Bold, "English" in navy (light blue `#8fb8e3` on dark), converted to
+outlines. Drawn by generator/logo.py.
+
+| File | Use | Notes |
+|---|---|---|
+| `fp-icon.svg` | Browser tab and header logo (theme.js) on the site-wide and kids pages | Rounded tile, mark 70 high, strokes 11 |
+| `fp-icon.ico` | Browsers without SVG icons | 16 px one colour, mark 86 high, strokes 13.5; 32 and 48 px mark 78 high |
+| `fp-apple-touch-icon.png` | Phone home screen (site-wide and kids pages) | 180 px, square and full-bleed (the phone rounds it) |
+| `icon-192.png`, `icon-512.png` | Web app (manifest.webmanifest) | As fp-icon.svg |
+| `icon-maskable-512.png` | Android home screen | Full-bleed navy, mark 58 high, inside the 80% safe circle |
+| `logo.svg`, `logo-dark.svg` | The tile and the name on one line, for light and dark backgrounds | Text as outlines |
+| `logo-mark.svg` | The mark alone in navy, transparent | For light backgrounds |
+| `og-image.png` | Share preview (Open Graph), 1200×630 | Page background, the logo, "English practice, from A1 to C2", the six level marks, the address; generator/ogimage.py |
+
+Site icon links carry `?v=2` (`V["fp"]` in sitepages.py); bump it whenever these icons change.
+
+**Levels.** One mark per level, same construction: the level in Inter Display Bold,
 converted to outlines, on a navy (`#1f4e79`) tile. The letter is cream
 (`#f7f5f0`), the number light blue (`#a9c9eb`). 64-unit grid, corner radius
 14, letter cap height 30, letter and number almost touching (0.2–0.4 gap),
-optically centred.
+optically centred. Level pages show their level's mark in the tab and the header.
 
 | File | Use | Notes |
 |---|---|---|
 | `favicon.svg` | Browser tab, site header (theme.js) | Rounded tile |
 | `favicon.ico` | Browsers without SVG icons | 16 and 32 px drawn larger (cap 35, radius 12) so they stay legible; 48 px as the SVG |
 | `apple-touch-icon.png` | Phone home screen | 180 px, square and full-bleed (the phone rounds it), cap 27 |
-| `icon-192.png`, `icon-512.png` | Web app (manifest.webmanifest) | The C1 mark as in favicon.svg |
-| `icon-maskable-512.png` | Android home screen | Full-bleed navy, the mark at 78% so it survives any mask |
-| `og-image.png` | Share preview (Open Graph), 1200×630 | Page background, brand, "English practice, from A1 to C2", the six marks; generator/ogimage.py |
 
+The root `favicon.*` and `apple-touch-icon.png` are the C1 mark, not the site's icon:
 C1 lives at the root (its home page is `c1.html`; `index.html` is the site's front
 page), A1 in `a1/`, A2 in `a2/`, B1 in `b1/`, B2 in `b2/`, C2 in `c2/`. Site-wide
-pages (front page, level test, privacy, 404) carry `data-site` on `<html>`, so no
+pages (front page, level test, about, terms, privacy, 404) carry `data-site` on `<html>`, so no
 level button is marked as current. The A1
 mark is the A2 mark's A with the B1 mark's 1 (same 0.34 gap as in B1). In the A2
 mark the gap is wider at the baseline (about 1) because the A's diagonal leaves
-the top open; B1 keeps the same 1.4 closest gap as B2. Icon links carry `?v=2`;
-bump it whenever the icons change.
+the top open; B1 keeps the same 1.4 closest gap as B2. Level icon links carry `?v=2`;
+bump it whenever the level icons change.
