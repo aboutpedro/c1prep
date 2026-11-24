@@ -1,0 +1,52 @@
+/* Study plan (plan.html, plan.js). Uses the site's colours from style.css. */
+.plan-top .plan-when { margin: 0 0 var(--s2); }
+.plan-count { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2) var(--s3); margin: 0; color: var(--muted); font-size: 15px; }
+.plan-count > :first-child, .plan-count { font-weight: 500; }
+.plan-meter { width: 96px; height: 6px; border-radius: 999px; background: var(--surface-2); overflow: hidden; flex: none; }
+.plan-meter i { display: block; height: 100%; background: var(--primary); border-radius: inherit; }
+a.btn.plan-next { margin-top: var(--s4); white-space: normal; text-align: left; height: auto; min-height: 42px; padding-top: 10px; padding-bottom: 10px; line-height: 1.3; }
+h2 .plan-dates { font-weight: 500; color: var(--muted); font-size: 17px; margin-left: 6px; }
+.plan-sub { margin: 0 0 var(--s3); color: var(--muted); font-size: 15px; }
+.card h3 { margin: var(--s5) 0 var(--s3); font-size: 17px; }
+
+.plan-list { list-style: none; margin: 0; padding: 0; }
+.plan-task { display: flex; align-items: flex-start; gap: var(--s3); padding: 10px 0; border-top: 1px solid var(--border); }
+.plan-task:first-child { border-top: 0; padding-top: 0; }
+.plan-mark, .plan-check { flex: none; width: 22px; height: 22px; margin: 1px 0 0; }
+.plan-mark { display: inline-flex; align-items: center; justify-content: center; border: 2px solid var(--border-strong); border-radius: 50%; font-size: 13px; font-weight: 800; line-height: 1; color: var(--on-primary); }
+.plan-task.done .plan-mark { background: var(--ok); border-color: var(--ok); }
+.plan-check { accent-color: var(--ok); cursor: pointer; }
+.plan-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.plan-kind { font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.plan-body a { font-weight: 550; overflow-wrap: anywhere; }
+.plan-task.done .plan-body a { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 1px; }
+
+.plan-weeks { display: grid; gap: var(--s2); }
+details.plan-week { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); }
+details.plan-week > summary {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; min-height: 48px; padding: 12px var(--s4);
+  font-weight: 600; color: var(--primary); cursor: pointer; list-style: none; border-radius: var(--r-lg);
+}
+details.plan-week > summary::-webkit-details-marker { display: none; }
+details.plan-week > summary::before {
+  content: ""; flex: none; align-self: center; width: 7px; height: 7px; margin: 0 4px 0 1px;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform .15s var(--ease);
+}
+details.plan-week[open] > summary::before { transform: rotate(45deg); }
+details.plan-week > summary:hover { background: var(--surface-2); }
+details.plan-week .plan-dates { font-weight: 500; color: var(--muted); }
+details.plan-week .plan-n { margin-left: auto; font-weight: 500; font-size: 14px; color: var(--muted); }
+details.plan-week > .plan-list { padding: 0 var(--s4) var(--s3); }
+
+.plan-form .plan-label { display: block; margin: 0 0 var(--s2); font-weight: 600; }
+.plan-form input[type="date"] {
+  font: inherit; font-size: 16px; min-height: 44px; padding: 0 12px; margin-bottom: var(--s5); max-width: 100%;
+  color: var(--text); background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--r-md);
+}
+.plan-form input[type="date"]:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+.plan-form fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.plan-form legend { padding: 0; }
+.plan-form .opts label { align-items: center; }
+.plan-hint { color: var(--muted); font-weight: 400; }
+.plan-error { margin: var(--s3) 0 0; color: var(--bad); font-weight: 600; }
+@media print { .plan-form, .move-actions, a.btn.plan-next { display: none; } details.plan-week > .plan-list { display: block; } }

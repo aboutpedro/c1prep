@@ -14,7 +14,8 @@
 
   /* part: [page, data file, task, questions, paper]. paper: R = Reading, U = Use of English, as Cambridge reports them.
      scale: Cambridge's published conversion for official practice tests, [marks, Cambridge English Scale score];
-     the last pair is full marks = the top of the exam's scale. cefr: [score needed, level]. */
+     the last pair is full marks = the top of the exam's scale. cefr: [score needed, level].
+     grades: Cambridge's results bands for the whole exam, [lowest score, result], highest first. */
   const UOE = [
     ["use-of-english-1", "uoe1", "Multiple-choice cloze", 8, "R"],
     ["use-of-english-2", "uoe2", "Open cloze", 8, "U"],
@@ -26,19 +27,22 @@
       minutes: 75,
       parts: UOE.concat([["reading-5", "r5", "Multiple choice", 6, "R"], ["reading-6", "r6", "Gapped text", 6, "R"], ["reading-7", "r7", "Multiple matching", 10, "R"]]),
       scale: { R: [[10, 122], [16, 140], [24, 160], [37, 180], [42, 190]], U: [[7, 122], [11, 140], [18, 160], [24, 180], [28, 190]] },
-      cefr: [[180, "C1"], [160, "B2"], [140, "B1"]]
+      cefr: [[180, "C1"], [160, "B2"], [140, "B1"]],
+      exam: "B2 First", grades: [[180, "grade A (C1)"], [173, "grade B (B2)"], [160, "grade C (B2)"], [140, "Level B1 (a B1 certificate)"]]
     },
     c1: {
       minutes: 90,
       parts: UOE.concat([["reading-5", "r5", "Multiple choice", 6, "R"], ["reading-6", "r6", "Cross-text matching", 4, "R"], ["reading-7", "r7", "Gapped text", 6, "R"], ["reading-8", "r8", "Multiple matching", 10, "R"]]),
       scale: { R: [[17, 142], [23, 160], [32, 180], [43, 200], [50, 210]], U: [[8, 142], [11, 160], [16, 180], [23, 200], [28, 210]] },
-      cefr: [[200, "C2"], [180, "C1"], [160, "B2"]]
+      cefr: [[200, "C2"], [180, "C1"], [160, "B2"]],
+      exam: "C1 Advanced", grades: [[200, "grade A (C2)"], [193, "grade B (C1)"], [180, "grade C (C1)"], [160, "Level B2 (a B2 certificate)"]]
     },
     c2: {
       minutes: 90,
       parts: UOE.concat([["reading-5", "r5", "Multiple choice", 6, "R"], ["reading-6", "r6", "Gapped text", 7, "R"], ["reading-7", "r7", "Multiple matching", 10, "R"]]),
       scale: { R: [[14, 162], [22, 180], [28, 200], [36, 220], [44, 230]], U: [[9, 162], [13, 180], [17, 200], [22, 220], [28, 230]] },
-      cefr: [[200, "C2"], [180, "C1"]]
+      cefr: [[200, "C2"], [180, "C1"]],
+      exam: "C2 Proficiency", grades: [[220, "grade A (C2)"], [213, "grade B (C2)"], [200, "grade C (C2)"], [180, "Level C1 (a C1 certificate)"]]
     }
   };
   const cfg = CFG[store.level];
@@ -71,6 +75,17 @@
       }
     }
     return table[table.length - 1][1];
+  }
+  /* The CEFR level of a scale score (null below the lowest one this exam names). */
+  const cefrOf = (x) => { const c = x == null ? null : cfg.cefr.find((t) => x >= t[0]); return c ? c[1] : null; };
+  /* Reading and Use of English together, as Cambridge would average them, and what that score means. Cambridge
+     advises reading scores within about 3 points of a level's line with care: `near` is true then. */
+  function together(sR, sU) {
+    if (sR == null || sU == null) return null;
+    const x = Math.round((sR + sU) / 2), g = cfg.grades.find((t) => x >= t[0]);
+    const lines = cfg.grades.map((t) => t[0]).concat(cfg.cefr.map((t) => t[0]));
+    const near = [sR, sU, x].some((v) => lines.some((l) => Math.abs(v - l) <= 3));
+    return { score: x, result: g ? g[1] : null, near: near };
   }
   /* ---------- loading ---------- */
   const DATA = {}, INSTR = {};
@@ -333,12 +348,20 @@
       card.appendChild(el("p", { class: "big" }, score + " / " + max + "<span>" +
         (timeUp ? "You used all " + cfg.minutes + " minutes." : "You finished in " + mins(secs) + ".") + "</span>"));
       card.appendChild(el("div", { class: "table-wrap" },
-        '<table class="form-table result-table"><thead><tr><th>Paper</th><th class="num">Marks</th><th class="num">Cambridge English Scale</th></tr></thead><tbody>' +
-        "<tr><td>Reading</td><td class=\"num\">" + sum.R[0] + " / " + sum.R[1] + '</td><td class="num">' + est(sR) + "</td></tr>" +
-        "<tr><td>Use of English</td><td class=\"num\">" + sum.U[0] + " / " + sum.U[1] + '</td><td class="num">' + est(sU) + "</td></tr></tbody></table>"));
+        '<table class="form-table result-table"><thead><tr><th>Paper</th><th class="num">Marks</th><th class="num">Scale score</th><th class="num">Level</th></tr></thead><tbody>' +
+        "<tr><td>Reading</td><td class=\"num\">" + sum.R[0] + " / " + sum.R[1] + '</td><td class="num">' + est(sR) + '</td><td class="num">' + (cefrOf(sR) || "–") + "</td></tr>" +
+        "<tr><td>Use of English</td><td class=\"num\">" + sum.U[0] + " / " + sum.U[1] + '</td><td class="num">' + est(sU) + '</td><td class="num">' + (cefrOf(sU) || "–") + "</td></tr></tbody></table>"));
+      const both = together(sR, sU);
+      card.appendChild(el("p", { class: "exam-grade" }, both
+        ? (both.result
+          ? "Reading and Use of English together: about <b>" + both.score + "</b>. If your Writing, Listening and Speaking were at the same level, that would be <b>" + esc(cfg.exam + ", " + both.result) + "</b>."
+          : "Reading and Use of English together: about <b>" + both.score + "</b>, below the scores that get a result in " + esc(cfg.exam) + ".")
+        : "These marks are below the lowest score Cambridge reports for " + esc(cfg.exam) + ", so there is no estimate yet. Keep practising the parts below and try another paper."));
+      if (both && both.near) card.appendChild(el("p", { class: "small-note" }, "Close to a line: a few marks either way could change the level or grade, so treat this one with care."));
       card.appendChild(el("div", { class: "table-wrap" },
         '<table class="form-table result-table"><thead><tr><th>Part</th><th class="num">Marks</th></tr></thead><tbody>' + rows + "</tbody></table>"));
-      card.appendChild(el("p", { class: "small-note" }, "The scale scores are an estimate from Cambridge’s published conversion for practice tests, for this paper only. " +
+      card.appendChild(el("p", { class: "small-note" }, "The scores are estimates on the Cambridge English Scale, from Cambridge’s published conversion for practice tests, for this paper only. " +
+        "In the exam your grade is the average of all five scores: Reading, Use of English, Writing, Listening and Speaking. " +
         "Go through each part below: every answer is marked, with an explanation."));
       const acts = el("div", { class: "move-actions" });
       acts.appendChild(el("a", { class: "btn", href: "exam.html" }, "Start a new paper"));
