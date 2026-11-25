@@ -18,6 +18,12 @@
 .g-end h2 { margin-top: 0; }
 .g-end-line { font-size: 18px; font-weight: 600; margin: var(--s2) 0; }
 .g-best { color: var(--muted); font-size: 14px; margin: 0 0 var(--s4); }
+.g-def { text-align: left; margin: 0 auto var(--s4); max-width: 34em; padding: var(--s3) var(--s4); border-left: 3px solid var(--primary); background: var(--surface-2); border-radius: 0 var(--r-md) var(--r-md) 0; }
+.g-def p { margin: 0; }
+.g-def-head { margin-bottom: 4px !important; }
+.g-def-word { font-size: 18px; }
+.g-def-pos { color: var(--muted); font-style: italic; font-size: 15px; }
+.g-def-text { line-height: 1.5; }
 .g-end button { margin-top: var(--s2); }
 .g-shake { animation: g-shake .35s ease; }
 @keyframes g-shake { 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }

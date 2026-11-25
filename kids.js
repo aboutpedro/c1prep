@@ -54,7 +54,16 @@
     if (!vs.length) return;
     voicesKnown = true;
     const en = vs.filter((v) => /^en([-_]|$)/i.test(v.lang));
-    voice = en.find((v) => /^en[-_]GB/i.test(v.lang)) || en.find((v) => /^en[-_]US/i.test(v.lang)) || en[0] || null;
+    // Skip Apple's novelty voices (Bells, Zarvox…) and its multi-language voices (Eddy, Flo, Grandma…):
+    // on a Mac set to Portuguese these can speak English words with a Brazilian accent.
+    const odd = /^(Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Fred|Good News|Jester|Junior|Kathy|Organ|Ralph|Superstar|Trinoids|Whisper|Wobble|Zarvox|Eddy|Flo|Grandma|Grandpa|Reed|Rocko|Sandy|Shelley)\b/i;
+    const ok = en.filter((v) => !odd.test(v.name));
+    const named = (n) => ok.find((v) => v.name.toLowerCase().includes(n));
+    const best = ["google uk english", "daniel", "serena", "kate", "arthur", "martha", "microsoft sonia", "microsoft libby", "microsoft ryan",
+                  "samantha", "google us english", "microsoft aria", "microsoft jenny", "microsoft guy"];
+    voice = best.map(named).find(Boolean)
+      || ok.find((v) => /^en[-_]GB/i.test(v.lang)) || ok.find((v) => /^en[-_]US/i.test(v.lang)) || ok[0]
+      || en.find((v) => /^en[-_]GB/i.test(v.lang)) || en.find((v) => /^en[-_]US/i.test(v.lang)) || en[0] || null;
     document.documentElement.classList.toggle("k-nosound", !voice);
   }
   if (synth) {
@@ -67,6 +76,7 @@
   const sound = () => !!synth && (!voicesKnown || !!voice);
   function say(text) {
     if (!sound()) return;
+    if (!voice) pickVoice();   // voices can arrive late; look again before speaking
     try {
       synth.cancel();
       const u = new SpeechSynthesisUtterance(text);

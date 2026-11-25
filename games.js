@@ -427,6 +427,15 @@
       const card = el("div", "card g-end");
       card.append(el("h2", null, won ? "Well done!" : "Better luck tomorrow"));
       card.append(el("p", "g-end-line", "Today’s word: " + answer.toUpperCase()));
+      // What the word means, as in a learner's dictionary (defs in generator/games/<level>.json)
+      const def = (G.defs || {})[answer];
+      if (def) {
+        const box = el("div", "g-def");
+        const head = el("p", "g-def-head");
+        head.append(el("b", "g-def-word", answer), " ", el("span", "g-def-pos", def[0]));
+        box.append(head, el("p", "g-def-text", def[1].charAt(0).toUpperCase() + def[1].slice(1) + "."));
+        card.append(box);
+      }
       card.append(el("p", "g-best", "Played " + (saved.played || 0) + " · Won " + (saved.won || 0)));
       card.append(el("p", "g-why", "Come back tomorrow for a new word."));
       after.append(card);
