@@ -35,6 +35,10 @@
   /* Whole days from a to b, safe across clock changes. */
   const days = (a, b) => Math.round((b - a) / DAY);
   const addDays = (t, n) => { const d = new Date(t); d.setDate(d.getDate() + n); return d.getTime(); };
+  /* A plan has at most 52 weeks, so the exam can be at most 52 weeks away (364 days). */
+  const LAST = 364;
+  /* The plan's weeks are over but the exam is still ahead (only plans made before the 52-week limit). */
+  const ended = (plan) => Math.floor(days(plan.s, today()) / 7) >= plan.w.length;
 
   /* ---------- making a plan ---------- */
   function make(examDay, perWeek) {
@@ -152,6 +156,7 @@
     host.innerHTML = "";
     const examDay = parseDay(plan.d), now = today(), toGo = days(now, examDay);
     if (toGo <= 0) { showForm(plan, toGo === 0 ? "Your exam is today. Good luck! After it, you can make a new plan for your next goal." : "Your exam date has passed. Make a new plan for your next goal."); return; }
+    if (ended(plan)) { showForm(plan, "The weeks in your plan are over, but your exam is still ahead. Make a new plan for the time that is left."); return; }
     const st = status(plan), W = plan.w.length;
     const cur = Math.min(W - 1, Math.max(0, Math.floor(days(plan.s, now) / 7)));
     const all = [].concat.apply([], st), done = all.filter((t) => t.done).length;
@@ -227,7 +232,7 @@
     if (message) host.appendChild(el("p", { class: "lead" }, esc(message)));
     else if (!old) host.appendChild(el("p", { class: "lead" }, "Tell us when your exam is and how much time you have each week. You get a list of sets for every week until the exam, and they are ticked off as you do them."));
     const card = el("form", { class: "card plan-form", novalidate: "" });
-    const min = addDays(today(), 1), max = addDays(today(), 730);
+    const min = addDays(today(), 1), max = addDays(today(), LAST);
     const keep = old && parseDay(old.d) > today() ? old.d : "";
     card.innerHTML =
       '<label class="plan-label" for="plan-date">Date of your exam' + (CFG.exam ? " (" + esc(CFG.exam) + ")" : "") + "</label>" +
@@ -247,7 +252,7 @@
       let msg = "";
       if (d == null) msg = "Choose the date of your exam.";
       else if (d <= today()) msg = "Choose a date after today.";
-      else if (d > max) msg = "Choose a date in the next two years.";
+      else if (d > max) msg = "Choose a date within a year from today: a plan covers up to 52 weeks.";
       if (msg) { err.textContent = msg; err.hidden = false; card.querySelector("#plan-date").focus(); return; }
       const plan = make(d, u);
       write(plan);
@@ -255,7 +260,7 @@
       window.scrollTo(0, 0);
     });
     host.appendChild(card);
-    if (old && parseDay(old.d) > today()) {
+    if (old && parseDay(old.d) > today() && !ended(old)) {
       const back = el("button", { type: "button", class: "secondary plan-back" }, "Keep my plan");
       back.addEventListener("click", () => showPlan(old));
       card.querySelector(".move-actions").appendChild(back);

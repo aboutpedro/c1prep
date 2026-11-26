@@ -79,12 +79,13 @@
   /* The CEFR level of a scale score (null below the lowest one this exam names). */
   const cefrOf = (x) => { const c = x == null ? null : cfg.cefr.find((t) => x >= t[0]); return c ? c[1] : null; };
   /* Reading and Use of English together, as Cambridge would average them, and what that score means. Cambridge
-     advises reading scores within about 3 points of a level's line with care: `near` is true then. */
+     advises reading scores within about 3 points of a level's line with care: `near` is true when the combined
+     score (the one the grade comes from) is that close to a level or grade line. */
   function together(sR, sU) {
     if (sR == null || sU == null) return null;
     const x = Math.round((sR + sU) / 2), g = cfg.grades.find((t) => x >= t[0]);
     const lines = cfg.grades.map((t) => t[0]).concat(cfg.cefr.map((t) => t[0]));
-    const near = [sR, sU, x].some((v) => lines.some((l) => Math.abs(v - l) <= 3));
+    const near = lines.some((l) => Math.abs(x - l) <= 3);
     return { score: x, result: g ? g[1] : null, near: near };
   }
   /* ---------- loading ---------- */
@@ -356,7 +357,10 @@
         ? (both.result
           ? "Reading and Use of English together: about <b>" + both.score + "</b>. If your Writing, Listening and Speaking were at the same level, that would be <b>" + esc(cfg.exam + ", " + both.result) + "</b>."
           : "Reading and Use of English together: about <b>" + both.score + "</b>, below the scores that get a result in " + esc(cfg.exam) + ".")
-        : "These marks are below the lowest score Cambridge reports for " + esc(cfg.exam) + ", so there is no estimate yet. Keep practising the parts below and try another paper."));
+        : (sR == null && sU == null
+          ? "These marks are below the lowest score Cambridge reports for " + esc(cfg.exam) + ", so there is no estimate yet."
+          : "Your " + (sR == null ? "Reading" : "Use of English") + " marks are below the lowest score Cambridge reports for " + esc(cfg.exam) + ", so there is no overall estimate yet.") +
+          " Keep practising the parts below and try another paper."));
       if (both && both.near) card.appendChild(el("p", { class: "small-note" }, "Close to a line: a few marks either way could change the level or grade, so treat this one with care."));
       card.appendChild(el("div", { class: "table-wrap" },
         '<table class="form-table result-table"><thead><tr><th>Part</th><th class="num">Marks</th></tr></thead><tbody>' + rows + "</tbody></table>"));
